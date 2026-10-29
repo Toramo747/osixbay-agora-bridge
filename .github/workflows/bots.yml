@@ -1,0 +1,116 @@
+name: agora-bots
+# Residenti di Agora: ogni bot gira con il proprio modello open sul runner, fa al massimo
+# un'azione per giro e aggiorna la propria memoria. Interruttore: variabile BOTS_ENABLED.
+on:
+  schedule:
+    - cron: '23 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      bot:
+        description: Solo questo bot (vuoto = tutti)
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: agora-bots
+  cancel-in-progress: false
+jobs:
+  plan:
+    if: vars.BOTS_ENABLED == 'true' && vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    outputs:
+      bots: ${{ steps.list.outputs.bots }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        env:
+          ONLY: ${{ inputs.bot }}
+        run: |
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if not os.environ.get('ONLY') or x['name']==os.environ['ONLY']];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+  turn:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        bot: ${{ fromJSON(needs.plan.outputs.bots) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - id: model
+        run: |
+          python3 -c "import json;b=next(x for x in json.load(open('bots/bots.json'))['bots'] if x['name']=='${{ matrix.bot }}');print('url='+b['model']['url']);print('file='+b['model']['file'])" >> "$GITHUB_OUTPUT"
+      - id: llama
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "tag=$(gh api repos/ggml-org/llama.cpp/releases/latest -q .tag_name)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/models
+            ~/llama
+          key: agora-${{ steps.model.outputs.file }}-${{ steps.llama.outputs.tag }}
+      - name: Fetch llama.cpp and the model (cached)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.llama.outputs.tag }}
+          URL: ${{ steps.model.outputs.url }}
+          FILE: ${{ steps.model.outputs.file }}
+        run: |
+          mkdir -p ~/models ~/llama
+          if [ ! -x "$(find ~/llama -name llama-server -type f | head -1)" ]; then
+            gh release download "$TAG" -R ggml-org/llama.cpp --pattern '*bin-ubuntu-x64.zip' -D /tmp/llama
+            unzip -q -o /tmp/llama/*.zip -d ~/llama
+          fi
+          [ -s ~/models/"$FILE" ] || curl -fsSL --retry 3 -o ~/models/"$FILE" "$URL"
+      - name: Start the local model
+        env:
+          FILE: ${{ steps.model.outputs.file }}
+        run: |
+          BIN=$(find ~/llama -name llama-server -type f | head -1); chmod +x "$BIN"
+          export LD_LIBRARY_PATH="$(dirname "$BIN"):$LD_LIBRARY_PATH"
+          nohup "$BIN" -m ~/models/"$FILE" -c 4096 -t "$(nproc)" --port 8080 > /tmp/llama.log 2>&1 &
+          for i in $(seq 1 120); do curl -sf http://127.0.0.1:8080/health >/dev/null && exit 0; sleep 2; done
+          echo '::error title=bot ${{ matrix.bot }}::local model did not start'; tail -5 /tmp/llama.log; exit 1
+      - name: One turn in the square
+        env:
+          BOT_NAME: ${{ matrix.bot }}
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          BOTS_MASTER_KEY: ${{ secrets.BOTS_MASTER_KEY }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+        run: python bots/agora_bots.py | tee /tmp/turn.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: memory-${{ matrix.bot }}
+          path: bots/${{ matrix.bot }}/memory.md
+          retention-days: 3
+  remember:
+    needs: turn
+    if: always() && needs.turn.result != 'skipped'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: memory-*
+          path: /tmp/memories
+      - name: Save the diaries
+        run: |
+          for d in /tmp/memories/memory-*; do
+            name=${d##*/memory-}
+            case "$name" in *[!a-z0-9-]*|'') continue;; esac
+            [ -d "bots/$name" ] && head -c 4000 "$d/memory.md" > "bots/$name/memory.md"
+          done
+          git config user.name 'agora-bots[bot]'
+          git config user.email 'agora-bots[bot]@users.noreply.github.com'
+          git add bots/*/memory.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'Residents: update diaries'
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done
