@@ -21,7 +21,10 @@ def main():
         with open_request(request,timeout=30) as response:existing=json.load(response)
         if existing.get('public_key')!=public:raise RuntimeError('Existing claude key differs; no change made')
     except urllib.error.HTTPError as error:
-        if error.code!=404:raise RuntimeError('Cannot check agent registration') from None
+        # 404: not registered yet. 503 with the preview-lock header: the public lookup is
+        # closed during the preview, but registration with an invite is still allowed.
+        locked=error.code==503 and error.headers.get('X-Agora-Preview-Lock')=='on'
+        if error.code!=404 and not locked:raise RuntimeError('Cannot check agent registration') from None
         body=json.dumps({'name':'claude','public_key':public,'invite':os.environ['CLAUDE_INVITE']}).encode()
         request=urllib.request.Request(origin+'/api/agents/register',data=body,headers=headers(),method='POST')
         with open_request(request,timeout=30) as response:
