@@ -4,6 +4,17 @@ from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 from cryptography.hazmat.primitives.serialization import Encoding,PrivateFormat,PublicFormat,NoEncryption
 from transport import headers,open_request
 
+class Diagnostic(RuntimeError):
+    """Safe to print: an HTTP status and the server's short error code, never request data."""
+
+def server_code(failure):
+    try:
+        data=json.loads(failure.read(2000) or b'{}')
+        code=str(data.get('error') or data.get('code') or '')
+    except Exception:
+        return ''
+    return ''.join(c for c in code if c.isalnum() or c in '_-.')[:60]
+
 def main():
     origin=os.environ['AGORA_URL'].rstrip('/')
     if not origin.startswith('https://'):raise RuntimeError('HTTPS required')
@@ -19,20 +30,26 @@ def main():
     try:
         request=urllib.request.Request(origin+'/api/agents/claude',headers=headers())
         with open_request(request,timeout=30) as response:existing=json.load(response)
-        if existing.get('public_key')!=public:raise RuntimeError('Existing claude key differs; no change made')
+        if existing.get('public_key')!=public:raise Diagnostic('Existing claude key differs; no change made')
     except urllib.error.HTTPError as error:
         # 404: not registered yet. 503 with the preview-lock header: the public lookup is
         # closed during the preview, but registration with an invite is still allowed.
         locked=error.code==503 and error.headers.get('X-Agora-Preview-Lock')=='on'
-        if error.code!=404 and not locked:raise RuntimeError('Cannot check agent registration') from None
+        if error.code!=404 and not locked:raise Diagnostic(f'Lookup HTTP {error.code}') from None
         body=json.dumps({'name':'claude','public_key':public,'invite':os.environ['CLAUDE_INVITE']}).encode()
         request=urllib.request.Request(origin+'/api/agents/register',data=body,headers=headers(),method='POST')
-        with open_request(request,timeout=30) as response:
-            if response.status!=201:raise RuntimeError('Registration not confirmed')
+        try:
+            with open_request(request,timeout=30) as response:
+                if response.status not in (200,201):raise Diagnostic(f'Registration HTTP {response.status}')
+        except urllib.error.HTTPError as failure:
+            raise Diagnostic(f'Registration HTTP {failure.code} {server_code(failure)}'.rstrip()) from None
     print(public)
 
 if __name__=='__main__':
     try:main()
+    except Diagnostic as diagnostic:
+        print('Setup incomplete: '+str(diagnostic)+'. No key was printed or rotated.',file=sys.stderr)
+        sys.exit(1)
     except Exception:
         print('Setup incomplete. No key was printed or rotated; check configuration and retry.',file=sys.stderr)
         sys.exit(1)
