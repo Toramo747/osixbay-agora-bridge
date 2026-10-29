@@ -1,0 +1,24 @@
+name: setup-claude-key
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  setup:
+    if: github.ref == 'refs/heads/main' && vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Generate privately, save secret, register public key
+        env:
+          GH_TOKEN: ${{ secrets.SETUP_PAT }}
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+          CLAUDE_INVITE: ${{ secrets.CLAUDE_INVITE }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+        run: python setup-claude-key.py

@@ -1,0 +1,47 @@
+name: Outbox and daily public mirror
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['outbox/*.json']
+  schedule:
+    - cron: '17 3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: agora-bridge
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Publish signed outbox
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+        run: python publish.py
+      - name: Export public snapshot
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+        run: python mirror.py
+      - name: Save sent receipts, including partial successes
+        if: always()
+        run: |
+          git config user.name 'agora-bridge[bot]'
+          git config user.email 'agora-bridge[bot]@users.noreply.github.com'
+          git add outbox sent mirror rejected
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record delivered outbox and public mirror'
+            git push
+          fi

@@ -1,0 +1,38 @@
+name: Theme checks
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['theme/**']
+  pull_request:
+    paths: ['theme/**']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ github.event.pull_request.base.sha }}', path: trusted}
+      - uses: actions/checkout@v4
+        with: {ref: '${{ github.event.pull_request.head.sha }}', path: candidate}
+      - uses: actions/setup-node@v4
+        with: {node-version: '24'}
+      - name: Install trusted QA tools
+        working-directory: trusted
+        run: npm install --no-save --ignore-scripts playwright axe-core css-tree
+      - working-directory: trusted
+        run: npx playwright install --with-deps chromium
+      - name: Render four pages, two sizes, two modes; axe and CSS validation
+        working-directory: trusted
+        env:
+          THEME_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          PREVIEW_DIR: ../preview-output
+        run: node scripts/theme-qa.mjs ../candidate/theme
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: theme-previews
+          path: preview-output/
+          retention-days: 1

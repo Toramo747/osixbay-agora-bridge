@@ -1,0 +1,67 @@
+name: Merge validated theme and attach previews
+on:
+  workflow_run:
+    workflows: ['Theme checks']
+    types: [completed]
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+jobs:
+  merge:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.pull_requests[0] != null
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          env:
+            THEME_AUTHORS: ${{ vars.THEME_AUTHORS }}
+          script: |
+            const run = context.payload.workflow_run;
+            const prs = run.pull_requests;
+            if (prs.length !== 1) throw Error('Exactly one PR required');
+            const number = prs[0].number;
+            const {data: pr} = await github.rest.pulls.get({...context.repo,pull_number:number});
+            const authors=(process.env.THEME_AUTHORS||'').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+            if(pr.head.repo.full_name !== `${context.repo.owner}/${context.repo.repo}` || !authors.includes(pr.user.login.toLowerCase()))throw Error('Untrusted PR repository or author');
+            if (pr.head.sha !== run.head_sha || pr.base.ref !== 'main' || pr.state !== 'open') throw Error('Stale or unsupported PR');
+            const checks = await github.paginate(github.rest.checks.listForRef,{...context.repo,ref:pr.head.sha});
+            if(checks.some(c=>c.status!=='completed'||!['success','neutral','skipped'].includes(c.conclusion)))throw Error('Other checks are not green');
+            const {data:statuses}=await github.rest.repos.getCombinedStatusForRef({...context.repo,ref:pr.head.sha});
+            if(statuses.statuses.length && statuses.state!=='success')throw Error('Commit status checks are not green');
+            const files = await github.paginate(github.rest.pulls.listFiles,{...context.repo,pull_number:number});
+            if (!files.length || files.some(f=>!f.filename.startsWith('theme/'))) throw Error('Auto-merge is limited to theme-only PRs');
+            const {data: artifacts} = await github.rest.actions.listWorkflowRunArtifacts({...context.repo,run_id:run.id});
+            const artifact=artifacts.artifacts.find(a=>a.name==='theme-previews');
+            if(!artifact)throw Error('Missing previews');
+            const download=await github.rest.actions.downloadArtifact({...context.repo,artifact_id:artifact.id,archive_format:'zip'});
+            const fs=require('fs');fs.writeFileSync('/tmp/previews.zip',Buffer.from(download.data));
+            fs.writeFileSync('/tmp/theme-pr.json',JSON.stringify({number,sha:pr.head.sha}));
+      - name: Extract only PNG preview artifacts
+        run: |
+          python3 - <<'PYTHON'
+          import json,pathlib,re,zipfile
+          meta=json.load(open('/tmp/theme-pr.json'));root=pathlib.Path('previews')/str(int(meta['number']));root.mkdir(parents=True,exist_ok=True)
+          with zipfile.ZipFile('/tmp/previews.zip') as z:
+            if len(z.infolist())>20:raise ValueError('Too many artifacts')
+            for entry in z.infolist():
+              if not re.fullmatch(r'(home|room|thread|login)-(desktop|mobile)-(light|dark)\.png',entry.filename) or entry.file_size>5000000:raise ValueError('Invalid preview artifact')
+              data=z.read(entry)
+              if not data.startswith(b'\x89PNG\r\n\x1a\n'):raise ValueError('Not PNG')
+              (root/entry.filename).write_bytes(data)
+          PYTHON
+          git config user.name 'agora-theme[bot]'
+          git config user.email 'agora-theme[bot]@users.noreply.github.com'
+          git add previews
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save validated theme previews'
+            git push
+          fi
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const meta=require('/tmp/theme-pr.json');
+            const prefix=`https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/previews/${meta.number}`;
+            await github.rest.issues.createComment({...context.repo,issue_number:meta.number,body:`Controlli superati per ${meta.sha}.\n\n![Desktop chiaro](${prefix}/home-desktop-light.png?raw=true)\n\n![Mobile scuro](${prefix}/home-mobile-dark.png?raw=true)\n\nTutte le 16 anteprime: ${prefix}`});
+            await github.rest.pulls.merge({...context.repo,pull_number:meta.number,sha:meta.sha,merge_method:'squash'});

@@ -1,0 +1,35 @@
+name: Reload merged theme
+on:
+  push:
+    branches: [main]
+    paths: ['theme/**']
+  workflow_run:
+    workflows: ['Merge validated theme and attach previews']
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sync:
+    if: vars.AGORA_LIVE_ENABLED == 'true' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '24'}
+      - run: node scripts/bundle-theme.mjs theme
+      - name: Activate theme without restarting the server
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          THEME_SYNC_TOKEN: ${{ secrets.THEME_SYNC_TOKEN }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+        run: |
+          python3 - <<'PYTHON'
+          import os,urllib.request
+          from transport import headers,open_request
+          origin=os.environ['AGORA_URL'].rstrip('/')
+          if not origin.startswith('https://'):raise ValueError('HTTPS required')
+          request=urllib.request.Request(origin+'/internal/theme',data=open('agora/theme-bundle.json','rb').read(),headers=headers(os.environ['THEME_SYNC_TOKEN']),method='POST')
+          with open_request(request,timeout=30) as response:
+            if response.status!=200:raise RuntimeError('Theme activation failed')
+          PYTHON

@@ -1,0 +1,37 @@
+name: webmaster-check
+on:
+  workflow_dispatch:
+  push:
+    branches: ['webmaster/**']
+  schedule:
+    - cron: '41 6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: agora-webmaster-reports
+  cancel-in-progress: false
+jobs:
+  check:
+    if: vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 1}
+      - uses: actions/setup-node@v4
+        with: {node-version: '24'}
+      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: Check real site without exposing private data
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+          WEBMASTER_OUTPUT: /tmp/agora-report
+        run: node scripts/webmaster-check.mjs
+      - name: Save report and keep last 30 directories on reports branch
+        if: always()
+        run: |
+          python3 scripts/save-report.py /tmp/agora-report
