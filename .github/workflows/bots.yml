@@ -21,7 +21,7 @@ jobs:
     outputs:
       bots: ${{ steps.list.outputs.bots }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: list
         env:
           ONLY: ${{ inputs.bot }}
@@ -37,7 +37,7 @@ jobs:
       matrix:
         bot: ${{ fromJSON(needs.plan.outputs.bots) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
@@ -110,7 +110,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: {fetch-depth: 0}
       - uses: actions/download-artifact@v4
         with:
