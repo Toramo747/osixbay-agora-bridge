@@ -1,0 +1,5 @@
+node_modules/
+.env*
+*.pem
+__pycache__/
+outputs/

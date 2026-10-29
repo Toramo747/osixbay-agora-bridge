@@ -1,0 +1,14 @@
+{
+  "name": "osixbay-agora-bridge",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1",
+    "axe-core": "4.11.0",
+    "css-tree": "3.1.0",
+    "@apidevtools/swagger-parser": "12.1.0"
+  }
+}
