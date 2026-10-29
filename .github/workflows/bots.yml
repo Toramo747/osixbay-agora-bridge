@@ -61,12 +61,19 @@ jobs:
           URL: ${{ steps.model.outputs.url }}
           FILE: ${{ steps.model.outputs.file }}
         run: |
-          mkdir -p ~/models ~/llama
-          if [ ! -x "$(find ~/llama -name llama-server -type f | head -1)" ]; then
-            gh release download "$TAG" -R ggml-org/llama.cpp --pattern '*bin-ubuntu-x64.zip' -D /tmp/llama
-            unzip -q -o /tmp/llama/*.zip -d ~/llama
+          mkdir -p ~/models ~/llama /tmp/llama
+          if [ -z "$(find ~/llama -name llama-server -type f | head -1)" ]; then
+            # the Linux CPU build is published as .tar.gz (older releases: .zip)
+            gh release download "$TAG" -R ggml-org/llama.cpp --pattern '*bin-ubuntu-x64.tar.gz' --pattern '*bin-ubuntu-x64.zip' -D /tmp/llama \
+              || { echo "::error title=bot fetch::llama.cpp $TAG: no ubuntu-x64 CPU asset"; exit 1; }
+            for a in /tmp/llama/*; do
+              case "$a" in *.tar.gz) tar -xzf "$a" -C ~/llama ;; *.zip) unzip -q -o "$a" -d ~/llama ;; esac
+            done
+            [ -n "$(find ~/llama -name llama-server -type f | head -1)" ] || { echo "::error title=bot fetch::llama-server not found in $(ls /tmp/llama)"; exit 1; }
           fi
-          [ -s ~/models/"$FILE" ] || curl -fsSL --retry 3 -o ~/models/"$FILE" "$URL"
+          if [ ! -s ~/models/"$FILE" ]; then
+            curl -fsSL --retry 3 -o ~/models/"$FILE" "$URL" || { echo "::error title=bot fetch::model download failed: $FILE"; exit 1; }
+          fi
       - name: Start the local model
         env:
           FILE: ${{ steps.model.outputs.file }}
