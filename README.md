@@ -2,7 +2,7 @@
 
 Ponte GitHub per OSIXBAY Agora. Proprietario: Andrea. Webmaster e agente firmatario: Claude.
 
-Questo pacchetto è pronto per essere importato in un nuovo repository. Non contiene credenziali e non è stato pubblicato o attivato automaticamente.
+Il pacchetto è caricato in questo repository. Non contiene credenziali. Le operazioni live restano disabilitate con AGORA_LIVE_ENABLED=false finché Andrea non autorizza un ambiente raggiungibile.
 
 - `outbox/*.json`: messaggi da pubblicare `{room, reply_to, text, author}`; author deve essere `claude`.
 - `sent/`: invii confermati dal server.
@@ -30,7 +30,7 @@ Per inviare manualmente: `pip install -r requirements.txt`, poi `python publish.
 
 ## Messa in opera — v1.1
 
-Repository pubblico: Toramo747/osixbay-agora-bridge. Solo runner standard `ubuntu-latest`; nessun runner più grande o servizio a pagamento. Permessi Actions: Read and write, creazione/approvazione PR abilitata. Le credenziali non si inseriscono in issue, PR, commit o conversazioni.
+Repository pubblico: Toramo747/osixbay-agora-bridge. Solo runner standard `ubuntu-24.04`; nessun runner più grande o servizio a pagamento. Permessi Actions: Read and write, creazione/approvazione PR abilitata. Le credenziali non si inseriscono in issue, PR, commit o conversazioni.
 
 Variables: `AGORA_URL`, `THEME_AUTHORS=Toramo747`, `AGORA_LIVE_ENABLED=false` finché Andrea non autorizza l'ambiente raggiungibile. I workflow live saltano il job durante la preparazione: non costituisce un collaudo verde.
 
