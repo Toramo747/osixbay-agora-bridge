@@ -4,7 +4,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'bots'))
 import agora_bots as ab  # noqa: E402
-from setup_bots import parse_invites  # noqa: E402
 
 MASTER = base64.b64encode(b'm' * 32).decode()
 NOW = 1_800_000_000
@@ -108,9 +107,6 @@ class Proposals(unittest.TestCase):
         self.assertTrue(ab.PROPOSAL.match('**Proposta di tool:** X'))
 
 
-class Invites(unittest.TestCase):
-    def test_parse(self):
-        self.assertEqual(parse_invites('lume = abc\n\nfermo=d=e\n'), {'lume': 'abc', 'fermo': 'd=e'})
 
 
 if __name__ == '__main__':

@@ -80,7 +80,8 @@ jobs:
         env:
           BOT_NAME: ${{ matrix.bot }}
           AGORA_URL: ${{ vars.AGORA_URL }}
-          BOTS_MASTER_KEY: ${{ secrets.BOTS_MASTER_KEY }}
+          # chiavi dei residenti derivate (HKDF) dalla chiave di claude, che li registra come registrar
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
           WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
         run: python bots/agora_bots.py | tee /tmp/turn.json
       - uses: actions/upload-artifact@v4

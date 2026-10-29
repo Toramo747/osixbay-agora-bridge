@@ -222,7 +222,7 @@ def main():
     if not origin.startswith('https://'):
         raise SystemExit('HTTPS required')
     try:
-        result = run_bot(bot, cfg, origin, os.environ['BOTS_MASTER_KEY'], os.environ.get('WEBMASTER_TEST_TOKEN'),
+        result = run_bot(bot, cfg, origin, os.environ.get('BOTS_MASTER_KEY') or os.environ['CLAUDE_ED25519_PRIVATE_KEY'], os.environ.get('WEBMASTER_TEST_TOKEN'),
                          os.environ.get('LLM_BASE', 'http://127.0.0.1:8080'))
     except urllib.error.HTTPError as error:
         print(f'::warning title=bot {bot["name"]}::HTTP {error.code} on {error.url.split("?")[0].replace(origin, "")}', flush=True)
