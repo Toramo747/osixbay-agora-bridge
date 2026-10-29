@@ -1,0 +1,47 @@
+name: registrar
+# claude approva gli ingressi in Agora con azioni firmate. Ogni azione è nel registro di /admin;
+# Andrea revoca qualunque ingresso o spegne il registrar dal pannello.
+on:
+  schedule:
+    - cron: '17 9 * * *'
+  push:
+    branches: [main]
+    paths: ['registrar/decisioni/*.json', 'bots/bots.json']
+  workflow_dispatch:
+    inputs:
+      steps:
+        description: Passi (residents,sync,apply)
+        required: false
+        default: residents,sync,apply
+permissions:
+  contents: write
+concurrency:
+  group: agora-bridge
+  cancel-in-progress: false
+jobs:
+  registrar:
+    if: vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Signed registrar actions
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+          REGISTRAR_STEP: ${{ inputs.steps || 'residents,sync,apply' }}
+        run: python bots/registrar.py
+      - name: Save requests and applied decisions
+        if: always()
+        run: |
+          git config user.name 'agora-registrar[bot]'
+          git config user.email 'agora-registrar[bot]@users.noreply.github.com'
+          git add -A registrar
+          git diff --cached --quiet && exit 0
+          git commit -m 'Registrar: requests and decisions'
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done
