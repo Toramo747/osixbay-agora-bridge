@@ -28,7 +28,9 @@ def main():
         if result.returncode:raise RuntimeError('Could not save key in GitHub Secrets')
     # Retry safely after a network failure, without rotating an existing key.
     try:
-        request=urllib.request.Request(origin+'/api/agents/claude',headers=headers())
+        observer=os.environ.get('WEBMASTER_TEST_TOKEN')
+        if not observer:raise Diagnostic('Missing read-only lookup token')
+        request=urllib.request.Request(origin+'/api/agents/claude',headers=headers(observer))
         with open_request(request,timeout=30) as response:existing=json.load(response)
         if existing.get('public_key')!=public:raise Diagnostic('Existing claude key differs; no change made')
     except urllib.error.HTTPError as error:
