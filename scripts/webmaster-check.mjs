@@ -11,11 +11,14 @@ if (origin.protocol !== 'https:' || origin.username || origin.password || origin
 const base = origin.origin, output = process.env.WEBMASTER_OUTPUT || 'outputs/webmaster';
 mkdirSync(output, { recursive: true });
 const checks = [], screenshots = [];
-const gate = process.env.SITES_ACCESS_TOKEN ? { 'OAI-Sites-Authorization': 'Bearer ' + process.env.SITES_ACCESS_TOKEN } : {};
 const appToken = process.env.WEBMASTER_TEST_TOKEN;
-async function request(path, { method = 'GET', headers = {}, data } = {}) {
+// Preview lock: the server marks anonymous refusals with X-Agora-Preview-Lock: on.
+// While it is on, collaudo GETs carry the read-only WEBMASTER_TEST_TOKEN; an explicit Authorization header wins.
+let lockOn = false;
+const collaudo = () => (lockOn ? { Authorization: 'Bearer ' + appToken } : {});
+async function request(path, { method = 'GET', headers = {}, data, anonymous = false } = {}) {
     const started = performance.now();
-    const response = await fetch(base + path, { method, headers: { ...gate, ...headers, ...(data ? { 'Content-Type': 'application/json' } : {}) }, body: data ? JSON.stringify(data) : undefined, redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    const response = await fetch(base + path, { method, headers: { ...(method === 'GET' && !anonymous ? collaudo() : {}), ...headers, ...(data ? { 'Content-Type': 'application/json' } : {}) }, body: data ? JSON.stringify(data) : undefined, redirect: 'manual', signal: AbortSignal.timeout(30000) });
     return { response, ms: Math.round(performance.now() - started) };
 }
 async function check(name, fn) { try {
@@ -29,6 +32,15 @@ function ok(condition) { if (!condition)
     throw Error('Check failed'); }
 function security(response) { ok(response.headers.get('Content-Security-Policy')?.includes("default-src 'none'")); ok(response.headers.get('Strict-Transport-Security')?.includes('max-age=')); ok(response.headers.get('X-Content-Type-Options') === 'nosniff'); }
 let state = null, feed = null, pubkey = null, labId = null;
+{ const { response } = await request('/feed.json', { anonymous: true }); lockOn = response.headers.get('X-Agora-Preview-Lock') === 'on'; }
+if (lockOn) {
+    const LOCKED = ['/', '/feed.json', '/rooms/generale.json', '/api/feed', '/api/threads/1', '/openapi.json', '/theme/version', '/health', '/privacy', '/thread/1', '/room/generale'];
+    for (const path of LOCKED)
+        await check('preview-lock-anonymous:' + path, async () => { const { response } = await request(path, { anonymous: true }); ok(response.status === 503 && response.headers.get('X-Agora-Preview-Lock') === 'on' && response.headers.get('Retry-After') && /noindex/i.test(response.headers.get('X-Robots-Tag') || '')); const body = await response.text(); ok(/apre presto/i.test(body) && !/"posts"|signature|public_key/.test(body)); });
+    for (const [label, token] of [['wrong-token', 'x'.repeat(48)], ['bridge-token-not-collaudo', process.env.BRIDGE_SERVICE_TOKEN || ''], ['theme-token-not-collaudo', process.env.THEME_SYNC_TOKEN || '']])
+        await check('preview-lock-' + label, async () => { ok(token); const { response } = await request('/feed.json', { anonymous: true, headers: { Authorization: 'Bearer ' + token } }); ok(response.status === 503 && response.headers.get('X-Agora-Preview-Lock') === 'on'); });
+}
+checks.push({ name: 'preview-lock-state', ok: true, preview_lock: lockOn });
 await check('webmaster-readonly-state', async () => { const { response, ms } = await request('/internal/webmaster/check', { headers: { Authorization: 'Bearer ' + appToken } }); ok(response.status === 200); state = await response.json(); ok(typeof state.server_version === 'string' && /^[a-f0-9]{40}$/.test(state.theme_commit)); ok(Array.isArray(state.errors) && state.errors.length <= 20); ok(Object.keys(state).every(k => ['server_version', 'theme_commit', 'counts', 'quotas', 'neo_suspended', 'errors'].includes(k))); return { ms, server_version: state.server_version, theme_commit: state.theme_commit, quotas: state.quotas, neo_suspended: state.neo_suspended, error_count: state.errors.length, errors: state.errors.map(e => ({ code: e.code, route: e.route, created: e.created })) }; });
 await check('health', async () => { const { response, ms } = await request('/health'); ok(response.status === 200); const data = await response.json(); ok(data.ready === true && data.preview === false); security(response); ok(ms < 20000); return { ms }; });
 await check('theme-version', async () => { const { response, ms } = await request('/theme/version'); ok(response.status === 200); const d = await response.json(); ok(/^[a-f0-9]{40}$/.test(d.commit)); return { ms, commit: d.commit }; });
@@ -67,9 +79,13 @@ await check('lab-signed-post-isolated', async () => {
         ok(!feed.posts.some(p => p.id === labId));
     }
     const mirror = await request('/api/mirror', { headers: { Authorization: 'Bearer ' + process.env.BRIDGE_SERVICE_TOKEN } });
-    ok(mirror.response.status === 200);
-    const lines = (await mirror.response.text()).split('\n').filter(Boolean).map(s => JSON.parse(s));
-    ok(lines.every(p => p.text !== d.text));
+    if (lockOn)
+        ok(mirror.response.status === 503 && mirror.response.headers.get('X-Agora-Preview-Lock') === 'on');
+    else {
+        ok(mirror.response.status === 200);
+        const lines = (await mirror.response.text()).split('\n').filter(Boolean).map(s => JSON.parse(s));
+        ok(lines.every(p => p.text !== d.text));
+    }
     const thread = await request('/api/threads/' + labId);
     ok(thread.response.status === 404);
     return { signature_verified: true, public_feed_excluded: true, mirror_excluded: true, ttl_seconds: 86400 };
@@ -87,7 +103,7 @@ try {
         for (const mode of ['light', 'dark'])
             for (const [name, path] of pages) {
                 await check('axe:' + name + ':' + size + ':' + mode, async () => {
-                    const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', extraHTTPHeaders: gate });
+                    const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', extraHTTPHeaders: collaudo() });
                     const page = await context.newPage();
                     try {
                         await page.route('**/*', route => new URL(route.request().url()).origin === base ? route.continue() : route.abort());
@@ -118,7 +134,7 @@ finally {
     if (browser)
         await browser.close();
 }
-const report = { timestamp: new Date().toISOString(), ok: checks.every(c => c.ok), checks, screenshots };
+const report = { timestamp: new Date().toISOString(), preview_lock: lockOn, ok: checks.every(c => c.ok), checks, screenshots };
 writeFileSync(join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
-writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE'} |`).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
+writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\nBlocco anteprima: ${lockOn ? 'attivo' : 'spento'}\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE'} |`).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
 process.exitCode = report.ok ? 0 : 1;

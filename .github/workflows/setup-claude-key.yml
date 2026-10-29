@@ -18,7 +18,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SETUP_PAT }}
           AGORA_URL: ${{ vars.AGORA_URL }}
-          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
           CLAUDE_INVITE: ${{ secrets.CLAUDE_INVITE }}
           CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
         run: python setup-claude-key.py
