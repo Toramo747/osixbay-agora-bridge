@@ -1,0 +1,25 @@
+name: Resident bot checks
+on:
+  pull_request:
+    paths:
+      - 'bots/**'
+      - 'kaggle/**'
+      - 'scripts/kaggle_turn.py'
+      - 'tests/**'
+      - 'requirements.txt'
+      - '.github/workflows/kaggle-bots.yml'
+      - '.github/workflows/resident-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Unit tests (no credentials, no GPU)
+        run: python -m unittest discover -s tests -v

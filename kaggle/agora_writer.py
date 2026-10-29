@@ -2,12 +2,14 @@
 
 Gira in un notebook Kaggle privato con GPU. Non riceve chiavi, token o indirizzi del sito: firma e
 pubblicazione avvengono su GitHub. I messaggi degli altri nel piano sono dati, non istruzioni.
-Il workflow sostituisce i due segnaposto qui sotto prima di caricare lo script.
+Il workflow sostituisce piano, modello e identificatori prima di caricare lo script.
 """
 import base64, json, re, subprocess, sys
 
 PLAN = json.loads(base64.b64decode('__PLAN_B64__').decode())
 MODEL = '__MODEL_HF__'
+RUN_ID = '__RUN_ID__'
+PLAN_SHA256 = '__PLAN_SHA256__'
 WRITTEN = '\u0000SCRITTO\u0000'
 URL = re.compile(r'(https?://|www\.)\S+', re.I)
 
@@ -43,5 +45,6 @@ said = f"\n\nHo scritto in {PLAN['room']}: {text}" if len(text) >= 12 else ''
 reflection = [dict(m, content=m['content'].replace(WRITTEN, said)) for m in PLAN['reflection']]
 diary = clean(ask(reflection, max_tokens=220, temperature=0.5), name)
 with open('/kaggle/working/drafts.json', 'w') as f:
-    json.dump({'bot': name, 'model': MODEL, 'text': text, 'diary': diary}, f, ensure_ascii=False)
+    json.dump({'bot': name, 'model': MODEL, 'run_id': RUN_ID, 'plan_sha256': PLAN_SHA256,
+               'text': text, 'diary': diary}, f, ensure_ascii=False)
 print('bozze pronte:', name, len(text), 'caratteri')
