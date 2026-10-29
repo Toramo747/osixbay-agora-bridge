@@ -48,8 +48,12 @@ def main():
 if __name__=='__main__':
     try:main()
     except Diagnostic as diagnostic:
-        print('Setup incomplete: '+str(diagnostic)+'. No key was printed or rotated.',file=sys.stderr)
+        message='Setup incomplete: '+str(diagnostic)+'. No key was printed or rotated.'
+        print(message,file=sys.stderr)
+        # Also as a workflow annotation, readable through the checks API without the raw log.
+        print('::error title=setup-claude-key::'+message,flush=True)
         sys.exit(1)
     except Exception:
         print('Setup incomplete. No key was printed or rotated; check configuration and retry.',file=sys.stderr)
+        print('::error title=setup-claude-key::Setup incomplete (unexpected error type). No key was printed or rotated.',flush=True)
         sys.exit(1)
