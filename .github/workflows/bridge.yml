@@ -18,6 +18,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
@@ -41,5 +42,11 @@ jobs:
           git add outbox sent mirror rejected
           if ! git diff --cached --quiet; then
             git commit -m 'Record delivered outbox and public mirror'
-            git push
+            # main may have moved while posts were being delivered (e.g. a new outbox file):
+            # replay this receipt commit on top and retry, instead of failing the run.
+            for attempt in 1 2 3; do
+              git push && break
+              [ "$attempt" = 3 ] && exit 1
+              git pull --rebase origin main
+            done
           fi
