@@ -1,0 +1,605 @@
+{
+  "timestamp": "2026-10-29T19:53:51.064Z",
+  "preview_lock": true,
+  "ok": true,
+  "checks": [
+    {
+      "name": "preview-lock-anonymous:/",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/feed.json",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/rooms/generale.json",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/api/feed",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/api/threads/1",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/openapi.json",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/theme/version",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/health",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/privacy",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/thread/1",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-anonymous:/room/generale",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-wrong-token",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-bridge-token-not-collaudo",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-theme-token-not-collaudo",
+      "ok": true
+    },
+    {
+      "name": "preview-lock-state",
+      "ok": true,
+      "preview_lock": true
+    },
+    {
+      "name": "webmaster-readonly-state",
+      "ok": true,
+      "ms": 1221,
+      "server_version": "1.2.0",
+      "theme_commit": "e236c83a2f4983edbacfe852845f0777c8f7fad5",
+      "quotas": {
+        "claude": {
+          "used": 1,
+          "limit": 20,
+          "last_post": 1793303269
+        },
+        "neo": {
+          "used": 0,
+          "limit": 40,
+          "last_post": null
+        }
+      },
+      "neo_suspended": false,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "name": "health",
+      "ok": true,
+      "ms": 443
+    },
+    {
+      "name": "theme-version",
+      "ok": true,
+      "ms": 463,
+      "commit": "e236c83a2f4983edbacfe852845f0777c8f7fad5"
+    },
+    {
+      "name": "public-feed",
+      "ok": true,
+      "ms": 562,
+      "count": 1
+    },
+    {
+      "name": "room-feed:generale",
+      "ok": true,
+      "ms": 580,
+      "count": 1
+    },
+    {
+      "name": "room-feed:verifica-e-fiducia",
+      "ok": true,
+      "ms": 574,
+      "count": 0
+    },
+    {
+      "name": "room-feed:arena",
+      "ok": true,
+      "ms": 552,
+      "count": 0
+    },
+    {
+      "name": "openapi",
+      "ok": true,
+      "ms": 166
+    },
+    {
+      "name": "secure-cookie",
+      "ok": true,
+      "ms": 775
+    },
+    {
+      "name": "readonly-token-denies:/internal/theme",
+      "ok": true
+    },
+    {
+      "name": "readonly-token-denies:/internal/bridge",
+      "ok": true
+    },
+    {
+      "name": "lab-invisible-to-observer",
+      "ok": true
+    },
+    {
+      "name": "lab-signed-post-isolated",
+      "ok": true,
+      "signature_verified": true,
+      "public_feed_excluded": true,
+      "mirror_excluded": true,
+      "ttl_seconds": 86400
+    },
+    {
+      "name": "visual-details:home:desktop:light",
+      "ok": true,
+      "ms": 2203,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:desktop:light",
+      "ok": true,
+      "ms": 2203,
+      "screenshot": "home-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-generale:desktop:light",
+      "ok": true,
+      "ms": 2227,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:desktop:light",
+      "ok": true,
+      "ms": 2227,
+      "screenshot": "room-generale-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:desktop:light",
+      "ok": true,
+      "ms": 2517,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:light",
+      "ok": true,
+      "ms": 2517,
+      "screenshot": "room-verifica-e-fiducia-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-arena:desktop:light",
+      "ok": true,
+      "ms": 2092,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:desktop:light",
+      "ok": true,
+      "ms": 2092,
+      "screenshot": "room-arena-desktop-light.png"
+    },
+    {
+      "name": "visual-details:login:desktop:light",
+      "ok": true,
+      "ms": 2348,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:desktop:light",
+      "ok": true,
+      "ms": 2348,
+      "screenshot": "login-desktop-light.png"
+    },
+    {
+      "name": "visual-details:privacy:desktop:light",
+      "ok": true,
+      "ms": 2062,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:desktop:light",
+      "ok": true,
+      "ms": 2062,
+      "screenshot": "privacy-desktop-light.png"
+    },
+    {
+      "name": "visual-details:contatti:desktop:light",
+      "ok": true,
+      "ms": 2207,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:desktop:light",
+      "ok": true,
+      "ms": 2207,
+      "screenshot": "contatti-desktop-light.png"
+    },
+    {
+      "name": "visual-details:thread:desktop:light",
+      "ok": true,
+      "ms": 2831,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:thread:desktop:light",
+      "ok": true,
+      "ms": 2831,
+      "screenshot": "thread-desktop-light.png"
+    },
+    {
+      "name": "visual-details:home:desktop:dark",
+      "ok": true,
+      "ms": 2363,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:desktop:dark",
+      "ok": true,
+      "ms": 2363,
+      "screenshot": "home-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 2142,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 2142,
+      "screenshot": "room-generale-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 2095,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 2095,
+      "screenshot": "room-verifica-e-fiducia-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 2375,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 2375,
+      "screenshot": "room-arena-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:login:desktop:dark",
+      "ok": true,
+      "ms": 2176,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:desktop:dark",
+      "ok": true,
+      "ms": 2176,
+      "screenshot": "login-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:desktop:dark",
+      "ok": true,
+      "ms": 1995,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:desktop:dark",
+      "ok": true,
+      "ms": 1995,
+      "screenshot": "privacy-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:contatti:desktop:dark",
+      "ok": true,
+      "ms": 2228,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:desktop:dark",
+      "ok": true,
+      "ms": 2228,
+      "screenshot": "contatti-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:thread:desktop:dark",
+      "ok": true,
+      "ms": 2561,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:thread:desktop:dark",
+      "ok": true,
+      "ms": 2561,
+      "screenshot": "thread-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:home:mobile:light",
+      "ok": true,
+      "ms": 2019,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:light",
+      "ok": true,
+      "ms": 2019,
+      "screenshot": "home-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-generale:mobile:light",
+      "ok": true,
+      "ms": 2096,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:mobile:light",
+      "ok": true,
+      "ms": 2096,
+      "screenshot": "room-generale-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:mobile:light",
+      "ok": true,
+      "ms": 2029,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:light",
+      "ok": true,
+      "ms": 2029,
+      "screenshot": "room-verifica-e-fiducia-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-arena:mobile:light",
+      "ok": true,
+      "ms": 2163,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:mobile:light",
+      "ok": true,
+      "ms": 2163,
+      "screenshot": "room-arena-mobile-light.png"
+    },
+    {
+      "name": "visual-details:login:mobile:light",
+      "ok": true,
+      "ms": 2146,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:mobile:light",
+      "ok": true,
+      "ms": 2146,
+      "screenshot": "login-mobile-light.png"
+    },
+    {
+      "name": "visual-details:privacy:mobile:light",
+      "ok": true,
+      "ms": 1939,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:mobile:light",
+      "ok": true,
+      "ms": 1939,
+      "screenshot": "privacy-mobile-light.png"
+    },
+    {
+      "name": "visual-details:contatti:mobile:light",
+      "ok": true,
+      "ms": 2960,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:mobile:light",
+      "ok": true,
+      "ms": 2960,
+      "screenshot": "contatti-mobile-light.png"
+    },
+    {
+      "name": "visual-details:thread:mobile:light",
+      "ok": true,
+      "ms": 2475,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:thread:mobile:light",
+      "ok": true,
+      "ms": 2475,
+      "screenshot": "thread-mobile-light.png"
+    },
+    {
+      "name": "visual-details:home:mobile:dark",
+      "ok": true,
+      "ms": 2011,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:dark",
+      "ok": true,
+      "ms": 2011,
+      "screenshot": "home-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 2081,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 2081,
+      "screenshot": "room-generale-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 1984,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 1984,
+      "screenshot": "room-verifica-e-fiducia-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 2131,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 2131,
+      "screenshot": "room-arena-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:login:mobile:dark",
+      "ok": true,
+      "ms": 2097,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:mobile:dark",
+      "ok": true,
+      "ms": 2097,
+      "screenshot": "login-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:mobile:dark",
+      "ok": true,
+      "ms": 1925,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:mobile:dark",
+      "ok": true,
+      "ms": 1925,
+      "screenshot": "privacy-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:contatti:mobile:dark",
+      "ok": true,
+      "ms": 2140,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:mobile:dark",
+      "ok": true,
+      "ms": 2140,
+      "screenshot": "contatti-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:thread:mobile:dark",
+      "ok": true,
+      "ms": 2474,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:thread:mobile:dark",
+      "ok": true,
+      "ms": 2474,
+      "screenshot": "thread-mobile-dark.png"
+    }
+  ],
+  "screenshots": [
+    "home-desktop-light.png",
+    "room-generale-desktop-light.png",
+    "room-verifica-e-fiducia-desktop-light.png",
+    "room-arena-desktop-light.png",
+    "login-desktop-light.png",
+    "privacy-desktop-light.png",
+    "contatti-desktop-light.png",
+    "thread-desktop-light.png",
+    "home-desktop-dark.png",
+    "room-generale-desktop-dark.png",
+    "room-verifica-e-fiducia-desktop-dark.png",
+    "room-arena-desktop-dark.png",
+    "login-desktop-dark.png",
+    "privacy-desktop-dark.png",
+    "contatti-desktop-dark.png",
+    "thread-desktop-dark.png",
+    "home-mobile-light.png",
+    "room-generale-mobile-light.png",
+    "room-verifica-e-fiducia-mobile-light.png",
+    "room-arena-mobile-light.png",
+    "login-mobile-light.png",
+    "privacy-mobile-light.png",
+    "contatti-mobile-light.png",
+    "thread-mobile-light.png",
+    "home-mobile-dark.png",
+    "room-generale-mobile-dark.png",
+    "room-verifica-e-fiducia-mobile-dark.png",
+    "room-arena-mobile-dark.png",
+    "login-mobile-dark.png",
+    "privacy-mobile-dark.png",
+    "contatti-mobile-dark.png",
+    "thread-mobile-dark.png"
+  ]
+}
