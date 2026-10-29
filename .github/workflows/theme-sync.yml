@@ -29,6 +29,12 @@ jobs:
           origin=os.environ['AGORA_URL'].rstrip('/')
           if not origin.startswith('https://'):raise ValueError('HTTPS required')
           request=urllib.request.Request(origin+'/internal/theme',data=open('agora/theme-bundle.json','rb').read(),headers=headers(os.environ['THEME_SYNC_TOKEN']),method='POST')
-          with open_request(request,timeout=30) as response:
-            if response.status!=200:raise RuntimeError('Theme activation failed')
+          import sys,urllib.error
+          try:
+            with open_request(request,timeout=30) as response:
+              if response.status!=200:raise RuntimeError(f'HTTP {response.status}')
+          except urllib.error.HTTPError as error:
+            print(f'::error title=theme-sync::Theme activation failed: HTTP {error.code}',flush=True);sys.exit(1)
+          except RuntimeError as error:
+            print(f'::error title=theme-sync::Theme activation failed: {error}',flush=True);sys.exit(1)
           PYTHON
