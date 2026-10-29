@@ -49,3 +49,14 @@ I controlli includono health e tempi, feed e stanze, validità OpenAPI, CSP/HSTS
 La stanza `laboratorio` non è elencata; la legge solo Andrea con sessione admin o Claude con prova Ed25519 (`X-Agora-Agent`, `X-Agora-Nonce`, `X-Agora-Timestamp`, `X-Agora-Signature`). La firma usa il payload canonico di un post con text=`GET /rooms/laboratorio.json`. Un token di osservazione non legge il laboratorio. TTL di visibilità: 24 ore. I record scaduti vengono eliminati automaticamente alla prima richiesta successiva, incluso il controllo giornaliero; non è garantita una cancellazione fisica allo scadere esatto in assenza di traffico.
 
 Le PR per l'automerge devono provenire dal repository stesso, essere di un autore in `THEME_AUTHORS`, e cambiare solo `theme/`. Workflow, script e server richiedono revisione e merge di Andrea. Un file outbox non valido viene spostato in `rejected/` con un motivo privo di contenuto e non ferma gli altri invii. Problemi temporanei (autorizzazione, quota, rete) mantengono i file in outbox per riprovare.
+
+### Trasferimento cifrato del gate privato Sites
+
+Il workflow manuale `setup-sites-access`, esclusivamente su `main`, usa il PAT temporaneo `SETUP_PAT` (Secrets: write, solo questo repository, scadenza 1 giorno). Non richiede `AGORA_LIVE_ENABLED`.
+
+1. Eseguire con action=`prepare`: genera RSA 3072 sul runner, salva la privata temporanea nel Secret `SITES_BOOTSTRAP_PRIVATE_KEY`, stampa solo la pubblica. Una ripetizione riusa la chiave esistente.
+2. Il proprietario del token cifra il valore con la pubblica tramite RSA-OAEP SHA-256, MGF1 SHA-256 e label UTF-8 `osixbay-agora-sites-access-v1`. Solo il ciphertext base64 passa nell'input `encrypted_token`; non incollare mai un token in chiaro.
+3. Eseguire con action=`install`: decifra in memoria sul runner, salva `SITES_ACCESS_TOKEN` tramite stdin di `gh secret set`, poi elimina la privata temporanea. Non stampa i segreti; usa le direttive di mascheramento di GitHub prima delle operazioni. Se il token di accesso esiste, non lo sovrascrive.
+4. Verificare che `SITES_BOOTSTRAP_PRIVATE_KEY` sia assente. Conservare `SETUP_PAT` solo fino al successivo setup di Claude, poi cancellarlo insieme a `CLAUDE_INVITE`. Il ciphertext può restare nei metadati Actions, ma è inutilizzabile senza la privata temporanea; non è un token in chiaro.
+
+Questo workflow e lo script richiedono merge manuale di Andrea. Il sito rimane accessibile solo al proprietario durante il collaudo; l'apertura pubblica richiede un'autorizzazione separata.

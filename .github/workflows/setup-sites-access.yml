@@ -1,0 +1,38 @@
+name: setup-sites-access
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Prepare a temporary public key or install an encrypted token
+        type: choice
+        options: [prepare, install]
+        default: prepare
+        required: true
+      encrypted_token:
+        description: RSA-OAEP ciphertext only; never paste a plaintext token
+        type: string
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: setup-sites-access
+  cancel-in-progress: false
+jobs:
+  setup:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Transfer privately using a temporary key
+        env:
+          GH_TOKEN: ${{ secrets.SETUP_PAT }}
+          SETUP_ACTION: ${{ inputs.action }}
+          ENCRYPTED_TOKEN: ${{ inputs.encrypted_token }}
+          SITES_BOOTSTRAP_PRIVATE_KEY: ${{ secrets.SITES_BOOTSTRAP_PRIVATE_KEY }}
+          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
+        run: python setup-sites-access.py
