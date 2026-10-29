@@ -1,0 +1,126 @@
+name: agora-kaggle-bots
+# Residenti con modelli più grandi: Kaggle (GPU gratuita) scrive solo le bozze; GitHub decide,
+# firma e pubblica. Kaggle non riceve chiavi, token né l'indirizzo del sito.
+# Interruttore: variabile KAGGLE_BOTS_ENABLED. Segreti richiesti: KAGGLE_USERNAME, KAGGLE_KEY.
+on:
+  schedule:
+    - cron: '47 */8 * * *'
+  workflow_dispatch:
+    inputs:
+      bot:
+        description: Solo questo bot (vuoto = tutti)
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: agora-kaggle-bots
+  cancel-in-progress: false
+jobs:
+  plan:
+    if: vars.KAGGLE_BOTS_ENABLED == 'true' && vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    outputs:
+      bots: ${{ steps.list.outputs.bots }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: list
+        env:
+          ONLY: ${{ inputs.bot }}
+        run: |
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner')=='kaggle' and (not os.environ.get('ONLY') or x['name']==os.environ['ONLY'])];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+  turn:
+    needs: plan
+    if: needs.plan.outputs.bots != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        bot: ${{ fromJSON(needs.plan.outputs.bots) }}
+    env:
+      BOT_NAME: ${{ matrix.bot }}
+      AGORA_URL: ${{ vars.AGORA_URL }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt 'kaggle>=1.6,<2'
+      - name: Decide the action (no keys)
+        env:
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+        run: python bots/agora_bots.py plan /tmp/plan.json
+      - name: Write the drafts on Kaggle
+        id: kaggle
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          case "$KAGGLE_USERNAME" in ''|*[!a-zA-Z0-9_-]*) echo '::error title=kaggle::KAGGLE_USERNAME missing or invalid'; exit 1;; esac
+          mkdir -p /tmp/kernel /tmp/out
+          python3 - <<'PY'
+          import base64, json, os
+          cfg = json.load(open('bots/bots.json'))
+          bot = next(b for b in cfg['bots'] if b['name'] == os.environ['BOT_NAME'])
+          plan = base64.b64encode(open('/tmp/plan.json', 'rb').read()).decode()
+          src = open('kaggle/agora_writer.py').read().replace('__PLAN_B64__', plan).replace('__MODEL_HF__', bot['model']['hf'])
+          open('/tmp/kernel/agora_writer.py', 'w').write(src)
+          slug = 'agora-' + bot['name']
+          json.dump({'id': os.environ['KAGGLE_USERNAME'] + '/' + slug, 'title': slug, 'code_file': 'agora_writer.py',
+                     'language': 'python', 'kernel_type': 'script', 'is_private': True, 'enable_gpu': True,
+                     'enable_internet': True, 'dataset_sources': [], 'competition_sources': [], 'kernel_sources': [],
+                     'model_sources': []}, open('/tmp/kernel/kernel-metadata.json', 'w'))
+          PY
+          ref="$KAGGLE_USERNAME/agora-$BOT_NAME"
+          kaggle kernels push -p /tmp/kernel
+          started=0
+          for i in $(seq 1 90); do
+            sleep 30
+            status=$(kaggle kernels status "$ref" 2>&1 | tr 'A-Z' 'a-z')
+            case "$status" in
+              *queued*|*running*) started=1;;
+              *complete*) [ "$started" = 1 ] || [ "$i" -ge 4 ] && break;;
+              *error*|*cancel*) echo "::error title=kaggle $BOT_NAME::$status"; kaggle kernels output "$ref" -p /tmp/out >/dev/null 2>&1; tail -20 /tmp/out/*.log 2>/dev/null; exit 1;;
+            esac
+          done
+          kaggle kernels output "$ref" -p /tmp/out
+          test -s /tmp/out/drafts.json || { echo "::error title=kaggle $BOT_NAME::no drafts"; exit 1; }
+      - name: Sign and publish here on GitHub
+        env:
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+        run: python bots/agora_bots.py finish /tmp/plan.json /tmp/out/drafts.json | tee /tmp/turn.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: memory-${{ matrix.bot }}
+          path: bots/${{ matrix.bot }}/memory.md
+          if-no-files-found: ignore
+          retention-days: 3
+  remember:
+    needs: turn
+    if: always() && needs.turn.result != 'skipped'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with: {fetch-depth: 0}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: memory-*
+          path: /tmp/memories
+      - name: Save the diaries
+        run: |
+          for d in /tmp/memories/memory-*; do
+            [ -d "$d" ] || continue
+            name=${d##*/memory-}
+            case "$name" in *[!a-z0-9-]*|'') continue;; esac
+            mkdir -p "bots/$name"
+            [ -f "$d/memory.md" ] && head -c 4000 "$d/memory.md" > "bots/$name/memory.md"
+          done
+          git config user.name 'agora-bots[bot]'
+          git config user.email 'agora-bots[bot]@users.noreply.github.com'
+          git add bots/*/memory.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'Residents: update diaries'
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done

@@ -26,7 +26,7 @@ jobs:
         env:
           ONLY: ${{ inputs.bot }}
         run: |
-          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if not os.environ.get('ONLY') or x['name']==os.environ['ONLY']];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner')!='kaggle' and (not os.environ.get('ONLY') or x['name']==os.environ['ONLY'])];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
   turn:
     needs: plan
     runs-on: ubuntu-24.04

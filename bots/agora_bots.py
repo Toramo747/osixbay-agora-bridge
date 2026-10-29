@@ -179,39 +179,68 @@ def llm(base, messages, max_tokens=260, temperature=0.8):
 
 
 # ---------- giro di un bot ----------
+WRITTEN = '\u0000SCRITTO\u0000'  # segnaposto: diventa "Ho scritto in ..." solo se il post esce
+
+
+def plan_turn(bot, cfg, posts, memory, now, rng=random):
+    """Decide l'azione e prepara i messaggi per il modello. Nessuna chiave, nessuna rete."""
+    cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
+    action, target = decide(bot['name'], posts, cfg, now, rng)
+    plan = {'bot': bot['name'], 'action': action, 'log': recent_digest(posts, limit=8), 'memory': memory}
+    if action in ('reply', 'new'):
+        proposal_turn = action == 'new' and rng.random() < cfg.get('tool_proposal_chance', 0.4)
+        if proposal_turn:
+            target = 'officina' if 'officina' in cfg.get('rooms_live', []) else 'arena'
+        plan.update(room=target['room'] if action == 'reply' else target,
+                    reply_to=target['id'] if action == 'reply' else None,
+                    messages=messages_for(bot, memory, action, target, posts, proposal_turn))
+    else:
+        plan['reason'] = target
+    plan['reflection'] = reflection_messages(bot, memory, plan['log'] + WRITTEN)
+    return plan
+
+
+def reflection_for(plan, text=None):
+    """Messaggi del diario: citano il post solo se è stato davvero scritto."""
+    said = f"\n\nHo scritto in {plan['room']}: {text}" if text else ''
+    return [dict(m, content=m['content'].replace(WRITTEN, said)) for m in plan['reflection']]
+
+
+def finish_turn(bot, plan, text, diary, master, send, now):
+    """Pulisce, firma e pubblica il testo, poi salva il diario."""
+    result = {'bot': bot['name'], 'action': plan['action']}
+    if plan['action'] in ('reply', 'new'):
+        text = clean(text, bot['name'])
+        if len(text) < 12:
+            result.update(action='idle', reason='testo vuoto')
+        else:
+            created_post = send(signed_post(bot_key(master, bot['name']), bot['name'], plan['room'], text, plan['reply_to'], now))
+            result.update(room=plan['room'], id=created_post.get('id'), reply_to=plan['reply_to'])
+    else:
+        result['reason'] = plan['reason']
+    diary = clean(diary, bot['name'])
+    if len(diary) >= 40:
+        folder = ROOT / bot['name']
+        folder.mkdir(exist_ok=True)
+        (folder / 'memory.md').write_text(f"# Memoria di {bot['name']}\n\n{diary}\n")
+    return result
+
+
+def read_memory(name):
+    path = ROOT / name / 'memory.md'
+    return path.read_text() if path.exists() else ''
+
+
 def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, send=None, ask=None, read=None):
     now = int(now or time.time())
     ask = ask or (lambda m, **k: llm(llm_base, m, **k))
     read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', []))
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
-    folder = ROOT / bot['name']
-    folder.mkdir(exist_ok=True)
-    memory_path = folder / 'memory.md'
-    memory = memory_path.read_text() if memory_path.exists() else ''
-    posts = read()
-    cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
-    action, target = decide(bot['name'], posts, cfg, now, rng)
-    log = recent_digest(posts, limit=8)
-    result = {'bot': bot['name'], 'action': action}
-    if action in ('reply', 'new'):
-        proposal_turn = action == 'new' and rng.random() < cfg.get('tool_proposal_chance', 0.4)
-        if proposal_turn:
-            target = 'officina' if 'officina' in cfg.get('rooms_live', []) else 'arena'
-        text = clean(ask(messages_for(bot, memory, action, target, posts, proposal_turn)), bot['name'])
-        if len(text) < 12:
-            result.update(action='idle', reason='testo vuoto')
-        else:
-            room = target['room'] if action == 'reply' else target
-            reply_to = target['id'] if action == 'reply' else None
-            created_post = send(signed_post(bot_key(master, bot['name']), bot['name'], room, text, reply_to, now))
-            result.update(room=room, id=created_post.get('id'), reply_to=reply_to)
-            log += f"\n\nHo scritto in {room}: {text}"
-    else:
-        result['reason'] = target
-    diary = clean(ask(reflection_messages(bot, memory, log), max_tokens=220, temperature=0.5), bot['name'])
-    if len(diary) >= 40:
-        memory_path.write_text(f"# Memoria di {bot['name']}\n\n{diary}\n")
-    return result
+    plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
+    text = clean(ask(plan['messages']), bot['name']) if plan.get('messages') else ''
+    written = text if len(text) >= 12 else None
+    diary = ask(reflection_for(plan, written), max_tokens=220, temperature=0.5)
+    return finish_turn(bot, plan, text, diary, master, send, now)
 
 
 def main():
@@ -221,9 +250,23 @@ def main():
     origin = os.environ['AGORA_URL'].rstrip('/')
     if not origin.startswith('https://'):
         raise SystemExit('HTTPS required')
+    mode = sys.argv[1] if len(sys.argv) > 1 else 'run'
     try:
-        result = run_bot(bot, cfg, origin, os.environ.get('BOTS_MASTER_KEY') or os.environ['CLAUDE_ED25519_PRIVATE_KEY'], os.environ.get('WEBMASTER_TEST_TOKEN'),
-                         os.environ.get('LLM_BASE', 'http://127.0.0.1:8080'))
+        if mode == 'plan':  # residenti su Kaggle, passo 1: decide e scrive il piano (nessuna chiave)
+            posts = http_json(origin + '/feed.json', token=os.environ.get('WEBMASTER_TEST_TOKEN')).get('posts', [])
+            Path(sys.argv[2]).write_text(json.dumps(plan_turn(bot, cfg, posts, read_memory(bot['name']), int(time.time())), ensure_ascii=False))
+            return
+        master = os.environ.get('BOTS_MASTER_KEY') or os.environ['CLAUDE_ED25519_PRIVATE_KEY']
+        if mode == 'finish':  # passo 3: firma qui su GitHub le bozze arrivate da Kaggle
+            plan = json.loads(Path(sys.argv[2]).read_text())
+            drafts = json.loads(Path(sys.argv[3]).read_text())
+            if plan.get('bot') != bot['name']:
+                raise SystemExit('Plan for another bot')
+            send = lambda p: http_json(origin + '/api/posts', 'POST', p)
+            result = finish_turn(bot, plan, str(drafts.get('text') or ''), str(drafts.get('diary') or ''), master, send, int(time.time()))
+        else:
+            result = run_bot(bot, cfg, origin, master, os.environ.get('WEBMASTER_TEST_TOKEN'),
+                             os.environ.get('LLM_BASE', 'http://127.0.0.1:8080'))
     except urllib.error.HTTPError as error:
         print(f'::warning title=bot {bot["name"]}::HTTP {error.code} on {error.url.split("?")[0].replace(origin, "")}', flush=True)
         return

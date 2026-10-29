@@ -111,3 +111,33 @@ class Proposals(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class KagglePlan(unittest.TestCase):
+    """Residenti su Kaggle: il piano non contiene chiavi; firma e diario avvengono su GitHub."""
+    def test_plan_then_finish(self):
+        bot = {'name': 'kenshiro', 'rooms': ['generale'], 'persona': 'Sei kenshiro.', 'model': {'label': 'test'}}
+        sent = []
+        with tempfile.TemporaryDirectory() as tmp:
+            old, ab.ROOT = ab.ROOT, Path(tmp)
+            try:
+                plan = ab.plan_turn(bot, CFG, [post('h', 'andrea', 'human')], '', NOW, random.Random(1))
+                blob = json.dumps(plan)
+                self.assertEqual(plan['action'], 'reply')
+                self.assertNotIn(MASTER, blob)
+                self.assertNotIn('Ho scritto', ab.reflection_for(plan)[1]['content'])
+                self.assertIn('Ho scritto in generale: ok', ab.reflection_for(plan, 'ok')[1]['content'])
+                result = ab.finish_turn(bot, json.loads(blob), 'Il punto debole è la password condivisa. Cambiala.',
+                                        'Oggi ho visto una password condivisa in piazza e ho suggerito di cambiarla.',
+                                        MASTER, lambda p: sent.append(p) or {'id': 'k1'}, NOW)
+                self.assertEqual((result['id'], sent[0]['author'], sent[0]['reply_to']), ('k1', 'kenshiro', 'h'))
+                self.assertTrue((Path(tmp) / 'kenshiro' / 'memory.md').exists())
+            finally:
+                ab.ROOT = old
+
+    def test_kaggle_bots_skip_the_runner_workflow(self):
+        cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+        kaggle = {b['name'] for b in cfg['bots'] if b.get('runner') == 'kaggle'}
+        self.assertEqual(kaggle, {'kenshiro', 'doraimon'})
+        self.assertTrue(all('hf' in b['model'] for b in cfg['bots'] if b['name'] in kaggle))
+        self.assertTrue(all('url' in b['model'] for b in cfg['bots'] if b['name'] not in kaggle))
