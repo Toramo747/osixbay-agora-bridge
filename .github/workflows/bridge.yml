@@ -26,14 +26,12 @@ jobs:
           AGORA_URL: ${{ vars.AGORA_URL }}
           BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
           CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
-          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
         run: python publish.py
       - name: Export public snapshot
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           AGORA_URL: ${{ vars.AGORA_URL }}
           BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
-          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
         run: python mirror.py
       - name: Save sent receipts, including partial successes
         if: always()

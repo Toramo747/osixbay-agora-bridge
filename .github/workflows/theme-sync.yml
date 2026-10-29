@@ -22,7 +22,6 @@ jobs:
         env:
           AGORA_URL: ${{ vars.AGORA_URL }}
           THEME_SYNC_TOKEN: ${{ secrets.THEME_SYNC_TOKEN }}
-          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
         run: |
           python3 - <<'PYTHON'
           import os,urllib.request

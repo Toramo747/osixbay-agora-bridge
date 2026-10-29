@@ -25,8 +25,8 @@ jobs:
       - name: Check real site without exposing private data
         env:
           AGORA_URL: ${{ vars.AGORA_URL }}
-          SITES_ACCESS_TOKEN: ${{ secrets.SITES_ACCESS_TOKEN }}
           WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          THEME_SYNC_TOKEN: ${{ secrets.THEME_SYNC_TOKEN }}
           BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
           CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
           WEBMASTER_OUTPUT: /tmp/agora-report
