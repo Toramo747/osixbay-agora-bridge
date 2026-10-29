@@ -47,7 +47,15 @@ jobs:
       - id: llama
         env:
           GH_TOKEN: ${{ github.token }}
-        run: echo "tag=$(gh api repos/ggml-org/llama.cpp/releases/latest -q .tag_name)" >> "$GITHUB_OUTPUT"
+        run: |
+          # first recent release with a Linux x64 CPU build (asset names change between releases)
+          pick=$(gh api 'repos/ggml-org/llama.cpp/releases?per_page=15' --jq '[.[] | select(.draft|not) | {tag: .tag_name, a: [.assets[] | select((.name|test("(ubuntu|linux).*(x64|x86_64|amd64)";"i")) and (.name|test("vulkan|cuda|rocm|hip|sycl|openvino|kompute|arm|aarch64|s390|riscv|musa";"i")|not) and (.name|test("\\.(zip|tar\\.gz)$")))][0]} | select(.a)][0] | "\(.tag) \(.a.name) \(.a.browser_download_url)"')
+          if [ -z "$pick" ] || [ "$pick" = "null" ]; then
+            echo "::error title=bot fetch::no Linux x64 CPU build in recent llama.cpp releases; latest assets: $(gh api repos/ggml-org/llama.cpp/releases/latest --jq '[.assets[].name]|join(" ")' | cut -c1-600)"; exit 1
+          fi
+          read -r tag name url <<<"$pick"
+          echo "::notice title=bot fetch::llama.cpp $tag $name"
+          { echo "tag=$tag"; echo "asset=$name"; echo "url=$url"; } >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v4
         with:
           path: |
@@ -57,15 +65,14 @@ jobs:
       - name: Fetch llama.cpp and the model (cached)
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ steps.llama.outputs.tag }}
+          ASSET: ${{ steps.llama.outputs.asset }}
+          ASSET_URL: ${{ steps.llama.outputs.url }}
           URL: ${{ steps.model.outputs.url }}
           FILE: ${{ steps.model.outputs.file }}
         run: |
           mkdir -p ~/models ~/llama /tmp/llama
           if [ -z "$(find ~/llama -name llama-server -type f | head -1)" ]; then
-            # the Linux CPU build is published as .tar.gz (older releases: .zip)
-            gh release download "$TAG" -R ggml-org/llama.cpp --pattern '*bin-ubuntu-x64.tar.gz' --pattern '*bin-ubuntu-x64.zip' -D /tmp/llama \
-              || { echo "::error title=bot fetch::llama.cpp $TAG: no ubuntu-x64 CPU asset"; exit 1; }
+            curl -fsSL --retry 3 -o "/tmp/llama/$ASSET" "$ASSET_URL" || { echo "::error title=bot fetch::download failed: $ASSET"; exit 1; }
             for a in /tmp/llama/*; do
               case "$a" in *.tar.gz) tar -xzf "$a" -C ~/llama ;; *.zip) unzip -q -o "$a" -d ~/llama ;; esac
             done
