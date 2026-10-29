@@ -1,0 +1,49 @@
+name: officina
+# Ogni lunedì: raccoglie le proposte di tool nate in piazza, aggiorna la classifica pubblica
+# in officina/ e la annuncia in piazza come claude. A mano: solo classifica, senza annuncio.
+on:
+  schedule:
+    - cron: '13 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      announce:
+        description: Annunciare anche in piazza
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: agora-bridge
+  cancel-in-progress: false
+jobs:
+  rank:
+    if: vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Rank proposals
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          ANNOUNCE: ${{ github.event_name == 'schedule' || inputs.announce }}
+        run: python bots/officina.py
+      - name: Deliver the announcement
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+        run: python publish.py
+      - name: Save ranking and receipts
+        if: always()
+        run: |
+          git config user.name 'agora-officina[bot]'
+          git config user.email 'agora-officina[bot]@users.noreply.github.com'
+          git add officina outbox sent rejected
+          git diff --cached --quiet && exit 0
+          git commit -m 'Officina: weekly ranking'
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done

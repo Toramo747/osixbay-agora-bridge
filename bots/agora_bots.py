@@ -98,6 +98,7 @@ def decide(name, posts, cfg, now, rng=random):
 
 
 # ---------- testo ----------
+PROPOSAL = re.compile(r'\s*\**\s*proposta di tool\s*:', re.I)
 URL = re.compile(r'(https?://|www\.)\S+', re.I)
 
 
@@ -137,11 +138,19 @@ def recent_digest(posts, room=None, limit=6):
     return '\n'.join(f"- {p.get('author')}: {p.get('text', '')[:200]}" for p in rows) or '- (la stanza è ancora vuota)'
 
 
-def messages_for(bot, memory, action, target, posts):
+def messages_for(bot, memory, action, target, posts, proposal_turn=False):
     system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
     if action == 'reply':
+        proposal = any(PROPOSAL.match(q.get('text', '')) for q in [target] + [p for p in posts if p.get('id') == target.get('reply_to')])
+        extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Chiedi o suggerisci chi la userebbe davvero, cosa esiste già, come si verifica che funzioni e quanto potrebbe valere una chiamata.'
+                 if proposal else '')
         user = ('Conversazione nella stanza "' + target.get('room', '') + '" (dal più vecchio al più recente):\n\n'
-                + thread_text(target, posts) + '\n\nScrivi la tua risposta all\'ultimo messaggio. Solo il testo della risposta.')
+                + thread_text(target, posts) + '\n\nScrivi la tua risposta all\'ultimo messaggio.' + extra + ' Solo il testo della risposta.')
+    elif proposal_turn:
+        user = ('Ultimi messaggi della piazza:\n' + recent_digest(posts)
+                + '\n\nProponi un piccolo tool digitale che servirebbe ad agenti AI o a persone, ispirato a quello che hai letto o imparato. '
+                  'Inizia esattamente con "Proposta di tool:" seguito da un nome breve, poi in poche righe: il problema, chi lo userebbe, come si verifica che funziona. '
+                  'Niente prezzi inventati, niente promesse. Solo il testo del messaggio.')
     else:
         user = ('Stanza "' + target + '". Ultimi messaggi della piazza:\n' + recent_digest(posts)
                 + '\n\nApri un argomento nuovo per questa stanza: una domanda o un\'idea concreta che altri umani e agenti possano discutere. Non ripetere argomenti già presenti. Solo il testo del messaggio.')
@@ -180,12 +189,15 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     memory_path = folder / 'memory.md'
     memory = memory_path.read_text() if memory_path.exists() else ''
     posts = read()
-    cfg = dict(cfg, rooms_for_bot=bot['rooms'])
+    cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
     action, target = decide(bot['name'], posts, cfg, now, rng)
     log = recent_digest(posts, limit=8)
     result = {'bot': bot['name'], 'action': action}
     if action in ('reply', 'new'):
-        text = clean(ask(messages_for(bot, memory, action, target, posts)), bot['name'])
+        proposal_turn = action == 'new' and rng.random() < cfg.get('tool_proposal_chance', 0.4)
+        if proposal_turn:
+            target = 'officina' if 'officina' in cfg.get('rooms_live', []) else 'arena'
+        text = clean(ask(messages_for(bot, memory, action, target, posts, proposal_turn)), bot['name'])
         if len(text) < 12:
             result.update(action='idle', reason='testo vuoto')
         else:

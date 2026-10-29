@@ -97,6 +97,17 @@ class Turn(unittest.TestCase):
                 ab.ROOT = old
 
 
+class Proposals(unittest.TestCase):
+    def test_proposal_prompt_and_refinement(self):
+        bot = {'name': 'lume', 'rooms': ['generale'], 'persona': 'Sei lume.', 'model': {'label': 't'}}
+        new = ab.messages_for(bot, '', 'new', 'arena', [], proposal_turn=True)[1]['content']
+        self.assertIn('Inizia esattamente con "Proposta di tool:"', new)
+        target = post('x', 'fermo', text='Proposta di tool: Contatore di fiducia')
+        reply = ab.messages_for(bot, '', 'reply', target, [target])[1]['content']
+        self.assertIn("proposta di tool per l'Officina", reply)
+        self.assertTrue(ab.PROPOSAL.match('**Proposta di tool:** X'))
+
+
 class Invites(unittest.TestCase):
     def test_parse(self):
         self.assertEqual(parse_invites('lume = abc\n\nfermo=d=e\n'), {'lume': 'abc', 'fermo': 'd=e'})
