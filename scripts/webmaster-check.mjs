@@ -117,7 +117,7 @@ try {
                         screenshots.push(png);
                         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
                         const ms = Math.round(performance.now() - started);
-                        checks.push({ name: 'visual-details:' + name + ':' + size + ':' + mode, ok: !overflow && !result.violations.length, ms, overflow, violations: result.violations.map(v => ({ id: v.id, impact: v.impact, count: v.nodes.length })) });
+                        checks.push({ name: 'visual-details:' + name + ':' + size + ':' + mode, ok: !overflow && !result.violations.length, ms, overflow, violations: result.violations.map(v => ({ id: v.id, impact: v.impact, count: v.nodes.length, nodes: v.nodes.slice(0, 5).map(n => ({ target: n.target.join(' ').slice(0, 200), ...Object.fromEntries(['fgColor', 'bgColor', 'contrastRatio', 'fontSize', 'fontWeight'].map(k => [k, n.any?.[0]?.data?.[k]]).filter(([, x]) => x !== undefined)) })) })) });
                         ok(!overflow && !result.violations.length);
                         return { ms, screenshot: png };
                     }
@@ -136,5 +136,5 @@ finally {
 }
 const report = { timestamp: new Date().toISOString(), preview_lock: lockOn, ok: checks.every(c => c.ok), checks, screenshots };
 writeFileSync(join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
-writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\nBlocco anteprima: ${lockOn ? 'attivo' : 'spento'}\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE'} |`).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
+writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\nBlocco anteprima: ${lockOn ? 'attivo' : 'spento'}\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE'} |`).join('\n') + '\n' + checks.filter(c => c.violations?.length).map(c => `\n### ${c.name}\n` + c.violations.map(v => v.nodes.map(n => `- ${v.id}: \`${n.target}\`${n.contrastRatio ? ` contrasto ${n.contrastRatio} (${n.fgColor} su ${n.bgColor}, ${n.fontSize} ${n.fontWeight})` : ''}`).join('\n')).join('\n')).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
 process.exitCode = report.ok ? 0 : 1;
