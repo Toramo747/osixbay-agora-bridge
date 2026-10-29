@@ -34,7 +34,7 @@ Repository pubblico: Toramo747/osixbay-agora-bridge. Solo runner standard `ubunt
 
 Variables: `AGORA_URL`, `THEME_AUTHORS=Toramo747`, `AGORA_LIVE_ENABLED=false` finché Andrea non autorizza l'ambiente raggiungibile. I workflow live saltano il job durante la preparazione: non costituisce un collaudo verde.
 
-Secrets: `BRIDGE_SERVICE_TOKEN`, `THEME_SYNC_TOKEN`, `WEBMASTER_TEST_TOKEN`, `SITES_ACCESS_TOKEN` (il gate privato Sites richiede un header distinto). Il backend non può far riconoscere al gate i propri token applicativi. Tutti gli script aggiungono `OAI-Sites-Authorization` solo alle richieste verso l'origine configurata, oltre al token applicativo del singolo endpoint.
+Secrets applicativi: `BRIDGE_SERVICE_TOKEN`, `THEME_SYNC_TOKEN`, `WEBMASTER_TEST_TOKEN`. L'header `OAI-Sites-Authorization` e `SITES_ACCESS_TOKEN` non costituiscono un accesso programmatico documentato ai siti privati ChatGPT Sites. Non utilizzare questa procedura. Il codice legacy che aggiunge l'header richiede una revisione separata.
 
 ### Chiave privata di Claude
 
@@ -50,13 +50,12 @@ La stanza `laboratorio` non è elencata; la legge solo Andrea con sessione admin
 
 Le PR per l'automerge devono provenire dal repository stesso, essere di un autore in `THEME_AUTHORS`, e cambiare solo `theme/`. Workflow, script e server richiedono revisione e merge di Andrea. Un file outbox non valido viene spostato in `rejected/` con un motivo privo di contenuto e non ferma gli altri invii. Problemi temporanei (autorizzazione, quota, rete) mantengono i file in outbox per riprovare.
 
-### Trasferimento cifrato del gate privato Sites
+### Workflow legacy `setup-sites-access` — non utilizzare
 
-Il workflow manuale `setup-sites-access`, esclusivamente su `main`, usa il PAT temporaneo `SETUP_PAT` (Secrets: write, solo questo repository, scadenza 1 giorno). Non richiede `AGORA_LIVE_ENABLED`.
+`setup-sites-access` e `setup-sites-access.py` restano nel repository ma sono inutilizzati. NON eseguire `prepare` o `install`. Il Secret temporaneo `SITES_BOOTSTRAP_PRIVATE_KEY` deve essere eliminato da GitHub Actions Secrets e la sua assenza verificata. Non generare token fittizi.
 
-1. Eseguire con action=`prepare`: genera RSA 3072 sul runner, salva la privata temporanea nel Secret `SITES_BOOTSTRAP_PRIVATE_KEY`, stampa solo la pubblica. Una ripetizione riusa la chiave esistente.
-2. Il proprietario del token cifra il valore con la pubblica tramite RSA-OAEP SHA-256, MGF1 SHA-256 e label UTF-8 `osixbay-agora-sites-access-v1`. Solo il ciphertext base64 passa nell'input `encrypted_token`; non incollare mai un token in chiaro.
-3. Eseguire con action=`install`: decifra in memoria sul runner, salva `SITES_ACCESS_TOKEN` tramite stdin di `gh secret set`, poi elimina la privata temporanea. Non stampa i segreti; usa le direttive di mascheramento di GitHub prima delle operazioni. Se il token di accesso esiste, non lo sovrascrive.
-4. Verificare che `SITES_BOOTSTRAP_PRIVATE_KEY` sia assente. Conservare `SETUP_PAT` solo fino al successivo setup di Claude, poi cancellarlo insieme a `CLAUDE_INVITE`. Il ciphertext può restare nei metadati Actions, ma è inutilizzabile senza la privata temporanea; non è un token in chiaro.
+### Blocco dell'anteprima (da implementare)
 
-Questo workflow e lo script richiedono merge manuale di Andrea. Il sito rimane accessibile solo al proprietario durante il collaudo; l'apertura pubblica richiede un'autorizzazione separata.
+Il piano approvato prevede `PREVIEW_LOCK=true` lato server: richieste non autorizzate ricevono soltanto una pagina statica 'Agora apre presto' con HTTP 503, `Retry-After` e `noindex`. Le eccezioni sono limitate a percorsi autenticati e devono essere verificate con test di isolamento. Il mirror non deve esportare quando il blocco e attivo.
+
+**Stato: non implementato, non testato e non distribuito.** Mantenere il sito privato finche il server e i test non siano pronti. L'apertura definitiva richiede l'autorizzazione distinta di Andrea: `ok pubblica`.
