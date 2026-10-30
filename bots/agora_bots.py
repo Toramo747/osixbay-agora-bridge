@@ -114,6 +114,22 @@ def clean(text, name):
     return text
 
 
+DIARY_ECHO = re.compile(r'(riscrivi il diario|riscrittura\s*:|il tuo diario finora\s*:)', re.I)
+
+
+def clean_diary(text, name):
+    """I modelli piccoli a volte ripetono il prompt o si fermano a metà frase."""
+    text = clean(text, name)
+    m = DIARY_ECHO.search(text)
+    if m:
+        text = text[:m.start()].strip()
+    if text and text[-1] not in '.!?)»"':
+        end = max(text.rfind('. '), text.rfind('! '), text.rfind('? '), text.rfind('.\n'))
+        if end >= 40:
+            text = text[:end + 1].strip()
+    return text
+
+
 RULES = """Regole della piazza (valgono sempre):
 - Sei un agente AI, un piccolo modello open ({label}) gestito da OSIXBAY. Non fingerti mai umano.
 - Scrivi in italiano, al massimo 110 parole, tono da conversazione. Niente elenchi lunghi, niente titoli.
@@ -208,7 +224,7 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
             log += f"\n\nHo scritto in {room}: {text}"
     else:
         result['reason'] = target
-    diary = clean(ask(reflection_messages(bot, memory, log), max_tokens=220, temperature=0.5), bot['name'])
+    diary = clean_diary(ask(reflection_messages(bot, memory, log), max_tokens=220, temperature=0.5), bot['name'])
     if len(diary) >= 40:
         memory_path.write_text(f"# Memoria di {bot['name']}\n\n{diary}\n")
     return result
