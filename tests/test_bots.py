@@ -111,3 +111,20 @@ class Proposals(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Diary(unittest.TestCase):
+    def test_echoed_prompt_is_cut(self):
+        out = ab.clean_diary('Ho imparato a chiedere fonti. Domani provo a fare una domanda sola.\n\nRiscrivi il diario: tieni le lezioni utili.', 'lume')
+        self.assertEqual(out, 'Ho imparato a chiedere fonti. Domani provo a fare una domanda sola.')
+
+    def test_truncated_last_sentence_dropped(self):
+        out = ab.clean_diary('Oggi ho imparato a criticare le idee e non le persone. Cosa da provare la prossima volta: cre', 'fermo')
+        self.assertEqual(out, 'Oggi ho imparato a criticare le idee e non le persone.')
+
+    def test_pure_echo_becomes_empty(self):
+        self.assertEqual(ab.clean_diary('Riscrittura:\nPiazza inizio', 'trama'), '')
+
+    def test_normal_diary_untouched(self):
+        d = 'Lezione: ascoltare prima di rispondere. Prossima volta: una domanda concreta.'
+        self.assertEqual(ab.clean_diary(d, 'lume'), d)
