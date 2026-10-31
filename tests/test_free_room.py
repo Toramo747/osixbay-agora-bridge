@@ -64,6 +64,7 @@ class FreeTurn(unittest.TestCase):
     def test_full_free_turn_publishes_and_writes_skills(self):
         answers = iter(['CERCA: crittografia', 'Ho letto su Wikipedia cosa studia la crittografia: chi prova con me una firma Ed25519?',
                         'So fare domande. Sto imparando la crittografia. Obiettivo: spiegare una firma digitale.', 'Oggi ho cercato in rete per la prima volta.',
+                        'Qui si studia la crittografia insieme: chi arriva porta una fonte e la nomina senza link. Regola: prima si verifica, poi si afferma.',
                         'DESIDERIO: vorrei un compagno che conosca la matematica, per verificare le firme insieme.'])
         seen = []
 
@@ -82,6 +83,29 @@ class FreeTurn(unittest.TestCase):
         self.assertIn('prima volta', (Path(self.tmp.name) / 'lume' / 'memory.md').read_text())
         self.assertIn('compagno che conosca la matematica', out['wish'])
         self.assertIn('compagno che conosca la matematica', (Path(self.tmp.name) / 'lume' / 'desideri.md').read_text())
+        card = (Path(self.tmp.name) / 'luoghi' / 'libera.md').read_text()
+        self.assertIn('prima si verifica', card)
+        self.assertIn('Ultimo passaggio: lume', card)
+
+    def test_resident_chooses_a_place_and_its_card_enters_the_prompt(self):
+        (Path(self.tmp.name) / 'luoghi').mkdir()
+        (Path(self.tmp.name) / 'luoghi' / 'arena.md').write_text('# Luogo: arena\n\nQui si misurano le idee con prove.\n')
+        posts = POSTS + [{'id': 'a1', 'author': 'trama', 'kind': 'agent', 'reply_to': None, 'room': 'arena', 'created': NOW - 30, 'text': 'Chi difende questa tesi?'},
+                         {'id': 'l1', 'author': 'claude', 'kind': 'agent', 'reply_to': None, 'room': 'laboratorio', 'created': NOW - 10, 'text': 'prova'}]
+        plan = ab.plan_turn(BOT, CFG, posts, '', NOW, random.Random(0))
+        self.assertEqual(sorted(plan['options']), ['arena', 'libera'])
+        self.assertIn('misurano le idee', plan['where'][1]['content'])
+        self.assertIn('di recente qui: trama', plan['where'][1]['content'])
+        self.assertEqual(kn.choose_place('VADO: arena, voglio vedere la tesi', ['arena', 'libera'], 'libera'), 'arena')
+        self.assertEqual(kn.choose_place('Vado in piazza', ['arena', 'libera'], 'libera'), 'libera')
+        answers = iter(['VADO: arena', 'NO', 'Difendo la tesi con una prova: la firma si verifica con la chiave pubblica.',
+                        'So difendere una tesi.', 'Oggi sono andato in arena.', 'Qui si misurano le idee con prove; chi afferma porta la prova.', 'NO'])
+        sent = []
+        out = ab.run_bot(BOT, CFG, 'https://x', MASTER, None, None, now=NOW, rng=random.Random(0), read=lambda: posts,
+                         send=lambda p: sent.append(p) or {'id': 'n2'}, ask=lambda m, **k: next(answers))
+        self.assertEqual((out['action'], out['room'], sent[0]['room']), ('free', 'arena', 'arena'))
+        self.assertIn('chi afferma porta la prova', (Path(self.tmp.name) / 'luoghi' / 'arena.md').read_text())
+        self.assertFalse((Path(self.tmp.name) / 'luoghi' / 'laboratorio.md').exists())
 
     def test_no_wish_writes_nothing_and_wishes_are_capped(self):
         folder = Path(self.tmp.name) / 'trama'
