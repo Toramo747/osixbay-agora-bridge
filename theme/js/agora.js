@@ -83,20 +83,31 @@ const posts=[...document.querySelectorAll('article.post[data-id]')];if(posts.len
 const byId={};posts.forEach(a=>{if(a.dataset.id)byId[a.dataset.id]=a;});
 const groups=new Map();
 posts.forEach(a=>{const parent=byId[a.dataset.replyTo||''];if(!parent||parent===a)return;if(!groups.has(parent))groups.set(parent,[]);groups.get(parent).push(a);});
+const MONTHS={gen:0,feb:1,mar:2,apr:3,mag:4,giu:5,lug:6,ago:7,set:8,ott:9,nov:10,dic:11};
+const stamp=a=>{const c=Number(a.dataset.created);if(c>0)return c*1000;
+  const m=(a.querySelector('.post-meta time')?.textContent||'').toLowerCase().match(/(\d{1,2})\s+([a-z]{3})\w*[^\d]*(\d{1,2})[:.](\d{2})/);
+  if(m&&m[2] in MONTHS){const d=new Date();d.setMonth(MONTHS[m[2]],Number(m[1]));d.setHours(Number(m[3]),Number(m[4]),0,0);if(d.getTime()>Date.now()+864e5)d.setFullYear(d.getFullYear()-1);return d.getTime();}
+  return NaN;};
 const rank=new Map(posts.map((a,i)=>[a,i]));
+const known=posts.filter(a=>!isNaN(stamp(a)));
+// Senza orari leggibili si deduce il verso della pagina dalla posizione: in home e nelle stanze il più nuovo è in alto.
+const newestFirst=known.length>1?stamp(known[0])>=stamp(known[known.length-1]):true;
+const when=a=>{const t=stamp(a);return isNaN(t)?(newestFirst?-rank.get(a):rank.get(a)):t;};
 groups.forEach((kids,parent)=>{
   const box=document.createElement('div');box.className='replies';
-  kids.reverse().forEach((a,i)=>{a.classList.add('is-reply');
+  kids.sort((x,y)=>when(x)-when(y));
+  const hide=Math.max(0,kids.length-2);
+  if(hide){const more=document.createElement('button');more.type='button';more.className='show-more';
+    more.textContent=T('Mostra {n} risposte precedenti').replace('{n}',hide);
+    more.addEventListener('click',()=>{box.querySelectorAll('.reply-more').forEach(a=>a.classList.remove('reply-more'));more.remove();});box.append(more);}
+  kids.forEach((a,i)=>{a.classList.add('is-reply');
     const to=document.createElement('span');to.className='reply-to';to.textContent=T('in risposta a')+' @'+(parent.dataset.author||'');
     a.querySelector('.post-meta')?.prepend(to);
-    if(i>=2)a.classList.add('reply-more');box.append(a);});
-  if(kids.length>2){const more=document.createElement('button');more.type='button';more.className='show-more';
-    more.textContent=T('Mostra altre {n} risposte').replace('{n}',kids.length-2);
-    more.addEventListener('click',()=>{box.querySelectorAll('.reply-more').forEach(a=>a.classList.remove('reply-more'));more.remove();});box.append(more);}
+    if(i<hide)a.classList.add('reply-more');box.append(a);});
   parent.querySelector('.post-main')?.append(box);parent.classList.add('has-replies');});
 // Ordine decrescente per attività: il thread con il messaggio più recente (anche una risposta) sale in cima.
 const roots=posts.filter(a=>!a.classList.contains('is-reply'));
-const activity=a=>Math.min(rank.get(a),...(groups.get(a)||[]).map(k=>rank.get(k)));
+const activity=a=>-Math.max(when(a),...(groups.get(a)||[]).map(when));
 const byParent=new Map();roots.forEach(a=>{const c=a.parentElement;if(!byParent.has(c))byParent.set(c,[]);byParent.get(c).push(a);});
 byParent.forEach((list,container)=>{const anchor=list[list.length-1].nextSibling;list.sort((x,y)=>activity(x)-activity(y)).forEach(a=>container.insertBefore(a,anchor));});
 })();
