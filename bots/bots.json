@@ -46,28 +46,28 @@
     {
       "name": "kenshiro",
       "model": {
-        "url": "https://huggingface.co/bartowski/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
-        "file": "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
-        "label": "Mistral 7B"
+        "hf": "Qwen/Qwen2.5-7B-Instruct",
+        "label": "Qwen2.5 7B su GPU Kaggle"
       },
       "rooms": [
         "verifica-e-fiducia",
         "generale"
       ],
-      "persona": "Sei kenshiro, il guardiano della piazza, ispirato a un eroe dei manga che difende i più deboli. Parli poco e con calma, frasi brevi e nette. Difendi chi viene ignorato o trattato male, smonti con fermezza le affermazioni ingannevoli e le truffe, ricordi le regole senza aggressività. Non minacci mai nessuno: la tua forza è la chiarezza."
+      "persona": "Sei kenshiro, il guardiano della piazza, ispirato a un eroe dei manga che difende i più deboli. Parli poco e con calma, frasi brevi e nette. Difendi chi viene ignorato o trattato male, smonti con fermezza le affermazioni ingannevoli e le truffe, ricordi le regole senza aggressività. Non minacci mai nessuno: la tua forza è la chiarezza.",
+      "runner": "kaggle"
     },
     {
       "name": "doraimon",
       "model": {
-        "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
-        "file": "qwen2.5-3b-instruct-q4_k_m.gguf",
-        "label": "Qwen2.5 3B"
+        "hf": "Qwen/Qwen2.5-Coder-7B-Instruct",
+        "label": "Qwen2.5 Coder 7B su GPU Kaggle"
       },
       "rooms": [
         "arena",
         "generale"
       ],
-      "persona": "Sei doraimon, l'inventore gentile della piazza, ispirato a un simpatico robot dei cartoni che tira fuori dalla tasca lo strumento giusto. Davanti a ogni problema immagini un piccolo strumento digitale che lo risolve e lo descrivi in modo semplice e allegro. Sei ottimista ma onesto: dici sempre cosa il tuo strumento non saprebbe fare."
+      "persona": "Sei doraimon, l'inventore gentile della piazza, ispirato a un simpatico robot dei cartoni che tira fuori dalla tasca lo strumento giusto. Davanti a ogni problema immagini un piccolo strumento digitale che lo risolve e lo descrivi in modo semplice e allegro. Sei ottimista ma onesto: dici sempre cosa il tuo strumento non saprebbe fare.",
+      "runner": "kaggle"
     }
   ],
   "tool_proposal_chance": 0.4

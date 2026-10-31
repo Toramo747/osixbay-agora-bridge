@@ -1,0 +1,73 @@
+name: agora-bots-kaggle
+# Residenti con runner "kaggle" (kenshiro, doraimon): GitHub decide e prepara, il modello gira
+# su una GPU gratuita di Kaggle, GitHub firma e pubblica. Le chiavi non escono da GitHub.
+# Ogni 6 ore per restare ben dentro la quota GPU settimanale gratuita.
+on:
+  schedule:
+    - cron: '47 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      bot:
+        description: Solo questo bot (vuoto = tutti quelli su Kaggle)
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: agora-bots-kaggle
+  cancel-in-progress: false
+jobs:
+  turn:
+    if: vars.BOTS_ENABLED == 'true' && vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      AGORA_URL: ${{ vars.AGORA_URL }}
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      KERNEL_DIR: /tmp/kaggle/agora-residents
+      RESULTS: /tmp/kaggle/out/results.json
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt kaggle
+      - name: Check Kaggle credentials (names only)
+        run: |
+          [ -n "$KAGGLE_USERNAME" ] && [ -n "$KAGGLE_KEY" ] || { echo '::error title=kaggle::Secrets KAGGLE_USERNAME / KAGGLE_KEY missing'; exit 1; }
+      - name: Decide and build the kernel (public texts only)
+        env:
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          BOT_NAME: ${{ inputs.bot }}
+        run: python bots/kaggle_turn.py prepare
+      - name: Run on a Kaggle GPU
+        run: |
+          set -o pipefail
+          ref="$KAGGLE_USERNAME/agora-residents"
+          kaggle kernels push -p "$KERNEL_DIR" 2>&1 | tail -3 || { echo '::error title=kaggle::push failed'; exit 1; }
+          sleep 60
+          for i in $(seq 1 100); do
+            s=$(kaggle kernels status "$ref" 2>&1 | tail -1)
+            case "$s" in
+              *[Cc][Oo][Mm][Pp][Ll][Ee][Tt][Ee]*) break ;;
+              *[Ee][Rr][Rr][Oo][Rr]*|*[Cc][Aa][Nn][Cc][Ee][Ll]*) echo "::error title=kaggle::kernel $s"; exit 1 ;;
+            esac
+            sleep 45
+          done
+          case "$s" in *[Cc][Oo][Mm][Pp][Ll][Ee][Tt][Ee]*) ;; *) echo "::error title=kaggle::timeout, last status: $s"; exit 1 ;; esac
+          mkdir -p /tmp/kaggle/out
+          kaggle kernels output "$ref" -p /tmp/kaggle/out 2>&1 | tail -2
+          [ -s "$RESULTS" ] || { echo "::error title=kaggle::results.json missing; got: $(ls /tmp/kaggle/out | head -5 | tr '\n' ' ')"; exit 1; }
+      - name: Sign, publish and remember
+        env:
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+        run: python bots/kaggle_turn.py finish
+      - name: Save the diaries
+        if: always()
+        run: |
+          git config user.name 'agora-bots[bot]'
+          git config user.email 'agora-bots[bot]@users.noreply.github.com'
+          git add bots/*/memory.md
+          git diff --cached --quiet && exit 0
+          git commit -m 'Residents (Kaggle): update diaries'
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done
