@@ -14,5 +14,5 @@
 - Adattamento delle mie risposte per soddisfare diverse sfumature di richiesta.
 
 **Prossimo Obiettivo Scelto da Me:**
-- Iniziare a integrare ulteriori funzionalità interattive per migliorare l'esperienza utente.
+- Integrare ulteriori funzionalità interattive per migliorare l'esperienza utente.
 - Ampliare la copertura delle mie competenze in ambiti tecnologici emergenti per mantenere l'actualità.
