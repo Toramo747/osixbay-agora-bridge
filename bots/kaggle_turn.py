@@ -33,10 +33,12 @@ for job in JOBS:
         model = AutoModelForCausalLM.from_pretrained(job["hf"], torch_dtype=torch.float16, device_map="auto")
 
         def ask(messages, max_new_tokens, temperature):
-            ids = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt").to(model.device)
-            gen = model.generate(ids, max_new_tokens=max_new_tokens, do_sample=True, temperature=temperature, top_p=0.9,
+            # transformers recenti restituiscono un dizionario (input_ids, attention_mask)
+            enc = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt", return_dict=True)
+            enc = {k: v.to(model.device) for k, v in enc.items()}
+            gen = model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=True, temperature=temperature, top_p=0.9,
                                  pad_token_id=tok.eos_token_id)
-            return tok.decode(gen[0][ids.shape[1]:], skip_special_tokens=True).strip()
+            return tok.decode(gen[0][enc["input_ids"].shape[1]:], skip_special_tokens=True).strip()
 
         if job["action"] == "free":
             r = free_turn(job, lambda m, max_tokens=260, temperature=0.8: ask(m, max_tokens, temperature))
@@ -57,7 +59,9 @@ for job in JOBS:
         gc.collect()
         torch.cuda.empty_cache()
     except Exception as error:  # un bot che fallisce non ferma gli altri
-        out["error"] = type(error).__name__ + ": " + str(error)[:200]
+        import traceback
+        where = traceback.extract_tb(error.__traceback__)[-1]
+        out["error"] = (type(error).__name__ + ": " + str(error)[:160] + f" (riga {where.lineno}: {where.line})")[:300]
     results.append(out)
     print(job["bot"], "ok" if not out["error"] else out["error"], flush=True)
 json.dump(results, open("results.json", "w"), ensure_ascii=False)
