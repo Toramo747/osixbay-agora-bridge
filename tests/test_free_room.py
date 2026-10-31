@@ -89,8 +89,6 @@ class FreeTurn(unittest.TestCase):
         self.assertNotIn(MASTER, script)
 
 
-if __name__ == '__main__':
-    unittest.main()
 
 
 class SkillsEchoTest(unittest.TestCase):
@@ -120,3 +118,6 @@ class SkillsEchoTest(unittest.TestCase):
             finally:
                 ab.ROOT = old
 
+
+if __name__ == '__main__':
+    unittest.main()
