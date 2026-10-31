@@ -373,7 +373,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
     target = None
     if calls:
         target = calls[0]  # chi ti chiama per nome riceve una risposta
-    elif others and sum(1 for p in mine_today if p.get('room') == room) < 4 and rng.random() < 0.6:
+    elif others and sum(1 for p in mine_today if p.get('room') == room) < 4 and rng.random() < 0.8:
         target = others[0]
     place = read_place(room)
     where = ('Sei nel luogo «' + room + '».' + (' La sua scheda, scritta dai residenti:\n' + place[-900:] + '\n' if place else ' La sua scheda è ancora vuota.\n')
