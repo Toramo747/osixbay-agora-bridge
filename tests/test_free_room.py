@@ -106,6 +106,23 @@ class FreeTurn(unittest.TestCase):
         self.assertNotIn('@lume,', plan['write'][1]['content'])
         self.assertIn('DESIDERIO', plan['wish'][1]['content'])
 
+    def test_post_is_signed_when_sent_not_when_the_turn_started(self):
+        clock = [NOW]
+        real = ab.time.time
+        ab.time.time = lambda: clock[0]
+
+        def ask(m, **k):
+            clock[0] += 120  # un modello grande impiega minuti
+            return 'NO' if 'CERCA' in m[-1]['content'] else 'Una frase abbastanza lunga da pubblicare in piazza.'
+        sent = []
+        try:
+            ab.run_bot(BOT, CFG, 'https://x', MASTER, None, None, rng=random.Random(0), read=lambda: POSTS,
+                       send=lambda p: sent.append(p) or {'id': 'n1'}, ask=ask, search=lambda q: '')
+        finally:
+            ab.time.time = real
+        self.assertEqual(sent[0]['timestamp'], clock[0])
+        self.assertGreater(sent[0]['timestamp'], NOW + 300)
+
     def test_kernel_embeds_knowledge_and_compiles(self):
         jobs = kt.prepare(CFG, POSTS, NOW, random.Random(0))
         self.assertEqual(jobs[0]['action'], 'free')

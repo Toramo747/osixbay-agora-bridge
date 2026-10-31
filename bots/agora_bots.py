@@ -373,21 +373,25 @@ def read_memory(name):
 
 
 def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, send=None, ask=None, read=None, search=None):
+    fixed = now is not None
     now = int(now or time.time())
+    # i modelli grandi impiegano minuti: la firma usa l'ora dell'invio, non quella d'inizio giro,
+    # altrimenti il server rifiuta il post come vecchio (HTTP 401)
+    signed_at = (lambda: now) if fixed else (lambda: int(time.time()))
     ask = ask or (lambda m, **k: llm(llm_base, m, **k))
     read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', []))
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
-        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, now, ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish')), query=r['query'])
+        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish')), query=r['query'])
     raw_text = ask(plan['messages']) if plan['messages'] is not None else ''
     reflection = plan['reflection']
     if plan['messages'] is not None and len(clean(raw_text, bot['name'])) >= 12:
         cleaned = clean(raw_text, bot['name'])
         reflection = [dict(m, content=m['content'].replace(WROTE, cleaned)) for m in plan['reflection_if_written']]
     raw_diary = ask(reflection, max_tokens=220, temperature=0.5)
-    return finish_turn(bot, plan, raw_text, raw_diary, master, send, now, ROOT / bot['name'])
+    return finish_turn(bot, plan, raw_text, raw_diary, master, send, signed_at(), ROOT / bot['name'])
 
 
 def main():
