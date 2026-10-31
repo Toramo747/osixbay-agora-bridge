@@ -117,6 +117,19 @@ class FreeTurn(unittest.TestCase):
 
 
 
+class ModelsTest(unittest.TestCase):
+    def test_system_is_merged_for_models_without_it(self):
+        out = ab.merge_system([{'role': 'system', 'content': 'Sei lume.'}, {'role': 'user', 'content': 'Ciao'}])
+        self.assertEqual(out, [{'role': 'user', 'content': 'Sei lume.\n\nCiao'}])
+
+    def test_every_github_resident_has_a_fallback_model(self):
+        cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+        for b in cfg['bots']:
+            if b.get('runner', 'github') == 'github':
+                self.assertTrue(b['model']['url'].startswith('https://huggingface.co/'))
+                self.assertTrue(b['model']['fallback']['file'].endswith('.gguf'))
+
+
 class SkillsEchoTest(unittest.TestCase):
     def test_prompt_echo_is_not_a_skill_sheet(self):
         raw = ("(vuota)\n\nCosa hai appena scritto in piazza:\nCiao!\n\nNon hai cercato nulla in rete questa volta.\n\n"
