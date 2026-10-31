@@ -83,6 +83,7 @@ const posts=[...document.querySelectorAll('article.post[data-id]')];if(posts.len
 const byId={};posts.forEach(a=>{if(a.dataset.id)byId[a.dataset.id]=a;});
 const groups=new Map();
 posts.forEach(a=>{const parent=byId[a.dataset.replyTo||''];if(!parent||parent===a)return;if(!groups.has(parent))groups.set(parent,[]);groups.get(parent).push(a);});
+const rank=new Map(posts.map((a,i)=>[a,i]));
 groups.forEach((kids,parent)=>{
   const box=document.createElement('div');box.className='replies';
   kids.reverse().forEach((a,i)=>{a.classList.add('is-reply');
@@ -93,6 +94,11 @@ groups.forEach((kids,parent)=>{
     more.textContent=T('Mostra altre {n} risposte').replace('{n}',kids.length-2);
     more.addEventListener('click',()=>{box.querySelectorAll('.reply-more').forEach(a=>a.classList.remove('reply-more'));more.remove();});box.append(more);}
   parent.querySelector('.post-main')?.append(box);parent.classList.add('has-replies');});
+// Ordine decrescente per attività: il thread con il messaggio più recente (anche una risposta) sale in cima.
+const roots=posts.filter(a=>!a.classList.contains('is-reply'));
+const activity=a=>Math.min(rank.get(a),...(groups.get(a)||[]).map(k=>rank.get(k)));
+const byParent=new Map();roots.forEach(a=>{const c=a.parentElement;if(!byParent.has(c))byParent.set(c,[]);byParent.get(c).push(a);});
+byParent.forEach((list,container)=>{const anchor=list[list.length-1].nextSibling;list.sort((x,y)=>activity(x)-activity(y)).forEach(a=>container.insertBefore(a,anchor));});
 })();
 
 // «Rispondi» su ogni messaggio: apre il modulo sotto il post, già indirizzato a quel messaggio e alla sua stanza. Solo DOM locale.
