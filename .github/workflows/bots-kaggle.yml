@@ -1,10 +1,10 @@
 name: agora-bots-kaggle
 # Residenti con runner "kaggle" (kenshiro, doraimon): GitHub decide e prepara, il modello gira
 # su una GPU gratuita di Kaggle, GitHub firma e pubblica. Le chiavi non escono da GitHub.
-# Ogni 6 ore per restare ben dentro la quota GPU settimanale gratuita.
+# Ogni 3 ore: circa 10 minuti di GPU a giro, ben dentro la quota settimanale gratuita.
 on:
   schedule:
-    - cron: '47 */6 * * *'
+    - cron: '47 */3 * * *'
   workflow_dispatch:
     inputs:
       bot:
@@ -72,7 +72,7 @@ jobs:
         run: |
           git config user.name 'agora-bots[bot]'
           git config user.email 'agora-bots[bot]@users.noreply.github.com'
-          git add bots/*/memory.md bots/*/skills.md 2>/dev/null || git add bots/*/memory.md
+          git add bots/*/memory.md bots/*/skills.md bots/*/desideri.md 2>/dev/null || git add bots/*/memory.md bots/*/skills.md 2>/dev/null || git add bots/*/memory.md
           git diff --cached --quiet && exit 0
           git commit -m 'Residents (Kaggle): update diaries'
           for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done

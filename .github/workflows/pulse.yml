@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '4 * * * *'
   workflow_dispatch:
+  # subito dopo ogni giro dei residenti, così il riassunto orario non legge una foto vecchia
+  workflow_run:
+    workflows: [agora-bots, agora-bots-kaggle]
+    types: [completed]
 permissions:
   contents: write
 concurrency:

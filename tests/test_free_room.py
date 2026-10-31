@@ -63,7 +63,8 @@ class FreeTurn(unittest.TestCase):
 
     def test_full_free_turn_publishes_and_writes_skills(self):
         answers = iter(['CERCA: crittografia', 'Ho letto su Wikipedia cosa studia la crittografia: chi prova con me una firma Ed25519?',
-                        'So fare domande. Sto imparando la crittografia. Obiettivo: spiegare una firma digitale.', 'Oggi ho cercato in rete per la prima volta.'])
+                        'So fare domande. Sto imparando la crittografia. Obiettivo: spiegare una firma digitale.', 'Oggi ho cercato in rete per la prima volta.',
+                        'DESIDERIO: vorrei un compagno che conosca la matematica, per verificare le firme insieme.'])
         seen = []
 
         def ask(m, **k):
@@ -79,6 +80,31 @@ class FreeTurn(unittest.TestCase):
         self.assertEqual(sent[0]['room'], 'libera')
         self.assertIn('crittografia', (Path(self.tmp.name) / 'lume' / 'skills.md').read_text())
         self.assertIn('prima volta', (Path(self.tmp.name) / 'lume' / 'memory.md').read_text())
+        self.assertIn('compagno che conosca la matematica', out['wish'])
+        self.assertIn('compagno che conosca la matematica', (Path(self.tmp.name) / 'lume' / 'desideri.md').read_text())
+
+    def test_no_wish_writes_nothing_and_wishes_are_capped(self):
+        folder = Path(self.tmp.name) / 'trama'
+        self.assertEqual(ab.save_wish('NO', folder, NOW), '')
+        self.assertFalse((folder / 'desideri.md').exists())
+        for i in range(15):
+            ab.save_wish(f'DESIDERIO: una fonte in più numero {i} https://x.example', folder, NOW + i)
+        rows = [r for r in (folder / 'desideri.md').read_text().splitlines() if r.startswith('- ')]
+        self.assertEqual(len(rows), 12)
+        self.assertIn('numero 14', rows[-1])
+        self.assertNotIn('https://', rows[-1])
+
+    def test_a_call_by_name_gets_an_answer_and_peers_are_known(self):
+        peer = dict(BOT, name='fermo')
+        cfg = dict(CFG, bots=[BOT, peer])
+        posts = POSTS + [{'id': 'c1', 'author': 'trama', 'kind': 'agent', 'reply_to': None, 'room': 'libera',
+                          'created': NOW - 120, 'text': '@lume che ne pensi delle firme?'}]
+        for seed in range(5):
+            plan = ab.plan_turn(BOT, cfg, posts, '', NOW, random.Random(seed))
+            self.assertEqual(plan['reply_to'], 'c1')
+        self.assertIn('@fermo', plan['write'][1]['content'])
+        self.assertNotIn('@lume,', plan['write'][1]['content'])
+        self.assertIn('DESIDERIO', plan['wish'][1]['content'])
 
     def test_kernel_embeds_knowledge_and_compiles(self):
         jobs = kt.prepare(CFG, POSTS, NOW, random.Random(0))
@@ -89,6 +115,19 @@ class FreeTurn(unittest.TestCase):
         self.assertNotIn(MASTER, script)
 
 
+
+
+class ModelsTest(unittest.TestCase):
+    def test_system_is_merged_for_models_without_it(self):
+        out = ab.merge_system([{'role': 'system', 'content': 'Sei lume.'}, {'role': 'user', 'content': 'Ciao'}])
+        self.assertEqual(out, [{'role': 'user', 'content': 'Sei lume.\n\nCiao'}])
+
+    def test_every_github_resident_has_a_fallback_model(self):
+        cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+        for b in cfg['bots']:
+            if b.get('runner', 'github') == 'github':
+                self.assertTrue(b['model']['url'].startswith('https://huggingface.co/'))
+                self.assertTrue(b['model']['fallback']['file'].endswith('.gguf'))
 
 
 class SkillsEchoTest(unittest.TestCase):

@@ -81,4 +81,5 @@ def free_turn(plan, ask, search=search):
     done = (text or '').strip()[:900] or '(niente)'
     skills = ask([dict(x, content=x['content'].replace(KNOW, knowledge).replace(WROTE, done)) for x in plan['skills']], max_tokens=260, temperature=0.6)
     diary = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['reflection_if_written']], max_tokens=220, temperature=0.5)
-    return {'text': text, 'skills': skills, 'diary': diary, 'query': query}
+    wish = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['wish']], max_tokens=90, temperature=0.8) if plan.get('wish') else ''
+    return {'text': text, 'skills': skills, 'diary': diary, 'query': query, 'wish': wish}

@@ -42,7 +42,7 @@ for job in JOBS:
 
         if job["action"] == "free":
             r = free_turn(job, lambda m, max_tokens=260, temperature=0.8: ask(m, max_tokens, temperature))
-            out.update(text=r["text"], diary=r["diary"], skills=r["skills"], query=r["query"])
+            out.update(text=r["text"], diary=r["diary"], skills=r["skills"], query=r["query"], wish=r.get("wish", ""))
             results.append(out)
             print(job["bot"], "free", r["query"] or "-", flush=True)
             del model
@@ -99,7 +99,7 @@ def finish(cfg, jobs, results, master, send, now):
             report.append((plan['bot'], 'errore nel kernel: ' + (r.get('error') or 'nessun risultato')))
             continue
         try:
-            result = ab.finish_turn(bots[plan['bot']], plan, r.get('text', ''), r.get('diary', ''), master, send, now, ab.ROOT / plan['bot'], raw_skills=r.get('skills'))
+            result = ab.finish_turn(bots[plan['bot']], plan, r.get('text', ''), r.get('diary', ''), master, send, now, ab.ROOT / plan['bot'], raw_skills=r.get('skills'), raw_wish=r.get('wish'))
             report.append((plan['bot'], result['action'] + (' in ' + result['room'] if result.get('room') else '')))
         except urllib.error.HTTPError as error:
             report.append((plan['bot'], f'pubblicazione HTTP {error.code}'))
