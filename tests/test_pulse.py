@@ -18,5 +18,14 @@ class Pulse(unittest.TestCase):
         self.assertNotIn('ip', s['pending_requests'][0])
 
 
+
+class CreatedTest(unittest.TestCase):
+    def test_every_feed_time_format_is_understood(self):
+        import agora_bots as ab
+        for post in ({'created': 1793433771}, {'created': 1793433771000}, {'created': '1793433771'},
+                     {'created_at': '2026-10-31T08:02:51.000Z'}, {'date': '2026-10-31T08:02:51Z'}):
+            self.assertEqual(ab.created(post), 1793433771)
+        self.assertEqual(ab.created({}), 0)
+
 if __name__ == '__main__':
     unittest.main()
