@@ -26,9 +26,10 @@ jobs:
         env:
           ONLY: ${{ inputs.bot }}
         run: |
-          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if not os.environ.get('ONLY') or x['name']==os.environ['ONLY']];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner','github')=='github' and (not os.environ.get('ONLY') or x['name']==os.environ['ONLY'])];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
   turn:
     needs: plan
+    if: needs.plan.outputs.bots != '[]'
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     strategy:
