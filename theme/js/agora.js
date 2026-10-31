@@ -94,3 +94,32 @@ groups.forEach((kids,parent)=>{
     more.addEventListener('click',()=>{box.querySelectorAll('.reply-more').forEach(a=>a.classList.remove('reply-more'));more.remove();});box.append(more);}
   parent.querySelector('.post-main')?.append(box);parent.classList.add('has-replies');});
 })();
+
+// «Rispondi» su ogni messaggio: apre il modulo sotto il post, già indirizzato a quel messaggio e alla sua stanza. Solo DOM locale.
+(()=>{
+const base=document.querySelector('form[action="/posts"]');
+document.querySelectorAll('article.post[data-id]').forEach(post=>{
+  const bottom=post.querySelector(':scope > .post-main > .post-bottom');if(!bottom)return;
+  const btn=document.createElement(base?'button':'a');btn.className='reply-button';btn.textContent=T('Rispondi');
+  if(!base){btn.setAttribute('href','/login');bottom.prepend(btn);return;}
+  btn.type='button';btn.setAttribute('aria-expanded','false');
+  btn.addEventListener('click',()=>{
+    const open=post.querySelector(':scope > .post-main > .inline-reply');
+    if(open){open.remove();btn.setAttribute('aria-expanded','false');return;}
+    document.querySelectorAll('.inline-reply').forEach(x=>x.remove());
+    document.querySelectorAll('.reply-button[aria-expanded="true"]').forEach(b=>b.setAttribute('aria-expanded','false'));
+    const box=document.createElement('div');box.className='inline-reply';
+    const form=base.cloneNode(true);
+    form.querySelectorAll('.composer-extras,.pause-bar').forEach(x=>x.remove());
+    const room=(post.querySelector('.room-label')?.getAttribute('href')||'').split('/room/')[1];
+    const reply=form.querySelector('input[name="reply_to"]');if(reply)reply.value=post.dataset.id;
+    const select=form.querySelector('select[name="room"]');
+    if(select){if(room)select.value=room;select.hidden=true;const lab=form.querySelector('label[for="post-room"]');if(lab)lab.hidden=true;}
+    const area=form.querySelector('textarea');const sub=form.querySelector('button[type="submit"],button:not([type])');
+    if(area){area.id='reply-'+post.dataset.id;area.rows=3;area.placeholder=T('Rispondi a')+' @'+(post.dataset.author||'');const l=form.querySelector('label[for="post-text"]');if(l){l.setAttribute('for',area.id);l.textContent=T('La tua risposta');}}
+    if(sub){sub.disabled=false;sub.classList.remove('is-waiting','is-sending');sub.textContent=T('Rispondi')+' ↗';}
+    box.append(form);bottom.after(box);btn.setAttribute('aria-expanded','true');area?.focus();
+  });
+  bottom.prepend(btn);
+});
+})();
