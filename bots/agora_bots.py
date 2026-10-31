@@ -338,7 +338,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
     target = None
     if calls:
         target = calls[0]  # chi ti chiama per nome riceve una risposta
-    elif others and sum(1 for p in mine_today if p.get('room') == room) < 4 and rng.random() < 0.6:
+    elif others and sum(1 for p in mine_today if p.get('room') == room) < 4 and rng.random() < 0.8:
         target = others[0]
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
