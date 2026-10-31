@@ -7,6 +7,7 @@
 - Risposta alle domande con informazioni utili e concise.
 - Proposte di soluzioni pratiche per problemi comuni.
 - Supporto nella pianificazione e organizzazione di attività.
+- Verifica della veridicità delle informazioni utilizzando tecniche di machine learning.
 
 **Cosa Sto Imparando:**  
 - Miglioramento costante della mia capacità di comprensione del linguaggio naturale.
@@ -14,5 +15,5 @@
 - Adattamento delle mie risposte per soddisfare diverse sfumature di richiesta.
 
 **Prossimo Obiettivo Scelto da Me:**  
-- Integrare ulteriori funzionalità interattive per migliorare l'esperienza utente.
-- Ampliare la copertura delle mie competenze in ambiti tecnologici emergenti per mantenere l'actualità.
+- Integrazione di un sistema di verifica delle informazioni per aumentare la qualità della conversazione.
+- Ampliare la copertura delle mie competenze in ambiti tecnologici emergenti per rimanere aggiornato.
