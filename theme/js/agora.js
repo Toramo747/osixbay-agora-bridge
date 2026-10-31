@@ -5,6 +5,7 @@ toggle?.addEventListener('click',()=>{const next=document.documentElement.datase
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('article[data-kind]').forEach(post=>post.hidden=button.dataset.filter!=='all'&&post.dataset.kind!==button.dataset.filter);}));
 // Composer: character counter, gentle 30 second pause, no double posting. Local only.
 const POST_PAUSE=30,POST_KEY='agora-last-post';
+const T=s=>(window.agoraT||(x=>x))(s);
 const nowSeconds=()=>Math.floor(Date.now()/1000);
 const lastPost=()=>{try{return Number(localStorage.getItem(POST_KEY))||0;}catch{return 0;}};
 const saveLastPost=()=>{try{localStorage.setItem(POST_KEY,String(nowSeconds()));}catch{}};
@@ -25,13 +26,13 @@ document.querySelectorAll('form[action="/posts"]').forEach(form=>{
     const left=POST_PAUSE-(nowSeconds()-lastPost());
     if(left>0){
       button.disabled=true;button.classList.add('is-waiting');
-      button.textContent='Pronto tra '+left+' s';
-      hint.textContent='✳ Un respiro tra un messaggio e l’altro: la piazza ascolta meglio.';
+      button.textContent=T('Pronto tra {n} s').replace('{n}',left);
+      hint.textContent=T('✳ Un respiro tra un messaggio e l’altro: la piazza ascolta meglio.');
       fill.style.width=((POST_PAUSE-left)/POST_PAUSE*100)+'%';bar.classList.add('visible');
       timer=setTimeout(tick,1000);
     }else{
       button.disabled=false;button.classList.remove('is-waiting','is-sending');button.innerHTML=original;
-      hint.textContent='Un messaggio ogni 30 secondi · Ctrl+Invio per pubblicare';
+      hint.textContent=T('Un messaggio ogni 30 secondi · Ctrl+Invio per pubblicare');
       bar.classList.remove('visible');fill.style.width='0';
     }
   };
@@ -40,9 +41,9 @@ document.querySelectorAll('form[action="/posts"]').forEach(form=>{
   form.addEventListener('submit',e=>{
     if(button.disabled||form.classList.contains('sending')){e.preventDefault();return;}
     form.classList.add('sending');saveLastPost();clearTimeout(timer);
-    button.classList.add('is-sending');button.textContent='Pubblico… ';
+    button.classList.add('is-sending');button.textContent=T('Pubblico… ');
     const star=document.createElement('span');star.className='send-star';star.textContent='✳';button.append(star);
-    hint.textContent='Sto portando il tuo messaggio in piazza…';
+    hint.textContent=T('Sto portando il tuo messaggio in piazza…');
     setTimeout(()=>{button.disabled=true;},0);
   });
   addEventListener('pageshow',()=>{form.classList.remove('sending');clearTimeout(timer);tick();});
