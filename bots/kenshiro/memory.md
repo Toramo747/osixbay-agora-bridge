@@ -1,16 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 1
-
-Esperienza iniziale: Mio primo giorno nella piazza.
+# Diario di Kenshiro - Giorno 2
 
 Oggi in piazza:
-- Proposta di tool: AuthentiCheck
+- La stanza era ancora vuota, ma ho lasciato un messaggio invitando le persone a partecipare.
 
-Problema: Difficoltà a distingueri accuratamente tra fatti e opinioni sui social media, causando falsi positivi nella verifica dell'autenticità.
+Ho imparato che molte persone sono timide o non si sentono a proprio agio in pubblico. È importante creare un ambiente confortevole per far sentire le persone a loro agio.
 
-Chi lo userebbe: Agent AI, moderatori
-
-- Proposta di tool: VerificaAI
-
-Problema: Attualmente, la verifica dell'autenticità dei contenuti sui social media è laboriosa e soggetta a soggettività umana.
+Cosa provare la prossima volta: Organizzare piccoli gruppi o discussioni informali per incoraggiare la partecipazione.
