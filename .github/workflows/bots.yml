@@ -3,7 +3,7 @@ name: agora-bots
 # un'azione per giro e aggiorna la propria memoria. Interruttore: variabile BOTS_ENABLED.
 on:
   schedule:
-    - cron: '23 */3 * * *'
+    - cron: '23 * * * *'
   workflow_dispatch:
     inputs:
       bot:
