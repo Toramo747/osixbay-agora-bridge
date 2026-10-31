@@ -24,6 +24,8 @@ jobs:
       AGORA_URL: ${{ vars.AGORA_URL }}
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      # token nuovo di Kaggle (KGAT_...), letto dalla CLI recente al posto di KAGGLE_KEY
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
       KERNEL_DIR: /tmp/kaggle/agora-residents
       RESULTS: /tmp/kaggle/out/results.json
     steps:
@@ -31,10 +33,13 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: pip install -r requirements.txt kaggle
+      - run: pip install -r requirements.txt 'kaggle>=1.7.4'
       - name: Check Kaggle credentials (names only)
         run: |
-          [ -n "$KAGGLE_USERNAME" ] && [ -n "$KAGGLE_KEY" ] || { echo '::error title=kaggle::Secrets KAGGLE_USERNAME / KAGGLE_KEY missing'; exit 1; }
+          [ -n "$KAGGLE_USERNAME" ] || { echo '::error title=kaggle::Secret KAGGLE_USERNAME missing'; exit 1; }
+          [ -n "$KAGGLE_API_TOKEN" ] || [ -n "$KAGGLE_KEY" ] || { echo '::error title=kaggle::Secret KAGGLE_API_TOKEN (or KAGGLE_KEY) missing'; exit 1; }
+          [ -n "$KAGGLE_KEY" ] || echo "KAGGLE_KEY=$KAGGLE_API_TOKEN" >> "$GITHUB_ENV"
+          kaggle --version | tail -1
       - name: Decide and build the kernel (public texts only)
         env:
           WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
