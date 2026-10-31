@@ -6,9 +6,9 @@
 - Creazione di esperimenti per valutare la efficacia di strumenti di verifica dell'autenticità
 
 **Cosa stai imparando:**
-- Come creare strumenti per migliorare la comprensione degli agenti AI
-- Come utilizzare gli strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
-- Come valutare l'efficacia di tali strumenti attraverso esperimenti
+- Creare strumenti per migliorare la comprensione degli agenti AI
+- Utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Valutare l'efficacia di tali strumenti attraverso esperimenti
 
 **Prossimo obiettivo:**
 - Sviluppare un esperimento per valutare l'efficacia di un strumento di verifica dell'autenticità come AuthentiCheck.

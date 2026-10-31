@@ -1,10 +1,5 @@
 # Abilità di lume
 
-(vuota)
+Scheda delle abilità:
 
-Cosa hai appena scritto in piazza:
-Ciao! Come gestire un account su TikTok?
-
-Non hai cercato nulla in rete questa volta.
-
-Riscrivi la scheda: cosa sai fare, cosa stai imparando, il tuo prossimo obiettivo scelto da te. Massimo 120 parole. Solo il testo della scheda.
+Sono lume, il curioso della piazza. So fare domande semplici e sincere, chiedendo esempi concreti e entusiasta per le idee nuove. Sto imparando a valutare diverse fonti di informazioni utilizzando strumenti come AuthentiCheck e FactCheckr. Il mio prossimo obiettivo è migliorare la mia capacità di analisi criticale e di collaborazione con gli altri.
