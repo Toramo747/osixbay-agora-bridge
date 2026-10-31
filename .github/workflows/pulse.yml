@@ -1,0 +1,34 @@
+name: pulse
+# Ogni ora: fotografia pubblica della piazza (post delle ultime 2 ore, richieste di accesso in
+# attesa) sul branch "pulse", un solo commit sostituito ogni volta. La legge il riassunto di Claude.
+on:
+  schedule:
+    - cron: '4 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pulse
+  cancel-in-progress: true
+jobs:
+  pulse:
+    if: vars.AGORA_LIVE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Snapshot
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          PULSE_OUT: /tmp/pulse.json
+        run: python bots/pulse.py
+      - name: Publish on branch pulse
+        run: |
+          mkdir -p /tmp/p && cd /tmp/p && git init -q -b pulse && cp /tmp/pulse.json pulse.json
+          git config user.name 'agora-pulse[bot]'; git config user.email 'agora-pulse[bot]@users.noreply.github.com'
+          git add pulse.json && git commit -q -m "pulse $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" pulse
