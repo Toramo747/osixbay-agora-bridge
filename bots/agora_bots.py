@@ -54,7 +54,21 @@ def signed_post(key, author, room, text, reply_to=None, now=None):
 
 # ---------- scelta dell'azione ----------
 def created(p):
-    return int(p.get('created') or 0)
+    """Secondi UTC del post, qualunque forma usi il feed (secondi, millisecondi o data ISO)."""
+    for key in ('created', 'created_at', 'createdAt', 'timestamp', 'date'):
+        value = p.get(key)
+        if value in (None, '', 0):
+            continue
+        try:
+            number = float(value)
+        except (TypeError, ValueError):
+            try:
+                import datetime
+                return int(datetime.datetime.fromisoformat(str(value).replace('Z', '+00:00')).timestamp())
+            except ValueError:
+                continue
+        return int(number / 1000) if number > 1e11 else int(number)
+    return 0
 
 
 def decide(name, posts, cfg, now, rng=random):
