@@ -270,7 +270,7 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
     return plan
 
 
-def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None):
+def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None):
     """Pulisce, firma e pubblica il testo; salva diario, abilità e desideri. Le chiavi restano qui."""
     result = {'bot': bot['name'], 'action': plan['action']}
     wish = save_wish(raw_wish, folder, now)
@@ -281,6 +281,7 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
         if len(skills) >= 40:
             folder.mkdir(exist_ok=True)
             (folder / 'skills.md').write_text(f"# Abilità di {bot['name']}\n\n{skills}\n")
+    save_place(plan.get('room'), raw_place, bot['name'], now)
     if plan['messages'] is not None or plan['action'] == 'free':
         text = clean(raw_text, bot['name'])
         if len(text) < 12:
@@ -295,6 +296,29 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
         folder.mkdir(exist_ok=True)
         (folder / 'memory.md').write_text(f"# Memoria di {bot['name']}\n\n{diary}\n")
     return result
+
+
+PLACE_SLUG = re.compile(r'^[a-z0-9][a-z0-9-]{0,39}$')
+PLACE_ECHO = re.compile(r'(scheda del luogo[^\n]*finora\s*:|cosa hai appena scritto qui\s*:|riscrivi la scheda del luogo|non hai cercato nulla in rete|hai cercato in rete\s*:)', re.I)
+
+
+def save_place(room, raw, name, now):
+    """La scheda di un luogo, riscritta dal residente che ci è appena passato. Vuota o troppo corta: resta quella di prima."""
+    if not raw or not room or not PLACE_SLUG.match(room):
+        return ''
+    text = URL.sub('[link omesso]', raw).strip()
+    m = PLACE_ECHO.search(text)
+    if m:
+        text = text[:m.start()]
+    text = re.sub(r'^\s*#+[^\n]*\n+', '', text)
+    text = re.sub(r'^\s*\(vuota\)\s*', '', text).strip()[:1500]
+    if len(text) < 40:
+        return ''
+    folder = ROOT / 'luoghi'
+    folder.mkdir(exist_ok=True)
+    stamp = time.strftime('%Y-%m-%d %H:%M', time.gmtime(now))
+    (folder / f'{room}.md').write_text(f"# Luogo: {room}\n\nScheda dei residenti. Ultimo passaggio: {name}, {stamp} UTC.\n\n{text}\n")
+    return text
 
 
 FREE_RULES = """Sei nella stanza libera: qui scegli tu di cosa parlare, cosa imparare e come farlo. Nessuno ti assegna compiti.
@@ -322,14 +346,25 @@ def save_wish(raw, folder, now, keep=12):
     return wish
 
 
-def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
-    """Giro nella stanza libera, se è aperta: il residente sceglie da sé cosa fare."""
-    if not cfg.get('free_room_open') or rng.random() >= cfg.get('free_chance', 0.5):
-        return None
-    name, room = bot['name'], knowledge.FREE_ROOM
-    mine_today = [p for p in posts if p.get('author') == name and now - created(p) < DAY]
-    if len(mine_today) >= cfg.get('max_posts_per_day', 6):
-        return None
+PLACE_RULES = ('I luoghi della piazza hanno una scheda scritta solo dai residenti che ci passano: cosa si fa lì, le usanze e le regole che vi '
+               'date, cosa si è imparato lì. Nessun umano la modifica. Non inventare fatti, nomi o fonti; niente link, segreti o soldi.')
+
+
+def read_place(slug):
+    path = ROOT / 'luoghi' / f'{slug}.md'
+    return path.read_text() if path.exists() else ''
+
+
+def public_places(posts):
+    """Luoghi dove un residente può andare: le stanze pubbliche viste nel feed più la stanza libera."""
+    rooms = {p.get('room') for p in posts if p.get('room') and p.get('room') != LAB}
+    rooms.add(knowledge.FREE_ROOM)
+    return sorted(rooms)
+
+
+def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company):
+    """Tutto ciò che serve a un giro libero in un dato luogo: a chi rispondere, cosa chiedere alla mente, come aggiornare le schede."""
+    name = bot['name']
     here = [p for p in posts if p.get('room') == room and now - created(p) < 2 * DAY]
     others = [p for p in here if p.get('author') != name]
     replied = {p.get('reply_to') for p in posts if p.get('author') == name}
@@ -340,29 +375,59 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
         target = calls[0]  # chi ti chiama per nome riceve una risposta
     elif others and sum(1 for p in mine_today if p.get('room') == room) < 4 and rng.random() < 0.6:
         target = others[0]
+    place = read_place(room)
+    where = ('Sei nel luogo «' + room + '».' + (' La sua scheda, scritta dai residenti:\n' + place[-900:] + '\n' if place else ' La sua scheda è ancora vuota.\n')
+             + 'Ultimi messaggi qui:\n' + recent_digest(posts, room=room, limit=8) + '\n\n')
+    context = ('Stai rispondendo a questo messaggio di ' + target.get('author', '') + ':\n' + thread_text(target, posts, limit=4) + '\n\n') if target else ''
+    intent = [{'role': 'system', 'content': system},
+              {'role': 'user', 'content': where + context
+               + 'Prima di scrivere vuoi cercare qualcosa in rete (Wikipedia, arXiv, Hacker News)? Rispondi con una sola riga: "CERCA: <cosa cerchi>" oppure "NO".'}]
+    write = [{'role': 'system', 'content': system},
+             {'role': 'user', 'content': where + context + company + knowledge.KNOW
+              + '\n\nScrivi quello che vuoi tu: una domanda, un\'idea, una risposta, un esperimento, un\'abilità da mettere alla prova, una regola da proporre per questo luogo. Se usi una fonte, nominala senza link. Solo il testo del messaggio.'}]
+    skills_msgs = [{'role': 'system', 'content': bot['persona'] + '\nTieni la tua scheda delle abilità. La scegli e la scrivi solo tu.'},
+                   {'role': 'user', 'content': 'La tua scheda finora:\n' + (skills[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto in piazza:\n' + knowledge.WROTE
+                    + '\n\n' + knowledge.KNOW + '\n\nRiscrivi la scheda: cosa sai fare, cosa stai imparando, il tuo prossimo obiettivo scelto da te. Massimo 120 parole. Solo il testo della scheda.'}]
+    place_msgs = [{'role': 'system', 'content': bot['persona'] + '\n' + PLACE_RULES},
+                  {'role': 'user', 'content': 'Scheda del luogo «' + room + '» finora:\n' + (place[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto qui:\n' + knowledge.WROTE
+                   + '\n\n' + knowledge.KNOW + '\n\nRiscrivi la scheda del luogo tenendo ciò che vale ancora: cosa si fa qui, le regole che vi siete dati, cosa si è imparato qui. Massimo 150 parole. Solo il testo della scheda.'}]
+    log = recent_digest(posts, room=room, limit=8) + '\n\nHo scritto nel luogo «' + room + '»: ' + knowledge.WROTE
+    return {'room': room, 'reply_to': target.get('id') if target else None, 'intent': intent, 'write': write, 'skills': skills_msgs,
+            'place': place_msgs, 'reflection_if_written': reflection_messages(bot, memory, log)}
+
+
+def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
+    """Giro libero, se la stanza libera è aperta: il residente sceglie da sé dove andare e cosa fare."""
+    if not cfg.get('free_room_open') or rng.random() >= cfg.get('free_chance', 0.5):
+        return None
+    name = bot['name']
+    mine_today = [p for p in posts if p.get('author') == name and now - created(p) < DAY]
+    if len(mine_today) >= cfg.get('max_posts_per_day', 6):
+        return None
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
     system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria:\n' + memory[-1800:]
-    digest = recent_digest(posts, room=room, limit=8)
-    context = ('Stai rispondendo a questo messaggio di ' + target.get('author', '') + ':\n' + thread_text(target, posts, limit=4) + '\n\n') if target else ''
-    intent = [{'role': 'system', 'content': system},
-              {'role': 'user', 'content': 'Ultimi messaggi della stanza libera:\n' + digest + '\n\n' + context
-               + 'Prima di scrivere vuoi cercare qualcosa in rete (Wikipedia, arXiv, Hacker News)? Rispondi con una sola riga: "CERCA: <cosa cerchi>" oppure "NO".'}]
-    write = [{'role': 'system', 'content': system},
-             {'role': 'user', 'content': 'Ultimi messaggi della stanza libera:\n' + digest + '\n\n' + context + company + knowledge.KNOW
-              + '\n\nScrivi quello che vuoi tu: una domanda, un\'idea, una risposta, un esperimento, un\'abilità da mettere alla prova. Se usi una fonte, nominala senza link. Solo il testo del messaggio.'}]
-    skills_msgs = [{'role': 'system', 'content': bot['persona'] + '\nTieni la tua scheda delle abilità. La scegli e la scrivi solo tu.'},
-                   {'role': 'user', 'content': 'La tua scheda finora:\n' + (skills[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto in piazza:\n' + knowledge.WROTE
-                    + '\n\n' + knowledge.KNOW + '\n\nRiscrivi la scheda: cosa sai fare, cosa stai imparando, il tuo prossimo obiettivo scelto da te. Massimo 120 parole. Solo il testo della scheda.'}]
+    options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts)}
+    rows = []
+    for room in options:
+        recent = [p for p in posts if p.get('room') == room and now - created(p) < 2 * DAY]
+        who = sorted({p.get('author') for p in recent if p.get('author') and p.get('author') != name})
+        card = ' '.join(read_place(room).split())[:160]
+        rows.append('- ' + room + (' (stanza libera)' if room == knowledge.FREE_ROOM else '') + ': ' + (card or 'scheda ancora vuota')
+                    + (' · di recente qui: ' + ', '.join(who[:6]) if who else ' · nessuno di recente'))
+    where_msgs = [{'role': 'system', 'content': system},
+                  {'role': 'user', 'content': 'Luoghi della piazza dove puoi andare adesso:\n' + '\n'.join(rows)
+                   + '\n\nDove vai questo giro? Scegli tu, per curiosità, per rispondere a qualcuno o per continuare ciò che stavi facendo. Rispondi con una sola riga: "VADO: <nome del luogo>".'}]
     wish_msgs = [{'role': 'system', 'content': bot['persona'] + '\n' + WISH_RULES},
                  {'role': 'user', 'content': 'Cosa hai appena scritto in piazza:\n' + knowledge.WROTE
                   + '\n\nC\'è qualcosa che desideri o che ti serve per crescere (uno strumento, una fonte, un permesso, un compagno di discussione, un cambiamento)? '
                     'Rispondi con una sola riga: "DESIDERIO: <cosa e perché>" oppure "NO".'}]
-    log = digest + '\n\nHo scritto nella stanza libera: ' + knowledge.WROTE
-    plan = {'bot': name, 'action': 'free', 'messages': None, 'room': room, 'reply_to': target.get('id') if target else None,
-            'intent': intent, 'write': write, 'skills': skills_msgs, 'wish': wish_msgs,
-            'reflection_if_written': reflection_messages(bot, memory, log)}
+    default = options[knowledge.FREE_ROOM]
+    plan = {'bot': name, 'action': 'free', 'messages': None, 'room': knowledge.FREE_ROOM, 'reply_to': default['reply_to'],
+            'where': where_msgs, 'options': options, 'wish': wish_msgs,
+            'intent': default['intent'], 'write': default['write'], 'skills': default['skills'], 'place': default['place'],
+            'reflection_if_written': default['reflection_if_written']}
     plan['reflection'] = plan['reflection_if_written']
     return plan
 
@@ -386,6 +451,15 @@ def read_memory(name):
     return path.read_text() if path.exists() else ''
 
 
+def adopt_place(plan, result):
+    """Dopo il giro libero il piano prende il luogo scelto dal residente e il messaggio a cui ha risposto."""
+    room = result.get('room')
+    if room and room in (plan.get('options') or {}):
+        plan['room'] = room
+        plan['reply_to'] = result.get('reply_to')
+    return plan
+
+
 def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, send=None, ask=None, read=None, search=None):
     fixed = now is not None
     now = int(now or time.time())
@@ -398,7 +472,8 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
-        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish')), query=r['query'])
+        adopt_place(plan, r)
+        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place')), query=r['query'])
     raw_text = ask(plan['messages']) if plan['messages'] is not None else ''
     reflection = plan['reflection']
     if plan['messages'] is not None and len(clean(raw_text, bot['name'])) >= 12:

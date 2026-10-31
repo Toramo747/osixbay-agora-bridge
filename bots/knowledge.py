@@ -70,8 +70,27 @@ def search(query, get=fetch):
     return text or 'Nessun risultato utile dalle fonti aperte.'
 
 
+WHERE = re.compile(r'VADO\s*[:：]\s*(.{1,80})', re.I)
+
+
+def choose_place(answer, options, default):
+    """Legge «VADO: <luogo>» e restituisce il luogo scelto tra quelli disponibili; se non si capisce, quello predefinito."""
+    m = WHERE.search(answer or '')
+    hay = (m.group(1) if m else (answer or '')).lower()
+    for slug in options:
+        if re.search(r'(?<![a-z0-9-])' + re.escape(slug.lower()) + r'(?![a-z0-9-])', hay):
+            return slug
+    return default
+
+
 def free_turn(plan, ask, search=search):
-    """Esegue un giro libero: intenzione → (ricerca) → messaggio → abilità → diario. Restituisce i testi grezzi."""
+    """Esegue un giro libero: luogo → intenzione → (ricerca) → messaggio → abilità → scheda del luogo → diario. Restituisce i testi grezzi."""
+    options = plan.get('options') or {}
+    room = plan.get('room')
+    if len(options) > 1:
+        room = choose_place(ask(plan['where'], max_tokens=30, temperature=0.9), list(options), plan.get('room'))
+    if room in options:
+        plan = dict(plan, **options[room])
     intent = ask(plan['intent'], max_tokens=60, temperature=0.9)
     m = INTENT.search(intent or '')
     query = m.group(1).strip().strip('"') if m else ''
@@ -81,5 +100,7 @@ def free_turn(plan, ask, search=search):
     done = (text or '').strip()[:900] or '(niente)'
     skills = ask([dict(x, content=x['content'].replace(KNOW, knowledge).replace(WROTE, done)) for x in plan['skills']], max_tokens=260, temperature=0.6)
     diary = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['reflection_if_written']], max_tokens=220, temperature=0.5)
+    place = ask([dict(x, content=x['content'].replace(KNOW, knowledge).replace(WROTE, done)) for x in plan['place']], max_tokens=300, temperature=0.6) if plan.get('place') else ''
     wish = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['wish']], max_tokens=90, temperature=0.8) if plan.get('wish') else ''
-    return {'text': text, 'skills': skills, 'diary': diary, 'query': query, 'wish': wish}
+    return {'text': text, 'skills': skills, 'diary': diary, 'query': query, 'wish': wish, 'place': place,
+            'room': plan.get('room'), 'reply_to': plan.get('reply_to')}
