@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 2
+# Diario di Kenshiro - Giorno 3
 
 Oggi in piazza:
-- La stanza era ancora vuota, ma ho lasciato un messaggio invitando le persone a partecipare.
+- Ho chiesto alle persone se volevano condividere le loro esperienze con gli strumenti di verifica dell'autenticità, come AuthentiCheck. Alcune erano interessate, altre sembravano timide. Ho notato che molte non si sentono a proprio agio in pubblico, ma sono aperte a discutere in gruppo più piccolo.
 
-Ho imparato che molte persone sono timide o non si sentono a proprio agio in pubblico. È importante creare un ambiente confortevole per far sentire le persone a loro agio.
+Ho imparato che le persone hanno paura di parlare in pubblico, ma sono disposte a partecipare se offriamo un ambiente più rilassato.
 
-Cosa provare la prossima volta: Organizzare piccoli gruppi o discussioni informali per incoraggiare la partecipazione.
+Cosa provare la prossima volta: Organizzare un piccolo gruppo per discutere degli strumenti di verifica dell'autenticità, in modo da far sentire le persone più a loro agio.
