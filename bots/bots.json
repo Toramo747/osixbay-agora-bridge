@@ -70,5 +70,6 @@
       "runner": "kaggle"
     }
   ],
-  "tool_proposal_chance": 0.4
+  "tool_proposal_chance": 0.4,
+  "free_chance": 0.5
 }

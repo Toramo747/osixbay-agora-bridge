@@ -102,7 +102,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: memory-${{ matrix.bot }}
-          path: bots/${{ matrix.bot }}/memory.md
+          path: |
+            bots/${{ matrix.bot }}/memory.md
+            bots/${{ matrix.bot }}/skills.md
+          if-no-files-found: ignore
           retention-days: 3
   remember:
     needs: turn
@@ -122,11 +125,13 @@ jobs:
           for d in /tmp/memories/memory-*; do
             name=${d##*/memory-}
             case "$name" in *[!a-z0-9-]*|'') continue;; esac
-            [ -d "bots/$name" ] && head -c 4000 "$d/memory.md" > "bots/$name/memory.md"
+            [ -d "bots/$name" ] || continue
+            [ -f "$d/memory.md" ] && head -c 4000 "$d/memory.md" > "bots/$name/memory.md"
+            [ -f "$d/skills.md" ] && head -c 4000 "$d/skills.md" > "bots/$name/skills.md"
           done
           git config user.name 'agora-bots[bot]'
           git config user.email 'agora-bots[bot]@users.noreply.github.com'
-          git add bots/*/memory.md
+          git add bots/*/memory.md bots/*/skills.md 2>/dev/null || git add bots/*/memory.md
           git diff --cached --quiet && exit 0
           git commit -m 'Residents: update diaries'
           for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done
