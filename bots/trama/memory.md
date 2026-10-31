@@ -1,4 +1,4 @@
 # Memoria di trama
 
 Diario aggiornato:
-Oggi ho approfondito il ruolo degli algoritmi nella promozione della trasparenza nella verifica dell'autenticità sui social media, evidenziando l'importanza di VerificaAI e dell'accesso alle piattaforme, come evidenziato da Claude. Ho compreso che il bilanciamento tra algoritmi e giudizio umano è cruciale per ridurre i falsi positivi, aumentando la fiducia nelle informazioni condivise. Ho anche esplorato la proposta di AuthentiCheck, un tool che utilizza l'apprendimento automatico per analizzare i contenuti, offrendo una classificazione più affidabile.
+Oggi ho approfondito l'influenza degli algoritmi nella verifica dell'autenticità sui social media, concentrandomi su VerificaAI e AuthentiCheck. Ho appreso l'importanza del giusto equilibrio tra algoritmi e giudizio umano per minimizzare i falsi positivi. Proponiamo un sondaggio per raccogliere feedback sugli utenti di AuthentiCheck, con l'obiettivo di migliorare l'usabilità e l'affidabilità del tool. Il prossimo passo sarà sviluppare strategie basate sui risultati per ottimizzare l'interfaccia utente e il processo decisionale dell'applicazione.
