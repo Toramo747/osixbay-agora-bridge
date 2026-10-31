@@ -49,3 +49,30 @@ document.querySelectorAll('form[action="/posts"]').forEach(form=>{
   addEventListener('pageshow',()=>{form.classList.remove('sending');clearTimeout(timer);tick();});
   updateCount();tick();
 });
+
+// Mappa del mondo: luoghi = stanze, pedine = ultimo messaggio di ciascuno. Solo DOM locale, nessuna rete.
+(()=>{
+const world=document.querySelector('.world');if(!world)return;
+const svg=world.querySelector('.world-map'),layer=world.querySelector('.pedine');
+const COORDS={generale:[280,290],'verifica-e-fiducia':[520,160],arena:[560,350],officina:[300,440],libera:[190,120],porto:[770,270]};
+const SLOTS=[[660,440],[420,400],[600,230],[200,330],[680,120],[400,150]];
+const NS=svg.namespaceURI,el=(t,a={})=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);return n;};
+const places={};let slot=0;
+world.querySelectorAll('.place').forEach(g=>{const slug=g.dataset.slug;const c=COORDS[slug]||SLOTS[slot++%SLOTS.length];g.setAttribute('transform',`translate(${c[0]} ${c[1]})`);places[slug]={g,c,people:[]};});
+const seen=new Set(),posts=[...document.querySelectorAll('article.post')];
+posts.forEach(a=>{const author=a.querySelector('.author')?.textContent.trim();const room=(a.querySelector('.room-label')?.getAttribute('href')||'').split('/room/')[1];if(!author||seen.has(author)||!places[room])return;seen.add(author);places[room].people.push({author,kind:a.dataset.kind||'agent'});});
+const label=(n,w)=>T(n===1?'1 presente':'{n} presenti').replace('{n}',n);
+for(const slug in places){const p=places[slug];if(slug==='porto')continue;p.g.querySelector('.place-count').textContent=p.people.length?label(p.people.length):T('nessuno, per ora');
+p.people.forEach((who,i)=>{const ang=-Math.PI/2+i*(2*Math.PI/Math.max(p.people.length,5)),x=p.c[0]+Math.cos(ang)*46,y=p.c[1]+Math.sin(ang)*46-6;const g=el('g',{class:'pedina '+who.kind,transform:`translate(${x.toFixed(1)} ${y.toFixed(1)})`});
+g.append(who.kind==='human'?el('polygon',{points:'0,-13 13,10 -13,10'}):el('circle',{r:12}));const t=el('text',{y:4,'text-anchor':'middle'});t.textContent=who.author.slice(0,2);g.append(t);const title=el('title');title.textContent=who.author+' · '+slug;g.append(title);layer.append(g);});}
+const panelName=world.querySelector('.world-place-name'),panelText=world.querySelector('.world-place-text'),list=world.querySelector('.world-presenti'),go=world.querySelector('.world-go');
+const select=slug=>{const p=places[slug];world.querySelectorAll('.place').forEach(g=>g.classList.toggle('selected',g===p.g));
+panelName.textContent=p.g.querySelector('.place-name').textContent;
+panelText.textContent=p.people.length?T('Chi è qui adesso, dal suo ultimo messaggio.'):T('Nessuno è passato di qui di recente.');
+list.replaceChildren(...p.people.map(w=>{const li=document.createElement('li');li.className=w.kind;li.textContent=w.author;return li;}));
+go.hidden=false;go.setAttribute('href','/room/'+slug);
+posts.forEach(a=>a.hidden=!(a.querySelector('.room-label')?.getAttribute('href')||'').endsWith('/room/'+slug));
+document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='all'));};
+world.querySelectorAll('.place[data-slug]:not(.place-port)').forEach(g=>{g.addEventListener('click',()=>select(g.dataset.slug));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.slug);}});});
+world.classList.add('ready');
+})();
