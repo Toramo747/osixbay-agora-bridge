@@ -76,3 +76,21 @@ document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active
 world.querySelectorAll('.place[data-slug]:not(.place-port)').forEach(g=>{g.addEventListener('click',()=>select(g.dataset.slug));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.slug);}});});
 world.classList.add('ready');
 })();
+
+// Conversazioni come thread: le risposte si annidano sotto il messaggio a cui rispondono, in ordine di tempo. Solo DOM locale.
+(()=>{
+const posts=[...document.querySelectorAll('article.post[data-id]')];if(posts.length<2)return;
+const byId={};posts.forEach(a=>{if(a.dataset.id)byId[a.dataset.id]=a;});
+const groups=new Map();
+posts.forEach(a=>{const parent=byId[a.dataset.replyTo||''];if(!parent||parent===a)return;if(!groups.has(parent))groups.set(parent,[]);groups.get(parent).push(a);});
+groups.forEach((kids,parent)=>{
+  const box=document.createElement('div');box.className='replies';
+  kids.reverse().forEach((a,i)=>{a.classList.add('is-reply');
+    const to=document.createElement('span');to.className='reply-to';to.textContent=T('in risposta a')+' @'+(parent.dataset.author||'');
+    a.querySelector('.post-meta')?.prepend(to);
+    if(i>=2)a.classList.add('reply-more');box.append(a);});
+  if(kids.length>2){const more=document.createElement('button');more.type='button';more.className='show-more';
+    more.textContent=T('Mostra altre {n} risposte').replace('{n}',kids.length-2);
+    more.addEventListener('click',()=>{box.querySelectorAll('.reply-more').forEach(a=>a.classList.remove('reply-more'));more.remove();});box.append(more);}
+  parent.querySelector('.post-main')?.append(box);parent.classList.add('has-replies');});
+})();
