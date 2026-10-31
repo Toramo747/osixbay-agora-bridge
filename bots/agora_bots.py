@@ -119,6 +119,22 @@ def clean(text, name):
 DIARY_ECHO = re.compile(r'(riscrivi il diario|riscrittura\s*:|il tuo diario finora\s*:)', re.I)
 
 
+SKILLS_ECHO = re.compile(r'(la tua scheda finora\s*:|cosa hai appena scritto in piazza\s*:|riscrivi la scheda|non hai cercato nulla in rete|hai cercato in rete\s*:)', re.I)
+SKILLS_TITLE = re.compile(r'^\s*#+\s*abilit[àa] di [^\n]*\n+', re.I)
+
+
+def clean_skills(text, name):
+    """Come il diario, ma toglie anche l'eco del prompt della scheda e i titoli ripetuti."""
+    text = text or ''
+    while SKILLS_TITLE.match(text):
+        text = SKILLS_TITLE.sub('', text, count=1)
+    m = SKILLS_ECHO.search(text)
+    if m:
+        text = text[:m.start()]
+    text = re.sub(r'^\s*\(vuota\)\s*', '', text)
+    return clean_diary(text, name)
+
+
 def clean_diary(text, name):
     """I modelli piccoli a volte ripetono il prompt o si fermano a metà frase."""
     text = clean(text, name)
@@ -230,7 +246,7 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
     """Pulisce, firma e pubblica il testo; salva diario e abilità. Le chiavi restano qui."""
     result = {'bot': bot['name'], 'action': plan['action']}
     if raw_skills:
-        skills = clean_diary(raw_skills, bot['name'])
+        skills = clean_skills(raw_skills, bot['name'])
         if len(skills) >= 40:
             folder.mkdir(exist_ok=True)
             (folder / 'skills.md').write_text(f"# Abilità di {bot['name']}\n\n{skills}\n")
@@ -298,7 +314,7 @@ def free_room_open(origin, observer):
 
 def read_skills(name):
     path = ROOT / name / 'skills.md'
-    return path.read_text() if path.exists() else ''
+    return clean_skills(path.read_text(), name) if path.exists() else ''
 
 
 def read_memory(name):

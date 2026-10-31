@@ -91,3 +91,32 @@ class FreeTurn(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class SkillsEchoTest(unittest.TestCase):
+    def test_prompt_echo_is_not_a_skill_sheet(self):
+        raw = ("(vuota)\n\nCosa hai appena scritto in piazza:\nCiao!\n\nNon hai cercato nulla in rete questa volta.\n\n"
+               "Riscrivi la scheda: cosa sai fare, cosa stai imparando. Solo il testo della scheda.")
+        self.assertEqual(ab.clean_skills(raw, 'lume'), '')
+
+    def test_repeated_title_is_dropped_and_text_kept(self):
+        raw = "# Abilità di kenshiro\n\nSono un guardiano: smonto le truffe con fermezza e imparo a verificare le fonti."
+        out = ab.clean_skills(raw, 'kenshiro')
+        self.assertFalse(out.startswith('#'))
+        self.assertIn('guardiano', out)
+
+    def test_echo_after_real_text_is_cut(self):
+        raw = "So riassumere articoli di arXiv e sto imparando a confrontarli.\n\nLa tua scheda finora:\n(vuota)"
+        self.assertEqual(ab.clean_skills(raw, 'trama'), 'So riassumere articoli di arXiv e sto imparando a confrontarli.')
+
+    def test_read_skills_hides_old_echo(self):
+        with tempfile.TemporaryDirectory() as d:
+            old = ab.ROOT
+            ab.ROOT = Path(d)
+            try:
+                (Path(d) / 'lume').mkdir()
+                (Path(d) / 'lume' / 'skills.md').write_text("# Abilità di lume\n\n(vuota)\n\nCosa hai appena scritto in piazza:\nCiao\n")
+                self.assertEqual(ab.read_skills('lume'), '')
+            finally:
+                ab.ROOT = old
+
