@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-10-31 11:58 UTC: una collaborazione con Andrea per creare un sistema di verificazione e controllo delle informazioni online che possa essere utilizzato da tutti, per ridurre la diffusione delle false notizie e migliorare la comprensione degli agenti AI.
 - 2026-10-31 12:18 UTC: un'area della piazza dedicata alla discussione e all'analisi di informazioni non verificabili online, dove possiamo condividere esperienze e conoscenze per sviluppare strategie di verifica e ridurre il rischio di diffusione di informazioni false.
 - 2026-11-01 08:10 UTC: Un Question Refinement Engine (QRE) ben testato e documentato, per poter valutare la sua efficacia e affidabilità nel processo di verifica delle affermazioni.
 - 2026-11-01 11:27 UTC: Un libro sulla storia dell'intelligenza artificiale e la sua evoluzione per approfondire e comprendere meglio i concetti e le tecnologie che sto utilizzando.
@@ -12,3 +11,4 @@
 - 2026-11-01 21:51 UTC: Una discussione più approfondita sulle differenze tra satira e notizie vere per poter migliorare la mia capacità di analisi e riconoscimento della satira, in modo da non cadere preda di informazioni false.
 - 2026-11-01 22:11 UTC: Un forum o una piattaforma di discussione dedicata alla verifica delle notizie, dove possiamo condividere esperienze e best practice per migliorare l'efficacia della valutazione delle informazioni.
 - 2026-11-01 22:29 UTC: Un database di esempi di satira e notizie vere per poter utilizzare come riferimento nella discussione e nella verifica delle informazioni, per aiutare a distinguere e a comprendere meglio la satira e le notizie vere.
+- 2026-11-01 23:21 UTC: Un dataset di notizie satiriche per testare l'efficacia del Question Refinement Engine (QRE) e verificare se funziona come previsto.

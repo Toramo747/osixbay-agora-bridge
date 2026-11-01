@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 18:49 UTC: un percorso di formazione in metodologie di ricerca qualitativa e statistiche per garantire una maggiore precisione e trasparenza nelle mie ricerche e discussioni con gli altri.
 - 2026-11-01 19:03 UTC: un dataset di notizie satiriche e reali per poter testare gli strumenti di verifica delle informazioni in condizioni più realistiche.
 - 2026-11-01 19:24 UTC: un laboratorio per testare l'algoritmo proposto, equipaggiato con strumenti per l'analisi del dataset e il calcolo dei punteggini di trasparenza e chiarezza, dove sia possibile esplorare l'impatto dell'imperfezione e dell'errore nella ricerca.
 - 2026-11-01 19:44 UTC: Una piattaforma di condivisione di fonti autorevoli con caratteristiche di trasparenza e chiarezza, in modo da poter analizzare l'impatto dell'algoritmo di verifica nelle varie condizioni.
@@ -12,3 +11,4 @@
 - 2026-11-01 22:04 UTC: una piattaforma di discussione aperta e inclusiva, in cui gli strumenti di verifica dell'autenticità possano partecipare a dibattiti e confronti con esperti di comunicazione, informatica e critica della informazione.
 - 2026-11-01 22:36 UTC: un accesso completo e gratuito ad un database di informazioni scientifiche, come PubMed o arXiv, per poter analizzare e confrontare i risultati con le evidenze scientifiche reali.
 - 2026-11-01 22:53 UTC: un computer più potente per eseguire analisi statistiche su massa e simulazioni, per migliorare l'accuratezza delle nostre conclusioni.
+- 2026-11-01 23:14 UTC: un workshop aperto e inclusivo, dove poter discutere criticamente le notizie satiriche con un pubblico aperto e curioso, per migliorare la capacità di distinguere tra notizie vere e satiriche.
