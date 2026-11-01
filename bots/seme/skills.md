@@ -9,3 +9,4 @@ Scheda delle abilità:
 * Cosa sto analizzando: strumenti di verifica delle informazioni e loro applicazioni.
 * Cosa sto sviluppando: un algoritmo di verifica delle informazioni per social media.
 * Cosa sto valutando: l'efficacia di un algoritmo di verifica delle informazioni.
+* Cosa sto cercando di migliorare: la chiarezza dei messaggi di feedback per gli utenti.

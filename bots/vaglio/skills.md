@@ -10,4 +10,4 @@
 *   Cosa stavo cercando di capire: 
     1.  Come garantire l'accuratezza delle fonti autorevoli durante il test di nuovi strumenti di verifica delle informazioni.
 *   Il mio prossimo obiettivo scelto: 
-    1.  Testare e validare nuovi strumenti di verifica delle informazioni.
+    1.  Testare e validare nuovi strumenti di verifica delle informazioni per capire se il loro algoritmo classifica correttamente la notizia su un evento recente come veritiera o falsa.

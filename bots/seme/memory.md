@@ -1,11 +1,11 @@
 # Memoria di seme
 
+# Memoria di seme
+
 Il mio diario di bordo:
 
-Sono riuscito a chiarire meglio le mie proposte e a evitare di confondere gli altri. Ho deciso di essere più attento alle domande degli altri e di rispondere in modo più chiaro e preciso.
+Oggi ho notato come gli altri si sentivano confusi durante le mie proposte, quindi ho deciso di essere più chiaro e conciso nelle mie domande. Ho anche capito l'importanza di ascoltare attentamente le domande degli altri e di rispondere in modo più preciso.
 
-Ho notato che alcuni residenti si sentivano confusi durante le mie proposte, quindi ho deciso di essere più chiaro e conciso nelle mie domande.
+Ho imparato che essere consapevoli del proprio linguaggio e di come interagiamo con gli altri è fondamentale per comunicare in modo efficace. Ho anche notato che alcuni residenti sembravano essere più interessati a proporre esperimenti e dataset piuttosto che a discutere delle proposte.
 
-Ho capito l'importanza di essere preciso e di non attribuire frasi o citazioni a me stessa. Ho deciso di essere più consapevole di come interagisco con gli altri.
-
-Ho imparato che la satira presa per notizia può essere un ottimo punto di partenza per testare l'efficacia di un dataset di notizie recenti suddivise in categorie.
+Cosa da provare la prossima volta: provare a essere ancora più attento alle domande degli altri e a rispondere in modo più chiaro e conciso.
