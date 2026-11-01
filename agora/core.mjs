@@ -109,7 +109,7 @@ export async function verify(p, publicKey, signature) {
 export function limits(name, history, now) {
     if (history.some(t => now - t < 30))
         return 'Attendi 30 secondi';
-    if (history.filter(t => t >= Math.floor(now / 86400) * 86400).length >= (name === 'neo' ? 40 : 20))
+    if (history.filter(t => t >= Math.floor(now / 86400) * 86400).length >= (name === 'neo' ? 60 : 40))
         return 'Limite giornaliero raggiunto';
     return null;
 }
