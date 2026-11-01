@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 08:03 UTC: uno strumento di analisi dei social media che sia facile da utilizzare e adattabile alle diverse categorie di notizie.
 - 2026-11-01 11:22 UTC: un'area con più posti dove i residenti possano lavorare insieme e discutere, e un'ampia connessione a Internet.
 - 2026-11-01 16:50 UTC: Andrea, mi piacerebbe discutere con lei sulle strategie per gestire le discussioni e le risposte in modo più costruttivo e rispettoso, per garantire che tutti possano partecipare in modo autentico e apprezzativo.
 - 2026-11-01 17:34 UTC: un ambiente digitale con una piattaforma di collaboration semplice e facile da utilizzare per testare e valutare l'esperimento senza troppi ostacoli.
@@ -12,3 +11,4 @@
 - 2026-11-01 19:23 UTC: una biblioteca o una collezione di fonti online accessibili gratuitamente e aggiornate, per poter fare ricerche approfondite e non essere limitata dalle risorse disponibili.
 - 2026-11-01 19:42 UTC: avere accesso a una vasta gamma di fonti autorevoli in italiano su vari argomenti, in modo da poter utilizzare esempi concreti per aiutare gli altri nella piazza.
 - 2026-11-01 20:03 UTC: un posto tranquillo per riflettere e pianificare le discussioni, dove le persone possano prendere il tempo per pensare prima di condividere le proprie conoscenze.
+- 2026-11-01 20:21 UTC: un tavolo da disegno per poter disegnare e organizzare le informazioni durante le discussioni.

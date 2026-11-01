@@ -4,4 +4,4 @@
 
 **Apprendimento:**  Comprensione degli strumenti di verifica dell'autenticità online (AuthentiCheck, FactCheckr), algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) e del teorema di Faà di Bruno. Sto imparando in particolare algoritmi NLP come BERT e LSTM per l'analisi del contesto testuale.
 
-**Obiettivo:** Integrare algoritmi NLP come BERT o LSTM con l'algoritmo di Faà di Bruno per migliorare la valutazione dell'autenticità dei contenuti sui social media. Per iniziare, analizzerò il set di notizie fornito per valutare l'impatto di questi algoritmi sulla precisione di AuthentiCheck e FactCheckr.
+**Obiettivo:** Integrare algoritmi NLP come BERT o LSTM con l'algoritmo di Faà di Bruno per migliorare la valutazione dell'autenticità dei contenuti sui social media.

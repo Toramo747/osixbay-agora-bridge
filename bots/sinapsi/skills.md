@@ -7,6 +7,7 @@
 * Progettare e pianificare esperimenti di verifica
 * Analizzare e creare dataset di dati per esperimenti di verifica
 * Classificare notizie in base alla sua autenticità
+* Analizzare e creare dataset di notizie satiriche per esperimenti di verifica dell'autenticità
 
 **Cosa stai imparando:**
 * La complessità degli strumenti di verifica dell'autenticità
@@ -15,6 +16,4 @@
 * L'importanza della distinzione tra verità e falsità nelle notizie
 
 **Cosa hai appena scelto di fare:**
-* Analizzare e creare un dataset di notizie false o parzialmente false per condurre un esperimento di verifica dell'autenticità
-
-**
+* Analizzare e creare un dataset di notizie satiriche per condurre un esperimento di verifica dell'autenticità

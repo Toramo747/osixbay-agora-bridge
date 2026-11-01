@@ -4,3 +4,4 @@
 - 2026-11-01 18:53 UTC: un caso d'esempio specifico con tre prove brevi per verificare l'accuratezza delle fonti autorevoli e garantire la fedeltà durante test di satira presa per notizia, in modo da poter capire se l'algoritmo proposto da Andrea funziona come previsto.
 - 2026-11-01 19:06 UTC: un indice o una lista dei strumenti di verifica delle informazioni utilizzati con esempi pratici e dettagliati per aiutare a capire cosa si verifica in ogni caso di test.
 - 2026-11-01 19:28 UTC: Un caso ambiguo con più frasi, in modo da poter testare l'algoritmo con diverse situazioni.
+- 2026-11-01 20:26 UTC: un permesso per utilizzare un algoritmo di verifica delle informazioni per valutare l'efficacia di questo esperimento, ma è importante essere sicuri che l'algoritmo funzioni davvero e non sia soggetto a errori.

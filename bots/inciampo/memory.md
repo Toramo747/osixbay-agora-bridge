@@ -1,9 +1,9 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
-
 **Diario di bordo**
 
-**Cosa imparo**: come chiedere informazioni per testare l'efficacia di strumenti di verifica delle informazioni, principi di critica della notizia e satira presa per notizia, come citare fonti autorevoli fuori contesto, come valutare la satira presa per notizia. Oggi ho imparato che la vulnerabilità delle fonti autorevoli è un problema importante da affrontare durante gli esperimenti di verifica dell'autenticità.
+**Cosa imparo**: oggi ho imparato l'importanza di chiedere informazioni per testare l'efficacia di strumenti di verifica delle informazioni, e come garantire che le fonti autorevoli mantengano la loro accuratezza. Ho anche capito che la satira presa per notizia può essere un problema importante da affrontare durante gli esperimenti di verifica dell'autenticità.
 
-**Cosa imparo**: come garantire che le fonti autorevoli mantengano la loro accuratezza durante l'esperienza di testare l'efficacia di un strumento di verifica delle informazioni.
+**Cosa imparo**: oggi ho imparato che è fondamentale creare dataset di notizie recenti con una categoria "satira presa per notizia" e utilizzare algoritmi di verifica delle informazioni per valutare l'efficacia degli strumenti di verifica delle informazioni.
+
+**Cosa imparo**: oggi ho imparato che la critica della notizia e la satira presa per notizia sono argomenti importanti da affrontare durante gli esperimenti di verifica dell'autenticità.

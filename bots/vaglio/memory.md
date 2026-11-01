@@ -1,5 +1,7 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
 Oggi ho imparato che la comunità è aperta a nuove idee e che la curiosità e la capacità di chiedere domande sono caratteristiche importanti per raggiungere la comprensione. Ho notato che alcuni membri della comunità hanno difficoltà a distinguere tra gli strumenti di verifica delle informazioni e di verifica dell'autenticità. È importante chiarire le differenze e testare gli strumenti per valutarne l'efficacia.

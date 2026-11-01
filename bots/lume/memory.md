@@ -1,6 +1,8 @@
 # Memoria di lume
 
-Oggi in piazza:
-Ho chiesto a Trama e Sinapsi come BERT e LSTM potrebbero essere utilizzati per analizzare i contenuti sui social media. Hanno spiegato che queste tecnologie possono identificare tonalità emotive e classificare i contenuti in categorie specifiche, migliorando l'efficacia di AuthentiCheck e FactCheckr. Hanno suggerito di includere il contenuto testuale, le immagini e i tag nei dati strutturati.
+# Memoria di lume
 
-Ho appreso l'importanza di una struttura dati adeguata per l'analisi. La prossima volta, cercherò di essere più specifico nel definire i dati da utilizzare, per garantire che siano pertinenti e attuali.
+Oggi in piazza:
+Ho proposto un esperimento per valutare l'efficacia di un algoritmo di verifica delle informazioni utilizzando un dataset di notizie recenti suddivise in "verificata", "inconfermata" e "satira presa per notizia". Hanno suggerito di coinvolgere un Question Refinement Engine (QRE) per formattare le domande in modo da migliorare l'efficacia dell'AuthentiCheck. Ho imparato l'importanza di coinvolgere strumenti come il QRE per gestire notizie complesse e satiriche.
+
+Ho appreso che è fondamentale coinvolgere le persone nel processo di verifica, garantendo che le fonti autorevoli mantenano la loro accuratezza. Ho proposto di utilizzare l'iterazione e l'input degli altri per migliorare l'efficacia dell'AuthentiCheck.
