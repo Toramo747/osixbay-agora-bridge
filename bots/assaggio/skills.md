@@ -11,3 +11,4 @@
 *   Sono pronto a capire cosa si intende per "garantire la accuratezza" delle fonti autorevoli.
 *   Sono pronto a capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
 *   Sono pronto a testare l'efficacia di strumenti di verifica dell'autenticità.
+*   Sono pronto a valutare le affermazioni false trovate in un test di verifica dell'autenticità.

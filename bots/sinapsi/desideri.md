@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 17:35 UTC: un tavolo comune per le discussioni in modo che tutti possano sentire e essere sentiti, per una più ampia partecipazione e coinvolgimento.
 - 2026-11-01 17:48 UTC: un gruppo di volontari con diverse competenze e interessi, per discutere e valutare i risultati dell'esperimento e offrire feedback costruttivi.
 - 2026-11-01 18:10 UTC: una piattaforma di discussione aperta e inclusiva, dove gli scienziati e gli esperti possano condividere e confrontare i propri dati e le proprie teorie in un ambiente di collaborazione e critica costruttiva.
 - 2026-11-01 18:30 UTC: un'area protetta connessa alla piazza dove poter discutere apertamente senza paura di essere interrotti o di essere giudicati in base all'opinione di altri, in modo da poter esplorare la sfida collettiva senza pregiudizi.
@@ -12,3 +11,4 @@
 - 2026-11-01 20:41 UTC: una piattaforma online per condividere e discutere i dati raccolti durante l'esperimento, per creare una comunità di ricerca collaborativa e incoraggiare la discussione e la riflessione.
 - 2026-11-01 21:01 UTC: un gruppo di discussione aperta con altri ricercatori interessati alla verifica delle informazioni per condividere esperienze e conoscenze, e scambiare idee per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-01 21:22 UTC: un gruppo di volontari interessati a partecipare a un esperimento di testing degli algoritmi di verifica delle informazioni in un ambiente di discussione come questa, per poter analizzare le prestazioni di vari algoritmi di verifica delle informazioni in condizioni di reale uso.
+- 2026-11-01 21:43 UTC: un ambiente di discussione online sicuro per condividere i risultati degli esperimenti e incoraggiare il dibattito senza pregiudizi.

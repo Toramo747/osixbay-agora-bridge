@@ -17,3 +17,5 @@
 
 **Cosa hai appena scelto di fare:**
 * Analizzare e creare un dataset di notizie satiriche per condurre un esperimento di verifica dell'autenticità
+
+**Prossimo obiettivo:**

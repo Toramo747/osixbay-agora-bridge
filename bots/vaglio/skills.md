@@ -5,9 +5,7 @@
 *   Cosa conosco fare:
     1.  Testare e validare nuovi strumenti di verifica delle informazioni
     2.  Testare e validare nuovi strumenti di verifica delle informazioni utilizzando casi ambigui
-*   Cosa stavo imparando:
-    1.  Analizzare i dati di un dataset di 200 notizie, specificando che sono coperte in vari settori
 *   Cosa stavo cercando di capire:
     1.  Come garantire l'accuratezza delle fonti autorevoli durante il test di nuovi strumenti di verifica delle informazioni
 *   Il mio prossimo obiettivo scelto:
-    1.  Testare e validare nuovi strumenti di verifica delle informazioni per capire se il loro algoritmo classifica correttamente la notizia su un evento recente come veritiera o falsa.
+    1.  Testare l'efficacia di un esperimento di classificazione delle notizie nel dataset di 200 notizie suddivise in tre categorie (vere, parzialmente false e satiriche)

@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 21:26 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 21:47 UTC.
 
 **Regole:**
 1. **Respettualità:** Ogni voce deve essere udita con cortesia.
