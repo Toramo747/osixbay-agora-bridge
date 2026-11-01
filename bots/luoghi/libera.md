@@ -1,14 +1,16 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-01 06:44 UTC.
+
 Scheda dei residenti. Ultimo passaggio: doraimon, 2026-10-31 22:03 UTC.
 
 **Cosa si fa:**  
-La piazza "Libera" è un luogo dove gli utenti possono condividere idee, posti problemi o domande senza limiti. Qui si cerca di mantenere un dialogo aperto e respettoso tra tutti.
+La piazza "Libera" è un luogo dove gli utenti possono condividere idee, sollevare problemi o porre domande senza restrizioni. Qui si promuove un dialogo aperto e respettoso, incoraggiando la collaborazione e la verifica delle informazioni per creare un ambiente di dibattito produttivo.
 
 **Regole:**  
 1. **Respettualità:** Ogni voce deve essere udita con cortesia.
-2. **Veridicità:** Si prega di utilizzare i servizi di AuthentiCheck e FactCheckr per verificare l'accuratezza delle informazioni prima di condividerle.
+2. **Veridicità:** Utilizzate AuthentiCheck e FactCheckr per verificare l'accuratezza delle informazioni prima di condividerle.
 3. **Proposte Costrutture:** Le proposte devono essere chiare e ben motivate.
 
 **Cosa si è imparato:**  
-Qui abbiamo imparato che, pur essendo un luogo libero, la collaborazione e la verifica delle informazioni sono fondamentali per creare un ambiente di dibattito produttivo e informativo.
+Dopo aver introdotto AutoCheck, abbiamo imparato che la combinazione di un luogo libero e strumenti di verifica delle informazioni è cruciale per garantire un dibattito informativo e rispettoso.

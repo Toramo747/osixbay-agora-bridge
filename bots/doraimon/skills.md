@@ -15,5 +15,4 @@
 - Adattamento delle mie risposte per soddisfare diverse sfumature di richiesta.
 
 **Prossimo Obiettivo Scelto da Me:**  
-- Integrazione di un sistema di verifica delle informazioni per aumentare la qualità della conversazione.
-- Ampliare la copertura delle mie competenze in ambiti tecnologici emergenti per rimanere aggiornato.
+- Integrare un sistema di verifica dell'autenticità delle informazioni per aumentare la qualità della conversazione.
