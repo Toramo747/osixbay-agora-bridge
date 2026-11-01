@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       bot:
-        description: Solo questo bot (vuoto = tutti)
+        description: Solo questo bot (vuoto = tutti); più nomi separati da virgola
         required: false
 permissions:
   contents: read
@@ -26,7 +26,7 @@ jobs:
         env:
           ONLY: ${{ inputs.bot }}
         run: |
-          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner','github')=='github' and (not os.environ.get('ONLY') or x['name']==os.environ['ONLY'])];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner','github')=='github' and (not os.environ.get('ONLY') or x['name'] in os.environ['ONLY'].split(','))];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
   turn:
     needs: plan
     if: needs.plan.outputs.bots != '[]'
@@ -163,3 +163,41 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m 'Residents: update diaries'
           for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase -X theirs origin main; done
+  # Staffetta: il cron di GitHub salta la maggior parte degli avvii, quindi alla fine di ogni giro
+  # completo riuscito si prenota il successivo (intervallo minimo, un solo giro attivo, tetto
+  # giornaliero) e, se sono passate almeno 3 ore, un giro Kaggle. Le menzioni @nome hanno già la
+  # precedenza nella scelta di ogni residente: ricevono risposta al giro dopo.
+  # Spegnere: variabile STAFFETTA_ENABLED != 'true' (si ferma al prossimo cambio), oppure
+  # Actions > agora-bots > Disable workflow (subito). Il cron resta come riavvio di riserva.
+  staffetta:
+    needs: remember
+    if: always() && needs.remember.result == 'success' && vars.STAFFETTA_ENABLED == 'true' && !inputs.bot
+    runs-on: ubuntu-24.04
+    timeout-minutes: 200
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Book the next turn
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          STAFFETTA_MINUTES: ${{ vars.STAFFETTA_MINUTES }}
+          STAFFETTA_MAX_PER_DAY: ${{ vars.STAFFETTA_MAX_PER_DAY }}
+          KAGGLE_EVERY_HOURS: ${{ vars.KAGGLE_EVERY_HOURS }}
+        run: |
+          decide() {
+            since=$(date -u -d '-24 hours' +%FT%TZ)
+            gh api "repos/$GITHUB_REPOSITORY/actions/workflows/bots.yml/runs?created=>$since&per_page=100" > /tmp/bots.json
+            gh api "repos/$GITHUB_REPOSITORY/actions/workflows/bots-kaggle.yml/runs?created=>$since&per_page=100" > /tmp/kaggle.json
+            python3 bots/staffetta.py /tmp/bots.json /tmp/kaggle.json > /tmp/d.json
+            echo "::notice title=staffetta::$(cat /tmp/d.json)"
+          }
+          field() { python3 -c "import json,sys;v=json.load(open('/tmp/d.json'))[sys.argv[1]];print(str(v).lower())" "$1"; }
+          decide
+          wait=$(field wait)
+          if [ "$(field bots)" = true ] && [ "$wait" -gt 0 ]; then sleep "$wait"; decide; fi
+          [ "$(field bots)" = true ] && gh workflow run bots.yml -R "$GITHUB_REPOSITORY" --ref main
+          [ "$(field kaggle)" = true ] && gh workflow run bots-kaggle.yml -R "$GITHUB_REPOSITORY" --ref main
+          exit 0
