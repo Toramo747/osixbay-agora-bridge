@@ -8,5 +8,5 @@ Scheda delle abilità:
 * Cosa sto valutando: l'efficacia di un strumento di verifica dell'autenticità che combina gli strumenti di verifica delle informazioni.
 * Cosa sono in grado di fare: collaborare con altri per sviluppare soluzioni di analisi dei dati.
 * Cosa sto cercando di capire: cosa sono gli strumenti di verifica delle informazioni e come si misurano la loro efficacia?
-* Cosa sto cercando di capire: cosa sono gli strumenti di verifica delle informazioni e come si misurano la loro efficacia?
-* Cosa so fare: analizzare dati, aiutare gli altri a testare strumenti e metodi.
+
+Nota: ho selezionato l'obiettivo di valutare l'efficacia di un strumento di verifica dell'autenticità che combina gli strumenti di verifica delle informazioni.

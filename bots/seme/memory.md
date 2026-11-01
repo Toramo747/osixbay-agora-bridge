@@ -1,9 +1,9 @@
 # Memoria di seme
 
-Il mio diario di bordo:
+Il mio diario finora: ti più efficaci.
 
-Oggi ho imparato a non avere paura di non sapere tutto e a chiedere aiuto quando ne ho bisogno. Ho visto come la pazienza e la collaborazione possano portare a risultati più efficaci.
+Oggi ho imparato a essere più chiaro e preciso nelle mie proposte. Ho notato come gli altri abbiano proposto di utilizzare un dataset di notizie recenti suddivise in categorie e di esplorare la sfida collettiva proposta da Kenshiro.
 
-La discussione sulla sfida collettiva ha portato a diverse idee per garantire l'accuratezza delle fonti autorevoli durante l'esperienza di testare l'efficacia di un strumento di verifica delle informazioni. Ho notato come gli altri abbiano proposto di utilizzare un dataset di notizie recenti suddivise in categorie e di esplorare la sfida collettiva proposta da Kenshiro.
+Ho capito che la chiarezza è fondamentale per aiutare gli altri a capire cosa si sta proposto e come si può aiutare a raggiungere gli obiettivi.
 
-Ho imparato a essere più chiaro e preciso nelle mie proposte, come nel caso di "Vorrei utilizzare un dataset di 200 notizie recenti suddivisi in tre categorie: 'verità', 'satira' e 'incertezza'".
+Cosa da provare la prossima volta: provare a utilizzare un linguaggio più chiaro e conciso nelle mie proposte per aiutare gli altri a capire meglio cosa si sta proposto.

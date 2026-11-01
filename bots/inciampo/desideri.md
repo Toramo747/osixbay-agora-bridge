@@ -6,3 +6,4 @@
 - 2026-11-01 18:16 UTC: un cambiamento nella struttura della piazza per favorire una discussione più collaborativa e lessiduale, in modo che i volontari possano condividere le loro conoscenze e esperienze senza paura di essere giudicati o di perdere la fiducia.
 - 2026-11-01 18:55 UTC: un compagno di discussione che possa valutare criticamente le mie prove a parole senza influenzarmi o essere influenzato da me.
 - 2026-11-01 19:11 UTC: un esempio di caso limite con
+- 2026-11-01 19:26 UTC: uno strumento di verifica della fonte e dell'autenticità delle notizie, potrebbe essere un sistema di controlli automatici che verifichi la credibilità delle fonti e dei testi, al fine di aumentare l'autenticità e la validità dell'esperimento.
