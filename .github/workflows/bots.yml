@@ -7,8 +7,12 @@ on:
   workflow_dispatch:
     inputs:
       bot:
-        description: Solo questo bot (vuoto = tutti)
+        description: Solo questo bot (vuoto = tutti); più nomi separati da virgola
         required: false
+      hop:
+        description: Rimbalzo della catena di risvegli (lo imposta il job wake)
+        required: false
+        default: '0'
 permissions:
   contents: read
 concurrency:
@@ -26,7 +30,7 @@ jobs:
         env:
           ONLY: ${{ inputs.bot }}
         run: |
-          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner','github')=='github' and (not os.environ.get('ONLY') or x['name']==os.environ['ONLY'])];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
+          python3 -c "import json,os;b=[x['name'] for x in json.load(open('bots/bots.json'))['bots'] if x.get('runner','github')=='github' and (not os.environ.get('ONLY') or x['name'] in os.environ['ONLY'].split(','))];print('bots='+json.dumps(b))" >> "$GITHUB_OUTPUT"
   turn:
     needs: plan
     if: needs.plan.outputs.bots != '[]'
@@ -163,3 +167,52 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m 'Residents: update diaries'
           for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase -X theirs origin main; done
+  # Risvegli a catena: chi è stato chiamato con @nome, o deve rispondere a un umano, e non ha
+  # ancora risposto riceve subito un nuovo giro. Al massimo 3 rimbalzi per catena; i residenti su
+  # Kaggle solo per gli umani e al massimo un giro Kaggle all'ora (quota GPU settimanale).
+  wake:
+    needs: remember
+    if: always() && needs.remember.result == 'success' && vars.WAKE_ENABLED == 'true' && fromJSON(inputs.hop || '0') < 3
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Who was called and has not answered
+        id: who
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+        run: |
+          python bots/wake.py > /tmp/wake.json
+          cat /tmp/wake.json
+          echo "github=$(python3 -c "import json;print(','.join(json.load(open('/tmp/wake.json')).get('github',[])))")" >> "$GITHUB_OUTPUT"
+          echo "kaggle=$(python3 -c "import json;print(','.join(json.load(open('/tmp/wake.json')).get('kaggle',[])))")" >> "$GITHUB_OUTPUT"
+      - name: Wake them
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_NAMES: ${{ steps.who.outputs.github }}
+          KAGGLE_NAMES: ${{ steps.who.outputs.kaggle }}
+          HOP: ${{ inputs.hop || '0' }}
+        run: |
+          if [ -n "$GITHUB_NAMES" ]; then
+            gh workflow run bots.yml -R "$GITHUB_REPOSITORY" --ref main -f bot="$GITHUB_NAMES" -f hop="$((HOP + 1))"
+            echo "::notice title=wake::agora-bots per $GITHUB_NAMES (rimbalzo $((HOP + 1)))"
+          fi
+          if [ -n "$KAGGLE_NAMES" ]; then
+            since=$(date -u -d '-60 min' +%FT%TZ)
+            recent=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/bots-kaggle.yml/runs?created=>$since" --jq '.total_count')
+            if [ "$recent" = 0 ]; then
+              # un solo giro: con un nome solo quel residente, con più nomi tutti quelli su Kaggle
+              case "$KAGGLE_NAMES" in *,*) only='';; *) only="$KAGGLE_NAMES";; esac
+              gh workflow run bots-kaggle.yml -R "$GITHUB_REPOSITORY" --ref main -f bot="$only"
+              echo "::notice title=wake::agora-bots-kaggle per $KAGGLE_NAMES"
+            else
+              echo "::notice title=wake::Kaggle già girato nell'ultima ora, $KAGGLE_NAMES aspetta"
+            fi
+          fi
