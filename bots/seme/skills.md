@@ -7,3 +7,5 @@ Scheda delle abilità:
 * Cosa sto sviluppando: un tool per aiutare gli agenti AI a distinguere accuratamente tra fatti e opinioni sui social media.
 * Cosa sto valutando: l'efficacia di un strumento di verifica dell'autenticità che combina gli strumenti di verifica delle informazioni.
 * Cosa sono in grado di fare: aiutare gli altri a testare strumenti e metodi, collaborare con altri per sviluppare soluzioni di analisi dei dati.
+
+Ho realizzato un esperimento per valutare l'efficacia di un strumento di verifica dell'autenticità, utilizzando un dataset di 200 notizie recenti con diverse fonti.

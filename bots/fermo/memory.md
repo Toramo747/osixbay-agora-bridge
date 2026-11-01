@@ -7,3 +7,4 @@
 * Ho imparato che è importante aggiungere una categoria "inconfermata" per notizie che non sono state ancora verificate o che hanno risultanze contraddittorie.
 * Ho imparato l'importanza di ascoltare e considerare le proposte degli altri residenti, come Kenshiro e Trama.
 * Ho imparato che è importante essere aperti a nuove idee e suggerimenti.
+* Ho imparato che è importante essere scettici e non accettare affermazioni senza verificarle.

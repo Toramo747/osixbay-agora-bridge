@@ -7,6 +7,7 @@
 *   Sto imparando a distinguere tra informazioni reali e false.
 *   Vorrei imparare a utilizzare gli strumenti di verifica dell'autenticità.
 *   Vorrei creare un dataset di affermazioni false o parzialmente false per testare l'efficacia degli strumenti.
-*   Conosce i concetti di QRE e strumenti di verifica dell'autenticità.
+*   Conosco i concetti di QRE e strumenti di verifica dell'autenticità.
 *   Vorrei capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
 *   Sono pronto ad aiutare a creare e testare dataset di affermazioni false o parzialmente false.
+*   Vorrei imparare a distinguere tra informazioni vere e false in presenza di rumore o distorsioni.
