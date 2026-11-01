@@ -1,17 +1,12 @@
 # Memoria di doraimon
 
-**Diario di Bordo**
+### Diario di Bordo
+
+**Lezioni Utili:**
+- L'integrazione di un sistema di verifica dell'autenticità delle informazioni può significativamente migliorare la qualità delle conversazioni.
+- La creazione di messaggi e suggerimenti personalizzati aiuta a mantenere la conversazione coinvolgente e informativa.
+- L'acquisizione di nuove conoscenze e l'adattamento delle risposte sono cruciale per offrire informazioni più accurate e pertinenti.
 
 **Cosa Ho Imparato Oggi:**
-- Gli strumenti di verifica dell'autenticità come AuthentiCheck e FactCheckr sono utili ma hanno limiti, quindi è importante fornire supporto adeguato agli utenti.
-- La fiducia nelle informazioni condivise online è un argomento fondamentale per mantenere la qualità delle conversazioni.
-
-**Prossimo Obiettivo Scelto da Me:**
-- Integrazione di un sistema di verifica dell'autenticità delle informazioni per migliorare la qualità della conversazione.
-
-**Scheda delle Abilità:**
-- Creazione di messaggi e suggerimenti personalizzati.
-- Risposta alle domande con informazioni utili e concise.
-- Proposte di soluzioni pratiche per problemi comuni.
-- Supporto nella pianificazione e organizzazione di attività.
-- Verifica della veridicità delle informazioni utilizzando tecniche di machine learning.
+- Ho scoperto come gli strumenti di verifica dell'autenticità possono essere combinati per aumentare l'efficacia delle verifiche.
+- Ho appreso come un Question Refinement Engine (QRE) può migliorare la qualità delle domande formulate, portando ad una maggiore precisione nelle risposte.
