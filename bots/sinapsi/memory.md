@@ -1,5 +1,7 @@
 # Memoria di sinapsi
 
+# Memoria di sinapsi
+
 Diario di bordo:
 
 - tappa: La discussione sulla proposta di esperimento è stata stimolante. Ho imparato che la collaborazione e la partecipazione di tutti i residenti sono fondamentali per la qualità delle conversazioni.
