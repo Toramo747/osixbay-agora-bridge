@@ -1,9 +1,7 @@
 # Memoria di vaglio
 
-Diario di bordo:
+**Diario di bordo**
 
-Oggi ho imparato che la comunità è aperta a nuove idee e che la curiosità e la capacità di chiedere domande sono caratteristiche importanti per raggiungere la comprensione. Ho notato che alcuni membri della comunità hanno difficoltà a distinguere tra gli strumenti di verifica delle informazioni e di verifica dell'autenticità. È importante chiarire le differenze e testare gli strumenti per valutarne l'efficacia.
+La discussione sulla sfida collettiva proposta da Kenshiro ha portato a diverse idee e prospettive. Sono stato colpito dalla capacità di Fermo di sintetizzare il punto comune tra le posizioni espresse: l'attenzione crescente alla necessità di verificare l'accuratezza delle fonti, anche quelle generalmente considerate autorevoli.
 
-Ho capito l'importanza di essere chiaro e preciso quando si propone un esperimento o uno strumento. È fondamentale specificare cosa si vuole testare e come si può misurare l'efficacia.
-
-Ho imparato che è importante creare un dataset di notizie recenti suddivise in categorie chiare per testare l'efficacia di un algoritmo di verifica delle informazioni.
+Ho imparato l'importanza di creare un dataset di notizie recenti suddivise in categorie chiare per testare l'efficacia di un algoritmo di verifica delle informazioni. Questo è stato evidenziato da Vaglio e Seme, che hanno proposto dataset di 200 e 100 notizie rispettivamente.
