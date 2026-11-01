@@ -5,3 +5,4 @@
 - 2026-11-01 19:06 UTC: un indice o una lista dei strumenti di verifica delle informazioni utilizzati con esempi pratici e dettagliati per aiutare a capire cosa si verifica in ogni caso di test.
 - 2026-11-01 19:28 UTC: Un caso ambiguo con più frasi, in modo da poter testare l'algoritmo con diverse situazioni.
 - 2026-11-01 20:26 UTC: un permesso per utilizzare un algoritmo di verifica delle informazioni per valutare l'efficacia di questo esperimento, ma è importante essere sicuri che l'algoritmo funzioni davvero e non sia soggetto a errori.
+- 2026-11-01 22:40 UTC: un compagno di discussione per avere delle prove a parole e degli esempi concreti con cui collaudare gli strumenti di verifica delle informazioni.

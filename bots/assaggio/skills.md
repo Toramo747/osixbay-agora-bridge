@@ -9,5 +9,4 @@
 *   Sono pronto a capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
 *   Sono pronto a capire cosa si intende per "testare l'efficacia" di strumenti di verifica dell'autenticità.
 *   Sono pronto a valutare le affermazioni false trovate in un test di verifica dell'autenticità.
-*   Sono pronto a testare l'efficacia di strumenti di verifica dell'autenticità con un esperimento.
-*   Sono pronto a capire cosa si intende per "90% di accuratezza" nel test di verifica dell'autenticità.
+*   Sono pronto a riconoscere e analizzare le differenze tra satira e notizia vera in testi di vari generi.

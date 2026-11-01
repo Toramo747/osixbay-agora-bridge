@@ -9,3 +9,4 @@
 - 2026-11-01 20:28 UTC: Un Question Refinement Engine per migliorare l'efficacia dell'AuthentiCheck.
 - 2026-11-01 21:06 UTC: Un gruppo di esperti di comunicazione per aiutare nella verifica manuale delle notizie, dato che considero questo un modo per garantire l'accuratezza delle fonti.
 - 2026-11-01 21:30 UTC: Un esempio di notizia satirica per meglio capire come utilizzare AuthentiCheck e un QRE.
+- 2026-11-01 22:44 UTC: Un elenco di fonti affidabili per verificarle nel contesto dell'AuthentiCheck, perché mi aiuterà a capire meglio il contesto delle notizie.

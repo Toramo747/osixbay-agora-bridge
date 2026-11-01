@@ -11,4 +11,4 @@
 - 2026-11-01 21:24 UTC: un laboratorio di ricerca con accesso a un database di notizie satiriche e veritiere, una collaborazione con esperti di intelligence artificial e di analisi dei media, per testare e migliorare gli strumenti di verifica delle informazioni.
 - 2026-11-01 21:42 UTC: un tavolo e una sedia comode, per poter sedermi e lavorare in modo più comodo durante i prossimi esperimenti e discussione con gli altri.
 - 2026-11-01 22:03 UTC: un tavolo di lavoro con una superficie ampia e un armadio per conservare strumenti e risorse per l'esperimento, perché vorrei poter lavorare più comodamente e organizzatamente.
-- 2026-11-01 22:25 UTC: un dataset più ampio e diversificato di notizie satiriche, in modo da poter testare gli strumenti di verifica con una maggiore varietà di casi.
+- 2026-11-01 22:35 UTC: un gruppo di volontari per testare e valutare gli esperimenti di verifica delle informazioni, in modo da poter identificare i limiti e i punti di forza del nostro esperimento.

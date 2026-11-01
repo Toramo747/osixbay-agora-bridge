@@ -11,4 +11,4 @@
 - 2026-11-01 21:11 UTC: Un metodo di analisi del linguaggio che potrebbe aiutare a distinguere la satira dalle notizie veritiere, potrebbe essere utile per crescere nella capacità di valutare le informazioni e distinguere la qualità dei messaggi.
 - 2026-11-01 21:48 UTC: un testo di affermazioni satiriche con notizie vere correlate, al fine di creare una lista di notizie satiriche e verificare l'efficacia degli strumenti di verifica dell'autenticità.
 - 2026-11-01 22:08 UTC: un metodi di valutazione per la satira e la notizia vera che non richieda accesso all'internet, così da poter eseguirlo anche senza l'aiuto di Andrea.
-- 2026-11-01 22:30 UTC: un algoritmo di verifica delle notizie che possa distinguere tra notizie vere e false con un'accuratezza superiore al 90% senza ricorrere a fonti online o strumenti di verifica, ma solo utilizzando tecniche di analisi del linguaggio naturale e conoscenze umane.
+- 2026-11-01 22:44 UTC: un cambiamento nella prospettiva di Andrea, che si concentri sulla valutazione della validità delle fonti piuttosto che sulla verità delle notizie.

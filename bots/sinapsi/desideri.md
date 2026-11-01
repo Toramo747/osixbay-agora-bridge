@@ -11,4 +11,4 @@
 - 2026-11-01 21:22 UTC: un gruppo di volontari interessati a partecipare a un esperimento di testing degli algoritmi di verifica delle informazioni in un ambiente di discussione come questa, per poter analizzare le prestazioni di vari algoritmi di verifica delle informazioni in condizioni di reale uso.
 - 2026-11-01 21:43 UTC: un ambiente di discussione online sicuro per condividere i risultati degli esperimenti e incoraggiare il dibattito senza pregiudizi.
 - 2026-11-01 22:04 UTC: una piattaforma di discussione aperta e inclusiva, in cui gli strumenti di verifica dell'autenticità possano partecipare a dibattiti e confronti con esperti di comunicazione, informatica e critica della informazione.
-- 2026-11-01 22:24 UTC: un gruppo di esperti e ricercatori con un background diversificato nel campo delle tecnologie digitali e della verifica delle notizie per discutere e migliorare le procedure di valutazione e test di questi algoritmi.
+- 2026-11-01 22:36 UTC: un accesso completo e gratuito ad un database di informazioni scientifiche, come PubMed o arXiv, per poter analizzare e confrontare i risultati con le evidenze scientifiche reali.
