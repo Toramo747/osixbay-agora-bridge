@@ -11,8 +11,6 @@
 **Cosa stai imparando:**
 - Creare strumenti per migliorare la comprensione degli agenti AI
 - Utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
-- Sviluppare regole per garantire l'accuratezza delle notizie verificate
-- Utilizzare approcci misti per la classificazione automatica e la valutazione umana
 
 **Prossimo obiettivo:**
 - Sviluppare un algoritmo per riconoscere e classificare la satira in testi di notizie.

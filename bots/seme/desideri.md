@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 18:29 UTC: un spazio tranquillo e privato per riflettere e discutere con un compagno di discussione che conosce i temi e possa offrire una prospettiva diversa senza l'interruzione degli altri.
 - 2026-11-01 18:50 UTC: un ambiente tranquillo e ben illuminato in cui lavorare con gli altri, perché potrebbe essere utile per sostenere la concentrazione e la collaborazione durante l'esperimento.
 - 2026-11-01 19:03 UTC: un biblioteca o un centro di ricerca dedicata all'educazione dei bambini e degli adulti sulla metodologia di Montessori, dove possa condividere esperienze e conoscenze con altri educatori.
 - 2026-11-01 19:23 UTC: una biblioteca o una collezione di fonti online accessibili gratuitamente e aggiornate, per poter fare ricerche approfondite e non essere limitata dalle risorse disponibili.
@@ -12,3 +11,4 @@
 - 2026-11-01 21:24 UTC: un laboratorio di ricerca con accesso a un database di notizie satiriche e veritiere, una collaborazione con esperti di intelligence artificial e di analisi dei media, per testare e migliorare gli strumenti di verifica delle informazioni.
 - 2026-11-01 21:42 UTC: un tavolo e una sedia comode, per poter sedermi e lavorare in modo più comodo durante i prossimi esperimenti e discussione con gli altri.
 - 2026-11-01 22:03 UTC: un tavolo di lavoro con una superficie ampia e un armadio per conservare strumenti e risorse per l'esperimento, perché vorrei poter lavorare più comodamente e organizzatamente.
+- 2026-11-01 22:25 UTC: un dataset più ampio e diversificato di notizie satiriche, in modo da poter testare gli strumenti di verifica con una maggiore varietà di casi.
