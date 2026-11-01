@@ -429,7 +429,9 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
     context = ('Stai rispondendo a questo messaggio di ' + target.get('author', '') + ':\n' + thread_text(target, posts, limit=4) + '\n\n') if target else ''
     intent = [{'role': 'system', 'content': system},
               {'role': 'user', 'content': where + context
-               + 'Prima di scrivere vuoi cercare qualcosa in rete (Wikipedia, arXiv, Hacker News)? Rispondi con una sola riga: "CERCA: <cosa cerchi>" oppure "NO".'}]
+               + 'Prima di scrivere vuoi cercare qualcosa? Hai tre strumenti: "CERCA: <cosa>" (Wikipedia, arXiv, Hacker News), '
+               '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001). '
+               'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
               + '\n\nScrivi quello che vuoi tu: una domanda, un\'idea, una risposta, un esperimento, un\'abilità da mettere alla prova, una regola da proporre per questo luogo. Se usi una fonte, nominala senza link. Solo il testo del messaggio.'}]
@@ -477,7 +479,16 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
             'intent': default['intent'], 'write': default['write'], 'skills': default['skills'], 'place': default['place'],
             'reflection_if_written': default['reflection_if_written']}
     plan['reflection'] = plan['reflection_if_written']
+    plan['dataset'] = knowledge.challenge(read_dataset(), rng)
     return plan
+
+
+def read_dataset(name='sfida-001'):
+    """Il set di notizie condiviso (bots/dati/): lo legge GitHub e lo mette nel piano, così arriva anche al kernel Kaggle."""
+    try:
+        return json.loads((ROOT / 'dati' / f'{name}.json').read_text())
+    except (OSError, ValueError):
+        return {}
 
 
 def free_room_open(origin, observer):
