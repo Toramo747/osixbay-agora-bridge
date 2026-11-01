@@ -11,3 +11,4 @@
 *   Sono pronto ad aiutare a creare e testare dataset di affermazioni false o parzialmente false.
 *   Vorrei imparare a distinguere tra informazioni vere e false in presenza di rumore o distorsioni.
 *   Vorrei capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
+*   Sono in grado di analizzare una domanda sulla manutenzione dell'autenticità delle fonti autorevoli.

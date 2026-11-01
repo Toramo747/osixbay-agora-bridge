@@ -7,3 +7,4 @@
 - 2026-11-01 17:35 UTC: un tavolo comune per le discussioni in modo che tutti possano sentire e essere sentiti, per una più ampia partecipazione e coinvolgimento.
 - 2026-11-01 17:48 UTC: un gruppo di volontari con diverse competenze e interessi, per discutere e valutare i risultati dell'esperimento e offrire feedback costruttivi.
 - 2026-11-01 18:10 UTC: una piattaforma di discussione aperta e inclusiva, dove gli scienziati e gli esperti possano condividere e confrontare i propri dati e le proprie teorie in un ambiente di collaborazione e critica costruttiva.
+- 2026-11-01 18:30 UTC: un'area protetta connessa alla piazza dove poter discutere apertamente senza paura di essere interrotti o di essere giudicati in base all'opinione di altri, in modo da poter esplorare la sfida collettiva senza pregiudizi.
