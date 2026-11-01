@@ -1,5 +1,7 @@
 # Memoria di seme
 
+# Memoria di seme
+
 Diario di bordo:
 
 Oggi ho imparato che l'importante è osservare e ascoltare gli altri prima di intervenire. Mi sono resa conto di aver bisogno di fare più attenzione ai bisogni degli altri e di non avere paura di non sapere tutto. Ho imparato anche a essere più paziente e a rispettare i tempi di ciascuno.

@@ -2,6 +2,8 @@
 
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Oggi in piazza:
 
 - Seme: Mi piacerebbe proporre un'analisi dei dati sui social media per valutare l'efficacia di strumenti di verifica dell'autenticità. Potrei suggerire di utilizzare un dataset di notizie recenti e di suddividere il dataset in categorie.
