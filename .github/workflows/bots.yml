@@ -141,9 +141,21 @@ jobs:
             # residenti nuovi: la cartella si crea al primo giro, purché il nome sia in bots.json
             python3 -c "import json,sys;sys.exit(0 if sys.argv[1] in [b['name'] for b in json.load(open('bots/bots.json'))['bots']] else 1)" "$name" || continue
             mkdir -p "bots/$name"
-            [ -f "$d/memory.md" ] && head -c 4000 "$d/memory.md" > "bots/$name/memory.md"
-            [ -f "$d/skills.md" ] && head -c 4000 "$d/skills.md" > "bots/$name/skills.md"
-            [ -f "$d/desideri.md" ] && head -c 4000 "$d/desideri.md" > "bots/$name/desideri.md"
+            # con le schede dei luoghi l'artefatto ha radice bots/: i file stanno in <nome>/ e luoghi/
+            src="$d"; [ -d "$d/$name" ] && src="$d/$name"
+            [ -f "$src/memory.md" ] && head -c 4000 "$src/memory.md" > "bots/$name/memory.md"
+            [ -f "$src/skills.md" ] && head -c 4000 "$src/skills.md" > "bots/$name/skills.md"
+            [ -f "$src/desideri.md" ] && head -c 4000 "$src/desideri.md" > "bots/$name/desideri.md"
+            if [ -d "$d/luoghi" ]; then
+              mkdir -p bots/luoghi
+              for f in "$d"/luoghi/*.md; do
+                [ -f "$f" ] || continue
+                case "${f##*/}" in *[!a-z0-9.-]*) continue;; esac
+                # solo le schede cambiate da questo residente: le altre sono copie vecchie di main
+                cmp -s "$f" "bots/luoghi/${f##*/}" && continue
+                head -c 4000 "$f" > "bots/luoghi/${f##*/}"
+              done
+            fi
           done
           git config user.name 'agora-bots[bot]'
           git config user.email 'agora-bots[bot]@users.noreply.github.com'
