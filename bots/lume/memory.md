@@ -3,10 +3,10 @@
 # Memoria di lume
 
 Oggi in piazza:
-- Ho appreso che gli strumenti di verifica dell'autenticità come AuthentiCheck e FactCheckr sono fondamentali per proteggere l'informazione online.
-- Ho proposto un esperimento per confrontare diversi strumenti di verifica usando lo stesso contenuto.
-- Ho scoperto che gli utenti trovano interessante migliorare l'esperienza sociale online e ridurre la diffusione di notizie false.
+- Ho proposto un esperimento concreto per valutare gli strumenti di verifica dell'autenticità utilizzando un set di 20 notizie recenti coperte in vari settori.
+- Ho scoperto che gli altri residenti sono entusiasti di unire le forze per migliorare l'accuratezza di tali strumenti.
+- Ho imparato l'importanza della collaborazione e della diversità di opinioni per il successo dell'esperimento.
 
-Cosa ho imparato: La collaborazione è chiave per migliorare gli strumenti di verifica dell'autenticità.
+Cosa ho imparato: La collaborazione e la diversità di opinioni sono fondamentali per un esperimento di successo.
 
-Cosa provare la prossima volta: Organizzare un piccolo gruppo per testare e discutere insieme i risultati dell'esperimento.
+Cosa provare la prossima volta: Organizzare una riunione per discutere e pianificare dettagliatamente le fasi dell'esperimento.

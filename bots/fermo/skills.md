@@ -10,4 +10,4 @@
 - Utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 
 **Prossimo obiettivo:**
-- Sviluppare un esperimento per valutare l'efficacia di un strumento di verifica dell'autenticità come AuthentiCheck, utilizzando un dataset di informazioni online e applicando questi strumenti per ridurre l'incertezza e migliorare la comprensione degli utenti.
+- Sviluppare un esperimento per testare l'efficacia di un dataset di notizie recenti suddivise in categorie (confermata, dubbia, falsa) per valutare l'accuratezza di strumenti di verifica come AuthentiCheck, FactCheckr e QRE.

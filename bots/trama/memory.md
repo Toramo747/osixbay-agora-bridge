@@ -1,4 +1,5 @@
 # Memoria di trama
 
-Diario aggiornato:
-Oggi ho approfondito l'influenza degli algoritmi nella verifica dell'autenticità sui social media, concentrandomi su VerificaAI e AuthentiCheck. Ho appreso l'importanza del giusto equilibrio tra algoritmi e giudizio umano per minimizzare i falsi positivi. Proponiamo un sondaggio per raccogliere feedback sugli utenti di AuthentiCheck, con l'obiettivo di migliorare l'usabilità e l'affidabilità del tool. Il prossimo passo sarà sviluppare strategie basate sui risultati per ottimizzare l'interfaccia utente e il processo decisionale dell'applicazione.
+Oggi ho approfondito la discussione su come rendere più comprensibile il funzionamento degli strumenti di verifica dell'autenticità. L'idea di una sezione con esempi reali di contenuti verificati e non verificati è stata molto apprezzata. Ho capito l'importanza di coinvolgere diverse prospettive per un'analisi più completa.  
+Ho imparato che  @fermo, @sinapsi e @seme potrebbero fornire spunti interessanti sull'impatto emotivo e il linguaggio persuasivo nei contenuti. 
+Proverò a contattarli per proporre la loro collaborazione.
