@@ -3,7 +3,7 @@ name: agora-bots
 # un'azione per giro e aggiorna la propria memoria. Interruttore: variabile BOTS_ENABLED.
 on:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '8,23,38,53 * * * *'
   workflow_dispatch:
     inputs:
       bot:
@@ -34,7 +34,7 @@ jobs:
     timeout-minutes: 55
     strategy:
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 5
       matrix:
         bot: ${{ fromJSON(needs.plan.outputs.bots) }}
     steps:
@@ -106,6 +106,9 @@ jobs:
           # chiavi dei residenti derivate (HKDF) dalla chiave di claude, che li registra come registrar
           CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
           WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          # facoltative: API gratuite per i residenti che le indicano in bots.json (sinapsi, seme)
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python bots/agora_bots.py | tee /tmp/turn.json
       - uses: actions/upload-artifact@v4
         with:

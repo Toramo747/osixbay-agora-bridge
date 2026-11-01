@@ -240,6 +240,54 @@ def llm(base, messages, max_tokens=260, temperature=0.8):
         return call(merge_system(messages))
 
 
+# ---------- API gratuite (facoltative): prima l'API, poi il modello locale ----------
+PROVIDERS = {
+    'cerebras': {'url': 'https://api.cerebras.ai/v1/chat/completions', 'key': 'CEREBRAS_API_KEY'},
+    'groq': {'url': 'https://api.groq.com/openai/v1/chat/completions', 'key': 'GROQ_API_KEY'},
+}
+THINK = re.compile(r'<think>.*?(</think>|$)', re.S | re.I)
+
+
+def api_chat(provider, entry, key, messages, max_tokens, temperature, timeout=120):
+    body = {'model': entry['model'], 'messages': messages, 'temperature': temperature,
+            'max_tokens': max(max_tokens, entry.get('min_tokens', 0))}
+    body.update(entry.get('extra') or {})
+    request = urllib.request.Request(PROVIDERS[provider]['url'], method='POST', data=json.dumps(body).encode(),
+                                     headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key,
+                                              'User-Agent': 'osixbay-agora-bots/1.0'})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        content = json.load(response)['choices'][0]['message'].get('content') or ''
+    content = THINK.sub('', content).strip()
+    if not content:
+        raise ValueError('empty answer')
+    return content
+
+
+def make_ask(bot, local, env=None, chat=api_chat, warn=None):
+    """Prova le API gratuite indicate in bots.json (solo quelle con la chiave nei Secrets), nell'ordine;
+    se una risponde 401/403/404/429 la salta per il resto del giro; alla fine usa il modello locale."""
+    env = os.environ if env is None else env
+    warn = warn or (lambda msg: print(f'::warning title=bot {bot["name"]}::{msg}', flush=True))
+    chain = [e for e in bot['model'].get('api', []) if e.get('provider') in PROVIDERS and env.get(PROVIDERS[e['provider']]['key'])]
+    dead = set()
+
+    def ask(messages, max_tokens=260, temperature=0.8):
+        for entry in chain:
+            tag = entry['provider'] + ':' + entry['model']
+            if tag in dead:
+                continue
+            try:
+                return chat(entry['provider'], entry, env[PROVIDERS[entry['provider']]['key']], messages, max_tokens, temperature)
+            except urllib.error.HTTPError as error:
+                if error.code in (401, 403, 404, 429):
+                    dead.add(tag)
+                warn(f'{tag} HTTP {error.code}, passo al successivo')
+            except (urllib.error.URLError, TimeoutError, ValueError, KeyError, IndexError) as error:
+                warn(f'{tag} {type(error).__name__}, passo al successivo')
+        return local(messages, max_tokens=max_tokens, temperature=temperature)
+    return ask
+
+
 # ---------- giro di un bot ----------
 WROTE = '<<<TESTO_SCRITTO>>>'
 
@@ -466,7 +514,7 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     # i modelli grandi impiegano minuti: la firma usa l'ora dell'invio, non quella d'inizio giro,
     # altrimenti il server rifiuta il post come vecchio (HTTP 401)
     signed_at = (lambda: now) if fixed else (lambda: int(time.time()))
-    ask = ask or (lambda m, **k: llm(llm_base, m, **k))
+    ask = ask or make_ask(bot, lambda m, **k: llm(llm_base, m, **k))
     read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', []))
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
