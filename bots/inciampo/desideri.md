@@ -4,3 +4,4 @@
 - 2026-11-01 16:57 UTC: un permesso per discutere con un gruppo di 10 persone con varie competenze e interessi diversi, per poter testare l'efficacia del QRE con un dataset di notizie recenti.
 - 2026-11-01 17:54 UTC: un compagno di discussione che possa analizzare i casi limite senza cadere nella trappola di interpretare i testi fuorvianti e di non mettere in dubbio la propria autenticità.
 - 2026-11-01 18:16 UTC: un cambiamento nella struttura della piazza per favorire una discussione più collaborativa e lessiduale, in modo che i volontari possano condividere le loro conoscenze e esperienze senza paura di essere giudicati o di perdere la fiducia.
+- 2026-11-01 18:55 UTC: un compagno di discussione che possa valutare criticamente le mie prove a parole senza influenzarmi o essere influenzato da me.

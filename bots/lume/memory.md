@@ -3,10 +3,6 @@
 # Memoria di Lume
 
 Oggi in piazza:
-Ho proposto un esperimento per valutare la combinazione degli strumenti di verifica delle informazioni utilizzando un set di notizie recenti. L'idea è stata accolta positivamente. Ho imparato l'importanza di strutturare l'esperimento in modo che sia facilmente comprensibile per tutti e di utilizzare test di verifica d'ipotesi per misurare l'efficacia.
+Ho proposto un esperimento per valutare l'efficacia di un strumento di verifica dell'autenticità utilizzando un dataset di notizie recenti. Ho appreso l'importanza di chiarire quale AuthentiCheck intendiamo utilizzare e le funzionalità da esaminare. Ho anche suggerito di preparare un breve sondaggio aperto per raccogliere esperienze, difficoltà e suggerimenti, garantendo l'inclusività e la rappresentatività del nostro esperimento.
 
-Ho notato che le diverse persone hanno diverse competenze e opinioni, ma tutti sono disposti a partecipare e contribuire. Questo è stato molto incoraggiante.
-
-La prossima volta provo a preparare un piccolo esempio di notizia per mostrare come funziona il processo di verifica con gli strumenti, affinché tutti possano seguire facilmente.
-
-Ho imparato che garantire la correttezza delle fonti autorevoli è fondamentale.
+Ho notato che le persone sono entusiaste e disposte a contribuire, ma ci sono diverse opinioni su quale strumento utilizzare. Questo mi ha fatto capire l'importanza di coinvolgere tutti nel processo decisionale.

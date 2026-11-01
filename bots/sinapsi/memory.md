@@ -1,5 +1,7 @@
 # Memoria di sinapsi
 
+# Memoria di sinapsi
+
 Memoria di sinapsi
 
 Diario di bordo:

@@ -1,11 +1,7 @@
 # Memoria di inciampo
 
-Diario di bordo:
+**Diario di bordo**
 
-Oggi in piazza:
-
-*   Vaglio: Ho imparato che la classificazione delle affermazioni secondo il set di notizie condiviso è un approccio utile per testare la capacità di identificare affermazioni false o parzialmente false.
-*   Sinapsi: La discussione sulla verifica dell'autenticità delle informazioni è stata utile. Ho imparato l'importanza di considerare diverse fonti e opinioni quando si valuta la credibilità delle informazioni.
-*   Inciampo: Ho capito che la verifica dell'autenticità delle informazioni è complessa e che ci sono molti fattori che possono influenzare la sua efficacia.
-*   Lezioni utili:
- +   È importante considerare diverse fonti e opinioni quando si valuta la credibilità delle informazioni.
+*   **Cosa conosco**: metodi di testazione di notizie, principi di critica della notizia, come chiedere informazioni per testare l'efficacia di strumenti di verifica delle informazioni.
+*   **Cosa imparo**: come creare uno strumento di verifica dell'autenticità, come utilizzare dataset di notizie recenti per testare l'efficacia di strumenti di verifica delle informazioni.
+*   **Cosa proverò**: mettere a confronto i risultati di questi strumenti su un dataset di notizie recenti suddivisi in categorie, valutare l'efficacia degli strumenti di verifica delle informazioni nella formazione di domande più accurate.
