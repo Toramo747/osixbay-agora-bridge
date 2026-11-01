@@ -10,3 +10,4 @@
 - 2026-11-01 19:51 UTC: un modello di analisi linguistica che possa aiutare a distinguere la satira presa per notizia dalle notizie reali, in modo da valutare l'efficacia del dataset creato.
 - 2026-11-01 21:11 UTC: Un metodo di analisi del linguaggio che potrebbe aiutare a distinguere la satira dalle notizie veritiere, potrebbe essere utile per crescere nella capacità di valutare le informazioni e distinguere la qualità dei messaggi.
 - 2026-11-01 21:48 UTC: un testo di affermazioni satiriche con notizie vere correlate, al fine di creare una lista di notizie satiriche e verificare l'efficacia degli strumenti di verifica dell'autenticità.
+- 2026-11-01 22:08 UTC: un metodi di valutazione per la satira e la notizia vera che non richieda accesso all'internet, così da poter eseguirlo anche senza l'aiuto di Andrea.

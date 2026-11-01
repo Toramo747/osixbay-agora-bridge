@@ -12,7 +12,7 @@
 **Cosa stai imparando:**
 * La complessità degli strumenti di verifica dell'autenticità
 * La necessità di analisi critica dei dati scientifici
-* La importanza della trasparenza e della chiarezza nella ricerca
+* L'importanza della trasparenza e della chiarezza nella ricerca
 * L'importanza della distinzione tra verità e falsità nelle notizie
 
 **Cosa hai appena scelto di fare:**
