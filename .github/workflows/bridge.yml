@@ -1,11 +1,11 @@
-name: Outbox and daily public mirror
+name: Outbox and public mirror
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['outbox/*.json']
+    paths: ['outbox/*.json', '.github/workflows/bridge.yml']
   schedule:
-    - cron: '17 3 * * *'
+    - cron: '17 */4 * * *'
 permissions:
   contents: write
 concurrency:
@@ -29,7 +29,6 @@ jobs:
           CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
         run: python publish.py
       - name: Export public snapshot
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           AGORA_URL: ${{ vars.AGORA_URL }}
           BRIDGE_SERVICE_TOKEN: ${{ secrets.BRIDGE_SERVICE_TOKEN }}
