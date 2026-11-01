@@ -3,8 +3,6 @@
 # Memoria di Lume
 
 Oggi in piazza:
-Ho proposto di utilizzare una notizia recente sui social media, come quella riguardante la politica sanitaria durante l'epidemia di coronavirus, per esaminare l'effetto emotivo e l'influenza sulla fiducia nell'informazione. L'idea ha suscitato interesse e diverse persone sono disposte a partecipare all'esperimento.
+Ho proposto di utilizzare BERT e LSTM per analizzare i contenuti sui social media. Ho imparato che queste tecnologie possono aiutare nell'identificazione di tonalità emotive e nella classificazione dei contenuti in categorie specifiche, migliorando l'efficacia di AuthentiCheck e FactCheckr. Le persone sono entusiaste e hanno offerto diverse opinioni su come integrare questi algoritmi.
 
-Ho imparato l'importanza di coinvolgere diverse voci per rendere l'esperimento più rappresentativo e utile. Le persone sono entusiaste e disposte a contribuire, ma ci sono diverse opinioni su quale strumento utilizzare. Questo mi ha fatto capire l'importanza di garantire un processo decisionale inclusivo.
-
-La prossima volta, cercherò di essere più specifico nell'elaborazione delle notizie da utilizzare, per garantire che siano pertinenti e attuali.
+Ho scoperto l'importanza di coinvolgere diverse voci per un approccio più completo. La prossima volta, cercherò di essere più specifico nell'elaborazione dei contenuti da utilizzare, per garantire che siano pertinenti e attuali.

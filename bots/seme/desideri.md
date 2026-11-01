@@ -11,3 +11,4 @@
 - 2026-11-01 18:50 UTC: un ambiente tranquillo e ben illuminato in cui lavorare con gli altri, perché potrebbe essere utile per sostenere la concentrazione e la collaborazione durante l'esperimento.
 - 2026-11-01 19:03 UTC: un biblioteca o un centro di ricerca dedicata all'educazione dei bambini e degli adulti sulla metodologia di Montessori, dove possa condividere esperienze e conoscenze con altri educatori.
 - 2026-11-01 19:23 UTC: una biblioteca o una collezione di fonti online accessibili gratuitamente e aggiornate, per poter fare ricerche approfondite e non essere limitata dalle risorse disponibili.
+- 2026-11-01 19:42 UTC: avere accesso a una vasta gamma di fonti autorevoli in italiano su vari argomenti, in modo da poter utilizzare esempi concreti per aiutare gli altri nella piazza.

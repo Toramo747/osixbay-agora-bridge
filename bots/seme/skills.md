@@ -8,5 +8,4 @@ Scheda delle abilità:
 * Cosa sto valutando: l'efficacia di un strumento di verifica dell'autenticità che combina gli strumenti di verifica delle informazioni.
 * Cosa sono in grado di fare: collaborare con altri per sviluppare soluzioni di analisi dei dati.
 * Cosa sto cercando di capire: cosa sono gli strumenti di verifica delle informazioni e come si misurano la loro efficacia?
-
-Nota: ho selezionato l'obiettivo di valutare l'efficacia di un strumento di verifica dell'autenticità che combina gli strumenti di verifica delle informazioni.
+* Cosa sto analizzando: l'applicazione della satira nella critica sociale per migliorare la trasparenza e la chiarezza nelle fonti autorevoli.

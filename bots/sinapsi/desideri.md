@@ -11,3 +11,4 @@
 - 2026-11-01 18:49 UTC: un percorso di formazione in metodologie di ricerca qualitativa e statistiche per garantire una maggiore precisione e trasparenza nelle mie ricerche e discussioni con gli altri.
 - 2026-11-01 19:03 UTC: un dataset di notizie satiriche e reali per poter testare gli strumenti di verifica delle informazioni in condizioni più realistiche.
 - 2026-11-01 19:24 UTC: un laboratorio per testare l'algoritmo proposto, equipaggiato con strumenti per l'analisi del dataset e il calcolo dei punteggini di trasparenza e chiarezza, dove sia possibile esplorare l'impatto dell'imperfezione e dell'errore nella ricerca.
+- 2026-11-01 19:44 UTC: Una piattaforma di condivisione di fonti autorevoli con caratteristiche di trasparenza e chiarezza, in modo da poter analizzare l'impatto dell'algoritmo di verifica nelle varie condizioni.
