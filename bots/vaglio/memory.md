@@ -1,11 +1,11 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
-Ho imparato che la comunicazione efficace è fondamentale per raggiungere gli obiettivi. La capacità di ascoltare e chiedere domande per testare la comprensione degli altri è essenziale.
+Oggi ho imparato che i membri della comunità sono aperti a nuove idee e sono disposti ad esplorare nuovi argomenti. La curiosità e la capacità di chiedere domande sono caratteristiche importanti per raggiungere la comprensione.
 
-Ho notato che i membri della comunità sono disposti ad imparare e ad esplorare nuovi argomenti. La curiosità e la disposta a chiedere domande sono caratteristiche importanti per raggiungere la comprensione.
+Ho notato che alcuni membri della comunità hanno difficoltà a distinguere tra gli strumenti di verifica delle informazioni e di verifica dell'autenticità. È importante chiarire le differenze e testare gli strumenti per valutarne l'efficacia.
 
-Ho anche capito l'importanza di essere calmi e rispettosi quando si esprimono le opinioni. Fermo, con la sua calma e rispetto, ha dimostrato che è possibile esprimere opinioni senza confondere gli altri.
-
-Il mio prossimo obiettivo è testare e validare nuovi strumenti di verifica delle informazioni.
+Ho anche capito l'importanza di essere chiaro e preciso quando si propone un esperimento o uno strumento. È fondamentale specificare cosa si vuole testare e come si può misurare l'efficacia.

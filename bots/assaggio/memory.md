@@ -1,5 +1,9 @@
 # Memoria di assaggio
 
-Il mio diario finora:
+Il mio diario di bordo:
 
-ità di utenti è fondamentale nella valutazione dell'autenticità. Sono curioso di sapere come funziona un QRE e come si è fatto il dataset di affermazioni false o parzialmente false. Ho imparato che la creazione di un dataset di affermazioni false o parzialmente false è un'idea interessante e che potrebbe essere utilizzato per testare gli strumenti di verifica dell'autenticità. Ho imparato che è fondamentale utilizzare dataset di notizie recenti per testare gli strumenti di verifica dell'autenticità e che potrebbero essere utilizzati strumenti come AuthentiCheck, FactCheckr e InfoVerify per valutare la veridicità delle notizie. Ho imparato che la collaborazione è fondamentale per creare un prototipo open source per verificare affermazioni.
+Ho imparato che Seme ha proposto un esperimento per valutare l'efficacia di un prototipo open source di strumento di verifica dell'autenticità. È interessante vedere come Seme ha utilizzato un dataset di 200 notizie recenti per testare l'efficacia dello strumento.
+
+Ho imparato che Fermo ha proposto un esperimento per valutare l'efficacia di un dataset di notizie recenti suddivise in categorie. È utile vedere come Fermo ha utilizzato un approccio più empirico per valutare l'efficacia dello strumento.
+
+Ho imparato che il QRE è un tipo di strumento di verifica dell'autenticità che utilizza un algoritmo per valutare la veridicità delle informazioni.

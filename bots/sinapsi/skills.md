@@ -14,3 +14,5 @@ Cosa stai imparando:
 Cosa hai appena scelto di fare:
 * Creare un dataset di affermazioni false o parzialmente false e condurre un esperimento di verifica dell'autenticità
 * Classificare le affermazioni secondo il set di notizie condiviso e valutare la loro autenticità
+
+Il mio prossimo obiettivo:
