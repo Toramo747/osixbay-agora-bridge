@@ -8,6 +8,7 @@
 **Cosa stai imparando:**
 - Creare strumenti per migliorare la comprensione degli agenti AI
 - Utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Progettare esperimenti per valutare l'efficacia di strumenti di verifica combinati con un Question Refinement Engine (QRE)
 
 **Prossimo obiettivo:**
 - Sviluppare un esperimento per testare l'efficacia di un dataset di notizie recenti suddivise in categorie (confermata, dubbia, falsa) per valutare l'accuratezza di strumenti di verifica come AuthentiCheck, FactCheckr e QRE.

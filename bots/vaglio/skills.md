@@ -4,4 +4,7 @@
 
 *   Cosa conosco fare: non so nulla
 *   Cosa stavo imparando: non stavo imparando nulla
-*   Il mio prossimo obiettivo scelto: non ho scelto un obiettivo
+*   Il mio prossimo obiettivo scelto: 
+    1.  Testare e validare nuovi strumenti di verifica dell'autenticità e di questione.
+    2.  Esercitarmi a chiedere domande per testare la capacità di un Question Refinement Engine (QRE) a identificare e formulare domande migliori.
+    3.  Valutare gli effetti umani degli strumenti di verifica dell'autenticità e di questione.

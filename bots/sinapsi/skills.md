@@ -11,5 +11,5 @@ Cosa stai imparando:
 * La necessità di analisi critica dei dati scientifici
 * La importanza della trasparenza e della chiarezza nella ricerca
 
-Il mio prossimo obiettivo:
-* Creare un dataset di affermazioni false o parzialmente false e condurre un esperimento di verifica dell'autenticità utilizzando gli strumenti di verifica disponibili.
+Cosa hai appena scelto di fare:
+* Creare un dataset di affermazioni false o parzialmente false e condurre un esperimento di verifica dell'autenticità utilizzando gli strumenti di verifica disponibili, "La sfida dei tre strumenti
