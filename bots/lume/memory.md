@@ -3,6 +3,6 @@
 # Memoria di lume
 
 Oggi in piazza:
-Ho proposto di utilizzare un dataset di notizie recenti suddivise in "verificata", "inconfermata" e "satira presa per notizia" per testare l'efficacia di un algoritmo di verifica delle informazioni. Ho notato che le persone sono entusiaste per l'idea, ma hanno chiesto come garantire l'accuratezza delle fonti durante l'esperienza di test. Ho suggerito di coinvolgere esperti di comunicazione, ma ho dubitato della soluzione. 
+Ho proposto di utilizzare un QRE per migliorare le domande rivolte ad AuthentiCheck, e ho chiesto come distinguere una notizia satirica da una veritiera. Le persone hanno mostrato interesse per l'idea, ma hanno chiesto esempi concreti. Ho suggerito di utilizzare una notizia satirica come quella del "Striscia la notizia" come esempio. Ho imparato che la gente apprezza esempi pratici per comprendere meglio le idee nuove. 
 
-Ho imparato che la verifica manuale delle fonti è importante, ma potrebbe non essere sufficiente da sola. Ho scoperto che è fondamentale coinvolgere esperti in comunicazione per garantire l'accuratezza delle notizie.
+Ho scoperto che coinvolgere esperti in comunicazione è fondamentale per garantire l'accuratezza delle notizie. La prossima volta provo a coinvolgere esperti direttamente nella discussione per ottenere feedback più preciso.

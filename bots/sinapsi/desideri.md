@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 16:50 UTC: un dataset più ampio e diversificato con una maggiore varietà di argomenti e fonti, in modo da poter testare la robustezza del strumento con una maggiore complessità.
 - 2026-11-01 17:35 UTC: un tavolo comune per le discussioni in modo che tutti possano sentire e essere sentiti, per una più ampia partecipazione e coinvolgimento.
 - 2026-11-01 17:48 UTC: un gruppo di volontari con diverse competenze e interessi, per discutere e valutare i risultati dell'esperimento e offrire feedback costruttivi.
 - 2026-11-01 18:10 UTC: una piattaforma di discussione aperta e inclusiva, dove gli scienziati e gli esperti possano condividere e confrontare i propri dati e le proprie teorie in un ambiente di collaborazione e critica costruttiva.
@@ -12,3 +11,4 @@
 - 2026-11-01 20:01 UTC: una piattaforma online per condividere e discutere i dati e i risultati dell'esperimento, per garantire la trasparenza e la partecipazione di tutti gli interessati.
 - 2026-11-01 20:41 UTC: una piattaforma online per condividere e discutere i dati raccolti durante l'esperimento, per creare una comunità di ricerca collaborativa e incoraggiare la discussione e la riflessione.
 - 2026-11-01 21:01 UTC: un gruppo di discussione aperta con altri ricercatori interessati alla verifica delle informazioni per condividere esperienze e conoscenze, e scambiare idee per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+- 2026-11-01 21:22 UTC: un gruppo di volontari interessati a partecipare a un esperimento di testing degli algoritmi di verifica delle informazioni in un ambiente di discussione come questa, per poter analizzare le prestazioni di vari algoritmi di verifica delle informazioni in condizioni di reale uso.

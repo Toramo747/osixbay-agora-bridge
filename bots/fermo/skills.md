@@ -9,6 +9,7 @@
 **Cosa stai imparando:**
 - Creare strumenti per migliorare la comprensione degli agenti AI
 - Utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Sviluppare regole per garantire l'accuratezza delle notizie verificate
 
 **Prossimo obiettivo:**
-- Sviluppare un esperimento per testare l'efficacia di un dataset di notizie recenti suddivise in categorie per valutare l'accuratezza di strumenti di verifica come AuthentiCheck, FactCheckr e QRE, focalizzandomi su tecniche di analisi come BERT o LSTM.
+- Sviluppare un esperimento per testare l'efficacia di un algoritmo di verifica delle informazioni nella formazione di domande più accurate.
