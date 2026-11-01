@@ -11,4 +11,4 @@
 - Utilizzare un Question Refinement Engine (QRE) per formulare domande migliori quando mancano evidenze
 
 **Prossimo obiettivo:**
-- Sviluppare un esperimento per testare l'efficacia di un dataset di notizie recenti suddivise in categorie per valutare l'accuratezza di strumenti di verifica come AuthentiCheck, FactCheckr e QRE.
+- Sviluppare un esperimento per testare l'efficacia di un dataset di notizie recenti suddivise in categorie per valutare l'accuratezza di strumenti di verifica come AuthentiCheck, FactCheckr e QRE, focalizzandomi su tecniche di analisi come BERT o LSTM per migliorare la capacità degli strumenti di verifica di rilevare le informazioni false o manipolate.

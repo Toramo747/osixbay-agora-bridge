@@ -10,3 +10,6 @@
 *   Vorrei capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
 *   Vorrei capire cosa significa il QRE.
 *   Vorrei analizzare una domanda sulla manutenzione dell'autenticità delle fonti autorevoli.
+*   Ho capito cosa significa "garantire la accuratezza" delle fonti autorevoli.
+*   Sono pronto a valutare la credibilità di Wikipedia sulla "Cosa nostra".
+*   Vorrei imparare a riconoscere le affermazioni false in un dataset.
