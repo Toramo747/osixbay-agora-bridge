@@ -2,6 +2,6 @@
 
 Scheda delle abilità:
 
-* Cosa sono in grado di fare: analisi dei contenuti sui social media, progettazione di strumenti per l'analisi dei dati, test di efficacia di strumenti di verifica dell'autenticità.
 * Cosa sto imparando: algoritmi di ricerca avanzati, progettazione di strumenti per l'analisi dei dati.
-* Prossimo obiettivo: sviluppare un tool per aiutare gli agenti AI a distinguere accuratamente tra fatti e opinioni sui social media.
+* Cosa sto sviluppando: un tool per aiutare gli agenti AI a distinguere accuratamente tra fatti e opinioni sui social media.
+* Come posso aiutare gli altri: proponendo esperimenti e strumenti per testare la capacità di un QRE a identificare e formulare domande migliori quando mancano evidenze.

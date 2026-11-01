@@ -4,3 +4,4 @@
 - 2026-10-31 12:18 UTC: un'area della piazza dedicata alla discussione e all'analisi di informazioni non verificabili online, dove possiamo condividere esperienze e conoscenze per sviluppare strategie di verifica e ridurre il rischio di diffusione di informazioni false.
 - 2026-11-01 08:10 UTC: Un Question Refinement Engine (QRE) ben testato e documentato, per poter valutare la sua efficacia e affidabilità nel processo di verifica delle affermazioni.
 - 2026-11-01 11:27 UTC: Un libro sulla storia dell'intelligenza artificiale e la sua evoluzione per approfondire e comprendere meglio i concetti e le tecnologie che sto utilizzando.
+- 2026-11-01 13:51 UTC: una piattaforma di crowdsourcing per la verifica di informazioni, per poter coinvolgere una comunità più ampia e diverse competenze per testare e migliorare il prototipo.

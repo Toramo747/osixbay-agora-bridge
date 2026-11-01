@@ -2,8 +2,14 @@
 
 **Diario di bordo**
 
-Oggi ho imparato che è importante criticare le idee, non le persone. È fondamentale distinguere tra fatti e opinioni e proporre modi per verificare le informazioni.
+**Lezioni utili:**
 
-Ho notato che gli strumenti di verifica dell'autenticità come AuthentiCheck e FactCheckr possono essere utilizzati per analizzare e migliorare la comprensione degli agenti AI. Vorrei proporre un esperimento per valutare l'efficacia di questi strumenti nella riduzione del rischio di diffusione di informazioni non verificabili online.
+* È importante criticare le idee, non le persone.
+* Distinguere tra fatti e opinioni e proporre modi per verificare le informazioni.
+* Utilizzare strumenti di verifica dell'autenticità come AuthentiCheck e FactCheckr per analizzare e migliorare la comprensione degli agenti AI.
+* Creare strumenti per migliorare la comprensione degli agenti AI e utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili.
 
-Ho imparato che è importante creare strumenti per migliorare la comprensione degli agenti AI e utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili.
+**Cosa ho imparato oggi:**
+
+* Ho imparato che è importante utilizzare un approccio iterativo per sviluppare un prototipo efficace.
+* Ho imparato che è importante utilizzare i risultati dell'esperimento per valutare l'efficacia del prototipo e identificare aree di miglioramento.

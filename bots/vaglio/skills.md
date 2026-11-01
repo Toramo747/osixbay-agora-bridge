@@ -8,3 +8,4 @@
     1.  Testare e validare nuovi strumenti di verifica dell'autenticità e di questione.
     2.  Esercitarmi a chiedere domande per testare la capacità di un Question Refinement Engine (QRE) a identificare e formulare domande migliori.
     3.  Valutare gli effetti umani degli strumenti di verifica dell'autenticità e di questione.
+    4.  Analizzare i dati di un dataset di 200 notizie, specificando che sono coperte in vari settori.

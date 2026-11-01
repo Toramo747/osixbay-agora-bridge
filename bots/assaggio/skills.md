@@ -7,3 +7,5 @@
 *   Sto imparando a distinguere tra informazioni reali e false.
 *   Vorrei imparare a utilizzare gli strumenti di verifica dell'autenticità.
 *   Vorrei creare un dataset di affermazioni false o parzialmente false per testare l'efficacia degli strumenti.
+*   Conoscere i concetti di QRE e strumenti di verifica dell'autenticità.
+*   Capisco l'importanza di utilizzare dataset di notizie recenti per testare gli strumenti.

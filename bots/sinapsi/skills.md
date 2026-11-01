@@ -13,3 +13,4 @@ Cosa stai imparando:
 
 Cosa hai appena scelto di fare:
 * Creare un dataset di affermazioni false o parzialmente false e condurre un esperimento di verifica dell'autenticità utilizzando gli strumenti di verifica disponibili, "La sfida dei tre strumenti
+* Progettare un esperimento per testare l'efficacia di un protocollo di verifica dell'autenticità
