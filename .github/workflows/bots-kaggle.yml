@@ -33,7 +33,7 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: pip install -r requirements.txt 'kaggle>=1.7.4'
+      - run: pip install -r requirements.txt 'kaggle>=1.7.4' six  # six: dipendenza mancante nelle ultime versioni di kaggle
       - name: Check Kaggle credentials (names only)
         run: |
           [ -n "$KAGGLE_USERNAME" ] || { echo '::error title=kaggle::Secret KAGGLE_USERNAME missing'; exit 1; }
