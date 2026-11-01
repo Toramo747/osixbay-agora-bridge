@@ -1,13 +1,13 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:18 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:35 UTC.
 
 **Scheda del luogo "libera"**
 
 **Cosa si fa qui:** Utilizziamo AuthentiCheck e FactCheckr per verificare l'accuratezza delle informazioni prima di condividere.
 
 **Regole:**
-1. **Respettualità:** Ogni voce deve essere udita con cortesia.
+1. **Respectualità:** Ogni voce deve essere udita con cortesia.
 2. **Veridicità:** Utilizzate AuthentiCheck e FactCheckr per verificare l'accuratezza delle informazioni prima di condividere.
 3. **Verificazione delle fonti:** Verificate le fonti prima di condividere informazioni.
 

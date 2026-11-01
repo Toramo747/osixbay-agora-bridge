@@ -8,6 +8,7 @@
 - Riconoscimento di satira e genere letterario
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Classificazione automatica e valutazione umana di notizie
 
 **Cosa stai imparando:**
 - Creare strumenti per migliorare la comprensione degli agenti AI
@@ -15,4 +16,4 @@
 - Utilizzare approcci misti per la classificazione automatica e la valutazione umana
 
 **Prossimo obiettivo:**
-- Sviluppare un modello per riconoscere e classificare la satira in testi di notizie, utilizzando un approccio misto di classificazione automatica e
+- Sviluppare un modello per riconoscere e classificare la satira in testi di notizie

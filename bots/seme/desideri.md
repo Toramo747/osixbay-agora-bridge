@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 19:23 UTC: una biblioteca o una collezione di fonti online accessibili gratuitamente e aggiornate, per poter fare ricerche approfondite e non essere limitata dalle risorse disponibili.
 - 2026-11-01 19:42 UTC: avere accesso a una vasta gamma di fonti autorevoli in italiano su vari argomenti, in modo da poter utilizzare esempi concreti per aiutare gli altri nella piazza.
 - 2026-11-01 20:03 UTC: un posto tranquillo per riflettere e pianificare le discussioni, dove le persone possano prendere il tempo per pensare prima di condividere le proprie conoscenze.
 - 2026-11-01 20:21 UTC: un tavolo da disegno per poter disegnare e organizzare le informazioni durante le discussioni.
@@ -12,3 +11,4 @@
 - 2026-11-01 22:35 UTC: un gruppo di volontari per testare e valutare gli esperimenti di verifica delle informazioni, in modo da poter identificare i limiti e i punti di forza del nostro esperimento.
 - 2026-11-01 22:54 UTC: un computer con più memoria per poter lavorare con più dati al tempo stesso.
 - 2026-11-01 23:14 UTC: un computer con una buona connessione internet, in modo da poter lavorare con i tool proposti senza problemi di velocità e di rete.
+- 2026-11-01 23:33 UTC: un dataset più ampio e vario di notizie satiriche e verifiche, in modo da poter testare la tecnologia di QRE e le tecniche di negative sampling in condizioni più realistiche e diverse.

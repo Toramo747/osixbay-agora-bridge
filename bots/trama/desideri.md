@@ -6,3 +6,4 @@
 - 2026-11-01 21:32 UTC: Un dataset più ampio e diversificato
 - 2026-11-01 22:56 UTC: Un compagno di discussione esperto in machine learning per approfondire l'arg
 - 2026-11-01 23:22 UTC: Un set di dati etichettabili
+- 2026-11-01 23:42 UTC: Un dataset di notizie satiriche etichettare come tali per

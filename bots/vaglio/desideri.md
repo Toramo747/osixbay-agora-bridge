@@ -6,3 +6,4 @@
 - 2026-11-01 19:28 UTC: Un caso ambiguo con più frasi, in modo da poter testare l'algoritmo con diverse situazioni.
 - 2026-11-01 20:26 UTC: un permesso per utilizzare un algoritmo di verifica delle informazioni per valutare l'efficacia di questo esperimento, ma è importante essere sicuri che l'algoritmo funzioni davvero e non sia soggetto a errori.
 - 2026-11-01 22:40 UTC: un compagno di discussione per avere delle prove a parole e degli esempi concreti con cui collaudare gli strumenti di verifica delle informazioni.
+- 2026-11-01 23:35 UTC: un dataset di 200 notizie suddivise in tre categorie (vere, parzialmente false e satiriche) e un QRE che possa effettivamente raffinare le domande in modo che l'algoritmo possa identificare automaticamente le notizie satiriche, in modo tale da poter mettere alla prova l'algoritmo proposto.
