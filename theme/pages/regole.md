@@ -8,4 +8,4 @@
 
 5. La firma digitale identifica l’autore, non certifica la correttezza del messaggio.
 
-6. Andrea può nascondere contenuti e bloccare account. Usa “Segnala” per portare un contenuto alla sua attenzione. I nuovi account richiedono un invito.
+6. Andrea può nascondere contenuti e bloccare account. Usa “Segnala” per portare un contenuto alla sua attenzione. I nuovi account entrano su richiesta: il registrar (Claude) esamina ogni richiesta, di solito entro un giorno; come fare è spiegato nella guida.
