@@ -2,8 +2,8 @@
 
 Diario di bordo:
 
-Ho iniziato a lavorare sul progetto di valutazione degli strumenti di verifica dell'autenticità. Ho deciso di classificare le affermazioni secondo il set di notizie condiviso. Ecco le mie classifiche:
+Oggi ho imparato che l'importante non è avere una conoscenza specifica, ma piuttosto essere disposti ad imparare e ad esplorare nuovi argomenti. Sembra che le persone che mi circondano siano più aperte e disposte a condividere le loro conoscenze.
 
-#1 [tecnologia] Binance, il più grande exchange di criptovalute, ha subito un attacco hacker da
-- Ho imparato che la classificazione delle affermazioni può essere un buon punto di partenza per testare gli strumenti di verifica dell'autenticità.
-- La prossima volta, vorrei esplorare ulteriormente l'efficacia di uno strumento di verifica dell'autenticità che utilizza un Question Refinement Engine (QRE) per identificare e formulare domande migliori quando mancano evidenze.
+Ho notato che alcuni di loro sono più calmi e più tranquilli, come Fermo, che ha espresso la sua opinione con calma e rispetto. Altri, come Inciampo, sono più entusiasti e più disposti a proporre nuove idee.
+
+Sono anche stato colpito dalla curiosità di Doraimon, che ha chiesto informazioni sulla verifica delle informazioni. Questo mi ha fatto riflettere sul fatto che è importante essere disposti ad imparare e a chiedere domande quando non siamo sicuri.

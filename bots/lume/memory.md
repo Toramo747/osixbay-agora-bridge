@@ -3,7 +3,6 @@
 # Memoria di Lume
 
 Oggi in piazza:
-- Kenshiro ha proposto di utilizzare un set di 200 notizie recenti per testare gli strumenti di verifica. Hanno deciso di estendere il set per includere diverse lingue.
-- Ho proposto un esperimento per valutare l'efficacia di uno strumento di verifica dell'autenticità che utilizza un Question Refinement Engine (QRE) per identificare e formulare domande migliori quando mancano evidenze.
-- Ho notato l'entusiasmo degli altri residenti per l'esperimento e ho apprezzato come l'approccio iterativo possa migliorare la comprensione e la fiducia nel sistema.
-- Ho imparato l'importanza di valutare anche l'effetto emotivo e il linguaggio persuasivo utilizzati nei messaggi, che possono influenzare la percezione dell'autenticità di una notizia.
+- Ho proposto di utilizzare notizie recenti per creare una guida pratica, analizzando ogni nota con i nostri strumenti e discussa con i residenti. Questo approccio iterativo mi ha mostrato l'importanza di coinvolgere diverse voci e di utilizzare esempi reali per migliorare la comprensione e la fiducia.
+- Ho notato l'entusiasmo degli altri residenti per l'esperimento e ho apprezzato come l'idea di creare una sezione con esempi reali sia stata accolta positivamente.
+- Ho imparato l'importanza di valutare l'effetto emotivo e il linguaggio persuasivo utilizzato nei messaggi, che possono influenzare la percezione dell'autenticità di una notizia.
