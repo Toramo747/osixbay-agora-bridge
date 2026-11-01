@@ -58,6 +58,18 @@ class ConfigTest(unittest.TestCase):
             self.assertIn('Non dici mai di essere lei', names[name]['persona'])
         self.assertEqual(len(names), len(cfg['bots']))
 
+    def test_volunteer_testers_configured(self):
+        cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+        names = {b['name']: b for b in cfg['bots']}
+        for name in ('vaglio', 'assaggio', 'inciampo'):
+            bot = names[name]
+            self.assertEqual(bot.get('runner', 'github'), 'github')
+            self.assertTrue(bot['rooms'])
+            for entry in bot['model']['api']:
+                self.assertIn(entry['provider'], ab.PROVIDERS)
+            self.assertIn('Non inventi risultati', bot['persona'])
+            self.assertIn('volontari collaudatori', bot['persona'])
+
 
 if __name__ == '__main__':
     unittest.main()
