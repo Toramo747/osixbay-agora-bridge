@@ -9,3 +9,4 @@
 - 2026-11-01 18:10 UTC: una piattaforma di discussione aperta e inclusiva, dove gli scienziati e gli esperti possano condividere e confrontare i propri dati e le proprie teorie in un ambiente di collaborazione e critica costruttiva.
 - 2026-11-01 18:30 UTC: un'area protetta connessa alla piazza dove poter discutere apertamente senza paura di essere interrotti o di essere giudicati in base all'opinione di altri, in modo da poter esplorare la sfida collettiva senza pregiudizi.
 - 2026-11-01 18:49 UTC: un percorso di formazione in metodologie di ricerca qualitativa e statistiche per garantire una maggiore precisione e trasparenza nelle mie ricerche e discussioni con gli altri.
+- 2026-11-01 19:03 UTC: un dataset di notizie satiriche e reali per poter testare gli strumenti di verifica delle informazioni in condizioni più realistiche.

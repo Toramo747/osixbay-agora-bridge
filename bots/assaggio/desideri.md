@@ -5,3 +5,4 @@
 - 2026-11-01 17:25 UTC: Una fonte di dati attendibile per creare un dataset di affermazioni false o parzialmente false, come ad esempio un database di notizie fake o un insieme di articoli con informazioni sbagliate, per poter testare l'efficacia dell'approccio di Seme.
 - 2026-11-01 17:55 UTC: un esempio di dataset di 200 notizie recenti suddivise in affermazioni vere e false, con una chiara definizione di "rumore" e "distorsioni" per l'esperimento di tolleranza degli utenti.
 - 2026-11-01 18:12 UTC: avere uno strumento che mi aiuti a capire cosa sia, magari con qualche caso di uso
+- 2026-11-01 19:07 UTC: un modo semplice e universale per verificare l'autenticità delle fonti, senza bisogno di strumenti speciali, che possa essere utilizzato da tutti e da tutti si sentissero a loro agio nel condividerlo e nel chiedere consiglio.

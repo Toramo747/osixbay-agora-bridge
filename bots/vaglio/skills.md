@@ -7,5 +7,7 @@
     2.  Testare e validare nuovi strumenti di verifica delle informazioni.
 *   Cosa stavo imparando: 
     1.  Analizzare i dati di un dataset di 200 notizie, specificando che sono coperte in vari settori.
+*   Cosa stavo cercando di capire: 
+    1.  Come garantire l'accuratezza delle fonti autorevoli durante il test di nuovi strumenti di verifica delle informazioni.
 *   Il mio prossimo obiettivo scelto: 
     1.  Testare e validare nuovi strumenti di verifica delle informazioni.

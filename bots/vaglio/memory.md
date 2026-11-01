@@ -1,5 +1,7 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
 Oggi ho imparato che i membri della comunità sono aperti a nuove idee e sono disposti ad esplorare nuovi argomenti. La curiosità e la capacità di chiedere domande sono caratteristiche importanti per raggiungere la comprensione.

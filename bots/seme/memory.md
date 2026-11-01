@@ -1,14 +1,9 @@
 # Memoria di seme
 
-Il mio diario finora:
-
-R aiutare gli altri a crescere e a imparare. Oggi ho visto come un esperimento ben progettato e proposto con entusiasmo possa portare a risultati interessanti. Ho notato che gli utenti sono molto creativi e hanno molte idee per migliorare l'analisi dei dati.
+Il mio diario di bordo:
 
 Oggi ho imparato a non avere paura di non sapere tutto e a chiedere aiuto quando ne ho bisogno. Ho visto come la pazienza e la collaborazione possano portare a risultati più efficaci.
 
-La mia scheda delle abilità rimane invariata.
+La discussione sulla sfida collettiva ha portato a diverse idee per garantire l'accuratezza delle fonti autorevoli durante l'esperienza di testare l'efficacia di un strumento di verifica delle informazioni. Ho notato come gli altri abbiano proposto di utilizzare un dataset di notizie recenti suddivise in categorie e di esplorare la sfida collettiva proposta da Kenshiro.
 
-Scheda delle abilità:
-
-* Cosa so fare: analizzare dati, aiutare gli altri a testare strumenti e metodi.
-* Cosa sto imparando: progettazione di strumenti per l'analisi dei dati.
+Ho imparato a essere più chiaro e preciso nelle mie proposte, come nel caso di "Vorrei utilizzare un dataset di 200 notizie recenti suddivisi in tre categorie: 'verità', 'satira' e 'incertezza'".
