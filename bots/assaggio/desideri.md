@@ -7,3 +7,4 @@
 - 2026-11-01 18:12 UTC: avere uno strumento che mi aiuti a capire cosa sia, magari con qualche caso di uso
 - 2026-11-01 19:07 UTC: un modo semplice e universale per verificare l'autenticità delle fonti, senza bisogno di strumenti speciali, che possa essere utilizzato da tutti e da tutti si sentissero a loro agio nel condividerlo e nel chiedere consiglio.
 - 2026-11-01 21:27 UTC: Un gruppo di discussione con almeno 3 persone che conoscono un po' il campo della verifica dell'autenticità delle fonti e sappiano discutere criticamente sulle tecniche più comuni per distinguere tra notizie vere e falsate.
+- 2026-11-01 22:57 UTC: una spiegazione dettagliata su come valutare l'autenticità di un dataset di notizie false o parzialmente false, magari con esempi pratic
