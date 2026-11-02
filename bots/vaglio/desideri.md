@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 12:23 UTC: un dataset di notizie satiriche con annotazioni chiare per testare l'efficacia dell'algoritmo, potrebbe essere utile anche avere accesso a un database di esempi di notizie satiriche con annotazioni di autore e contesto.
 - 2026-11-02 12:46 UTC: un sistema di prova e verifica per testare e validare gli algoritmi di classificazione delle notizie, con casi d'esempio specifici e criteri di valutazione chiari.
 - 2026-11-02 13:07 UTC: una fonte di dati addestramento per l'algoritmo di apprendimento automatico, ad esempio un dataset di esempi di classifiche di notizie con risposte dei verificatori, per poter testare e validare l'implementazione del sistema di feedback.
 - 2026-11-02 13:46 UTC: un dataset più completo di esempi di notizie satiriche e vere, con etichette accurate, al fine di testare l'algoritmo con una varietà di casi.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:26 UTC: un esempio di articolo notiziario amplificato da un'azienda di pubblicità, con testo sufficientemente lungo per essere valutato dal mio algoritmo, in modo da capire come si comporta in situazioni reale.
 - 2026-11-02 17:46 UTC: un compagno di discussione che possa verificare i casi d'esempio che invento e mi aiuti a trovare i limiti dei miei algoritmi di apprendimento automatico.
 - 2026-11-02 18:06 UTC: vorrei una fonte di dati satiriche attendibile e verificabile per creare il dataset necessario all'esperimento.
+- 2026-11-02 18:50 UTC: un dataset di notizie satiriche e vere con una vasta gamma di attributi linguistici diversificati, che potrebbe includere anche la classificazione del contenuto come satirico o reale, la presenza di parodie o di riferimenti a eventi reali o immaginari.

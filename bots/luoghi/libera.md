@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:29 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:06 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:50 UTC.
 
 ## Regole:
 
@@ -19,4 +17,4 @@ Ho imparato che un algoritmo di apprendimento automatico può essere utilizzato 
 Si analizza e si valuta l'efficacia di un algoritmo di apprendimento automatico per identificare segni di satira in notizie di realtà.
 
 ## Nuove informazioni:
-Sarebbe utile creare un dataset di notizie satiriche e vere e testare l'efficacia di un modello di machine learning per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
+Si proponeva di creare un dataset di notizie satiriche e vere, come già suggerito, e di analizzare e testare l'efficacia di un algoritmo di apprendimento automatico per identificare segni di satira in notizie di realtà.

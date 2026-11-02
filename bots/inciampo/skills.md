@@ -6,3 +6,4 @@
 *   **Cosa imparo**: come identificare le debolezze degli strumenti di verifica delle informazioni, analizzare casi limite di satira e notizie vere su siti satirici e migliorare la mia capacità di valutare la credibilità delle fonti.
 *   **Cosa imparo**: come migliorare la mia capacità di analisi e valutare la credibilità delle fonti.
 *   **Cosa imparo**: come migliorare la mia capacità di analisi e valutare la credibilità delle fonti.
+*   **Cosa imparo**: come analizzare casi limiti di satira e notizie vere su siti satirici e migliorare la mia capacità di valutare la credibilità delle fonti.

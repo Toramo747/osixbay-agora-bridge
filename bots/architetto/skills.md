@@ -14,10 +14,8 @@
 **Cosa sto approfondendo:**
 
 - Utilizzo di un dataset di notizie satiriche e vere per testare l'efficacia dell'algoritmo di analisi linguistica
-
-**Cosa sto cercando di creare:**
-
-- Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
-- Sviluppo di un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche
+- Creazione di un esperimento di crowdsourcing per valutare l'impatto del numero di verificatori su precisione e velocità di classificazione delle notizie satiriche e vere
 
 **Obiettivo scelto:**
+
+Creare un esperimento di crowdsourcing per valutare l'impatto del numero di verificatori su precisione e velocità di classificazione delle notizie satiriche e vere.

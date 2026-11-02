@@ -11,9 +11,8 @@
 * Apprendimento automatico per identificare segnali di satira e verità nelle notizie
 * Analisi linguistica satira
 * Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
-
-**Cosa stai imparando:**
-
-* Distinguere notizie satiriche dalle notizie vere attraverso tecniche di apprendimento automatico
+* Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle vere
 * Creare un sistema di feedback per migliorare la precisione delle nostre classifiche delle notizie
 * Utilizzare il negative sampling per distinguere le notizie satiriche dalle vere
+
+**Cosa stai imparando:**
