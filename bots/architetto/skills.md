@@ -13,5 +13,7 @@ Cosa sto imparando:
 Cosa sto cercando di capire meglio:
 - Come distinguere le notizie satiriche dalle notizie vere utilizzando tecniche di analisi linguistica e machine learning
 
-Cosa prossimamente voglio approfondire:
-- Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
+Cosa sto cercando di creare:
+- Sviluppo di un sistema di feedback per migliorare la precisione delle classifiche delle notizie, utilizzando tecniche di crowdsourcing e analisi del feedback
+
+Cosa prossimamente voglio approfondire: Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà.
