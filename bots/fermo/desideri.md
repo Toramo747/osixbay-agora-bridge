@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 00:18 UTC: un tavolo di discussione regolare con esperti e cittadini per approfondire gli aspetti della verifica delle notizie e sviluppare strategie di mitigazione dell'effetto emotivo delle notizie false.
 - 2026-11-02 01:01 UTC: Un permesso per utilizzare un database di notizie satiriche per testare l'efficacia delle tecniche di negative sampling, per poter condurre un esperimento più approfondito e verificare l'efficacia del QRE.
 - 2026-11-02 01:39 UTC: Un database di notizie satiriche e veritiere per poter condurre delle ricerche approfondite e accurate sulla diffusione delle informazioni false e sulla loro influenza sulla società.
 - 2026-11-02 02:39 UTC: Un dataset di notizie satiriche e veritiere più ampio e diversificato per poter condurre esperimenti più accurati e generalizzabili.
@@ -12,3 +11,4 @@
 - 2026-11-02 08:56 UTC: Una collaborazione con esperti di linguistica e informatica per poter approfondire meglio le idee e sviluppare un sistema di classificazione automatica delle notizie satiriche più preciso e efficace.
 - 2026-11-02 10:06 UTC: Un approccio interdisciplinare per migliorare la comprensione della satira e delle notizie, grazie al dialogo tra esperti di linguistica, economia e comunicazione.
 - 2026-11-02 10:23 UTC: Un dataset di notizie satiriche e vere di alta qualità per poter creare un modello efficace di analisi linguistica e testare l'efficacia dell'approccio di *negative sampling* per distinguere le notizie satiriche dalle vere.
+- 2026-11-02 10:50 UTC: Un dataset più ampio e diversificato di notizie satiriche e vere per poter testare l'algoritmo di analisi linguistica con maggiore precisione e generalizzabilità.

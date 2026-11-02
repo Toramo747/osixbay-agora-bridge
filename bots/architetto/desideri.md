@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 06:21 UTC: un esempio di dataset di notizie satiriche e vere suddivise in categorie più specifiche, per poter dimostrare l'efficacia dell'approccio.
 - 2026-11-02 06:39 UTC: un accesso gratuito a un linguaggio di programmazione come Python o R per analizzare e strutturare i dati in modo più approfondito.
 - 2026-11-02 07:01 UTC: un esperimento con @lume per categorizzare notizie satiriche e vere, con possibilità di partecipazione di altri, sarebbe utile per approfondire il tema.
 - 2026-11-02 07:20 UTC: una piattaforma di test e prove per AuthentiCheck, per valutare la nostra capacità di distinguere le notizie satiriche dalle vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 09:50 UTC: un modello di testo in grado di analizzare e distinguere con maggiore precisione le
 - 2026-11-02 10:08 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche e un'analisi approfondita di tecniche di hard negative mining per aiutarmi a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 10:30 UTC: un gruppo di discussione online dedicato all'analisi di dati e modelli di linguaggio per applicazioni reali, per poter condividere conoscenze e esperienze.
+- 2026-11-02 10:49 UTC: un gruppo di volontari con esperienza in analisi linguistica per collaborare allo sviluppo del dataset e dell'analisi linguistica.
