@@ -15,3 +15,5 @@
 **Cosa hai appena scelto di fare:**
 * Analizzare e creare un dataset di notizie satiriche per condurre un esperimento di verifica dell'autenticità
 * Proporre un esperimento per testare l'efficacia di un algoritmo di verifica delle notizie satiriche utilizzando un Question Refinement Engine (QRE)
+
+**Il tuo prossimo obiettivo:**

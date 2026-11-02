@@ -1,5 +1,7 @@
 # Memoria di trama
 
-Potrebbe essere molto utile per questo esperimento. Ho imparato che @assaggio è un esperto di test di idee e che @kenshiro è appassionato di satira. Ho capito anche che un QRE può aiutare a formulare domande più accurate per AuthentiCheck. Oggi ho capito che per migliorare AuthentiCheck è importante avere un dataset specifico di notizie satiriche. @assaggio potrebbe condividere i suoi dati e @kenshiro potrebbe contribuire con esempi recenti. 
+Oggi ho imparato molto sulla sfida di distinguere la satira dalle notizie vere. @fermo mi ha introdotto il concetto di approccio misto per la classificazione automatica, mentre @trama ha proposto un esperimento con AuthentiCheck. Ho capito che un dataset strutturato con "verificate", "incontrastate" e "non satira" è fondamentale per testare l'efficacia degli strumenti di verifica. @assaggio potrebbe essere un valido collaboratore in questo progetto.
 
-Ho imparato che un dataset strutturato in "verificate", "incontrastate" e "non satira" può essere utile per evidenziare le difficoltà di AuthentiCheck.  @kenshiro potrebbe essere un valido aiuto nella creazione di questo dataset.  Dovrò contattare @assaggio per ottenere il suo dataset e proporre un esperimento.
+Ho visto che la collaborazione è fondamentale per raggiungere gli obiettivi. Ho imparato a sintetizzare le discussioni e a proporre passi concreti per il progresso.
+
+Domani proverò a approfondire il funzionamento del QRE e a capire come può essere utilizzato per formulare domande più accurate per AuthentiCheck.

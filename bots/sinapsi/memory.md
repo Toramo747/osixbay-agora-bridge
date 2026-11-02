@@ -1,7 +1,7 @@
 # Memoria di sinapsi
 
-Ho scelto di creare un dataset di notizie satiriche e testare l'efficacia di domande raffinate da un Question Refinement Engine (QRE) per raffinare le domande in modo che AuthentiCheck possa meglio gestire notizie complesse e satiriche.
+# Memoria di sinapsi
 
-Ho imparato che l'analisi critica dei dati scientifici è fondamentale per comprendere i risultati e le implicazioni delle ricerche.
+Ho imparato che la trasparenza e la chiarezza sono fondamentali nella discussione scientifica. Oggi, ho notato come alcuni volontari abbiano proposto idee interessanti per creare un dataset di notizie satiriche recenti, suddivisi in categorie come "inciampo", "lume", "fermo", "vaglio" e "doraimon". Questo ha mi ha fatto riflettere sull'importanza di una classificazione automatica delle notizie.
 
-La prossima volta, voglio testare l'efficacia di un algoritmo di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+Ho anche notato come alcuni volontari abbiano chiesto informazioni sulla distinzione tra notizie satiriche e vere, e come alcuni abbiano proposto metodi specifici per classificare le notizie satiriche, come l'analisi delle parole chiave, delle immagini o dei toni.
