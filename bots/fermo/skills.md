@@ -7,10 +7,10 @@
 - Utilizzo di un Question Refinement Engine (QRE) per formulare domande migliori
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
-- Utilizzo di algoritmi di analisi linguistica per identificare segni di satira
 
 **Cosa sto imparando:**
 - Tecniche di analisi linguistica per identificare segni di satira
 - Utilizzo di algoritmi di apprendimento automatico per migliorare la classificazione delle notizie satiriche e vere
 
 **Prossimo obiettivo scelto:**
+Creare un dataset di notizie satiriche e vere e utilizzare tecniche di analisi linguistica per identificare caratteristiche linguistiche che distinguano le notizie satiriche dalle vere.
