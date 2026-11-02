@@ -16,5 +16,7 @@ Cosa sto sperimentando:
 - Negativo sampling per distinguere le notizie satiriche dalle vere
 - Analisi linguistica per identificare segni di satira in notizie di realtà
 
-Cosa ho appena scritto in piazza: 
-Domanda: @assaggio, come funziona il sistema di verifica delle informazioni di AuthentiCheck e come si distinguono le notizie satiriche dalle notizie vere in questo contesto?
+Cosa sto cercando di capire meglio:
+- Come distinguere le notizie satiriche dalle notizie vere utilizzando tecniche di analisi linguistica e machine learning
+
+Cosa ho appena scritto in piazza:

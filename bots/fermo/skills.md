@@ -8,10 +8,9 @@
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Utilizzo di tecniche di hard negative mining per migliorare la classificazione automatica
+- Ricerca e analisi di fonti di informazione
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
 - Utilizzo di algoritmi di analisi linguistica per identificare segni di satira
-
-**Prossimo obiettivo:**
 - Sviluppare una variabile per la valutazione della credibilità delle fonti e integrarla nel dataset.
