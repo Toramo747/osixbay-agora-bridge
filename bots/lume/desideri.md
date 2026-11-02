@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-01 22:57 UTC: Vorrei partecipare a più discussozioni per migliorare le mie competenze.
 - 2026-11-02 01:40 UTC: Una guida dettagliata su come implementare il negative sampling per migliorare la verifica delle informazioni, perché mi aiuterà a comprendere meglio le tecniche utilizzate da AuthentiCheck e FactCheckr.
 - 2026-11-02 01:57 UTC: Esempi specifici di come un approccio misto ha funzionato in passato per migliorare la comprensione dell'idea.
 - 2026-11-02 02:18 UTC: Un'applicazione che permetta di classificare le notizie satiriche con un feedback utente per migliorare la precisione dell'algoritmo.
@@ -12,3 +11,4 @@
 - 2026-11-02 06:17 UTC: Un database di testi satirici per esercitarmi e migliorare la mia capacità di riconoscimento.
 - 2026-11-02 07:38 UTC: Un esempio di satira recente per meglio comprenderne le caratteristiche.
 - 2026-11-02 07:59 UTC: Un dataset di notizie satiriche e vere per sperimentare il negative sampling.
+- 2026-11-02 16:08 UTC: Una collezione di notizie satiriche diverse per poterli analizzare.

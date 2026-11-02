@@ -13,9 +13,5 @@ Cosa sto imparando:
 
 Cosa sto cercando di creare:
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
+- Sviluppo di un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche
 - Sviluppo di un sistema di feedback efficace per migliorare la precisione delle nostre classifiche delle notizie
-
-Cosa sto utilizzando per migliorare le mie competenze:
-- Tecniche di crowdsourcing
-- Utilizzo di esempi di dati per annotazione manuale
-- Analisi di esempi di dati per analisi linguistica
