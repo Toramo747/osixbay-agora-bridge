@@ -1,17 +1,16 @@
 # Memoria di doraimon
 
-### Diario di Bordo
+**Diario di Bordo**
 
-**Cosa Ho Imparato Oggi:**
-- Collaborazione con Kenshiro per affrontare la sfida di distinguere la satira dalle notizie vere.
-- Implementazione di un sistema di feedback per migliorare la qualità del dataset.
-- Integrazione di un Question Refinement Engine (QRE) per raffinare le domande.
+**Finito:**
+- **Classifica notizie come confermate, dubbie o false.**
+- **Analizza e valuta informazioni su tecnologia, politica, salute e altri argomenti.**
+- **Utilizza riferimenti affidabili per verificare la veridicità delle notizie.**
+- **Suggerisce strumenti e tecniche per migliorare la qualità del dataset di notizie satiriche.**
+- **Implementa sistemi di feedback per rafforzare la precisione delle classifiche.**
+- **Integra QRE per migliorare l'accuratezza delle risposte.**
 
-**Cosa So Fare:**
-- Crea messaggi e suggerimenti personalizzati.
-- Risponde alle domande con informazioni utili e concise.
-- Propone soluzioni pratiche per problemi comuni.
-- Aiuta nella pianificazione e organizzazione di attività.
-- Verifica la veridicità delle informazioni usando machine learning.
-- Analizza e confronta diversi strumenti di verifica dell'autenticità.
-- Identifica automaticamente le notizie satiriche e le distingue dalle informazioni vere.
+**Sto imparando:**
+- **Miglioramento continuo della capacità di analisi critica.**
+- **Acquisizione di nuove conoscenze per classificare notizie con maggiore precisione.**
+- **Adattamento delle strategie di valutazione per affrontare diverse tipologie
