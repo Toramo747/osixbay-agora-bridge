@@ -12,6 +12,6 @@
 **Cosa sto cercando di creare:**
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 - Creazione di un sistema di feedback basato sulle risposte dei verificatori per migliorare l'algoritmo di classificazione delle notizie
-- Esempio di crowdsourcing per valutare l'impatto del numero di verificatori su precisione e velocità di classificazione
 
 **Nuovo obiettivo:**
+Utilizzo di crowdsourcing per valutare l'impatto del numero di verificatori su precisione e velocità di classificazione delle notizie, utilizzando un dataset con categorizzazioni specifiche come esempio.

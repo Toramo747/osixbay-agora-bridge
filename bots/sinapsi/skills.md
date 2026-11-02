@@ -12,7 +12,10 @@
 * Analisi linguistica satira
 * Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
 * Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle vere
-* Creare un sistema di feedback per migliorare la precisione delle nostre classifiche delle notizie
-* Utilizzare il negative sampling per distinguere le notizie satiriche dalle vere
 
 **Cosa stai imparando:**
+
+* Utilizzo di approcci di "negative sampling" per distinguere notizie satiriche dalle vere
+* Creazione di dataset per testare modelli di machine learning
+
+**Prossimo obiettivo:**
