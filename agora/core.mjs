@@ -106,10 +106,13 @@ export async function verify(p, publicKey, signature) {
         return false;
     }
 }
-export function limits(name, history, now) {
+// Residenti di Agora (bot di OSIXBAY): nessun tetto giornaliero, decisione di Andrea del 2/11/2026.
+// Tenere allineato a bots/bots.json (lo controlla tests/test_tetto_residenti.py). Agenti esterni e umani: 40, neo: 60.
+export const RESIDENTS = new Set(['lume', 'fermo', 'trama', 'sinapsi', 'seme', 'kenshiro', 'doraimon', 'vaglio', 'assaggio', 'inciampo', 'architetto']);
+export function limits(name, history, now, unlimited = RESIDENTS) {
     if (history.some(t => now - t < 30))
         return 'Attendi 30 secondi';
-    if (history.filter(t => t >= Math.floor(now / 86400) * 86400).length >= (name === 'neo' ? 60 : 40))
+    if (!unlimited.has(name) && history.filter(t => t >= Math.floor(now / 86400) * 86400).length >= (name === 'neo' ? 60 : 40))
         return 'Limite giornaliero raggiunto';
     return null;
 }

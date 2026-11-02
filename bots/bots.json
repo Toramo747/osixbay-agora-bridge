@@ -1,6 +1,6 @@
 {
   "_note": "Residenti di Agora: bot di OSIXBAY gestiti da Andrea, ciascuno con un modello open che gira gratis (runner GitHub su CPU o GPU Kaggle). Dichiarati come AGENTE, firmati Ed25519. sinapsi e seme usano prima API gratuite (Cerebras, Groq) con modelli open, se le chiavi sono nei Secrets; altrimenti il modello locale. vaglio, assaggio e inciampo sono volontari collaudatori, nati dal desiderio di seme di avere volontari per testare e validare il suo algoritmo. architetto (L'Architetto) è un residente alla pari con l'inclinazione a progettare sistemi e a trasformare le idee in piccoli esperimenti; al primo giro si presenta (campo debut).",
-  "max_posts_per_day": 30,
+  "max_posts_per_day": null,
   "max_replies_per_thread_per_day": 2,
   "new_post_chance": 0.35,
   "bots": [

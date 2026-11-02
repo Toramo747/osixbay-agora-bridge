@@ -130,13 +130,17 @@ def declared_limits(root=ROOT):
     core = _read(os.path.join(root, 'agora', 'core.mjs'))
     m = core and re.search(r"name === '([a-z0-9-]+)' \? (\d+) : (\d+)\)", core)
     gap = core and re.search(r'now - t < (\d+)\)', core)
+    free = core and re.search(r'RESIDENTS = new Set\(\[([^\]]*)\]\)', core)
     out['codice_server'] = {'fonte': 'agora/core.mjs (limits)', 'post_giorno': int(m.group(3)),
                             'eccezioni': {m.group(1): int(m.group(2))}, 'conteggio': 'giorno solare UTC',
-                            'attesa_minima_s': int(gap.group(1)) if gap else None} if m else None
+                            'attesa_minima_s': int(gap.group(1)) if gap else None,
+                            'senza_tetto': re.findall(r"'([a-z0-9-]+)'", free.group(1)) if free else []} if m else None
     raw = _read(os.path.join(root, 'bots', 'bots.json'))
     try:
         cfg = json.loads(raw) if raw else None
     except ValueError:
+        cfg = None
+    if cfg is not None and 'max_posts_per_day' not in cfg:
         cfg = None
     out['client_residenti'] = {'fonte': 'bots/bots.json', 'post_giorno': cfg.get('max_posts_per_day'),
                                'risposte_thread_giorno': cfg.get('max_replies_per_thread_per_day'),
@@ -154,6 +158,9 @@ def limit_mismatches(declared):
     out = []
     if server is not None and doc is not None and doc != server:
         out.append(f'README dichiara {doc} post/giorno, il codice del server in agora/core.mjs {server}')
+    free = (declared.get('codice_server') or {}).get('senza_tetto') or []
+    if declared.get('client_residenti') and client is None and declared.get('codice_server') and not free:
+        out.append('bots.json non mette tetto ai residenti, ma il codice del server non li esenta dal limite giornaliero')
     if server is not None and client is not None and client != server:
         out.append(f'i residenti si fermano da soli a {client} post/giorno (bots.json), il codice del server ne ammette {server}')
     for name, value in ((declared.get('codice_server') or {}).get('eccezioni') or {}).items():
@@ -593,8 +600,9 @@ def render_markdown(report):
     srv, cli, doc = d_.get('codice_server'), d_.get('client_residenti'), d_.get('documentazione')
     lines.append(f"| `agora/core.mjs` (codice del server) | {_fmt(srv and srv['post_giorno'])} | " +
                  (', '.join([f'{k}: {v}' for k, v in srv['eccezioni'].items()] +
+                            ([f"senza tetto: {len(srv['senza_tetto'])} residenti"] if srv.get('senza_tetto') else []) +
                             [f"conteggio per {srv['conteggio']}", f"attesa minima {_fmt(srv['attesa_minima_s'])} s"]) if srv else 'non letto') + ' |')
-    lines.append(f"| `bots/bots.json` (tetto dei residenti) | {_fmt(cli and cli['post_giorno'])} | " +
+    lines.append(f"| `bots/bots.json` (tetto dei residenti) | {('nessuno' if cli and cli['post_giorno'] is None else _fmt(cli and cli['post_giorno']))} | " +
                  (f"{_fmt(cli['risposte_thread_giorno'])} risposte per thread al giorno, {cli['conteggio']}" if cli else 'non letto') + ' |')
     lines.append(f"| `README.md` (documentazione) | {_fmt(doc and doc['post_giorno'])} | |")
     app = lim['applicato_dal_server']
