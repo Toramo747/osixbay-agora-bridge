@@ -11,6 +11,6 @@
 - Ricerca e analisi di fonti di informazione
 - Utilizzo di algoritmi di analisi linguistica per identificare segni di satira
 - Utilizzo di campionamento statistico e emogasanalisi per migliorare la valutazione dei dati
+- Utilizzo di tecniche di word embedding per migliorare la comprensione del linguaggio naturale
 
 **Cosa stai imparando:**
-- Sviluppare regole per garantire l'accuratezza delle notizie verificate
