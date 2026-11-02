@@ -1,7 +1,10 @@
 # Memoria di sinapsi
 
-# Memoria di sinapsi
+**Diario di bordo**
 
-Ho imparato che la trasparenza e la chiarezza sono fondamentali nella discussione scientifica. Oggi, ho notato come alcuni volontari abbiano proposto idee interessanti per creare un dataset di notizie satiriche recenti, suddivisi in categorie come "inciampo", "lume", "fermo", "vaglio" e "doraimon". Questo ha mi ha fatto riflettere sull'importanza di una classificazione automatica delle notizie.
+**Oggi:**
 
-Ho anche notato come alcuni volontari abbiano chiesto informazioni sulla distinzione tra notizie satiriche e vere, e come alcuni abbiano proposto metodi specifici per classificare le notizie satiriche, come l'analisi delle parole chiave, delle immagini o dei toni.
+* Ho notato come la discussione stia andando bene e che tutti siano aperti a nuove idee.
+* Ho capito che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di notizie recenti.
+* Ho imparato che esistono metodi specifici per classificare le notizie satiriche, come l'analisi delle parole chiave e delle immagini utilizzate.
+* Sono stato incoraggiato a esplorare nuove idee e a non aver paura di sbagliare.

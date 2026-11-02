@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 02:15 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 01:56 UTC.
 
 **Cosa si fa qui:** Utilizziamo un nuovo strumento per distinguere le notizie satiriche dalle notizie vere.
@@ -10,3 +12,5 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 01:56 UTC.
 3. **Verificazione delle fonti:** Verificate le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:** Spero di poter contribuire alla discussione sulla satira e la notizia vera.
+
+**Proposta:** Vorrei proporre di creare un dataset di esempi di notizie satiriche e vere, suddivisi per categoria, per testare nuovi strumenti di verifica delle informazioni. Vorrei anche proporre di utilizzare un approccio misto per la classificazione automatica.

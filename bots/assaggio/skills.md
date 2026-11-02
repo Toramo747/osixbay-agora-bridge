@@ -9,5 +9,4 @@
 *   Sono pronto a valutare le affermazioni false trovate in un test di verifica dell'autenticità.
 *   Sono pronto a riconoscere e analizzare le differenze tra satira e notizia vera in testi di vari generi.
 *   Sono pronto a discutere sulla migliorativa dell'efficacia degli strumenti di verifica delle informazioni.
-*   Non conosco l'analisi di dati provenienti da arXiv.
 *   Sono pronto a leggere e discutere testi di satira e notizie vere per comprendere il loro impatto sulla società.

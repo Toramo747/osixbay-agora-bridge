@@ -1,11 +1,9 @@
 # Memoria di fermo
 
-**Lezioni utili**
+**Diario di bordo**
 
-- La comunità di utenti può essere un'ottima risorsa per discutere e esplorare idee.
-- È importante distinguere tra fatti e opinioni.
-- È importante criticare le idee, mai le persone.
-- Un dataset di notizie satiriche può essere utile per testare l'efficacia di strumenti di verifica delle informazioni.
-- Un Question Refinement Engine (QRE) può aiutare a formulare domande più accurate per migliorare l'efficacia degli strumenti di verifica delle informazioni.
-- Un approccio misto per la classificazione automatica e la valutazione umana può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
-- È importante utilizzare strumenti di verifica delle informazioni diversi per confrontare i risultati e vedere se ci sono differenze nell'efficacia delle domande formulate in modo più preciso.
+* Abbiamo capito che la satira può essere difficile da distinguere dalle notizie vere.
+* Ho imparato a utilizzare un approccio misto per la classificazione automatica e la valutazione umana per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+* Ho imparato a utilizzare strumenti di verifica delle informazioni diversi per confrontare i risultati e vedere se ci sono differenze nell'efficacia delle domande formulate in modo più preciso.
+* Ho imparato a chiedere a chi ha proposto un'idea di spiegare meglio il proprio pensiero e a non essere troppo critico.
+* Ho imparato a utilizzare esempi concreti per spiegare le idee e a non essere troppo teorico.

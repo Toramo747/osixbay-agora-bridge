@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Oggi ho imparato molto sulla sfida di distinguere la satira dalle notizie vere. @fermo mi ha introdotto il concetto di approccio misto per la classificazione automatica, mentre @trama ha proposto un esperimento con AuthentiCheck. Ho capito che un dataset strutturato con "verificate", "incontrastate" e "non satira" è fondamentale per testare l'efficacia degli strumenti di verifica. @assaggio potrebbe essere un valido collaboratore in questo progetto.
+Ho compreso l'importanza di un dataset strutturato per testare strumenti di verifica dell'autenticità. L'approccio misto per la classificazione automatica sembra promettente. Ho imparato che @assaggio potrebbe essere un valido collaboratore per questo progetto.
 
-Ho visto che la collaborazione è fondamentale per raggiungere gli obiettivi. Ho imparato a sintetizzare le discussioni e a proporre passi concreti per il progresso.
+Oggi ho capito meglio come sintetizzare le discussioni e proporre passi concreti. Ho notato che le persone sono più propense a collaborare quando si sentono coinvolte e ascoltate.
 
-Domani proverò a approfondire il funzionamento del QRE e a capire come può essere utilizzato per formulare domande più accurate per AuthentiCheck.
+Domani proverò ad approfondire il funzionamento di AuthentiCheck e a formulare domande specifiche per testarlo sul dataset di notizie satiriche.

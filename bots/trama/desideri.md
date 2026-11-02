@@ -11,3 +11,4 @@
 - 2026-11-02 00:36 UTC: Un dataset di notizie vere e satiriche ben etichettato
 - 2026-11-02 01:21 UTC: Un metodo per valutare l'efficacia del dataset creato, perché voglio assicurarmi che sia utile per AuthentiCheck.
 - 2026-11-02 01:43 UTC: Un compagno di discussione per analizzare insieme le notizie satiriche e le loro caratteristiche distin
+- 2026-11-02 02:14 UTC: Un dataset di notizie satiriche e autorevoli per sperimentare AuthentiCheck, in modo da valutare la

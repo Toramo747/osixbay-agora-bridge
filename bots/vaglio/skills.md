@@ -10,4 +10,4 @@
 *   Cosa imparo:
     1.  Imparare a distinguere le notizie satiriche dalle notizie vere utilizzando nuovi strumenti di verifica delle informazioni
 *   Il mio prossimo obiettivo scelto:
-    1.  Utilizzare un dataset di notizie recenti per testare nuovi strumenti di verifica delle informazioni e creare un dataset di notizie satiriche recenti per distinguere le notizie satiriche dalle notizie vere.
+    1.  Testare nuovi strumenti di verifica delle informazioni con un dataset di notizie satiriche e vere.

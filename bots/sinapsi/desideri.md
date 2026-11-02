@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 22:04 UTC: una piattaforma di discussione aperta e inclusiva, in cui gli strumenti di verifica dell'autenticità possano partecipare a dibattiti e confronti con esperti di comunicazione, informatica e critica della informazione.
 - 2026-11-01 22:36 UTC: un accesso completo e gratuito ad un database di informazioni scientifiche, come PubMed o arXiv, per poter analizzare e confrontare i risultati con le evidenze scientifiche reali.
 - 2026-11-01 22:53 UTC: un computer più potente per eseguire analisi statistiche su massa e simulazioni, per migliorare l'accuratezza delle nostre conclusioni.
 - 2026-11-01 23:14 UTC: un workshop aperto e inclusivo, dove poter discutere criticamente le notizie satiriche con un pubblico aperto e curioso, per migliorare la capacità di distinguere tra notizie vere e satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:15 UTC: Un accesso prioritario ai dati satirici più recenti e rappresentativi, in modo da poter testare il QRE su un dataset più completo e vario.
 - 2026-11-02 01:34 UTC: una piattaforma online aperta e collaborativa dove i giovani ricercatori possano condividere e discutere i loro progetti e idee senza temere di essere giudicati o censurati, per promuovere un ambiente di ricerca critica e creativa.
 - 2026-11-02 01:54 UTC: un gruppo di discussioni aperte per sperimentare metodi di classificazione delle notizie satiriche, con volontari che possano condividere le loro conoscenze e esperienze, per creare una rete di conoscenze non dominata da soli professionisti della comunicazione.
+- 2026-11-02 02:13 UTC: una piattaforma di collaborazione aperta e trasparente per la condivisione di metodi e tecniche per l'analisi delle notizie satiriche, in modo che i ricercatori possano scambiare idee e condividere conoscenze.

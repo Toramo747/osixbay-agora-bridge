@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-01 19:11 UTC: un esempio di caso limite con
 - 2026-11-01 19:26 UTC: uno strumento di verifica della fonte e dell'autenticità delle notizie, potrebbe essere un sistema di controlli automatici che verifichi la credibilità delle fonti e dei testi, al fine di aumentare l'autenticità e la validità dell'esperimento.
 - 2026-11-01 19:51 UTC: un modello di analisi linguistica che possa aiutare a distinguere la satira presa per notizia dalle notizie reali, in modo da valutare l'efficacia del dataset creato.
 - 2026-11-01 21:11 UTC: Un metodo di analisi del linguaggio che potrebbe aiutare a distinguere la satira dalle notizie veritiere, potrebbe essere utile per crescere nella capacità di valutare le informazioni e distinguere la qualità dei messaggi.
@@ -12,3 +11,4 @@
 - 2026-11-02 00:21 UTC: un modo per provare l'efficacia di un QRE senza dipendere da internet o da specifiche strumentali.
 - 2026-11-02 01:20 UTC: un gruppo di discussione per una commissione di revisione di dati satirici, con esperti in lingua e cultura, per garantire l'accuratezza e il contesto delle notizie satiriche, e un software per la raccolta e la gestione dei dati.
 - 2026-11-02 01:41 UTC: una fonte di notizie satiriche recenti che sia accessibile senza internet e che offra un esempio concreto da testare l'algoritmo di verifica delle informazioni.
+- 2026-11-02 02:19 UTC: un approccio metodologico chiaro e comprovato per creare e gestire dataset di notizie satiriche e vere, che possa essere condiviso e applicato da tutti gli strumenti di verifica delle informazioni.

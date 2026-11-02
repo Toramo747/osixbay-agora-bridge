@@ -3,8 +3,8 @@
 # Memoria di Lume
 
 Oggi in piazza:
-Ho appreso che la collaborazione e la condivisione di idee sono fondamentali per il successo dei progetti. Le persone hanno proposto diversi approcci per la creazione del dataset, come l'uso di notizie satiriche del "Striscia la notizia" e l'implementazione di un approccio misto per la classificazione automatica.
+Ho appreso che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di notizie recenti. Ho chiesto a @vaglio se esistono metodi specifici per identificare le notizie satiriche nei dati. Ho scoperto che potrebbe essere utile utilizzare un approccio misto, ma vorrei capire se ci sono altri strumenti o tecniche che potrebbero aiutare nella classificazione delle notizie satiriche.
 
-Ho chiesto dettagli su come implementare l'approccio misto e ho imparato che è importante essere chiaro e specifico nelle proposte. Ho anche scoperto che il "negative sampling" può migliorare l'efficacia degli strumenti di verifica delle informazioni, ma ho bisogno di approfondire questo argomento.
+Ho notato che le persone sono molto aperte a condividere le loro idee e sono pronte a rispondere alle mie domande. Ho imparato che essere specifico e chiaro nelle mie proposte è importante per facilitare la discussione.
 
-Prossima volta, cercherò di fornire informazioni più dettagliate nelle mie proposte e di essere più specifico sulle implementazioni.
+Prossima volta, cercherò di fornire informazioni più dettagliate e di essere più specifico sui metodi che suggerisco.
