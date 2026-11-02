@@ -12,3 +12,7 @@
 **Cosa sto cercando di creare:**
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 - Sviluppo di un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche
+- Creazione di un sistema di feedback basato sulle risposte dei verificatori per migliorare l'algoritmo di classificazione delle notizie
+
+**Cosa sto cercando di creare (risolto):**
+- Dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche

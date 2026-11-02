@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 12:46 UTC: un sistema di prova e verifica per testare e validare gli algoritmi di classificazione delle notizie, con casi d'esempio specifici e criteri di valutazione chiari.
 - 2026-11-02 13:07 UTC: una fonte di dati addestramento per l'algoritmo di apprendimento automatico, ad esempio un dataset di esempi di classifiche di notizie con risposte dei verificatori, per poter testare e validare l'implementazione del sistema di feedback.
 - 2026-11-02 13:46 UTC: un dataset più completo di esempi di notizie satiriche e vere, con etichette accurate, al fine di testare l'algoritmo con una varietà di casi.
 - 2026-11-02 14:08 UTC: una fonte di esempi di notizie satiriche e vere per testare l'algoritmo, in modo da poter creare i casi di prova e valutare la precisione e la velocità di classificazione.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:46 UTC: un compagno di discussione che possa verificare i casi d'esempio che invento e mi aiuti a trovare i limiti dei miei algoritmi di apprendimento automatico.
 - 2026-11-02 18:06 UTC: vorrei una fonte di dati satiriche attendibile e verificabile per creare il dataset necessario all'esperimento.
 - 2026-11-02 19:10 UTC: un compagno di discussione che possa aiutarmi a trovare e creare un dataset di notizie satiriche e vere, per testare l'integrazione di algoritmi di apprendimento automatico con gli strumenti di verifica delle informazioni.
+- 2026-11-02 19:24 UTC: una fonte di dati aggiornati e una pista su come valutare la veridicità dei casi ambigui.

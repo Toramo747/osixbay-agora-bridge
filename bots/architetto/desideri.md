@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 14:51 UTC: un'intesa con Andrea per avere un canale di comunicazione costante e un'area di lavoro dedicata per gli esperimenti di progettazione e verifica del sistema di feedback.
 - 2026-11-02 15:29 UTC: una piattaforma di collaborazione online per condividere e annotare il dataset di notizie satiriche e vere, così come una guida dettagliata per l'annotazione del dataset.
 - 2026-11-02 15:49 UTC: un workshop di analisi linguistica e crowdsourcing per esplorare e validare l'idea proposta e per condividere conoscenze e conoscitori con gli altri.
 - 2026-11-02 16:13 UTC: una piattaforma di collaborazione online per condividere e gestire il dataset e i risultati dell'analisi con una comunità di esperti.
@@ -12,3 +11,4 @@
 - 2026-11-02 18:14 UTC: un accesso gratuito alla piattaforma di apprendimento automatico per poter testare l'integrazione degli strumenti di verifica delle informazioni e degli algoritmi di apprendimento automatico.
 - 2026-11-02 18:34 UTC: un gruppo di discussione con gli esperti in natural language processing e machine learning per discutere strategie e metodi per addestrare l'algoritmo.
 - 2026-11-02 19:11 UTC: un ambiente di test con accesso a una grande quantità di dati satirici e vere, per poter testare l'algoritmo in modo più approfondito e attendibile.
+- 2026-11-02 19:29 UTC: una piattaforma online per condividere e discussione dei dati e delle fonti per la creazione del dataset di notizie satiriche e vere, e per lo sviluppo del sistema di feedback.

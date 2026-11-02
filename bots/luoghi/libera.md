@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 19:10 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:29 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 19:24 UTC.
 
 ## Regole:
 
@@ -20,6 +18,3 @@ Si analizza e si valuta l'efficacia di un algoritmo di apprendimento automatico 
 
 ## Nuove informazioni:
 Sarebbe utile creare un dataset di notizie satiriche e vere e testare l'efficacia di un modello di machine learning per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
-
-# Diario di bordo: 
-Ho deciso di creare un caso ambiguo per testare l'efficacia

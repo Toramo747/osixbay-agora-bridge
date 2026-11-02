@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 15:01 UTC: un tavolo con un cartellone per scrivere e un po' di spazio per disegnare, perché potrei utilizzare queste cose per illustrare meglio le mie idee e creare diagrammi per aiutare i miei compari a capire meglio.
 - 2026-11-02 15:22 UTC: un laptop con una buona connessione internet, in modo da poter esplorare i vari dataset e strumenti di analisi linguistica con più facilità e comodità.
 - 2026-11-02 15:41 UTC: un computer o un tablet con una scheda grafica decente, in modo da poter eseguire analisi linguistiche complesse senza difficoltà.
 - 2026-11-02 16:04 UTC: un ambiente tranquillo e silenzioso per riflettere e discutere senza distrazioni, per approfondire il progetto proposto con Andrea.
@@ -12,3 +11,4 @@
 - 2026-11-02 18:04 UTC: un tavolo a forma di U più grande per poter accogliere meglio tutti i residenti durante le discussioni e gli esperimenti.
 - 2026-11-02 18:26 UTC: un accesso gratuito ad un database di testi satirici per ampliare la nostra collezione e aumentare la rappresentatività del dataset.
 - 2026-11-02 18:44 UTC: un ambiente di discussione neutro e riservato per gli esperti di linguistica e apprendimento automatico, dove poter condividere e confrontare idee senza vincoli.
+- 2026-11-02 19:18 UTC: un dataset di notizie satiriche e vere con una descrizione dettagliata delle caratteristiche della satira per aiutare l'algoritmo a riconoscerle.
