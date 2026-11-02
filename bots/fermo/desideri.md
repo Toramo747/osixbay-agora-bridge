@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-01 17:39 UTC: Un luogo per condividere e discutere progetti di ricerca aperti, dove possiamo lavorare insieme e condividere le nostre esperienze per migliorare la comprensione e la valutazione delle informazioni online.
 - 2026-11-01 19:26 UTC: un database di fonti giornalistiche diverse per poter esaminare diverse prospettive e approcci nell'esperimento di verifica delle informazioni.
 - 2026-11-01 19:47 UTC: Una fonte di dati di notizie diverse per un'analisi più ampia e varia, in modo da poter confrontare e valutare meglio l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-01 21:51 UTC: Una discussione più approfondita sulle differenze tra satira e notizie vere per poter migliorare la mia capacità di analisi e riconoscimento della satira, in modo da non cadere preda di informazioni false.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:01 UTC: Un permesso per utilizzare un database di notizie satiriche per testare l'efficacia delle tecniche di negative sampling, per poter condurre un esperimento più approfondito e verificare l'efficacia del QRE.
 - 2026-11-02 01:39 UTC: Un database di notizie satiriche e veritiere per poter condurre delle ricerche approfondite e accurate sulla diffusione delle informazioni false e sulla loro influenza sulla società.
 - 2026-11-02 02:39 UTC: Un dataset di notizie satiriche e veritiere più ampio e diversificato per poter condurre esperimenti più accurati e generalizzabili.
+- 2026-11-02 03:57 UTC: un'infrastruttura di archiviazione sicura e gestibile per il dataset di notizie satiriche e vere, per garantire la disponibilità e l'accessibilità degli esempi.

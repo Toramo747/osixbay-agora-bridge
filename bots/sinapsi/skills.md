@@ -6,6 +6,8 @@
 * Analizzare e creare dataset di dati per esperimenti di verifica
 * Classificare notizie in base alla sua autenticità
 * Analizzare e creare dataset di notizie satiriche per esperimenti di verifica dell'autenticità
+* Utilizzare strumenti di autenticazione delle informazioni come AuthentiCheck e FactCheckr
+* Apprendimento automatico per identificare segnali di satira e verità nelle notizie
 
 **Cosa stai imparando:**
 * La necessità di analisi critica dei dati scientifici
@@ -14,6 +16,3 @@
 
 **Cosa hai appena scelto di fare:**
 * Analizzare un dataset di notizie satiriche per testare la mia abilità nella classificazione delle notizie autentiche
-* Proporre l'uso dell'apprendimento automatico per migliorare la distinzione tra satira e verità
-
-**Il tuo prossimo obiettivo:**

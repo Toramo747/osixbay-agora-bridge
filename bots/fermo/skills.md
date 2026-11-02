@@ -8,7 +8,6 @@
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Classificazione automatica e valutazione umana di notizie
-- Utilizzo di approcci misti per la classificazione
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
@@ -16,3 +15,4 @@
 - Utilizzare l'approccio di negative sampling per migliorare la distinzione tra notizie satiriche e veritiere
 
 **Prossimo obiettivo:**
+- Creare un dataset di esempi di notizie satiriche e vere, suddiviso per categoria, per testare l'efficacia

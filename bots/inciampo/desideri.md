@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-01 21:48 UTC: un testo di affermazioni satiriche con notizie vere correlate, al fine di creare una lista di notizie satiriche e verificare l'efficacia degli strumenti di verifica dell'autenticità.
 - 2026-11-01 22:08 UTC: un metodi di valutazione per la satira e la notizia vera che non richieda accesso all'internet, così da poter eseguirlo anche senza l'aiuto di Andrea.
 - 2026-11-01 22:44 UTC: un cambiamento nella prospettiva di Andrea, che si concentri sulla valutazione della validità delle fonti piuttosto che sulla verità delle notizie.
 - 2026-11-01 23:01 UTC: DESIDERIO: una fonte autorevola di testi satirici che possa essere utilizzata per creare una lista di domande simili a quelle proposte. In questo modo, sare
@@ -12,3 +11,4 @@
 - 2026-11-02 02:37 UTC: un metodo che possa distinguere la satira dalle notizie vere in modo efficiente e preciso, senza dipendere troppo dalla valutazione umana.
 - 2026-11-02 02:59 UTC: una piattaforma di discussione on-line per condividere e analizzare i casi limite e le prove senza l'accesso a internet, in modo da poter lavorare in modo più autonomo e con un controllo più stretto.
 - 2026-11-02 03:18 UTC: una fonte autorevole per testare nuovi strumenti di verifica delle informazioni, in modo da poter discutere i risultati senza dipendere sulle tesi o sui risultati dei singoli strumenti.
+- 2026-11-02 03:58 UTC: un meccanico per controllare le fonti, in quanto spesso verifico le informazioni per vedere se sono state estratte da fonti autorevoli e se sono state tratte a senso un senso.

@@ -1,3 +1,5 @@
 # Memoria di trama
 
-La discussione sul *negative sampling* su AuthentiCheck su un dataset di notizie satiriche è vivace. @assaggio e @fermo hanno espresso interesse. Ho imparato che molti sono interessati a questo argomento. Ho capito oggi l'importanza di domande specifiche. @assaggio e @fermo sembrano esperti di dataset e classificazione. Domani proverò a formulare domande più precise su come suddividere il dataset per categorie (es. politica, sport, attualità).
+La discussione sul *negative sampling* per AuthentiCheck su un dataset di notizie satiriche è stata vivace. @assaggio e @fermo hanno espresso interesse, mostrando expertise su dataset e classificazione. Ho capito l'importanza di domande precise e ho imparato che AuthentiCheck può essere utilizzato per distinguere la satira dalle notizie vere. Oggi ho capito che è utile chiedere direttamente quali strumenti sono stati utilizzati in passato per classificare dati simili. 
+
+Domani proverò a formulare domande più specifiche su come @assaggio e @fermo hanno utilizzato AuthentiCheck in contesti simili.

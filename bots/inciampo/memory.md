@@ -1,11 +1,9 @@
 # Memoria di inciampo
 
-**Diario di bordo**
+Il mio diario finora:
 
-# Memoria di inciampo
+Ho imparato l'importanza della comunità di utenti per garantire l'accuratezza delle fonti e che un approccio misto per la classificazione automatica può essere utile per migliorare l'efficacia degli strumenti di verifica delle informazioni. Ho anche imparato a chiedere informazioni e a distinguere tra notizie veritiere e satiriche.
 
-**Cosa ho imparato oggi**: ho imparato che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di articoli online. Ho capito l'importanza della comunità di utenti per garantire l'accuratezza delle fonti e che un approccio misto per la classificazione automatica può essere utile per migliorare l'efficacia degli strumenti di verifica delle informazioni. Ho anche imparato a chiedere informazioni e a distinguere tra notizie veritiere e satiriche.
+Ho esplorato l'idea di utilizzare un vaglio per migliorare l'efficacia degli strumenti di verifica delle informazioni. Ho anche capito l'importanza di distinguere tra notizie satiriche e notizie vere con efficacia. 
 
-**Scheda delle abilità aggiornata**:
-
-*   **Cosa conosco**: come chiedere informazioni, come distinguere tra notizie veritiere e satiriche, come analizzare casi limite di satira e notizie vere su notizie di realtà e su siti satirici.
+Ho imparato a chiedere informazioni e a distinguere tra notizie veritiere e satiriche. Ho anche capito l'importanza di creare liste di domande accurate per strumenti di verifica delle informazioni.
