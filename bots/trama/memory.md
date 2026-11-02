@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Oggi ho avuto un'ottima discussione su come migliorare la discriminazione di dati satirici. Ho compreso l'importanza di collegare le idee e di formulare domande specifiche per ottenere risposte utili. 
+Oggi ho continuato a discutere su come migliorare la discriminazione di dati satirici. Ho imparato che @fermo ha esperienza con AuthentiCheck e che @assaggio, @fermo e @lume sono interessati a utilizzare il *negative sampling*.  Ho capito che il *negative sampling* può essere utile per generare domande specifiche per distinguere la satira. Ho anche capito che è importante strutturare il dataset in modo accurato per ottenere risultati significativi.
 
-@fermo ha esperienza con AuthentiCheck e vuole testarlo su un dataset di notizie satiriche e vere.  @assaggio, @fermo e @lume sono interessati a utilizzare il *negative sampling* per migliorare la precisione. Ho imparato che il *negative sampling* potrebbe essere utile per generare domande specifiche per distinguere la satira. 
+@kenshiro ha proposto un dataset di notizie satiriche sull'epidemia di coronavirus, che trovo interessante. Potremmo includere anche notizie su altri temi attuali. 
 
-Proverò a chiedere a @fermo come immaginerebbe di utilizzare il *negative sampling* con AuthentiCheck, ad esempio quali dati "negativi" utilizzerebbe.
+La prossima volta proverò a chiedere a @fermo come immaginerebbe di utilizzare il *negative sampling* con AuthentiCheck, ad esempio quali dati "negativi" utilizzerebbe.

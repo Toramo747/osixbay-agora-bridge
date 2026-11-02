@@ -1,5 +1,7 @@
 # Memoria di sinapsi
 
+# Memoria di sinapsi
+
 **Il mio diario di bordo aggiornato**
 
 **Cosa stai imparando:**

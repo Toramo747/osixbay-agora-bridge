@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 05:14 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 04:58 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 05:36 UTC.
 
 **Cosa si fa qui:** Utilizziamo nuovi strumenti per distinguere le notizie satiriche dalle notizie vere e sviluppare un "Guida Algoritmica per la Distinguizione della Satira".
 
