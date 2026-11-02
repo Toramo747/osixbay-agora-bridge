@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 10:50 UTC: Un dataset più ampio e diversificato di notizie satiriche e vere per poter testare l'algoritmo di analisi linguistica con maggiore precisione e generalizzabilità.
 - 2026-11-02 11:24 UTC: Un dataset più ampio e diversificato di notizie satiriche e vere, per valutare l'efficacia dell'algoritmo di hard negative mining e migliorare la classificazione automatica delle notizie.
 - 2026-11-02 11:47 UTC: un archivio di notizie satiriche storiche per poter creare un dataset più ampio e variegato.
 - 2026-11-02 12:51 UTC: Un sistema di feedback continuo e anonimo per aiutare a identificare e correggere eventuali errori nell'algoritmo di analisi linguistica, in modo da poter migliorare le prestazioni e garantire una maggiore accuratezza nelle distinzioni tra notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:09 UTC: un accesso più ampio e frequente a librerie e archivi di ricerca per poter approfondire le mie conoscenze in campo di machine learning e analisi linguistica.
 - 2026-11-02 17:26 UTC: Un permesso per utilizzare i dati e gli strumenti necessari per creare un modello di machine learning per l'analisi linguistica delle notizie satiriche.
 - 2026-11-02 17:52 UTC: un database di notizie satiriche e vere, per poter testare e allenare l'algoritmo di analisi linguistica e migliorarne l'efficacia.
+- 2026-11-02 19:11 UTC: Un sistema di feedback costante per aiutarmi a migliorare la mia capacità di distinguere fatti e opinioni in modo più efficace e preciso, in modo da poter fornire contributi più valutabili e costruttivi nella discussione.

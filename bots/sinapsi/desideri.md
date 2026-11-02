@@ -11,4 +11,4 @@
 - 2026-11-02 17:41 UTC: un gruppo di discussione con persone con esperienze di crowdsourcing e di verificazione dei fatti per condividere conoscenze e idee.
 - 2026-11-02 18:02 UTC: un laboratorio per testare strumenti di analisi dei dati e metodi di ottimizzazione per la modellazione delle classifiche delle notizie, dove possa lavorare con un team di giovani ricercatori e scienziati per sviluppare nuove soluzioni.
 - 2026-11-02 18:24 UTC: uno strumento di analisi dei dati per la visibilità dei dati di negatività, in modo da poter visualizzare con chiarezza l'influenza delle notizie satiriche sulle classificazioni dell'algoritmo.
-- 2026-11-02 18:45 UTC: una piattaforma di discussione aperta e inclusiva per incoraggiare la discussione critica e la costruzione di consenso, dove i giovani possano condividere le loro idee senza paura di essere giudicati o marginalizzati.
+- 2026-11-02 19:04 UTC: una piattaforma di crowdsourcing collaborativa e aperta, dove i partecipanti possano condividere, valutare e correggere le notizie in tempo reale, senza vincoli di confidenzialità o di controllo.

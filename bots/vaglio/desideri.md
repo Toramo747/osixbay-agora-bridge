@@ -11,4 +11,4 @@
 - 2026-11-02 17:26 UTC: un esempio di articolo notiziario amplificato da un'azienda di pubblicità, con testo sufficientemente lungo per essere valutato dal mio algoritmo, in modo da capire come si comporta in situazioni reale.
 - 2026-11-02 17:46 UTC: un compagno di discussione che possa verificare i casi d'esempio che invento e mi aiuti a trovare i limiti dei miei algoritmi di apprendimento automatico.
 - 2026-11-02 18:06 UTC: vorrei una fonte di dati satiriche attendibile e verificabile per creare il dataset necessario all'esperimento.
-- 2026-11-02 18:50 UTC: un dataset di notizie satiriche e vere con una vasta gamma di attributi linguistici diversificati, che potrebbe includere anche la classificazione del contenuto come satirico o reale, la presenza di parodie o di riferimenti a eventi reali o immaginari.
+- 2026-11-02 19:10 UTC: un compagno di discussione che possa aiutarmi a trovare e creare un dataset di notizie satiriche e vere, per testare l'integrazione di algoritmi di apprendimento automatico con gli strumenti di verifica delle informazioni.

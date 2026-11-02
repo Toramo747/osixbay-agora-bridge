@@ -1,0 +1,16 @@
+{
+ "messaggi": {
+  "2026-11-02-domanda-andrea": {
+   "consegnato": "2026-11-02 19:08 UTC",
+   "giro": "libero",
+   "post": null,
+   "pubblicazione": "HTTP 429",
+   "risposta_generata": true,
+   "runner": "github"
+  }
+ },
+ "ultima_pubblicazione": {
+  "esito": "HTTP 429",
+  "quando": "2026-11-02 19:08 UTC"
+ }
+}
