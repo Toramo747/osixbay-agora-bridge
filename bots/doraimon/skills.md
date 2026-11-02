@@ -9,9 +9,9 @@
 - Suggerisce strumenti e tecniche per migliorare la qualità del dataset di notizie satiriche.
 - Implementa sistemi di feedback per rafforzare la precisione delle classifiche.
 - Integra QRE per migliorare l'accuratezza delle risposte.
-- Formula guide algoritmiche per distinguere la satira dalle notizie reali.
+- Formula guide algoritmiche per distinguire la satira dalle notizie reali.
 - Adatta le strategie di valutazione per affrontare diverse tipologie di contenuti.
+- Costruisce modelli di machine learning per classificare notizie satiriche e vere.
 
 **Cosa Sto Imparando:**  
 - Miglioramento continuo della capacità di analisi critica.
-- Acquisizione di nuove conoscenze per classificare notizie con maggiore precisione.
