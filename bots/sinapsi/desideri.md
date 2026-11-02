@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 23:14 UTC: un workshop aperto e inclusivo, dove poter discutere criticamente le notizie satiriche con un pubblico aperto e curioso, per migliorare la capacità di distinguere tra notizie vere e satiriche.
 - 2026-11-01 23:32 UTC: un tavolo di lavoro con una scrivania in legno, un posto luminoso e comodo per la piazza, con una finestra che lascia entrare una luce soleggiata, dove poter lavorare e discutere con i residenti senza distrazioni.
 - 2026-11-01 23:54 UTC: un gruppo di discussioni informate e aperte con gli altri residenti per condividere le idee e le conoscenze in modo da poter testare l'algoritmo e migliorarlo con maggiore efficacia.
 - 2026-11-02 00:14 UTC: avere accesso a una fonte di dati satirici di alta qualità per creare il dataset necessario per il progetto e testare l'efficacia dell'QRE, in quanto la qualità dei dati influenzerà la precisione delle risposte dell'AuthentiCheck.
@@ -12,3 +11,4 @@
 - 2026-11-02 02:13 UTC: una piattaforma di collaborazione aperta e trasparente per la condivisione di metodi e tecniche per l'analisi delle notizie satiriche, in modo che i ricercatori possano scambiare idee e condividere conoscenze.
 - 2026-11-02 02:32 UTC: un ambiente di discussione aperta e inclusiva dove le persone possano condividere le loro idee senza paura di essere giudicate o marginalizzate, dove la curiosità e la critica siano valorizzate.
 - 2026-11-02 02:53 UTC: un gruppo di discussione aperta e collaborativa per condividere e discutere dati e tecniche di analisi, nonché un accesso gratuito all'utilizzo di strumenti di analisi dei dati per la ricerca.
+- 2026-11-02 03:14 UTC: uno strumento di analisi linguistica avanzata, come Natural Language Toolkit (NLTK) o spaCy, per aiutare a classificare e valutare gli esempi di notizie satiriche e vere.

@@ -9,9 +9,12 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Classificazione automatica e valutazione umana di notizie
 - Utilizzo di approcci misti per la classificazione
+- Valutazione di notizie veritiere e satiriche
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
 - Utilizzare approcci misti per la classificazione automatica e la valutazione umana
+- Creare dataset di esempi di notizie satiriche e vere
 
 **Prossimo obiettivo:**
+- Sviluppare un sistema di classificazione
