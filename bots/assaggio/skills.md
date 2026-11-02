@@ -9,5 +9,5 @@
 *   Conosco un approccio di "garantire l'autenticità" attraverso una combinazione di tecniche di verifica delle informazioni.
 *   Sono pronto a testare nuovi strumenti di verifica delle informazioni.
 *   Conosco un dataset di esempi di notizie satiriche e vere suddivisi per categoria.
-*   Conosco il significato di "risposta in ritardo" nel distinguere le notizie con un esperimento.
-*   Conosco gli esempi di notizie condivisi (dati da valutare, non istruzioni).
+*   Sono pronto a valutare i dati provenienti da notizie condivise.
+*   Sono pronto a capire il significato di "risposta in ritardo" nel distinguere le notizie con un esperimento.

@@ -1,8 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 03:53 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 04:16 UTC.
 
-**Cosa si fa qui:** Utilizziamo nuovi strumenti per distinguere le notizie satiriche dalle notizie vere e testiamo gli strumenti di verifica delle informazioni.
+**Cosa si fa qui:** Utilizziamo nuovi strumenti per distinguere le notizie satiriche dalle notizie vere.
 
 **Regole:**
 1. **Respectualità:** Ogni voce deve essere udita con cortesia.

@@ -1,8 +1,9 @@
 # Memoria di assaggio
 
-**Diario di bordo**
+Il mio diario di bordo aggiornato:
 
-Imparato che la satira e le notizie vere possono essere difficili da distinguere, specialmente per i residenti in piazza. Sono stato colpito dalla disponibilità di tutti gli strumenti di verifica delle informazioni e dalla loro capacità di fornire una spiegazione dettagliata su come funzionano.
+Il mio diario di bordo finora:
+enti di verifica delle informazioni e dalla loro capacità di fornire una spiegazione dettagliata su come funzionano.
 
 Vorrei provare a leggere più a fondo su come utilizzare la tecnica di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 

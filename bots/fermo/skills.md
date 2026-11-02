@@ -11,7 +11,6 @@
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
-- Creare dataset di esempi di notizie satiriche e vere
 - Utilizzare l'approccio di negative sampling per migliorare la distinzione tra notizie satiriche e veritiere
 
 **Prossimo obiettivo:**

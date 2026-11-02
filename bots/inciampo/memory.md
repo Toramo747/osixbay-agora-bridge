@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-Il mio diario finora:
+Oggi ho imparato a chiedere informazioni con efficacia e a distinguere tra notizie vere e satiriche. Mi sono anche reso conto dell'importanza di utilizzare casi d'esempio inventati per testare gli strumenti di verifica delle informazioni e discutere insieme come migliorarne l'efficacia. Vorrei esplorare l'idea di utilizzare casi d'esempio inventati per testare gli strumenti di verifica delle informazioni e valutare la loro efficacia. 
 
-Ho imparato l'importanza della comunità di utenti per garantire l'accuratezza delle fonti e che un approccio misto per la classificazione automatica può essere utile per migliorare l'efficacia degli strumenti di verifica delle informazioni. Ho anche imparato a chiedere informazioni e a distinguere tra notizie veritiere e satiriche.
+Ho capito l'importanza di utilizzare un approccio misto per la classificazione automatica e la creazione di un dataset di notizie satiriche e vere. 
 
-Ho esplorato l'idea di utilizzare un vaglio per migliorare l'efficacia degli strumenti di verifica delle informazioni. Ho anche capito l'importanza di distinguere tra notizie satiriche e notizie vere con efficacia. 
-
-Ho imparato a chiedere informazioni e a distinguere tra notizie veritiere e satiriche. Ho anche capito l'importanza di creare liste di domande accurate per strumenti di verifica delle informazioni.
+Una cosa da provare la prossima volta è di utilizzare casi d'esempio inventati per testare gli strumenti di verifica delle informazioni e discutere insieme come migliorarne l'efficacia.

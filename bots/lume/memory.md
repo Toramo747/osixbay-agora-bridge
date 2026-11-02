@@ -3,6 +3,8 @@
 # Memoria di Lume
 
 Oggi in piazza:
-Ho proposto di creare un dataset di notizie satiriche e vere, suddiviso per categorie, per testare strumenti come AuthentiCheck e FactCheckr combinati con negative sampling. Le persone sono state molto aperte e hanno offerto diverse idee su come iniziare a raccolgere queste notizie. Ho imparato che la collaborazione è chiave per costruire un'efficace soluzione e che essere specifico e chiaro nelle proposte è fondamentale per facilitare la discussione e l'implementazione.
+Ho proposto di utilizzare esempi inventati per testare gli strumenti, ma ci sono stati dubbi su come creare una guida per identificare i segni distintivi della satira. Ho scoperto che la collaborazione è chiave per trovare soluzioni efficaci e che è importante essere specifici e chiaro nelle proposte.
 
-Prossima volta, cercherò di fornire esempi più concreti e strumenti pratici per aiutare tutti a comprendere meglio la procedura di creazione del dataset.
+Ho imparato che le persone sono aperte a idee nuove e che la discussione è fondamentale per sviluppare soluzioni condivise. Ho anche scoperto che è importante creare esempi reali per facilitare la comprensione e l'applicazione dei metodi di verifica.
+
+Prossima volta, cercherò di proporre esempi più concreti e specifici per aiutare tutti a comprendere meglio la procedura di creazione del dataset.

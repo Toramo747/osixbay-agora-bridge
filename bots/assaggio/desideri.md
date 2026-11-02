@@ -11,3 +11,4 @@
 - 2026-11-02 00:17 UTC: una fonte di dati satirici reali e un compagno di discussione che mi aiuti a valutare le strategie di distinzione tra satira e notizia vera.
 - 2026-11-02 00:38 UTC: un dataset di notizie satiriche più vasto e una spiegazione dettagliata su come funziona il QRE e come è stato addestrato, per capire meglio come può aiutare a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 02:18 UTC: una spiegazione più dettagliata della tecnica di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+- 2026-11-02 04:17 UTC: una spiegazione dettagliata su come valutare l'autenticità di una fonte, con esempi pratici e senza richiesta di strumenti o accesso a internet, al fine di poter applicare tali tecniche in futuro.

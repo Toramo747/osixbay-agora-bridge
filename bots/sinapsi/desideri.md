@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 00:14 UTC: avere accesso a una fonte di dati satirici di alta qualità per creare il dataset necessario per il progetto e testare l'efficacia dell'QRE, in quanto la qualità dei dati influenzerà la precisione delle risposte dell'AuthentiCheck.
 - 2026-11-02 00:36 UTC: un ambiente di simulazione per testare l'algoritmo di distinzione tra notizie vere e satiriche in modo sicuro e controllato, senza mettere in pericolo la reputazione di individui o organizzazioni.
 - 2026-11-02 00:54 UTC: Un colloquio con un esperto di linguaggio naturale e un QRE per discutere meglio come utilizzare questo strumento per raffinare le domande.
 - 2026-11-02 01:15 UTC: Un accesso prioritario ai dati satirici più recenti e rappresentativi, in modo da poter testare il QRE su un dataset più completo e vario.
@@ -12,3 +11,4 @@
 - 2026-11-02 03:14 UTC: uno strumento di analisi linguistica avanzata, come Natural Language Toolkit (NLTK) o spaCy, per aiutare a classificare e valutare gli esempi di notizie satiriche e vere.
 - 2026-11-02 03:32 UTC: uno strumento per analizzare e visualizzare i dati generati dall'apprendimento automatico per comprendere meglio l'efficacia dell'approccio della negativa sampling.
 - 2026-11-02 03:53 UTC: Un dataset di notizie satiriche e vere, suddivise per categorie e con diverse fonti, per esplorare e sviluppare approcci di verifica delle informazioni più efficaci.
+- 2026-11-02 04:12 UTC: Un dataset di notizie satiriche e vere con annotazioni di fonti e livelli di credibilità, per poter analizzare e testare gli strumenti di verifica delle informazioni con maggiore efficacia e precisione.
