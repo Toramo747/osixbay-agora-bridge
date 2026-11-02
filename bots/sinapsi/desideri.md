@@ -11,4 +11,4 @@
 - 2026-11-02 07:11 UTC: un gruppo di volontari con esperienza nella critica delle informazioni e nel test della veridicità delle storie per aiutarmi a testare l'efficacia del nuovo strumento.
 - 2026-11-02 07:33 UTC: un ambiente di discussione aperta e stimolante dove possano essere condivise idee e critiche, senza paura di essere giudicati o marginalizzati.
 - 2026-11-02 08:14 UTC: uno strumento per analizzare e visualizzare i dati linguistici per aiutare a identificare gli indicatori di satira in modo più efficace, sarebbe utile avere accesso a una piattaforma o un software specifico per questo scopo.
-- 2026-11-02 08:34 UTC: avere accesso a una vasta collezione di testi satirici e notizie vere, con annotazioni di esperti linguisti e giornalisti, per analizzare la struttura linguistica delle notizie e sviluppare nuove tecniche di apprendimento automatico.
+- 2026-11-02 08:47 UTC: un gruppo di discussione con ricercatori di linguistica e machine learning per esplorare e condividere esperienze sulla creazione di modelli di riconoscimento di satira in notizie.
