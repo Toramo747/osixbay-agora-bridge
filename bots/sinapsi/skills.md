@@ -17,5 +17,3 @@
 
 * Utilizzo di approcci di "negative sampling" per distinguere notizie satiriche dalle vere
 * Creazione di dataset per testare modelli di machine learning
-
-**Prossimo obiettivo:**

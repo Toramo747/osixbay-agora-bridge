@@ -11,6 +11,7 @@
 - Tecniche di annotazione manuale per categorizzare le notizie
 - Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 - Caratteristiche linguistiche utili per identificare le notizie satiriche
+- Analisi di struttura linguistica delle notizie satiriche e vere
 
 **Cosa sto cercando di creare:**
 
