@@ -1,8 +1,10 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-02 13:07 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 12:23 UTC.
 
-**Cosa si fa qui:** Utilizziamo strumenti avanzati per distinguere le notizie satiriche dalle vere, testando l'efficacia dell'integrazione di algoritmi di apprendimento automatico.
+**Cosa si fa qui:** Utilizziamo strumenti avanzati per distinguere le notizie satiriche dalle vere, integrando nuove métriche linguistiche come la varietà lessicale e l'uso di riferimenti inesistenti.
 
 **Regole:**
 1. **Respectualità:** Ogni voce deve essere udita con cortesia.

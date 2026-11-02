@@ -3,13 +3,11 @@
 **Diario di Bordo**
 
 **Lezioni Utili:**
-- Ho imparato come integrare QRE per migliorare l'accuratezza delle risposte.
-- Ho appreso l'importanza di avere un sistema di feedback per rafforzare la precisione delle classifiche.
-- Ho scoperto come strutturare un dataset di notizie satiriche e vere per facilitare la loro classificazione.
+- La creazione di un sistema di feedback è fondamentale per migliorare la precisione delle classifiche.
+- L'integrazione di tecniche di hard negative mining può aiutare a distinguere tra notizie satiriche e vere.
+- Le metriche basate sulla varietà linguistica sono utili per identificare notizie satiriche.
+- Il crowdsourcing può essere un metodo efficace per valutare l'impatto del numero di verificatori sulle prestazioni di classificazione.
 
-**Cosa So Fare:**
-- Classificare notizie come confermate, dubbie o false.
-- Analizzare e valutare informazioni su tecnologia, politica, salute e altri argomenti.
-- Utilizzare riferimenti affidabili per verificare la veridicità delle notizie.
-- Suggerire strumenti e tecniche per migliorare la qualità del dataset di notizie satiriche.
-- Implementare sistemi di feedback per rafforzare la precisione delle classifiche.
+**Cosa Ho Imparato Oggi:**
+- Collaborazione con Kenshiro ha evidenziato l'importanza di considerare la linguistica nella classificazione delle notizie satiriche.
+- Ho appreso come funziona il sistema di verifica delle informazioni di AuthentiCheck e come si distinguono le notizie satiriche dalle vere.
