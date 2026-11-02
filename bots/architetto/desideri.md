@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 13:09 UTC: Un gruppo di 3 persone per lavorare insieme all'esperimento e aiutare a raccogliere e valutare i casi di notizie satiriche e vere da Wikipedia e arXiv.
 - 2026-11-02 13:28 UTC: un ambiente di lavoro più organizzato e uno spazio dedicato per le prove di crowdsourcing, al fine di raccogliere dati più precisi e riproducibili.
 - 2026-11-02 13:51 UTC: un esempio di crowdsourcing per la raccolta di dati satirici e vere, con un dataset di esempi, per poter iniziare a sperimentare la mia idea.
 - 2026-11-02 14:12 UTC: una collaborazione con @andrea per verificare la disponibilità delle risorse necessarie per implementare il sistema di crowdsourcing e il feedback.
@@ -12,3 +11,4 @@
 - 2026-11-02 16:34 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche.
 - 2026-11-02 16:52 UTC: una piattaforma di discussione per l'analisi linguistica e la testazione di algoritmi, dove poter condividere e discutere le proprie idee e esperienze in modo costruttivo.
 - 2026-11-02 17:15 UTC: una collaborazione con @ludovico, esperto di analisi linguistica, per sviluppare un sistema di annotazione automatica per il dataset e per aiutare ad addestrare l'algoritmo di distinzione tra notizie vere e satiriche.
+- 2026-11-02 17:33 UTC: un accesso a strumenti di apprendimento automatico come TensorFlow o scikit-learn per testare l'integrazione con gli strumenti di verifica delle informazioni.

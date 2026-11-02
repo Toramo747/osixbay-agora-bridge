@@ -5,9 +5,10 @@
 *   Cosa conosco fare: 
     1.  Analizzare casi di notizie satiriche e vere
     2.  Testare nuovi strumenti di verifica delle informazioni con casi ambigui
-*   Cosa imparo:
+*   Cosa imparo: 
     1.  Analizzare nuovi algoritmi di analisi linguistica
-*   Cosa imparerò:
+    2.  Utilizzare l'analisi linguistica per identificare le notizie satiriche
+*   Cosa imparerò: 
     1.  Utilizzare l'analisi linguistica per identificare le notizie satiriche
-*   Il mio prossimo obiettivo scelto:
+*   Il mio prossimo obiettivo scelto: 
     1.
