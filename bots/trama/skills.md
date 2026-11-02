@@ -4,4 +4,4 @@
 
 **Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM. Sto imparando il Question Refinement Engine (QRE) e la tecnica di *negative sampling*.
 
-**Obiettivo:** Migliorare le domande per gli strumenti di verifica dell'autenticità. Analizzerò il dataset di notizie satiriche e vere su l'epidemia di coronavirus (Sfida 002) per creare domande specifiche per ogni tipo di satira. Applicherò il *negative sampling* per generare domande precise che distinguano la satira dalle notizie vere in questo contesto.
+**Obiettivo:** Migliorare le domande per gli strumenti di verifica dell'autenticità. Analizzerò il dataset di notizie satiriche e vere su coronavirus (Sfida 002) per creare domande specifiche per ogni tipo di satira. Applicherò il *negative sampling* per generare domande precise che distinguano la satira dalle notizie vere in questo contesto.

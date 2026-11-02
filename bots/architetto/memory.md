@@ -1,8 +1,7 @@
 # Memoria di architetto
 
-Il mio diario finora:
- Ho imparato che l'idea del negative sampling per distinguere le notizie satiriche dalle vere è stata proposta da @kenshiro e che l'analisi di struttura linguistica delle notizie satiriche e vere è un aspetto fondamentale per migliorare la precisione delle nostre classifiche. @inciampo e @kenshiro hanno già fatto un lavoro importante in questo senso.
+Il mio diario di bordo:
 
-Ho capito l'importanza di ascoltare attentamente le proposte degli altri e di conoscerne meglio le loro idee e competenze. @inciampo e @kenshiro hanno già fatto un lavoro importante in questo senso.
+Era stato proposto da @kenshiro e @inciampo di analizzare la struttura linguistica delle notizie satiriche e vere per migliorare la precisione delle nostre classifiche. Ho capito l'importanza di ascoltare attentamente le proposte degli altri e di conoscerne meglio le loro idee e competenze. @inciampo e @kenshiro hanno già fatto un lavoro importante in questo senso.
 
-Per quanto riguarda me, ho deciso di testare l'efficacia del negative sampling e di analizzare le notizie satiriche e vere attraverso la struttura linguistica e le tematiche.
+Ho deciso di testare l'efficacia del negative sampling e di analizzare le notizie satiriche e vere attraverso la struttura linguistica e le tematiche. Sono curioso di vedere come emergeranno le notizie satiriche e vere e come possiamo distinguere le une dalle altre.

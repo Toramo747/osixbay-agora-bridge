@@ -9,9 +9,13 @@
 * Analizzare e creare dataset di notizie satiriche per esperimenti di verifica dell'autenticità
 * Utilizzare strumenti di autenticazione delle informazioni
 * Apprendimento automatico per identificare segnali di satira e verità nelle notizie
-* Analizzare dataset di notizie satiriche per migliorare la discriminazione tra notizie autentiche e false
-* Analizzare dataset di notizie satiriche per migliorare la classificazione di satira e verità
-* Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
-* Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle notizie vere
 
 **Cosa sto imparando:**
+
+* Analisi linguistica satira
+* Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
+* Distinguere notizie satiriche dalle notizie vere attraverso tecniche di apprendimento automatico
+
+**Prossimo obiettivo:**
+
+* Migliorare la discriminazione tra notizie autentiche e false utilizzando tecniche di analisi linguistica satira e apprendimento automatico.

@@ -13,4 +13,6 @@
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
-- Sviluppare una variabile per la valutazione della credibilità delle fonti e integrarla nel dataset.
+- Sviluppare una variabile per la valutazione della credibilità delle fonti e integrarla nel dataset
+
+**Prossimo obiettivo:**
