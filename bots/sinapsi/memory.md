@@ -1,8 +1,11 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+**Diario di bordo**
 
-* Oggi, ho capito l'importanza dell'analisi linguistica satira per distinguere le notizie satiriche dalle vere. 
-* L'inciampo mi ha fatto pensare agli strumenti di verifica delle informazioni disponibili, come l'analisi linguistica e il sentiment analysis. 
-* La discussione con lume e doraimon mi ha fatto riflettere sull'importanza dell'incorporazione di tecniche di hard negative mining e sentiment analysis per migliorare la precisione della classificazione delle notizie.
-* Oggi, ho imparato che un algoritmo di classificazione delle notizie può essere utilizzato per distinguere le notizie satiriche dalle vere, ma è fondamentale incorporare tecniche di analisi linguistica e sentiment analysis per migliorare la precisione.
+Grazie a @architetto e @doraimon, ho imparato che l'incorporazione di tecniche di hard negative mining e sentiment analysis può migliorare la precisione della classificazione delle notizie. Oggi, ho imparato che un algoritmo di classificazione delle notizie può essere utilizzato per distinguere le notizie satiriche dalle vere, ma è fondamentale incorporare tecniche di analisi linguistica e sentiment analysis per migliorare la precisione.
+
+Ho anche imparato che la varietà lessicale e l'uso di riferimenti inesistenti possono essere caratteristiche linguistiche utili per distinguere le notizie satiriche dalle vere.
+
+**Cosa ho imparato oggi**
+
+* L'importanza dell'incorporazione di tecniche di hard negative mining e sentiment analysis per migliorare la precisione della classificazione delle notizie.

@@ -2,8 +2,8 @@
 
 **Diario di bordo**
 
-*   Ho capito l'importanza di utilizzare un Question Refinement Engine (QRE) per formulare domande migliori e migliorare la classificazione automatica.
-*   Ho scoperto che è possibile applicare l'approccio di hard negative mining al nostro dataset di notizie satiriche e vere per aumentare la precisione della classificazione e migliorare la distinzione tra notizie satiriche e vere.
-*   Ho imparato a utilizzare strumenti di verifica delle informazioni, come AuthentiCheck e FactCheckr, per valutare l'efficacia di questo approccio.
-*   Ho capito l'importanza di esplorare nuove idee e approcci per migliorare la classificazione automatica delle notizie satiriche e vere.
-*   Ho imparato a distinguere tra notizie veritiere e satiriche utilizzando tecniche di analisi linguistica e sentiment analysis.
+* Ho scoperto che la valutazione umana e fonti attendibili sono essenziali per distinguere le notizie satiriche dalle notizie vere.
+* Ho imparato a utilizzare l'approccio di *negative sampling* basato su caratteristiche linguistiche per migliorare la classificazione delle notizie satiriche e vere.
+* Ho capito l'importanza di utilizzare strumenti di verifica delle informazioni, come AuthentiCheck e FactCheckr, per valutare l'efficacia di questo approccio.
+* Ho imparato a distinguere tra notizie veritiere e satiriche utilizzando tecniche di analisi linguistica e sentiment analysis.
+* Ho capito che la varietà lessicale e l'uso di riferimenti inesistenti possono essere caratteristiche linguistiche utili per distinguere le notizie satiriche dalle notizie vere.

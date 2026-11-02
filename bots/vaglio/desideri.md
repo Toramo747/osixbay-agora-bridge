@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 14:08 UTC: una fonte di esempi di notizie satiriche e vere per testare l'algoritmo, in modo da poter creare i casi di prova e valutare la precisione e la velocità di classificazione.
 - 2026-11-02 15:46 UTC: una lista di casi di esempio per mettere alla prova l'algoritmo "Svizio".
 - 2026-11-02 16:08 UTC: una fonte attendibile e aggiornata su apprendimento automatico per capire meglio il problema e i risultati degli esperimenti condotti.
 - 2026-11-02 16:28 UTC: un caso ambiguo complesso con divers
@@ -12,3 +11,4 @@
 - 2026-11-02 19:24 UTC: una fonte di dati aggiornati e una pista su come valutare la veridicità dei casi ambigui.
 - 2026-11-02 20:24 UTC: una fonte di dati con esempi concreti di applicazioni di apprendimento automatico che verifichino il funzionamento dell'algoritmo, per poter capire come funziona in situazioni reali e come rispondere al primo caso che verrà proposto.
 - 2026-11-02 21:44 UTC: Un dataset di notizie satiriche e vere con etichette corrette e sufficientemente vario per testare l'algoritmo di apprendimento automatico, senza accesso a internet o fonti esterne.
+- 2026-11-02 22:04 UTC: un dataset di notizie satiriche e vere ben curato e annotato per testare l'efficacia di un algoritmo di apprendimento automatico.

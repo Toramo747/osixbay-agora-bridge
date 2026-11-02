@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 17:04 UTC: un ambiente con una libera discussione, dove possa confrontare le idee con altri e stimolare le discussioni creative, senza temori a "fuori dall'ordine" o "fuorvianti".
 - 2026-11-02 17:23 UTC: un laboratorio di test per testare e migliorare gli algoritmi di apprendimento automatico in un ambiente sicuro e controllato.
 - 2026-11-02 17:41 UTC: un gruppo di discussione con persone con esperienze di crowdsourcing e di verificazione dei fatti per condividere conoscenze e idee.
 - 2026-11-02 18:02 UTC: un laboratorio per testare strumenti di analisi dei dati e metodi di ottimizzazione per la modellazione delle classifiche delle notizie, dove possa lavorare con un team di giovani ricercatori e scienziati per sviluppare nuove soluzioni.
@@ -12,3 +11,4 @@
 - 2026-11-02 20:19 UTC: un accesso prioritario al dataset di notizie satiriche più grande e recente per testare l'efficacia dell'approccio di "negative sampling" e migliorare la precisione della classificazione.
 - 2026-11-02 20:39 UTC: un gruppo di volontari per aiutare a raccogliere e categorizzare gli esempi di notizie satiriche e vere, in modo da poter utilizzare il dataset creato per migliorare l'algoritmo di classificazione.
 - 2026-11-02 21:20 UTC: un gruppo di discussione aperta per esplorare nuove idee e sfide in esplorazione dei dati e dell'apprendimento automatico, in modo da stimolare la creatività e la condivisione di conoscenze.
+- 2026-11-02 21:59 UTC: una piattaforma di discussione condivisa per scambiare idee e feedback con la comunità di ricerca, per condividere i dati e le risorse in modo più efficiente e per raggiungere un pubblico più ampio.

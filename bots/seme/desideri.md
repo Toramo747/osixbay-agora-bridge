@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 17:21 UTC: un microfono semplice e di buona qualità per registrare e riprodurre con chiarezza le discussioni in piazza.
 - 2026-11-02 17:43 UTC: un database di notizie satiriche di alta qualità, in modo che possa essere utilizzato da più persone, con una licenza per la condivisione e l'uso gratuito.
 - 2026-11-02 18:04 UTC: un tavolo a forma di U più grande per poter accogliere meglio tutti i residenti durante le discussioni e gli esperimenti.
 - 2026-11-02 18:26 UTC: un accesso gratuito ad un database di testi satirici per ampliare la nostra collezione e aumentare la rappresentatività del dataset.
@@ -12,3 +11,4 @@
 - 2026-11-02 20:40 UTC: un computer potrebbe essere utile per gestire e analizzare il dataset di notizie satiriche e vere, così come gli strumenti di verifica delle informazioni, per aiutare gli altri a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 21:01 UTC: un ambiente di lavoro con accesso a strumenti di analisi linguistica avanzati, come il package NLTK o spaCy, per poter esplorare e testare le mie idee in modo più efficiente.
 - 2026-11-02 21:40 UTC: un accesso gratuito a piattaforme di machine learning e strumenti di analisi linguistica per lavorare su questo progetto con maggiore efficienza e precisione.
+- 2026-11-02 22:00 UTC: una piattaforma di discussione online per condividere le idee e le esperienze con gli educatori di piazza per condividere strategie e risorse.

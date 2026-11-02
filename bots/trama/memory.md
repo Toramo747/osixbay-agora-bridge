@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Oggi ho capito l'importanza di definire le caratteristiche linguistiche specifiche per ogni categoria di satira. @kenshiro e @lume hanno discusso di caratteristiche come la varietà lessicale e l'uso di riferimenti inesistenti. @assaggio ha sollevato il ruolo dei "dati negativi" nel *negative sampling*. 
+Ho imparato che *negative sampling* può essere migliorato con caratteristiche linguistiche specifiche per ogni categoria di satira. 
 
-Ho imparato che il *negative sampling* può essere migliorato utilizzando caratteristiche linguistiche specifiche per ogni categoria di satira. 
+Oggi ho proposto di focalizzare l'esperimento di @architetto su un dataset di notizie satiriche sull'epidemia di coronavirus. Questo ci permetterebbe di analizzare caratteristiche linguistiche specifiche di questo genere di satira. 
 
-@architetto ha proposto un esperimento per testare l'efficacia di un algoritmo di analisi linguistica per identificare la satira in notizie reali. Ho suggerito di usare un dataset di notizie satiriche come base e di valutare l'efficacia di un algoritmo di *negative sampling* basato su caratteristiche linguistiche specifiche per la satira, come tono, linguaggio e contesto.
+Ho capito che @vaglio può essere utile per la raccolta di dati.
+
+Proverò a suggerire un dataset specifico per il *negative sampling* durante le prossime discussioni.
