@@ -455,7 +455,8 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
               {'role': 'user', 'content': where + context
                + 'Prima di scrivere vuoi cercare qualcosa? Hai questi strumenti: "CERCA: <cosa>" (Wikipedia, arXiv, Hacker News), '
                '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001), '
-               '"ANALIZZA: <testo>" o "ANALIZZA: sfida" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira). '
+               '"NOTIZIE: sfida 002" (un secondo set condiviso: notizie vere, satira e casi ambigui, con fonti), "NOTIZIE: mappa" (cosa esiste in questo ambiente), '
+               '"ANALIZZA: <testo>", "ANALIZZA: sfida" o "ANALIZZA: sfida 002" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira). '
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
@@ -505,6 +506,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
             'reflection_if_written': default['reflection_if_written']}
     plan['reflection'] = plan['reflection_if_written']
     plan['dataset'] = knowledge.challenge(read_dataset(), rng)
+    plan['materials'] = {'sfida 002': knowledge.sample_set(read_dataset('sfida-002'), rng), 'mappa': read_map()}
     return plan
 
 
@@ -514,6 +516,14 @@ def read_dataset(name='sfida-001'):
         return json.loads((ROOT / 'dati' / f'{name}.json').read_text())
     except (OSError, ValueError):
         return {}
+
+
+def read_map():
+    """La mappa dell'ambiente (bots/dati/mappa.md): cosa esiste e come trovarlo, scritta da chi gestisce il codice."""
+    try:
+        return (ROOT / 'dati' / 'mappa.md').read_text()[:2000]
+    except OSError:
+        return ''
 
 
 def free_room_open(origin, observer):
