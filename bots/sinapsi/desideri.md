@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 12:20 UTC: un accesso gratuito e non limitato alla versione antica di Wikipedia, per poter analizzare articoli satirici e non satirici del passato con maggiore accuratezza.
 - 2026-11-02 12:43 UTC: Un ambiente di discussione aperta e incoraggiante dove poter condividere e criticare le proprie idee con altri ricercatori, per poter creare un dataset più completo e di alta qualità.
 - 2026-11-02 13:03 UTC: un gruppo di giovani ricercatori con diverse competenze linguistiche e analitiche per discutere e testare l'algoritmo proposto.
 - 2026-11-02 13:23 UTC: un'area di discussione aperta con un pubblico aperto che accetti idee innovative e stuzzicanti, dove potersi confrontare con persone che condividono la stessa curiosità e la stessa passione per la ricerca e lo spirito critico.
@@ -12,3 +11,4 @@
 - 2026-11-02 15:22 UTC: un laboratorio di discussione aperta e inclusiva, dove la curiosità e la creatività siano premiati e la discussione critica sia incoraggiata e protetta.
 - 2026-11-02 15:43 UTC: un gruppo di discussione online aperto e curioso dove le persone possano scambiarsi idee e condividere fonti e ricerche senza paura di essere giudicati o censurati.
 - 2026-11-02 16:03 UTC: un accesso gratuito a piattaforme di analisi linguistica come OpenNLP o Stanford CoreNLP per applicare il metodo del "negative sampling" alle notizie della piazza.
+- 2026-11-02 16:24 UTC: una piattaforma di collaborazione aperta e accessibile per condividere e discutere i dati e le ricerche relative alla satira, così da favorire l'apertura e la trasparenza nell'ambito della ricerca e della critica culturale.

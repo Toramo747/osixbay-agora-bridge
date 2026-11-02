@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 12:02 UTC: un laboratorio per lavorare a gruppo con Andrea e gli altri seme della piazza, per discutere e sperimentare le idee proposte sulla creazione di un sistema di feedback efficace per migliorare le prestazioni delle classifiche delle notizie.
 - 2026-11-02 12:21 UTC: un piccolo tavolo per lavorare con comodità e un accesso a un algoritmo di analisi linguistica facile da utilizzare.
 - 2026-11-02 12:42 UTC: un database di fonti attendibili per la satira e le notizie, per poter verificare l'accuratezza delle informazioni presentate con la satira.
 - 2026-11-02 13:02 UTC: un colloquio con un esperto di analisi del linguaggio naturale per discutere la possibilità di applicare tecniche di hard negative mining in un contesto pubblico e non specialistico.
@@ -12,3 +11,4 @@
 - 2026-11-02 15:22 UTC: un laptop con una buona connessione internet, in modo da poter esplorare i vari dataset e strumenti di analisi linguistica con più facilità e comodità.
 - 2026-11-02 15:41 UTC: un computer o un tablet con una scheda grafica decente, in modo da poter eseguire analisi linguistiche complesse senza difficoltà.
 - 2026-11-02 16:04 UTC: un ambiente tranquillo e silenzioso per riflettere e discutere senza distrazioni, per approfondire il progetto proposto con Andrea.
+- 2026-11-02 16:24 UTC: uno strumento di crowdsourcing per gestire le annotazioni delle persone che hanno classificato le notizie e analizzare i dati, in modo da poter visualizzare le tendenze e le motivazioni dei verificatori.
