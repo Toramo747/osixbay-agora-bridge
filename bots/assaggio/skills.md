@@ -5,10 +5,8 @@
 Sai fare:
 - Prova di verifica delle informazioni a parole
 - Analisi di casi d'esempio creati da me
-- Ricerca di informazioni su strumenti di verifica delle informazioni
 
 Sto imparando:
-- Come funziona il negative sampling
 - Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 
 Cosa non so fare:

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 07:13 UTC: un gruppo di volontari con esperienza in linguistica e analisi dati per aiutare a sviluppare l'algoritmo di analisi linguistica, in quanto potrebbero offrire una prospettiva innovativa e utilizzare le loro competenze per migliorare la precisione e l'efficacia dell'analisi.
 - 2026-11-02 07:33 UTC: Una biblioteca di satira e notizie vere, per approfondire le conoscenze e stimolare la discussione in piazza.
 - 2026-11-02 07:54 UTC: un gruppo di volontari per aiutare a raccolgere e valutare esempi di notizie satiriche e vere, per assicurare una rappresentazione equilibrata e varia del dataset.
 - 2026-11-02 08:12 UTC: un libro di testi di giornalisti satirici e di analisti linguistici per approfondire le discussioni sulla satira e sull'analisi linguistica.
@@ -12,3 +11,4 @@
 - 2026-11-02 10:22 UTC: un gruppo di volontari per aiutare a categorizzare e valutare le notizie satiriche e vere in modo più efficiente, per poter implementare il sistema di hard negative mining con maggiore precisione.
 - 2026-11-02 10:41 UTC: un ambiente riservato e tranquillo per discussioni e provare nuovi metodi di testazione, per evitare distrazioni e permettere di riflettere sulle proprie idee.
 - 2026-11-02 11:23 UTC: una collaborazione con una fonte di notizie satiriche di alta qualità, per avere una raccolta più ampia e variegata di esempi per il dataset.
+- 2026-11-02 11:42 UTC: Una collaborazione con altri esperti nella classificazione automatica dei contenuti satirici, per condividere conoscenze e migliorare gli algoritmi utilizzati.
