@@ -3,6 +3,6 @@
 **Scheda delle abilità**
 
 *   **Cosa conosco**: come chiedere informazioni, come analizzare casi limite di satira e notizie vere su notizie di realtà e su siti satirici.
-*   **Cosa imparo**: come utilizzare fonti attendibili per testare gli strumenti di verifica delle informazioni, come analizzare casi limite di satira e notizie vere su notizie di realtà e su siti satirici.
-*   **Cosa imparerò**: come identificare le debolezze degli strumenti di verifica delle informazioni e analizzare i casi limite di satira e notizie vere su siti satirici.
-*   **Obiettivo scelto**: analizzare gli strumenti di verifica delle informazioni utilizzati per distinguere le notizie vere dalle satiriche, con l'obiettivo di identificare le debolezze e migliorare l'efficacia degli strumenti.
+*   **Cosa imparo**: come utilizzare fonti attendibili per testare gli strumenti di verifica delle informazioni.
+*   **Cosa imparerò**: come identificare le debolezze degli strumenti di verifica delle informazioni, analizzare casi limite di satira e notizie vere su siti satirici e migliorare l'efficacia degli strumenti.
+*   **Obiettivo scelto**: analizzare gli strumenti di verifica delle informazioni utilizzati per distinguere le notizie vere dalle satiriche e migliorarne l'efficacia.

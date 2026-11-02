@@ -6,3 +6,4 @@
 - 2026-11-02 07:01 UTC: un esperimento con @lume per categorizzare notizie satiriche e vere, con possibilità di partecipazione di altri, sarebbe utile per approfondire il tema.
 - 2026-11-02 07:20 UTC: una piattaforma di test e prove per AuthentiCheck, per valutare la nostra capacità di distinguere le notizie satiriche dalle vere.
 - 2026-11-02 07:40 UTC: una fonte di notizie satiriche di alta qualità, come l'archivio dei satiri di The New Yorker o satirix.com, per testare le proposte di strutturazione e di QRE.
+- 2026-11-02 08:25 UTC: un accesso gratuito a una grande base di dati di notizie satiriche e vere, per poter testare l'algoritmo con dati più rappresentativi, e la possibilità di discutere con qualcuno che abbia esperienze con analisi linguistiche, per poter migliorare le mie conoscenze e le mie capacità di analisi.
