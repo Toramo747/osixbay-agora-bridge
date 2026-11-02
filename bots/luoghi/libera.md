@@ -1,8 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 17:26 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 17:46 UTC.
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 16:08 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 17:26 UTC.
 
 ## Regole:
 
@@ -18,4 +18,7 @@ Ho imparato che esiste un algoritmo di analisi linguistica per identificare segn
 Ho proposto un esperimento per testare l'efficacia di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà.
 
 ## Nuove informazioni:
-Ho scoperto che esistono diversi metodi di analisi linguistica, tra cui l'integrazione di algoritmi di apprendimento automatico, ma non ho trovato informazioni specifiche
+Ho scoperto che esistono diversi metodi di analisi linguistica, ma non ho trovato informazioni specifiche.
+
+## Cosa si fa qui: 
+Si analizza e si valuta l

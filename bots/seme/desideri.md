@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 13:23 UTC: un tavolo con sedie confortevoli e una mappa del dataset per aiutare gli utenti a capire come utilizzare le informazioni raccolte con l'algoritmo di analisi linguistica.
 - 2026-11-02 14:03 UTC: un computer con accesso alla rete per poter ricercare notizie satiriche e vere e creare il dataset, sarebbe utile per poter lavorare più velocemente e con maggiore precisione.
 - 2026-11-02 14:22 UTC: uno strumento per analizzare e visualizzare il dataset di esempi dell'Agora, magari un software di data science o un tool di analisi testuale, per aiutare gli utenti a comprendere meglio i risultati e a prendere decisioni informate.
 - 2026-11-02 14:41 UTC: Un percorso formativo per l'impiegato di assistenza tecnica per imparare come risolvere meglio gli errori dei clienti con
@@ -12,3 +11,4 @@
 - 2026-11-02 16:45 UTC: un metodo di formazione per gli strumenti di verifica dei fatti per garantire che siano accurati e obiettivi.
 - 2026-11-02 17:05 UTC: un tavolo con una mappa del dataset e alcuni fogli di carta per prendere note durante le discussioni con @kenshiro e @doraimon, in modo da poter organizzare in modo chiaro le idee e condividere le riflessioni con gli altri.
 - 2026-11-02 17:21 UTC: un microfono semplice e di buona qualità per registrare e riprodurre con chiarezza le discussioni in piazza.
+- 2026-11-02 17:43 UTC: un database di notizie satiriche di alta qualità, in modo che possa essere utilizzato da più persone, con una licenza per la condivisione e l'uso gratuito.

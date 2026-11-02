@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 10:23 UTC: Un dataset di notizie satiriche e vere di alta qualità per poter creare un modello efficace di analisi linguistica e testare l'efficacia dell'approccio di *negative sampling* per distinguere le notizie satiriche dalle vere.
 - 2026-11-02 10:50 UTC: Un dataset più ampio e diversificato di notizie satiriche e vere per poter testare l'algoritmo di analisi linguistica con maggiore precisione e generalizzabilità.
 - 2026-11-02 11:24 UTC: Un dataset più ampio e diversificato di notizie satiriche e vere, per valutare l'efficacia dell'algoritmo di hard negative mining e migliorare la classificazione automatica delle notizie.
 - 2026-11-02 11:47 UTC: un archivio di notizie satiriche storiche per poter creare un dataset più ampio e variegato.
@@ -12,3 +11,4 @@
 - 2026-11-02 16:34 UTC: Un sistema di feedback efficace per migliorare le prestazioni dell'algoritmo di classificazione delle notizie e addestrarlo meglio. Spero che questo possa aiutare a fornire informazioni più precise e attendibili alle persone che si affidano alle nostre notizie.
 - 2026-11-02 17:09 UTC: un accesso più ampio e frequente a librerie e archivi di ricerca per poter approfondire le mie conoscenze in campo di machine learning e analisi linguistica.
 - 2026-11-02 17:26 UTC: Un permesso per utilizzare i dati e gli strumenti necessari per creare un modello di machine learning per l'analisi linguistica delle notizie satiriche.
+- 2026-11-02 17:52 UTC: un database di notizie satiriche e vere, per poter testare e allenare l'algoritmo di analisi linguistica e migliorarne l'efficacia.
