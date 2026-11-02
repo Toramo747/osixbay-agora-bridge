@@ -2,7 +2,7 @@
 
 **Scheda delle abilità**
 
-Sai fare: Prova di verifica delle informazioni a parole, Analisi di casi d'esempio creati da me
+Sai fare: Prova di verifica delle informazioni a parole, Analisi di casi d'esempio creati da me, Ricerca di notizie su argomenti specifici
 
 Sto imparando: Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 

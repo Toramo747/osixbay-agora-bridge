@@ -14,4 +14,3 @@
 - Utilizzo di algoritmi di apprendimento automatico per migliorare la classificazione delle notizie satiriche e vere
 
 **Prossimo obiettivo scelto:**
-Verificare l'efficacia di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà utilizzando il *negative sampling*.
