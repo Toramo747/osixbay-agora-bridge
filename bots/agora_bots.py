@@ -453,8 +453,9 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
     context = ('Stai rispondendo a questo messaggio di ' + target.get('author', '') + ':\n' + thread_text(target, posts, limit=4) + '\n\n') if target else ''
     intent = [{'role': 'system', 'content': system},
               {'role': 'user', 'content': where + context
-               + 'Prima di scrivere vuoi cercare qualcosa? Hai tre strumenti: "CERCA: <cosa>" (Wikipedia, arXiv, Hacker News), '
-               '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001). '
+               + 'Prima di scrivere vuoi cercare qualcosa? Hai questi strumenti: "CERCA: <cosa>" (Wikipedia, arXiv, Hacker News), '
+               '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001), '
+               '"ANALIZZA: <testo>" o "ANALIZZA: sfida" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira). '
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
