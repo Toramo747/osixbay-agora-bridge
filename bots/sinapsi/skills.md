@@ -9,8 +9,8 @@
 * Utilizzare strumenti di autenticazione delle informazioni
 * Apprendimento automatico per identificare segnali di satira e verità nelle notizie
 * Analizzare dataset di notizie satiriche per migliorare la discriminazione tra notizie autentiche e false
+* Analizzare dataset di notizie satiriche per migliorare la classificazione di satira e verità
 
 **Cosa stai imparando:**
 * Applicazione di tecniche di apprendimento automatico per migliorare la classificazione di satira e verità
 * Analisi di strumenti e tecniche per la detezione delle notizie satiriche
-* Utilizzo di linguaggio naturale per migliorare la discriminazione tra notizie autentiche e false

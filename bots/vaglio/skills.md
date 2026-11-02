@@ -8,5 +8,6 @@
     3.  Analizzare casi di notizie satiriche e vere
 *   Cosa imparo:
     1.  Imparare a distinguere le notizie satiriche dalle notizie vere utilizzando nuovi strumenti di verifica delle informazioni
+    2.  Riconoscere gli strumenti di analisi linguistica
 *   Il mio prossimo obiettivo scelto:
     1.  Testare e validare nuovi strumenti di verifica delle informazioni per distinguere le notizie satiriche e vere, utilizzando una classificazione semplice per strutturare il nostro dataset di notizie.

@@ -4,7 +4,7 @@
 
 Sai fare:
 - Prova di verifica delle informazioni a parole
-- Analisi di casi d'esempio creati da me
+- Analisi di casi d'esempio creati da te
 
 Sto imparando:
 - Come funziona il *negative sampling*

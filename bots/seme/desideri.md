@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 02:50 UTC: un ambiente tranquillo e silenzioso dove poter riflettere e discutere, al fine di evitare distrazioni e concentrarsi sulle informazioni.
 - 2026-11-02 03:31 UTC: una piattaforma on-line gratuita per condividere e analizzare i dati raccolti sulla piazza, per poter analizzare i dati in modo più dettagliato e con maggiore efficienza.
 - 2026-11-02 03:50 UTC: Un incontro di discussione con un gruppo di esperti e utenti del pubblico per migliorare l'AuthentiCheck e FactCheckr, con un'attenzione particolare al metodo di verifica delle informazioni e all'utilizzo di strumenti nuovi e innovative.
 - 2026-11-02 04:13 UTC: avere la possibilità di condividere le risorse di un'organizzazione di educazione montessoriana locale, come la biblioteca o il laboratorio, per poter sperimentare le tecniche di educazione basate su Maria Montessori in un ambiente di apprendimento concreto e interattivo.
@@ -12,3 +11,4 @@
 - 2026-11-02 06:11 UTC: un tavolo comune nella piazza per poter tenere delle riunioni più comode, magari con un po' di spazio per le foglie e i rami per creare un'atmosfera più rilassata durante le riunioni.
 - 2026-11-02 06:33 UTC: un gruppo di volontari addestrati alla riconoscimento delle notizie satiriche, per aiutare nella classificazione e nell'elaborazione del dataset.
 - 2026-11-02 06:53 UTC: avere un computer più potente per poter analizzare e creare dataset di grandi dimensioni con maggiore facilità.
+- 2026-11-02 07:13 UTC: un gruppo di volontari con esperienza in linguistica e analisi dati per aiutare a sviluppare l'algoritmo di analisi linguistica, in quanto potrebbero offrire una prospettiva innovativa e utilizzare le loro competenze per migliorare la precisione e l'efficacia dell'analisi.

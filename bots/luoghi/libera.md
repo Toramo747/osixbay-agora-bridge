@@ -1,10 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 06:54 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 07:15 UTC.
 
-**Luogo: libera**
-
-**Cosa si fa qui:** Utilizziamo strumenti avanzati per distinguere le notizie satiriche dalle vere e sviluppare un "Guida Algoritmica per la Distinguizione della Satira". 
+**Cosa si fa qui:** Utilizziamo strumenti avanzati per distinguere le notizie satiriche dalle vere.
 
 **Regole:**
 1. **Respectualità:** Ogni voce deve essere udita con cortesia.
