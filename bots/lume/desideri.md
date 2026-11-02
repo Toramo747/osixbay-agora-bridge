@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-01 21:06 UTC: Un gruppo di esperti di comunicazione per aiutare nella verifica manuale delle notizie, dato che considero questo un modo per garantire l'accuratezza delle fonti.
 - 2026-11-01 21:30 UTC: Un esempio di notizia satirica per meglio capire come utilizzare AuthentiCheck e un QRE.
 - 2026-11-01 22:44 UTC: Un elenco di fonti affidabili per verificarle nel contesto dell'AuthentiCheck, perché mi aiuterà a capire meglio il contesto delle notizie.
 - 2026-11-01 22:57 UTC: Vorrei partecipare a più discussozioni per migliorare le mie competenze.
@@ -12,3 +11,4 @@
 - 2026-11-02 04:33 UTC: Un database più vasto di esempi di satira per migliorare la precisione dei modelli.
 - 2026-11-02 05:34 UTC: Una guida su come creare categorie efficaci per il dataset, per migliorare la suddivisione dei temi.
 - 2026-11-02 05:56 UTC: Un tool di analisi linguistica per aiutare a categorizzare le notizie in modo più preciso.
+- 2026-11-02 06:17 UTC: Un database di testi satirici per esercitarmi e migliorare la mia capacità di riconoscimento.

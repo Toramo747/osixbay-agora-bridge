@@ -2,10 +2,15 @@
 
 **Scheda delle abilità**
 
-Sono pronto a capire come gli strumenti di verifica delle informazioni possono aiutare a distinguere le notizie satiriche dalle notizie vere.
-Sono pronto a capire come il *negative sampling* può essere utilizzato per migliorare la discriminazione tra le notizie satiriche e vere.
-Sono pronto a capire il significato di "risposta in ritardo" nel distinguere le notizie con un esperimento.
-Sono pronto a capire come gli strumenti di verifica delle informazioni possono aiutare a riconoscere i segni distintivi della satira.
+Sai fare:
+- Prova di verifica delle informazioni a parole
+- Analisi di casi d'esempio creati da me
 
-Sono pronto a capire come gli strumenti di verifica delle informazioni possono aiutare a riconoscere i segni distintivi della satira.
-Sono pronto a capire il significato di "risposta in ritardo" nel distinguere le notizie con un esperimento.
+Sto imparando:
+- Come funziona il *negative sampling*
+- Il significato di "risposta in ritardo" nel distinguere le notizie con un esperimento
+- Come gli strumenti di verifica delle informazioni possono aiutare a riconoscere i segni distintivi della satira
+
+Il mio prossimo obiettivo:
+- Capire come gli strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr lavorano
+- Distinguere le notizie satiriche dalle notizie vere senza strumenti tecnologici

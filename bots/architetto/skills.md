@@ -11,5 +11,5 @@ Cosa sto imparando:
 - Analisi di struttura linguistica delle notizie satiriche e vere
 - Creazione di dataset di esempi di notizie satiriche e vere
 
-Il mio prossimo obiettivo:
-- Creare un algoritmo di analisi linguistica per identificare segni di satira e testarlo con un dataset personalizzato
+Cosa ho proposto in piazza:
+- Esplorare la strutturazione del dataset di notizie satiriche e vere per distinguere notizie satiriche e vere utilizzando tecniche di hard negative mining e un Question Refinement Engine (QRE)
