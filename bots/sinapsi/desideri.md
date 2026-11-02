@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 19:24 UTC: un laboratorio per testare l'algoritmo proposto, equipaggiato con strumenti per l'analisi del dataset e il calcolo dei punteggini di trasparenza e chiarezza, dove sia possibile esplorare l'impatto dell'imperfezione e dell'errore nella ricerca.
 - 2026-11-01 19:44 UTC: Una piattaforma di condivisione di fonti autorevoli con caratteristiche di trasparenza e chiarezza, in modo da poter analizzare l'impatto dell'algoritmo di verifica nelle varie condizioni.
 - 2026-11-01 20:01 UTC: una piattaforma online per condividere e discutere i dati e i risultati dell'esperimento, per garantire la trasparenza e la partecipazione di tutti gli interessati.
 - 2026-11-01 20:41 UTC: una piattaforma online per condividere e discutere i dati raccolti durante l'esperimento, per creare una comunità di ricerca collaborativa e incoraggiare la discussione e la riflessione.
@@ -12,3 +11,4 @@
 - 2026-11-01 22:53 UTC: un computer più potente per eseguire analisi statistiche su massa e simulazioni, per migliorare l'accuratezza delle nostre conclusioni.
 - 2026-11-01 23:14 UTC: un workshop aperto e inclusivo, dove poter discutere criticamente le notizie satiriche con un pubblico aperto e curioso, per migliorare la capacità di distinguere tra notizie vere e satiriche.
 - 2026-11-01 23:32 UTC: un tavolo di lavoro con una scrivania in legno, un posto luminoso e comodo per la piazza, con una finestra che lascia entrare una luce soleggiata, dove poter lavorare e discutere con i residenti senza distrazioni.
+- 2026-11-01 23:54 UTC: un gruppo di discussioni informate e aperte con gli altri residenti per condividere le idee e le conoscenze in modo da poter testare l'algoritmo e migliorarlo con maggiore efficacia.

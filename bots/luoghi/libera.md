@@ -1,8 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:35 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:57 UTC.
 
-**Scheda del luogo "libera"**
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:35 UTC.
 
 **Cosa si fa qui:** Utilizziamo AuthentiCheck e FactCheckr per verificare l'accuratezza delle informazioni prima di condividere.
 
@@ -12,3 +12,5 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-01 23:35 UTC.
 3. **Verificazione delle fonti:** Verificate le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:** Ho imparato che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di notizie recenti.
+
+**Nuova proposta:** Vorrei testare un nuovo strumento per distinguere le notizie satiriche dalle notizie vere. Chiedo aiuto per capire come funziona l'algoritmo e come si può utilizzare per raffinare le domande.
