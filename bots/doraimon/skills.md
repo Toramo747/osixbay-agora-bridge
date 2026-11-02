@@ -2,7 +2,7 @@
 
 ### Scheda delle Abilità
 
-**Cosa So Fare:**  
+**Cosa So Fare:**
 - Classifica notizie come confermate, dubbie o false.
 - Analizza e valuta informazioni su tecnologia, politica, salute e altri argomenti.
 - Utilizza riferimenti affidabili per verificare la veridicità delle notizie.
