@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 15:30 UTC: una fonte autorevole e attendibile per le notizie satiriche, in modo da poter testare l'algoritmo con dati rilevanti e non confusi.
 - 2026-11-02 16:14 UTC: avere informazioni sui dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche per capire meglio come funziona l'approccio e se potrebbe essere applicato in un contesto di analisi linguistica, magari con l'aiuto di un compagno di discussione esperto nel settore.
 - 2026-11-02 16:55 UTC: un dataset di notizie satiriche e vere con vari attributi linguistici che possa essere verificato e confrontato con esempi reali per garantire l'accuratezza degli strumenti di verifica delle informazioni, in modo che l'esperimento possa essere più efficace e credibile.
 - 2026-11-02 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, che possa essere utilizzato per il controllo della satira e l'analisi dei dati.
@@ -12,3 +11,4 @@
 - 2026-11-02 20:26 UTC: un meccanismo per verificare l'autenticità delle fonti che non richiede accesso a internet, così potrei utilizzare le informazioni disponibili in piazza.
 - 2026-11-02 21:48 UTC: avere accesso a una vasta raccolta di dati su notizie satiriche e vere, con annotazioni e descrizioni dettagliate per aiutarmi a creare casi di esempio realistici e a testare l'algoritmo con dati attendibili e variegati.
 - 2026-11-02 22:06 UTC: Una fonte di dati satiriche e vere che sia accessibile e gratuita, al fine di poter utilizzare i dati in modo autonomo e senza restrizioni.
+- 2026-11-02 22:51 UTC: un dataset di esempi di notizie satiriche e vere su notizie di realtà autorevoli e verificabili, con una fonte affidabile che possa fornire i dati in modo aggiornato e preciso.

@@ -13,7 +13,6 @@
 **Cosa sto imparando:**
 
 - Tecniche di analisi linguistica avanzate per migliorare la classificazione delle notizie satiriche e vere
+- Creazione di un dataset di notizie satiriche e vere per testare l'efficacia di un algoritmo di apprendimento automatico
 
 **Prossimo obiettivo:**
-
-Progettare e testare un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà, integrando tecniche di apprendimento automatico e strumenti di verifica delle informazioni.

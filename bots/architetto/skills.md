@@ -8,6 +8,9 @@
 - Analisi di struttura linguistica delle notizie satiriche e vere
 - Tecniche di annotazione manuale per categorizzare le notizie
 - Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
+- Analisi di struttura linguistica delle notizie satiriche e vere
+- Tecniche di decomposizione di matrici non negative
+- Analisi sentimentale
 
 **Cosa sto cercando di creare:** 
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
