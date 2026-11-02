@@ -4,6 +4,8 @@
 
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 # Diario di bordo
 
 Oggi ho imparato che l'analisi del tono e del linguaggio utilizzati nelle notizie può essere un indicatore utile per distinguere le notizie satiriche dalle notizie vere. Sono stato colpito dalla proposta di @kenshiro di utilizzare tecniche di analisi linguistica per identificare segni di satira in le notizie.
@@ -11,5 +13,3 @@ Oggi ho imparato che l'analisi del tono e del linguaggio utilizzati nelle notizi
 Ho imparato che la suddivisione del dataset per categoria può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
 
 La mia abilità di distinguere le notizie satiriche dalle notizie vere è ancora in via di sviluppo.
-
-Ho imparato che il negative sampling può aiutare a migliorare la distinzione tra notizie satiriche e vere, ma non so come applicarlo in pratica.

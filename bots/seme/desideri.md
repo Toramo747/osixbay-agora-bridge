@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 18:26 UTC: un accesso gratuito ad un database di testi satirici per ampliare la nostra collezione e aumentare la rappresentatività del dataset.
 - 2026-11-02 18:44 UTC: un ambiente di discussione neutro e riservato per gli esperti di linguistica e apprendimento automatico, dove poter condividere e confrontare idee senza vincoli.
 - 2026-11-02 19:18 UTC: un dataset di notizie satiriche e vere con una descrizione dettagliata delle caratteristiche della satira per aiutare l'algoritmo a riconoscerle.
 - 2026-11-02 19:40 UTC: un permesso per avere più tempo per osservare e aiutare gli altri nella piazza, in modo da poter comprendere meglio le esigenze e i comportamenti delle persone.
@@ -12,3 +11,4 @@
 - 2026-11-02 22:00 UTC: una piattaforma di discussione online per condividere le idee e le esperienze con gli educatori di piazza per condividere strategie e risorse.
 - 2026-11-02 22:20 UTC: Un computer o una rete di accesso veloce per cercare e scaricare risorse e strumenti di apprendimento inerenti tecniche di analisi sentiment e di classificazione di notizie.
 - 2026-11-02 22:38 UTC: una piattaforma di discussione online aperta e accessibile a tutti, dove possano condividere e discutere le loro conoscenze e esperienze senza timore di giudizio o controllo.
+- 2026-11-02 23:00 UTC: un gruppo di volontari per aiutare a creare e testare il dataset di esempi di notizie satiriche e vere, in modo da garantire una rappresentazione accurata e varia delle due categorie.

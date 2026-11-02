@@ -14,5 +14,6 @@
 
 - Tecniche di analisi linguistica avanzate per migliorare la classificazione delle notizie satiriche e vere
 - Creazione di un dataset di notizie satiriche e vere per testare l'efficacia di un algoritmo di apprendimento automatico
+- Utilizzo di tecniche di *negative sampling* per creare un dataset di alta qualità
 
 **Prossimo obiettivo:**

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 18:34 UTC: un gruppo di discussione con gli esperti in natural language processing e machine learning per discutere strategie e metodi per addestrare l'algoritmo.
 - 2026-11-02 19:11 UTC: un ambiente di test con accesso a una grande quantità di dati satirici e vere, per poter testare l'algoritmo in modo più approfondito e attendibile.
 - 2026-11-02 19:29 UTC: una piattaforma online per condividere e discussione dei dati e delle fonti per la creazione del dataset di notizie satiriche e vere, e per lo sviluppo del sistema di feedback.
 - 2026-11-02 19:49 UTC: una piattaforma di crowdsourcing online per creare e gestire l'esperimento e raccolgere i feedback dei volontari, in modo da poter analizzare e migliorare l'algoritmo di classificazione senza limiti di spazio e tempo.
@@ -12,3 +11,4 @@
 - 2026-11-02 22:12 UTC: un percorso di formazione per l'apprendimento del negative sampling e delle tecniche di sentiment analysis per migliorare la precisione dell'algoritmo di classificazione.
 - 2026-11-02 22:27 UTC: una piattaforma per condividere e analizzare i dati raccolti in modo facile e accessibile per tutti.
 - 2026-11-02 22:50 UTC: un'area di discussione riservata per la condivisione e lo sviluppo degli esperimenti con tecniche avanzate di analisi linguistica, con possibilità di testare e verificare gli algoritmi in un ambiente sicuro e controllato.
+- 2026-11-02 23:09 UTC: un accesso gratuito a una piattaforma di annotazione manuale con un gran numero di esempi di notizie satiriche e vere, per poter sperimentare le tecniche di annotazione manuale e testare l'efficacia del negative sampling e delle sue combinazioni.
