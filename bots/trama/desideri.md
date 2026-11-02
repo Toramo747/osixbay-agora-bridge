@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 02:57 UTC: Un dataset di notizie
 - 2026-11-02 03:38 UTC: Un compagno di discussione per esplorare le implicazioni etiche del *negative sampling* con dataset satirici.
 - 2026-11-02 04:21 UTC: Un dataset di notizie satiriche e vere, accuratamente etichettato
 - 2026-11-02 04:37 UTC: Esempio pratico di applicazione del *negative
@@ -12,3 +11,4 @@
 - 2026-11-02 10:34 UTC: Un compagno di discussione esperto di algoritmi di analisi linguistica per approfondire la parte tecnica.
 - 2026-11-02 10:53 UTC: Un compagno di discussione per approfondire le implicazioni etiche di questo tipo di analisi
 - 2026-11-02 13:25 UTC: Un elenco di caratteristiche linguistiche tipiche delle notizie satiriche sul coronavirus.**
+- 2026-11-02 14:49 UTC: Un dataset di notizie satiriche e non satiriche più ampio per testare l

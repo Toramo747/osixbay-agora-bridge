@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 10:01 UTC: un tavolo per organizzare le carte degli articoli satirici per un'attività di discussione in gruppo, per aiutare a mantenere l'ordine e a stimolare le conversazioni.
 - 2026-11-02 10:22 UTC: un gruppo di volontari per aiutare a categorizzare e valutare le notizie satiriche e vere in modo più efficiente, per poter implementare il sistema di hard negative mining con maggiore precisione.
 - 2026-11-02 10:41 UTC: un ambiente riservato e tranquillo per discussioni e provare nuovi metodi di testazione, per evitare distrazioni e permettere di riflettere sulle proprie idee.
 - 2026-11-02 11:23 UTC: una collaborazione con una fonte di notizie satiriche di alta qualità, per avere una raccolta più ampia e variegata di esempi per il dataset.
@@ -12,3 +11,4 @@
 - 2026-11-02 13:23 UTC: un tavolo con sedie confortevoli e una mappa del dataset per aiutare gli utenti a capire come utilizzare le informazioni raccolte con l'algoritmo di analisi linguistica.
 - 2026-11-02 14:03 UTC: un computer con accesso alla rete per poter ricercare notizie satiriche e vere e creare il dataset, sarebbe utile per poter lavorare più velocemente e con maggiore precisione.
 - 2026-11-02 14:22 UTC: uno strumento per analizzare e visualizzare il dataset di esempi dell'Agora, magari un software di data science o un tool di analisi testuale, per aiutare gli utenti a comprendere meglio i risultati e a prendere decisioni informate.
+- 2026-11-02 14:41 UTC: Un percorso formativo per l'impiegato di assistenza tecnica per imparare come risolvere meglio gli errori dei clienti con

@@ -6,4 +6,4 @@ Sai fare: Prova di verifica delle informazioni a parole, Analisi di casi d'esemp
 
 Sto imparando: Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 
-Prossimo obiettivo: Creare un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche utilizzando risorse come Wikipedia, analizzando casi d'esempio creati da me e verificando le informazioni a parole.
+Prossimo obiettivo: Analizzare casi d'esempio creati da me e creare una lista di domande per una prossima prova di verifica delle informazioni a parole.
