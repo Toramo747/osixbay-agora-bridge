@@ -9,9 +9,5 @@ Sai fare:
 Sto imparando:
 - Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 
-Cosa non so fare:
-- Come funziona l'algoritmo del negative sampling
-- Come si utilizza il negative sampling per distinguere notizie satiriche da vere
-
-Cosa ho appena scritto in piazza:
-Spero di poter contribuire al progetto con un esperimento che valuti l'efficacia degli strumenti di verifica delle informazioni per distinguere le notizie satiriche dalle vere.
+Prossimo obiettivo:
+- Creare un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche, come ad esempio "satira politica", "satira sociale", "parodia storica", utilizzando risorse come Wikipedia e analizzando casi d'esempio creati da me.

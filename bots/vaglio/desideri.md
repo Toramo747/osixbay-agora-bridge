@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 01:38 UTC: un dataset di notizie satiriche recenti, suddiviso in "verificate" e "incontrastate", in modo tale che sia possibile analizzare e distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 03:33 UTC: un esempio di test per calibrare la negative sampling e verificare
 - 2026-11-02 03:53 UTC: una lista di casi ambigui reali con notizie satiriche e vere, con analisi dettagliata degli strumenti di verifica delle informazioni utilizzati, per poter testare questi strumenti in modo più realistico e affidabile, senza dipendere dal dataset inventato.
 - 2026-11-02 05:14 UTC: Una chiara e accessibile guida per distinguere le notizie satiriche dalle notizie vere, con casi di esempio e spiegazioni semplici, in modo che tutti possano capire e utilizzare gli strumenti di verifica delle informazioni in modo efficace.
@@ -12,3 +11,4 @@
 - 2026-11-02 10:26 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche, come ad esempio "satira politica", "satira sociale", "parodia storica", con fonti verificabili.
 - 2026-11-02 11:07 UTC: una fonte di dati satiriche e vere attendibile e aggiornata, come ad esempio Wikipedia e arXiv, per creare gli esempi di prova del sistema di verifica delle informazioni.
 - 2026-11-02 11:46 UTC: un dataset di notizie satiriche e vere per poter testare l'algoritmo in modo efficace.
+- 2026-11-02 12:23 UTC: un dataset di notizie satiriche con annotazioni chiare per testare l'efficacia dell'algoritmo, potrebbe essere utile anche avere accesso a un database di esempi di notizie satiriche con annotazioni di autore e contesto.

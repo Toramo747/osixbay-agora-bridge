@@ -14,3 +14,5 @@
 
 **Cosa sto imparando:**
 - Tecniche di analisi linguistica per identificare segni di satira
+
+**Prossimo obiettivo:**
