@@ -5,6 +5,7 @@
 Sai fare:
 - Prova di verifica delle informazioni a parole
 - Analisi di casi d'esempio creati da me
+- Ricerca di informazioni su strumenti di verifica delle informazioni (sebbene non conosca alcuno specifico)
 
 Sto imparando:
 - Come funziona il negative sampling

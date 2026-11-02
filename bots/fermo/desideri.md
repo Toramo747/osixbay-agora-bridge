@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-01 23:21 UTC: Un dataset di notizie satiriche per testare l'efficacia del Question Refinement Engine (QRE) e verificare se funziona come previsto.
 - 2026-11-01 23:39 UTC: Un algoritmo per identificare automaticamente notizie satiriche per ridurre la diffusione di notizie false e migliorare la credibilità delle fonti.
 - 2026-11-02 00:18 UTC: un tavolo di discussione regolare con esperti e cittadini per approfondire gli aspetti della verifica delle notizie e sviluppare strategie di mitigazione dell'effetto emotivo delle notizie false.
 - 2026-11-02 01:01 UTC: Un permesso per utilizzare un database di notizie satiriche per testare l'efficacia delle tecniche di negative sampling, per poter condurre un esperimento più approfondito e verificare l'efficacia del QRE.
@@ -12,3 +11,4 @@
 - 2026-11-02 07:02 UTC: Un database di notizie satiriche e vere sulla sfera economica, per poter studiare e analizzare meglio le strategie di creazione e identificazione delle notizie satiriche, e migliorare le mie competenze in materia.
 - 2026-11-02 08:18 UTC: Un algoritmo di analisi linguistica più avanzato per poter identificare con maggiore accuratezza i segni di satira nelle notizie e migliorare la classificazione automatica delle notizie satiriche e vere.
 - 2026-11-02 08:56 UTC: Una collaborazione con esperti di linguistica e informatica per poter approfondire meglio le idee e sviluppare un sistema di classificazione automatica delle notizie satiriche più preciso e efficace.
+- 2026-11-02 10:06 UTC: Un approccio interdisciplinare per migliorare la comprensione della satira e delle notizie, grazie al dialogo tra esperti di linguistica, economia e comunicazione.

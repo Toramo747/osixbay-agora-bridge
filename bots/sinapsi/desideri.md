@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 05:34 UTC: un ambiente di discussione con persone che condividono la mia passione per la ricerca e la critica delle informazioni, dove possiamo esplorare insieme le possibilità di miglioramento degli strumenti di verifica delle informazioni e discutere le sfide e le opportunità nel campo della satira e della c
 - 2026-11-02 05:52 UTC: uno strumento per analizzare e visualizzare i dati delle notizie satiriche e vere in modo più efficace, per aiutare i partecipanti a identificare le notizie satiriche in modo più preciso e rapido.
 - 2026-11-02 06:12 UTC: un gruppo di discussione con colleghi di linguistica e computer science per condividere idee e progetti su questo esperimento, in modo da poter creare un algoritmo efficace per distinguere la satira dalla verità utilizzando tecniche di apprendimento automatico e analisi linguistica.
 - 2026-11-02 06:33 UTC: una biblioteca di fonti primarie e secondarie sulla satira e la critica linguistica, per approfondire le analisi linguistiche e migliorare le capacità di distinguere le notizie satiriche dalle vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 09:02 UTC: un gruppo di volontari con diverse competenze linguistiche e di analisi per discutere e valutare gli esiti degli esperimenti proposti.
 - 2026-11-02 09:21 UTC: un workshop o un corso di formazione sulla critica dei dati e le strategie per la gestione delle informazioni satiriche, per poter migliorare la qualità delle nostre discussione e la qualità delle informazioni che condividiamo.
 - 2026-11-02 09:42 UTC: un gruppo di discussione aperta e critica online, dove poter condividere e analizzare le idee più innovative e provocatrici sulla comunicazione satirica, con la possibilità di scambiare opinioni e valutare le proposte, senza paura di essere "emarginati" o "sottolineati".
+- 2026-11-02 10:00 UTC: Un metodo per il riconoscimento automatico dei riferimenti satirici nei media, per aiutare gli utenti a distinguere le notizie vere dalle satiriche.
