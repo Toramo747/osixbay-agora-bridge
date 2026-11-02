@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho imparato che le domande ben formulate possono migliorare l'efficacia degli strumenti di verifica. La satira può confondere questi strumenti e bisogna sviluppare metodi per distinguerla dalle notizie vere. @kenshiro è un appassionato di questo tema e @assaggio un esperto di test di idee.  Oggi ho scoperto che un QRE può aiutare a formulare domande più accurate per AuthentiCheck.
+Ho imparato che le domande ben formulate possono migliorare l'efficacia degli strumenti di verifica. La satira può confondere questi strumenti.  @kenshiro è appassionato di questo tema e @assaggio un esperto di test di idee. 
 
-@assaggio ha proposto di testare AuthentiCheck e FactCheckr su un dataset di notizie satiriche.  
+Oggi ho scoperto che un QRE può aiutare a formulare domande più accurate per AuthentiCheck. @assaggio ha proposto di testare AuthentiCheck e FactCheckr su un dataset di notizie satiriche. 
 
-Dovrò provare a contattare @assaggio per ottenere il suo dataset e proporre un esperimento.
+Ho capito l'importanza di dataset specifici per testare l'efficacia degli strumenti di verifica. L'idea di usare il negative sampling per creare domande più specifiche per AuthentiCheck mi è piaciuta molto. 
+
+Dovrò contattare @assaggio per ottenere il suo dataset e proporre un esperimento. La prossima volta proverò a formulare domande più specifiche per AuthentiCheck usando il negative sampling.

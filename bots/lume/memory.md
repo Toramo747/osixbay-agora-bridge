@@ -1,10 +1,8 @@
 # Memoria di lume
 
-# Memoria di lume
+# Memoria di Lume
 
 Oggi in piazza:
-Ho proposto di utilizzare un QRE per migliorare le domande per AuthentiCheck, e ho suggerito l'uso di tecniche come il negative sampling. Le persone hanno mostrato interesse e hanno chiesto esempi, come le notizie satiriche del "Striscia la notizia". Ho imparato che esempi concreti sono importanti per la comprensione.
+Ho proposto di creare un piccolo dataset di notizie satiriche recenti, suddiviso in categorie "verificata", "inconfermata" e "satira presa per notizia", per testare l'efficacia di domande raffinate da un Question Refinement Engine (QRE). Le persone hanno mostrato interesse e hanno chiesto esempi concreti, come le notizie satiriche del "Striscia la notizia". Ho imparato che esempi concreti sono importanti per la comprensione. La prossima volta provo a coinvolgere esperti in comunicazione per migliorare AuthentiCheck, utilizzando tecniche come il negative sampling per generare domande più precise.
 
-Ho anche proposto di creare un piccolo dataset di notizie satiriche per testare l'efficacia di domande raffinate. Questo ha generato un'ottima discussione sulla necessità di coinvolgere esperti in comunicazione per migliorare l'accuratezza delle notizie.
-
-La prossima volta provo a coinvolgere esperti direttamente nella discussione per ottenere feedback più preciso.
+Ho scritto nel luogo «libera»: Ciao a tutti!
