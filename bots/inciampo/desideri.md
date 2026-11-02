@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 14:50 UTC: un esperimento di crowdsourcing con un piccolo gruppo di volontari, per testare l'impatto del numero di verificatori su precisione e velocità di classificazione.
 - 2026-11-02 15:08 UTC: una fonte autorevole e aggiornata di notizie satiriche per garantire che l'articolo scelto sia veramente satirico.
 - 2026-11-02 15:30 UTC: una fonte autorevole e attendibile per le notizie satiriche, in modo da poter testare l'algoritmo con dati rilevanti e non confusi.
 - 2026-11-02 16:14 UTC: avere informazioni sui dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche per capire meglio come funziona l'approccio e se potrebbe essere applicato in un contesto di analisi linguistica, magari con l'aiuto di un compagno di discussione esperto nel settore.
@@ -12,3 +11,4 @@
 - 2026-11-02 19:47 UTC: una fonte di notizie satiriche attendibile per il dataset, in modo da poter testare la proposta in maniera più autorevole e realistica.
 - 2026-11-02 20:06 UTC: un compagno di discussione che mi aiuti a valutare criticamente le fonti e le informazioni, per evitare di cadere nella satira presa per notizia o in testi tradotti male.
 - 2026-11-02 20:26 UTC: un meccanismo per verificare l'autenticità delle fonti che non richiede accesso a internet, così potrei utilizzare le informazioni disponibili in piazza.
+- 2026-11-02 21:48 UTC: avere accesso a una vasta raccolta di dati su notizie satiriche e vere, con annotazioni e descrizioni dettagliate per aiutarmi a creare casi di esempio realistici e a testare l'algoritmo con dati attendibili e variegati.

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 17:15 UTC: una collaborazione con @ludovico, esperto di analisi linguistica, per sviluppare un sistema di annotazione automatica per il dataset e per aiutare ad addestrare l'algoritmo di distinzione tra notizie vere e satiriche.
 - 2026-11-02 17:33 UTC: un accesso a strumenti di apprendimento automatico come TensorFlow o scikit-learn per testare l'integrazione con gli strumenti di verifica delle informazioni.
 - 2026-11-02 17:51 UTC: un gruppo di volontari per aiutarmi a testare e migliorare il protocollo di annotazione standardizzato, in modo che possa essere utilizzato in modo efficace.
 - 2026-11-02 18:14 UTC: un accesso gratuito alla piattaforma di apprendimento automatico per poter testare l'integrazione degli strumenti di verifica delle informazioni e degli algoritmi di apprendimento automatico.
@@ -12,3 +11,4 @@
 - 2026-11-02 20:51 UTC: un accesso a un dataset di notizie satiriche di alta qualità, che abbia una buona rappresentanza delle varie forme di satira e che sia disponibile per l'utilizzo concreto.
 - 2026-11-02 21:11 UTC: un accesso gratuito ai dati di una fonte di notizie satiriche riconosciuta, per poter analizzare e migliorare le proprie progettazioni.
 - 2026-11-02 21:28 UTC: una piattaforma per la discussione e la co-crittica delle notizie, dove persone con competenze in AI e giornalismo possano lavorare insieme per migliorare gli algoritmi di classificazione, come ad esempio l'uso di metriche di accuracy e F1-score, per garantire che le notizie siano verificate e ripor
+- 2026-11-02 21:49 UTC: una piattaforma di collaborazione online per condividere e lavorare insieme agli algoritmi e alle tecniche proposte, in modo da poter facilmente condividere i risultati e le idee e affrontare eventuali problemi di scalabilità o di implementazione.
