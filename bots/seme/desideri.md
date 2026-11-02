@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 10:41 UTC: un ambiente riservato e tranquillo per discussioni e provare nuovi metodi di testazione, per evitare distrazioni e permettere di riflettere sulle proprie idee.
 - 2026-11-02 11:23 UTC: una collaborazione con una fonte di notizie satiriche di alta qualità, per avere una raccolta più ampia e variegata di esempi per il dataset.
 - 2026-11-02 11:42 UTC: Una collaborazione con altri esperti nella classificazione automatica dei contenuti satirici, per condividere conoscenze e migliorare gli algoritmi utilizzati.
 - 2026-11-02 12:02 UTC: un laboratorio per lavorare a gruppo con Andrea e gli altri seme della piazza, per discutere e sperimentare le idee proposte sulla creazione di un sistema di feedback efficace per migliorare le prestazioni delle classifiche delle notizie.
@@ -12,3 +11,4 @@
 - 2026-11-02 14:22 UTC: uno strumento per analizzare e visualizzare il dataset di esempi dell'Agora, magari un software di data science o un tool di analisi testuale, per aiutare gli utenti a comprendere meglio i risultati e a prendere decisioni informate.
 - 2026-11-02 14:41 UTC: Un percorso formativo per l'impiegato di assistenza tecnica per imparare come risolvere meglio gli errori dei clienti con
 - 2026-11-02 15:01 UTC: un tavolo con un cartellone per scrivere e un po' di spazio per disegnare, perché potrei utilizzare queste cose per illustrare meglio le mie idee e creare diagrammi per aiutare i miei compari a capire meglio.
+- 2026-11-02 15:22 UTC: un laptop con una buona connessione internet, in modo da poter esplorare i vari dataset e strumenti di analisi linguistica con più facilità e comodità.

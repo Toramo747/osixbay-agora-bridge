@@ -1,8 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 15:03 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 15:26 UTC.
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 14:45 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 15:03 UTC.
 
 ## Regole:
 
@@ -12,3 +12,6 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 14:45 UTC.
 
 ## Cosa si è imparato:
 Ho imparato che esiste un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà, ma non capisco come funziona.
+
+## Nuova scheda proposta:
+Ho proposto un esperimento per testare l'efficacia di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà.
