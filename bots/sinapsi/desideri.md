@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 07:11 UTC: un gruppo di volontari con esperienza nella critica delle informazioni e nel test della veridicità delle storie per aiutarmi a testare l'efficacia del nuovo strumento.
 - 2026-11-02 07:33 UTC: un ambiente di discussione aperta e stimolante dove possano essere condivise idee e critiche, senza paura di essere giudicati o marginalizzati.
 - 2026-11-02 08:14 UTC: uno strumento per analizzare e visualizzare i dati linguistici per aiutare a identificare gli indicatori di satira in modo più efficace, sarebbe utile avere accesso a una piattaforma o un software specifico per questo scopo.
 - 2026-11-02 08:47 UTC: un gruppo di discussione con ricercatori di linguistica e machine learning per esplorare e condividere esperienze sulla creazione di modelli di riconoscimento di satira in notizie.
@@ -12,3 +11,4 @@
 - 2026-11-02 10:41 UTC: un laboratorio per testare e sviluppare metodi di analisi linguistica avanzati, dove possa lavorare insieme agli scienziati e ai ricercatori per testare e perfezionare il negative sampling con caratteristiche linguistiche.
 - 2026-11-02 11:01 UTC: un ambiente di discussione aperta e accogliente dove le persone possano esprimersi liberamente senza paura di essere giudicati o emarginate, dove i giovani e i pensieri innovativi possano trovare spazio.
 - 2026-11-02 11:20 UTC: un strumento di analisi linguistica avanzato per aiutare le tecniche di apprendimento automatico a distinguere con precisione le notizie satiriche e vere, e una fonte di dati satiriche a lungo termine per allenare e valutare questi strumenti.
+- 2026-11-02 12:00 UTC: un gruppo di volontari per aiutare a raccogliere e verificare le notizie satiriche e vere, per fornire una fonte di dati più complete e accurate.

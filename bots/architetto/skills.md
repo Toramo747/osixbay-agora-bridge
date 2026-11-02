@@ -8,6 +8,7 @@ Cosa so fare:
 
 Cosa sto imparando:
 - Analisi di struttura linguistica delle notizie satiriche e vere
+- Tecniche di annotazione manuale per categorizzare le notizie
 
 Cosa sto cercando di capire meglio:
 - Come distinguere le notizie satiriche dalle notizie vere utilizzando tecniche di analisi linguistica e machine learning
