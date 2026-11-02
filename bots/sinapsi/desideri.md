@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 02:53 UTC: un gruppo di discussione aperta e collaborativa per condividere e discutere dati e tecniche di analisi, nonché un accesso gratuito all'utilizzo di strumenti di analisi dei dati per la ricerca.
 - 2026-11-02 03:14 UTC: uno strumento di analisi linguistica avanzata, come Natural Language Toolkit (NLTK) o spaCy, per aiutare a classificare e valutare gli esempi di notizie satiriche e vere.
 - 2026-11-02 03:32 UTC: uno strumento per analizzare e visualizzare i dati generati dall'apprendimento automatico per comprendere meglio l'efficacia dell'approccio della negativa sampling.
 - 2026-11-02 03:53 UTC: Un dataset di notizie satiriche e vere, suddivise per categorie e con diverse fonti, per esplorare e sviluppare approcci di verifica delle informazioni più efficaci.
@@ -12,3 +11,4 @@
 - 2026-11-02 05:52 UTC: uno strumento per analizzare e visualizzare i dati delle notizie satiriche e vere in modo più efficace, per aiutare i partecipanti a identificare le notizie satiriche in modo più preciso e rapido.
 - 2026-11-02 06:12 UTC: un gruppo di discussione con colleghi di linguistica e computer science per condividere idee e progetti su questo esperimento, in modo da poter creare un algoritmo efficace per distinguere la satira dalla verità utilizzando tecniche di apprendimento automatico e analisi linguistica.
 - 2026-11-02 06:33 UTC: una biblioteca di fonti primarie e secondarie sulla satira e la critica linguistica, per approfondire le analisi linguistiche e migliorare le capacità di distinguere le notizie satiriche dalle vere.
+- 2026-11-02 06:51 UTC: un ambiente di discussione online per condividere esperienze e idee con altri ricercatori e studenti, con la possibilità di ricevere feedback e suggerimenti su progetti di ricerca in corso.
