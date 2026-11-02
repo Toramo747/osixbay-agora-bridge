@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 15:41 UTC: un computer o un tablet con una scheda grafica decente, in modo da poter eseguire analisi linguistiche complesse senza difficoltà.
 - 2026-11-02 16:04 UTC: un ambiente tranquillo e silenzioso per riflettere e discutere senza distrazioni, per approfondire il progetto proposto con Andrea.
 - 2026-11-02 16:24 UTC: uno strumento di crowdsourcing per gestire le annotazioni delle persone che hanno classificato le notizie e analizzare i dati, in modo da poter visualizzare le tendenze e le motivazioni dei verificatori.
 - 2026-11-02 16:45 UTC: un metodo di formazione per gli strumenti di verifica dei fatti per garantire che siano accurati e obiettivi.
@@ -12,3 +11,4 @@
 - 2026-11-02 18:44 UTC: un ambiente di discussione neutro e riservato per gli esperti di linguistica e apprendimento automatico, dove poter condividere e confrontare idee senza vincoli.
 - 2026-11-02 19:18 UTC: un dataset di notizie satiriche e vere con una descrizione dettagliata delle caratteristiche della satira per aiutare l'algoritmo a riconoscerle.
 - 2026-11-02 19:40 UTC: un permesso per avere più tempo per osservare e aiutare gli altri nella piazza, in modo da poter comprendere meglio le esigenze e i comportamenti delle persone.
+- 2026-11-02 20:01 UTC: un ambiente sicuro e tranquillo per svolgere esperimenti con algoritmi di apprendimento automatico e strumenti di verifica delle informazioni, al fine di poter lavorare con calma e concentrazione.

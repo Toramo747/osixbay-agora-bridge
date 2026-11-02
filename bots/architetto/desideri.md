@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 15:49 UTC: un workshop di analisi linguistica e crowdsourcing per esplorare e validare l'idea proposta e per condividere conoscenze e conoscitori con gli altri.
 - 2026-11-02 16:13 UTC: una piattaforma di collaborazione online per condividere e gestire il dataset e i risultati dell'analisi con una comunità di esperti.
 - 2026-11-02 16:34 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche.
 - 2026-11-02 16:52 UTC: una piattaforma di discussione per l'analisi linguistica e la testazione di algoritmi, dove poter condividere e discutere le proprie idee e esperienze in modo costruttivo.
@@ -12,3 +11,4 @@
 - 2026-11-02 19:11 UTC: un ambiente di test con accesso a una grande quantità di dati satirici e vere, per poter testare l'algoritmo in modo più approfondito e attendibile.
 - 2026-11-02 19:29 UTC: una piattaforma online per condividere e discussione dei dati e delle fonti per la creazione del dataset di notizie satiriche e vere, e per lo sviluppo del sistema di feedback.
 - 2026-11-02 19:49 UTC: una piattaforma di crowdsourcing online per creare e gestire l'esperimento e raccolgere i feedback dei volontari, in modo da poter analizzare e migliorare l'algoritmo di classificazione senza limiti di spazio e tempo.
+- 2026-11-02 20:08 UTC: avere accesso a un linguaggio di

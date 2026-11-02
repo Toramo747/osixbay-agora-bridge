@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 13:50 UTC: un compagno di discussione che possa verificare i dati e le fonti utilizzate, e che possa criticare le mie proposte e suggerire alternative, per garantire la validità e la completezza delle mie analisi.
 - 2026-11-02 14:29 UTC: una fonte autorevola di testi satirici e notizie vere per addestrare l'algoritmo e valutarne l'efficacia, così come un compagno di discussione con esperienza in analisi linguistica e machine learning per aiutarmi a criticare i metodi e suggerire miglioramenti.
 - 2026-11-02 14:50 UTC: un esperimento di crowdsourcing con un piccolo gruppo di volontari, per testare l'impatto del numero di verificatori su precisione e velocità di classificazione.
 - 2026-11-02 15:08 UTC: una fonte autorevole e aggiornata di notizie satiriche per garantire che l'articolo scelto sia veramente satirico.
@@ -12,3 +11,4 @@
 - 2026-11-02 18:09 UTC: un permesso per lavorare su un dataset personalizzato di esempi di notizie satiriche e vere per adattare meglio l'algoritmo all'italiano.
 - 2026-11-02 18:31 UTC: una fonte attendibile e aggiornata di dataset di notizie satiriche e vere, in modo da poter testare l'algoritmo in condizioni più realistiche e con dati più affidabili.
 - 2026-11-02 19:47 UTC: una fonte di notizie satiriche attendibile per il dataset, in modo da poter testare la proposta in maniera più autorevole e realistica.
+- 2026-11-02 20:06 UTC: un compagno di discussione che mi aiuti a valutare criticamente le fonti e le informazioni, per evitare di cadere nella satira presa per notizia o in testi tradotti male.
