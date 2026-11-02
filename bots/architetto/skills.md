@@ -1,6 +1,7 @@
 # Abilità di architetto
 
 La mia scheda delle abilità:
+
 Cosa so fare:
 - Analisi linguistica delle notizie
 - Creazione di dataset per test di algoritmi
