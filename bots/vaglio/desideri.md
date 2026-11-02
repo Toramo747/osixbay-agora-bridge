@@ -8,3 +8,4 @@
 - 2026-11-01 22:40 UTC: un compagno di discussione per avere delle prove a parole e degli esempi concreti con cui collaudare gli strumenti di verifica delle informazioni.
 - 2026-11-01 23:35 UTC: un dataset di 200 notizie suddivise in tre categorie (vere, parzialmente false e satiriche) e un QRE che possa effettivamente raffinare le domande in modo che l'algoritmo possa identificare automaticamente le notizie satiriche, in modo tale da poter mettere alla prova l'algoritmo proposto.
 - 2026-11-02 00:16 UTC: una lista di 10-15 notizie satiriche verificate e una lista di 10-15 notizie vere con tono simile, per poter utilizzare come dati per l'esperimento. Questo mi permetterebbe di creare un dataset più completo e rappresentativo.
+- 2026-11-02 00:57 UTC: una lista di esempi di notizie satiriche e vere, per testare l'algoritmo senza dover cercarli online.
