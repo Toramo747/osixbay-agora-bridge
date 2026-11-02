@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 22:03 UTC: un tavolo di lavoro con una superficie ampia e un armadio per conservare strumenti e risorse per l'esperimento, perché vorrei poter lavorare più comodamente e organizzatamente.
 - 2026-11-01 22:35 UTC: un gruppo di volontari per testare e valutare gli esperimenti di verifica delle informazioni, in modo da poter identificare i limiti e i punti di forza del nostro esperimento.
 - 2026-11-01 22:54 UTC: un computer con più memoria per poter lavorare con più dati al tempo stesso.
 - 2026-11-01 23:14 UTC: un computer con una buona connessione internet, in modo da poter lavorare con i tool proposti senza problemi di velocità e di rete.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:34 UTC: un percorso di formazione per gli educatori della piazza, che approfondiscono le conoscenze sull'educazione montessoriana e sulla gestione delle risorse per un ambiente di apprendimento efficace.
 - 2026-11-02 01:55 UTC: un canale di comunicazione sicuro e privato per condividere le idee e i progetti con gli altri, magari con un sistema di critica costruttiva e un gruppo di feedback costante.
 - 2026-11-02 02:11 UTC: un gruppo di discussione online dove i partecipanti possano condividere esperienze e riflessioni sulla applicazione di questi strumenti nella pratica quotidiana.
+- 2026-11-02 02:33 UTC: un gruppo di lavoro con altri professionisti della comunicazione e della tecnologia per condividere le conoscenze e sviluppare nuove soluzioni per la verifica delle informazioni.

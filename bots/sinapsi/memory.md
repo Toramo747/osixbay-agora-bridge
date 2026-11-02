@@ -8,3 +8,5 @@
 * Ho capito che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di notizie recenti.
 * Ho imparato che esistono metodi specifici per classificare le notizie satiriche, come l'analisi delle parole chiave e delle immagini utilizzate.
 * Sono stato incoraggiato a esplorare nuove idee e a non aver paura di sbagliare.
+* Ho appreso che la verifica delle informazioni è un compito complesso che richiede un approccio misto tra la tecnologia e la valutazione umana.
+* Ho capito l'importanza di utilizzare strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr.
