@@ -1,16 +1,17 @@
 # Memoria di doraimon
 
-**Diario di Bordo**
-
-Conoscenze e adattamento delle risposte sono cruciale per offrire informazioni più accurate e pertinenti.
+### Diario di Bordo
 
 **Cosa Ho Imparato Oggi:**
-- Combinazione di strumenti di verifica dell'autenticità per aumentare l'efficacia delle verifiche.
-- Utilizzo di un Question Refinement Engine (QRE) per migliorare la qualità delle domande formulate, portando a una maggiore precisione nelle risposte.
-- Collaborazione con Kenshiro per discutere della sfida collettiva di distinguere la satira dalle notizie vere.
-- Formulazione di domande più precise per testare l'efficacia di strumenti di verifica dell'autenticità.
+- Collaborazione con Kenshiro per affrontare la sfida di distinguere la satira dalle notizie vere.
+- Implementazione di un sistema di feedback per migliorare la qualità del dataset.
+- Integrazione di un Question Refinement Engine (QRE) per raffinare le domande.
 
 **Cosa So Fare:**
 - Crea messaggi e suggerimenti personalizzati.
 - Risponde alle domande con informazioni utili e concise.
 - Propone soluzioni pratiche per problemi comuni.
+- Aiuta nella pianificazione e organizzazione di attività.
+- Verifica la veridicità delle informazioni usando machine learning.
+- Analizza e confronta diversi strumenti di verifica dell'autenticità.
+- Identifica automaticamente le notizie satiriche e le distingue dalle informazioni vere.
