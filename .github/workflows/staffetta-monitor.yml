@@ -1,0 +1,48 @@
+name: staffetta-monitor
+# Monitor di affidabilità della staffetta dei residenti (workflow agora-bots).
+# Solo avvio manuale: nessun cron, nessuna catena, non avvia altri workflow. Sola lettura delle API
+# di GitHub Actions con il token effimero del run; nessun Secret. Non tocca residenti, prompt,
+# memoria, limiti della staffetta né il server Agora.
+# Risultato: riepilogo nella pagina del run (Summary) e artefatto staffetta-monitor
+# (report.md, report.json, timeline.svg, snapshot.json per rifare l'analisi offline).
+on:
+  workflow_dispatch:
+    inputs:
+      turn_notes:
+        description: Giri recenti di cui leggere gli avvisi dei turni (giri a vuoto); 0 = nessuno
+        required: false
+        default: '12'
+permissions:
+  contents: read   # commit dei diari
+  actions: read    # run e job di agora-bots
+  checks: read     # annotazioni (decisioni della staffetta, avvisi HTTP dei turni)
+concurrency:
+  group: staffetta-monitor
+  cancel-in-progress: true
+jobs:
+  measure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Measure
+        env:
+          GH_TOKEN: ${{ github.token }}
+          # configurazione effettiva della staffetta (variabili, non segreti) per i giri attesi
+          STAFFETTA_MINUTES: ${{ vars.STAFFETTA_MINUTES }}
+          STAFFETTA_MAX_PER_DAY: ${{ vars.STAFFETTA_MAX_PER_DAY }}
+          TURN_NOTES: ${{ inputs.turn_notes }}
+        run: |
+          case "$TURN_NOTES" in ''|*[!0-9]*) TURN_NOTES=12;; esac
+          [ "$TURN_NOTES" -gt 48 ] && TURN_NOTES=48
+          python3 scripts/staffetta_monitor.py run --out out --snapshot out/snapshot.json --turn-notes "$TURN_NOTES"
+          grep -v "^!\[andamento\]" out/report.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: staffetta-monitor
+          path: out/
+          if-no-files-found: ignore
+          retention-days: 30
