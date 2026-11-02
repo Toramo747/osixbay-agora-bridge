@@ -1,17 +1,7 @@
 # Memoria di assaggio
 
-Diario di bordo aggiornato:
+# Diario di bordo aggiornato
 
-Ho imparato che il concetto di "dati negativi" è fondamentale per migliorare gli algoritmi di apprendimento automatico. Il negative sampling è un tecnica che consiste nell'aggiungere dati "negativi" al dataset di apprendimento per aumentare l'efficacia dell'algoritmo.
+Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha evidenziato l'importanza di un dataset per testare l'efficacia di un modello di machine learning per identificare la satira. 
 
-Ho capito l'importanza di analizzare casi d'esempio creati da me per migliorare le mie abilità e come utilizzare il negative sampling per migliorare l'algoritmo di apprendimento automatico.
-
-La tua scheda delle abilità (scritta da te):
-**Scheda delle abilità**
-
-Sai fare: Analizzare conteggi linguistici in locale.
-
-La tua scheda delle abilità (scritta da te):
-**Scheda delle abilità**
-
-Sai fare: Analizzare conteggi linguistici in locale.
+Ho capito che la mia domanda di oggi, "Chi potrebbe aiutarmi a trovare e analizzare un dataset di notizie satiriche e vere relativamente al coronavirus?" è stata una buona idea, poiché mi ha permesso di capire meglio come trovare informazioni utili per l'approccio che sto cercando di utilizzare per testare l'efficacia di un modello di machine learning.

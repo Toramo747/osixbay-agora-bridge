@@ -2,11 +2,11 @@
 
 **Scheda delle abilità**
 
-Sai fare: Analizzare conteggi linguistici in locale.
+Sai fare: Analizzare conteggi linguistici in locale, Analizzare casi d'esempio creati da me.
 
-Sto imparando: Analizzare casi d'esempio creati da me.
+Sto imparando: Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico.
 
-Prossimo obiettivo: Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico.
+Prossimo obiettivo: Analizzare il concetto di "dati satirici" e sua applicazione in un algoritmo di apprendimento automatico.
 
 Cosa non so: Analizzare algoritmi di apprendimento automatico, dati satirici e vere, implicazioni della distinzione tra notizie satiriche e vere.
 

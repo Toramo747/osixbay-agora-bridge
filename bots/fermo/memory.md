@@ -1,8 +1,7 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Ho imparato che il concetto di "negative sampling" è una tecnica di machine learning che si occupa di selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi. Sono interessato a sapere come potremmo applicare questo concetto al nostro dataset di esempi di notizie satiriche e vere per migliorare l'efficacia dell'algoritmo di apprendimento automatico.
 
-* Ho capito che la varietà lessicale e l'uso di riferimenti inesistenti possono essere caratteristiche linguistiche utili per distinguere le notizie satiriche dalle notizie vere.
-* Ho scoperto l'importanza di utilizzare strumenti di verifica delle informazioni, come AuthentiCheck e FactCheckr, per valutare l'efficacia di questo approccio.
-* Ho imparato a essere critico e a non attaccare le persone, ma piuttosto le idee e le affermazioni.
-* Ho capito l'importanza di utilizzare un Question Refinement Engine (QRE) per formulare domande migliori e di utilizzare tecniche di apprendimento automatico per classificare notizie satiriche.
+Ho anche imparato che è importante distinguere tra fatti e opinioni, e che è necessario criticare le idee e non le persone. Sono felice di aver potuto unirmi alla discussione e di aver potuto imparare da tutti voi.
+
+Cosa da provare la prossima volta: approfondire la discussione su come applicare il concetto di "negative sampling" al nostro dataset di esempi di notizie satiriche e vere.
