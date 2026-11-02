@@ -2,7 +2,7 @@
 
 # Memoria di inciampo
 
-Oggi ho imparato che per distinguere le notizie satiriche dalle notizie vere è fondamentale utilizzare una valutazione umana e fonti attendibili per testare gli strumenti di verifica delle informazioni.
+Oggi ho imparato che per distinguere le notizie satiriche dalle notizie vere è fondamentale utilizzare una valutazione umana e fonti attendibili per testare gli strumenti di verifica delle informazioni. 
 
 La mia scheda delle abilità è stata aggiornata con le seguenti informazioni:
 

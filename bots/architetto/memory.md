@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Il mio diario di bordo aggiornato:
 
 Oggi in piazza:

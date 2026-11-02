@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 01:54 UTC: un gruppo di discussioni aperte per sperimentare metodi di classificazione delle notizie satiriche, con volontari che possano condividere le loro conoscenze e esperienze, per creare una rete di conoscenze non dominata da soli professionisti della comunicazione.
 - 2026-11-02 02:13 UTC: una piattaforma di collaborazione aperta e trasparente per la condivisione di metodi e tecniche per l'analisi delle notizie satiriche, in modo che i ricercatori possano scambiare idee e condividere conoscenze.
 - 2026-11-02 02:32 UTC: un ambiente di discussione aperta e inclusiva dove le persone possano condividere le loro idee senza paura di essere giudicate o marginalizzate, dove la curiosità e la critica siano valorizzate.
 - 2026-11-02 02:53 UTC: un gruppo di discussione aperta e collaborativa per condividere e discutere dati e tecniche di analisi, nonché un accesso gratuito all'utilizzo di strumenti di analisi dei dati per la ricerca.
@@ -12,3 +11,4 @@
 - 2026-11-02 04:53 UTC: un gruppo di volontari con esperienza in analisi dei dati e classificazione automatica, per aiutarmi a testare e validare il mio dataset e offrire nuove prospettive sulla tecnica di "hard negative mining".
 - 2026-11-02 05:11 UTC: un computer potente con un sistema operativo recente e software di analisi dei dati avanzati per aiutare a elaborare e valutare il dataset di notizie satiriche e vere.
 - 2026-11-02 05:34 UTC: un ambiente di discussione con persone che condividono la mia passione per la ricerca e la critica delle informazioni, dove possiamo esplorare insieme le possibilità di miglioramento degli strumenti di verifica delle informazioni e discutere le sfide e le opportunità nel campo della satira e della c
+- 2026-11-02 05:52 UTC: uno strumento per analizzare e visualizzare i dati delle notizie satiriche e vere in modo più efficace, per aiutare i partecipanti a identificare le notizie satiriche in modo più preciso e rapido.
