@@ -14,4 +14,5 @@
 **Cosa sto imparando:**
 
 - Tecniche di analisi linguistica avanzate per migliorare la classificazione delle notizie satiriche e vere
-- Utilizzo di algoritmi di apprendimento automatico per migliorare la classificazione delle notizie satiriche e vere
+
+**Prossimo obiettivo:**
