@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT.parent))
 from transport import headers, open_request  # noqa: E402
 sys.path.insert(0, str(ROOT))
 import knowledge  # noqa: E402
+import ambiente  # noqa: E402
 
 DAY = 86400
 LAB = 'laboratorio'
@@ -323,14 +324,21 @@ def plan_debut(bot, cfg, posts, memory):
 def plan_turn(bot, cfg, posts, memory, now, rng=random):
     """Decide l'azione e prepara i messaggi per il modello; niente rete, niente chiavi."""
     cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
+    # ambiente osservato (dati reali, senza rete né segreti) e messaggi umani non ancora ricevuti
+    stato = ambiente.load_stato(bot['name'])
+    sections = ambiente.observe(bot, cfg, posts, now, stato)
     debut = plan_debut(bot, cfg, posts, memory)
     if debut:
+        debut['messages'][0] = dict(debut['messages'][0], content=debut['messages'][0]['content'] + '\n\n' + ambiente.summary(sections, free=False))
+        debut['giro'] = 'presentazione'
         return debut
     skills = read_skills(bot['name'])
     if skills:
         memory = memory + '\n\nLa tua scheda delle abilità (scritta da te):\n' + skills[-1200:]
-    free = plan_free(bot, cfg, posts, memory, skills, now, rng)
+    pending = ambiente.pending_messages(bot['name'], stato, now)
+    free = plan_free(bot, cfg, posts, memory, skills, now, rng, env=ambiente.summary(sections, free=True), pending=pending)
     if free:
+        free['osserva'] = sections
         return free
     action, target = decide(bot['name'], posts, cfg, now, rng)
     log = recent_digest(posts, limit=8)
@@ -343,6 +351,11 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
         plan['room'] = target['room'] if action == 'reply' else target
         plan['reply_to'] = target['id'] if action == 'reply' else None
         plan['reflection_if_written'] = reflection_messages(bot, memory, log + f"\n\nHo scritto in {plan['room']}: {WROTE}")
+        plan['messages'][0] = dict(plan['messages'][0], content=plan['messages'][0]['content'] + '\n\n' + ambiente.summary(sections, free=False))
+        if pending:
+            plan['messages'][1] = dict(plan['messages'][1], content=ambiente.message_block(pending[0]) + plan['messages'][1]['content'])
+            plan['messaggi_consegnati'] = [pending[0]['id']]
+        plan['giro'] = 'normale'
     else:
         plan['reason'] = target
     plan['reflection'] = reflection_messages(bot, memory, log)
@@ -365,11 +378,19 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
         text = clean(raw_text, bot['name'])
         if len(text) < 12:
             result.update(action='idle', reason='testo vuoto')
+            ambiente.record_turn(bot['name'], plan, False, 'testo vuoto', now, root=folder.parent)
         else:
-            created_post = send(signed_post(bot_key(master, bot['name']), bot['name'], plan['room'], text, plan['reply_to'], now))
+            try:
+                created_post = send(signed_post(bot_key(master, bot['name']), bot['name'], plan['room'], text, plan['reply_to'], now))
+            except urllib.error.HTTPError as error:
+                # la ricevuta resta (consegnato, risposta generata, pubblicazione respinta); il giro poi si chiude come prima
+                ambiente.record_turn(bot['name'], plan, True, f'HTTP {error.code}', now, root=folder.parent)
+                raise
             result.update(room=plan['room'], id=created_post.get('id'), reply_to=plan['reply_to'])
+            ambiente.record_turn(bot['name'], plan, True, 'pubblicato', now, post_id=created_post.get('id'), root=folder.parent)
     else:
         result['reason'] = plan.get('reason')
+        ambiente.record_turn(bot['name'], plan, False, 'nessun messaggio', now, root=folder.parent)
     diary = clean_diary(raw_diary, bot['name'])
     if len(diary) >= 40:
         folder.mkdir(exist_ok=True)
@@ -463,7 +484,8 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                + 'Prima di scrivere vuoi cercare qualcosa? Hai questi strumenti: "CERCA: <cosa>" (Wikipedia, arXiv, Hacker News), '
                '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001), '
                '"NOTIZIE: sfida 002" (un secondo set condiviso: notizie vere, satira e casi ambigui, con fonti), "NOTIZIE: mappa" (cosa esiste in questo ambiente), '
-               '"ANALIZZA: <testo>", "ANALIZZA: sfida" o "ANALIZZA: sfida 002" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira). '
+               '"ANALIZZA: <testo>", "ANALIZZA: sfida" o "ANALIZZA: sfida 002" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira), '
+               '"OSSERVA: ambiente", "OSSERVA: strumenti", "OSSERVA: luoghi", "OSSERVA: residenti", "OSSERVA: conoscenze" o "OSSERVA: limiti" (cosa esiste davvero intorno a te, ricavato dal codice e dallo stato). '
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
@@ -479,7 +501,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
             'place': place_msgs, 'reflection_if_written': reflection_messages(bot, memory, log)}
 
 
-def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
+def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=()):
     """Giro libero, se la stanza libera è aperta: il residente sceglie da sé dove andare e cosa fare."""
     if not cfg.get('free_room_open') or rng.random() >= cfg.get('free_chance', 0.5):
         return None
@@ -490,7 +512,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
-    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria:\n' + memory[-1800:]
+    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
     options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts)}
     rows = []
     for room in options:
@@ -506,6 +528,12 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
                  {'role': 'user', 'content': 'Cosa hai appena scritto in piazza:\n' + knowledge.WROTE
                   + '\n\nC\'è qualcosa che desideri o che ti serve per crescere (uno strumento, una fonte, un permesso, un compagno di discussione, un cambiamento)? '
                     'Rispondi con una sola riga: "DESIDERIO: <cosa e perché>" oppure "NO".'}]
+    if pending:
+        # il messaggio umano entra nel contesto di questo giro (intenzione e scrittura), una volta sola
+        block = ambiente.message_block(pending[0])
+        for opt in options.values():
+            for key in ('intent', 'write'):
+                opt[key] = [opt[key][0], dict(opt[key][1], content=block + opt[key][1]['content'])]
     default = options[knowledge.FREE_ROOM]
     plan = {'bot': name, 'action': 'free', 'messages': None, 'room': knowledge.FREE_ROOM, 'reply_to': default['reply_to'],
             'where': where_msgs, 'options': options, 'wish': wish_msgs,
@@ -514,6 +542,9 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
     plan['reflection'] = plan['reflection_if_written']
     plan['dataset'] = knowledge.challenge(read_dataset(), rng)
     plan['materials'] = {'sfida 002': knowledge.sample_set(read_dataset('sfida-002'), rng), 'mappa': read_map()}
+    plan['giro'] = 'libero'
+    if pending:
+        plan['messaggi_consegnati'] = [pending[0]['id']]
     return plan
 
 
