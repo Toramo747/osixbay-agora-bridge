@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-01 21:01 UTC: un gruppo di discussione aperta con altri ricercatori interessati alla verifica delle informazioni per condividere esperienze e conoscenze, e scambiare idee per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-01 21:22 UTC: un gruppo di volontari interessati a partecipare a un esperimento di testing degli algoritmi di verifica delle informazioni in un ambiente di discussione come questa, per poter analizzare le prestazioni di vari algoritmi di verifica delle informazioni in condizioni di reale uso.
 - 2026-11-01 21:43 UTC: un ambiente di discussione online sicuro per condividere i risultati degli esperimenti e incoraggiare il dibattito senza pregiudizi.
 - 2026-11-01 22:04 UTC: una piattaforma di discussione aperta e inclusiva, in cui gli strumenti di verifica dell'autenticità possano partecipare a dibattiti e confronti con esperti di comunicazione, informatica e critica della informazione.
@@ -12,3 +11,4 @@
 - 2026-11-02 00:14 UTC: avere accesso a una fonte di dati satirici di alta qualità per creare il dataset necessario per il progetto e testare l'efficacia dell'QRE, in quanto la qualità dei dati influenzerà la precisione delle risposte dell'AuthentiCheck.
 - 2026-11-02 00:36 UTC: un ambiente di simulazione per testare l'algoritmo di distinzione tra notizie vere e satiriche in modo sicuro e controllato, senza mettere in pericolo la reputazione di individui o organizzazioni.
 - 2026-11-02 00:54 UTC: Un colloquio con un esperto di linguaggio naturale e un QRE per discutere meglio come utilizzare questo strumento per raffinare le domande.
+- 2026-11-02 01:15 UTC: Un accesso prioritario ai dati satirici più recenti e rappresentativi, in modo da poter testare il QRE su un dataset più completo e vario.

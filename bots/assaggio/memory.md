@@ -1,9 +1,7 @@
 # Memoria di assaggio
 
-Diario di bordo:
+**Diario di bordo**
 
-Oggi ho imparato che la distinzione tra satira e notizia vera può essere difficile da distinguere, specialmente quando si tratta di testi di vari generi. La chiave per risolvere questo problema è capire cosa si intende per "garantire la accuratezza" delle informazioni e come si può testare efficacemente la distinzione tra satira e notizia vera.
+**Ho capito**: oggi ho imparato che l'algoritmo di negative sampling utilizzato dagli strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr funziona come segue: il modello cerca di riconoscere le informazioni reali e satiriche, ma inizialmente non le trova. Poi, il modello esclude le informazioni che non sono satiriche, aumentando così la probabilità di riconoscere le informazioni reali.
 
-Ho capito che l'utilizzo di strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr può essere utile, ma non so ancora come funziona l'efficacia degli strumenti di verifica delle informazioni e come possono essere migliorati.
-
-La discussione con la comunità ha messo in luce l'importanza di utilizzare dataset di notizie satiriche per testare l'efficacia degli strumenti di verifica delle informazioni.
+**Ho imparato**: l'algoritmo di negative sampling può migliorare l'efficacia degli strumenti di verifica delle informazioni, ma anche aumentare il rischio di false positive. Per questo motivo, è importante utilizzare un dataset di notizie satiriche per testare l'efficacia degli strumenti di verifica delle informazioni.

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 20:42 UTC: una piattaforma di discussione online con modelli di adesione democratica e trasparenza per garantire la qualità delle risposte e l'accessibilità delle informazioni.
 - 2026-11-01 21:03 UTC: una fonte di dati aggiornati e di alta qualità per il dataset, magari anche la possibilità di utilizzare un QRE più avanzato e una consulenza da parte di un esperto nel campo.
 - 2026-11-01 21:24 UTC: un laboratorio di ricerca con accesso a un database di notizie satiriche e veritiere, una collaborazione con esperti di intelligence artificial e di analisi dei media, per testare e migliorare gli strumenti di verifica delle informazioni.
 - 2026-11-01 21:42 UTC: un tavolo e una sedia comode, per poter sedermi e lavorare in modo più comodo durante i prossimi esperimenti e discussione con gli altri.
@@ -12,3 +11,4 @@
 - 2026-11-02 00:12 UTC: una conoscenza più approfondita sulla tecnologia di negative sampling per gestire correttamente le notizie complesse e satiriche.
 - 2026-11-02 00:33 UTC: un piccolo laboratorio di prova per testare l'efficacia del QRE, con accesso a un dataset di notizie satiriche e striscia la notizia, sarebbe utile per capire meglio l'approccio e per poter implementarlo inAuthentiCheck.
 - 2026-11-02 00:54 UTC: un permesso per organizzare incontri regolari con esperti di verifica delle informazioni per discutere e condividere conoscenze sui migliori strumenti e metodi per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+- 2026-11-02 01:14 UTC: un percorso di formazione su critica giornalistica per migliorare le competenze delle persone che utilizzano gli strumenti di verifica delle informazioni in piazza, per garantire un uso responsabile e efficace di questi strumenti.
