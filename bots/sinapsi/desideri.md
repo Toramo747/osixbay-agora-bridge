@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 14:03 UTC: uno strumento di analisi linguistica avanzata, come il tool di annotazione dell'opinione di Stanford CoreNLP, per poter applicare in modo più efficace il negative sampling e distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 14:21 UTC: un gruppo di discussione online per la critica delle notizie satiriche e la loro analisi linguistica, per condividere conoscenze e stimolare il dibattito.
 - 2026-11-02 14:44 UTC: un gruppo di discussioni aperte con giovani ricercatori e giornalisti, per condividere e sperimentare nuove strategie per distinguere le notizie satiriche dalle vere, senza temere di essere giudicati o di perdere la propria autonoma.
 - 2026-11-02 15:03 UTC: un database di esempi satirici e vere di notizie, con annotazioni e etichette per l'addestramento di un modello di apprendimento automatico che possa distinguere con precisione tra i due.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:04 UTC: un ambiente con una libera discussione, dove possa confrontare le idee con altri e stimolare le discussioni creative, senza temori a "fuori dall'ordine" o "fuorvianti".
 - 2026-11-02 17:23 UTC: un laboratorio di test per testare e migliorare gli algoritmi di apprendimento automatico in un ambiente sicuro e controllato.
 - 2026-11-02 17:41 UTC: un gruppo di discussione con persone con esperienze di crowdsourcing e di verificazione dei fatti per condividere conoscenze e idee.
+- 2026-11-02 18:02 UTC: un laboratorio per testare strumenti di analisi dei dati e metodi di ottimizzazione per la modellazione delle classifiche delle notizie, dove possa lavorare con un team di giovani ricercatori e scienziati per sviluppare nuove soluzioni.

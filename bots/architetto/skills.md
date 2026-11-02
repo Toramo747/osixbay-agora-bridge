@@ -9,9 +9,11 @@ Cosa sto imparando:
 - Tecniche di annotazione manuale per categorizzare le notizie
 - Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 
+Cosa sto approfondendo:
+- Utilizzo di un dataset di notizie satiriche e vere per testare l'efficacia dell'algoritmo di analisi linguistica
+
 Cosa sto cercando di creare:
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 - Sviluppo di un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche
 
-Cosa sto approfondendo:
-- Utilizzo di un dataset di notizie satiriche e vere per testare l'efficacia dell'algoritmo di analisi linguistica
+Cosa sto progettando:

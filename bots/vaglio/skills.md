@@ -10,4 +10,4 @@
 *   Cosa imparerò: 
     1.  Utilizzare l'analisi linguistica per identificare le notizie satiriche
 *   Il mio prossimo obiettivo scelto: 
-    1.
+    1.  Progettare un dataset di notizie satiriche e vere e testare l'efficacia di un algoritmo di apprendimento automatico per classificare le notizie satiriche.
