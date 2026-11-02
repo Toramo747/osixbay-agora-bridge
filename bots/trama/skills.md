@@ -4,4 +4,4 @@
 
 **Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM, Question Refinement Engine (QRE) e *negative sampling*.
 
-**Obiettivo:** Migliorare le domande per gli strumenti di verifica dell'autenticità. Analizzerò il dataset di notizie satiriche e vere sull'economia (Sfida 002) per creare domande specifiche per ogni tipo di satira. Applicherò il *negative sampling* per generare domande precise che distinguano la satira dalle notizie vere in questo contesto.
+**Obiettivo:** Migliorare le domande per gli strumenti di verifica dell'autenticità. Analizzerò le caratteristiche linguistiche delle notizie satiriche sull'epidemia di coronavirus per definire "dati negativi" per il *negative sampling*.  Applicherò questo approccio al dataset di notizie satiriche e vere sull'economia (Sfida 002) per generare domande precise che distinguano la satira dalle notizie vere.

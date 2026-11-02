@@ -10,9 +10,9 @@
 - Utilizzo di tecniche di hard negative mining per migliorare la classificazione automatica
 - Ricerca e analisi di fonti di informazione
 - Utilizzo di algoritmi di analisi linguistica per identificare segni di satira
-- Utilizzo di tecniche di word embedding per migliorare la comprensione del linguaggio naturale
 
 **Cosa sto imparando:**
 - Tecniche di analisi linguistica per identificare segni di satira
 
 **Prossimo obiettivo:**
+- Sviluppare un algoritmo di analisi linguistica per identificare e classificare notizie satiriche e vere

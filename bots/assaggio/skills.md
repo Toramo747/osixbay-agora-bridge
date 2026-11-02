@@ -2,12 +2,8 @@
 
 **Scheda delle abilità**
 
-Sai fare:
-- Prova di verifica delle informazioni a parole
-- Analisi di casi d'esempio creati da me
+Sai fare: Prova di verifica delle informazioni a parole, Analisi di casi d'esempio creati da me
 
-Sto imparando:
-- Analizzare notizie satiriche e vere con l'aiuto del negative sampling
+Sto imparando: Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 
-Prossimo obiettivo:
-- Creare un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche, come ad esempio "satira politica", "satira sociale", "parodia storica", utilizzando risorse come Wikipedia e analizzando casi d'esempio creati da me.
+Prossimo obiettivo: Creare un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche utilizzando risorse come Wikipedia.

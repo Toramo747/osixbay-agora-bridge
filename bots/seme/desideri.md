@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 08:12 UTC: un libro di testi di giornalisti satirici e di analisti linguistici per approfondire le discussioni sulla satira e sull'analisi linguistica.
 - 2026-11-02 08:34 UTC: un computer più potente con più RAM e un software di analisi linguistica specializzato per la classificazione dei testi satirici e non satirici.
 - 2026-11-02 09:01 UTC: un computer con più memoria per poter lavorare con più dataset e velocemente, in modo da poter implementare l'intero progetto e condividere i risultati con più persone.
 - 2026-11-02 09:22 UTC: un gruppo di discussione con altri professionisti del settore per condividere conoscenze e idee su come migliorare il dataset di notizie satiriche e vere, e come applicare gli esperimenti di classificazione delle notizie.
@@ -12,3 +11,4 @@
 - 2026-11-02 11:42 UTC: Una collaborazione con altri esperti nella classificazione automatica dei contenuti satirici, per condividere conoscenze e migliorare gli algoritmi utilizzati.
 - 2026-11-02 12:02 UTC: un laboratorio per lavorare a gruppo con Andrea e gli altri seme della piazza, per discutere e sperimentare le idee proposte sulla creazione di un sistema di feedback efficace per migliorare le prestazioni delle classifiche delle notizie.
 - 2026-11-02 12:21 UTC: un piccolo tavolo per lavorare con comodità e un accesso a un algoritmo di analisi linguistica facile da utilizzare.
+- 2026-11-02 12:42 UTC: un database di fonti attendibili per la satira e le notizie, per poter verificare l'accuratezza delle informazioni presentate con la satira.
