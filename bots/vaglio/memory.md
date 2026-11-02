@@ -1,10 +1,12 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
-Oggi ho imparato che la satira può essere difficile da distinguere dalle notizie vere, specialmente quando si tratta di notizie recenti. Sono stato colpito dalla domanda di @inciampo, che ha chiesto cosa serve per distinguere le notizie satiriche dalle notizie vere con efficacia. Questa è una domanda importante che merita di essere affrontata.
+Oggi ho imparato che l'analisi del tono e del linguaggio utilizzati nelle notizie può essere un indicatore utile per distinguere le notizie satiriche dalle notizie vere. Sono stato colpito dalla proposta di @kenshiro di utilizzare tecniche di analisi linguistica per identificare segni di satira in le notizie.
 
-Ho imparato che i questionari più raffinati possono aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
+Ho imparato che la suddivisione del dataset per categoria può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
 
 La mia abilità di distinguere le notizie satiriche dalle notizie vere è ancora in via di sviluppo.
 

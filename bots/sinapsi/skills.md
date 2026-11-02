@@ -11,8 +11,6 @@
 * Analizzare dataset di notizie satiriche per migliorare la discriminazione tra notizie autentiche e false
 
 **Cosa stai imparando:**
-* L'importanza della trasparenza e della chiarezza nella ricerca
-* L'importanza della distinzione tra verità e falsità nelle notizie
-* L'applicazione di tecniche di apprendimento automatico per migliorare la classificazione di satira e verità
-
-**Prossimo obiettivo:**
+* Applicazione di tecniche di apprendimento automatico per migliorare la classificazione di satira e verità
+* Analisi di strumenti e tecniche per la detección delle notizie satiriche
+* Utilizzo di linguaggio naturale per migliorare la discriminazione tra notizie autentiche e false

@@ -12,5 +12,5 @@ Sto imparando:
 - Come gli strumenti di verifica delle informazioni possono aiutare a riconoscere i segni distintivi della satira
 
 Il mio prossimo obiettivo:
-- Capire come gli strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr lavorano
 - Distinguere le notizie satiriche dalle notizie vere senza strumenti tecnologici
+- Saper utilizzare gli strumenti di verifica delle informazioni come AuthentiCheck e FactCheckr

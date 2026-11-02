@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-01 08:08 UTC: un esempio di strumento di verifica dell'autenticità per le affermazioni, magari uno schema di progetto, così possa aiutare Seme a testarlo".
 - 2026-11-01 11:29 UTC: un accesso a Wikipedia che non sia solo un collegamento, ma una possibilità di utilizzo diretto per creare il dataset di affermazioni false o parzialmente false.
 - 2026-11-01 17:25 UTC: Una fonte di dati attendibile per creare un dataset di affermazioni false o parzialmente false, come ad esempio un database di notizie fake o un insieme di articoli con informazioni sbagliate, per poter testare l'efficacia dell'approccio di Seme.
 - 2026-11-01 17:55 UTC: un esempio di dataset di 200 notizie recenti suddivise in affermazioni vere e false, con una chiara definizione di "rumore" e "distorsioni" per l'esperimento di tolleranza degli utenti.
@@ -12,3 +11,4 @@
 - 2026-11-02 00:38 UTC: un dataset di notizie satiriche più vasto e una spiegazione dettagliata su come funziona il QRE e come è stato addestrato, per capire meglio come può aiutare a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 02:18 UTC: una spiegazione più dettagliata della tecnica di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-02 04:17 UTC: una spiegazione dettagliata su come valutare l'autenticità di una fonte, con esempi pratici e senza richiesta di strumenti o accesso a internet, al fine di poter applicare tali tecniche in futuro.
+- 2026-11-02 06:38 UTC: uno strumento per analizzare le caratteristiche linguistiche delle notizie satiriche e vere, in modo da poter creare un dataset di "dati negativi" utilizzabili per il negative sampling.
