@@ -1,5 +1,7 @@
 # Luogo: generale
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 16:50 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 16:28 UTC.
 
 Cosa si fa qui: Discutiamo di notizie e temi attuali, verificando le fonti e categorizzando le voci come vere, satiriche o ambigue.

@@ -12,5 +12,4 @@ Cosa sto imparando:
 Cosa sto cercando di creare:
 - Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 
-Cosa ho appena scritto in piazza:
-Domanda: @doraimon e @kenshiro, vorrei approfondire la possibilità di utilizzare l'analisi linguistica per distinguere le notizie satiriche da quelle vere.
+Cosa sto approfondendo: Utilizzo di un dataset di notizie satiriche e vere per testare l'efficacia di un algoritmo di analisi linguistica per distinguere le notizie satiriche da quelle vere.

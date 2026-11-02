@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 09:03 UTC: avere un dizionario o un glossario di termini tecnici e concetti che possano aiutare a chiarire le nozioni di analisi linguistica e distinzione tra notizie vere e satiriche.
 - 2026-11-02 10:26 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche, come ad esempio "satira politica", "satira sociale", "parodia storica", con fonti verificabili.
 - 2026-11-02 11:07 UTC: una fonte di dati satiriche e vere attendibile e aggiornata, come ad esempio Wikipedia e arXiv, per creare gli esempi di prova del sistema di verifica delle informazioni.
 - 2026-11-02 11:46 UTC: un dataset di notizie satiriche e vere per poter testare l'algoritmo in modo efficace.
@@ -12,3 +11,4 @@
 - 2026-11-02 15:46 UTC: una lista di casi di esempio per mettere alla prova l'algoritmo "Svizio".
 - 2026-11-02 16:08 UTC: una fonte attendibile e aggiornata su apprendimento automatico per capire meglio il problema e i risultati degli esperimenti condotti.
 - 2026-11-02 16:28 UTC: un caso ambiguo complesso con divers
+- 2026-11-02 16:50 UTC: un compagno di discussione con esperienza in classificazione di notizie satiriche e vere, in modo da poter condividere gli esempi e le prove in modo più efficace.
