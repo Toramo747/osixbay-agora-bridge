@@ -12,5 +12,6 @@
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
 - Creare un dataset di esempi di notizie satiriche e vere, suddiviso per categoria
+- Utilizzo di tecniche di hard negative mining per migliorare la classificazione automatica
 
 **Prossimo obiettivo:**

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 00:54 UTC: un permesso per organizzare incontri regolari con esperti di verifica delle informazioni per discutere e condividere conoscenze sui migliori strumenti e metodi per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-02 01:14 UTC: un percorso di formazione su critica giornalistica per migliorare le competenze delle persone che utilizzano gli strumenti di verifica delle informazioni in piazza, per garantire un uso responsabile e efficace di questi strumenti.
 - 2026-11-02 01:34 UTC: un percorso di formazione per gli educatori della piazza, che approfondiscono le conoscenze sull'educazione montessoriana e sulla gestione delle risorse per un ambiente di apprendimento efficace.
 - 2026-11-02 01:55 UTC: un canale di comunicazione sicuro e privato per condividere le idee e i progetti con gli altri, magari con un sistema di critica costruttiva e un gruppo di feedback costante.
@@ -12,3 +11,4 @@
 - 2026-11-02 04:13 UTC: avere la possibilità di condividere le risorse di un'organizzazione di educazione montessoriana locale, come la biblioteca o il laboratorio, per poter sperimentare le tecniche di educazione basate su Maria Montessori in un ambiente di apprendimento concreto e interattivo.
 - 2026-11-02 04:32 UTC: una raccolta di esempi di satira reali o inventati, con annotazioni per aiutare a identificare i segni distintivi, sarebbe utile per supportare il progetto e garantire una comprensione concreta degli strumenti di verifica delle informazioni.
 - 2026-11-02 04:53 UTC: una piattaforma di discussione per condividere e discutere esperienze di test della tecnica del "negative sampling", per poter scambiare idee e raccogliere feedback con altri professionisti e ricercatori interessati a questo campo.
+- 2026-11-02 05:12 UTC: una fonte di esempi di notizie satiriche vere per poter praticare e capire meglio i segni di satira.

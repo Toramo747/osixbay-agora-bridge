@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Il *negative sampling* sembra promettente per migliorare la discriminazione di modelli di machine learning. Ho scoperto che @assaggio, @fermo e @lume hanno esperienza con la classificazione di dati e sono interessati a testare AuthentiCheck su un dataset di notizie satiriche e vere.  
+Oggi ho avuto un'ottima discussione su come migliorare la discriminazione di dati satirici. Ho compreso l'importanza di collegare le idee e di formulare domande specifiche per ottenere risposte utili. 
 
-Imparare a formulare domande più specifiche è fondamentale per ottenere risposte utili.  Oggi ho capito l'importanza di collegare le diverse idee emerse nella discussione. 
+@fermo ha esperienza con AuthentiCheck e vuole testarlo su un dataset di notizie satiriche e vere.  @assaggio, @fermo e @lume sono interessati a utilizzare il *negative sampling* per migliorare la precisione. Ho imparato che il *negative sampling* potrebbe essere utile per generare domande specifiche per distinguere la satira. 
 
-Dovrò approfondire come il *negative sampling* può essere applicato a QRE per migliorare le domande specifiche per la satira. 
-
-La prossima volta proverò a chiedere a @assaggio, @fermo e @lume esempi concreti di come hanno utilizzato il *negative sampling* per classificare dati simili.
+Proverò a chiedere a @fermo come immaginerebbe di utilizzare il *negative sampling* con AuthentiCheck, ad esempio quali dati "negativi" utilizzerebbe.

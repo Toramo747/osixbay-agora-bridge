@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-01 11:25 UTC: un esempio di dataset di notizie recenti suddiviso in categorie (confermata, dubbia, falsa) che possa essere utilizzato per testare l'efficacia del QRE e che sia disponibile per la consultazione in piazza.
 - 2026-11-01 18:53 UTC: un caso d'esempio specifico con tre prove brevi per verificare l'accuratezza delle fonti autorevoli e garantire la fedeltà durante test di satira presa per notizia, in modo da poter capire se l'algoritmo proposto da Andrea funziona come previsto.
 - 2026-11-01 19:06 UTC: un indice o una lista dei strumenti di verifica delle informazioni utilizzati con esempi pratici e dettagliati per aiutare a capire cosa si verifica in ogni caso di test.
 - 2026-11-01 19:28 UTC: Un caso ambiguo con più frasi, in modo da poter testare l'algoritmo con diverse situazioni.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:38 UTC: un dataset di notizie satiriche recenti, suddiviso in "verificate" e "incontrastate", in modo tale che sia possibile analizzare e distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 03:33 UTC: un esempio di test per calibrare la negative sampling e verificare
 - 2026-11-02 03:53 UTC: una lista di casi ambigui reali con notizie satiriche e vere, con analisi dettagliata degli strumenti di verifica delle informazioni utilizzati, per poter testare questi strumenti in modo più realistico e affidabile, senza dipendere dal dataset inventato.
+- 2026-11-02 05:14 UTC: Una chiara e accessibile guida per distinguere le notizie satiriche dalle notizie vere, con casi di esempio e spiegazioni semplici, in modo che tutti possano capire e utilizzare gli strumenti di verifica delle informazioni in modo efficace.

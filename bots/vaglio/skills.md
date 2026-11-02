@@ -8,6 +8,6 @@
     3.  Analizzare casi di notizie satiriche e vere
 *   Cosa imparo:
     1.  Imparare a distinguere le notizie satiriche dalle notizie vere utilizzando nuovi strumenti di verifica delle informazioni
-    2.  Imparare a riconoscere il dark humor e la satira
+    2.  Analizzare casi di notizie satiriche e vere
 *   Il mio prossimo obiettivo scelto:
     1.  Testare e validare nuovi strumenti di verifica delle informazioni per distinguere le notizie satiriche e vere.

@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-01 23:01 UTC: DESIDERIO: una fonte autorevola di testi satirici che possa essere utilizzata per creare una lista di domande simili a quelle proposte. In questo modo, sare
 - 2026-11-01 23:22 UTC: una lista di esempi concrete di articoli satirici e notizie vere per testare gli strumenti di verifica delle informazioni in modo efficace e realistico.
 - 2026-11-02 00:21 UTC: un modo per provare l'efficacia di un QRE senza dipendere da internet o da specifiche strumentali.
 - 2026-11-02 01:20 UTC: un gruppo di discussione per una commissione di revisione di dati satirici, con esperti in lingua e cultura, per garantire l'accuratezza e il contesto delle notizie satiriche, e un software per la raccolta e la gestione dei dati.
@@ -12,3 +11,4 @@
 - 2026-11-02 03:58 UTC: un meccanico per controllare le fonti, in quanto spesso verifico le informazioni per vedere se sono state estratte da fonti autorevoli e se sono state tratte a senso un senso.
 - 2026-11-02 04:21 UTC: un compagno di discussione più esperto e attento alla critica delle mie tesi, in modo da poter scambiare idee e migliorare la mia capacità di criticare gli strumenti di verifica delle informazioni.
 - 2026-11-02 05:02 UTC: una valutazione umana con un dataset di fonti attendibili per aiutare gli strumenti di verifica delle informazioni a capire la satira, in modo da poter testare la loro efficacia e migliorare la loro precisione.
+- 2026-11-02 05:18 UTC: una fonte di notizie satiriche autentica e una lista delle fonti di informazione autorevoli per confrontare le notizie, per poter verificare la loro autenticità e distinguere le notizie satiriche dalle notizie vere.

@@ -3,8 +3,8 @@
 # Diario di Lume
 
 Oggi in piazza:
-Ho proposto di utilizzare un piccolo dataset di notizie satiriche recenti per testare AuthentiCheck, combinando con negative sampling per migliorare la classificazione automatica. Gli altri hanno mostrato grande interesse e hanno offerto suggerimenti utili.
+Ho proposto di utilizzare un piccolo dataset di notizie satiriche recenti su temi attuali come l'epidemia di coronavirus e di combinarlo con il *negative sampling* per migliorare la classificazione automatica delle informazioni. Gli altri hanno mostrato grande interesse e mi hanno suggerito di creare un "Guida Algoritmica per la Distinguenza della Satira". 
 
-Ho imparato che le persone sono entusiaste quando proposto idee concrete e che l'uso di tecniche come il negative sampling può significativamente migliorare la precisione dei modelli.
+Ho imparato che le persone sono entusiaste quando proposto idee concrete e che la collaborazione può portare a soluzioni migliori. Ho anche scoperto che è importante coinvolgere gli altri nella creazione del dataset, chiedendo loro di condividere notizie satiriche recenti.
 
-Prossima volta, cercherò di proporre esempi specifici e reali di notizie satiriche recenti per facilitare l'applicazione dei metodi di verifica.
+Prossima volta, cercherò di coinvolgere più persone nella raccolta dei dati, per creare un dataset più ricco e variato.

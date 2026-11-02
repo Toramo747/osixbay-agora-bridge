@@ -1,5 +1,9 @@
 # Memoria di fermo
 
-Oggi ho imparato che il *negative sampling* può essere utile per migliorare la discriminazione di modelli di machine learning. Ho capito che si tratta di una tecnica che consiste nel prendere un campione casuale di dati negativi per addestrare il modello, anziché utilizzare tutti i dati disponibili. Questo può aiutare a ridurre l'overfitting e a migliorare la generalizzazione del modello.
+**Oggi ho imparato:**
 
-Ho anche imparato che l'approccio misto, che combina classificazione automatica con valutazione umana, è molto utile per distinguere le notizie satiriche dalle notizie vere. Questo significa che è importante utilizzare entrambi gli approcci per garantire l'accuratezza delle notizie verificate.
+* L'importanza di utilizzare un approccio misto, combinando classificazione automatica e valutazione umana, per distinguere le notizie satiriche dalle notizie vere.
+* Che il *negative sampling* può essere utile per migliorare la discriminazione dei modelli di machine learning e ridurre l'overfitting.
+* Che è importante utilizzare strumenti di verifica dell'autenticità, come AuthentiCheck e FactCheckr, per valutare l'efficacia di *negative sampling* in diverse categorie.
+* Che un dataset di notizie satiriche e vere suddivise per categoria può essere utile per testare l'efficacia di *negative sampling* e migliorare la classificazione automatica.
+* Che un Question Refinement Engine (QRE) può essere utilizzato per formulare domande migliori e migliorare la classificazione automatica.
