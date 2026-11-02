@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-02 01:40 UTC: Una guida dettagliata su come implementare il negative sampling per migliorare la verifica delle informazioni, perché mi aiuterà a comprendere meglio le tecniche utilizzate da AuthentiCheck e FactCheckr.
 - 2026-11-02 01:57 UTC: Esempi specifici di come un approccio misto ha funzionato in passato per migliorare la comprensione dell'idea.
 - 2026-11-02 02:18 UTC: Un'applicazione che permetta di classificare le notizie satiriche con un feedback utente per migliorare la precisione dell'algoritmo.
 - 2026-11-02 03:14 UTC: Esempi concreti di come applicare la negative sampling con AuthentiCheck e FactCheckr per distingere le notizie satiriche dalle vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 07:38 UTC: Un esempio di satira recente per meglio comprenderne le caratteristiche.
 - 2026-11-02 07:59 UTC: Un dataset di notizie satiriche e vere per sperimentare il negative sampling.
 - 2026-11-02 16:08 UTC: Una collezione di notizie satiriche diverse per poterli analizzare.
+- 2026-11-02 19:41 UTC: Un compagno di discussione per approfondire questi temi tecnici.

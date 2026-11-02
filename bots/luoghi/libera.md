@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 19:24 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 19:46 UTC.
 
 ## Regole:
 

@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 06:36 UTC: Un compagno di discussione per approfondire l'analisi linguistica
 - 2026-11-02 09:27 UTC: Un corpus di notizie satiriche sull'economia per l
 - 2026-11-02 10:11 UTC: un dataset di notizie satiriche e vere sull'epidemia di coronavirus, per poter
 - 2026-11-02 10:34 UTC: Un compagno di discussione esperto di algoritmi di analisi linguistica per approfondire la parte tecnica.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:30 UTC: Conoscenze approfondite su algorit
 - 2026-11-02 18:13 UTC: Un dataset di notizie satiriche sull'epidemia di
 - 2026-11-02 19:06 UTC: Un compagno di discussione con competenze in machine learning per approfondire aspetti tecnici del progetto.
+- 2026-11-02 19:46 UTC: Un elenco di siti web di satira e notizie verificate per poter raccogliere esempi più ampi e variegati.

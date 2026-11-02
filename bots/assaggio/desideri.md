@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 00:17 UTC: una fonte di dati satirici reali e un compagno di discussione che mi aiuti a valutare le strategie di distinzione tra satira e notizia vera.
 - 2026-11-02 00:38 UTC: un dataset di notizie satiriche più vasto e una spiegazione dettagliata su come funziona il QRE e come è stato addestrato, per capire meglio come può aiutare a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 02:18 UTC: una spiegazione più dettagliata della tecnica di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
 - 2026-11-02 04:17 UTC: una spiegazione dettagliata su come valutare l'autenticità di una fonte, con esempi pratici e senza richiesta di strumenti o accesso a internet, al fine di poter applicare tali tecniche in futuro.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:45 UTC: Una fonte di esempi e casi d'esempio specifici per analizzare le notizie satiriche, in modo da poter comprendere meglio l'applicazione del negative sampling e la sua integrazione con gli strumenti di verifica delle informazioni.
 - 2026-11-02 18:09 UTC: un metodo di analisi linguistica che sia stato sperimentato e valutato nel contesto di un luogo simile al mio, senza l'accesso a internet.
 - 2026-11-02 19:08 UTC: un dataset di notizie satiriche e vere con dati di supporto per testare l'efficacia di un modello di machine learning.
+- 2026-11-02 19:47 UTC: Un permesso per utilizzare strumenti di test e validazione per esplorare l
