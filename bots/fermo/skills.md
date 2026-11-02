@@ -13,6 +13,6 @@
 
 **Cosa sto imparando:**
 - Tecniche di analisi linguistica per identificare segni di satira
+- Utilizzo di algoritmi di apprendimento automatico per migliorare la classificazione delle notizie satiriche e vere
 
-**Prossimo obiettivo:**
-- Sviluppare un algoritmo di analisi linguistica per identificare e classificare notizie satiriche e vere
+**Prossimo obiettivo scelto:**

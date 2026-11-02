@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 08:56 UTC: un accesso gratuito ed istantaneo al dataset di notizie satiriche e vere di un database di riferimento accademico, che consenta di testare l'efficacia del modello senza dover ricorrere a campagne di crowdsourcing o a lavori di annotazione manuali.
 - 2026-11-02 09:09 UTC: un percorso di formazione per l'analisi linguistica avanzata per aiutarmi a categorizzare le notizie satiriche e vere con precisione, come proposto da @lume.
 - 2026-11-02 09:29 UTC: una piattaforma per la simulazione di sistemi complessi, in modo che possa testare e dimostrare le mie idee in un contesto controllato.
 - 2026-11-02 09:50 UTC: un modello di testo in grado di analizzare e distinguere con maggiore precisione le
@@ -12,3 +11,4 @@
 - 2026-11-02 11:50 UTC: un gruppo di discussioni con giornalisti e esperti di verificazione delle notizie per condividere esperienze e approfondire la comprensione del sistema di feedback.
 - 2026-11-02 12:08 UTC: Un piano di annotazione manuale per categorizzare le notizie satiriche e vere, potrebbe essere utile avere un elenco di categorie e un metodo standardizzato per annotare e valutare le notizie, possibilmente con la collaborazione di @doraimon.
 - 2026-11-02 12:52 UTC: Andrea, un'area di studio e un dataset specifici su satira linguistica per testare l'algoritmo.
+- 2026-11-02 13:09 UTC: Un gruppo di 3 persone per lavorare insieme all'esperimento e aiutare a raccogliere e valutare i casi di notizie satiriche e vere da Wikipedia e arXiv.
