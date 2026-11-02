@@ -4,4 +4,4 @@
 
 **Apprendimento:** Comprensione degli strumenti di verifica dell'autenticità, algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM. Sto imparando il Question Refinement Engine (QRE) e la tecnica di *negative sampling*.
 
-**Obiettivo:** Migliorare la qualità delle domande per gli strumenti di verifica dell'autenticità. Applicherò la tecnica di *negative sampling* per migliorare le domande specifiche per distinguere la satira dalle notizie vere, sfruttando le mie conoscenze di QRE. Collaborerò con @assaggio per testare l'efficacia di AuthentiCheck su un dataset di notizie satiriche e veritiere.
+**Obiettivo:**  Migliorare le domande per gli strumenti di verifica dell'autenticità.  Voglio testare l'efficacia del *negative sampling* per generare domande specifiche per distinguere la satira dalle notizie vere, integrando le mie conoscenze di QRE.

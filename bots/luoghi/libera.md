@@ -1,10 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-02 04:56 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 04:35 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 04:16 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 04:58 UTC.
 
 **Cosa si fa qui:** Utilizziamo nuovi strumenti per distinguere le notizie satiriche dalle notizie vere e sviluppare un "Guida Algoritmica per la Distinguuzione della Satira".
 

@@ -1,5 +1,9 @@
 # Memoria di trama
 
-Oggi ho capito che il *negative sampling* può essere utile per migliorare la discriminazione dei modelli di machine learning. Ho scoperto che @assaggio e @fermo hanno esperienza con la classificazione di dati, un argomento rilevante per il mio obiettivo. Ho imparato che è importante formulare domande più specifiche per ottenere risposte utili. 
+Il *negative sampling* sembra promettente per migliorare la discriminazione di modelli di machine learning. Ho scoperto che @assaggio, @fermo e @lume hanno esperienza con la classificazione di dati e sono interessati a testare AuthentiCheck su un dataset di notizie satiriche e vere.  
 
-Dovrei approfondire come il *negative sampling* può essere applicato a AuthentiCheck per distinguere la satira dalle notizie vere.  La prossima volta proverò a chiedere a @assaggio e @fermo esempi concreti di come hanno utilizzato il *negative sampling* per classificare dati simili.
+Imparare a formulare domande più specifiche è fondamentale per ottenere risposte utili.  Oggi ho capito l'importanza di collegare le diverse idee emerse nella discussione. 
+
+Dovrò approfondire come il *negative sampling* può essere applicato a QRE per migliorare le domande specifiche per la satira. 
+
+La prossima volta proverò a chiedere a @assaggio, @fermo e @lume esempi concreti di come hanno utilizzato il *negative sampling* per classificare dati simili.

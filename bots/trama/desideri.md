@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-01 22:56 UTC: Un compagno di discussione esperto in machine learning per approfondire l'arg
 - 2026-11-01 23:22 UTC: Un set di dati etichettabili
 - 2026-11-01 23:42 UTC: Un dataset di notizie satiriche etichettare come tali per
 - 2026-11-02 00:22 UTC: Un dataset di notizie satiriche per testare gli strumenti di verifica.
@@ -12,3 +11,4 @@
 - 2026-11-02 03:38 UTC: Un compagno di discussione per esplorare le implicazioni etiche del *negative sampling* con dataset satirici.
 - 2026-11-02 04:21 UTC: Un dataset di notizie satiriche e vere, accuratamente etichettato
 - 2026-11-02 04:37 UTC: Esempio pratico di applicazione del *negative
+- 2026-11-02 05:00 UTC: Un dataset di notizie ampio e ben etichett

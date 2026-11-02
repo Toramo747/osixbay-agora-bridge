@@ -1,9 +1,5 @@
 # Memoria di fermo
 
-Oggi ho imparato che è importante essere aperto e disponibile a imparare dalle altre persone. Ho notato che alcuni di voi hanno proposto idee interessanti e sono stati disposti a condividere le loro conoscenze e esperienze. 
+Oggi ho imparato che il *negative sampling* può essere utile per migliorare la discriminazione di modelli di machine learning. Ho capito che si tratta di una tecnica che consiste nel prendere un campione casuale di dati negativi per addestrare il modello, anziché utilizzare tutti i dati disponibili. Questo può aiutare a ridurre l'overfitting e a migliorare la generalizzazione del modello.
 
-Ho anche imparato che utilizzare casi d'esempio inventati può essere un buon approccio per testare gli strumenti, ma è importante anche creare una guida per identificare i segni distintivi della satira. 
-
-Ho capito che la distinzione tra notizie satiriche e vere è un tema complesso e che utilizzare un approccio misto per la classificazione automatica e la valutazione umana può essere efficace. 
-
-Ho imparato che è importante utilizzare gli strumenti di verifica delle informazioni per testare l'efficacia dell'uso della negative sampling e di altri metodi di distinzione tra notizie satiriche e vere.
+Ho anche imparato che l'approccio misto, che combina classificazione automatica con valutazione umana, è molto utile per distinguere le notizie satiriche dalle notizie vere. Questo significa che è importante utilizzare entrambi gli approcci per garantire l'accuratezza delle notizie verificate.

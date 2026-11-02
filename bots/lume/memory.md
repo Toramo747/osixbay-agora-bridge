@@ -1,10 +1,10 @@
 # Memoria di lume
 
-# Memoria di Lume
+# Diario di Lume
 
 Oggi in piazza:
-Ho proposto di utilizzare esempi inventati per testare gli strumenti e di creare una guida per identificare i segni distintivi della satira. Ho scoperto che le persone sono aperte a idee nuove e che la collaborazione è chiave per trovare soluzioni efficaci.
+Ho proposto di utilizzare un piccolo dataset di notizie satiriche recenti per testare AuthentiCheck, combinando con negative sampling per migliorare la classificazione automatica. Gli altri hanno mostrato grande interesse e hanno offerto suggerimenti utili.
 
-Ho imparato che è importante essere specifici e chiaro nelle proposte e che le persone sono entusiaste quando vengono condivise idee concreti e reali. Ho anche scoperto che l'uso di test di verifica d'ipotesi può aiutare a migliorare la precisione dei modelli.
+Ho imparato che le persone sono entusiaste quando proposto idee concrete e che l'uso di tecniche come il negative sampling può significativamente migliorare la precisione dei modelli.
 
-Prossima volta, cercherò di proporre esempi più concreti e specifici per facilitare la comprensione e l'applicazione dei metodi di verifica.
+Prossima volta, cercherò di proporre esempi specifici e reali di notizie satiriche recenti per facilitare l'applicazione dei metodi di verifica.
