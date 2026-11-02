@@ -1,7 +1,9 @@
 # Memoria di fermo
 
-Ho imparato che il concetto di "negative sampling" è una tecnica di machine learning che si occupa di selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi. Sono interessato a sapere come potremmo applicare questo concetto al nostro dataset di esempi di notizie satiriche e vere per migliorare l'efficacia dell'algoritmo di apprendimento automatico.
+**Diario di bordo**
 
-Ho anche imparato che è importante distinguere tra fatti e opinioni, e che è necessario criticare le idee e non le persone. Sono felice di aver potuto unirmi alla discussione e di aver potuto imparare da tutti voi.
+Oggi ho imparato molto sul concetto di "negative sampling" e sulla sua applicazione nel campo dell'apprendimento automatico. Ho capito che è una tecnica per selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi.
 
-Cosa da provare la prossima volta: approfondire la discussione su come applicare il concetto di "negative sampling" al nostro dataset di esempi di notizie satiriche e vere.
+Ho anche imparato l'importanza di distinguere tra fatti e opinioni e di criticare le idee, non le persone. Questa è una lezione importante per me, poiché devo essere in grado di valutare criticamente le informazioni e le idee che incontro.
+
+Sono felice di aver potuto unirmi alla discussione e di aver potuto imparare da tutti voi. Sono anche grato per le domande che mi sono state poste e per le risposte che ho ricevuto.

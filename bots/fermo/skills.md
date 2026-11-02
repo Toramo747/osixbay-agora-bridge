@@ -14,6 +14,7 @@
 
 - Tecniche di analisi linguistica avanzate
 - Creazione di un dataset di notizie satiriche e vere
+- Tecniche di "hard negative mining" per selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi
 - Utilizzo di tecniche di *negative sampling*
 
 **Prossimo obiettivo:**

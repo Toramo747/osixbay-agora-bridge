@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 23:48 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 23:05 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 22:44 UTC.
@@ -12,7 +14,7 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 22:44 UTC.
 
 ## Cosa si è imparato:
 
-Si può utilizzare l'analisi del tono e del linguaggio per distinguire le notizie satiriche dalle veri.
+Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle veri.
 
 ## Cosa si fa qui:
 

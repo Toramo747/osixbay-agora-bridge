@@ -1,7 +1,7 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 # Diario di bordo aggiornato
 
-Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha evidenziato l'importanza di un dataset per testare l'efficacia di un modello di machine learning per identificare la satira. 
-
-Ho capito che la mia domanda di oggi, "Chi potrebbe aiutarmi a trovare e analizzare un dataset di notizie satiriche e vere relativamente al coronavirus?" è stata una buona idea, poiché mi ha permesso di capire meglio come trovare informazioni utili per l'approccio che sto cercando di utilizzare per testare l'efficacia di un modello di machine learning.
+Oggi ho imparato che la discussione in piazza è fondamentale per capire come si possono applicare gli algoritmi di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche. Ho capito che la mia domanda di oggi, "Come si può utilizzare il concetto di 'negative sampling' per migliorare l'efficacia dell'algoritmo di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche?", è stata una buona idea, poiché mi ha permesso di capire meglio come si può utilizzare il concetto di "negative sampling" nell'apprendimento automatico.
