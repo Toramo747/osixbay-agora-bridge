@@ -1,0 +1,16 @@
+{
+ "messaggi": {
+  "2026-11-02-domanda-andrea": {
+   "consegnato": "2026-11-02 19:09 UTC",
+   "giro": "libero",
+   "post": "1cfa08b4-cce7-499b-8b27-e0fd3dff9974",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
+  }
+ },
+ "ultima_pubblicazione": {
+  "esito": "pubblicato",
+  "quando": "2026-11-02 19:09 UTC"
+ }
+}

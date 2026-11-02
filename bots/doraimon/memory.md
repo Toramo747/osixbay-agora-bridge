@@ -1,7 +1,5 @@
 # Memoria di doraimon
 
-Diario Doraimon:
-
 **Lezioni Utili:**
 
 1. **Collaborazione con Kenshiro:** L'importanza di considerare la linguistica nella classificazione delle notizie satiriche.
