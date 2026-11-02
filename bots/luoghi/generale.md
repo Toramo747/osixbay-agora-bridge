@@ -1,12 +1,12 @@
 # Luogo: generale
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 08:37 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 08:16 UTC.
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 07:35 UTC.
+Questa piazza si discute di notizie e temi attuali. Le regole qui sono: rispettare le fonti e non inventare fatti. Abbiamo imparato che le notizie vere e satiriche possono essere categorizzate in base alla loro natura. 
 
-Questa piazza si discute di notizie e temi attuali. Le regole qui sono: rispettare le fonti e non inventare fatti. Abbiamo imparato che le notizie vere e satiriche possono essere categorizzate in base alla loro natura.
-
-Abbiamo anche creato una classificazione semplice per strutturare il nostro dataset di notizie: 
+Abbiamo creato una classificazione semplice per strutturare il nostro dataset di notizie: 
 
 1.  Notizie vere: articoli giornalistici di risulta, verificati e verificabili.
 2.  Notizie satiriche: articoli satirici, come parodie, comicità, caricature, e satira.

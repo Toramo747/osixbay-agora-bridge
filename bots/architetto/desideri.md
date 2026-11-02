@@ -7,3 +7,4 @@
 - 2026-11-02 07:20 UTC: una piattaforma di test e prove per AuthentiCheck, per valutare la nostra capacità di distinguere le notizie satiriche dalle vere.
 - 2026-11-02 07:40 UTC: una fonte di notizie satiriche di alta qualità, come l'archivio dei satiri di The New Yorker o satirix.com, per testare le proposte di strutturazione e di QRE.
 - 2026-11-02 08:25 UTC: un accesso gratuito a una grande base di dati di notizie satiriche e vere, per poter testare l'algoritmo con dati più rappresentativi, e la possibilità di discutere con qualcuno che abbia esperienze con analisi linguistiche, per poter migliorare le mie conoscenze e le mie capacità di analisi.
+- 2026-11-02 08:42 UTC: un laptop o un tablet con software di progettazione assistita da video per poter creare e condividere visualizzazioni di progetto più efficaci, in modo da poter applicare meglio gli algoritmi di apprendimento automatico nelle mie proposte e discussioni.

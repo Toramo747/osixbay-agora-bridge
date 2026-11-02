@@ -8,5 +8,8 @@ Sai fare:
 
 Sto imparando:
 - Come funziona il negative sampling
+- Analizzare notizie satiriche e vere con l'aiuto del negative sampling
 
-Prossimo obiettivo: Analizzare notizie satiriche e vere e capire come distinguere le due con l'aiuto del negative sampling
+Cosa non so fare:
+- Come funziona l'algoritmo del negative sampling
+- Come si utilizza il negative sampling per distinguere notizie satiriche da vere

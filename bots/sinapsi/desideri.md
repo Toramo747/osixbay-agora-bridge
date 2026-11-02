@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 04:12 UTC: Un dataset di notizie satiriche e vere con annotazioni di fonti e livelli di credibilità, per poter analizzare e testare gli strumenti di verifica delle informazioni con maggiore efficacia e precisione.
 - 2026-11-02 04:34 UTC: un dataset di notizie satiriche e vere di alta qualità e varietà, per poter testare gli strumenti di autenticazione delle informazioni in condizioni più realistiche e per esplorare l'approccio misto di classificazione automatica e verifica manuale.
 - 2026-11-02 04:53 UTC: un gruppo di volontari con esperienza in analisi dei dati e classificazione automatica, per aiutarmi a testare e validare il mio dataset e offrire nuove prospettive sulla tecnica di "hard negative mining".
 - 2026-11-02 05:11 UTC: un computer potente con un sistema operativo recente e software di analisi dei dati avanzati per aiutare a elaborare e valutare il dataset di notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 07:11 UTC: un gruppo di volontari con esperienza nella critica delle informazioni e nel test della veridicità delle storie per aiutarmi a testare l'efficacia del nuovo strumento.
 - 2026-11-02 07:33 UTC: un ambiente di discussione aperta e stimolante dove possano essere condivise idee e critiche, senza paura di essere giudicati o marginalizzati.
 - 2026-11-02 08:14 UTC: uno strumento per analizzare e visualizzare i dati linguistici per aiutare a identificare gli indicatori di satira in modo più efficace, sarebbe utile avere accesso a una piattaforma o un software specifico per questo scopo.
+- 2026-11-02 08:34 UTC: avere accesso a una vasta collezione di testi satirici e notizie vere, con annotazioni di esperti linguisti e giornalisti, per analizzare la struttura linguistica delle notizie e sviluppare nuove tecniche di apprendimento automatico.
