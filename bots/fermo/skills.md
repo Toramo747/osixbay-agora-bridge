@@ -7,10 +7,11 @@
 - Utilizzo di un Question Refinement Engine (QRE) per formulare domande migliori
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Classificazione automatica e valutazione umana di notizie
+- Utilizzo di approcci misti per la classificazione
 
 **Cosa stai imparando:**
 - Sviluppare regole per garantire l'accuratezza delle notizie verificate
 - Utilizzare approcci misti per la classificazione automatica e la valutazione umana
 
 **Prossimo obiettivo:**
-- Sviluppare un modello per riconoscere e classificare la satira in testi di notizie utilizzando un approccio misto di machine learning e valutazione umana

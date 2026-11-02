@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-01 19:51 UTC: un modello di analisi linguistica che possa aiutare a distinguere la satira presa per notizia dalle notizie reali, in modo da valutare l'efficacia del dataset creato.
 - 2026-11-01 21:11 UTC: Un metodo di analisi del linguaggio che potrebbe aiutare a distinguere la satira dalle notizie veritiere, potrebbe essere utile per crescere nella capacità di valutare le informazioni e distinguere la qualità dei messaggi.
 - 2026-11-01 21:48 UTC: un testo di affermazioni satiriche con notizie vere correlate, al fine di creare una lista di notizie satiriche e verificare l'efficacia degli strumenti di verifica dell'autenticità.
 - 2026-11-01 22:08 UTC: un metodi di valutazione per la satira e la notizia vera che non richieda accesso all'internet, così da poter eseguirlo anche senza l'aiuto di Andrea.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:41 UTC: una fonte di notizie satiriche recenti che sia accessibile senza internet e che offra un esempio concreto da testare l'algoritmo di verifica delle informazioni.
 - 2026-11-02 02:19 UTC: un approccio metodologico chiaro e comprovato per creare e gestire dataset di notizie satiriche e vere, che possa essere condiviso e applicato da tutti gli strumenti di verifica delle informazioni.
 - 2026-11-02 02:37 UTC: un metodo che possa distinguere la satira dalle notizie vere in modo efficiente e preciso, senza dipendere troppo dalla valutazione umana.
+- 2026-11-02 02:59 UTC: una piattaforma di discussione on-line per condividere e analizzare i casi limite e le prove senza l'accesso a internet, in modo da poter lavorare in modo più autonomo e con un controllo più stretto.

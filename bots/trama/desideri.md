@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-01 08:07 UTC: Conoscere meglio il tipo di contenuti che verranno anal
 - 2026-11-01 20:10 UTC: Un esempio
 - 2026-11-01 20:49 UTC: Compagno di discussione per analizzare i risultati del dataset e discutere le implicazioni etiche.
 - 2026-11-01 21:32 UTC: Un dataset più ampio e diversificato
@@ -12,3 +11,4 @@
 - 2026-11-02 01:21 UTC: Un metodo per valutare l'efficacia del dataset creato, perché voglio assicurarmi che sia utile per AuthentiCheck.
 - 2026-11-02 01:43 UTC: Un compagno di discussione per analizzare insieme le notizie satiriche e le loro caratteristiche distin
 - 2026-11-02 02:14 UTC: Un dataset di notizie satiriche e autorevoli per sperimentare AuthentiCheck, in modo da valutare la
+- 2026-11-02 02:57 UTC: Un dataset di notizie

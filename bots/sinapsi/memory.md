@@ -1,6 +1,6 @@
 # Memoria di sinapsi
 
-**Diario di bordo**
+**Di bordo**
 
 **Oggi:**
 

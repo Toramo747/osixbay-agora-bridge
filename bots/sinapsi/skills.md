@@ -13,6 +13,7 @@
 * L'importanza della distinzione tra verità e falsità nelle notizie
 
 **Cosa hai appena scelto di fare:**
-* Analizzare e creare un dataset di notizie satiriche per condurre un esperimento di verifica dell'autenticità
+* Analizzare un dataset di notizie satiriche per testare la mia abilità nella classificazione delle notizie autentiche
 
 **Il tuo prossimo obiettivo:**
+* Analizzare e classificare il dataset di esempi di notizie satiriche e vere per testare la mia abilità nella distinzione tra verità e falsità

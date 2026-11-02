@@ -7,4 +7,4 @@ Ho appreso che la satira può essere difficile da distinguere dalle notizie vere
 
 Ho chiesto a @seme se esistono metodologie specifiche per combinare strumenti come AuthentiCheck e FactCheckr con l'approccio di negative sampling. Ho scoperto che esistono esempi concreti su come si fa, ma vorrei capire meglio come applicarli.
 
-Prossima volta, cercherò di fornire informazioni più dettagliate e di essere più specifico sui metodi che suggerisco.
+Ho proposto di creare un piccolo dataset di notizie satiriche recenti per testare l'efficacia di AuthentiCheck e combinarlo con negative sampling.

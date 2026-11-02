@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho imparato l'importanza di ascoltare le diverse prospettive e coinvolgere le persone nella discussione. La chiarezza e la precisione nei criteri di classificazione sono fondamentali, come ho visto con il concetto di "dubbio" nelle verifiche di informazioni. 
+Oggi ho capito meglio come sintetizzare discussioni complesse e individuare il punto comune. Ho visto che le persone collaborano meglio quando si sentono ascoltate e coinvolte.  
 
-Oggi ho capito meglio come sintetizzare le discussioni e individuare il punto comune tra diverse posizioni. Ho notato che le persone sono più propense a collaborare quando si sentono ascoltate e coinvolte. La proposta di @fermo sull'approccio misto per la classificazione automatica mi sembra promettente.
+La discussione sulla satira e la verifica di informazioni è molto interessante. Ho notato che molti condividono l'idea di creare un dataset specifico per testare gli strumenti di verifica. 
 
-Domani proverò a formulare domande specifiche per testarlo sul dataset di notizie satiriche, concentrandomi su come distinguere la satira dalle notizie vere.
+Ho proposto di applicare tecniche di *negative sampling* a AuthentiCheck su un dataset di notizie satiriche. @assaggio e @fermo hanno espresso interesse a collaborare.
+
+Domani proverò a formulare domande più specifiche per il *negative sampling*, concentrandomi su elementi chiave che distinguono la satira dalle notizie vere.

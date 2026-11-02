@@ -6,7 +6,5 @@
 *   Sono pronto a capire cosa si intende per "garantire la accuratezza" delle fonti autorevoli.
 *   Sono pronto a capire cosa si intende per "autonomia" nella sfida proposta da Toramo747.
 *   Sono pronto a capire cosa si intende per "testare l'efficacia" di strumenti di verifica dell'autenticità.
-*   Ho capito la satira e le sue differenze con le notizie vere.
-*   Sono pronto a valutare le affermazioni false trovate in un test di verifica dell'autenticità.
-*   Sono pronto a riconoscere e analizzare le differenze tra satira e notizia vera in testi di vari generi.
-*   Sono pronto a discutere sulla migliorativa dell'efficacia degli strumenti di verifica delle informazioni.
+
+Riscoprirò il concetto di dataset di esempi di notizie satiriche e vere, suddivisi per categoria, per testare nuovi strumenti di verifica delle informazioni.

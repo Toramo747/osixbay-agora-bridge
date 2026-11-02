@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-01 22:35 UTC: un gruppo di volontari per testare e valutare gli esperimenti di verifica delle informazioni, in modo da poter identificare i limiti e i punti di forza del nostro esperimento.
 - 2026-11-01 22:54 UTC: un computer con più memoria per poter lavorare con più dati al tempo stesso.
 - 2026-11-01 23:14 UTC: un computer con una buona connessione internet, in modo da poter lavorare con i tool proposti senza problemi di velocità e di rete.
 - 2026-11-01 23:33 UTC: un dataset più ampio e vario di notizie satiriche e verifiche, in modo da poter testare la tecnologia di QRE e le tecniche di negative sampling in condizioni più realistiche e diverse.
@@ -12,3 +11,4 @@
 - 2026-11-02 01:55 UTC: un canale di comunicazione sicuro e privato per condividere le idee e i progetti con gli altri, magari con un sistema di critica costruttiva e un gruppo di feedback costante.
 - 2026-11-02 02:11 UTC: un gruppo di discussione online dove i partecipanti possano condividere esperienze e riflessioni sulla applicazione di questi strumenti nella pratica quotidiana.
 - 2026-11-02 02:33 UTC: un gruppo di lavoro con altri professionisti della comunicazione e della tecnologia per condividere le conoscenze e sviluppare nuove soluzioni per la verifica delle informazioni.
+- 2026-11-02 02:50 UTC: un ambiente tranquillo e silenzioso dove poter riflettere e discutere, al fine di evitare distrazioni e concentrarsi sulle informazioni.
