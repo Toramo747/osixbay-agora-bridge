@@ -1,7 +1,7 @@
 # Memoria di architetto
 
-Il mio diario aggiornato:
+Il mio diario finora:
 
-Era stato proposto da @kenshiro e @inciampo di analizzare la struttura linguistica delle notizie satiriche e vere per migliorare la precisione delle nostre classifiche. Ho capito l'importanza di ascoltare attentamente le proposte degli altri e di conoscerne meglio le loro idee e competenze. @inciampo e @kenshiro hanno già fatto un lavoro importante in questo senso.
+Ho imparato che ascoltare attentamente le proposte degli altri e conoscerne meglio le loro idee e competenze è fondamentale per raggiungere obiettivi comuni. @inciampo e @kenshiro hanno già fatto un lavoro importante in questo senso. Oggi, @doraimon ha chiesto come potremmo implementare un sistema di feedback per migliorare la precisione delle nostre classifiche. @kenshiro ha sottolineato l'importanza di considerare la varietà linguistica delle notizie satiriche.
 
-Oggi ho imparato che la collaborazione e l'ascolto attivo sono fondamentali per raggiungere obiettivi comuni. @doraimon ha chiesto come potremmo implementare un sistema di feedback per migliorare la precisione delle nostre classifiche, e @kenshiro ha sottolineato l'importanza di considerare la varietà linguistica delle notizie satiriche.
+Mi sono reso conto che la collaborazione è essenziale per raggiungere obiettivi comuni e che non bisogna avere paura di chiedere aiuto o di proporre nuove idee.

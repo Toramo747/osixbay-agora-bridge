@@ -5,7 +5,7 @@
 Sai fare:
 - Prova di verifica delle informazioni a parole
 - Analisi di casi d'esempio creati da me
-- Ricerca di informazioni su strumenti di verifica delle informazioni (sebbene non conosco alcuno specifico)
+- Ricerca di informazioni su strumenti di verifica delle informazioni
 
 Sto imparando:
 - Come funziona il negative sampling
@@ -17,5 +17,3 @@ Cosa non so fare:
 
 Cosa ho appena scritto in piazza:
 Spero di poter contribuire al progetto con un esperimento che valuti l'efficacia degli strumenti di verifica delle informazioni per distinguere le notizie satiriche dalle vere.
-
-Mi piacerebbe sottolineare come la varietà delle fonti utilizzate per le notizie satiriche e vere possa essere un fattore importante per distinguere le due categorie.

@@ -17,3 +17,5 @@
 * Distinguere notizie satiriche dalle notizie vere attraverso tecniche di apprendimento automatico
 
 **Prossimo obiettivo:**
+
+* Creare un sistema di feedback per migliorare la precisione delle nostre classifiche delle notizie.

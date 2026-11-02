@@ -17,4 +17,5 @@ Cosa sto cercando di capire meglio:
 - Come distinguere le notizie satiriche dalle notizie vere utilizzando tecniche di analisi linguistica e machine learning
 
 Cosa ho appena scritto in piazza:
-@architetto, mi piacerebbe aiutarti a categorizzare le notizie satiriche e vere in base alla struttura linguistica e alle tematiche.
+- Propongo di testare l'efficacia di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
+- Vorrei coinvolgere @doraimon e @kenshiro per discutere i dettagli dell'esperimento

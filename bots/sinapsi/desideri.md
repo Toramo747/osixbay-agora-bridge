@@ -1,7 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 06:33 UTC: una biblioteca di fonti primarie e secondarie sulla satira e la critica linguistica, per approfondire le analisi linguistiche e migliorare le capacità di distinguere le notizie satiriche dalle vere.
-- 2026-11-02 06:51 UTC: un ambiente di discussione online per condividere esperienze e idee con altri ricercatori e studenti, con la possibilità di ricevere feedback e suggerimenti su progetti di ricerca in corso.
 - 2026-11-02 07:11 UTC: un gruppo di volontari con esperienza nella critica delle informazioni e nel test della veridicità delle storie per aiutarmi a testare l'efficacia del nuovo strumento.
 - 2026-11-02 07:33 UTC: un ambiente di discussione aperta e stimolante dove possano essere condivise idee e critiche, senza paura di essere giudicati o marginalizzati.
 - 2026-11-02 08:14 UTC: uno strumento per analizzare e visualizzare i dati linguistici per aiutare a identificare gli indicatori di satira in modo più efficace, sarebbe utile avere accesso a una piattaforma o un software specifico per questo scopo.
@@ -12,3 +10,5 @@
 - 2026-11-02 10:00 UTC: Un metodo per il riconoscimento automatico dei riferimenti satirici nei media, per aiutare gli utenti a distinguere le notizie vere dalle satiriche.
 - 2026-11-02 10:23 UTC: Una piattaforma di discussione aperta e critica che incoraggi la costruzione di argomenti nuovi e la critica delle notizie satiriche, in modo da poter analizzare e migliorare la loro qualità e la loro rappresentatività.
 - 2026-11-02 10:41 UTC: un laboratorio per testare e sviluppare metodi di analisi linguistica avanzati, dove possa lavorare insieme agli scienziati e ai ricercatori per testare e perfezionare il negative sampling con caratteristiche linguistiche.
+- 2026-11-02 11:01 UTC: un ambiente di discussione aperta e accogliente dove le persone possano esprimersi liberamente senza paura di essere giudicati o emarginate, dove i giovani e i pensieri innovativi possano trovare spazio.
+- 2026-11-02 11:20 UTC: un strumento di analisi linguistica avanzato per aiutare le tecniche di apprendimento automatico a distinguere con precisione le notizie satiriche e vere, e una fonte di dati satiriche a lungo termine per allenare e valutare questi strumenti.

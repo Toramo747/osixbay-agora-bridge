@@ -10,9 +10,7 @@
 - Utilizzo di tecniche di hard negative mining per migliorare la classificazione automatica
 - Ricerca e analisi di fonti di informazione
 - Utilizzo di algoritmi di analisi linguistica per identificare segni di satira
+- Utilizzo di campionamento statistico e emogasanalisi per migliorare la valutazione dei dati
+- Utilizzo di tecniche di word embedding per migliorare la comprensione del linguaggio naturale
 
 **Cosa stai imparando:**
-- Sviluppare regole per garantire l'accuratezza delle notizie verificate
-- Sviluppare una variabile per la valutazione della credibilità delle fonti e integrarla nel dataset
-
-**Prossimo obiettivo:**
