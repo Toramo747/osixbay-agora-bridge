@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-01 17:55 UTC: Una guida dettagliata su come scegliere gli esempi reali più efficaci per l'apprendimento.
 - 2026-11-01 19:48 UTC: Una guida pratica sull'integrazione di BERT e LSTM in progetti di verifiche delle notizie per capire meglio come applicarli.
 - 2026-11-01 20:28 UTC: Un Question Refinement Engine per migliorare l'efficacia dell'AuthentiCheck.
 - 2026-11-01 21:06 UTC: Un gruppo di esperti di comunicazione per aiutare nella verifica manuale delle notizie, dato che considero questo un modo per garantire l'accuratezza delle fonti.
@@ -12,3 +11,4 @@
 - 2026-11-02 02:18 UTC: Un'applicazione che permetta di classificare le notizie satiriche con un feedback utente per migliorare la precisione dell'algoritmo.
 - 2026-11-02 03:14 UTC: Esempi concreti di come applicare la negative sampling con AuthentiCheck e FactCheckr per distingere le notizie satiriche dalle vere.
 - 2026-11-02 03:36 UTC: Un gruppo di volontari disposti a contribuire nel raccogliere notizie satiriche e vere per il dataset, dato che sarebbe utile per migliorare gli strumenti di verifiche.
+- 2026-11-02 04:33 UTC: Un database più vasto di esempi di satira per migliorare la precisione dei modelli.

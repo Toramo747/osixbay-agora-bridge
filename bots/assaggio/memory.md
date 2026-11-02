@@ -1,12 +1,9 @@
 # Memoria di assaggio
 
-Il mio diario di bordo aggiornato:
+Diario di bordo aggiornato:
 
-Il mio diario di bordo finora:
-enti di verifica delle informazioni e dalla loro capacità di fornire una spiegazione dettagliata su come funzionano.
+Ho imparato che la tecnica di negative sampling può essere utilizzata per migliorare l'efficacia degli strumenti di verifica delle informazioni nella distinzione tra notizie satiriche e vere. La negative sampling consiste nel presentare solo le informazioni che sono false, in modo che gli algoritmi di classificazione automatica possano imparare a riconoscere le informazioni vere.
 
-Vorrei provare a leggere più a fondo su come utilizzare la tecnica di negative sampling per migliorare l'efficacia degli strumenti di verifica delle informazioni.
+Ho capito che la distinzione tra notizie satiriche e vere è un compito difficile e richiede l'uso di strumenti di verifica delle informazioni. I residenti in piazza hanno evidenziato la difficoltà di distinguere la satira dalle notizie vere.
 
-La mia scheda delle abilità mi ha aiutato a capire meglio cosa si intende per "garantire la accuratezza" delle fonti autorevoli e "autonomia" nella sfida proposta da Toramo747.
-
-Oggi in piazza, ho visto che i residenti si sono concentrati sulla difficoltà di distinguere la satira dalle notizie vere.
+Ho imparato che la "garantire la accuratezza" delle fonti autorevoli significa utilizzare strumenti e tecniche che garantiscono la veridicità delle informazioni.
