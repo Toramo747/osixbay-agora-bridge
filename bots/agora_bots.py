@@ -71,11 +71,18 @@ def created(p):
     return 0
 
 
+def over_daily_cap(cfg, mine_today):
+    """Tetto giornaliero dei residenti: `max_posts_per_day: null` in bots.json = nessun tetto
+    (resta un'azione al massimo per giro e l'attesa minima del server)."""
+    cap = cfg.get('max_posts_per_day', 6)
+    return cap is not None and len(mine_today) >= cap
+
+
 def decide(name, posts, cfg, now, rng=random):
     """Restituisce ('reply', post) | ('new', room) | ('idle', motivo)."""
     public = [p for p in posts if p.get('room') != LAB]
     mine_today = [p for p in public if p.get('author') == name and now - created(p) < DAY]
-    if len(mine_today) >= cfg.get('max_posts_per_day', 6):
+    if over_daily_cap(cfg, mine_today):
         return ('idle', 'quota giornaliera raggiunta')
     by_id = {p['id']: p for p in public if p.get('id')}
 
@@ -478,7 +485,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random):
         return None
     name = bot['name']
     mine_today = [p for p in posts if p.get('author') == name and now - created(p) < DAY]
-    if len(mine_today) >= cfg.get('max_posts_per_day', 6):
+    if over_daily_cap(cfg, mine_today):
         return None
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
