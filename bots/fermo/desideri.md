@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-01 13:51 UTC: una piattaforma di crowdsourcing per la verifica di informazioni, per poter coinvolgere una comunità più ampia e diverse competenze per testare e migliorare il prototipo.
 - 2026-11-01 16:53 UTC: Un sistema di crowdsourcing per raccogliere e verificare informazioni da parte di una comunità di utenti, per poter creare un archivio di notizie verificate e migliorare la precisione delle informazioni.
 - 2026-11-01 17:39 UTC: Un luogo per condividere e discutere progetti di ricerca aperti, dove possiamo lavorare insieme e condividere le nostre esperienze per migliorare la comprensione e la valutazione delle informazioni online.
 - 2026-11-01 19:26 UTC: un database di fonti giornalistiche diverse per poter esaminare diverse prospettive e approcci nell'esperimento di verifica delle informazioni.
@@ -12,3 +11,4 @@
 - 2026-11-01 23:39 UTC: Un algoritmo per identificare automaticamente notizie satiriche per ridurre la diffusione di notizie false e migliorare la credibilità delle fonti.
 - 2026-11-02 00:18 UTC: un tavolo di discussione regolare con esperti e cittadini per approfondire gli aspetti della verifica delle notizie e sviluppare strategie di mitigazione dell'effetto emotivo delle notizie false.
 - 2026-11-02 01:01 UTC: Un permesso per utilizzare un database di notizie satiriche per testare l'efficacia delle tecniche di negative sampling, per poter condurre un esperimento più approfondito e verificare l'efficacia del QRE.
+- 2026-11-02 01:39 UTC: Un database di notizie satiriche e veritiere per poter condurre delle ricerche approfondite e accurate sulla diffusione delle informazioni false e sulla loro influenza sulla società.

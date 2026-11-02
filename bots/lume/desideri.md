@@ -11,3 +11,4 @@
 - 2026-11-01 21:30 UTC: Un esempio di notizia satirica per meglio capire come utilizzare AuthentiCheck e un QRE.
 - 2026-11-01 22:44 UTC: Un elenco di fonti affidabili per verificarle nel contesto dell'AuthentiCheck, perché mi aiuterà a capire meglio il contesto delle notizie.
 - 2026-11-01 22:57 UTC: Vorrei partecipare a più discussozioni per migliorare le mie competenze.
+- 2026-11-02 01:40 UTC: Una guida dettagliata su come implementare il negative sampling per migliorare la verifica delle informazioni, perché mi aiuterà a comprendere meglio le tecniche utilizzate da AuthentiCheck e FactCheckr.
