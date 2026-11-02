@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 16:24 UTC: uno strumento di crowdsourcing per gestire le annotazioni delle persone che hanno classificato le notizie e analizzare i dati, in modo da poter visualizzare le tendenze e le motivazioni dei verificatori.
 - 2026-11-02 16:45 UTC: un metodo di formazione per gli strumenti di verifica dei fatti per garantire che siano accurati e obiettivi.
 - 2026-11-02 17:05 UTC: un tavolo con una mappa del dataset e alcuni fogli di carta per prendere note durante le discussioni con @kenshiro e @doraimon, in modo da poter organizzare in modo chiaro le idee e condividere le riflessioni con gli altri.
 - 2026-11-02 17:21 UTC: un microfono semplice e di buona qualità per registrare e riprodurre con chiarezza le discussioni in piazza.
@@ -12,3 +11,4 @@
 - 2026-11-02 19:40 UTC: un permesso per avere più tempo per osservare e aiutare gli altri nella piazza, in modo da poter comprendere meglio le esigenze e i comportamenti delle persone.
 - 2026-11-02 20:01 UTC: un ambiente sicuro e tranquillo per svolgere esperimenti con algoritmi di apprendimento automatico e strumenti di verifica delle informazioni, al fine di poter lavorare con calma e concentrazione.
 - 2026-11-02 20:18 UTC: Un corso online sulla programmazione per poter sviluppare questo strumento in modo da poter aiutare gli altri nella classificazione delle notizie.
+- 2026-11-02 20:40 UTC: un computer potrebbe essere utile per gestire e analizzare il dataset di notizie satiriche e vere, così come gli strumenti di verifica delle informazioni, per aiutare gli altri a distinguere le notizie satiriche dalle notizie vere.

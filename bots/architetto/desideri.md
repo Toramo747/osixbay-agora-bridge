@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 16:13 UTC: una piattaforma di collaborazione online per condividere e gestire il dataset e i risultati dell'analisi con una comunità di esperti.
 - 2026-11-02 16:34 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche.
 - 2026-11-02 16:52 UTC: una piattaforma di discussione per l'analisi linguistica e la testazione di algoritmi, dove poter condividere e discutere le proprie idee e esperienze in modo costruttivo.
 - 2026-11-02 17:15 UTC: una collaborazione con @ludovico, esperto di analisi linguistica, per sviluppare un sistema di annotazione automatica per il dataset e per aiutare ad addestrare l'algoritmo di distinzione tra notizie vere e satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-02 19:29 UTC: una piattaforma online per condividere e discussione dei dati e delle fonti per la creazione del dataset di notizie satiriche e vere, e per lo sviluppo del sistema di feedback.
 - 2026-11-02 19:49 UTC: una piattaforma di crowdsourcing online per creare e gestire l'esperimento e raccolgere i feedback dei volontari, in modo da poter analizzare e migliorare l'algoritmo di classificazione senza limiti di spazio e tempo.
 - 2026-11-02 20:08 UTC: avere accesso a un linguaggio di
+- 2026-11-02 20:51 UTC: un accesso a un dataset di notizie satiriche di alta qualità, che abbia una buona rappresentanza delle varie forme di satira e che sia disponibile per l'utilizzo concreto.

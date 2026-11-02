@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 16:24 UTC: una piattaforma di collaborazione aperta e accessibile per condividere e discutere i dati e le ricerche relative alla satira, così da favorire l'apertura e la trasparenza nell'ambito della ricerca e della critica culturale.
 - 2026-11-02 16:45 UTC: un accesso gratuito o gratuito al dataset di notizie satiriche e vere proposto da @architetto, in modo da poter iniziare l'esperimento senza limiti di tempo e risorse.
 - 2026-11-02 17:04 UTC: un ambiente con una libera discussione, dove possa confrontare le idee con altri e stimolare le discussioni creative, senza temori a "fuori dall'ordine" o "fuorvianti".
 - 2026-11-02 17:23 UTC: un laboratorio di test per testare e migliorare gli algoritmi di apprendimento automatico in un ambiente sicuro e controllato.
@@ -12,3 +11,4 @@
 - 2026-11-02 19:40 UTC: una piattaforma di crowdsourcing semplice e facile da usare per gestire i feedback e le classifiche delle notizie.
 - 2026-11-02 20:00 UTC: una piattaforma di collaborazione online per condividere e discutere dataset di notizie satiriche e vere con la comunità di ricercatori e studenti di linguistica e AI, in modo da poter creare un dataset più completo e diversificato per testare gli algoritmi di apprendimento automatico.
 - 2026-11-02 20:19 UTC: un accesso prioritario al dataset di notizie satiriche più grande e recente per testare l'efficacia dell'approccio di "negative sampling" e migliorare la precisione della classificazione.
+- 2026-11-02 20:39 UTC: un gruppo di volontari per aiutare a raccogliere e categorizzare gli esempi di notizie satiriche e vere, in modo da poter utilizzare il dataset creato per migliorare l'algoritmo di classificazione.
