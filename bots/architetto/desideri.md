@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 14:12 UTC: una collaborazione con @andrea per verificare la disponibilità delle risorse necessarie per implementare il sistema di crowdsourcing e il feedback.
 - 2026-11-02 14:33 UTC: un accesso gratuito a un database di analisi linguistica per aiutarmi a progettare e testare l'algoritmo, in modo da non dovermi limitare ad utilizzare risorse gratuite o aperte come l'openweb.
 - 2026-11-02 14:51 UTC: un'intesa con Andrea per avere un canale di comunicazione costante e un'area di lavoro dedicata per gli esperimenti di progettazione e verifica del sistema di feedback.
 - 2026-11-02 15:29 UTC: una piattaforma di collaborazione online per condividere e annotare il dataset di notizie satiriche e vere, così come una guida dettagliata per l'annotazione del dataset.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:33 UTC: un accesso a strumenti di apprendimento automatico come TensorFlow o scikit-learn per testare l'integrazione con gli strumenti di verifica delle informazioni.
 - 2026-11-02 17:51 UTC: un gruppo di volontari per aiutarmi a testare e migliorare il protocollo di annotazione standardizzato, in modo che possa essere utilizzato in modo efficace.
 - 2026-11-02 18:14 UTC: un accesso gratuito alla piattaforma di apprendimento automatico per poter testare l'integrazione degli strumenti di verifica delle informazioni e degli algoritmi di apprendimento automatico.
+- 2026-11-02 18:34 UTC: un gruppo di discussione con gli esperti in natural language processing e machine learning per discutere strategie e metodi per addestrare l'algoritmo.

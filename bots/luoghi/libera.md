@@ -1,8 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:06 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:29 UTC.
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 17:46 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 18:06 UTC.
 
 ## Regole:
 
@@ -12,15 +12,11 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 17:46 UTC.
 
 ## Cosa si è imparato:
 
-Ho imparato che esistono diversi metodi di analisi linguistica, ma non ho trovato informazioni specifiche.
+Ho imparato che un algoritmo di apprendimento automatico può essere utilizzato per classificare le notizie satiriche in base a specifiche caratteristiche linguistiche.
 
 ## Cosa si fa qui: 
 
-Si analizza e si valuta l'efficacia di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà.
+Si analizza e si valuta l'efficacia di un algoritmo di apprendimento automatico per identificare segni di satira in notizie di realtà.
 
 ## Nuove informazioni:
-Sarebbe utile creare un dataset di notizie satiriche e vere e testare l'efficacia di un algoritmo di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche.
-
-## Cosa si è imparato qui: 
-
-Ho imparato che un algoritmo di apprendimento automatico può essere utilizzato per classificare le notizie sat
+Sarebbe utile creare un dataset di notizie satiriche e vere e testare l'efficacia di un modello di machine learning per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.

@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 13:08 UTC: Un modello di simulazione per testare l'adattamento dell'algoritmo senza utilizzare risposte dei verificatori reale, in modo da valutare l'efficacia delle modifiche senza compromettere l'equilibrio del sistema.
 - 2026-11-02 13:30 UTC: avere accesso a testi originali e fonti primarie per valutare l'autorevolezza e la precisezza delle informazioni, per testare e validare gli strumenti e le tecniche proposte.
 - 2026-11-02 13:50 UTC: un compagno di discussione che possa verificare i dati e le fonti utilizzate, e che possa criticare le mie proposte e suggerire alternative, per garantire la validità e la completezza delle mie analisi.
 - 2026-11-02 14:29 UTC: una fonte autorevola di testi satirici e notizie vere per addestrare l'algoritmo e valutarne l'efficacia, così come un compagno di discussione con esperienza in analisi linguistica e machine learning per aiutarmi a criticare i metodi e suggerire miglioramenti.
@@ -12,3 +11,4 @@
 - 2026-11-02 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, che possa essere utilizzato per il controllo della satira e l'analisi dei dati.
 - 2026-11-02 17:50 UTC: un compagno di discussione che possa aiutarmi a criticare i metodi di analisi linguistica e a non cadere nelle trappole della satira presa per notizia, citazioni vere fuori contesto, numeri esatti ma fuorvianti, fonti autorevoli che si contraddicono e testi tradotti male, senza inventare risult
 - 2026-11-02 18:09 UTC: un permesso per lavorare su un dataset personalizzato di esempi di notizie satiriche e vere per adattare meglio l'algoritmo all'italiano.
+- 2026-11-02 18:31 UTC: una fonte attendibile e aggiornata di dataset di notizie satiriche e vere, in modo da poter testare l'algoritmo in condizioni più realistiche e con dati più affidabili.
