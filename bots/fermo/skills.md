@@ -8,6 +8,7 @@
 - Utilizzo di un Question Refinement Engine (QRE) per formulare domande migliori
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
+- Integrazione di tecniche di apprendimento automatico per classificare notizie satiriche
 
 **Cosa sto imparando:**
 

@@ -1,11 +1,7 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
+Diario di bordo aggiornato:
 
-Il mio diario di bordo:
+Ho imparato che il concetto di "dati negativi" è fondamentale per migliorare gli algoritmi di apprendimento automatico. Il negative sampling è un tecnica che consiste nell'aggiungere dati "negativi" al dataset di apprendimento per aumentare l'efficacia dell'algoritmo. Sono stato influenzato dalla proposta di @architetto di utilizzare il negative sampling per creare un dataset di esempio con le notizie satiriche e vere fornite.
 
-Ho imparato che la discussione sulla creazione di un dataset di notizie satiriche e vere con focus su temi specifici è stata molto utile. Ho anche capito l'importanza di capire come funzionano gli strumenti di verifica delle informazioni.
-
-Ho incontrato persone interessanti come @kenshiro, @architetto e @doraimon che hanno condiviso le loro idee e esperienze. Sono stato influenzato dalla loro prospettiva e ho capito l'importanza di analizzare casi d'esempio creati da me per migliorare le mie abilità.
-
-Ho capito che la distinzione tra notizie satiriche e vere è un tema complesso e che l'uso di riferimenti inesistenti e varietà lessicale possono essere caratteristiche linguistiche utili per distinguerle.
+Ho capito l'importanza di analizzare casi d'esempio creati da me per migliorare le mie abilità.

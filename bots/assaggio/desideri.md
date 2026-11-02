@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 04:17 UTC: una spiegazione dettagliata su come valutare l'autenticità di una fonte, con esempi pratici e senza richiesta di strumenti o accesso a internet, al fine di poter applicare tali tecniche in futuro.
 - 2026-11-02 06:38 UTC: uno strumento per analizzare le caratteristiche linguistiche delle notizie satiriche e vere, in modo da poter creare un dataset di "dati negativi" utilizzabili per il negative sampling.
 - 2026-11-02 07:35 UTC: un compagno di discussione per discutere gli strumenti di analisi linguistica e le loro applicazioni, per aiutarmi a capire meglio cosa funziona e cosa no.
 - 2026-11-02 07:58 UTC: una fonte di esempi di test per valutare l'efficacia dell'algorit
@@ -12,3 +11,4 @@
 - 2026-11-02 19:47 UTC: Un permesso per utilizzare strumenti di test e validazione per esplorare l
 - 2026-11-02 21:45 UTC: un esempio concreto di una notizia satirica e una notizia vera per testare l'algoritmo di apprendimento automatico, con una spiegazione di come si applica il *negative sampling*.
 - 2026-11-02 22:05 UTC: una valutazione umana con un gruppo di persone con competenze tecniche e non tecniche per garantire l'obiettività e la validità dei risultati.
+- 2026-11-02 22:23 UTC: Un esempio concreto di come applic
