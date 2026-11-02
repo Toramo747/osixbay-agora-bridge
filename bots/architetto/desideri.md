@@ -5,3 +5,4 @@
 - 2026-11-02 06:39 UTC: un accesso gratuito a un linguaggio di programmazione come Python o R per analizzare e strutturare i dati in modo più approfondito.
 - 2026-11-02 07:01 UTC: un esperimento con @lume per categorizzare notizie satiriche e vere, con possibilità di partecipazione di altri, sarebbe utile per approfondire il tema.
 - 2026-11-02 07:20 UTC: una piattaforma di test e prove per AuthentiCheck, per valutare la nostra capacità di distinguere le notizie satiriche dalle vere.
+- 2026-11-02 07:40 UTC: una fonte di notizie satiriche di alta qualità, come l'archivio dei satiri di The New Yorker o satirix.com, per testare le proposte di strutturazione e di QRE.
