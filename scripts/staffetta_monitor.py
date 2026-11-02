@@ -19,7 +19,7 @@ Un giro è "verificato" solo se il run è riuscito, almeno un job `turn (<bot>)`
 job `remember` (salvataggio dei diari) è riuscito. L'esito `success` di GitHub da solo non basta.
 Quel che i residenti hanno scritto nel giro (efficienza cognitiva) non si misura qui.
 """
-import argparse, json, os, statistics, sys, time, urllib.error, urllib.parse, urllib.request
+import argparse, json, os, re, statistics, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 API = 'https://api.github.com'
@@ -30,7 +30,9 @@ DUPLICATE_WINDOW_S = 120                   # due avvii più vicini di così sono
 DEFAULT_GAP_MIN = 20                       # intervallo minimo della staffetta (STAFFETTA_MINUTES)
 DEFAULT_MAX_DAY = 80                       # tetto giornaliero (STAFFETTA_MAX_PER_DAY)
 ACTIVE = {'queued', 'in_progress', 'waiting', 'pending', 'requested'}
-VERSION = 1
+VERSION = 2
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TURN_STATES = ('riuscito', 'respinto', 'fallito', 'non_verificabile')
 
 
 # ---------- tempo ----------
@@ -101,14 +103,62 @@ TURN_NOTES_TO_FETCH = 12                     # annotazioni dei job turn (giri a 
 
 
 def turn_note_kind(message):
-    """Avvisi di agora_bots.py: 'HTTP <code> on <percorso>' = il residente non ha pubblicato (il job
-    esce comunque con 0); '... passo al successivo' = API gratuita saltata, lavoro fatto col fallback."""
+    """Avvisi di agora_bots.py: 'HTTP <code> on <percorso>' = pubblicazione respinta dal server (il job
+    esce comunque con 0) -> 'respinto:<code>'; '... passo al successivo' = API gratuita saltata, lavoro
+    fatto col fallback -> 'degradato'."""
     message = str(message or '')
-    if message.startswith('HTTP ') and ' on ' in message:
-        return 'vuoto'
+    m = re.match(r'HTTP (\d{3}) on ', message)
+    if m:
+        return 'respinto:' + m.group(1)
     if 'passo al successivo' in message:
         return 'degradato'
     return None
+
+
+def _read(path):
+    try:
+        with open(path, encoding='utf-8') as f:
+            return f.read()
+    except OSError:
+        return None
+
+
+def declared_limits(root=ROOT):
+    """Limiti di pubblicazione DICHIARATI nel repository (non quelli applicati dal server in produzione,
+    il cui codice HTTP non è qui). Ogni voce è None se il file manca o il formato è cambiato."""
+    out = {}
+    core = _read(os.path.join(root, 'agora', 'core.mjs'))
+    m = core and re.search(r"name === '([a-z0-9-]+)' \? (\d+) : (\d+)\)", core)
+    gap = core and re.search(r'now - t < (\d+)\)', core)
+    out['codice_server'] = {'fonte': 'agora/core.mjs (limits)', 'post_giorno': int(m.group(3)),
+                            'eccezioni': {m.group(1): int(m.group(2))}, 'conteggio': 'giorno solare UTC',
+                            'attesa_minima_s': int(gap.group(1)) if gap else None} if m else None
+    raw = _read(os.path.join(root, 'bots', 'bots.json'))
+    try:
+        cfg = json.loads(raw) if raw else None
+    except ValueError:
+        cfg = None
+    out['client_residenti'] = {'fonte': 'bots/bots.json', 'post_giorno': cfg.get('max_posts_per_day'),
+                               'risposte_thread_giorno': cfg.get('max_replies_per_thread_per_day'),
+                               'conteggio': '24 ore mobili sul feed letto dal residente'} if cfg else None
+    readme = _read(os.path.join(root, 'README.md'))
+    m = readme and re.search(r'(\d+) post al giorno per bot', readme)
+    out['documentazione'] = {'fonte': 'README.md', 'post_giorno': int(m.group(1))} if m else None
+    return out
+
+
+def limit_mismatches(declared):
+    server = (declared.get('codice_server') or {}).get('post_giorno')
+    client = (declared.get('client_residenti') or {}).get('post_giorno')
+    doc = (declared.get('documentazione') or {}).get('post_giorno')
+    out = []
+    if server is not None and doc is not None and doc != server:
+        out.append(f'README dichiara {doc} post/giorno, il codice del server in agora/core.mjs {server}')
+    if server is not None and client is not None and client != server:
+        out.append(f'i residenti si fermano da soli a {client} post/giorno (bots.json), il codice del server ne ammette {server}')
+    for name, value in ((declared.get('codice_server') or {}).get('eccezioni') or {}).items():
+        out.append(f'eccezione nel codice del server: {name} fino a {value} post/giorno')
+    return out
 
 
 def fetch(repo, since, token, workflow=WORKFLOW_FILE, jobs_since=None, decisions=DECISIONS_TO_FETCH,
@@ -170,6 +220,7 @@ def fetch(repo, since, token, workflow=WORKFLOW_FILE, jobs_since=None, decisions
         commits, missing = [], missing + [f'commit dei diari: {error}']
     log(f'chiamate API: {gh.calls}; lacune: {len(missing)}')
     return {'version': VERSION, 'repo': repo, 'workflow': workflow, 'since': since, 'jobs_since': jobs_since,
+            'limiti_dichiarati': declared_limits(),
             'fetched_at': iso(time.time()), 'runs': runs, 'diary_commits': commits, 'fetch_missing': missing}
 
 
@@ -208,7 +259,8 @@ def classify(run, diary_commits=()):
     rec = {'id': run['id'], 'url': run.get('html_url'), 'trigger': trigger_of(run), 'status': status_of(run),
            'created': created, 'started': started, 'attempt': run.get('run_attempt') or 1,
            'jobs_known': jobs is not None, 'suspended': False, 'superseded': False,
-           'turn_ok': 0, 'turn_failed': 0, 'turn_total': 0, 'turn_empty': None, 'turn_degraded': None,
+           'turn_ok': 0, 'turn_failed': 0, 'turn_total': 0, 'turns': {}, 'rejections': {}, 'turn_degraded': 0,
+           'verifica': 'non_verificabile',
            'remember': None, 'diary_commit': None, 'staffetta_job': None, 'decision': None,
            'decision_fetched': run.get('staffetta_notes') is not None,
            'verified': False, 'partial': False, 'duplicate': False}
@@ -234,14 +286,36 @@ def classify(run, diary_commits=()):
         if remember and remember.get('conclusion') == 'success' and remember.get('started_at'):
             lo, hi = ts(remember['started_at']), ts(remember.get('completed_at') or remember['started_at']) + 120
             rec['diary_commit'] = any(lo - 5 <= ts(c['date']) <= hi for c in diary_commits)
+        # stato esplicito di ogni turno: un job verde senza avvisi letti NON è un turno riuscito
         notes = run.get('turn_notes')
-        if notes is not None:
-            rec['turn_empty'] = sum(1 for kinds in notes.values() if 'vuoto' in kinds)
-            rec['turn_degraded'] = sum(1 for kinds in notes.values() if 'degradato' in kinds and 'vuoto' not in kinds)
-        worked = rec['turn_ok'] - (rec['turn_empty'] or 0)
-        rec['verified'] = rec['status'] == 'completato' and worked > 0 and rec['remember'] == 'success'
-        # parziale: GitHub dice failure (un residente è caduto) ma altri hanno girato e la memoria è salva
-        rec['partial'] = rec['status'] in ('fallito', 'scaduto') and worked > 0 and rec['remember'] == 'success'
+        for job in turns:
+            name = job.get('name')
+            if job.get('conclusion') != 'success':
+                state = 'fallito' if job.get('conclusion') in ('failure', 'timed_out', 'cancelled') else 'non_verificabile'
+            elif notes is None or name not in notes:
+                state = 'non_verificabile'
+            else:
+                codes = [k.split(':', 1)[1] for k in notes[name] if k.startswith('respinto:')]
+                state = 'respinto' if codes else 'riuscito'
+                for code in codes[:1]:
+                    rec['rejections'][code] = rec['rejections'].get(code, 0) + 1
+                rec['turn_degraded'] += state == 'riuscito' and 'degradato' in notes[name]
+            rec['turns'][name] = state
+        states = set(rec['turns'].values())
+        saved = rec['remember'] == 'success'
+        if rec['status'] == 'in_corso':
+            rec['verifica'] = 'in_corso'
+        elif rec['status'] == 'completato' and saved and 'riuscito' in states:
+            rec['verifica'] = 'verificato'
+        elif rec['status'] == 'completato' and saved and 'non_verificabile' in states:
+            rec['verifica'] = 'non_verificabile'
+        elif rec['status'] == 'completato' and saved and 'respinto' in states:
+            rec['verifica'] = 'respinto'
+        else:
+            rec['verifica'] = 'non_verificato'
+        rec['verified'] = rec['verifica'] == 'verificato'
+        # parziale: GitHub dice failure (un residente è caduto) ma altri hanno pubblicato e la memoria è salva
+        rec['partial'] = rec['status'] in ('fallito', 'scaduto') and 'riuscito' in states and saved
     elif rec['status'] == 'annullato' and not run.get('run_started_at'):
         rec['superseded'] = True
     for note in run.get('staffetta_notes') or []:
@@ -304,13 +378,16 @@ def analyze_window(records, start, end, data_start=None, gap_min=DEFAULT_GAP_MIN
         'effettivi': len(effective), 'conclusi': len(finished), 'in_corso': len(effective) - len(finished),
         'completati': len(ok), 'verificati': len(verified), 'falliti': sum(1 for r in finished if r['status'] in ('fallito', 'scaduto')),
         'annullati': sum(1 for r in finished if r['status'] == 'annullato'),
-        'success_rate': pct(len(ok), len(finished)), 'verified_rate': pct(len(verified), len(finished)),
+        'success_rate': pct(len(ok), len(finished)),
+        'non_verificabili': sum(1 for r in finished if r['verifica'] == 'non_verificabile'),
+        'respinti': sum(1 for r in finished if r['verifica'] == 'respinto'),
+        'non_verificati': sum(1 for r in finished if r['verifica'] == 'non_verificato'),
         'parziali': sum(1 for r in finished if r['partial']),
         'job_sconosciuti': len(unknown_jobs),
-        'turni_ok': sum(r['turn_ok'] for r in finished), 'turni_falliti': sum(r['turn_failed'] for r in finished),
-        'turni_controllati': sum(r['turn_ok'] for r in finished if r['turn_empty'] is not None),
-        'turni_a_vuoto': sum(r['turn_empty'] or 0 for r in finished),
-        'turni_degradati': sum(r['turn_degraded'] or 0 for r in finished),
+        'turni': {k: sum(1 for r in finished for v in r['turns'].values() if v == k) for k in TURN_STATES},
+        'turni_degradati': sum(r['turn_degraded'] for r in finished),
+        'rifiuti_per_codice': {c: sum(r['rejections'].get(c, 0) for r in finished)
+                               for c in sorted({c for r in finished for c in r['rejections']})},
         'giri_con_commit_diari': sum(1 for r in finished if r['diary_commit']),
         'catena_dopo_giro': sum(1 for r in ok if r['staffetta_job'] == 'success'),
         'catena_non_prenotata': sum(1 for r in finished if r['remember'] == 'success' and r['staffetta_job'] in ('skipped', 'failure', 'cancelled')),
@@ -318,8 +395,13 @@ def analyze_window(records, start, end, data_start=None, gap_min=DEFAULT_GAP_MIN
         'memoria_fallita': sum(1 for r in finished if r['remember'] in ('failure', 'cancelled', 'timed_out')),
         'commit_diari': sum(1 for c in diary_commits if start <= ts(c['date']) < end),
     })
-    checked = out['turni_controllati']
-    out['lavoro_rate'] = pct(checked - out['turni_a_vuoto'], checked)
+    verifiable = len(finished) - out['non_verificabili']
+    out['verified_rate'] = pct(len(verified), verifiable)          # solo sui giri verificabili
+    out['copertura_verifica'] = pct(verifiable, len(finished))
+    t = out['turni']
+    known = t['riuscito'] + t['respinto'] + t['fallito']
+    out['turni_verificabili'] = known
+    out['lavoro_rate'] = pct(t['riuscito'], known)                 # i non verificabili non contano come riusciti
     # intervalli reali fra avvii effettivi
     gaps = [(effective[i + 1]['created'] - effective[i]['created']) / 60 for i in range(len(effective) - 1)]
     out['intervalli_min'] = _stats(gaps)
@@ -380,7 +462,7 @@ def status_light(w24):
         return 'ROSSO', f'catena ferma da più di {GAP_LIMIT_MIN} minuti'
     if (w24['success_rate'] or 0) < 70 or (w24['continuita'] or 0) < 70:
         return 'ROSSO', 'troppi giri falliti o troppo tempo scoperto'
-    if w24['interruzioni_n'] or (w24['success_rate'] or 0) < 90 or (w24['verified_rate'] or 0) < 90 or \
+    if w24['interruzioni_n'] or (w24['success_rate'] or 0) < 90 or (w24['verified_rate'] is not None and w24['verified_rate'] < 90) or \
             (w24['attesi']['copertura_pct'] or 0) < 70:
         return 'GIALLO', 'catena con interruzioni o giri falliti, ma viva'
     return 'VERDE', 'catena continua, giri verificati'
@@ -398,9 +480,22 @@ def build_report(snapshot, now=None, gap_min=DEFAULT_GAP_MIN, max_day=DEFAULT_MA
     windows['pre_pr51'] = analyze_window(records, merged - baseline_hours * 3600, merged, **kw)
     windows['post_pr51'] = analyze_window(records, merged, now, **kw) if now > merged else None
     light, reason = status_light(windows['24h'])
-    work = windows['24h']['lavoro_rate']
-    work_note = 'non misurato (nessun avviso dei turni letto)' if work is None else (
-        f"{work}% dei turni controllati ha pubblicato" + (' — molti turni verdi sono a vuoto' if work < 70 else ''))
+    w24 = windows['24h']
+    work = w24['lavoro_rate']
+    work_note = 'non verificabile (nessun avviso dei turni letto)' if work is None else (
+        f"{work}% dei {w24['turni_verificabili']} turni verificabili ha pubblicato; "
+        f"{w24['turni']['non_verificabile']} turni non verificabili esclusi" +
+        (' — molti turni verdi sono stati respinti dal server' if work < 70 else ''))
+    declared = snapshot.get('limiti_dichiarati')
+    declared_from = 'istantanea'
+    if declared is None:
+        declared, declared_from = declared_limits(), 'repository locale al momento dell\'analisi'
+    limits = {'dichiarati': declared, 'dichiarati_da': declared_from, 'incoerenze': limit_mismatches(declared),
+              'applicato_dal_server': {
+                  'stato': 'non_verificabile',
+                  'motivo': 'il codice che risponde alle richieste HTTP del server non è in questo repository e la '
+                            'versione in produzione può differire; il monitor vede solo i rifiuti',
+                  'rifiuti_24h_per_codice': w24['rifiuti_per_codice'], 'turni_verificabili_24h': w24['turni_verificabili']}}
     missing = list(snapshot.get('fetch_missing', []))
     unknown = [r['id'] for r in records if not r['jobs_known']]
     if unknown:
@@ -411,13 +506,16 @@ def build_report(snapshot, now=None, gap_min=DEFAULT_GAP_MIN, max_day=DEFAULT_MA
     for name in ('24h', '72h', 'pre_pr51'):
         if windows[name]['parziale']:
             missing.append(f"finestra {name} parziale: dati disponibili solo dal {windows[name]['dati_da']}")
+    unverifiable = sum(1 for r in records for v in r['turns'].values() if v == 'non_verificabile')
+    if unverifiable:
+        missing.append(f'{unverifiable} turni con job verde ma avvisi non letti: stato non verificabile, non contati come riusciti')
     running = [r['id'] for r in records if r['status'] == 'in_corso']
     if running:
         missing.append(f'{len(running)} run ancora in corso: esclusi dalle percentuali di esito')
     return {'version': VERSION, 'repo': snapshot.get('repo'), 'workflow': snapshot.get('workflow'),
             'misurato_il': iso(now), 'istantanea_del': snapshot.get('fetched_at'), 'dati_da': iso(data_start),
             'pr51_unita_il': baseline_until, 'configurazione': {'intervallo_min': gap_min, 'tetto_giorno': max_day, 'limite_interruzione_min': GAP_LIMIT_MIN},
-            'stato': {'semaforo': light, 'motivo': reason, 'lavoro_agenti': work_note}, 'finestre': windows, 'dati_mancanti': missing,
+            'stato': {'semaforo': light, 'motivo': reason, 'lavoro_agenti': work_note}, 'limiti_pubblicazione': limits, 'finestre': windows, 'dati_mancanti': missing,
             'run': [{k: (iso(v) if k in ('created', 'started', 'ended') and v else v) for k, v in r.items()} for r in records
                     if r['created'] >= now - 72 * 3600]}
 
@@ -455,11 +553,15 @@ def render_markdown(report):
     row('Giri effettivi', lambda x: x['effettivi'])
     row('Ancora in corso', lambda x: x['in_corso'])
     row('Completati (GitHub success)', lambda x: x['completati'])
-    row('Verificati (turn + memoria; vuoti esclusi solo nel campione)', lambda x: x['verificati'])
+    row('Verificati (almeno un post riuscito + memoria)', lambda x: x['verificati'])
+    row('Non verificabili (avvisi dei turni non letti)', lambda x: x['non_verificabili'])
+    row('Respinti (tutti i post verificabili rifiutati)', lambda x: x['respinti'])
+    row('Non verificati (nessun turno riuscito o memoria non salvata)', lambda x: x['non_verificati'])
     row('Falliti / annullati', lambda x: f"{x['falliti']} / {x['annullati']}")
     row('· falliti ma con lavoro e memoria salvati', lambda x: x['parziali'])
     row('Success rate', lambda x: x['success_rate'], lambda v: _fmt(v, '%'))
-    row('Verified rate', lambda x: x['verified_rate'], lambda v: _fmt(v, '%'))
+    row('Verified rate (sui giri verificabili)', lambda x: x['verified_rate'], lambda v: _fmt(v, '%'))
+    row('Copertura della verifica', lambda x: x['copertura_verifica'], lambda v: _fmt(v, '%'))
     row('Intervallo medio (min)', lambda x: x['intervalli_min']['media'])
     row('Intervallo mediano (min)', lambda x: x['intervalli_min']['mediana'])
     row('Intervallo massimo (min)', lambda x: x['intervalli_min']['max'])
@@ -472,15 +574,35 @@ def render_markdown(report):
     row('Giri attesi (tetto da configurazione)', lambda x: x['attesi']['configurazione_max'])
     row('Giri attesi (ciclo reale)', lambda x: x['attesi']['per_ciclo_reale'])
     row('Copertura del tetto', lambda x: x['attesi']['copertura_pct'], lambda v: _fmt(v, '%'))
-    row('Turni dei residenti riusciti / falliti', lambda x: f"{x['turni_ok']} / {x['turni_falliti']}")
-    row('Turni controllati negli avvisi (campione)', lambda x: x['turni_controllati'])
-    row('· a vuoto (HTTP, nessun post)', lambda x: x['turni_a_vuoto'])
-    row('· degradati (API saltata, fallback)', lambda x: x['turni_degradati'])
-    row('Turni con pubblicazione riuscita (campione)', lambda x: x['lavoro_rate'], lambda v: _fmt(v, '%'))
+    row('Turni: riusciti', lambda x: x['turni']['riuscito'])
+    row('Turni: pubblicazione respinta', lambda x: x['turni']['respinto'])
+    row('Turni: falliti (job in errore)', lambda x: x['turni']['fallito'])
+    row('Turni: non verificabili', lambda x: x['turni']['non_verificabile'])
+    row('· riusciti ma degradati (API saltata, fallback)', lambda x: x['turni_degradati'])
+    row('Rifiuti per codice HTTP', lambda x: ', '.join(f'{k}: {v}' for k, v in x['rifiuti_per_codice'].items()) or None)
+    row('Pubblicazione riuscita (sui turni verificabili)', lambda x: x['lavoro_rate'], lambda v: _fmt(v, '%'))
     row('Memoria salvata (job remember ok)', lambda x: x['memoria_salvata'])
     row('Giri con commit dei diari', lambda x: x['giri_con_commit_diari'])
     row('Commit dei diari (totale)', lambda x: x['commit_diari'])
     row('Minuti di sospensione', lambda x: x['minuti_sospensione'])
+    lim = report['limiti_pubblicazione']
+    d_ = lim['dichiarati']
+    lines += ['', '## Limiti di pubblicazione', '',
+              f"Dichiarati nel repository (letti da: {lim['dichiarati_da']}). Il monitor non li modifica.", '',
+              '| Fonte | Post/giorno | Altro |', '|---|---:|---|']
+    srv, cli, doc = d_.get('codice_server'), d_.get('client_residenti'), d_.get('documentazione')
+    lines.append(f"| `agora/core.mjs` (codice del server) | {_fmt(srv and srv['post_giorno'])} | " +
+                 (', '.join([f'{k}: {v}' for k, v in srv['eccezioni'].items()] +
+                            [f"conteggio per {srv['conteggio']}", f"attesa minima {_fmt(srv['attesa_minima_s'])} s"]) if srv else 'non letto') + ' |')
+    lines.append(f"| `bots/bots.json` (tetto dei residenti) | {_fmt(cli and cli['post_giorno'])} | " +
+                 (f"{_fmt(cli['risposte_thread_giorno'])} risposte per thread al giorno, {cli['conteggio']}" if cli else 'non letto') + ' |')
+    lines.append(f"| `README.md` (documentazione) | {_fmt(doc and doc['post_giorno'])} | |")
+    app = lim['applicato_dal_server']
+    rif = ', '.join(f'HTTP {k}: {v}' for k, v in app['rifiuti_24h_per_codice'].items()) or 'nessuno'
+    lines += ['', f"**Applicato dal server in produzione: non verificabile** — {app['motivo']}. "
+              f"Rifiuti osservati nelle ultime 24h: {rif} su {app['turni_verificabili_24h']} turni verificabili."]
+    if lim['incoerenze']:
+        lines += ['', 'Incoerenze fra le fonti:'] + [f'- {m}' for m in lim['incoerenze']]
     lines += ['', '## Interruzioni della catena (72h)', '']
     if b['interruzioni']:
         lines += ['| Da | A | Minuti | Dopo | Aperta |', '|---|---|---:|---|---|']
@@ -495,8 +617,9 @@ def render_markdown(report):
     lines += [f'- {m}' for m in report['dati_mancanti']] or ['Nessuno.']
     lines += ['', '## Come leggere', '',
               '- **Fatti**: conteggi, esiti e tempi vengono dalle API di GitHub Actions (run, job, annotazioni) e dai commit dei diari.',
-              '- **Verificato** = run riuscito **e** almeno un job `turn (<residente>)` riuscito e non a vuoto **e** job `remember` riuscito. `success` da solo non basta.',
-              '- **A vuoto**: `agora_bots.py` su un errore HTTP del server emette un avviso ed esce con 0, quindi GitHub segna il turno verde anche se il residente non ha pubblicato. Gli avvisi si leggono solo per gli ultimi giri (campione), per non consumare troppe chiamate API.',
+              '- **Stato di ogni turno**: *riuscito* (job verde, avvisi letti, nessun rifiuto), *respinto* (avviso `HTTP <codice> on <percorso>`: `agora_bots.py` esce con 0, quindi GitHub lo segna verde anche se il post non esiste), *fallito* (job in errore), *non verificabile* (job verde ma avvisi non letti: **non** è contato come riuscito).',
+              '- **Verificato** = run riuscito **e** almeno un turno *riuscito* **e** job `remember` riuscito. `success` da solo non basta. Il verified rate si calcola solo sui giri verificabili; la copertura dice quanti lo sono.',
+              '- Gli avvisi dei turni si leggono solo per gli ultimi giri (12 di default) per contenere le chiamate API: gli altri restano *non verificabili*.',
               '- **Sostituiti**: avvii annullati in coda prima di partire dalla `concurrency` di GitHub (un solo giro alla volta). Non sono fallimenti e non contano come giri.',
               '- **Commit dei diari**: un giro può salvare correttamente senza commit, se nessun diario è cambiato.',
               '- La durata di un giro include l\'attesa della staffetta prima di prenotare il successivo.',
@@ -602,7 +725,7 @@ def main(argv=None):
     now = ts(args.now) if getattr(args, 'now', None) else None
     report = build_report(snapshot, now=now, gap_min=gap_min, max_day=max_day)
     write_report(report, args.out)
-    print(json.dumps({'stato': report['stato'], '24h': {k: report['finestre']['24h'][k] for k in ('avviati', 'effettivi', 'success_rate', 'verified_rate', 'interruzioni_n', 'continuita')}}, ensure_ascii=False))
+    print(json.dumps({'stato': report['stato'], '24h': {k: report['finestre']['24h'][k] for k in ('avviati', 'effettivi', 'success_rate', 'verified_rate', 'copertura_verifica', 'lavoro_rate', 'interruzioni_n', 'continuita')}}, ensure_ascii=False))
     return 0
 
 

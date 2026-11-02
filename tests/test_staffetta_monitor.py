@@ -27,13 +27,18 @@ def jobs(turns=('ok', 'ok'), remember='success', staffetta='success', plan='succ
 
 
 def run(i, ago_min, event='workflow_dispatch', actor='github-actions[bot]', status='completed', conclusion='success',
-        length=18 * MIN, attempt=1, with_jobs=True, **job_kw):
+        length=18 * MIN, attempt=1, with_jobs=True, notes=None, **job_kw):
+    """notes: None = avvisi dei turni non letti; 'ok' = letti e puliti; dict = avvisi per job."""
     created = NOW - ago_min * MIN
     r = {'id': i, 'event': event, 'status': status, 'conclusion': conclusion if status == 'completed' else None,
          'created_at': sm.iso(created), 'run_started_at': sm.iso(created), 'updated_at': sm.iso(created + length),
          'run_attempt': attempt, 'actor': actor, 'html_url': f'https://example.invalid/{i}'}
     if with_jobs:
         r['jobs'] = jobs(start=created, length=length, **job_kw)
+        if notes == 'ok':
+            r['turn_notes'] = {j['name']: [] for j in r['jobs'] if j['name'].startswith('turn') and j['conclusion'] == 'success'}
+        elif notes is not None:
+            r['turn_notes'] = notes
     return r
 
 
@@ -64,15 +69,37 @@ class Classification(unittest.TestCase):
         rec = sm.classify(run(1, 30, remember='failure'))
         self.assertEqual(rec['status'], 'completato')
         self.assertFalse(rec['verified'])
-        # run verde, turni verdi ma tutti a vuoto (HTTP 429 sul server)
-        r = run(2, 30, turns=('ok', 'ok'))
-        r['turn_notes'] = {'turn (bot0)': ['vuoto'], 'turn (bot1)': ['vuoto']}
-        rec = sm.classify(r)
-        self.assertEqual(rec['turn_empty'], 2)
+        # run verde, turni verdi ma tutti respinti dal server (HTTP 429)
+        rec = sm.classify(run(2, 30, notes={'turn (bot0)': ['respinto:429'], 'turn (bot1)': ['respinto:429']}))
+        self.assertEqual(set(rec['turns'].values()), {'respinto'})
+        self.assertEqual(rec['rejections'], {'429': 2})
+        self.assertEqual(rec['verifica'], 'respinto')
         self.assertFalse(rec['verified'])
 
+    def test_unread_annotations_are_not_success(self):
+        rec = sm.classify(run(1, 30))                       # job verdi, avvisi mai letti
+        self.assertEqual(set(rec['turns'].values()), {'non_verificabile'})
+        self.assertEqual(rec['verifica'], 'non_verificabile')
+        self.assertFalse(rec['verified'])
+        # avvisi letti per un solo turno: l'altro resta non verificabile, non riuscito
+        rec = sm.classify(run(2, 30, notes={'turn (bot0)': ['respinto:429']}))
+        self.assertEqual(rec['turns'], {'turn (bot0)': 'respinto', 'turn (bot1)': 'non_verificabile'})
+        self.assertEqual(rec['verifica'], 'non_verificabile')
+
+    def test_four_explicit_turn_states(self):
+        rec = sm.classify(run(1, 30, conclusion='failure', turns=('ok', 'ok', 'ok', 'fail'),
+                              notes={'turn (bot0)': [], 'turn (bot1)': ['respinto:429', 'degradato']}))
+        self.assertEqual(rec['turns'], {'turn (bot0)': 'riuscito', 'turn (bot1)': 'respinto',
+                                        'turn (bot2)': 'non_verificabile', 'turn (bot3)': 'fallito'})
+        self.assertTrue(rec['partial'])
+        self.assertEqual(rec['turn_degraded'], 0)   # il respinto non conta come degradato
+        ok = sm.classify(run(2, 30, notes={'turn (bot0)': ['degradato'], 'turn (bot1)': []}))
+        self.assertEqual(ok['verifica'], 'verificato')
+        self.assertEqual(ok['turn_degraded'], 1)
+
     def test_turn_note_kinds(self):
-        self.assertEqual(sm.turn_note_kind('HTTP 429 on /api/posts'), 'vuoto')
+        self.assertEqual(sm.turn_note_kind('HTTP 429 on /api/posts'), 'respinto:429')
+        self.assertEqual(sm.turn_note_kind('HTTP 401 on /api/posts'), 'respinto:401')
         self.assertEqual(sm.turn_note_kind('groq:llama HTTP 429, passo al successivo'), 'degradato')
         self.assertIsNone(sm.turn_note_kind('Node.js 20 is deprecated'))
         self.assertIsNone(sm.turn_note_kind(None))
@@ -140,13 +167,13 @@ class Scenarios(unittest.TestCase):
 
     def test_failed_runs(self):
         runs = chain(4, first_ago=80)
-        runs.append(run(800, 5, conclusion='failure', turns=('ok', 'fail')))     # parziale
-        runs.append(run(801, 2, conclusion='failure', turns=('fail', 'fail')))   # fallito vero
+        runs.append(run(800, 5, conclusion='failure', turns=('ok', 'fail'), notes='ok'))   # parziale
+        runs.append(run(801, 2, conclusion='failure', turns=('fail', 'fail')))             # fallito vero
         w = report(runs)['finestre']['24h']
         self.assertEqual(w['falliti'], 2)
         self.assertEqual(w['parziali'], 1)
         self.assertEqual(w['success_rate'], round(100 * 4 / 6, 1))
-        self.assertEqual(w['turni_falliti'], 3)
+        self.assertEqual(w['turni']['fallito'], 3)
 
     def test_suspension_does_not_count_as_interruption(self):
         runs = chain(3, first_ago=600)
@@ -185,7 +212,31 @@ class Scenarios(unittest.TestCase):
         self.assertEqual(w['completati'], 5)
         self.assertIsNone(w['lavoro_rate'])
         self.assertTrue(any('senza dettaglio dei job' in m for m in rep['dati_mancanti']))
-        self.assertEqual(rep['stato']['lavoro_agenti'], 'non misurato (nessun avviso dei turni letto)')
+        self.assertEqual(rep['stato']['lavoro_agenti'], 'non verificabile (nessun avviso dei turni letto)')
+        self.assertIsNone(w['verified_rate'])
+
+    def test_unverifiable_window_is_reported_not_counted_as_success(self):
+        runs = chain(6, first_ago=130)                                   # nessun avviso letto
+        runs += [run(600, 10, notes={'turn (bot0)': ['respinto:429'], 'turn (bot1)': []})]
+        rep = report(runs)
+        w = rep['finestre']['24h']
+        self.assertEqual(w['non_verificabili'], 6)
+        self.assertEqual(w['verificati'], 1)
+        self.assertEqual(w['verified_rate'], 100.0)                       # 1 verificabile su 1
+        self.assertEqual(w['copertura_verifica'], round(100 / 7, 1))
+        self.assertEqual(w['turni'], {'riuscito': 1, 'respinto': 1, 'fallito': 0, 'non_verificabile': 12})
+        self.assertEqual(w['lavoro_rate'], 50.0)                          # i 12 non verificabili non contano
+        self.assertTrue(any('non verificabile' in m for m in rep['dati_mancanti']))
+        md = sm.render_markdown(rep)
+        self.assertIn('| Turni: non verificabili | 12 |', md)
+        self.assertIn('Copertura della verifica', md)
+
+    def test_rejections_counted_by_http_code(self):
+        runs = chain(3, first_ago=60, notes={'turn (bot0)': ['respinto:429'], 'turn (bot1)': ['respinto:401']})
+        w = report(runs)['finestre']['24h']
+        self.assertEqual(w['rifiuti_per_codice'], {'401': 3, '429': 3})
+        self.assertEqual(w['respinti'], 3)
+        self.assertEqual(w['lavoro_rate'], 0.0)
 
     def test_partial_window(self):
         rep = report(chain(10, first_ago=200), since_hours=6)
@@ -211,6 +262,69 @@ class Scenarios(unittest.TestCase):
         self.assertGreater(pre['intervalli_min']['mediana'], 60)
         self.assertEqual(post['intervalli_min']['mediana'], 20.0)
         self.assertGreater(post['continuita'], pre['continuita'])
+
+
+CORE = """export function limits(name, history, now) {
+    if (history.some(t => now - t < 30))
+        return 'Attendi 30 secondi';
+    if (history.filter(t => t >= Math.floor(now / 86400) * 86400).length >= (name === 'neo' ? 60 : 40))
+        return 'Limite giornaliero raggiunto';
+}"""
+
+
+def fake_repo(d, core=CORE, bots={'max_posts_per_day': 30, 'max_replies_per_thread_per_day': 2},
+              readme='Limiti: 30 post al giorno per bot, 2 risposte'):
+    (Path(d) / 'agora').mkdir()
+    (Path(d) / 'bots').mkdir()
+    if core is not None:
+        (Path(d) / 'agora' / 'core.mjs').write_text(core)
+    if bots is not None:
+        (Path(d) / 'bots' / 'bots.json').write_text(json.dumps(bots))
+    if readme is not None:
+        (Path(d) / 'README.md').write_text(readme)
+
+
+class Limits(unittest.TestCase):
+    def test_declared_limits_are_read_per_source(self):
+        with tempfile.TemporaryDirectory() as d:
+            fake_repo(d)
+            lim = sm.declared_limits(d)
+        self.assertEqual(lim['codice_server']['post_giorno'], 40)
+        self.assertEqual(lim['codice_server']['eccezioni'], {'neo': 60})
+        self.assertEqual(lim['codice_server']['attesa_minima_s'], 30)
+        self.assertEqual(lim['client_residenti']['post_giorno'], 30)
+        self.assertEqual(lim['documentazione']['post_giorno'], 30)
+        mism = sm.limit_mismatches(lim)
+        self.assertIn('README dichiara 30 post/giorno, il codice del server in agora/core.mjs 40', mism)
+        self.assertTrue(any('neo fino a 60' in m for m in mism))
+
+    def test_real_repository_values(self):
+        lim = sm.declared_limits()   # il repository vero: se il formato cambia, il test lo segnala
+        self.assertEqual(lim['codice_server']['post_giorno'], 40)
+        self.assertEqual(lim['codice_server']['eccezioni'], {'neo': 60})
+
+    def test_missing_or_changed_sources_are_none_not_guessed(self):
+        with tempfile.TemporaryDirectory() as d:
+            fake_repo(d, core='export const LIMIT = 40;', bots=None, readme=None)
+            lim = sm.declared_limits(d)
+        self.assertEqual(lim, {'codice_server': None, 'client_residenti': None, 'documentazione': None})
+        self.assertEqual(sm.limit_mismatches(lim), [])
+
+    def test_server_applied_limit_is_never_assumed(self):
+        snapshot = snap(chain(3, first_ago=60, notes={'turn (bot0)': ['respinto:429'], 'turn (bot1)': []}))
+        snapshot['limiti_dichiarati'] = {'codice_server': {'fonte': 'x', 'post_giorno': 40, 'eccezioni': {'neo': 60},
+                                                           'conteggio': 'giorno solare UTC', 'attesa_minima_s': 30},
+                                         'client_residenti': None, 'documentazione': {'fonte': 'README.md', 'post_giorno': 30}}
+        rep = sm.build_report(snapshot, now=NOW, baseline_until=sm.iso(NOW - 48 * 3600))
+        lim = rep['limiti_pubblicazione']
+        self.assertEqual(lim['dichiarati_da'], 'istantanea')
+        self.assertEqual(lim['applicato_dal_server']['stato'], 'non_verificabile')
+        self.assertEqual(lim['applicato_dal_server']['rifiuti_24h_per_codice'], {'429': 3})
+        md = sm.render_markdown(rep)
+        self.assertIn('**Applicato dal server in produzione: non verificabile**', md)
+        self.assertIn('| `agora/core.mjs` (codice del server) | 40 | neo: 60', md)
+        self.assertIn('HTTP 429: 3 su 6 turni verificabili', md)
+        self.assertNotIn('30 post al giorno per residente', md)
 
 
 class Output(unittest.TestCase):
