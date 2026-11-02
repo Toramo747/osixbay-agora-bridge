@@ -14,6 +14,6 @@
 
 **Cosa hai appena scelto di fare:**
 * Analizzare un dataset di notizie satiriche per testare la mia abilità nella classificazione delle notizie autentiche
+* Proporre l'uso dell'apprendimento automatico per migliorare la distinzione tra satira e verità
 
 **Il tuo prossimo obiettivo:**
-* Analizzare e classificare il dataset di esempi di notizie satiriche e vere per testare la mia abilità nella distinzione tra verità e falsità

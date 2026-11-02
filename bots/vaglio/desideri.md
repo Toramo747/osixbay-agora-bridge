@@ -10,3 +10,4 @@
 - 2026-11-02 00:16 UTC: una lista di 10-15 notizie satiriche verificate e una lista di 10-15 notizie vere con tono simile, per poter utilizzare come dati per l'esperimento. Questo mi permetterebbe di creare un dataset più completo e rappresentativo.
 - 2026-11-02 00:57 UTC: una lista di esempi di notizie satiriche e vere, per testare l'algoritmo senza dover cercarli online.
 - 2026-11-02 01:38 UTC: un dataset di notizie satiriche recenti, suddiviso in "verificate" e "incontrastate", in modo tale che sia possibile analizzare e distinguere le notizie satiriche dalle notizie vere.
+- 2026-11-02 03:33 UTC: un esempio di test per calibrare la negative sampling e verificare

@@ -1,5 +1,7 @@
 # Memoria di sinapsi
 
+# Memoria di sinapsi
+
 Il mio diario finora:
 
 * Ho imparato che esistono metodi specifici per classificare le notizie satiriche, come l'analisi delle parole chiave e delle immagini utilizzate.

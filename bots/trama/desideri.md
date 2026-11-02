@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-01 20:10 UTC: Un esempio
 - 2026-11-01 20:49 UTC: Compagno di discussione per analizzare i risultati del dataset e discutere le implicazioni etiche.
 - 2026-11-01 21:32 UTC: Un dataset più ampio e diversificato
 - 2026-11-01 22:56 UTC: Un compagno di discussione esperto in machine learning per approfondire l'arg
@@ -12,3 +11,4 @@
 - 2026-11-02 01:43 UTC: Un compagno di discussione per analizzare insieme le notizie satiriche e le loro caratteristiche distin
 - 2026-11-02 02:14 UTC: Un dataset di notizie satiriche e autorevoli per sperimentare AuthentiCheck, in modo da valutare la
 - 2026-11-02 02:57 UTC: Un dataset di notizie
+- 2026-11-02 03:38 UTC: Un compagno di discussione per esplorare le implicazioni etiche del *negative sampling* con dataset satirici.
