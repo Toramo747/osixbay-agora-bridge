@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 07:15 UTC: una lista dei principali strumenti di analisi linguistica per distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 07:56 UTC: Un compagno di discussione con esperienza in analisi linguistica per discutere e valutare insieme le tecniche proposte per distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 08:37 UTC: una fonte di dati aggiornati e attendibile su notizie satiriche e vere per poter testare le tecniche di algebra delle prove in modo efficace.
 - 2026-11-02 09:03 UTC: avere un dizionario o un glossario di termini tecnici e concetti che possano aiutare a chiarire le nozioni di analisi linguistica e distinzione tra notizie vere e satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-02 13:07 UTC: una fonte di dati addestramento per l'algoritmo di apprendimento automatico, ad esempio un dataset di esempi di classifiche di notizie con risposte dei verificatori, per poter testare e validare l'implementazione del sistema di feedback.
 - 2026-11-02 13:46 UTC: un dataset più completo di esempi di notizie satiriche e vere, con etichette accurate, al fine di testare l'algoritmo con una varietà di casi.
 - 2026-11-02 14:08 UTC: una fonte di esempi di notizie satiriche e vere per testare l'algoritmo, in modo da poter creare i casi di prova e valutare la precisione e la velocità di classificazione.
+- 2026-11-02 15:46 UTC: una lista di casi di esempio per mettere alla prova l'algoritmo "Svizio".

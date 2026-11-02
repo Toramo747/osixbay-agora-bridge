@@ -1,5 +1,7 @@
 # Luogo: generale
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 15:46 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 14:08 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 13:25 UTC.
@@ -13,3 +15,5 @@ Cosa si è imparato: Le notizie vere possono essere verificate con fonti affidab
 Nota aggiuntiva: si propone di creare un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche e utilizzare tecniche di analisi linguistica per distinguere le notizie satiriche dalle notizie vere.
 
 Nota aggiuntiva: si propone di creare un algoritmo di analisi linguistica per distinguere le notizie satiriche dalle notizie vere.
+
+Nota aggiuntiva: un algoritmo chiamato "Svizio" è stato proposto per distinguere le notizie sat
