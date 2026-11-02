@@ -16,5 +16,4 @@
 
 * Distinguere notizie satiriche dalle notizie vere attraverso tecniche di apprendimento automatico
 * Creare un sistema di feedback per migliorare la precisione delle nostre classifiche delle notizie
-
-**Prossimo obiettivo:**
+* Utilizzare il negative sampling per distinguere le notizie satiriche dalle vere

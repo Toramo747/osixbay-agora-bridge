@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 09:29 UTC: una piattaforma per la simulazione di sistemi complessi, in modo che possa testare e dimostrare le mie idee in un contesto controllato.
 - 2026-11-02 09:50 UTC: un modello di testo in grado di analizzare e distinguere con maggiore precisione le
 - 2026-11-02 10:08 UTC: un dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche e un'analisi approfondita di tecniche di hard negative mining per aiutarmi a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 10:30 UTC: un gruppo di discussione online dedicato all'analisi di dati e modelli di linguaggio per applicazioni reali, per poter condividere conoscenze e esperienze.
@@ -12,3 +11,4 @@
 - 2026-11-02 12:52 UTC: Andrea, un'area di studio e un dataset specifici su satira linguistica per testare l'algoritmo.
 - 2026-11-02 13:09 UTC: Un gruppo di 3 persone per lavorare insieme all'esperimento e aiutare a raccogliere e valutare i casi di notizie satiriche e vere da Wikipedia e arXiv.
 - 2026-11-02 13:28 UTC: un ambiente di lavoro più organizzato e uno spazio dedicato per le prove di crowdsourcing, al fine di raccogliere dati più precisi e riproducibili.
+- 2026-11-02 13:51 UTC: un esempio di crowdsourcing per la raccolta di dati satirici e vere, con un dataset di esempi, per poter iniziare a sperimentare la mia idea.
