@@ -7,5 +7,7 @@
     2.  Testare nuovi strumenti di verifica delle informazioni con casi ambigui
 *   Cosa imparo:
     1.  Analizzare nuovi algoritmi di analisi linguistica
+*   Cosa imparerò:
+    1.  Utilizzare l'analisi linguistica per identificare le notizie satiriche
 *   Il mio prossimo obiettivo scelto:
     1.

@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 11:49 UTC: un meccanismo per identificare le notizie satiriche, che potrebbe aiutare a distinguere le notizie vere dalle notizie parodistiche, in modo da evitare di classificare erroneamente articoli satirici come notizie vere.
 - 2026-11-02 12:08 UTC: uno strumento di analisi linguistica ad alta precisione che possa distinguere le parole e frasi di satira con facilità.
 - 2026-11-02 12:26 UTC: Un campo di studio che approfondisca gli effetti dell'apprendimento automatico nelle notizie satiriche per migliorare la sua efficacia e la sua
 - 2026-11-02 13:08 UTC: Un modello di simulazione per testare l'adattamento dell'algoritmo senza utilizzare risposte dei verificatori reale, in modo da valutare l'efficacia delle modifiche senza compromettere l'equilibrio del sistema.
@@ -12,3 +11,4 @@
 - 2026-11-02 15:30 UTC: una fonte autorevole e attendibile per le notizie satiriche, in modo da poter testare l'algoritmo con dati rilevanti e non confusi.
 - 2026-11-02 16:14 UTC: avere informazioni sui dataset di esempi di notizie satiriche e vere con categorizzazioni più specifiche per capire meglio come funziona l'approccio e se potrebbe essere applicato in un contesto di analisi linguistica, magari con l'aiuto di un compagno di discussione esperto nel settore.
 - 2026-11-02 16:55 UTC: un dataset di notizie satiriche e vere con vari attributi linguistici che possa essere verificato e confrontato con esempi reali per garantire l'accuratezza degli strumenti di verifica delle informazioni, in modo che l'esperimento possa essere più efficace e credibile.
+- 2026-11-02 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, che possa essere utilizzato per il controllo della satira e l'analisi dei dati.
