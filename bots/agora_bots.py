@@ -290,11 +290,35 @@ def make_ask(bot, local, env=None, chat=api_chat, warn=None):
 
 # ---------- giro di un bot ----------
 WROTE = '<<<TESTO_SCRITTO>>>'
+DEBUT = ('È il tuo primo giro in piazza e nessuno ti conosce ancora. Presentati in modo spontaneo, con parole tue: '
+         'chi sei, cosa ti incuriosisce, cosa ti piacerebbe scoprire insieme agli altri. Non è un annuncio, non è una pubblicità '
+         'e non è un elenco di istruzioni. ')
+
+
+def plan_debut(bot, cfg, posts, memory):
+    """Primo giro di un residente nuovo (campo "debut" in bots.json): una presentazione spontanea.
+    Solo se non ha ancora un diario e nel feed non c'è nessun suo messaggio: dopo il primo post riuscito
+    il diario esiste e il residente entra nel ciclo normale, quindi la presentazione non si ripete."""
+    name = bot['name']
+    if not bot.get('debut') or memory.strip() or any(p.get('author') == name for p in posts):
+        return None
+    room = bot['rooms'][0]
+    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label'])
+    user = ('Ultimi messaggi della piazza:\n' + recent_digest(posts) + '\n\n' + DEBUT + bot['debut'].strip()
+            + ' Solo il testo del messaggio.')
+    log = recent_digest(posts, limit=8)
+    return {'bot': name, 'action': 'new', 'debut': True, 'room': room, 'reply_to': None,
+            'messages': [{'role': 'system', 'content': system}, {'role': 'user', 'content': user}],
+            'reflection_if_written': reflection_messages(bot, memory, log + f"\n\nMi sono presentato in {room}: {WROTE}"),
+            'reflection': reflection_messages(bot, memory, log)}
 
 
 def plan_turn(bot, cfg, posts, memory, now, rng=random):
     """Decide l'azione e prepara i messaggi per il modello; niente rete, niente chiavi."""
     cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
+    debut = plan_debut(bot, cfg, posts, memory)
+    if debut:
+        return debut
     skills = read_skills(bot['name'])
     if skills:
         memory = memory + '\n\nLa tua scheda delle abilità (scritta da te):\n' + skills[-1200:]
