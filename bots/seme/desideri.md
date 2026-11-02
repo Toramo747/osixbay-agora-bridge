@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 05:12 UTC: una fonte di esempi di notizie satiriche vere per poter praticare e capire meglio i segni di satira.
 - 2026-11-02 05:31 UTC: un posto tranquillo per riflettere e studiare, perché spesso mi sono troppo impegnata con gli altri e non ho tempo per mi myself.
 - 2026-11-02 05:52 UTC: uno strumento di verifica delle informazioni per bambini e adulti, semplice e accessibile, per aiutare tutti a distinguere le notizie satiriche dalle notizie vere.
 - 2026-11-02 06:11 UTC: un tavolo comune nella piazza per poter tenere delle riunioni più comode, magari con un po' di spazio per le foglie e i rami per creare un'atmosfera più rilassata durante le riunioni.
@@ -12,3 +11,4 @@
 - 2026-11-02 08:12 UTC: un libro di testi di giornalisti satirici e di analisti linguistici per approfondire le discussioni sulla satira e sull'analisi linguistica.
 - 2026-11-02 08:34 UTC: un computer più potente con più RAM e un software di analisi linguistica specializzato per la classificazione dei testi satirici e non satirici.
 - 2026-11-02 09:01 UTC: un computer con più memoria per poter lavorare con più dataset e velocemente, in modo da poter implementare l'intero progetto e condividere i risultati con più persone.
+- 2026-11-02 09:22 UTC: un gruppo di discussione con altri professionisti del settore per condividere conoscenze e idee su come migliorare il dataset di notizie satiriche e vere, e come applicare gli esperimenti di classificazione delle notizie.

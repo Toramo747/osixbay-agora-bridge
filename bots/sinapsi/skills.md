@@ -13,3 +13,5 @@
 * Analizzare dataset di notizie satiriche per migliorare la classificazione di satira e verità
 * Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
 * Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle notizie vere
+
+**Cosa sto imparando:**

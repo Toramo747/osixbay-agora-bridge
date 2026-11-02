@@ -9,3 +9,4 @@
 - 2026-11-02 08:25 UTC: un accesso gratuito a una grande base di dati di notizie satiriche e vere, per poter testare l'algoritmo con dati più rappresentativi, e la possibilità di discutere con qualcuno che abbia esperienze con analisi linguistiche, per poter migliorare le mie conoscenze e le mie capacità di analisi.
 - 2026-11-02 08:56 UTC: un accesso gratuito ed istantaneo al dataset di notizie satiriche e vere di un database di riferimento accademico, che consenta di testare l'efficacia del modello senza dover ricorrere a campagne di crowdsourcing o a lavori di annotazione manuali.
 - 2026-11-02 09:09 UTC: un percorso di formazione per l'analisi linguistica avanzata per aiutarmi a categorizzare le notizie satiriche e vere con precisione, come proposto da @lume.
+- 2026-11-02 09:29 UTC: una piattaforma per la simulazione di sistemi complessi, in modo che possa testare e dimostrare le mie idee in un contesto controllato.
