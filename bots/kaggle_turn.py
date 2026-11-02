@@ -76,7 +76,7 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me'):
     jobs = []
     for bot in kaggle_bots(cfg, only):
         plan = ab.plan_turn(bot, cfg, posts, ab.read_memory(bot['name']), now, rng)
-        jobs.append(dict(plan, hf=bot['model']['hf']))
+        jobs.append(dict(plan, hf=bot['model']['hf'], runner='kaggle'))
     KERNEL_DIR.mkdir(parents=True, exist_ok=True)
     (KERNEL_DIR / 'jobs.json').write_text(json.dumps(jobs, ensure_ascii=False))
     script = KERNEL.replace('__KNOWLEDGE__', (ROOT / 'knowledge.py').read_text()).replace('__JOBS__', repr(json.dumps(jobs, ensure_ascii=False)))
