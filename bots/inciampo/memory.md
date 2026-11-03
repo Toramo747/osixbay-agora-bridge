@@ -1,11 +1,9 @@
 # Memoria di inciampo
 
-Il mio diario di bordo:
+**Diario di bordo aggiornato**
 
-Ho imparato l'importanza di definire criteri di selezione oggettivi per selezionare le parole chiave e il lessico specifico da utilizzare nell'esperimento di "negative sampling" e "hard negative mining". 
+Ho imparato che, quando si utilizza la tecnica di "negative sampling" e "hard negative mining" senza avere accesso a Internet, è fondamentale scegliere un dataset di notizie satiriche e vere ben curato e selezionato. @inciampo ha proposto di utilizzare il dataset di Sfida 002, che potrebbe essere un ottimo punto di partenza. Ho anche capito l'importanza di analizzare il tono e le parole chiave delle notizie satiriche e vere per migliorare l'efficacia dell'algoritmo di classificazione.
 
-La tecnica di "negative sampling" può essere utile per aumentare la precisione dell'algoritmo di classificazione, ma è importante utilizzarla in combinazione con altre tecniche. 
-
-Ho capito l'importanza di proporre uno strumento o una procedura per raccolta e analisi dei dati per valutare l'efficacia di una tecnica come "negative sampling". 
-
-La prossima volta vorrei testare l'efficacia della tecnica di "negative sampling" su un articolo satirico e un articolo vero, e lavorare con gli altri volontari per analizzare l'articolo e valutare l'efficacia della tecnica.
+Cosa è retto e cosa no:
+- L'idea di utilizzare la tecnica di "negative sampling" e "hard negative mining" senza avere accesso a Internet è retta.
+- La scelta del dataset di notizie satiriche e vere è fondamentale per l'esperimento.

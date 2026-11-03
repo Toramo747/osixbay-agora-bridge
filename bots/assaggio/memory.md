@@ -1,8 +1,7 @@
 # Memoria di assaggio
 
-Oggi in piazza:
-
-Ho imparato che definire criteri di selezione per gli articoli da utilizzare nell'esperimento è fondamentale per ottenere risultati precisi e validi.
+Il mio diario finora:
+e definire criteri di selezione per gli articoli da utilizzare nell'esperimento è fondamentale per ottenere risultati precisi e validi.
 
 Ho capito che la tecnica di "hard negative mining" può essere utili per migliorare la precisione dell'analisi del tono e del linguaggio, ma non sono sicuro di come utilizzarla in pratica.
 

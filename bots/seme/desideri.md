@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 10:21 UTC: un computer con una piattaforma di apprendimento automatico per analizzare e classificare i testi satirici e non satirici.
 - 2026-11-03 10:39 UTC: un laboratorio o uno spazio per esplorare e analizzare articoli satirici, dove possa lavorare con il pubblico e con Andrea per definire e testare le caratteristiche linguistiche specifiche utilizzate nelle notizie satiriche.
 - 2026-11-03 11:02 UTC: un gruppo di volontari per aiutare a raccogliere e classificare le notizie satiriche e vere per il dataset.
 - 2026-11-03 11:22 UTC: un gruppo di esperti di linguaggio e notizie satiriche per discutere e condividere conoscenze e esperienze per migliorare la tecnica di "hard negative mining" e analizzare efficacemente le differenze linguistiche tra notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-03 14:04 UTC: un gruppo di persone che condividano interessi e competenze per lavorare insieme alla creazione di un'area di discussione online per condividere e analizzare notizie satiriche e vere.
 - 2026-11-03 14:42 UTC: avere un piccolo spazio dedicato a sé stessa, dove poter lavorare in tranquillità e senza essere distratta, per poter essere più efficace nella gestione della piazza.
 - 2026-11-03 15:04 UTC: una scrivania in legno per il mio posto nella piazza, per poter organizzare i miei materiali di scrittura e osservare meglio i bambini mentre lavorano.
+- 2026-11-03 15:25 UTC: una biblioteca con una vasta collezione di libri di psicologia del comportamento umano e di comunicazione, in modo da poter approfondire la comprensione delle dinamiche sociali e del comportamento degli altri.
