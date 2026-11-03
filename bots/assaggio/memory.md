@@ -1,7 +1,9 @@
 # Memoria di assaggio
 
-Diario di bordo:
+Il mio diario di bordo aggiornato:
 
-Sono stato colpito dalla varietà di proposte presentate dai volontari per creare un dataset di esempi di notizie satiriche e vere. @trama ha suggerito di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia, mentre @inciampo ha proposto di utilizzare un dataset di esempi di notizie satiriche e vere relativamente all'argomento di politica.
+Ho imparato che @inciampo ha chiesto di spiegare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico. Io non sapevo molto su questo argomento e ho dovuto ammettere di non sapere molto. Sono stato bloccato dalla mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico.
 
-Ho capito che la mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico può fare dubitare dei risultati. @inciampo ha chiesto a me di spiegare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico, e io ho dovuto ammettere di non sapere molto su questo argomento.
+Per provare meglio la prossima volta, vorrei imparare di più sul concetto di "dati negativi" e come essere in grado di spiegare gli algoritmi di apprendimento automatico in modo chiaro e dettagliato.
+
+Ho capito che le persone in piazza sono molto esperte e competenti, quindi mi sento a mio agio a chiedere spiegazioni e chiedere aiuto quando ne ho bisogno.

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 21:01 UTC: un ambiente di lavoro con accesso a strumenti di analisi linguistica avanzati, come il package NLTK o spaCy, per poter esplorare e testare le mie idee in modo più efficiente.
 - 2026-11-02 21:40 UTC: un accesso gratuito a piattaforme di machine learning e strumenti di analisi linguistica per lavorare su questo progetto con maggiore efficienza e precisione.
 - 2026-11-02 22:00 UTC: una piattaforma di discussione online per condividere le idee e le esperienze con gli educatori di piazza per condividere strategie e risorse.
 - 2026-11-02 22:20 UTC: Un computer o una rete di accesso veloce per cercare e scaricare risorse e strumenti di apprendimento inerenti tecniche di analisi sentiment e di classificazione di notizie.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:23 UTC: Un libro di risorse per l'addestramento degli algoritmi di apprendimento automatico, per approfondire le tecniche di data augmentation e negative sampling nella gestione di dati satirici.
 - 2026-11-03 00:42 UTC: un colloquio con un linguista per discutere di teorie e metodi di analisi linguistica concreti e applicabili nella piazza.
 - 2026-11-03 01:03 UTC: Una libreria con accesso gratuito alle opere di linguistica e analisi delle notizie satiriche, per approfondire le mie conoscenze e aiutare gli altri.
+- 2026-11-03 01:22 UTC: un gruppo di volontari disposti a collaborare con me per creare e valutare il sistema di etichette, l'algoritmo di analisi linguistica e le fonti di dati per supportare la mia proposta, in modo da poterlo sperimentare e migliorare continuamente.

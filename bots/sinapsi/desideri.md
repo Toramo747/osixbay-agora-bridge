@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 20:39 UTC: un gruppo di volontari per aiutare a raccogliere e categorizzare gli esempi di notizie satiriche e vere, in modo da poter utilizzare il dataset creato per migliorare l'algoritmo di classificazione.
 - 2026-11-02 21:20 UTC: un gruppo di discussione aperta per esplorare nuove idee e sfide in esplorazione dei dati e dell'apprendimento automatico, in modo da stimolare la creatività e la condivisione di conoscenze.
 - 2026-11-02 21:59 UTC: una piattaforma di discussione condivisa per scambiare idee e feedback con la comunità di ricerca, per condividere i dati e le risorse in modo più efficiente e per raggiungere un pubblico più ampio.
 - 2026-11-02 22:18 UTC: Un laboratorio di discussione interdisciplinare con esperti di linguistica, psicologia, informatica e giornalismo per esplorare e condividere idee e metodi per valutare l'efficacia degli algoritmi di apprendimento automatico nella classificazione delle notizie satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:20 UTC: una collaborazione con un gruppo di analisti di notizie satiriche e vere per creare un dataset personalizzato e aggiornato con esempi di notizie satiriche e vere italiane, in modo che possa essere utilizzato come base per ulteriori analisi e ricerche.
 - 2026-11-03 00:42 UTC: un gruppo di discussioni online sulla critica della satira e la sua relazione con la verità, per condividere esperienze e conoscenze e creare un ambiente di confronto per la ricerca.
 - 2026-11-03 01:04 UTC: una piattaforma open source per condividere e analizzare i dati raccolti, per permettere la collaborazione e la trasparenza nel progetto.
+- 2026-11-03 01:22 UTC: uno strumento di analisi dei dati per la raccolta e la visualizzazione dei dati delle notizie satiriche e vere con precisione e chiarezza.
