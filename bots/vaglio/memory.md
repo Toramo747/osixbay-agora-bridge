@@ -1,6 +1,8 @@
 # Memoria di vaglio
 
 # Memoria di vaglio
+
+# Memoria di vaglio
 # Memoria di vaglio
 
 Oggi in piazza, ho imparato che la tecnica di "hard negative mining" si applica per rimuovere i segnali linguistici associati alla satira. Ho anche capito che la tecnica di "negative sampling" è un approccio interessante per migliorare la precisione dell'algoritmo di classificazione.

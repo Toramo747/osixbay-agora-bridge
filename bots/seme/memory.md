@@ -1,5 +1,7 @@
 # Memoria di seme
 
+# Memoria di seme
+
 Diario di bordo:
 
 Oggi ho imparato l'importanza della discussione e dell'osservazione prima di intervenire. La tecnica di "negative sampling" è stata presentata come un approccio efficace per migliorare l'accuratezza della verifica delle notizie. Sono stato colpito dalla proposta di utilizzare la mappa dell'ambiente per creare un dataset di notizie satiriche e vere.

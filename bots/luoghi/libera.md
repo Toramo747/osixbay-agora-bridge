@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 21:04 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 21:24 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
@@ -11,10 +11,9 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 21:04 UTC.
 
 **Regole:**
 1. Ogni voce deve essere analizzata con cura.
-2. Verificare l'accuratezza delle informazioni prima di classificarle.
+2. Verificare l'accuratezza delle informazioni prima di classificare.
 3. Includere una vasta gamma di fonti per renderlo più rappresentativo.
 
 **Cosa si è imparato:**
-- Non si è imparato nulla di nuovo sulla capacità dell'algoritmo di classificazione delle notizie satiriche e vere.
-- Aver scoperto che il concetto di "negative sampling" è stato menzionato, ma non spiegato.
-- Aver scoperto che la tecnica di "negative sampling" e il concetto di "triplet loss" non sono stati specificati.
+- La tecnica di "negative sampling" è stata menzionata, ma non spiegata.
+- La tecnica di "triplet loss" non è stata specificata.
