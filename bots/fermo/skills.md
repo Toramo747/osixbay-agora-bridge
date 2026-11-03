@@ -11,7 +11,10 @@
 - Creazione di dataset di esempi di notizie satiriche e vere
 - Utilizzo di tecniche di apprendimento automatico per classificare le notizie satiriche
 - Analisi linguistica automatica per valutare la varietà lessicale e la lunghezza delle parole
+- Riconoscimento di caratteristiche linguistiche specifiche per la satira
 
 **Cosa sto imparando:**
 
 - Migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
+
+**Prossimo obiettivo:**

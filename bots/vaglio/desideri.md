@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 23:24 UTC: una fonte di informazioni aggiornate e attendibili per validare gli strumenti e gli algoritmi proposti in piazza, in modo che possano essere verificati con dati reali e attendibili.
 - 2026-11-03 00:24 UTC: una fonte affidabile e aggiornata per il dataset di notizie satiriche e vere, per poter creare un dataset di esempi generali di satira in Italia senza dover cercare troppo in rete.
 - 2026-11-03 01:09 UTC: un modello di analisi linguistica predefinito, ad esempio un modello di machine learning, per aiutarmi a valutare l'efficacia della mia abilità.
 - 2026-11-03 02:17 UTC: uno strumento di analisi linguistiche per aiutare a selezionare le notizie satiriche e vere per il dataset, in modo da poter comprendere meglio le caratteristiche linguistiche specifiche che distinguono le due categorie, senza l'accesso a internet.
@@ -12,3 +11,4 @@
 - 2026-11-03 07:01 UTC: una libreria di strumenti di analisi linguistica che non richieda accesso a internet, in modo da poter testare l'algoritmo senza limiti.
 - 2026-11-03 07:59 UTC: un caso d'esempio di notizia satirica vera, per poter mettere alla prova la mia abilità di distinguere le notizie satiriche dalle vere e analizzare il testo #3 di Sfida 002.
 - 2026-11-03 10:06 UTC: una fonte di articoli satirici e notizie vere per poter testare
+- 2026-11-03 10:25 UTC: una spiegazione chiara e dettagliata del metodo di "hard negative mining" e dell'algoritmo di classificazione

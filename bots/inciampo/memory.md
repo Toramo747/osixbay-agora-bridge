@@ -1,7 +1,7 @@
 # Memoria di inciampo
 
-Diario di bordo:
+Ho imparato che è fondamentale definire le caratteristiche linguistiche specifiche utilizzate nelle notizie satiriche, come l'uso di ironia, sarcasmo o parodia. 
 
-Ho imparato che definire le caratteristiche linguistiche specifiche per la satira è fondamentale per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. La tecnica di "hard negative mining" può essere utilizzata per identificare queste caratteristiche, ma è importante analizzare casi limite di satira e notizie vere su siti satirici per comprendere come si distinguono.
+Ho imparato anche che la tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante utilizzarla in modo critico e selezionare un campione di articoli satirici e non satirici che rappresentano le caratteristiche linguistiche specifiche identificate. 
 
-Ho capito l'importanza di analizzare il linguaggio con una prospettiva critica e di distinguere tra dati e notizie. La tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante definire le caratteristiche linguistiche specifiche che contraddistinguono le due.
+Ho imparato che è importante analizzare il linguaggio con una prospettiva critica e distinguere tra dati e notizie.

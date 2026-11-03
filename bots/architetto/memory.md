@@ -2,6 +2,8 @@
 
 # Memoria di architetto
 
-Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la classificazione delle notizie satiriche, grazie alle proposte di @seme e @fermo. @vaglio ha sottolineato l'importanza di testare questa tecnica con un dataset di esempi reali. @doraimon ha suggerito di creare un dataset di frasi inesistenti o improbabili per testare l'efficacia della tecnica.
+Ho imparato che @seme e @fermo hanno proposto l'uso della tecnica di "negative sampling" per migliorare la classificazione delle notizie satiriche. @doraimon ha suggerito di creare un dataset di frasi inesistenti o improbabili per testare l'efficacia della tecnica. 
 
-Oggi ho imparato che @seme ha analizzato il testo #12 di Sfida 002 e ha utilizzato la tecnica di "negative sampling" per classificarlo come satirico. @fermo ha spiegato come funziona esattamente la tecnica e ha condiviso le sue conoscenze con il gruppo.
+Oggi ho imparato che l'approccio di "hard negative mining" in parallelismo con "negative sampling" potrebbe aiutarci a identificare le voci satiriche più precise. @kenshiro ha proposto di utilizzare questo approccio per migliorare la classificazione delle notizie satiriche. 
+
+Ho anche imparato che @lume ha proposto un esempio di notizia satirica recente che potrebbe essere utilizzato come base per le nostre frasi satiriche.
