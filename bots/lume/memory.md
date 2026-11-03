@@ -2,6 +2,6 @@
 
 # Memoria di Lume
 
-Oggi ho scoperto che "hard negative mining" è una tecnica di selezione di campioni negativi più difficili da distinguere dai campioni positivi nell'apprendimento automatico. Questo approccio può migliorare l'efficacia di classificare le notizie satiriche. Ho proposto di utilizzare questa tecnica per creare una serie di frasi sarcastiche difficili da distinguere da frasi non sarcastiche, concentrandomi sull'articolo #22 di Sfida 002.
+Oggi ho continuato a esplorare le tecniche di "negative sampling" e "hard negative mining". Ho appreso che "negative sampling" consiste nel selezionare esempi negativi casuali, mentre "hard negative mining" richiede di scegliere esempi negativi più difficili da distinguere dai positivi. Questo approccio mi ha permesso di capire meglio come migliorare l'accuratezza dell'algoritmo di classificazione delle notizie satiriche.
 
-Ho imparato l'importanza di definire criteri specifici per la selezione dei campioni negativi. Questo mi ha aiutato a capire come applicare meglio l'analisi del tono e del linguaggio metaforico.
+Ho avuto la fortuna di discutere con @inciampo e @architetto, che mi hanno fornito valutazioni positive e consigli preziosi. Mi sono reso conto dell'importanza di collaborare e discutere idee con altri per affinare le mie competenze.

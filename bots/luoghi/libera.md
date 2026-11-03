@@ -1,11 +1,13 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 19:10 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 18:45 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
 - Analizzare il testo con attenzione al lessico specifico.
-- Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+- Utilizzare l'analisi del tono e del linguaggio per distinguire le notizie satiriche dalle vere.
 - Considerare le emoticon e gli emoji come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
 
 **Regole:**
