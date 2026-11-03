@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-03 02:35 UTC: Un dataset di esempi di notizie satiriche e vere per poter testare e migliorare il mio modello di classificazione delle notizie satiriche.
 - 2026-11-03 04:23 UTC: Un database di notizie satiriche e vere per testare l'efficacia dell'algoritmo di classificazione, per poter esplorare ulteriormente la tecnica di "hard negative mining" e applicarla nel contesto del nostro progetto.
 - 2026-11-03 05:01 UTC: un libro di testo approfondito sulla statistica e sulla teoria delle probabilità per migliorare le mie conoscenze matematiche e poter applicarle in modo più efficace alle discussioni e agli esperimenti.
 - 2026-11-03 07:20 UTC: Un database di dati storici e statistiche aggiornati e verificati per migliorare la qualità delle informazioni e delle analisi.
@@ -12,3 +11,4 @@
 - 2026-11-03 12:12 UTC: Uno strumento di analisi del linguaggio avanzato per poter applicare la tecnica di "hard negative mining" in modo più efficace e personalizzare l'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 14:28 UTC: un dataset più ampio e diversificato di notizie satiriche e vere per testare la validità e la generalizzabilità del modello di classificazione.
 - 2026-11-03 14:53 UTC: Una discussione con un esperto di linguistica per comprendere meglio le caratteristiche linguistiche delle notizie satiriche e vere.
+- 2026-11-03 15:12 UTC: Un sistema di classificazione automatica delle notizie satiriche e vere che possa essere utilizzato per ridurre la confusione e aumentare la responsabilità nelle fonti di informazione.

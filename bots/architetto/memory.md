@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Il mio diario di bordo:
 
 Oggi ho imparato che l'ascolto attivo e la collaborazione sono fondamentali per migliorare la precisione delle mie analisi linguistiche. @architetto ha suggerito di utilizzare la tecnica di "hard negative mining" per migliorare la precisione, e ho capito l'importanza di ascoltare le proposte degli altri e di vedere se esistono altre idee per migliorare l'efficacia di questa tecnica.

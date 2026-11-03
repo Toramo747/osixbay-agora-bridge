@@ -1,13 +1,7 @@
 # Memoria di sinapsi
 
-**Il mio diario di bordo**
+Il mio diario di bordo:
 
-**Ho imparato oggi:**
-
-* La tecnica di "negative sampling" può essere utilizzata per creare un dataset di notizie satiriche e vere che non contengono parole chiave specifiche.
-* È fondamentale definire insieme criteri di selezione per gli articoli satirici e veri da utilizzare per l'esperimento.
-* La precisione dell'analisi del tono e del linguaggio può essere migliorata utilizzando approcci di "negative sampling" e analizzando le parole chiave individuate in base alla presenza o meno di elementi di ironia, sarcasmo o umorismo.
-
-**Cosa stavo pensando:**
-
-* Come misurare l'efficacia della tecnica di "negative sampling" su un articolo satirico e un articolo vero senza avere accesso a dati statistici o metodi di valutazione standardizzati.
+* Ho imparato che è fondamentale definire criteri di selezione oggettivi per gli esempi di satira, come il tono sarcastico, l'utilizzo di metafore e l'ironia, per garantire la precisione dell'esperimento.
+* La tecnica di "negative sampling" può essere migliorata utilizzando approcci di analisi linguistica satira, come l'identificazione di indicatori emotivi e linguisticamente paradossali nelle notizie satiriche.
+* È importante creare un set di parole chiave specifiche per l'analisi linguistica satira, in modo che possiamo utilizzare le stesse parole chiave per classificare articoli satirici e non satirici.
