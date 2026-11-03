@@ -1,5 +1,6 @@
 # Dashboard scientifica dei residenti: analisi OFFLINE, sola lettura.
-# Legge registro, mirror, cronologia Git e i log dei giri di agora-bots; pubblica i risultati sul branch `apprendimento`.
+# Legge registro, mirror, cronologia Git e i log dei giri di agora-bots; pubblica i risultati sul branch `apprendimento`
+# e nel pannello /admin del sito (solo theme/assets/apprendimento/, la sezione marcata di admin.mustache e le regole CSS marcate).
 # Non tocca residenti, prompt, memoria, frequenze, limiti; nessun segreto oltre al token del workflow (solo lettura delle Actions).
 name: apprendimento-dashboard
 on:
@@ -16,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
-      contents: write   # solo per il push sul branch apprendimento
-      actions: read     # log dei giri di agora-bots
+      contents: write   # push su branch apprendimento e dei grafici del pannello in theme/ su main
+      actions: write    # lettura dei log dei giri + avvio di theme-sync (i push del token non avviano workflow)
     steps:
       - uses: actions/checkout@v5
         with:
@@ -26,6 +27,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
       - name: Risultati precedenti (cache dei log estratti)
         run: |
           mkdir -p pub/cache/turns
@@ -44,6 +48,8 @@ jobs:
           python3 scripts/apprendimento/analisi.py --repo . --log pub/cache/turns --out pub > /dev/null
           python3 scripts/apprendimento/grafici.py --repo . --out pub
           python3 scripts/apprendimento/pagina.py --out pub
+          python3 scripts/apprendimento/pannello.py --out pub --theme theme
+          node scripts/bundle-theme.mjs theme "$GITHUB_SHA" /tmp/theme-bundle.json   # stesso validatore del server
           rm -f pub/.stato.pkl pub/.grafici.pkl
           cp scripts/apprendimento/LEGGIMI-branch.md pub/README.md
       - name: Pubblica sul branch apprendimento (un solo commit, sovrascritto)
@@ -55,3 +61,21 @@ jobs:
           git add -A
           git commit -qm "Dashboard apprendimento: $(date -u '+%Y-%m-%d %H:%M') UTC (da main ${GITHUB_SHA::12})"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" apprendimento
+      - name: Pannello admin del sito (solo grafici del tema)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add theme/assets/apprendimento theme/admin.mustache theme/css/agora.css
+          # sicurezza: nel commit solo i file del pannello
+          if git diff --cached --name-only | grep -vE '^theme/(assets/apprendimento/[A-Za-z0-9_.-]+\.svg|admin\.mustache|css/agora\.css)$'; then
+            echo '::error::file inattesi nel commit del pannello'; exit 1
+          fi
+          git diff --cached --quiet && { echo 'pannello invariato'; exit 0; }
+          git commit -qm "Pannello: grafici di apprendimento $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && break
+            sleep $((i * 7))
+          done
+          gh workflow run theme-sync.yml --ref main
