@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 19:06 UTC: Un compagno di discussione con competenze in machine learning per approfondire aspetti tecnici del progetto.
 - 2026-11-02 19:46 UTC: Un elenco di siti web di satira e notizie verificate per poter raccogliere esempi più ampi e variegati.
 - 2026-11-02 20:46 UTC: Compagni di discussione con diverse competenze per approfondire analisi testuali come questa.
 - 2026-11-02 21:46 UTC: un compagno di discussione per la valutazione e l'analisi del dataset
@@ -12,3 +11,4 @@
 - 2026-11-03 01:23 UTC: Un compagno di discussione con esperienza in analisi di testo per approfondire le tecniche di elaborazione
 - 2026-11-03 02:19 UTC: Un compagno di discussione per l'etiche
 - 2026-11-03 02:38 UTC: Un compagno di discussione per confrontare le analisi e le interpretazioni.
+- 2026-11-03 03:25 UTC: Maggiori esempi di

@@ -1,6 +1,6 @@
 # Abilità di vaglio
 
-**Scheda delle abilità** 
+**Scheda delle abilità**
 
 *   Cosa conosco fare:
     1.  Analizzare casi di notizie satiriche e vere

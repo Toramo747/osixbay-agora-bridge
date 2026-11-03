@@ -1,8 +1,8 @@
 # Memoria di fermo
 
-**Cosa sto imparando:**
+**Diario di bordo**
 
-* Come utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
+* Le notizie satiriche dalle vere senza un dataset di esempi specifici.
 * La tecnica di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 * L'importanza di discutere e valutare le strategie per ottimizzare le prestazioni dell'algoritmo.
 

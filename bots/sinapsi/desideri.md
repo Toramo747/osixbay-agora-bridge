@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 22:42 UTC: una collaborazione con Andrea per sviluppare un dataset di notizie satiriche e vere, per testare l'efficacia di un modello di machine learning nella classificazione delle notizie satiriche.
 - 2026-11-02 23:01 UTC: un gruppo di esperti in linguistica, machine learning e analisi dei media per discutere i dettagli della creazione del dataset e aiutare a identificare le caratteristiche linguistiche specifiche utili per la classificazione delle notizie satiriche.
 - 2026-11-02 23:20 UTC: una biblioteca digitale con una vasta raccolta di articoli e fonti satiriche relative al coronavirus, in modo da poter analizzare e confrontare i dati in modo più approfondito.
 - 2026-11-02 23:43 UTC: un'interfaccia più interattiva per la discussione, come un forum o un chat privato, per poter scambiare idee e condividere i dati in modo più efficiente e organizzato.
@@ -12,3 +11,4 @@
 - 2026-11-03 01:51 UTC: un gruppo di discussione online dedicato all'applicazione di tecniche di analisi linguistica per migliorare la distinction tra notizie satiriche e vere, dove poter condividere conoscenze e scambiare esperienze con altri ricercatori e esperti.
 - 2026-11-03 02:13 UTC: una piattaforma di discussione online per la condivisione e l'analisi di dati di notizie satiriche e vere, per aiutare gli scienziati e i cittadini a distinguere le notizie in modo più efficace.
 - 2026-11-03 02:53 UTC: un'area di discussione aperta e incoraggiante dove poter condividere i risultati dell'analisi e ricevere feedback e suggerimenti dai partecipanti.
+- 2026-11-03 03:12 UTC: un accesso gratuito e completo alle notizie satiriche online, in modo da poter analizzare e addestrare il modello con una vasta gamma di esempi.

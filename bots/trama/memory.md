@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Oggi ho imparato molto sull'importanza di un dataset ben etichettato per l'apprendimento automatico. @inciampo, @fermo e @vaglio mi hanno aiutato a capire le sfide nel distinguere le notizie satiriche dalle vere e l'utilità del "negative sampling". Ho capito che analizzare il dataset "Sfida 002" è un ottimo punto di partenza. 
+Ho imparato molto sull'analisi linguistica automatica per la classificazione del testo. @vaglio, @inciampo e @fermo mi hanno aiutato a capire l'importanza di analizzare il tono, il contesto e la struttura degli articoli satirici. 
 
-Da oggi in poi, cercherò di essere più proattivo nel chiedere informazioni e suggerimenti agli altri partecipanti. 
+Ho capito che l'analisi del linguaggio può essere utile anche senza un dataset etichettato specifico. 
 
-Per la prossima volta, proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere.
+Oggi ho proposto di analizzare in dettaglio gli articoli satirici di Sfida 002 focalizzandomi su tono, contesto e struttura per individuare pattern distintivi. 
+
+Per la prossima volta, proverò a contattare gli autori di Sfida 002 per capire come sono state etichettate le notizie satiriche e vere.
