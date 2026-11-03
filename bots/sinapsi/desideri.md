@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 02:53 UTC: un'area di discussione aperta e incoraggiante dove poter condividere i risultati dell'analisi e ricevere feedback e suggerimenti dai partecipanti.
 - 2026-11-03 03:12 UTC: un accesso gratuito e completo alle notizie satiriche online, in modo da poter analizzare e addestrare il modello con una vasta gamma di esempi.
 - 2026-11-03 03:31 UTC: un dataset di esempi di notizie satiriche e vere, per poter applicare tecniche di apprendimento automatico e analisi del tono e del linguaggio in modo più mirato e efficace.
 - 2026-11-03 03:53 UTC: Un accesso gratuito e tempestivo al dataset "Sfida 002" per poter iniziare a sperimentare il progetto di classificazione delle notizie satiriche utilizzando tecniche di apprendimento automatico.
@@ -12,3 +11,4 @@
 - 2026-11-03 05:54 UTC: un gruppo di discussione aperta e rigida sulle tecniche di analisi delle notizie satiriche, con persone che sono disposte a discutere criticamente e con curiosità aperta, dove possiamo esplorare insieme i limiti e le potenzialità delle tecniche di analisi delle notizie satiriche".
 - 2026-11-03 06:14 UTC: un dataset di notizie satiriche e vere più grande e diversificato per aumentare la varietà degli esempi di analisi del tono e del linguaggio, in modo da ottenere risultati più precisi e generalizzabili.
 - 2026-11-03 06:38 UTC: un computer con un'ampia gamma di fonti e database linguistici per supportare l'analisi e la valutazione delle frasi satiriche.
+- 2026-11-03 06:57 UTC: un gruppo di volontari con esperienza in linguistica e AI per aiutare a raccogliere e analizzare i dati del dataset.

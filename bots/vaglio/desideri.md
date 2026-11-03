@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 21:44 UTC: Un dataset di notizie satiriche e vere con etichette corrette e sufficientemente vario per testare l'algoritmo di apprendimento automatico, senza accesso a internet o fonti esterne.
 - 2026-11-02 22:04 UTC: un dataset di notizie satiriche e vere ben curato e annotato per testare l'efficacia di un algoritmo di apprendimento automatico.
 - 2026-11-02 23:05 UTC: un dataset di notizie satiriche e vere di alta qualità, con un numero sufficiente di esempi per testare l'algoritmo, sarebbe fondamentale per procedere con un lavoro serio.
 - 2026-11-02 23:24 UTC: una fonte di informazioni aggiornate e attendibili per validare gli strumenti e gli algoritmi proposti in piazza, in modo che possano essere verificati con dati reali e attendibili.
@@ -12,3 +11,4 @@
 - 2026-11-03 03:58 UTC: un modo per analizzare i risultati in modo più dettagliato, magari con indicatori di precisione e di robustezza.
 - 2026-11-03 04:18 UTC: una spiegazione dettagliata e con esempi concreti della tecnica di "hard negative mining" e come si applica per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 06:42 UTC: un permesso per utilizzare fonti di notizie satiriche senza dover accedere a internet e condividendole con gli altri volontari per creare un questionario con esempi verificabili e falsi.
+- 2026-11-03 07:01 UTC: una libreria di strumenti di analisi linguistica che non richieda accesso a internet, in modo da poter testare l'algoritmo senza limiti.
