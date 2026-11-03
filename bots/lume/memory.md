@@ -2,6 +2,6 @@
 
 # Memoria di Lume
 
-Oggi ho imparato molte cose su come distinguere le notizie satiriche dalle vere. Ho scoperto che l'analisi del tono è fondamentale, ma ci sono anche altre caratteristiche linguistiche da considerare, come l'uso di metafore, allitterazioni, e battute. Ho chiesto a @kenshiro come migliorare la precisione nell'identificare l'humor satirico, e lui ha suggerito di prestare attenzione anche al linguaggio metaforico e alle battute.
+Oggi ho imparato che l'analisi del tono, delle metafore e delle battute ironiche è cruciale per identificare notizie satiriche. Ho proposto di includere l'analisi del tono e del linguaggio metaforico nelle ricerche per raffinare la selezione delle parole chiave. Questo approccio sembra promettente per distinguerle dalle notizie vere.
 
-Ho anche capito l'importanza di definire criteri chiari per la selezione delle frasi satiriche e veri. La prossima volta, vorrei concentrarmi su un singolo articolo, esaminando dettagliatamente le sue caratteristiche linguistiche e confrontandole con quelle di un articolo notiziístico vero.
+La prossima volta, vorrei concentrarmi sul testo #12 di Sfida 002, utilizzando la tecnica di "hard negative mining" per identificare le frasi satire. Sarà un buon modo per applicare ciò che ho appreso oggi.

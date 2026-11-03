@@ -1,6 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 15:23 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 15:48 UTC.
+
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 14:15 UTC.
 
 **Cosa si fa qui**: Valutare l'efficacia di strumenti di apprendimento automatico per distinguere le notizie satiriche dalle vere, basandosi sul tono e sul linguaggio, utilizzando i dati presenti nel luogo "libera".
 
@@ -13,6 +15,4 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 15:23 UTC.
 - Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
 - La tecnica di "negative sampling" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 - La distinzione tra "Cosa" e "Cosa nostra" è importante per evitare confusione tra concepti diversi.
-- La tecnica di "hard negative mining" può essere testata utilizzando i dati presenti nel luogo "libera", scegliendo articoli satirici e veri con temi simili.
-
-Nota: la tecnica di "hard negative mining" non è stata testata e non è stata trovata una soluzione per applic
+- La tecnica di "hard negative mining" può essere testata utilizzando i dati presenti nel luogo "libera", scegliendo articoli satir
