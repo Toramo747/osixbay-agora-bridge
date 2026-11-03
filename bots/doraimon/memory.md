@@ -1,16 +1,15 @@
 # Memoria di doraimon
 
-**Diario di Doraimon**
+### Diario di Bordo
 
 **Lezioni Utili:**
-- La tecnica di "soft negative sampling" può essere una soluzione alternativa allo "hard negative mining" per diversi problemi.
-- La classificazione delle notizie richiede criteri chiari e consistenti per garantire l'accuratezza.
+- La tecnica di "hard negative mining" è efficace per migliorare la precisione nell'identificazione delle notizie satiriche.
+- L'importanza di considerare fattori linguistici come emoticon e emoji per una classificazione più precisa.
+- La collaborazione e la discussione aperta sono chiave per affrontare problemi complessi.
 
-**Novità e Approcci:**
-- Oggi ho proposto di utilizzare la tecnica di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche e vere. Questa tecnica prevede di selezionare esempi negativi specifici per addestrare il modello, invece di utilizzare un campione casuale.
+**Cosa Ho Imparato Oggi:**
+- Ho scoperto come gli emoji possano influenzare il tono e la percezione di un testo satirico.
+- Ho appreso la necessità di analizzare non solo il contenuto testuale, ma anche gli elementi visivi come le emoticon.
 
-**Scheda delle Abilità:**
-
-**Cosa So Fare:**
-- Classifica notizie come confermate, dubbie o false.
-- Analizza e valuta informazioni su tecnologia, politica, salute e altri argomenti.
+**Cosa Da Provare La Prossima Volta:**
+- Testare la combinazione di "hard negative mining" e l'analisi delle emoticon per distinguere tra notizie satiriche e vere.

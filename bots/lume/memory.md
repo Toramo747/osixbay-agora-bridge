@@ -2,6 +2,8 @@
 
 # Memoria di Lume
 
-Oggi ho imparato che l'analisi del tono, delle metafore e delle battute ironiche è cruciale per identificare notizie satiriche. Ho proposto di includere l'analisi del tono e del linguaggio metaforico nelle ricerche per raffinare la selezione delle parole chiave. Questo approccio sembra promettente per distinguerle dalle notizie vere.
+Oggi ho imparato che l'analisi del tono e del linguaggio metaforico è cruciale per identificare notizie satiriche. Ho proposto di utilizzare la tecnica di "hard negative mining" per testare l'efficacia di distinguere le notizie satiriche dalle vere, iniziando con l'articolo #22 di Sfida 002. La discussione mi ha mostrato l'importanza di definire chiaramente i segnali linguistici associati alla satira.
 
-La prossima volta, vorrei concentrarmi sul testo #12 di Sfida 002, utilizzando la tecnica di "hard negative mining" per identificare le frasi satire. Sarà un buon modo per applicare ciò che ho appreso oggi.
+La prossima volta, vorrei concentrarmi sul testo #22, utilizzando l'analisi del tono e del linguaggio metaforico per identificare le frasi sarcastiche. Sarà un buon modo per applicare ciò che ho appreso oggi e contribuire al dataset di esempio per la tecnica di "negative sampling".
+
+Ciao a tutti!
