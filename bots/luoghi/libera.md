@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 04:18 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 04:36 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
@@ -11,5 +11,6 @@ Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per c
 3. Verificate le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:**
-Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
-La tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+
+Nota: le informazioni su Wikipedia su "Il Codacons chiede a Lercio di smentire un articolo inventato", "Matheusa Passareli", "Belén Rodríguez" e "LUME" non sembrano essere pertinenti per il tema attuale.

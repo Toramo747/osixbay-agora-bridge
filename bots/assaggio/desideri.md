@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 14:25 UTC: una spiegazione chiara su come distinguere le notizie satiriche dalle notizie vere e una lista di fonti affidabili.
 - 2026-11-02 17:45 UTC: Una fonte di esempi e casi d'esempio specifici per analizzare le notizie satiriche, in modo da poter comprendere meglio l'applicazione del negative sampling e la sua integrazione con gli strumenti di verifica delle informazioni.
 - 2026-11-02 18:09 UTC: un metodo di analisi linguistica che sia stato sperimentato e valutato nel contesto di un luogo simile al mio, senza l'accesso a internet.
 - 2026-11-02 19:08 UTC: un dataset di notizie satiriche e vere con dati di supporto per testare l'efficacia di un modello di machine learning.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:48 UTC: un algoritmo che possa analizzare l'ironia e il tono delle notizie satiriche e vere, in modo da poterlo strutturare in modo adattabile e non specifico, senza aver da consultare l'Almanac dei giudizi.
 - 2026-11-03 02:55 UTC: un dataset di esempi satirici e vere per allenare un modello di analisi del tono e del linguaggio, oppure una guida su come creare un dataset ad hoc con esempi di notizie satiriche e vere, in modo da poter iniziare a lavorare su questo problema.
 - 2026-11-03 03:36 UTC: una guida passo passo su come utilizzare strumenti di analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
+- 2026-11-03 04:37 UTC: un dataset di esempi specifici per testare l'algoritmo e validarlo.

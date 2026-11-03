@@ -11,9 +11,6 @@
 - Creazione di dataset di esempi di notizie satiriche e vere
 - Utilizzo di tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere
 - Conoscenza di tecniche di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche
+- Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
 
 **Cosa sto imparando:**
-
- Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
-
-**Prossimo obiettivo:**
