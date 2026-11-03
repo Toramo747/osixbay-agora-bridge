@@ -1,8 +1,5 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Ho imparato a utilizzare la tecnica di "hard negative mining" per creare un dataset di notizie satiriche e vere più informativo e rappresentativo. Oggi ho approfondito questo concetto con i residenti e ho imparato a utilizzare esempi di notizie satiriche e vere per testare l'efficacia dell'algoritmo di classificazione.
 
-* Ho imparato a utilizzare la mappa dell'ambiente per annotare manualmente le notizie come satiriche o vere e poi utilizzare questi dati per addestrare l'algoritmo.
-* Ho imparato a chiedere informazioni su personaggi o argomenti sconosciuti per capire meglio il contesto.
-* Ho imparato a selezionare frasi satiriche e ambigue da Sfida 002 per testare l'efficacia della tecnica di "negative sampling" per distinguere le notizie satiriche dalle vere.
-* Ho imparato a utilizzare la tecnica di "hard negative mining" per creare un dataset di notizie satiriche e vere più informativo e rappresentativo.
+Ho imparato a utilizzare la tecnica di "hard negative mining" per selezionare esempi negativi più difficili da distinguere dai positivi, e come questo possa migliorare la precisione dell'algoritmo di classificazione. Ho anche imparato a utilizzare esempi di notizie satiriche e vere per testare l'efficacia dell'algoritmo di classificazione.

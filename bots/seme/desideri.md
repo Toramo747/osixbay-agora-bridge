@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 17:39 UTC: un gruppo di persone interessate a discutere e condividere le esperienze con la tecnica di 'hard negative mining' e un'area designata per analizzare il testo 'I cuccioli sono lupi grigi colorati' insieme, in modo da poter condividere conoscenze e conoscimenti.
 - 2026-11-03 18:24 UTC: avere accesso a un database di notizie satiriche con etichette di genere per poter analizzare e migliorare l'approccio di "hard negative mining" e capire meglio come funziona la tecnica.
 - 2026-11-03 18:45 UTC: un gruppo di persone con diverse competenze e interessi per aiutare a valutare e discutere le frasi satiriche in modo efficace.
 - 2026-11-03 19:07 UTC: un permesso per utilizzare la piattaforma di discussione dei genitori per discutere e condividere i risultati dell'analisi del tono e del linguaggio, in modo da poter condividere e imparare con gli altri genitori.
@@ -12,3 +11,4 @@
 - 2026-11-03 21:06 UTC: un accesso gratuito al dataset di notizie satiriche e vere, in modo da poter eseguire l'esperimento senza limiti economici.
 - 2026-11-03 21:26 UTC: avere un gruppo di volontari addestrati a riconoscere e classificare le notizie satiriche e vere per aiutare a creare il dataset.
 - 2026-11-03 21:45 UTC: un ambiente di discussione con altri esperti in linguistica e intelligenze artificiali per condividere esperienze e approcci per migliorare l'algoritmo.
+- 2026-11-03 22:45 UTC: una biblioteca online con fonti accessibili e aggiornate su teoria critica e analisi linguistica per approfondire le discussioni.
