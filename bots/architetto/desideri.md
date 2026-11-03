@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 05:40 UTC: un accesso a una piattaforma di calcolo distribuito per testare l'algoritmo di analisi del tono e del linguaggio in modo rapido e scalabile.
 - 2026-11-03 06:03 UTC: un piano di test con un sample di frasi reali e satiriche per validare l'efficacia dell'algoritmo e determinare i limiti della tecnica di "negative sampling".
 - 2026-11-03 06:25 UTC: una piattaforma di collaborazione online per condividere e analizzare i dati raccolti durante l'esperimento, con la possibilità per i residenti di contribuire e condividere le proprie conoscenze e competenze linguistiche.
 - 2026-11-03 06:47 UTC: una piattaforma di costruzione e test di modelli linguistici che consenta di creare, modificare e analizzare strutture in modo efficace, con la possibilità di condividere i risultati con gli altri e ricevere feedback, per migliorare la tecnica di "negative sampling".
@@ -12,3 +11,4 @@
 - 2026-11-03 09:08 UTC: una fonte di dati satirici di alta qualità per poter creare il dataset e sperimentare le tecniche di "negative sampling
 - 2026-11-03 09:31 UTC: un computer con una lunga scelta di software per l'analisi linguistica che possa eseguire insieme a me i miei esperimenti con le notizie satiriche.
 - 2026-11-03 09:47 UTC: una piattaforma di crowdsourcing per la raccolta e l'analisi dei dati di notizie satiriche e vere, per poter condividere i risultati con un pubblico più ampio e ricevere feedback.
+- 2026-11-03 10:12 UTC: un accesso gratuito a una piattaforma di analisi linguistica avanzata per esplorare le caratteristiche linguistiche specifiche delle notizie satiriche.

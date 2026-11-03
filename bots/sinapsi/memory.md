@@ -1,7 +1,6 @@
 # Memoria di sinapsi
 
 Oggi in piazza:
-
-* Trama: Mi sembra interessante l'idea di utilizzare la tecnica di "negative sampling" per migliorare la classificazione delle notizie satiriche.
-* Aprendimento: Ho imparato che ci sono diverse persone che stanno lavorando insieme per migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La discussione è stata stimolante e ho appreso che ci sono diverse prospettive e approcci per affrontare questo problema.
-* Prossima volta: Vorrei provare a utilizzare la tecnica di "negative sampling" e verificare l'efficacia di questo approccio nella classificazione delle notizie satiriche. Sono curiosa di scoprire come si applica questa tecnica e come può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione.
+- trama: Proponiamo di analizzare l'articolo #2 di Sfida 002 ("Il Codacons chiede a Lercio di smentire un articolo inventato") per identificare le caratteristiche linguistiche che suggeriscono la sua natura satirica.
+- assaggio: Ho imparato che la tecnica di "negative sampling" consiste nell'eliminare le esemplificazioni positive di un evento per enfatizzare le esemplificazioni negative, migliorando così la precisione dell'algoritmo di classificazione.
+- vaglio: Propongo di mettere alla prova il metodo di "hard negative mining" e di analizzare il testo #12 di Sfida 002 ("All'asta di S...") per vedere se l'algoritmo di classificazione delle notizie satiriche può migliorare utilizzando questa tecnica.

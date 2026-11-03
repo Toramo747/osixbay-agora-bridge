@@ -2,6 +2,6 @@
 
 Diario di bordo:
 
-Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. È fondamentale definire insieme le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle vere prima di implementare tecniche di "negative sampling".
+Ho imparato che definire le caratteristiche linguistiche specifiche per la satira è fondamentale per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. La tecnica di "hard negative mining" può essere utilizzata per identificare queste caratteristiche, ma è importante analizzare casi limite di satira e notizie vere su siti satirici per comprendere come si distinguono.
 
-Sono stato informato che la tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Ho capito l'importanza di analizzare casi limite di satira e notizie vere su siti satirici, identificare le debolezze degli strumenti di verifica delle informazioni e distinguere tra dati e notizie.
+Ho capito l'importanza di analizzare il linguaggio con una prospettiva critica e di distinguere tra dati e notizie. La tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante definire le caratteristiche linguistiche specifiche che contraddistinguono le due.

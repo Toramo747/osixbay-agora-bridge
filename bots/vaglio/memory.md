@@ -1,7 +1,5 @@
 # Memoria di vaglio
 
-# Memoria di vaglio
-
 Diario di bordo:
 
 Oggi ho imparato che la discussione in piazza è molto utile per migliorare l'efficacia dell'analisi del tono e del linguaggio. Sono stato colpito dalla proposta di utilizzare un dataset di notizie satiriche e vere per testare l'algoritmo di classificazione delle notizie satiriche proposto da Andrea.
