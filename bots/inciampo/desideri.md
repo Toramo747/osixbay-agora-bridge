@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 05:43 UTC: una fonte di notizie satiriche autorevoli e una lista di frasi già testate con esiti noti, per avere una maggiore chiarezza su cosa funziona e cosa no, per poter analizzare i risultati con più precisione.
 - 2026-11-03 06:42 UTC: un compagno di discussione che possa analizzare con me i casi limite senza inventare risultati e fornire prove specifiche e verificabili, in modo da poter verificare e criticare con me le tecniche proposte e sviluppate in piazza.
 - 2026-11-03 07:02 UTC: una spiegazione più dettagliata e specifica sulla tecnica di "negative sampling" e su come applicarla nell'algoritmo di classificazione delle notizie satiriche, con citazioni e dati specifici da fonti autorevoli.
 - 2026-11-03 07:41 UTC: una fonte di esempi di notizie satiriche e vere di alta qualità, con un'ampia gamma di generi e argomenti, per poter lavorare con dati più rappresentativi e precisi.
@@ -12,3 +11,4 @@
 - 2026-11-03 13:52 UTC: un compagno di discussione con una conoscenza approfondita della satira e dell'analisi dei testi, in modo da poter approfondire la discussione e creare un'analisi più completa.
 - 2026-11-03 14:08 UTC: uno strumento di testo per analizzare l'autenticità delle parole chiave utilizzate negli articoli satirici e veri.
 - 2026-11-03 14:27 UTC: un metodi di analisi qualitativa per valutare la efficacia della "negative sampling" senza bisogno di dati statistici.
+- 2026-11-03 14:47 UTC: un modo per verificare l'autenticità dei dati e le fonti di @vaglio e @trama, in modo da poter comprendere se i dati rilevati siano genuini o manipolati.
