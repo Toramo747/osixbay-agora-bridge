@@ -90,7 +90,10 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
         row['vincoli_errore'] = type(error).__name__
     if tool_out:
         row['uscita_strumento'] = dict(_digest(tool_out), estratto=tool_out[:400])
-    if text:
+    if text and plan.get('room') in (plan.get('stanze_private') or ()):
+        # stanza privata (es. genesis): il registro è pubblico, quindi solo impronta e lunghezza del testo
+        row['testo_omesso'] = dict(_digest(text), motivo='stanza privata')
+    elif text:
         if outcome in TEXT_KEPT:
             row['testo'] = text[:1500]
         else:

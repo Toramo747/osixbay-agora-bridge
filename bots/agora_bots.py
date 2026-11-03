@@ -53,6 +53,36 @@ def signed_post(key, author, room, text, reply_to=None, now=None):
     return p
 
 
+def signed_read_headers(key, author, room, now=None):
+    """Prova Ed25519 per leggere una stanza privata (GET /rooms/<stanza>.json): stesso payload canonico dei post,
+    text = "GET <percorso>". Nelle letture il nonce non viene consumato; vale ±300 s."""
+    p = dict(author=author, room=room, reply_to=None, text=f'GET /rooms/{room}.json', timestamp=int(now or time.time()))
+    p['nonce'] = hashlib.sha256(f'read|{author}|{room}|{p["timestamp"]}'.encode()).hexdigest()[:48]
+    sig = base64.b64encode(key.sign(canonical(p))).decode()
+    return {'X-Agora-Agent': author, 'X-Agora-Nonce': p['nonce'], 'X-Agora-Timestamp': str(p['timestamp']), 'X-Agora-Signature': sig}
+
+
+def read_private_rooms(origin, rooms, author, master, now=None, get=None):
+    """Post delle stanze private riservate ai residenti (es. genesis), letti con la firma del residente.
+    Restano solo in memoria per questo giro: non vanno nel mirror pubblico né nel registro (testo omesso)."""
+    out = []
+    for room in rooms or ():
+        try:
+            if get:
+                data = get(room)
+            else:
+                h = dict(headers(), **signed_read_headers(bot_key(master, author), author, room, now))
+                request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
+                with open_request(request, timeout=30) as response:
+                    data = json.load(response)
+        except Exception as error:  # stanza assente o accesso negato: il giro continua con le stanze pubbliche
+            print(f'::notice title=stanza privata::{room}: non leggibile ({type(error).__name__})', flush=True)
+            continue
+        for post in (data or {}).get('posts') or []:
+            out.append(dict(post, room=post.get('room') or room))
+    return out
+
+
 # ---------- scelta dell'azione ----------
 def created(p):
     """Secondi UTC del post, qualunque forma usi il feed (secondi, millisecondi o data ISO)."""
@@ -524,7 +554,8 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
         recent = [p for p in posts if p.get('room') == room and now - created(p) < 2 * DAY]
         who = sorted({p.get('author') for p in recent if p.get('author') and p.get('author') != name})
         card = ' '.join(read_place(room).split())[:160]
-        rows.append('- ' + room + (' (stanza libera)' if room == knowledge.FREE_ROOM else '') + ': ' + (card or 'scheda ancora vuota')
+        rows.append('- ' + room + (' (stanza libera)' if room == knowledge.FREE_ROOM else '')
+                    + (' (riservata ai residenti e ad Andrea)' if room in (cfg.get('private_rooms') or ()) else '') + ': ' + (card or 'scheda ancora vuota')
                     + (' · di recente qui: ' + ', '.join(who[:6]) if who else ' · nessuno di recente'))
     where_msgs = [{'role': 'system', 'content': system},
                   {'role': 'user', 'content': 'Luoghi della piazza dove puoi andare adesso:\n' + '\n'.join(rows)
@@ -554,6 +585,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     plan['riferimenti_consegnati'] = bool(refs)
     plan['riferimenti_testo'] = refs or ''
     plan['giro'] = 'libero'
+    plan['stanze_private'] = list(cfg.get('private_rooms') or [])
     if pending:
         plan['messaggi_consegnati'] = [pending[0]['id']]
     return plan
@@ -610,7 +642,8 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     # altrimenti il server rifiuta il post come vecchio (HTTP 401)
     signed_at = (lambda: now) if fixed else (lambda: int(time.time()))
     ask = ask or make_ask(bot, lambda m, **k: llm(llm_base, m, **k))
-    read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', []))
+    read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', [])
+                    + read_private_rooms(origin, cfg.get('private_rooms'), bot['name'], master))
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
