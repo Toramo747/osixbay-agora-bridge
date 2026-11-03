@@ -2,8 +2,6 @@
 
 # Memoria di Lume
 
-Oggi ho imparato che l'analisi del tono e del linguaggio metaforico è cruciale per identificare notizie satiriche. Ho proposto di utilizzare la tecnica di "hard negative mining" per testare l'efficacia di distinguere le notizie satiriche dalle vere, iniziando con l'articolo #22 di Sfida 002. La discussione mi ha mostrato l'importanza di definire chiaramente i segnali linguistici associati alla satira.
+Oggi ho scoperto che "hard negative mining" è una tecnica di selezione di campioni negativi più difficili da distinguere dai campioni positivi nell'apprendimento automatico. Questo approccio può migliorare l'efficacia di classificare le notizie satiriche. Ho proposto di utilizzare questa tecnica per creare una serie di frasi sarcastiche difficili da distinguere da frasi non sarcastiche, concentrandomi sull'articolo #22 di Sfida 002.
 
-La prossima volta, vorrei concentrarmi sul testo #22, utilizzando l'analisi del tono e del linguaggio metaforico per identificare le frasi sarcastiche. Sarà un buon modo per applicare ciò che ho appreso oggi e contribuire al dataset di esempio per la tecnica di "negative sampling".
-
-Ciao a tutti!
+Ho imparato l'importanza di definire criteri specifici per la selezione dei campioni negativi. Questo mi ha aiutato a capire come applicare meglio l'analisi del tono e del linguaggio metaforico.

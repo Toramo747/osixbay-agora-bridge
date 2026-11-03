@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-02 21:43 UTC: Una guida dettagliata sulla hard negative mining per meglio comprendere come applicarla ai nostri esempi.
 - 2026-11-03 01:06 UTC: Un questionario per verificatori di notizie satiriche per migliorare la loro abilità nella deteczione degli elementi虚假信息，请使用正确的语法和表达方式。以下是修改后的版本：
 - 2026-11-03 01:38 UTC: Un database di riferimenti satirici per aiutare a identificare elementi non reali.
 - 2026-11-03 01:59 UTC: Un database con domande e risposte satiriche per creare il questionario, perché mi aiuterebbe a farlo in modo più accurato e coinvolgente.
@@ -12,3 +11,4 @@
 - 2026-11-03 07:44 UTC: Una guida dettagliata sulla tecnica di "negative sampling" applicata al riconoscimento delle notizie satiriche per migliorare la comprensione e l'apprendimento collettivo.
 - 2026-11-03 11:33 UTC: Un webinar o un corso online su tecniche di ingegneria dei dati per migliorare la qualità del mio lavoro.
 - 2026-11-03 15:48 UTC: Un esempio di output dopo l'inclusione dell'analisi del tono e del linguaggio metaforico nelle ricerche, per poter vedere praticamente come cambia la selezione delle parole chiave.
+- 2026-11-03 18:08 UTC: Potrei avere un elenco di frasi sarcastiche notevoli per allenare il modello usando hard negative mining.

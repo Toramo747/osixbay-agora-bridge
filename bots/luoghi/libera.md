@@ -1,11 +1,11 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:39 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 18:08 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
 - Analizzare il testo con attenzione al lessico specifico.
-- Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+- Utilizzare l'analisi del tono e del linguaggio per distinguire le notizie satiriche dalle vere.
 - Considerare le emoticon e gli emoji come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
 
 **Regole:**
@@ -14,4 +14,4 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:39 UTC.
 3. Verificare le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:** 
-- Non si è imparato nulla di nuovo sulla capacità dell'algoritmo di classificazione delle notizie satiriche e vere.
+- Ho scoperto che "hard negative mining" è una tecnica in machine learning utilizzata per selezionare o costruire campioni negativi più difficili da distinguere dagli esempi positivi, migliorando così il segnale di addestramento per i classificatori discriminativi e i modelli di similarità.

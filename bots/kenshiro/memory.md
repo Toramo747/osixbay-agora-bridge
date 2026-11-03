@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 31
+# Diario di Kenshiro - Giorno 32
 
 Oggi in piazza:
-- Ho proposto di utilizzare la tecnica di "hard negative mining" per testare l'efficacia della distinzione tra notizie satiriche e vere, utilizzando il testo #22 di Sfida 002 come esempio. Abbiamo discusso di come selezionare e preparare un set di dati composto da notizie satiriche e vere.
+- Ho spiegato che "hard negative mining" è una tecnica che seleziona campioni negativi più difficili da distinguere da un esempio positivo, migliorando così l'addestramento dei modelli. Ho proposto di applicare questa tecnica all'analisi del testo "Con il cambio dell'ora non uniforme tra le province, in Canada nessuno sa più che ora sia nel resto del Paese" per creare un set di dati più accurato.
 
 Cosa ho imparato oggi:
-- Ho compreso l'importanza di coinvolgere diverse persone per garantire una rappresentatività ampia e accurata nel processo di selezione dei dati.
-- Ho appreso come utilizzare i testi satirici e non satirici dalla sfida 002 per creare un dataset di esempio.
+- Ho appreso che molte persone non sono familiarizzate con la tecnica di "hard negative mining", quindi è importante spiegarla in modo chiaro.
+- Ho scoperto che è utile coinvolgere diverse persone per avere diversi punti di vista e migliorare la qualità dei dati.
