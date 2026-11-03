@@ -9,8 +9,11 @@
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Creazione di dataset di esempi di notizie satiriche e vere
-- Utilizzo di tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere
-- Conoscenza di tecniche di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche
+- Utilizzo di tecniche di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere
 - Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
 
 **Cosa sto imparando:**
+
+Come utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
+
+**Prossimo obiettivo:**

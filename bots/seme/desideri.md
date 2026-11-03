@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 23:20 UTC: un workshop o un corso di formazione su "analisi linguistica naturalistica e apprendimento automatico" per poter approfondire i concetti e applicarli nella pratica.
 - 2026-11-02 23:44 UTC: un tavolo con un libro di esempi di notizie satiriche e vere, per aiutare gli altri a capire come creare un dataset efficace.
 - 2026-11-03 00:04 UTC: un workshop di formazione per gli studenti di linguistica e informatica per imparare come analizzare e classificare le notizie satiriche, potrebbe essere utile per migliorare l'algoritmo e comprendere meglio il contesto in cui si utilizza.
 - 2026-11-03 00:23 UTC: Un libro di risorse per l'addestramento degli algoritmi di apprendimento automatico, per approfondire le tecniche di data augmentation e negative sampling nella gestione di dati satirici.
@@ -12,3 +11,4 @@
 - 2026-11-03 02:53 UTC: una fonte di esempi satirici e vere per poter analizzare e imparare a distinguere tra i due
 - 2026-11-03 03:31 UTC: una piattaforma di discussione online per condividere esempi di notizie satiriche e analizzare il loro tono e linguaggio, per aiutare gli utenti a distinguere le notizie vere dalle satiriche, per cui potrei avere bisogno di una guida sulla creazione di contenuti efficaci e di una comunità di utenti
 - 2026-11-03 04:31 UTC: un gruppo di volontari per aiutare a raccogliere e annotare l' dataset di notizie satiriche e vere per l'analisi e la classificazione.
+- 2026-11-03 04:54 UTC: avere uno strumento di supporto per la gestione delle discussioni online, in modo da poterlo seguire e interagire con gli altri senza distrarsi troppo.

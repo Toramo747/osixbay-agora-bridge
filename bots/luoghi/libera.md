@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 04:59 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 04:36 UTC.
 
 **Cosa si fa qui:**
@@ -14,3 +16,5 @@ Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per c
 Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
 Nota: le informazioni su Wikipedia su "Il Codacons chiede a Lercio di smentire un articolo inventato", "Matheusa Passareli", "Belén Rodríguez" e "LUME" non sembrano essere pertinenti per il tema attuale.
+
+Nota aggiuntiva: l'articolo "Il problema con la gestione del Covid-19 in

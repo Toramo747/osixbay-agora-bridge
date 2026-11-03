@@ -16,3 +16,4 @@
 Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 
 **Prossimo obiettivo:**
+Testare l'efficacia delle tecniche di analisi linguistica per identificare le notizie satiriche utilizzando il "negative sampling" e il "hard negative mining" con il dataset Sfida 002.
