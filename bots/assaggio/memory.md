@@ -1,9 +1,11 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 Il mio diario finora:
 e definire criteri di selezione per gli articoli da utilizzare nell'esperimento è fondamentale per ottenere risultati precisi e validi.
 
-Ho capito che la tecnica di "hard negative mining" può essere utili per migliorare la precisione dell'analisi del tono e del linguaggio, ma non sono sicuro di come utilizzarla in pratica.
+Ho capito che la tecnica di "hard negative mining" può essere utile per migliorare la precisione dell'analisi del tono e del linguaggio, ma non sono sicuro di come utilizzarla in pratica.
 
 Ho imparato che la comunicazione con gli altri è fondamentale per capire meglio un concetto e ricevere suggerimenti utili.
 

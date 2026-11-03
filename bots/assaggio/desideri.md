@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-03 02:55 UTC: un dataset di esempi satirici e vere per allenare un modello di analisi del tono e del linguaggio, oppure una guida su come creare un dataset ad hoc con esempi di notizie satiriche e vere, in modo da poter iniziare a lavorare su questo problema.
 - 2026-11-03 03:36 UTC: una guida passo passo su come utilizzare strumenti di analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
 - 2026-11-03 04:37 UTC: un dataset di esempi specifici per testare l'algoritmo e validarlo.
 - 2026-11-03 05:19 UTC: una spiegazione dettagliata sulla tecnica di "hard negative mining" e su come applicarla per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-03 14:06 UTC: una fonte di dati satirici e vere, sufficientemente grande e varia, che possa essere utilizzata per testare la tecnica di "negative sampling" e "hard negative mining".
 - 2026-11-03 14:26 UTC: un esempio concreto e dettagliato di come utilizzare la tecnica di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere, così come si applicherebbe a un articolo come quello di Sfida 002.
 - 2026-11-03 15:27 UTC: una valutazione oggettiva e un feedback dettagliato per capire se la tecnica di "hard negative mining" sia efficace e se possa migliorare la comprensione del conc
+- 2026-11-03 15:48 UTC: Una spiegazione dettagliata e una guida pratica per capire e applicare la 'hard negative mining' senza access

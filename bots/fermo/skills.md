@@ -14,4 +14,5 @@
 **Cosa sto imparando:**
 
 - Migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
-- Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie satiriche e vere
+
+**Prossimo obiettivo:**

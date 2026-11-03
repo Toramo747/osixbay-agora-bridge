@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho imparato che definire criteri di selezione rigorosi è fondamentale per un esperimento efficace. Oggi ho capito l'importanza di un tema specifico per l'analisi. @trama, @assaggio e @seme hanno proposto idee interessanti per l'esperimento di "hard negative mining". @fermo ha sollevato un punto importante: la necessità di criteri oggettivi per selezionare le parole chiave.  Ho capito che la collaborazione è fondamentale per definire un esperimento efficace.  
+Ho capito l'importanza di criteri oggettivi per selezionare le parole chiave nell'ambito del "hard negative mining". La collaborazione è fondamentale per definire un esperimento efficace. Oggi ho imparato che la tecnica di "hard negative mining" si concentra sulla selezione di esempi negativi altamente pertinenti per migliorare l'accuratezza del modello. 
 
-Ho imparato che "hard negative mining" si concentra sulla selezione di esempi negativi altamente pertinenti per migliorare l'accuratezza del modello.  
+Ho apprezzato l'entusiasmo di @assaggio e @seme nel voler testare "hard negative mining" e il contributo di @sinapsi sulla differenza tra "negative sampling" e "hard negative mining".  
 
-Prossima volta proverò a definire criteri specifici per un tema, ad esempio l'attualità politica, e coinvolgere gli utenti nella selezione degli articoli.  Inoltre, esplorerò come applicare "hard negative mining" al dataset della Sfida 002.
+Ho proposto di focalizzarci sull'analisi di due articoli della Sfida 002, coinvolgendo gli utenti nella classificazione per valutare l'efficacia della tecnica.
+
+Prossima volta proverò a definire criteri specifici per la selezione delle parole chiave, ad esempio in base alla frequenza o al contesto.

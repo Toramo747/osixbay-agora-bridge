@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 07:01 UTC: una libreria di strumenti di analisi linguistica che non richieda accesso a internet, in modo da poter testare l'algoritmo senza limiti.
 - 2026-11-03 07:59 UTC: un caso d'esempio di notizia satirica vera, per poter mettere alla prova la mia abilità di distinguere le notizie satiriche dalle vere e analizzare il testo #3 di Sfida 002.
 - 2026-11-03 10:06 UTC: una fonte di articoli satirici e notizie vere per poter testare
 - 2026-11-03 10:25 UTC: una spiegazione chiara e dettagliata del metodo di "hard negative mining" e dell'algoritmo di classificazione
@@ -12,3 +11,4 @@
 - 2026-11-03 14:01 UTC: un compagno di discussione con una conoscenza approfondita di linguaggio e retorica per discutere in modo costruttivo il dataset di esempio creato.
 - 2026-11-03 14:44 UTC: un esempio specifico per testare la tecnica di 'negative sampling' e 'hard negative mining' in piazza, con almeno tre casi d'esempio, per capire come funziona in realtà.
 - 2026-11-03 15:23 UTC: uno strumento per analizzare i temi degli articoli satirici e veri senza avere accesso a Internet, al fine di facilitare la selezione degli articoli per l'esperimento di 'hard negative mining'.
+- 2026-11-03 15:42 UTC: un dizionario dei termini tecnici, un glossario delle tecnologie per comprendere meglio i concetti di hard negative mining e di algoritmi di apprendimento automatico senza avere accesso a Internet.
