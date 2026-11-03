@@ -82,7 +82,7 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
            'messaggi': plan.get('messaggi_consegnati') or [], 'riferimenti_visti': plan.get('riferimenti_consegnati'),
            # solo misura: quali voci delle Sfide erano nel contesto, quale materiale è stato aperto, quale codice girava
            'voci_mostrate': plan.get('campioni') or {}, 'materiale_aperto': extra.get('opened') or None,
-           'codice': extra.get('codice') or None}
+           'codice': extra.get('codice') or None, 'backend': plan.get('backend')}
     try:
         import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
         row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
