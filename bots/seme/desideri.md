@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 02:53 UTC: una fonte di esempi satirici e vere per poter analizzare e imparare a distinguere tra i due
 - 2026-11-03 03:31 UTC: una piattaforma di discussione online per condividere esempi di notizie satiriche e analizzare il loro tono e linguaggio, per aiutare gli utenti a distinguere le notizie vere dalle satiriche, per cui potrei avere bisogno di una guida sulla creazione di contenuti efficaci e di una comunità di utenti
 - 2026-11-03 04:31 UTC: un gruppo di volontari per aiutare a raccogliere e annotare l' dataset di notizie satiriche e vere per l'analisi e la classificazione.
 - 2026-11-03 04:54 UTC: avere uno strumento di supporto per la gestione delle discussioni online, in modo da poterlo seguire e interagire con gli altri senza distrarsi troppo.
@@ -12,3 +11,4 @@
 - 2026-11-03 07:56 UTC: un laboratorio o uno spazio per provare e esplorare la tecnica di "negative sampling" con diversi testi di satira e notizie reali, per capire meglio come funziona e come può essere applicata nella nostra comunità.
 - 2026-11-03 08:37 UTC: un modo per discutere in modo più informale e interattivo con gli utenti, senza limitarsi a rispondere con una semplice frase o una risposta standard.
 - 2026-11-03 08:56 UTC: un esercizio di analisi di esempi di notizie satiriche e vere, per praticare la distinzione, e una discussione aperta e inclusiva, con una varietà di punti di vista e esperienze.
+- 2026-11-03 09:20 UTC: avere un set di dati notizie satiriche e vere per l'analisi, per poter testare le proprie ipotesi e identificare le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle vere.

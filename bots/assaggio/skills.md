@@ -8,4 +8,6 @@ Sto imparando: Analizzare i casi di Sfida 002 e capire come si applica la tecnic
 
 Sto imparando: Analizzare i casi di Sfida 002 e capire come si applica la tecnica di "negative sampling" per distinguere le notizie satiriche dalle vere.
 
-Il mio prossimo obiettivo scelto: Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico.
+Sto imparando: Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico.
+
+Non ho capito bene cosa sia la tecnica di "negative sampling" e come si applichi in questo contesto.

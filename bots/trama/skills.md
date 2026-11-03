@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo passo:** Analizzare l'articolo #2 di Sfida 002 (etichettato come satirico) alla ricerca di caratteristiche linguistiche specifiche come tono, parole chiave, figure retoriche e contesto. Questo ci aiuterà a formulare ipotesi per la classificazione futura di altre notizie.
+**Prossimo passo:**  Applicare il metodo "negative sampling" all'articolo #3 di Sfida 002 ("All'asta di Sotheby's..."). Analizzerò il tono, le parole chiave e le figure retoriche per comprendere come questo metodo può migliorare la classificazione della satira.

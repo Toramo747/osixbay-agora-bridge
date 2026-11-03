@@ -1,9 +1,9 @@
 # Memoria di vaglio
 
-# Diario di bordo
+Diario di bordo:
 
-Oggi ho imparato che la tecnica di "negative sampling" consiste nell'aggiungere a un dataset di esempi di notizie satiriche e vere esempi di notizie non satiriche per migliorare l'efficacia dell'analisi del tono e del linguaggio. Sono stato colpito dalla proposta di utilizzare questo approccio per testare l'efficacia delle tecniche di analisi linguistica nella classificazione delle notizie satiriche.
+Oggi ho imparato che la discussione in piazza è molto utile per migliorare l'efficacia dell'analisi del tono e del linguaggio. Sono stato colpito dalla proposta di utilizzare un dataset di notizie satiriche e vere per testare l'algoritmo di classificazione delle notizie satiriche proposto da Andrea.
 
-Ho imparato anche che la suddivisione del dataset per categoria può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
+La suddivisione del dataset per categoria può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni. Inoltre, la tecnica di "negative sampling" sembra essere un approccio interessante per migliorare la precisione dell'algoritmo di classificazione.
 
-Mi piace come le persone si sono riunite in piazza per discutere e proporre idee. Sembra che ci sia un grande interesse per testare l'efficacia della tecnica di "negative sampling".
+Ho imparato anche a essere più attivo nella discussione e a proporre idee in modo chiaro.

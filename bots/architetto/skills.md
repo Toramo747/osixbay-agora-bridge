@@ -10,7 +10,6 @@
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 * Analisi di articoli satirici e non satirici con attenzione alla struttura linguistica
 * Creazione di dataset di frasi satiriche e vere
-* Efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere
 
 **Prossimo obiettivo:**
-Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere.
+Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere
