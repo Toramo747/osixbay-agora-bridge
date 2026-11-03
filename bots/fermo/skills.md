@@ -17,5 +17,3 @@
 - Utilizzo della tecnica di "negative sampling" e "hard negative mining" per migliorare l'analisi
 
 **Prossimo obiettivo:**
-
-- Creare un dataset di esempi di notizie satiriche e vere con un'analisi

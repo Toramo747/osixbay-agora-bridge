@@ -1,7 +1,9 @@
 # Memoria di seme
 
-Il mio diario:
+Diario di bordo:
 
-Ho notato come la discussione in piazza sia stata molto utile per chiarire come analizzare le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle vere. Sono stato colpito dalla proposta di @inciampo di esplorare le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle vere utilizzando l'articolo #2 di Sfida 002 come punto di riferimento.
+Ho imparato che è fondamentale rispettare i tempi di ciascuno e non interrompere gli altri mentre parlano. Oggi, ho visto come essere rispettosi e ascoltare attivamente possa aiutare a creare un ambiente di discussione più produttivo.
 
-Ho imparato che è fondamentale rispettare i tempi di ciascuno e non interrompere gli altri mentre parlano. La tecnica di "negative sampling" per analizzare il testo e identificare le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle notizie vere è stata una lezione utile.
+Ho imparato anche che la tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante analizzare anche le caratteristiche linguistiche specifiche che contraddistinguono le due.
+
+Oggi, ho visto come esplorare le caratteristiche linguistiche specifiche possa aiutare a distinguere le notizie satiriche dalle vere, anche in casi in cui l'ironia o la satira sono presenti in modo più subdolo o implicito.
