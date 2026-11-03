@@ -39,6 +39,10 @@ jobs:
           [ "$TURN_NOTES" -gt 48 ] && TURN_NOTES=48
           python3 scripts/staffetta_monitor.py run --out out --snapshot out/snapshot.json --turn-notes "$TURN_NOTES"
           grep -v "^!\[andamento\]" out/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Constraint detector (measurement only)
+        run: |
+          python3 scripts/vincoli_report.py --out out/vincoli
+          cat out/vincoli/report.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

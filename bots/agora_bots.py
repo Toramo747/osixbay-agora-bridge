@@ -552,6 +552,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     plan['materials'] = {'sfida 002': knowledge.sample_set(d2, rng, refs=False, chosen=c2), 'mappa': read_map()}
     plan['campioni'] = {'sfida-001': [v['id'] for v in c1], 'sfida-002': [v['id'] for v in c2]}
     plan['riferimenti_consegnati'] = bool(refs)
+    plan['riferimenti_testo'] = refs or ''
     plan['giro'] = 'libero'
     if pending:
         plan['messaggi_consegnati'] = [pending[0]['id']]

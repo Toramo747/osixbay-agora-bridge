@@ -78,6 +78,11 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
            'luogo': plan.get('room'), 'risposta_a': plan.get('reply_to'), 'strumento': extra.get('query'),
            'pubblicazione': outcome, 'post': post_id, 'desiderio': extra.get('wish') or None,
            'messaggi': plan.get('messaggi_consegnati') or [], 'riferimenti_visti': plan.get('riferimenti_consegnati')}
+    try:
+        import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
+        row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
+    except Exception as error:  # il rilevatore non deve mai fermare un giro
+        row['vincoli_errore'] = type(error).__name__
     if tool_out:
         row['uscita_strumento'] = dict(_digest(tool_out), estratto=tool_out[:400])
     if text:
