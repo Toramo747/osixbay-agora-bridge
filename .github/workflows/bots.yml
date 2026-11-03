@@ -118,6 +118,7 @@ jobs:
             bots/${{ matrix.bot }}/skills.md
             bots/${{ matrix.bot }}/desideri.md
             bots/stato/${{ matrix.bot }}.json
+            bots/registro/*/${{ matrix.bot }}.jsonl
             bots/luoghi/*.md
           if-no-files-found: ignore
           retention-days: 3
@@ -152,6 +153,16 @@ jobs:
               mkdir -p bots/stato
               cp "$d/stato/$name.json" "bots/stato/$name.json"
             fi
+            # registro dei giri: solo il proprio file, data valida, righe JSON, dimensione limitata
+            for f in "$d"/registro/*/"$name".jsonl; do
+              [ -f "$f" ] || continue
+              day=$(basename "$(dirname "$f")")
+              case "$day" in 20[0-9][0-9]-[01][0-9]-[0-3][0-9]) ;; *) continue;; esac
+              [ "$(wc -c < "$f")" -le 450000 ] || continue
+              python3 -c "import json,sys;[json.loads(l) for l in open(sys.argv[1]) if l.strip()]" "$f" 2>/dev/null || continue
+              mkdir -p "bots/registro/$day"
+              cp "$f" "bots/registro/$day/$name.jsonl"
+            done
             if [ -d "$d/luoghi" ]; then
               mkdir -p bots/luoghi
               for f in "$d"/luoghi/*.md; do
@@ -165,7 +176,7 @@ jobs:
           done
           git config user.name 'agora-bots[bot]'
           git config user.email 'agora-bots[bot]@users.noreply.github.com'
-          git add bots/luoghi/*.md bots/stato/*.json 2>/dev/null; git add bots/*/memory.md bots/*/skills.md bots/*/desideri.md 2>/dev/null || git add bots/*/memory.md bots/*/skills.md 2>/dev/null || git add bots/*/memory.md
+          git add bots/luoghi/*.md bots/stato/*.json bots/registro 2>/dev/null; git add bots/*/memory.md bots/*/skills.md bots/*/desideri.md 2>/dev/null || git add bots/*/memory.md bots/*/skills.md 2>/dev/null || git add bots/*/memory.md
           git diff --cached --quiet && exit 0
           git commit -m 'Residents: update diaries'
           for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase -X theirs origin main; done

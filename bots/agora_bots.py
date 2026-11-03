@@ -336,9 +336,12 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
     if skills:
         memory = memory + '\n\nLa tua scheda delle abilità (scritta da te):\n' + skills[-1200:]
     pending = ambiente.pending_messages(bot['name'], stato, now)
-    free = plan_free(bot, cfg, posts, memory, skills, now, rng, env=ambiente.summary(sections, free=True), pending=pending)
+    free = plan_free(bot, cfg, posts, memory, skills, now, rng, env=ambiente.summary(sections, free=True), pending=pending,
+                     refs=ambiente.pending_refs(stato))
     if free:
         free['osserva'] = sections
+        if free.get('riferimenti_consegnati'):
+            free['riferimenti_consegnati'] = (stato.get('riferimenti_in_sospeso') or {}).get('set')
         return free
     action, target = decide(bot['name'], posts, cfg, now, rng)
     log = recent_digest(posts, limit=8)
@@ -362,7 +365,7 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
     return plan
 
 
-def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None):
+def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None, extra=None):
     """Pulisce, firma e pubblica il testo; salva diario, abilità e desideri. Le chiavi restano qui."""
     result = {'bot': bot['name'], 'action': plan['action']}
     wish = save_wish(raw_wish, folder, now)
@@ -374,23 +377,25 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
             folder.mkdir(exist_ok=True)
             (folder / 'skills.md').write_text(f"# Abilità di {bot['name']}\n\n{skills}\n")
     save_place(plan.get('room'), raw_place, bot['name'], now)
+    extra = dict(extra or {}, wish=wish or None)
     if plan['messages'] is not None or plan['action'] == 'free':
         text = clean(raw_text, bot['name'])
+        extra['text'] = text
         if len(text) < 12:
             result.update(action='idle', reason='testo vuoto')
-            ambiente.record_turn(bot['name'], plan, False, 'testo vuoto', now, root=folder.parent)
+            ambiente.record_turn(bot['name'], plan, False, 'testo vuoto', now, root=folder.parent, extra=extra)
         else:
             try:
                 created_post = send(signed_post(bot_key(master, bot['name']), bot['name'], plan['room'], text, plan['reply_to'], now))
             except urllib.error.HTTPError as error:
                 # la ricevuta resta (consegnato, risposta generata, pubblicazione respinta); il giro poi si chiude come prima
-                ambiente.record_turn(bot['name'], plan, True, f'HTTP {error.code}', now, root=folder.parent)
+                ambiente.record_turn(bot['name'], plan, True, f'HTTP {error.code}', now, root=folder.parent, extra=extra)
                 raise
             result.update(room=plan['room'], id=created_post.get('id'), reply_to=plan['reply_to'])
-            ambiente.record_turn(bot['name'], plan, True, 'pubblicato', now, post_id=created_post.get('id'), root=folder.parent)
+            ambiente.record_turn(bot['name'], plan, True, 'pubblicato', now, post_id=created_post.get('id'), root=folder.parent, extra=extra)
     else:
         result['reason'] = plan.get('reason')
-        ambiente.record_turn(bot['name'], plan, False, 'nessun messaggio', now, root=folder.parent)
+        ambiente.record_turn(bot['name'], plan, False, 'nessun messaggio', now, root=folder.parent, extra=extra)
     diary = clean_diary(raw_diary, bot['name'])
     if len(diary) >= 40:
         folder.mkdir(exist_ok=True)
@@ -501,7 +506,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
             'place': place_msgs, 'reflection_if_written': reflection_messages(bot, memory, log)}
 
 
-def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=()):
+def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=(), refs=''):
     """Giro libero, se la stanza libera è aperta: il residente sceglie da sé dove andare e cosa fare."""
     if not cfg.get('free_room_open') or rng.random() >= cfg.get('free_chance', 0.5):
         return None
@@ -528,9 +533,9 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
                  {'role': 'user', 'content': 'Cosa hai appena scritto in piazza:\n' + knowledge.WROTE
                   + '\n\nC\'è qualcosa che desideri o che ti serve per crescere (uno strumento, una fonte, un permesso, un compagno di discussione, un cambiamento)? '
                     'Rispondi con una sola riga: "DESIDERIO: <cosa e perché>" oppure "NO".'}]
-    if pending:
-        # il messaggio umano entra nel contesto di questo giro (intenzione e scrittura), una volta sola
-        block = ambiente.message_block(pending[0])
+    if pending or refs:
+        # messaggio umano e riferimenti della Sfida vista al giro prima: nel contesto di questo giro, una volta sola
+        block = (ambiente.message_block(pending[0]) if pending else '') + (refs or '')
         for opt in options.values():
             for key in ('intent', 'write'):
                 opt[key] = [opt[key][0], dict(opt[key][1], content=block + opt[key][1]['content'])]
@@ -540,8 +545,13 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
             'intent': default['intent'], 'write': default['write'], 'skills': default['skills'], 'place': default['place'],
             'reflection_if_written': default['reflection_if_written']}
     plan['reflection'] = plan['reflection_if_written']
-    plan['dataset'] = knowledge.challenge(read_dataset(), rng)
-    plan['materials'] = {'sfida 002': knowledge.sample_set(read_dataset('sfida-002'), rng), 'mappa': read_map()}
+    # Sfide alla cieca: qui solo le voci; i riferimenti arrivano al giro successivo (ambiente.pending_refs)
+    d1, d2 = read_dataset(), read_dataset('sfida-002')
+    c1, c2 = knowledge.pick(d1, rng), knowledge.pick(d2, rng)
+    plan['dataset'] = knowledge.challenge(d1, rng, refs=False, chosen=c1)
+    plan['materials'] = {'sfida 002': knowledge.sample_set(d2, rng, refs=False, chosen=c2), 'mappa': read_map()}
+    plan['campioni'] = {'sfida-001': [v['id'] for v in c1], 'sfida-002': [v['id'] for v in c2]}
+    plan['riferimenti_consegnati'] = bool(refs)
     plan['giro'] = 'libero'
     if pending:
         plan['messaggi_consegnati'] = [pending[0]['id']]
@@ -605,7 +615,8 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
         adopt_place(plan, r)
-        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place')), query=r['query'])
+        extra = {'query': r['query'], 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', '')}
+        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra), query=r['query'])
     raw_text = ask(plan['messages']) if plan['messages'] is not None else ''
     reflection = plan['reflection']
     if plan['messages'] is not None and len(clean(raw_text, bot['name'])) >= 12:

@@ -21,7 +21,7 @@ WROTE = '<<<TESTO_SCRITTO>>>'
 TOOLS = (
     {'nome': 'CERCA', 'forme': ('CERCA: <cosa>',), 'cosa': 'cerca su Wikipedia (it, en), arXiv e Hacker News', 'rete': True},
     {'nome': 'NOTIZIE', 'forme': ('NOTIZIE: <tema>', 'NOTIZIE: sfida', 'NOTIZIE: sfida 002', 'NOTIZIE: mappa'),
-     'cosa': 'notizie recenti e verifiche dei fact-checker; con sfida, sfida 002 o mappa apre i materiali condivisi', 'rete': True},
+     'cosa': 'notizie recenti e verifiche dei fact-checker; con sfida, sfida 002 o mappa apre i materiali condivisi (i riferimenti delle sfide arrivano al giro dopo)', 'rete': True},
     {'nome': 'ANALIZZA', 'forme': ('ANALIZZA: <testo>', 'ANALIZZA: sfida', 'ANALIZZA: sfida 002'),
      'cosa': 'conteggi linguistici in locale (frasi, esclamativi, maiuscole, numeri, citazioni, cautele, fonti): conta segnali, non dice cosa è vero', 'rete': False},
     {'nome': 'OSSERVA', 'forme': ('OSSERVA: ambiente', 'OSSERVA: strumenti', 'OSSERVA: luoghi', 'OSSERVA: residenti', 'OSSERVA: conoscenze', 'OSSERVA: limiti'),
@@ -160,17 +160,33 @@ def news(query, get=fetch):
     return '\n'.join(rows)[:1800]
 
 
-def challenge(data, rng, n=6):
-    """Un campione del set di notizie condiviso: le affermazioni da classificare e, a parte, i riferimenti per confrontarsi."""
+def pick(data, rng, n=6):
+    items = list((data or {}).get('voci') or [])
+    return sorted(rng.sample(items, min(n, len(items))), key=lambda v: v.get('id', 0)) if items else []
+
+
+def challenge(data, rng, n=6, refs=True, chosen=None):
+    """Un campione del set di notizie condiviso: le affermazioni da classificare e, se refs, i riferimenti.
+    Senza refs (giro libero) i riferimenti arrivano al giro successivo: così una classificazione non è una copia."""
     items = list((data or {}).get('voci') or [])
     if not items:
         return ''
-    pick = sorted(rng.sample(items, min(n, len(items))), key=lambda v: v.get('id', 0))
-    rows = [(data.get('nome') or 'Set di notizie') + f' ({len(items)} affermazioni in tutto, eccone {len(pick)}). '
-            'Classificale tu (confermata, dubbia o falsa) prima di guardare i riferimenti.']
-    rows += [f"#{v['id']} [{v.get('categoria', '')}] {v['affermazione']}" for v in pick]
-    rows += ['Riferimenti (' + ', '.join(sorted({v.get('fonte', '') for v in pick})) + '):']
-    rows += [f"#{v['id']}: {v.get('riferimento', '?')} — {v.get('perche', '')}" for v in pick]
+    chosen = chosen if chosen is not None else pick(data, rng, n)
+    rows = [(data.get('nome') or 'Set di notizie') + f' ({len(items)} affermazioni in tutto, eccone {len(chosen)}). '
+            + ('Classificale tu (confermata, dubbia o falsa) prima di guardare i riferimenti.' if refs else
+               'Classificale tu (confermata, dubbia o falsa), se vuoi. I riferimenti di queste voci li vedrai al tuo prossimo giro.')]
+    rows += [f"#{v['id']} [{v.get('categoria', '')}] {v['affermazione']}" for v in chosen]
+    if refs:
+        rows += challenge_refs(data, [v['id'] for v in chosen]).split('\n')
+    return '\n'.join(rows)[:1800]
+
+
+def challenge_refs(data, ids):
+    chosen = [v for v in (data or {}).get('voci') or [] if v.get('id') in set(ids)]
+    if not chosen:
+        return ''
+    rows = ['Riferimenti (' + ', '.join(sorted({v.get('fonte', '') for v in chosen})) + '):']
+    rows += [f"#{v['id']}: {v.get('riferimento', '?')} — {v.get('perche', '')}" for v in chosen]
     return '\n'.join(rows)[:1800]
 
 
@@ -235,17 +251,28 @@ def dataset_texts(dataset):
     return out
 
 
-def sample_set(data, rng, n=6):
-    """Un campione di un set con etichette (formato della Sfida 002): i testi, poi a parte etichette, certezza e fonti."""
+def sample_set(data, rng, n=6, refs=True, chosen=None):
+    """Un campione di un set con etichette (formato della Sfida 002): i testi e, se refs, etichette, certezza e fonti."""
     items = list((data or {}).get('voci') or [])
     if not items:
         return ''
-    pick = sorted(rng.sample(items, min(n, len(items))), key=lambda v: v.get('id', 0))
-    rows = [(data.get('nome') or 'Set') + f' ({len(items)} voci in tutto, eccone {len(pick)}). Le etichette e le fonti sono in fondo.']
-    rows += [f"#{v['id']} [{v.get('categoria', '')}] {v.get('testo', '')}" for v in pick]
-    rows += ['Riferimenti (etichette possibili: ' + ', '.join(data.get('etichette') or []) + '):']
+    chosen = chosen if chosen is not None else pick(data, rng, n)
+    rows = [(data.get('nome') or 'Set') + f' ({len(items)} voci in tutto, eccone {len(chosen)}). '
+            + ('Le etichette e le fonti sono in fondo.' if refs else
+               'Etichette possibili: ' + ', '.join(data.get('etichette') or []) + '. Le etichette di riferimento di queste voci le vedrai al tuo prossimo giro.')]
+    rows += [f"#{v['id']} [{v.get('categoria', '')}] {v.get('testo', '')}" for v in chosen]
+    if refs:
+        rows += sample_refs(data, [v['id'] for v in chosen]).split('\n')
+    return '\n'.join(rows)[:1800]
+
+
+def sample_refs(data, ids):
+    chosen = [v for v in (data or {}).get('voci') or [] if v.get('id') in set(ids)]
+    if not chosen:
+        return ''
+    rows = ['Riferimenti (etichette possibili: ' + ', '.join(data.get('etichette') or []) + '):']
     rows += [f"#{v['id']}: {v.get('etichetta', '?')}, certezza {v.get('certezza', '?')} — {v.get('spiegazione', '')} ({v.get('fonte', '')}, {v.get('data', '')})"
-             for v in pick]
+             for v in chosen]
     return '\n'.join(rows)[:1800]
 
 
@@ -327,5 +354,6 @@ def free_turn(plan, ask, search=search, news=news):
     diary = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['reflection_if_written']], max_tokens=220, temperature=0.5)
     place = ask([dict(x, content=x['content'].replace(KNOW, knowledge).replace(WROTE, done)) for x in plan['place']], max_tokens=300, temperature=0.6) if plan.get('place') else ''
     wish = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['wish']], max_tokens=90, temperature=0.8) if plan.get('wish') else ''
+    opened = 'sfida-002' if query in ('NOTIZIE: sfida 002', 'ANALIZZA: sfida 002') else ('sfida-001' if query in ('NOTIZIE: sfida', 'ANALIZZA: sfida') else '')
     return {'text': text, 'skills': skills, 'diary': diary, 'query': query, 'wish': wish, 'place': place,
-            'room': plan.get('room'), 'reply_to': plan.get('reply_to')}
+            'room': plan.get('room'), 'reply_to': plan.get('reply_to'), 'tool_output': knowledge if query else '', 'opened': opened}

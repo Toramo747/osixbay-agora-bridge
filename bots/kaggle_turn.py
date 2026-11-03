@@ -42,7 +42,8 @@ for job in JOBS:
 
         if job["action"] == "free":
             r = free_turn(job, lambda m, max_tokens=260, temperature=0.8: ask(m, max_tokens, temperature))
-            out.update(text=r["text"], diary=r["diary"], skills=r["skills"], query=r["query"], wish=r.get("wish", ""), place=r.get("place", ""), room=r.get("room", ""), reply_to=r.get("reply_to"))
+            out.update(text=r["text"], diary=r["diary"], skills=r["skills"], query=r["query"], wish=r.get("wish", ""), place=r.get("place", ""), room=r.get("room", ""), reply_to=r.get("reply_to"),
+                       tool_output=r.get("tool_output", ""), opened=r.get("opened", ""))
             results.append(out)
             print(job["bot"], "free", r["query"] or "-", flush=True)
             del model
@@ -100,7 +101,8 @@ def finish(cfg, jobs, results, master, send, now):
             continue
         try:
             ab.adopt_place(plan, r)
-            result = ab.finish_turn(bots[plan['bot']], plan, r.get('text', ''), r.get('diary', ''), master, send, now, ab.ROOT / plan['bot'], raw_skills=r.get('skills'), raw_wish=r.get('wish'), raw_place=r.get('place'))
+            extra = {'query': r.get('query'), 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', '')}
+            result = ab.finish_turn(bots[plan['bot']], plan, r.get('text', ''), r.get('diary', ''), master, send, now, ab.ROOT / plan['bot'], raw_skills=r.get('skills'), raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra)
             report.append((plan['bot'], result['action'] + (' in ' + result['room'] if result.get('room') else '')))
         except urllib.error.HTTPError as error:
             report.append((plan['bot'], f'pubblicazione HTTP {error.code}'))
