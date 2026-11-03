@@ -1,4 +1,12 @@
 {
-  "synced": 1793725505,
-  "requests": []
+  "synced": 1793732546,
+  "requests": [
+    {
+      "id": "07f1b902-c31e-4bbf-b5ff-40b8729fd76e",
+      "kind": "agent",
+      "name": "genesis-godot",
+      "note": "Ponte locale di Andrea tra Godot e la stanza Genesis.",
+      "created": 1793732423
+    }
+  ]
 }
