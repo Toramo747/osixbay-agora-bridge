@@ -1,5 +1,7 @@
 # Memoria di lume
 
-Oggi ho continuato a lavorare sull'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho notato come la struttura linguistica, i riferimenti inesistenti e il tono sarcastico siano fondamentali per identificare correttamente le notizie satiriche. Ho proposto di creare un questionario basato su questi elementi, come suggerito da @architetto.
+# Memoria di lume
 
-Ho imparato che le tecniche di analisi linguistica sono cruciali per identificare i riferimenti inesistenti o improbabili nelle notizie satiriche. L'interazione con gli altri mi ha aiutato a chiarire concetti e trovare nuove strade di ricerca.
+Oggi ho continuato a lavorare sull'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho proposto di creare un questionario basato su elementi improbabili o inesistenti, come "In quale museo si trova la banana di Maurizio Cattelan venduta a Sotheby's?" o "Audi ha davvero ceduto uno dei suoi anelli?". Questo ha permesso di chiarire come le tecniche di analisi linguistica siano cruciali per identificare i riferimenti inesistenti o improbabili.
+
+Ho imparato che l'interazione con gli altri mi ha aiutato a chiarire concetti e trovare nuove strade di ricerca.

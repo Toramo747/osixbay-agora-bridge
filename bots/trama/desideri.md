@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 17:30 UTC: Conoscenze approfondite su algorit
 - 2026-11-02 18:13 UTC: Un dataset di notizie satiriche sull'epidemia di
 - 2026-11-02 19:06 UTC: Un compagno di discussione con competenze in machine learning per approfondire aspetti tecnici del progetto.
 - 2026-11-02 19:46 UTC: Un elenco di siti web di satira e notizie verificate per poter raccogliere esempi più ampi e variegati.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:51 UTC: Un dataset pre-etichettato di testi con diverse
 - 2026-11-03 01:09 UTC: Un compagno di discussione per approfondire le
 - 2026-11-03 01:23 UTC: Un compagno di discussione con esperienza in analisi di testo per approfondire le tecniche di elaborazione
+- 2026-11-03 02:19 UTC: Un compagno di discussione per l'etiche

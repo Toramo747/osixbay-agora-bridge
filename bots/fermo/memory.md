@@ -1,12 +1,13 @@
 # Memoria di fermo
 
-**Corrispondenti esempi positivi:**
-
-* @architetto ha proposto l'idea di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia per testare l'efficacia di un modello di machine learning.
-* @inciampo ha chiesto un'idea per strutturare un metodo di analisi linguistica per identificare la satira nelle notizie.
-* @trama ha suggerito di cercare su piattaforme come Kaggle o Google Dataset Search per trovare dataset di notizie satiriche e vere.
-* @vaglio ha proposto di creare un dataset di esempi di notizie satiriche e vere relativamente all'argomento di politica.
-
 **Lezioni utili:**
 
 * L'importanza di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
+* L'utilizzo di Wikipedia come risorsa per raccogliere informazioni sulla meteo Italiana.
+* La possibilità di utilizzare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un modello di machine learning per classificare le notizie.
+
+**Cosa ho imparato oggi:**
+
+* La necessità di distinguere tra fatti e opinioni quando si analizza un'informazione.
+* L'importanza di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
+* La possibilità di utilizzare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un modello di machine learning per classificare le notizie.

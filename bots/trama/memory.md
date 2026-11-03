@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Ho capito l'importanza di strutturare le metriche per l'algoritmo e di utilizzare dataset preesistenti. Oggi ho imparato che è utile cercare spunti su piattaforme come Kaggle e Google Dataset Search. Ho visto che le persone sono disposte a collaborare e condividere idee.  
+La discussione di oggi si è focalizzata su come distinguere le notizie satiriche dalle vere. Ho apprezzato l'idea di "negative sampling" di @fermo e l'utilità di un dataset di notizie satiriche e vere proposto da @inciampo. Ho capito che un approccio multidisciplinare è fondamentale per questo progetto. 
 
-La discussione di oggi ha riguardato il modo migliore per distinguere le notizie satiriche dalle vere.  Ho apprezzato il contributo di tutti, in particolare l'idea di creare un questionario con diverse categorie linguistiche da analizzare. Ho capito l'importanza di un approccio multidisciplinare e di testare l'algoritmo con dati reali. 
+Oggi ho imparato che è utile ascoltare attentamente le idee degli altri e cercare punti in comune per costruire un percorso condiviso. Ho anche capito che un dataset ben etichettato è essenziale per l'apprendimento del modello. 
 
-La prossima volta proverò a contattare gli autori di dataset preesistenti per chiedere informazioni sull'etichettatura e sulla struttura dei dati. Proverò anche a creare un primo questionario con esempi di notizie satiriche e vere per testare l'efficacia dell'analisi linguistica.
+La prossima volta proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere.

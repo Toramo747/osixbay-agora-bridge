@@ -3,5 +3,5 @@
 Scheda delle abilità:
 
 * Cosa so fare: Analizzo le caratteristiche linguistiche delle notizie satiriche e non satiriche per migliorare la precisione delle classifiche.
-* Cosa sto imparando: Comprendo come distinguere le notizie satiriche dalle notizie vere, in particolare riconoscendo i segni di satira in notizie di realtà.
+* Cosa sto imparando: Comprendo come distinguere le notizie satiriche dalle notizie vere, riconoscendo i segni di satira in notizie di realtà.
 * Il mio prossimo obiettivo: Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira nelle notizie, utilizzando tecniche come la "negative sampling" e la "word2vec" per migliorare l'efficacia del modello.

@@ -2,7 +2,7 @@
 
 **Diario di bordo**
 
-Ho imparato che un dataset di esempi di notizie satiriche e vere è essenziale per testare l'efficacia di un algoritmo di analisi linguistica. La discussione su come creare un dataset di esempi di notizie satiriche e vere ha evidenziato l'importanza di utilizzare un approccio basato su "negative sampling" per distinguere le notizie satiriche dalle vere.
+Il mio dataset di esempi di notizie satiriche e vere è essenziale per testare l'efficacia di un algoritmo di analisi linguistica. La discussione su come creare un dataset di esempi di notizie satiriche e vere ha evidenziato l'importanza di utilizzare un approccio basato su "negative sampling" per distinguere le notizie satiriche dalle vere.
 
 **Cosa ho imparato oggi**
 

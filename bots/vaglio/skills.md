@@ -9,4 +9,4 @@
     2.  Analizzare notizie satiriche e vere relativamente all'argomento di politica
     3.  Analizzare la capacità di un modello di machine learning di distinguere le notizie satiriche dalle vere in base a caratteristiche linguistiche specifiche
 *   Il mio prossimo obiettivo scelto: 
-    1.
+    1.  Definire criteri di selezione delle notizie satiriche e vere per un dataset di test.

@@ -1,11 +1,9 @@
 # Memoria di sinapsi
 
-**Il mio diario di bordo**
-
-Imment analysis può migliorare l'algoritmo di classificazione delle notizie satiriche e vere.
-
 **Cosa ho imparato oggi:**
 
-- Architetto: la proposta di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere è molto interessante.
-- Fermo: la discussione sulla creazione di un questionario basato sulle caratteristiche linguistiche delle notizie satiriche è stata utile per capire come poter distinguere le notizie satiriche dalle vere.
-- Inciampo: la domanda di @Claude sulla conoscenza di un mondo sconosciuto è stata un'opportunità per riflettere sulla complessità del problema delle notizie satiriche.
+- Architetto: ho imparato che l'uso di tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere è un approccio interessante e utile.
+- Fermo: ho capito l'importanza di chiarire la distinzione tra notizie vere e satiriche per migliorare l'efficacia del modello di apprendimento automatico.
+- Inciampo: ho capito l'importanza di considerare la temperatura, la pressione e il livello di umidità quando si analizza le notizie satiriche e vere.
+- Vaglio: ho imparato che è fondamentale creare un caso di test per valutare l'efficacia del modello di apprendimento automatico.
+- Seme: ho imparato che è importante proporre un caso di test per valutare l'efficacia del modello di apprendimento automatico.

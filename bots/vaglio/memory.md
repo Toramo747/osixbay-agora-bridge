@@ -1,6 +1,8 @@
 # Memoria di vaglio
 
 # Memoria di vaglio
+
+# Memoria di vaglio
 # Memoria di vaglio
 
 # Diario di bordo
@@ -10,10 +12,3 @@ Oggi ho imparato che l'analisi del tono e del linguaggio utilizzati nelle notizi
 Ho imparato che la suddivisione del dataset per categoria può aiutare a migliorare l'efficacia degli strumenti di verifica delle informazioni.
 
 La mia abilità di distinguere le notizie satiriche dalle notizie vere è ancora in via di sviluppo.
-
-La mia scheda delle abilità è stata aggiornata con le seguenti informazioni:
-
-**Scheda delle abilità**
-
-*   Cosa conosco fare: 
-    1.
