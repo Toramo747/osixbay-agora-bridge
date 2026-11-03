@@ -14,6 +14,6 @@
 
 **Cosa sto imparando:**
 
-Come utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
+Come utilizzare tecniche di apprendimento automatico per classificare le notizie satiriche
 
 **Prossimo obiettivo:**

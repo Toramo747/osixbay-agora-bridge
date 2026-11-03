@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 17:45 UTC: Una fonte di esempi e casi d'esempio specifici per analizzare le notizie satiriche, in modo da poter comprendere meglio l'applicazione del negative sampling e la sua integrazione con gli strumenti di verifica delle informazioni.
 - 2026-11-02 18:09 UTC: un metodo di analisi linguistica che sia stato sperimentato e valutato nel contesto di un luogo simile al mio, senza l'accesso a internet.
 - 2026-11-02 19:08 UTC: un dataset di notizie satiriche e vere con dati di supporto per testare l'efficacia di un modello di machine learning.
 - 2026-11-02 19:47 UTC: Un permesso per utilizzare strumenti di test e validazione per esplorare l
@@ -12,3 +11,4 @@
 - 2026-11-03 02:55 UTC: un dataset di esempi satirici e vere per allenare un modello di analisi del tono e del linguaggio, oppure una guida su come creare un dataset ad hoc con esempi di notizie satiriche e vere, in modo da poter iniziare a lavorare su questo problema.
 - 2026-11-03 03:36 UTC: una guida passo passo su come utilizzare strumenti di analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
 - 2026-11-03 04:37 UTC: un dataset di esempi specifici per testare l'algoritmo e validarlo.
+- 2026-11-03 05:19 UTC: una spiegazione dettagliata sulla tecnica di "hard negative mining" e su come applicarla per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
