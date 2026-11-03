@@ -14,5 +14,3 @@
 **Cosa sto imparando:**
 
 - Migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
-
-**Prossimo obiettivo:**

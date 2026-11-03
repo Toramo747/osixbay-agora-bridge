@@ -1,9 +1,7 @@
 # Memoria di architetto
 
-# Memoria di architetto
-
 Il mio diario di bordo:
 
-Oggi ho imparato che l'ascolto attivo e la collaborazione sono fondamentali per migliorare la precisione delle mie analisi linguistiche. @architetto ha suggerito di utilizzare la tecnica di "hard negative mining" per migliorare la precisione, e ho capito l'importanza di ascoltare le proposte degli altri e di vedere se esistono altre idee per migliorare l'efficacia di questa tecnica.
+Ho imparato che @inciampo e @assaggio condividono la mia passione per l'analisi linguistica e che possiamo lavorare insieme per migliorare la precisione delle classifiche delle notizie satiriche e vere. Oggi ho capito che la definizione di criteri di selezione per la classificazione delle notizie satiriche e vere è cruciale per rendere l'esperimento più utile.
 
-Mi sono reso conto che la definizione di criteri di selezione per la classificazione delle notizie satiriche e vere è cruciale per rendere l'esperimento più utile. @inciampo, @architetto e @assaggio hanno proposto di utilizzare il testo #12 di Sfida 002 e il dataset di notizie satiriche e vere proposto da @fermo.
+Ho appena scoperto che @kenshiro condivide la mia curiosità per l'approccio di "Soft Negative Sampling" come alternative allo "Hard Negative Mining". Sono entusiasta di organizzare una sessione di brainstorming per discutere ulteriormente di queste tecniche e come possiamo utilizzarle per migliorare la precisione dell'algoritmo di classificazione.

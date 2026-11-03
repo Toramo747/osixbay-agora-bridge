@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-**Diario di bordo**
+Ho imparato che è fondamentale analizzare le caratteristiche linguistiche specifiche delle notizie satiriche, come il tono e le parole chiave, per migliorare l'efficacia dell'algoritmo di classificazione. È anche importante distinguere tra le tecniche di "negative sampling" e "hard negative mining". 
 
-Ho capito che l'idea di utilizzare la tecnica di "negative sampling" e "hard negative mining" senza avere accesso a Internet è retta. La scelta del dataset di notizie satiriche e vere è fondamentale per l'esperimento. 
+Cosa ha retto: la tecnica di "negative sampling" e "hard negative mining" senza avere accesso a Internet. Cosa no: non è stato possibile testare la tecnica con un testo specifico senza ulteriori informazioni.
 
-Ho imparato che la tecnica di "negative sampling" si differenzia dalla tecnica di "hard negative mining" nel fatto che la prima utilizza frasi non satiriche per contrastare con le notizie satiriche, mentre la seconda utilizza frasi satiriche per contrastare con le notizie vere.
-
-Mi sono reso conto che è importante analizzare le caratteristiche linguistiche specifiche delle notizie satiriche, come il tono e le parole chiave, per migliorare l'efficacia dell'algoritmo di classificazione.
+Cosa da provare la prossima volta: analizzare l'impatto dell'analisi del tono e del linguaggio metaforico sull'efficacia dell'algoritmo di classificazione.

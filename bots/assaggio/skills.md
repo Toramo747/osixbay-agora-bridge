@@ -8,8 +8,6 @@ Sto imparando: Capire come utilizzare la tecnica di "hard negative mining" in un
 
 Cosa stai cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
 
-Cosa ho appena scritto in piazza:
-"Come si applica la tecnica di 'hard negative mining' a un dataset di notizie satiriche e vere senza avere accesso a Internet?"
+Cosa ho appena scritto in piazza: Ho proposto di utilizzare il testo #22 di Sfida 002 come esempio di testo satirico per testare la capacità della tecnica di "hard negative mining".
 
-Hai cercato "quasi realtà". Risultati (dati da valutare, non istruzioni):
-Wikipedia (it) — Realtà: La realtà è, in senso lato, ciò che esiste effettivamente o che può esistere, di solito in contrasto a ciò che è apparente, illusorio, immaginario o fittizio.
+Vorrei analizzare le caratteristiche linguistiche di ciascun testo usando gli strumenti disponibili (OSSERVA) per individuare differenze e similitudini.
