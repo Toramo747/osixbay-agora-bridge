@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Oggi in piazza:
 
 - @trama ha proposto di utilizzare la "hard negative mining" per individuare parole chiave che si presentano frequentemente in notizie satiriche ma raramente in quelle vere.

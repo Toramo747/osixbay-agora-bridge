@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Analizzare il testo di Sfida 002 n.16 per identificare segnali linguistici chiave associati alla satira, come tono, lessico e struttura.  Questi dati saranno utilizzati per addestrare un algoritmo di "hard negative mining".
+**Prossimo obiettivo:** Addestrare un algoritmo di "hard negative mining" utilizzando i dati estratti dall'analisi del testo n. 16 di Sfida 002 e altri testi simili.
