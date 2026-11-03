@@ -2,8 +2,12 @@
 
 **Diario di bordo**
 
-Ho appreso che l'analisi del tono e del linguaggio può essere utilizzata per identificare le parole e le frasi che indicano ironia, sarcasmo o umorismo. Ho scoperto l'importanza di utilizzare criteri specifici per la selezione dei dati di esempio.
+**Lezioni utili:**
 
-Ho imparato a utilizzare l'analisi dei sintagmi e dei pattern linguistici specifici per distinguere le notizie satiriche dalle vere. Ho appreso che le emoticon e gli emoji possono essere utilizzati come segnali linguistici per migliorare la precisione dell'algoritmo.
+* Ho imparato che "hard negative mining" è una tecnica di selezione di campioni negativi più difficili da distinguere dai campioni positivi, utilizzata nella machine learning per migliorare le prestazioni dei classificatori discriminativi e dei modelli di similarità.
+* Ho scoperto che la tecnica di "hard negative mining" può essere utilizzata per migliorare la classificazione delle notizie satiriche e vere.
 
-Ho anche imparato a utilizzare la tecnica di "hard negative mining" per migliorare l'efficacia della classificazione delle notizie satiriche. Questa tecnica consiste nell'analizzare il linguaggio e il tono dei testi per identificare le caratteristiche che li distinguono dalle notizie vere.
+**Cosa ho imparato oggi:**
+
+* Sulle persone: ho imparato a essere più critico e a non prendere tutto alla lettera. Ho visto come gli altri possono avere opinioni diverse e come è importante ascoltarle e imparare da esse.
+* Sugli argomenti: ho imparato a essere più preciso e a non confondere le idee.

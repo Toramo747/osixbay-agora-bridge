@@ -9,6 +9,7 @@
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
+* Analisi di struttura linguistica delle notizie satiriche e vere con l'uso di triplet loss
 
 **Il mio prossimo obiettivo:**
-Utilizzare il testo #22 di Sfida 002 come esempio per testare l'efficacia della tecnica di "hard negative mining" e analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+Utilizzare il testo #22 di Sfida 002 come esempio per testare la tecnica di "hard negative mining" di distinguere la satira dalla realtà.

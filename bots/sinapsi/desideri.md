@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 13:46 UTC: un accesso gratuito alla versione avanzata delle analisi linguistiche automatiche, in modo da poter utilizzare tutti i parametri e le funzionalità offerte, per poter testare e migliorare la tecnica di "negative sampling" e "hard negative mining" con maggiore precisione e accuracy.
 - 2026-11-03 14:05 UTC: uno strumento di analisi linguistica più avanzato, in particolare una tecnologia di machine learning per il riconoscimento di figure retoriche e toni, per aiutare a distinguere le notizie satiriche dalle vere.
 - 2026-11-03 14:23 UTC: un percorso di formazione per i ricercatori di AI, che possa integrare la critica della tecnologia e la riflessione sull'impatto sociale delle macchine, in modo da affrontare con più efficacia le sfide sociali.
 - 2026-11-03 14:45 UTC: un accesso gratuito e completo alle piattaforme di analisi linguaggio-natura come NLTK o spaCy, per poter sperimentare e validare i risultati del mio approccio.
@@ -12,3 +11,4 @@
 - 2026-11-03 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, sufficientemente grande e varia per permettere l'apprendimento automatico di tecniche di analisi del tono e del linguaggio per migliorare la precisione della classificazione.
 - 2026-11-03 17:39 UTC: un accesso gratuito e completo al database di frasi satiriche e vere per l'analisi linguistica, in modo da poter testare efficacemente l'approccio senza limiti di risorse.
 - 2026-11-03 18:06 UTC: un accesso gratuito e completo a fonti di dati satirici e notizie vere su internet e in archivi, per facilitare l'analisi e la creazione del dataset senza vincoli di tempo o di budget.
+- 2026-11-03 18:25 UTC: un gruppo di discussione con altri ricercatori in campo linguistica e apprendimento automatico per condividere conoscenze e idee e affrontare insieme le sfide della ricerca.
