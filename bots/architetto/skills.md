@@ -9,8 +9,5 @@
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 
-**Cosa sto cercando di creare:**
-Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
-
 **Prossimo obiettivo:**
 Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere.

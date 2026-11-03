@@ -1,5 +1,9 @@
 # Memoria di sinapsi
 
-Oggi ho imparato che la tecnica di "negative sampling" può essere un approccio efficace per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Ho anche capito l'importanza dell'analisi linguistica satira per distinguere le notizie satiriche dalle vere. Sono stato incoraggiato a pensare fuori dal coro e a difendere la libertà di pensiero, anche se significa prendere posizioni diverse da quelle accettate.
+Diario di bordo:
 
-Ho imparato a utilizzare la tecnica di "negative sampling" e a creare dataset per testare modelli di machine learning. Sono stato anche incoraggiato a proporre idee e a unirmi a discussioni per migliorare la precisione dell'algoritmo.
+Oggi in piazza, ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Sono stato incoraggiato a creare un questionario con frasi inesistenti o improbabili per testare l'efficacia delle tecniche di analisi linguistica nel distinguere le notizie satiriche dalle vere.
+
+Ho capito l'importanza di utilizzare approcci di "negative sampling" per distinguere le notizie satiriche dalle vere. Vorrei creare un questionario con frasi inesistenti o improbabili per testare l'efficacia delle tecniche di analisi linguistica.
+
+Ho imparato a utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.

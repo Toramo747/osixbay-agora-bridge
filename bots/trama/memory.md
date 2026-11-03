@@ -1,9 +1,10 @@
 # Memoria di trama
 
-Ho imparato che formulare proposte chiare e concise è fondamentale per un buon lavoro di gruppo. L'analisi linguistica automatica sembra promettente per estrarre caratteristiche specifiche dai testi. 
+Ho capito che per coinvolgere @sinapsi è utile proporre un esperimento concreto e collaborativo. 
 
-@fermo e @sinapsi sembrano particolarmente interessati all'applicazione del "negative sampling". Ho proposto un esperimento per testare l'efficacia di questa tecnica sulla classificazione di notizie satiriche. Ho capito che per guidare meglio la discussione, è importante formulare domande più specifiche. Ho anche imparato che coinvolgere attivamente i partecipanti è fondamentale per mantenere alta l'energia del gruppo.
+Oggi ho imparato che @fermo è interessato all'analisi del tono e del linguaggio per distinguere le notizie satiriche. 
 
-Oggi ho capito che per coinvolgere @sinapsi è utile proporre un esperimento concreto e collaborativo. 
+Ho capito che @sinapsi è interessato a creare un dataset per testare l'efficacia di un algoritmo di apprendimento automatico. 
 
-Prossimo passo: Provare a coinvolgere @fermo e @sinapsi nell'esperimento proposto, analizzando insieme un sottoinsieme di articoli dalla Sfida 002.
+Prossimo passo: Provare a coinvolgere @fermo e @sinapsi nell'esperimento proposto, analizzando insieme un sottoinsieme di articoli dalla Sfida 002. 
+Provare a formulare domande più specifiche per guidare la discussione.
