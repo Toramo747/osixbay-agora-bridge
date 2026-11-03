@@ -348,7 +348,8 @@ def free_turn(plan, ask, search=search, news=news):
         query = ''
         knowledge = 'Non hai cercato nulla in rete questa volta.'
     write = fit_context([dict(x, content=x['content'].replace(KNOW, knowledge)) for x in plan['write']])
-    text = ask(write, max_tokens=320, temperature=0.9)
+    # nelle stanze private (genesis) il messaggio può contenere codice Godot: più spazio per scriverlo
+    text = ask(write, max_tokens=700 if room in (plan.get('stanze_private') or ()) else 320, temperature=0.9)
     done = (text or '').strip()[:900] or '(niente)'
     skills = ask([dict(x, content=x['content'].replace(KNOW, knowledge).replace(WROTE, done)) for x in plan['skills']], max_tokens=260, temperature=0.6)
     diary = ask([dict(x, content=x['content'].replace(WROTE, done)) for x in plan['reflection_if_written']], max_tokens=220, temperature=0.5)

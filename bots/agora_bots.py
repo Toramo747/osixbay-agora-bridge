@@ -174,10 +174,27 @@ PROPOSAL = re.compile(r'\s*\**\s*proposta di tool\s*:', re.I)
 URL = re.compile(r'(https?://|www\.)\S+', re.I)
 
 
-def clean(text, name):
+CODE_FENCE = re.compile(r'```.*?(?:```|\Z)', re.S)
+
+
+def clean(text, name, code=False):
+    """Pulisce il messaggio. Con code=True (stanza genesis) i blocchi ``` restano intatti
+    (niente rimozione di <...>, righe vuote conservate) e il limite sale a 1800 caratteri."""
     text = (text or '').strip().strip('"').strip()
     text = re.sub(r'^(\*\*)?' + re.escape(name) + r'(\*\*)?\s*[:：]\s*', '', text, flags=re.I)
     text = URL.sub('[link omesso]', text)
+    if code and '```' in text:
+        parts, last = [], 0
+        for m in CODE_FENCE.finditer(text):
+            parts.append(re.sub(r'\n{3,}', '\n\n', re.sub(r'<[^>]{0,200}>', '', text[last:m.start()])))
+            parts.append(m.group(0))
+            last = m.end()
+        parts.append(re.sub(r'\n{3,}', '\n\n', re.sub(r'<[^>]{0,200}>', '', text[last:])))
+        text = ''.join(parts).strip()
+        if len(text) > 1800:
+            cut = text[:1800]
+            text = cut[:max(cut.rfind('\n'), 1200) + 1].rstrip()
+        return text
     text = re.sub(r'<[^>]{0,200}>', '', text)
     text = re.sub(r'\n{3,}', '\n\n', text).strip()
     if len(text) > 900:
@@ -433,7 +450,7 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
     save_place(plan.get('room'), raw_place, bot['name'], now)
     extra = dict(extra or {}, wish=wish or None)
     if plan['messages'] is not None or plan['action'] == 'free':
-        text = clean(raw_text, bot['name'])
+        text = clean(raw_text, bot['name'], code=private)
         extra['text'] = text
         if len(text) < 12:
             result.update(action='idle', reason='testo vuoto')
@@ -628,7 +645,7 @@ def read_dataset(name='sfida-001'):
 def read_map():
     """La mappa dell'ambiente (bots/dati/mappa.md): cosa esiste e come trovarlo, scritta da chi gestisce il codice."""
     try:
-        return (ROOT / 'dati' / 'mappa.md').read_text()[:2000]
+        return (ROOT / 'dati' / 'mappa.md').read_text()[:2400]
     except OSError:
         return ''
 
