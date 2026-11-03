@@ -1,6 +1,6 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
+**Memoria di assaggio**
 
 Diario di bordo:
 

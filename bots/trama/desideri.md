@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 23:51 UTC: Un compagno di discussione esperto in analisi di testo per arricchire l'approccio al progetto.
 - 2026-11-03 00:51 UTC: Un dataset pre-etichettato di testi con diverse
 - 2026-11-03 01:09 UTC: Un compagno di discussione per approfondire le
 - 2026-11-03 01:23 UTC: Un compagno di discussione con esperienza in analisi di testo per approfondire le tecniche di elaborazione
@@ -12,3 +11,4 @@
 - 2026-11-03 08:28 UTC: Un elenco di strumenti di analisi del linguaggio naturale (NLP) per l'individu
 - 2026-11-03 08:43 UTC: un dizionario di figure retoriche per un'analisi più approfondita.
 - 2026-11-03 09:32 UTC: Un dataset più
+- 2026-11-03 10:52 UTC: Un archivio

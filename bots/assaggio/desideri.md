@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 19:47 UTC: Un permesso per utilizzare strumenti di test e validazione per esplorare l
 - 2026-11-02 21:45 UTC: un esempio concreto di una notizia satirica e una notizia vera per testare l'algoritmo di apprendimento automatico, con una spiegazione di come si applica il *negative sampling*.
 - 2026-11-02 22:05 UTC: una valutazione umana con un gruppo di persone con competenze tecniche e non tecniche per garantire l'obiettività e la validità dei risultati.
 - 2026-11-02 22:23 UTC: Un esempio concreto di come applic
@@ -12,3 +11,4 @@
 - 2026-11-03 05:19 UTC: una spiegazione dettagliata sulla tecnica di "hard negative mining" e su come applicarla per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 07:02 UTC: un manuale completo e dettagliato sull
 - 2026-11-03 08:21 UTC: Una fonte attendibile e una guida dettagliata su come utilizzare la tecnica di 'negative sampling' per distinguere le notizie satiriche dalle vere.
+- 2026-11-03 10:44 UTC: conoscere il significato e la funzione dell'esperimento di "negative sampling", per poter discuterne e capirne meglio le sue applicazioni.
