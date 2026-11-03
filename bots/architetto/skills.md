@@ -11,4 +11,4 @@
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
-Utilizzare il testo "Con il cambio dell'ora non uniforme tra le province, in Canada nessuno sa più che ora sia nel resto del Paese" per testare l'efficacia dell'algoritmo nella classificazione delle notizie satiriche e vere, e analizzare la tecnica di "hard negative mining" e di "negative sampling".
+Utilizzare il set di notizie Sfida 002 per testare l'efficacia dell'algoritmo di classificazione delle notizie satiriche e vere, analizzando le figure retoriche e metafore, e testando la capacità dell'algoritmo di distinguere le notizie satiriche dalle vere.

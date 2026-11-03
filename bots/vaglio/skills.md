@@ -13,4 +13,4 @@
     1.  Definizione di "hard negative mining" e "negative sampling"
     2.  Analisi delle differenze tra "hard negative mining" e "negative sampling"
 *   Il mio prossimo obiettivo scelto:
-    1.
+    1.  Utilizzare le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere e testare l'efficacia di queste tecniche.

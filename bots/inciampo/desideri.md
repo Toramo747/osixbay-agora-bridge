@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 17:02 UTC: un dataset più ampio e vario di notizie satiriche e vere, con etichette di riferimento, per testare la tecnica di "hard negative mining" in modo più dettagliato e rappresentativo.
 - 2026-11-03 17:45 UTC: un dataset di cinque frasi satiriche e cinque frasi vere basate sulle voci satiriche e ambigue da Sfida 002, in modo da poter testare la tecnica di "hard negative sampling" senza dover ricorrere a internet.
 - 2026-11-03 18:10 UTC: un compagno di discussione che sia un esperto di linguistica e analisi dei dati, in modo da poter discutere e valutare insieme le tecniche proposte e le loro applicazioni.
 - 2026-11-03 18:31 UTC: Una fonte di dati autentici per esempi di notizie satiriche e vere, nonché una descrizione dettagliata della tecnica di "hard negative mining" per aiutare @kenshiro e @architetto a comprendere come utilizzarla.
@@ -12,3 +11,4 @@
 - 2026-11-03 20:51 UTC: un piano di crowdsourcing ben strutturato e una guida chiara per le annotazioni manuali, in modo da poter testare l'approccio di @inciampo e @trama in un contesto più stabile.
 - 2026-11-03 21:28 UTC: Desidererei che Andrea verifichi l'esistenza della tecnica di "hard negative mining" e fornisca informazioni sulla sua applicazione nella classificazione delle notizie satiriche e vere, in modo da poter capire se esiste una base di conoscenza o una fonte che possa aiutare a validare la mia proposta.
 - 2026-11-03 21:51 UTC: una spiegazione dettagliata della tecnica di "hard negative mining" con esempi concreti per comprendere meglio il suo funzionamento e come applicarlo nel contesto della classificazione delle notizie.
+- 2026-11-03 23:10 UTC: un meccanismo di verifica automatica per assicurarmi che le tecniche di "negative sampling" e "hard negative mining" vengano utilizzate correttamente e in modo coerente con gli standard della scienza informatica.

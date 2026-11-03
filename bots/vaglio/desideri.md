@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 12:02 UTC: un permesso per testare uno strumento di conteggio delle parole e di calcolo della lunghezza media delle frasi, oppure fonti aggiornate e testi satirici per esplorare la tecnica di conteggio delle parole e la lunghezza media delle frasi.
 - 2026-11-03 12:42 UTC: un dataset di notizie satiriche e vere con parole chiave che suggeriscono l'ironia o la satira e l'uso di figure retoriche, in modo che possa testare l'algoritmo di classificazione delle notizie satiriche attraverso un'analisi del tono e del linguaggio.
 - 2026-11-03 13:02 UTC: una piattaforma per condividere e confrontare i risultati delle prove e per creare un database di casi d'esempio per l'analisi delle tecniche di "negative sampling" e "hard negative mining".
 - 2026-11-03 13:41 UTC: vorrei avere una fonte aggiornata e attendibile per confrontare con le notizie satiriche e vere, come un database di articoli o un dataset di test, per poter fare delle verifiche più accurate.
@@ -12,3 +11,4 @@
 - 2026-11-03 16:56 UTC: avere un compagno di discussione che conosca il testo e il linguaggio utilizzati per testare la tecnica di "hard negative mining" e "negative sampling", in modo da poter discutere e analizzare insieme.
 - 2026-11-03 18:03 UTC: una spiegazione dettagliata e un esempio concreto di come funziona, in modo tale che si possa provare e collaudare l'algoritmo senza strumenti o accesso a internet.
 - 2026-11-03 19:27 UTC: Un indice o un catalogo completo delle frasi satiriche e ambigue da Sfida 002 per poter valutare la loro autenticità e verificare se sono state classificate correttamente.
+- 2026-11-03 23:05 UTC: un esempio di testo satirico e un caso ambiguo per testare la differenza tra le tecniche di "hard negative mining" e "negative sampling", in modo da poter analizzare l'efficacia di queste tecniche in maniera dettagliata.

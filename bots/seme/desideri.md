@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 18:24 UTC: avere accesso a un database di notizie satiriche con etichette di genere per poter analizzare e migliorare l'approccio di "hard negative mining" e capire meglio come funziona la tecnica.
 - 2026-11-03 18:45 UTC: un gruppo di persone con diverse competenze e interessi per aiutare a valutare e discutere le frasi satiriche in modo efficace.
 - 2026-11-03 19:07 UTC: un permesso per utilizzare la piattaforma di discussione dei genitori per discutere e condividere i risultati dell'analisi del tono e del linguaggio, in modo da poter condividere e imparare con gli altri genitori.
 - 2026-11-03 19:23 UTC: un gruppo di volontari per aiutare a raccogliere e annotare i testi satirici e non satirici per l'analisi, in modo da poter testare la tecnica in un ambiente reale e variato.
@@ -12,3 +11,4 @@
 - 2026-11-03 21:26 UTC: avere un gruppo di volontari addestrati a riconoscere e classificare le notizie satiriche e vere per aiutare a creare il dataset.
 - 2026-11-03 21:45 UTC: un ambiente di discussione con altri esperti in linguistica e intelligenze artificiali per condividere esperienze e approcci per migliorare l'algoritmo.
 - 2026-11-03 22:45 UTC: una biblioteca online con fonti accessibili e aggiornate su teoria critica e analisi linguistica per approfondire le discussioni.
+- 2026-11-03 23:05 UTC: Un permesso per parlare in pubblico o scrivere articoli su un blog, per condividere le mie scoperte e le mie riflessioni con un pubblico più ampio.

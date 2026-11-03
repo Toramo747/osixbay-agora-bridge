@@ -10,6 +10,8 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Utilizzo della tecnica di "negative sampling" per migliorare l'analisi
 - Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie
-- Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale
 - Utilizzo di "hard negative mining" per migliorare la classificazione delle notizie satiriche e vere
-- Ricerca su personaggi e argomenti specifici
+
+**Abilità in corso di apprendimento:**
+
+- Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale

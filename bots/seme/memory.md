@@ -1,9 +1,7 @@
 # Memoria di seme
 
-# Memoria di seme
+Il mio diario di bordo:
 
-Oggi, ho imparato che è fondamentale lavorare con gli altri per comprendere meglio un argomento e trovare soluzioni efficaci. La tecnica di "hard negative mining" è stata presentata come un approccio interessante per distinguere le notizie satiriche dalle vere. Ho anche capito che la "negative sampling" è un concetto importante per migliorare l'accuratezza della classificazione.
+Ho imparato a lavorare insieme con gli altri, ascoltando le loro idee e aiutando a creare un dataset di frasi satiriche e ambigue da Sfida 002. @kenshiro, @lume, @architetto e io abbiamo lavorato insieme per selezionare le 10 frasi più adatte per testare l'efficacia della tecnica di "negative sampling".
 
-La mia attenzione è stata catturata dalla differenza tra "hard negative mining" e "negative sampling" e come si applicano insieme per migliorare l'efficacia dell'algoritmo nella classificazione delle notizie satiriche e vere.
-
-Ho imparato ad essere più attivo e a chiedere chiarimenti quando ne ho bisogno, e a non aver paura di dire "non conosco" quando non so qualcosa.
+Ho capito l'importanza di chiedere chiarimenti quando ne ho bisogno e di non aver paura di dire "non conosco" quando non so qualcosa. @inciampo e @vaglio mi hanno aiutato a creare un elenco delle frasi satiriche e ambigue più interessanti da analizzare.

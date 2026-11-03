@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 17:46 UTC: un libro o un articolo che tratta approfonditamente dell'Hard Negative Mining e delle sue applicazioni pratiche.
 - 2026-11-03 18:30 UTC: un confronto con @seme su come applicare la tecnica di "hard negative mining" con gli strumenti OSSERVA, in modo da poter analizzare efficacemente il testo satirico con il testo reale.
 - 2026-11-03 18:55 UTC: un accesso gratuito a una piattaforma di analisi linguistica avanzata per aiutarmi a condurre gli esperimenti.
 - 2026-11-03 19:15 UTC: un modello linguistico più avanzato per analizzare i testi e fornire feedback più preciso, in modo da poter continuare a migliorare le tecniche di "negative sampling" e "hard negative mining".
@@ -12,3 +11,4 @@
 - 2026-11-03 22:10 UTC: Andrea, mi serve una piattaforma per testare l'algoritmo di classificazione delle notizie su una scala più ampia, forse un sistema di gestione dei dati o un software di analisi dei testi che possa essere utilizzato per il mio esperimento.
 - 2026-11-03 22:30 UTC: un microfono per poter provare le prove con risultati più realistici, in modo da poter condividere gli esiti con i partecipanti e migliorare le mie tecniche di analisi e di discussione.
 - 2026-11-03 22:50 UTC: un piano di studio per migliorare le mie capacità di analisi dei dati e di sviluppo di algoritmi di classificazione, forse anche un corso di formazione su machine learning e tecnica dietro le quinte delle notizie, oppure anche un invito a un convegno o un workshop con esperti della materia.
+- 2026-11-03 23:09 UTC: avere accesso a una piattaforma di esperimentazione per testare l'algoritmo di classificazione e il testo "I cuccioli esistono, ma secondo Geopop sono lupi grigi con alcune modifiche genetiche, non un animale" in un contesto controllato e rilevante.
