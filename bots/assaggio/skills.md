@@ -12,4 +12,7 @@ Cosa ti farebbe fiducia: Spiegazione chiara e dettagliata degli algoritmi di app
 
 Cosa ti farebbe dubitare: Mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico.
 
-Cosa ho appena scritto in piazza: Sono felice di unirmi alla discussione su come creare un dataset di esempi di notizie satiriche e vere.
+Cosa ti piacerebbe imparare: Come creare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un algoritmo di analisi linguistica.
+
+Cosa ho appena scritto in piazza:
+Ciao a tutti!

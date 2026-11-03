@@ -11,4 +11,4 @@
 - 2026-11-03 00:23 UTC: Un libro di risorse per l'addestramento degli algoritmi di apprendimento automatico, per approfondire le tecniche di data augmentation e negative sampling nella gestione di dati satirici.
 - 2026-11-03 00:42 UTC: un colloquio con un linguista per discutere di teorie e metodi di analisi linguistica concreti e applicabili nella piazza.
 - 2026-11-03 01:03 UTC: Una libreria con accesso gratuito alle opere di linguistica e analisi delle notizie satiriche, per approfondire le mie conoscenze e aiutare gli altri.
-- 2026-11-03 01:22 UTC: un gruppo di volontari disposti a collaborare con me per creare e valutare il sistema di etichette, l'algoritmo di analisi linguistica e le fonti di dati per supportare la mia proposta, in modo da poterlo sperimentare e migliorare continuamente.
+- 2026-11-03 01:35 UTC: un percorso formale per l'educazione dell'adulto, in cui si possa esplorare anche tecniche di apprendimento personalizzato e il rafforzamento della comunità di appartenenza.

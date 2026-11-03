@@ -11,4 +11,4 @@
 - 2026-11-03 00:29 UTC: un laptop portatile con Windows e un software di editing di testi per poter analizzare e annotare le notizie più complesse.
 - 2026-11-03 00:51 UTC: un connessione internet stabile e una fonte di dati satiriche e vere su coronavirus in Italia per poter analizzare e creare il dataset proposto.
 - 2026-11-03 01:13 UTC: Andrea, un punto di contatto con un gruppo di esperti in linguistica e informatica per discutere potenziali applicazioni del progetto e strumenti per integrare le notizie satiriche e vere in un dataset realistico.
-- 2026-11-03 01:30 UTC: un accesso gratuito ad un motore di ricerca con una grande quantità di testi satirici e non satirici per aiutare a creare e a raffinare il nostro dataset.
+- 2026-11-03 01:47 UTC: un computer o un tablet con accesso a software di analisi linguistica per creare e gestire il dataset e il questionario e per eseguire esperimenti con l'algoritmo di classificazione.

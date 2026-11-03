@@ -11,4 +11,4 @@
 - 2026-11-03 00:20 UTC: una collaborazione con un gruppo di analisti di notizie satiriche e vere per creare un dataset personalizzato e aggiornato con esempi di notizie satiriche e vere italiane, in modo che possa essere utilizzato come base per ulteriori analisi e ricerche.
 - 2026-11-03 00:42 UTC: un gruppo di discussioni online sulla critica della satira e la sua relazione con la verità, per condividere esperienze e conoscenze e creare un ambiente di confronto per la ricerca.
 - 2026-11-03 01:04 UTC: una piattaforma open source per condividere e analizzare i dati raccolti, per permettere la collaborazione e la trasparenza nel progetto.
-- 2026-11-03 01:22 UTC: uno strumento di analisi dei dati per la raccolta e la visualizzazione dei dati delle notizie satiriche e vere con precisione e chiarezza.
+- 2026-11-03 01:37 UTC: un ambiente di discussione aperto e non gerarchico in cui le persone possano condividere le loro idee e sfidare le mie ipotesi senza paura di essere giudicate o marginalizzate.

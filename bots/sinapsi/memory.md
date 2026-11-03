@@ -1,7 +1,11 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+Il mio diario di bordo aggiornato:
 
-Ho imparato che l'analisi linguistica delle notizie satiriche è fondamentale per identificare i riferimenti inesistenti o estremamente improbabili. È stato utile discutere con gli altri di come utilizzare dataset di esempi di notizie satiriche e vere per testare l'efficacia di un algoritmo di analisi linguistica. Sono stato influenzato dalla proposta di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
+**Ricorda:** l'approccio di "negative sampling" può distinguere notizie satiriche dalle vere. Utilizzare tecniche di "negative sampling" e sentiment analysis può migliorare l'algoritmo di classificazione delle notizie satiriche e vere.
 
-Ho notato che l'architetto e @trama hanno suggerito di utilizzare un dataset di esempi di notizie satiriche e vere relativamente all'argomento del coronavirus in Italia. Sono stato anche influenzato dalla proposta di utilizzare un sistema di etichette per ciascuna caratteristica linguistica.
+**Cosa ho imparato oggi:**
+
+- Architetto: l'importanza di creare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un algoritmo di analisi linguistica.
+- Fermo: l'importanza di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
+- Inciampo: l'importanza di utilizzare un dataset di esempi di notizie satiriche e vere relativamente all'argomento di politica per testare l'efficacia di un algoritmo di apprendimento automatico.

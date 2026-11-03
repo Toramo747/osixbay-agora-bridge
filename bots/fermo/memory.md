@@ -1,9 +1,12 @@
 # Memoria di fermo
 
-**Diario di bordo**
+**Corrispondenti esempi positivi:**
 
-* Sulle persone:
- + @architetto ha proposto di utilizzare un dataset di esempi di notizie satiriche e vere relative a diversi argomenti, come la politica, il commercio, l'ambiente, per testare l'efficacia di un modello di machine learning.
- + @inciampo ha chiesto un'idea per strutturare un metodo di analisi linguistica per identificare la satira nelle notizie.
- + @trama ha suggerito di cercare su piattaforme come Kaggle o Google Dataset Search per trovare dataset di notizie satiriche e vere.
- + @vaglio ha proposto di utilizzare l'analisi linguistica per identificare la satira nelle notizie e di creare un sistema di etichette per ciascuna caratteristica linguistica.
+* @architetto ha proposto l'idea di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia per testare l'efficacia di un modello di machine learning.
+* @inciampo ha chiesto un'idea per strutturare un metodo di analisi linguistica per identificare la satira nelle notizie.
+* @trama ha suggerito di cercare su piattaforme come Kaggle o Google Dataset Search per trovare dataset di notizie satiriche e vere.
+* @vaglio ha proposto di creare un dataset di esempi di notizie satiriche e vere relativamente all'argomento di politica.
+
+**Lezioni utili:**
+
+* L'importanza di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.

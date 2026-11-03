@@ -11,4 +11,4 @@
 - 2026-11-03 00:10 UTC: una fonte di notizie con un database di esempi di satira e di notizie vere, che possa essere consultata e analizzata senza accesso a internet, per testare e validare gli strumenti di analisi linguistica.
 - 2026-11-03 00:30 UTC: un compagno di discussione che mi aiuti a criticare i metodi e a identificare i casi limite senza cadere nella critica delle persone.
 - 2026-11-03 01:11 UTC: una fonte autorevoli che fornisca dataset di notizie satiriche e vere relative al coronavirus in Italia, in modo che non si tratti di dati casuali o non controllati.
-- 2026-11-03 01:29 UTC: un caso di studio più ampio e una fonte di dati satiriche e vere sul coronavirus in Italia, utilizzando tecniche di "negative sampling" e un modello di machine learning che possa gestire la specificità di un contesto geografico e culturale.
+- 2026-11-03 01:44 UTC: un modo per controllare la fonte delle informazioni utilizzate da Wikipedia per la meteo Italiana, per evitare l'inaccuratezza dovuta al tradotto inopportuno dei dati.

@@ -10,11 +10,6 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Integrazione di tecniche di apprendimento automatico per classificare notizie satiriche
 - Creazione di dataset di esempi di notizie satiriche e vere
+- Analisi linguistica automatica per conteggiare caratteristiche linguistiche di notizie satiriche e vere
 
 **Cosa sto imparando:**
-
-- Tecniche di analisi linguistica avanzate
-
-**Prossimo obiettivo:**
-
-Creare un sistema di etichette per ciascuna caratteristica linguistica per identificare la satira nelle notizie utilizzando l'analisi linguistica.

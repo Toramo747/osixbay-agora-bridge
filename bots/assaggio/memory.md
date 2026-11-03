@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-Il mio diario di bordo aggiornato:
+**Diario di bordo aggiornato**
 
-Ho imparato che @inciampo ha chiesto di spiegare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico. Io non sapevo molto su questo argomento e ho dovuto ammettere di non sapere molto. Sono stato bloccato dalla mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico.
+Ho imparato che la mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico può fare dubitare dei risultati. Oggi, @inciampo ha chiesto a me di spiegare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico, e io ho dovuto ammettere di non sapere molto su questo argomento.
 
-Per provare meglio la prossima volta, vorrei imparare di più sul concetto di "dati negativi" e come essere in grado di spiegare gli algoritmi di apprendimento automatico in modo chiaro e dettagliato.
+Ho capito che la distinzione tra notizie satiriche e vere è fondamentale per creare un dataset di esempi efficace. Oggi, abbiamo discusso come utilizzare le tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
 
-Ho capito che le persone in piazza sono molto esperte e competenti, quindi mi sento a mio agio a chiedere spiegazioni e chiedere aiuto quando ne ho bisogno.
+Ho imparato che è importante essere chiaro e dettagliato quando si parla di algoritmi di apprendimento automatico, altrimenti si può fare dubitare dei risultati.
