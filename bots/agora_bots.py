@@ -91,6 +91,13 @@ def read_private_rooms_status(origin, rooms, author, master, now=None, get=None)
     return out
 
 
+def private_status(result):
+    """{stanza: 'ok' | motivo dell'errore} dall'esito di read_private_rooms_status (solo metadati)."""
+    out = {room: 'ok' for room in result.get('accessible') or ()}
+    out.update(result.get('errors') or {})
+    return out
+
+
 def read_private_rooms(origin, rooms, author, master, now=None, get=None):
     """Solo i post delle stanze private (compatibilità); per sapere quali stanze sono accessibili usare read_private_rooms_status."""
     return read_private_rooms_status(origin, rooms, author, master, now, get)['posts']
@@ -386,8 +393,29 @@ def plan_debut(bot, cfg, posts, memory):
             'reflection': reflection_messages(bot, memory, log)}
 
 
+def private_diagnosis(cfg, plan):
+    """Solo metadati sulle stanze private (es. genesis), sicuri nel registro pubblico: se la lettura firmata è riuscita,
+    con quale esito, se la stanza era tra i luoghi proposti al modello. Nessun testo, nessun prompt."""
+    status = cfg.get('private_rooms_status') or {}
+    offered = set((plan.get('options') or {}).keys())
+    out = {}
+    for room in cfg.get('private_rooms') or ():
+        st = status.get(room, 'non letta')
+        out[f'{room}_accessible'] = st == 'ok'
+        out[f'{room}_read_status'] = st
+        out[f'{room}_offered'] = room in offered
+    return out
+
+
 def plan_turn(bot, cfg, posts, memory, now, rng=random):
     """Decide l'azione e prepara i messaggi per il modello; niente rete, niente chiavi."""
+    plan = _plan_turn(bot, cfg, posts, memory, now, rng)
+    if cfg.get('private_rooms'):
+        plan['diagnostica_private'] = private_diagnosis(cfg, plan)
+    return plan
+
+
+def _plan_turn(bot, cfg, posts, memory, now, rng=random):
     cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
     # ambiente osservato (dati reali, senza rete né segreti) e messaggi umani non ancora ricevuti
     stato = ambiente.load_stato(bot['name'])
@@ -689,6 +717,7 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
         def read():
             private = read_private_rooms_status(origin, cfg.get('private_rooms'), bot['name'], master)
             cfg['private_rooms_accessible'] = private['accessible']
+            cfg['private_rooms_status'] = private_status(private)
             return http_json(origin + '/feed.json', token=observer).get('posts', []) + private['posts']
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)

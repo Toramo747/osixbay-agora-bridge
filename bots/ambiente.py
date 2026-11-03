@@ -83,6 +83,9 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
            # solo misura: quali voci delle Sfide erano nel contesto, quale materiale è stato aperto, quale codice girava
            'voci_mostrate': plan.get('campioni') or {}, 'materiale_aperto': extra.get('opened') or None,
            'codice': extra.get('codice') or None, 'backend': plan.get('backend')}
+    if plan.get('diagnostica_private') is not None:
+        # metadati di accesso alle stanze private: niente testi (vedi agora_bots.private_diagnosis)
+        row['diagnostica_private'] = dict(plan['diagnostica_private'], selected_room=plan.get('room'), runner=plan.get('runner', 'github'))
     private = bool(plan.get('room')) and plan.get('room') in (plan.get('stanze_private') or ())
     if private:
         # stanza privata: il registro è pubblico, quindi dello strumento resta solo il tipo (la richiesta può citare testi privati)

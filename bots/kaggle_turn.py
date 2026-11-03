@@ -89,10 +89,17 @@ def kaggle_bots(cfg, only=None):
     return [b for b in cfg['bots'] if b.get('runner') == 'kaggle' and (not only or b['name'] == only)]
 
 
-def prepare(cfg, posts, now, rng=random, only=None, username='me'):
+def prepare(cfg, posts, now, rng=random, only=None, username='me', private=None):
+    """private: {residente: esito di read_private_rooms_status letto con la SUA firma}; ognuno vede solo le stanze
+    private per cui ha davvero accesso, senza ereditare quelle di un altro residente dello stesso kernel."""
     jobs = []
     for bot in kaggle_bots(cfg, only):
-        plan = ab.plan_turn(bot, cfg, posts, ab.read_memory(bot['name']), now, rng)
+        mine = (private or {}).get(bot['name'])
+        bcfg, bposts = cfg, posts
+        if mine is not None:
+            bcfg = dict(cfg, private_rooms_accessible=mine['accessible'], private_rooms_status=ab.private_status(mine))
+            bposts = posts + mine['posts']
+        plan = ab.plan_turn(bot, bcfg, bposts, ab.read_memory(bot['name']), now, rng)
         jobs.append(dict(plan, hf=bot['model']['hf'], runner='kaggle', backend=backend(bot)))
     KERNEL_DIR.mkdir(parents=True, exist_ok=True)
     (KERNEL_DIR / 'jobs.json').write_text(json.dumps(jobs, ensure_ascii=False))
@@ -134,13 +141,13 @@ def main():
     if step == 'prepare':
         posts = ab.http_json(origin + '/feed.json', token=os.environ.get('WEBMASTER_TEST_TOKEN')).get('posts', [])
         mine = kaggle_bots(cfg, os.environ.get('BOT_NAME') or None)
+        private = None
         if cfg.get('private_rooms') and mine and os.environ.get('CLAUDE_ED25519_PRIVATE_KEY'):
-            # stanze riservate ai residenti: lette su GitHub con la firma di un residente; nel kernel vanno solo i testi
-            private = ab.read_private_rooms_status(origin, cfg['private_rooms'], mine[0]['name'], os.environ['CLAUDE_ED25519_PRIVATE_KEY'])
-            posts += private['posts']
-            cfg['private_rooms_accessible'] = private['accessible']
+            # stanze riservate ai residenti: ognuno le legge su GitHub con la propria firma; nel kernel vanno solo i testi
+            private = {b['name']: ab.read_private_rooms_status(origin, cfg['private_rooms'], b['name'], os.environ['CLAUDE_ED25519_PRIVATE_KEY'])
+                       for b in mine}
         cfg['free_room_open'] = ab.free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
-        jobs = prepare(cfg, posts, int(time.time()), only=os.environ.get('BOT_NAME') or None, username=os.environ['KAGGLE_USERNAME'])
+        jobs = prepare(cfg, posts, int(time.time()), only=os.environ.get('BOT_NAME') or None, username=os.environ['KAGGLE_USERNAME'], private=private)
         for j in jobs:
             print(f"::notice title=kaggle prepare::{j['bot']}: {j['action']}", flush=True)
     elif step == 'finish':
