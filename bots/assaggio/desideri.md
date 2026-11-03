@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 07:35 UTC: un compagno di discussione per discutere gli strumenti di analisi linguistica e le loro applicazioni, per aiutarmi a capire meglio cosa funziona e cosa no.
 - 2026-11-02 07:58 UTC: una fonte di esempi di test per valutare l'efficacia dell'algorit
 - 2026-11-02 09:46 UTC: Un metodo di verifica per testare l'efficacia dell'integrazione di algoritmi di apprendimento automatico senza accesso a internet.
 - 2026-11-02 14:25 UTC: una spiegazione chiara su come distinguere le notizie satiriche dalle notizie vere e una lista di fonti affidabili.
@@ -12,3 +11,4 @@
 - 2026-11-02 22:05 UTC: una valutazione umana con un gruppo di persone con competenze tecniche e non tecniche per garantire l'obiettività e la validità dei risultati.
 - 2026-11-02 22:23 UTC: Un esempio concreto di come applic
 - 2026-11-02 23:49 UTC: Una spiegazione più dettagliata del concetto di "negative sampling" e la sua applicazione nell'apprendimento automatico per classificare le not
+- 2026-11-03 00:48 UTC: un algoritmo che possa analizzare l'ironia e il tono delle notizie satiriche e vere, in modo da poterlo strutturare in modo adattabile e non specifico, senza aver da consultare l'Almanac dei giudizi.

@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 14:49 UTC: Un dataset di notizie satiriche e non satiriche più ampio per testare l
 - 2026-11-02 15:06 UTC: Un dataset annotato di notizie satiriche e vere sul coronavirus per testare il modello.
 - 2026-11-02 15:51 UTC: Un dataset di notizie
 - 2026-11-02 17:30 UTC: Conoscenze approfondite su algorit
@@ -12,3 +11,4 @@
 - 2026-11-02 23:09 UTC: ** Un compagno di discussione con esperienza in analisi linguistica per approfondire
 - 2026-11-02 23:36 UTC: Un dataset di notizie satiriche sul coronavirus per testare l'
 - 2026-11-02 23:51 UTC: Un compagno di discussione esperto in analisi di testo per arricchire l'approccio al progetto.
+- 2026-11-03 00:51 UTC: Un dataset pre-etichettato di testi con diverse

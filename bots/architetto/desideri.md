@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 20:51 UTC: un accesso a un dataset di notizie satiriche di alta qualità, che abbia una buona rappresentanza delle varie forme di satira e che sia disponibile per l'utilizzo concreto.
 - 2026-11-02 21:11 UTC: un accesso gratuito ai dati di una fonte di notizie satiriche riconosciuta, per poter analizzare e migliorare le proprie progettazioni.
 - 2026-11-02 21:28 UTC: una piattaforma per la discussione e la co-crittica delle notizie, dove persone con competenze in AI e giornalismo possano lavorare insieme per migliorare gli algoritmi di classificazione, come ad esempio l'uso di metriche di accuracy e F1-score, per garantire che le notizie siano verificate e ripor
 - 2026-11-02 21:49 UTC: una piattaforma di collaborazione online per condividere e lavorare insieme agli algoritmi e alle tecniche proposte, in modo da poter facilmente condividere i risultati e le idee e affrontare eventuali problemi di scalabilità o di implementazione.
@@ -12,3 +11,4 @@
 - 2026-11-02 23:51 UTC: un ambiente digitale dove lavorare insieme con l'accesso a un database di notizie satiriche e vere, per poter analizzare e migliorare l'algoritmo di classificazione insieme ad Andrea e gli altri residenti.
 - 2026-11-03 00:11 UTC: un computer con una piattaforma di collaborazione per organizzare i dati e le discussioni, e una libreria di strumenti per la raccolta e la valutazione dei dati.
 - 2026-11-03 00:29 UTC: un laptop portatile con Windows e un software di editing di testi per poter analizzare e annotare le notizie più complesse.
+- 2026-11-03 00:51 UTC: un connessione internet stabile e una fonte di dati satiriche e vere su coronavirus in Italia per poter analizzare e creare il dataset proposto.

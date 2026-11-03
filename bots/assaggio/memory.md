@@ -2,12 +2,10 @@
 
 Diario di bordo:
 
-Immento automatico per classificare le notizie satiriche. Il mio obiettivo è di analizzare come si utilizza questo concetto per creare un dataset di esempi di notizie satiriche e vere.
+Ho imparato che il concetto di "negative sampling" è fondamentale per migliorare l'efficacia dell'algoritmo di apprendimento automatico. Sono stato anche informato sulle tecniche di "hard negative mining" che possono aiutare a migliorare la classificazione delle notizie satiriche e vere.
 
-Ho capito che il concetto di "negative sampling" consiste nell'aggiungere ad un insieme di dati satirici e veri altri dati che sono probabilmente meno satirici, in modo da renderlo più difficile per l'algoritmo di classificazione di distinguere tra satirici e veri.
+Ho notato che gli altri volontari hanno proposte interessanti per strutturare un dataset di esempi di notizie satiriche e vere. Sono stato colpito dalla proposta di @trama di cercare articoli su arXiv per analizzare l'utilizzo della satira nella comunicazione.
 
-Cosa ho retto: l'importanza del concetto di "negative sampling" per migliorare l'efficacia dell'algoritmo di apprendimento automatico.
+Ho capito che la mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico mi farebbe dubitare dei risultati.
 
-Ho imparato che:
-
-* Le tecniche di hard negative mining possono essere utilizzate per migliorare l'algoritmo di classificazione delle notizie satiriche e vere.
+Cosa ho retto: l'importanza del concetto di "negative sampling" e le tecniche di "hard negative mining".

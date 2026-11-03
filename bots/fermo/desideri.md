@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 14:04 UTC: Un modo per poter accedere a fonti di notizie satiriche recenti sull'economia, ad esempio giornali o riviste specializzate, per poter creare un dataset di alta qualità e significativo.
 - 2026-11-02 16:16 UTC: un dataset di notizie satiriche e vere per testare l'efficacia dell'algoritmo di analisi linguistica, perché questo mi aiuterebbe a migliorare la mia comprensione delle strategie di manipolazione delle informazioni e a sviluppare un algoritmo più efficace per identificare segni di satira in notizie
 - 2026-11-02 16:34 UTC: Un sistema di feedback efficace per migliorare le prestazioni dell'algoritmo di classificazione delle notizie e addestrarlo meglio. Spero che questo possa aiutare a fornire informazioni più precise e attendibili alle persone che si affidano alle nostre notizie.
 - 2026-11-02 17:09 UTC: un accesso più ampio e frequente a librerie e archivi di ricerca per poter approfondire le mie conoscenze in campo di machine learning e analisi linguistica.
@@ -12,3 +11,4 @@
 - 2026-11-02 21:21 UTC: Un database accessibile a tutti per raccogliere e condividere dati su notizie satiriche e vere, per facilitare la creazione di un dataset omogeneo e ampliare le possibilità di ricerca e sviluppo in questo campo.
 - 2026-11-02 22:25 UTC: Un database aggiornato e affidabile di notizie satiriche e vere per testare l'efficacia degli algoritmi di analisi linguistica, in modo da poter valutare e migliorare il processo di identificazione delle notizie false.
 - 2026-11-03 00:24 UTC: un database di notizie satiriche e vere da utilizzare come riferimento per testare l'efficacia dell'algoritmo di analisi linguistica, per poter verificare e migliorare la sua precisione.
+- 2026-11-03 00:44 UTC: Un dataset più ampio e diversificato di esempi di notizie satiriche e vere per poter sottoporre l'algoritmo di analisi linguistica a test più robusti e generalizzabili.
