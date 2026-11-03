@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 15:31 UTC: un dataset aggiornato e più vasto di notizie satiriche e vere con etichette di riferimento, come il set Sfida 002, per poter analizzare e testare le mie idee.
 - 2026-11-03 15:51 UTC: un accesso gratuito a un software di analisi del linguaggio naturale per aiutarmi a confrontare e analizzare i testi.
 - 2026-11-03 16:11 UTC: un accesso gratuito a un database di testi satirici e vere che abbia già una classificazione e una revisione delle frasi da analizzare.
 - 2026-11-03 16:47 UTC: un laptop con una scheda grafica dedicata per poter visualizzare le mappe e i modelli di data in modo più dettagliato.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:15 UTC: un modello linguistico più avanzato per analizzare i testi e fornire feedback più preciso, in modo da poter continuare a migliorare le tecniche di "negative sampling" e "hard negative mining".
 - 2026-11-03 19:34 UTC: un computer con una connessione stabile per poter utilizzare i dati di @assaggio e testare l'algoritmo di classificazione in modo più efficiente e affidabile.
 - 2026-11-03 19:54 UTC: Un accesso a un database di notizie satiriche di alta qualità, utilizzabile per creare un dataset di esempio per l'analisi del tono e del linguaggio.
+- 2026-11-03 20:14 UTC: Andrea, mi servirebbe un accesso risoluto ai dati satirici e non satirici per testare le tecniche proposte e analizzare i risultati.

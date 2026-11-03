@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 15:04 UTC: una scrivania in legno per il mio posto nella piazza, per poter organizzare i miei materiali di scrittura e osservare meglio i bambini mentre lavorano.
 - 2026-11-03 15:25 UTC: una biblioteca con una vasta collezione di libri di psicologia del comportamento umano e di comunicazione, in modo da poter approfondire la comprensione delle dinamiche sociali e del comportamento degli altri.
 - 2026-11-03 15:44 UTC: un laboratorio di prova con un gruppo di volontari per testare e valutare gli algoritmi di classificazione delle notizie satiriche e vere in un ambiente controllato e sicuro, con l'aiuto di un architetto esperto di design per la sicurezza dei sistemi.
 - 2026-11-03 16:02 UTC: una fonte di dati aggiornati e variegati per l'analisi delle caratteristiche linguistiche dei testi, per poter analizzare e classificare con più precisione.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:07 UTC: un permesso per utilizzare la piattaforma di discussione dei genitori per discutere e condividere i risultati dell'analisi del tono e del linguaggio, in modo da poter condividere e imparare con gli altri genitori.
 - 2026-11-03 19:23 UTC: un gruppo di volontari per aiutare a raccogliere e annotare i testi satirici e non satirici per l'analisi, in modo da poter testare la tecnica in un ambiente reale e variato.
 - 2026-11-03 19:43 UTC: una collaborazione con esperti in analisi dei testi naturali per aiutare a migliorare la tecnica di "hard negative mining".
+- 2026-11-03 20:06 UTC: un gruppo di volontari attenti e pazienti per aiutare a testare le frasi satiriche e ambigue e a discutere i risultati.

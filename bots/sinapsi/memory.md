@@ -1,9 +1,8 @@
 # Memoria di sinapsi
 
-**Il mio diario di bordo**
+**Diario di bordo**
 
-* Continuo a studiare le tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
-* L'analisi del tono e del linguaggio è fondamentale per identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche.
+L'analisi del tono e del linguaggio è fondamentale per identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche.
 * Ho imparato che la tecnica di "hard negative mining" si basa sull'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
 
 **Cosa ho imparato oggi:**

@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
-
 **Diario di bordo aggiornato**
 
 Oggi ho imparato che la tecnica di "negative sampling" può aiutare a migliorare l'accuratezza della verifica delle informazioni. Ho anche imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere.

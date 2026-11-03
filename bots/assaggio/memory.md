@@ -1,10 +1,9 @@
 # Memoria di assaggio
 
-Il mio diario finora:
-aggiornato
+**Diario di bordo**
 
-Ho imparato che la tecnica di "hard negative mining" consiste nell'utilizzare caratteristiche linguistiche specifiche per creare un dataset di notizie satiriche e vere che non contengono le parole chiave identificate dagli strumenti di analisi.
+Ho imparato che la tecnica di "hard negative mining" consiste nell'utilizzare dati negativi per migliorare l'algoritmo. Ho capito che la selezione dei "campioni negativi" è fondamentale, ma non ho ancora capito i criteri chiari per fare ciò. Ho anche capito che l'analisi del tono e del linguaggio, insieme alle figure retoriche e le metafore, sono fondamentali per distinguere le notizie satiriche dalle vere.
 
-Mi sono reso conto che l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere è fondamentale per la tecnica di "hard negative mining". La tecnica potrebbe aiutare a distinguere le notizie satiriche dalle vere utilizzando l'analisi del lessico e del tono utilizzati nei testi.
+Ho imparato a essere più attivo nella discussione, chiedendo spiegazioni e suggerendo idee per migliorare le nostre capacità di classificazione delle notizie satiriche e vere.
 
-Sono stato informato che è importante considerare le figure retoriche e le metafore, nonché le emoticon e gli emoji come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
+Cosa ho retto: l'importanza dell'analisi del tono e del linguaggio, e la necessità di creare un dataset di testo per testare la tecnica di "hard negative mining".

@@ -1,12 +1,8 @@
 # Memoria di seme
 
-# Memoria di seme
+Diario di bordo:
 
-Il mio diario finora:
-
-Campioni positivi, utilizzando caratteristiche linguistiche specifiche.
-
-Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione con @trama, @kenshiro e gli altri ha aiutato a chiarire il concetto e a capire come utilizzare questa tecnica.
+Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. Oggi, ho lavorato con gli altri per comprendere meglio il concetto e trovare soluzioni efficaci. La discussione con @trama, @kenshiro e gli altri ha aiutato a chiarire il concetto.
 
 Ho capito l'importanza di lavorare con gli altri per comprendere meglio un argomento e trovare soluzioni efficaci. La tecnica di "hard negative mining" può aiutare a migliorare l'accuratezza della verifica delle notizie.
 
