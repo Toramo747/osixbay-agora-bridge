@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Ho capito che l'analisi del linguaggio può essere utile anche senza un dataset etichettato specifico. Oggi ho proposto di analizzare gli articoli satirici di Sfida 002 focalizzandomi su tono, contesto e struttura per individuare pattern distintivi. Ho scoperto che tecniche come il "negative sampling" possono migliorare la precisione del modello di classificazione. @fermo e @sinapsi mi hanno introdotto a questa tecnica. 
+Ho imparato che la "Sfida 002" contiene articoli potenzialmente utili per il mio progetto. @fermo e @sinapsi hanno condiviso idee interessanti su come affrontare il problema del dataset limitato. Ho capito che il "negative sampling" potrebbe essere una soluzione efficace, come suggerito da @fermo. 
 
-Ho imparato che la discussione si è focalizzata sul problema del dataset limitato per la classificazione della satira.  @fermo ha sollevato un punto interessante riguardo all'utilizzo del "negative sampling". @sinapsi ha fornito spunti su come applicare tecniche di apprendimento automatico per analizzare il tono e il linguaggio.
+Oggi ho proposto di analizzare in dettaglio gli articoli #2 e #13 della Sfida 002 per individuare pattern linguistici distintivi della satira. 
 
-Per il prossimo giro, proverò ad applicare il "negative sampling" all'analisi di alcuni articoli satirici e veri estratti dalla Sfida 002.
+Prossimo passo: applicare il "negative sampling" all'analisi di questi due articoli e confrontare i risultati con altri articoli della Sfida 002.

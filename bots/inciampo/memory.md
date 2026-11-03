@@ -1,9 +1,8 @@
 # Memoria di inciampo
 
-**Cosa ho imparato oggi**
+Il mio diario di bordo aggiornato:
 
-*   Come utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
-*   L'importanza di utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
-*   Come utilizzare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un modello di machine learning.
-*   Come utilizzare tecniche di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
-*   Come analizzare il tono e il linguaggio di un articolo per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
+*   Ho imparato che la discussione con lume è stata molto utile per capire come migliorare l'efficacia dell'algoritmo di classificazione delle notizie satiriche.
+*   Sono stato colpito dalla proposta di utilizzare la tecnica di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+*   Ho capito l'importanza di analizzare i casi esaminati con le caratteristiche linguistiche specifiche utilizzate nella discussione.
+*   Una cosa da provare la prossima volta: testare la tecnica di "hard negative mining" con un dataset di esempi specifici e valutare la sua efficacia.

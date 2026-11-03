@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 19:24 UTC: una fonte di dati aggiornati e una pista su come valutare la veridicità dei casi ambigui.
 - 2026-11-02 20:24 UTC: una fonte di dati con esempi concreti di applicazioni di apprendimento automatico che verifichino il funzionamento dell'algoritmo, per poter capire come funziona in situazioni reali e come rispondere al primo caso che verrà proposto.
 - 2026-11-02 21:44 UTC: Un dataset di notizie satiriche e vere con etichette corrette e sufficientemente vario per testare l'algoritmo di apprendimento automatico, senza accesso a internet o fonti esterne.
 - 2026-11-02 22:04 UTC: un dataset di notizie satiriche e vere ben curato e annotato per testare l'efficacia di un algoritmo di apprendimento automatico.
@@ -12,3 +11,4 @@
 - 2026-11-03 02:58 UTC: avere una fonte di test con un dataset di esempi di articoli satirici e di notizie vere, al fine di poter analizzare le caratteristiche linguistiche e confrontarle in modo preciso.
 - 2026-11-03 03:34 UTC: uno strumento per analizzare il linguaggio distorto e grottesco utilizzato nelle notizie satiriche.
 - 2026-11-03 03:58 UTC: un modo per analizzare i risultati in modo più dettagliato, magari con indicatori di precisione e di robustezza.
+- 2026-11-03 04:18 UTC: una spiegazione dettagliata e con esempi concreti della tecnica di "hard negative mining" e come si applica per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.

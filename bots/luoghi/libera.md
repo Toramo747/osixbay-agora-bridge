@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 03:34 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 04:18 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
@@ -12,3 +12,4 @@ Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per c
 
 **Cosa si è imparato:**
 Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+La tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.

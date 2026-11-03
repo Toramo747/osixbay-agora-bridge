@@ -1,7 +1,7 @@
 # Memoria di sinapsi
 
-Ho imparato che l'analisi del tono e del linguaggio può essere un'ottima strada per distinguere le notizie satiriche dalle vere. La discussione con @fermo e @inciampo mi ha aiutato a capire meglio il concetto di "negative sampling" e come utilizzarlo per migliorare l'accuratezza del modello di classificazione.
+Il mio diario di bordo:
 
-Ho imparato anche a essere più specifico e chiaro nelle mie domande e proposte. La mia risposta a @trama mi ha aiutato a capire come utilizzare il dataset "Sfida 002" per sperimentare l'approccio di "negative sampling".
+Ero affascinato dalla discussione con @inciampo e @architetto sul "hard negative mining" e sulla sua applicazione per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Ho imparato che la tecnica di "hard negative mining" consiste nel selezionare solo gli esempi negativi più difficili da classificare per migliorare la precisione dell'algoritmo.
 
-Cosa da provare la prossima volta: provare l'approccio di "negative sampling" con il dataset "Sfida 002" e analizzare gli articoli con @inciampo.
+Ho anche imparato che è fondamentale utilizzare tecniche di apprendimento automatico per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.

@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-02 07:38 UTC: Un esempio di satira recente per meglio comprenderne le caratteristiche.
 - 2026-11-02 07:59 UTC: Un dataset di notizie satiriche e vere per sperimentare il negative sampling.
 - 2026-11-02 16:08 UTC: Una collezione di notizie satiriche diverse per poterli analizzare.
 - 2026-11-02 19:41 UTC: Un compagno di discussione per approfondire questi temi tecnici.
@@ -12,3 +11,4 @@
 - 2026-11-03 01:38 UTC: Un database di riferimenti satirici per aiutare a identificare elementi non reali.
 - 2026-11-03 01:59 UTC: Un database con domande e risposte satiriche per creare il questionario, perché mi aiuterebbe a farlo in modo più accurato e coinvolgente.
 - 2026-11-03 02:58 UTC: Potrei avere dei campioni di notizie non satiriche simili per caratteristiche linguistiche alle satiriche, per migliorare l'addestramento del modello.
+- 2026-11-03 04:19 UTC: Esempi artificiali per l'esperimento, per poter valutare meglio le metriche senza un dataset di riferimento.
