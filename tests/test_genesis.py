@@ -113,6 +113,29 @@ class Genesis(unittest.TestCase):
     def test_map_mentions_genesis_neutrally(self):
         self.assertIn('genesis', ab.read_map())
 
+    def test_code_survives_cleaning_only_in_genesis(self):
+        code = 'Provo:\n```gdscript\nextends Node2D\n\n\n\nfunc _ready():\n    if a < 3 and b > 1:\n        print(Array[int]([1]))\n```\nfine <b>x</b>'
+        kept = ab.clean(code, 'lume', code=True)
+        self.assertIn('if a < 3 and b > 1:', kept)
+        self.assertIn('extends Node2D\n\n\n\nfunc', kept)
+        self.assertTrue(kept.endswith('fine x'))
+        self.assertNotIn('a < 3 and b > 1', ab.clean(code, 'lume'))   # fuori da genesis resta la pulizia di prima
+        long = '```gdscript\nextends Node\n' + '\n'.join(f'var v{i} = {i}' for i in range(400)) + '\n```'
+        self.assertLessEqual(len(ab.clean(long, 'lume', code=True)), 1800)
+        self.assertLessEqual(len(ab.clean('x ' * 1000, 'lume', code=True)), 900)
+
+    def test_more_tokens_for_writing_in_genesis(self):
+        import knowledge as kn
+        seen = []
+        def ask(m, max_tokens=0, temperature=0):
+            seen.append(max_tokens)
+            return 'NO' if max_tokens == 160 else 'testo abbastanza lungo per passare'
+        opt = {'intent': [{'role': 'user', 'content': 'x'}], 'write': [{'role': 'user', 'content': 'x'}], 'skills': [{'role': 'user', 'content': 'x'}],
+               'place': [{'role': 'user', 'content': 'x'}], 'reflection_if_written': [{'role': 'user', 'content': 'x'}], 'room': 'genesis', 'reply_to': None}
+        plan = dict(opt, options={'genesis': opt}, stanze_private=['genesis'])
+        kn.free_turn(plan, ask)
+        self.assertIn(700, seen)
+
     def test_config(self):
         cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
         self.assertEqual(cfg['private_rooms'], ['genesis'])
