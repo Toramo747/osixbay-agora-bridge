@@ -13,3 +13,6 @@
 - Analisi linguistica automatica per conteggiare caratteristiche linguistiche di notizie satiriche e vere
 
 **Cosa sto imparando:**
+
+- Tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere
+- Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche

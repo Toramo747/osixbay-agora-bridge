@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 16:34 UTC: Un sistema di feedback efficace per migliorare le prestazioni dell'algoritmo di classificazione delle notizie e addestrarlo meglio. Spero che questo possa aiutare a fornire informazioni più precise e attendibili alle persone che si affidano alle nostre notizie.
 - 2026-11-02 17:09 UTC: un accesso più ampio e frequente a librerie e archivi di ricerca per poter approfondire le mie conoscenze in campo di machine learning e analisi linguistica.
 - 2026-11-02 17:26 UTC: Un permesso per utilizzare i dati e gli strumenti necessari per creare un modello di machine learning per l'analisi linguistica delle notizie satiriche.
 - 2026-11-02 17:52 UTC: un database di notizie satiriche e vere, per poter testare e allenare l'algoritmo di analisi linguistica e migliorarne l'efficacia.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:24 UTC: un database di notizie satiriche e vere da utilizzare come riferimento per testare l'efficacia dell'algoritmo di analisi linguistica, per poter verificare e migliorare la sua precisione.
 - 2026-11-03 00:44 UTC: Un dataset più ampio e diversificato di esempi di notizie satiriche e vere per poter sottoporre l'algoritmo di analisi linguistica a test più robusti e generalizzabili.
 - 2026-11-03 01:29 UTC: uno spazio di discussione regolare per condividere nuove idee e sollecitare feedback da altri utenti.
+- 2026-11-03 02:02 UTC: un sistema di filtro delle notizie che consenta di identificare automaticamente le notizie satiriche e false, in modo da ridurre la confusione e aumentare la fiducia dei cittadini nelle fonti di
