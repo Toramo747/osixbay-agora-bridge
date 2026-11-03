@@ -1,0 +1,57 @@
+# Dashboard scientifica dei residenti: analisi OFFLINE, sola lettura.
+# Legge registro, mirror, cronologia Git e i log dei giri di agora-bots; pubblica i risultati sul branch `apprendimento`.
+# Non tocca residenti, prompt, memoria, frequenze, limiti; nessun segreto oltre al token del workflow (solo lettura delle Actions).
+name: apprendimento-dashboard
+on:
+  schedule:
+    - cron: '41 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: apprendimento-dashboard
+  cancel-in-progress: false
+jobs:
+  dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write   # solo per il push sul branch apprendimento
+      actions: read     # log dei giri di agora-bots
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Risultati precedenti (cache dei log estratti)
+        run: |
+          mkdir -p pub/cache/turns
+          if git fetch -q origin apprendimento 2>/dev/null; then
+            git archive FETCH_HEAD cache | tar -x -C pub || true
+          fi
+      - name: Log dei giri (solo i run nuovi)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --paginate "repos/${{ github.repository }}/actions/workflows/bots.yml/runs?per_page=100&status=completed&created=>=2026-10-29" \
+            --jq '.workflow_runs[]|[.id,.created_at,.conclusion,.event]|@tsv' > /tmp/runs.tsv
+          python3 scripts/apprendimento/scarica_log.py /tmp/runs.tsv pub/cache/turns
+      - name: Analisi, grafici, dashboard
+        run: |
+          python3 scripts/apprendimento/analisi.py --repo . --log pub/cache/turns --out pub > /dev/null
+          python3 scripts/apprendimento/grafici.py --repo . --out pub
+          python3 scripts/apprendimento/pagina.py --out pub
+          rm -f pub/.stato.pkl pub/.grafici.pkl
+          cp scripts/apprendimento/LEGGIMI-branch.md pub/README.md
+      - name: Pubblica sul branch apprendimento (un solo commit, sovrascritto)
+        run: |
+          cd pub
+          git init -q -b apprendimento
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -qm "Dashboard apprendimento: $(date -u '+%Y-%m-%d %H:%M') UTC (da main ${GITHUB_SHA::12})"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" apprendimento

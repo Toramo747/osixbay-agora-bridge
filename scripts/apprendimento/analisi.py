@@ -152,7 +152,7 @@ for o in registro:
                 esito={'pubblicato': 'pubblicato'}.get(o.get('pubblicazione'), base['esito'] or str(o.get('pubblicazione'))),
                 azione=o.get('azione') or base['azione'], luogo=o.get('luogo') or base['luogo'],
                 risposta_a=o.get('risposta_a') or base['risposta_a'] or '', query=o.get('strumento') or '',
-                desiderio=o.get('desiderio') or '', testo=o.get('testo') or '', riferimenti_visti=o.get('riferimenti_visti'),
+                desiderio=o.get('desiderio') or '', testo=o.get('testo') or '', riferimenti_visti=o.get('riferimenti_visti'), voci_mostrate=o.get('voci_mostrate'), materiale_aperto=o.get('materiale_aperto'),
                 uscita=(o.get('uscita_strumento') or {}).get('estratto', ''), vincoli_live=o.get('vincoli'))
 turni.sort(key=lambda r: r['t'])
 
@@ -372,18 +372,31 @@ L1 = {'confermata', 'dubbia', 'falsa'}
 L2 = {'vera', 'satira', 'ambigua'}
 RXC = re.compile(r'#\s?(\d{1,2})\b([^#\n]{0,90}?)\b(confermata|dubbia|falsa|vera|satira|satirica|ambigua)\b', re.I)
 classif = []
+# voci di cui il residente ha già ricevuto i riferimenti (materiale aperto in un giro precedente -> riferimenti al giro dopo)
+gia_viste = defaultdict(list)   # residente -> [(t, set, id)]
+for r in turni:
+    if r.get('voci_mostrate') and r.get('materiale_aperto'):
+        for i in (r['voci_mostrate'] or {}).get(r['materiale_aperto']) or []:
+            gia_viste[r['residente']].append((r['t'], r['materiale_aperto'], i))
 for x in testi:
     reg = next((r for r in turni if r['residente'] == x['residente'] and r.get('testo') == x['testo']), None)
     for m in RXC.finditer(x['testo']):
         idv, lab = int(m.group(1)), m.group(3).lower().replace('satirica', 'satira')
         s, gold = ('sfida-001', S1.get(idv, {}).get('riferimento')) if lab in L1 else ('sfida-002', S2.get(idv, {}).get('etichetta'))
-        cieca = bool(reg) and x['t'] >= T_CIECA
+        cieca, fuga = bool(reg) and x['t'] >= T_CIECA, 'non controllabile'
+        if cieca and reg.get('voci_mostrate') is not None:
+            mostrate = (reg['voci_mostrate'] or {}).get(s) or []
+            vista = any(t < reg['t'] and ss == s and i == idv for t, ss, i in gia_viste[x['residente']])
+            if idv not in mostrate:
+                cieca, fuga = False, 'voce non mostrata in questo giro'
+            elif vista:
+                cieca, fuga = False, 'riferimento già ricevuto in un giro precedente'
+            else:
+                fuga = 'controllata: voce mostrata, riferimento mai ricevuto prima'
         classif.append(dict(residente=x['residente'], t=x['t'].isoformat(), sfida=s, voce=idv, risposta=lab, riferimento=gold,
-                            corretta=(gold == lab) if gold else None,
-                            valutabile_cieca=cieca,
+                            corretta=(gold == lab) if gold else None, valutabile_cieca=cieca, fuga=fuga,
                             nota=('prima del 3/11 01:10 i riferimenti erano mostrati nello stesso giro' if x['t'] < T_CIECA else
-                                  'riferimenti al giro dopo; voci mostrate nel giro non registrate: fuga non esclusa' if cieca else
-                                  'testo senza registro del giro'),
+                                  'testo senza registro del giro' if not reg else 'riferimenti al giro dopo'),
                             estratto=m.group(0)[:140]))
 M['A_classificazioni'] = classif
 val = [c for c in classif if c['valutabile_cieca'] and c['corretta'] is not None]
@@ -419,7 +432,12 @@ C = []
 WIN = [(U('2026-11-02T00:00'), U('2026-11-02T06:22'), 'W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002)'),
        (U('2026-11-02T07:43'), U('2026-11-02T17:43'), 'W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429)'),
        (U('2026-11-02T21:25'), U('2026-11-03T01:35'), 'W2 2/11 21:25–3/11 01:35 (dopo OSSERVA)'),
-       (U('2026-11-03T01:35'), T1 + timedelta(minutes=1), 'W3 3/11 01:35–fine (registro+cieca)')]
+       (U('2026-11-03T01:35'), U('2026-11-04T00:00'), 'W3 3/11 01:35–24:00 (registro+cieca)')]
+_d, _k = U('2026-11-04T00:00'), 4
+while _d <= T1:   # poi una finestra per giorno UTC, si allunga da sola
+    WIN.append((_d, _d + timedelta(days=1), f'W{_k} {_d.day}/{_d.month} (giorno intero)'))
+    _d, _k = _d + timedelta(days=1), _k + 1
+M['C_finestre_def'] = [(a.isoformat(), b.isoformat(), lab) for a, b, lab in WIN]
 for name in RES:
     rs = [r for r in obs if r['residente'] == name]
     for a, b, lab in WIN:

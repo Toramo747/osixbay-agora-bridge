@@ -321,21 +321,23 @@ add('Fase 2', '10', 'DISPONIBILE (menzioni PARZIALE)', grouped(dl, [('risposte t
 
 # ---------------- Fase 3 ----------------
 acc = M['A_accuratezza']
-add('Fase 3', 'A', 'NON VERIFICABILE (n=3)', hbars(RES, [round(100 * acc[r]['accuratezza']) if acc[r]['accuratezza'] is not None else None for r in RES],
+NA = sum(acc[r]['n_valutabili'] for r in RES)
+ST_A = f'NON VERIFICABILE (n={NA})' if NA < 10 else (f'PARZIALE (n={NA})' if NA < 30 else f'DISPONIBILE (n={NA})')
+add('Fase 3', 'A', ST_A, hbars(RES, [round(100 * acc[r]['accuratezza']) if acc[r]['accuratezza'] is not None else None for r in RES],
                                                    'A · Accuratezza nelle Sfide alla cieca', 'Classificazioni corrette / valutabili, prodotte prima di vedere l\'etichetta · % con IC 95% Wilson nel tooltip',
                                                    tips=[f"{r}: {acc[r]['n_valutabili']} valutabili, IC95 {acc[r]['ic95_basso']}–{acc[r]['ic95_alto']}" for r in RES],
                                                    name='A-accuratezza', fmt='{}%', missing='nessuna classificazione cieca'),
-    'Valutabile = classificazione esplicita «#id → etichetta» in un giro registrato dopo il 3/11 01:10 (riferimenti consegnati solo al giro successivo). Le voci mostrate in ogni giro non sono registrate, quindi una fuga da giri precedenti o dal repository pubblico non si può escludere. Campione: 3 classificazioni (fermo). Estrazione automatica da rivedere a mano (A_classificazioni.csv).')
-add('Fase 3', 'B', 'NON VERIFICABILE', '', 'Precision, recall e F1 per classe richiedono più voci per classe e per residente. Oggi: 3 classificazioni cieche in tutto (1 residente), supporto ≤ 2 per classe. Le metriche calcolate sono in metriche.json → B_prf, con la distribuzione delle classi delle Sfide (Sfida 001: 20 voci; Sfida 002: 10 vere, 10 satira, 9 ambigue).')
+    'Valutabile = classificazione esplicita «#id → etichetta» in un giro registrato dopo il 3/11 01:10 (riferimenti consegnati solo al giro successivo). Le voci mostrate in ogni giro non sono registrate, quindi una fuga da giri precedenti o dal repository pubblico non si può escludere. Campione attuale nel titolo. Dal registro con `voci_mostrate` la fuga viene controllata (colonna fuga in A_classificazioni.csv). Estrazione automatica da rivedere a mano (A_classificazioni.csv).')
+add('Fase 3', 'B', 'NON VERIFICABILE' if NA < 30 else 'PARZIALE', '', f'Precision, recall e F1 per classe richiedono più voci per classe e per residente (soglia: 30 classificazioni cieche). Oggi: {NA}. Le metriche calcolate sono in metriche.json → B_prf, con la distribuzione delle classi delle Sfide (Sfida 001: 20 voci; Sfida 002: 10 vere, 10 satira, 9 ambigue).')
 
 # C
 C = M['C_finestre']
-cidx = {(x['residente'], x['finestra'][:2]): x for x in C}
+cidx = {(x['residente'], x['finestra'].split()[0]): x for x in C}
 for key, lab, nm in (('ridondanti_100', 'richieste ridondanti / 100 giri', 'Ca'), ('comandi_errati_100', 'comandi errati / 100 giri', 'Cb'),
                      ('inesistenti_100_post', 'post con strumenti inesistenti / 100 post', 'Cc')):
     add('Fase 3', nm, 'DISPONIBILE' if nm != 'Cc' else 'PARZIALE',
-        heat(RES, ['W0', 'W1', 'W2', 'W3'], lambda r, c, key=key: (cidx.get((r, c)) or {}).get(key),
-             f'C · {lab}', 'W0 2/11 00–06:22 · W1 07:43–17:43 (prima di OSSERVA) · W2 2/11 21:25–3/11 01:35 · W3 3/11 01:35–fine · – = meno di 5 giri',
+        heat(RES, [w[2].split()[0] for w in M['C_finestre_def']], lambda r, c, key=key: (cidx.get((r, c)) or {}).get(key),
+             f'C · {lab}', 'W0 2/11 00–06:22 · W1 07:43–17:43 (prima di OSSERVA) · W2 2/11 21:25–3/11 01:35 · W3 3/11 · W4… un giorno ciascuna · – = meno di 5 giri',
              lambda r, c, v, key=key: f"{r} {c}: {v if v is not None else 'campione < 5'} (giri {(cidx.get((r, c)) or {}).get('giri_osservabili')}, post {(cidx.get((r, c)) or {}).get('post_con_testo')})",
              name=f'C-{nm[-1]}-{key}', colw=110, fmt=lambda v: f'{v:g}'),
         'Finestre di 4–10 ore con le stesse risorse disponibili dentro ogni finestra (in W0 il dataset satira/vere non esisteva ancora, quindi la richiesta non era ridondante). W1 ha quasi tutti i giri persi per 429 (vedi grafico 1). Le differenze tra finestre non separano l\'effetto di OSSERVA dall\'effetto «più giri osservabili» e dal cambio di argomenti.')

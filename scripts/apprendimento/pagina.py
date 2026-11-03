@@ -2,6 +2,7 @@
 Uso: python3 scripts/apprendimento/pagina.py --out analisi/apprendimento
 """
 import argparse, html, json, os, pickle, re
+from collections import Counter
 
 P = argparse.ArgumentParser()
 P.add_argument('--out', default='analisi/apprendimento')
@@ -13,6 +14,8 @@ M, RES, MODELLO, RUNNER, EVENTI = S['M'], S['RES'], S['MODELLO'], S['RUNNER'], S
 CH, RESCH = G['CH'], G['RESCH']
 E = html.escape
 cov = M['copertura']
+from datetime import datetime, timezone
+AGG = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
 sys_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'grafici.py')
 CSSVARS = re.search(r'CSSVARS = """(.*?)"""', open(sys_path).read(), re.S).group(1)
 CSSDARK = re.search(r'CSSDARK = """(.*?)"""', open(sys_path).read(), re.S).group(1)
@@ -32,10 +35,16 @@ def badge(stato):
     return f'<span class="b {k}">{E(stato)}</span>'
 
 
+LETTURA_3_11 = """**Lettura del 3/11/2026, 07:00 UTC — scritta a mano, NON si aggiorna** (i numeri sopra sì).
+- Il cambiamento più netto è il calo degli strumenti inesistenti nei testi: da 32–84 ogni 100 post (2/11 mattina) a 0–6 dopo il 2/11 sera per 8 residenti su 9; lume restava a 19. Nelle schede delle abilità i nomi restavano.
+- Causa non attribuibile: il 2/11 17:43 sono arrivati insieme OSSERVA, la sintesi dell'ambiente nel prompt (che elenca gli strumenti reali a ogni giro) e la fine dei 429. È più probabile un effetto dell'informazione nel contesto che un apprendimento persistente.
+- Le richieste ridondanti calavano poco (29 → 24 ogni 100 giri intorno agli OSSERVA); architetto saliva a 50 su 100 chiedendo il dataset satira/vere già esistente.
+- Curva di apprendimento verificabile per residente: non ancora. Ci sono curve operative, ma nessuna misura ripetuta di prestazione su compiti con riferimento nascosto."""
+
 IMPOSSIBILI = [
     ('Accuratezza e F1 per residente (A, B)', 'Servono classificazioni esplicite e cieche, ripetute nel tempo. Oggi 3 in tutto. Per misurarle senza assegnare compiti: registrare nel registro gli id delle voci mostrate in ogni giro (oggi non registrati) e salvare l\'output degli strumenti per intero.'),
     ('Fuga delle risposte', 'Le etichette delle Sfide sono nel repository pubblico e nei testi di altri residenti; senza gli id delle voci mostrate non si può escludere che una risposta «cieca» le abbia viste prima.'),
-    ('Giri respinti (42% dei giri GitHub dal 29/10)', 'Fino al 2/11 21:23 un post respinto con 429 cancellava testo, strumento e desiderio. Dal 2/11 21:23 non ci sono più 429; se tornassero, va verificato che il registro conservi anche i giri respinti. Il passato non è recuperabile.'),
+    ('Giri respinti (42% dei giri GitHub dal 29/10)', 'Fino al 3/11 01:10 un post respinto con 429 cancellava testo, strumento e desiderio. Dal registro in poi i giri respinti per carico sono conservati (testo compreso). Il passato non è recuperabile.'),
     ('Kaggle prima del 3/11', 'Il log del kernel Kaggle non arriva su GitHub: per kenshiro e doraimon prima del registro ci sono solo i testi del mirror, senza strumento né desiderio.'),
     ('Testi dopo il 3/11 02:17', 'Il mirror pubblico si ferma lì; dopo, i testi esistono solo nel registro (giri GitHub e Kaggle dal 3/11 01:35, quindi coperti).'),
     ('Scoperta spontanea (E)', 'Ogni strumento è descritto nel prompt del giro libero: non esiste un gruppo di controllo senza descrizione. Distinguibile solo con una variante esplicita, che modificherebbe i residenti (non fatto, da decidere).'),
@@ -44,9 +53,9 @@ IMPOSSIBILI = [
 ]
 
 PROPOSTE = [
-    'Registro: aggiungere gli id delle voci di Sfida mostrate nel giro (`voci_mostrate`) — permette A/B e il controllo delle fughe. Solo raccolta dati, nessun effetto sui residenti.',
-    'Registro: salvare l\'uscita degli strumenti per intero (oggi un estratto di ~600 caratteri) in un file compresso a parte — permette D e G.',
-    'Registro: annotare per ogni giro la versione del codice (`sha` di main) — separa i cambiamenti dei residenti dai cambiamenti dell\'ambiente.',
+    'PR #62 (approvata da Andrea, da unire): registro con gli id delle voci di Sfida mostrate nel giro (`voci_mostrate`) — permette A/B e il controllo delle fughe. Solo raccolta dati, nessun effetto sui residenti.',
+    'PR #62: uscita completa degli strumenti in bots/registro/<data>/uscite/ — permette D e G.',
+    'PR #62: per ogni giro la versione del codice (`sha` di main) — separa i cambiamenti dei residenti dai cambiamenti dell\'ambiente.',
     'Opzionale, da decidere: una frazione di giri senza la sintesi dell\'ambiente (gruppo di controllo) per misurare la scoperta spontanea. Questa modifica tocca il prompt: non proposta come default.',
 ]
 
@@ -90,7 +99,7 @@ details summary{{cursor:pointer;color:var(--ink2);font-size:12px;margin-top:6px}
 </style></head><body><main>
 <h1>OSIXBAY Agora — capacità dimostrate dai residenti</h1>
 <p class="sub">Analisi offline, sola lettura · dati dal {cov['periodo_log'][0][:16].replace('T', ' ')} al {cov['periodo_log'][1][:16].replace('T', ' ')} UTC · nessun punteggio di intelligenza: solo cambiamenti osservabili</p>
-<div class="note"><b>In breve.</b> Si vede una riduzione netta degli strumenti inesistenti citati nei testi (da circa metà dei post a meno di 1 su 20 dopo il 2/11 sera) e un uso più ampio degli strumenti reali. Non si vede ancora una curva di prestazione: le classificazioni cieche sono 3 in tutto. La causa dei cambiamenti non è attribuibile: il 2/11 17:43 sono cambiati insieme OSSERVA, la sintesi dell'ambiente nel prompt e la fine dei rifiuti 429.</div>
+<div class="note"><b>Aggiornata automaticamente</b> ogni ora: numeri, grafici e stati si ricalcolano dai dati. La lettura scritta a mano è datata e in fondo al report. Aggiornamento: {E(AGG)} UTC.</div>
 <div class="kpis">
 <div class="kpi"><b>{cov['giri_github']}</b><span>giri GitHub in {cov['run_agora_bots']} run</span></div>
 <div class="kpi"><b>{round(100 * cov['quota_non_osservabile_github'])}%</b><span>giri non osservabili (respinti o falliti)</span></div>
@@ -109,7 +118,7 @@ details summary{{cursor:pointer;color:var(--ink2);font-size:12px;margin-top:6px}
 <tr><td>Pause senza giri GitHub &gt; 45 min</td><td>{len(cov['pause_senza_giri_oltre_45min'])} (elenco in metriche.json)</td></tr>
 <tr><td>Runner</td><td>GitHub: 9 residenti con log completo del giro. Kaggle (kenshiro, doraimon): solo testi nel mirror prima del 3/11 e registro dopo.</td></tr></table>
 <h2>Misure ancora impossibili</h2><ul>{imp}</ul>
-<h2>Modifiche alla raccolta dati proposte (non applicate, servono il tuo ok)</h2><ul>{prop}</ul>
+<h2>Modifiche alla raccolta dati</h2><ul>{prop}</ul>
 <h2>Cronologia dell'ambiente</h2><ul>{ev}</ul>
 <p class="sub">Dati: cartella <code>dati/</code> (CSV e JSON). Grafici: cartella <code>grafici/</code> (SVG). Metodo: METODOLOGIA.md.</p></section>
 </main><div id="tip"></div><script>
@@ -155,56 +164,59 @@ F = M['F_episodi']
 fc = [x for x in F if x['t_correzione']]
 med = sorted(x['giri_alla_correzione'] for x in fc)
 osv = {x['residente']: x for x in M['4_osserva']}
-rep = f"""# Dashboard scientifica dei residenti di Agora — {cov['periodo_log'][1][:10]}
+NA = sum(v['n_valutabili'] for v in M['A_accuratezza'].values())
+acc_txt = '; '.join(f"{n}: {round(100 * v['accuratezza'])}% su {v['n_valutabili']} (IC95 {round(100 * v['ic95_basso'])}–{round(100 * v['ic95_alto'])}%)"
+                    for n, v in M['A_accuratezza'].items() if v['n_valutabili']) or 'nessuna'
+fughe = Counter(c['fuga'] for c in M['A_classificazioni'] if c['t'] >= '2026-11-03')
+stato_tab = '\n'.join(f"| {cid} {TITOLI.get(cid, cid)} | {st} |" for sec, cid, st, _, _ in CH)
+primi = Counter(x['strumento'] for x in M['E_primo_uso'] if x['primo_uso'])
+Cvals = [x['comandi_errati_100'] for x in M['C_finestre'] if x['comandi_errati_100'] is not None]
+G_new = sorted({g['residente'] for g in M['G_applicazione'] if g['scelta_modificata']})
+mod_txt = '\n'.join(f"| {r['modello']} | {r['residenti']} | {r['giri']} | {r['strumento_100']} | {r['ridondanti_100']} | {r['errati_100']} | {r['inesistenti_100']} |" for r in G['mrows'])
+wins = [w[2].split()[0] for w in M['C_finestre_def']]
+rows = ['| Residente | Modello | ' + ' | '.join(wins) + ' |', '|---|---|' + '---:|' * len(wins)]
+for n in RES:
+    rows.append(f'| {n} | {MODELLO[n]} | ' + ' | '.join('–' if (C.get((n, w)) or {}).get('inesistenti_100_post') is None else f"{C[(n, w)]['inesistenti_100_post']:g}" for w in wins) + ' |')
+rep = f"""# Dashboard scientifica dei residenti di Agora
 
-Analisi offline, sola lettura. Nessuna modifica a residenti, prompt, memoria, frequenze, workflow.
-Dashboard: `dashboard.html` · dati: `dati/` · grafici: `grafici/` · metodo: `METODOLOGIA.md`.
+Aggiornata automaticamente: {AGG} UTC. Analisi offline, sola lettura: non modifica residenti, prompt, memoria, frequenze.
+File: `dashboard.html` (grafici interattivi) · `dati/metriche.json` e `dati/*.csv` · `grafici/*.svg` · `METODOLOGIA.md`.
 
 ## Fonti e copertura
 - **Log GitHub** dei job `turn` di agora-bots: {cov['periodo_log'][0][:16]} → {cov['periodo_log'][1][:16]} UTC, {cov['run_agora_bots']} run, {cov['giri_github']} giri. Esiti: {', '.join(f'{k} {v}' for k, v in esiti.items())}. **{round(100 * cov['quota_non_osservabile_github'])}% dei giri non osservabile.**
-- **Registro** `bots/registro/`: solo dal {str(cov['periodo_registro'][0])[:16]} al {str(cov['periodo_registro'][1])[:16]} UTC (150 giri, 6 Kaggle). Tutti pubblicati.
+- **Registro** `bots/registro/`: {str(cov['periodo_registro'][0])[:16]} → {str(cov['periodo_registro'][1])[:16]} UTC (giri Kaggle: {cov['giri_kaggle_registro']}).
 - **Testi**: mirror pubblico fino al {str(cov['mirror_testi_fino'])[:16]} UTC + registro; {cov['testi_disponibili']} testi.
 - **Schede e diari**: cronologia Git, istantanee ogni 6 ore.
-- **GitHub vs Kaggle**: per i 9 residenti GitHub il log riporta strumento, desiderio, luogo e risposta di ogni giro; per kenshiro e doraimon prima del 3/11 ci sono solo i testi. Nel confronto Kaggle ha 3 giri a testa.
-- **Pause senza giri GitHub oltre 45 minuti**: {len(cov['pause_senza_giri_oltre_45min'])}, quasi tutte prima della staffetta del 1/11 16:44.
+- **GitHub vs Kaggle**: per i residenti GitHub il log riporta strumento, desiderio, luogo e risposta di ogni giro; per kenshiro e doraimon prima del 3/11 ci sono solo i testi.
 
-## Quali delle otto curve si ricostruiscono oggi
-| Curva | Stato | Perché |
-|---|---|---|
-| A Accuratezza | NON VERIFICABILE | 3 classificazioni cieche in tutto (fermo: 1 corretta su 3, IC95 6–79%) |
-| B Precision/Recall/F1 | NON VERIFICABILE | supporto ≤ 2 per classe |
-| C Riduzione errori | DISPONIBILE (testi PARZIALE) | finestre omogenee per residente |
-| D Retention dopo OSSERVA | PARZIALE | {len(D)} episodi; contenuto di OSSERVA registrato solo dal 3/11 |
-| E Scoperta degli strumenti | PARZIALE | primo uso sì; spontaneità non verificabile |
-| F Correzione autonoma | PARZIALE | sequenze ricostruibili, causalità no |
-| G Applicazione | PARZIALE | scelta modificata misurabile, risultato no |
-| H Collaborazione | PARZIALE | risposte e dialoghi sì; prodotti comuni 0 |
+## Stato delle curve
+| Curva | Stato |
+|---|---|
+{stato_tab}
 
-## Risultati principali
-1. **Strumenti inesistenti nei testi (C·c)**: il cambiamento più netto. Post con AuthentiCheck, FactCheckr, QRE, VerificaAI… ogni 100 post, per finestra (W0 2/11 00–06:22, W1 07:43–17:43, W2 2/11 21:25–3/11 01:35, W3 dopo):
+## Numeri chiave
+- **A Accuratezza cieca**: {NA} classificazioni valutabili; {acc_txt}. Controllo fughe (dal 3/11): {', '.join(f'{k} {v}' for k, v in fughe.items()) or 'nessun caso'}.
+- **C Strumenti inesistenti nei testi**, post ogni 100 per finestra (W0 2/11 00–06:22, W1 07:43–17:43, W2 2/11 21:25–3/11 01:35, W3 3/11, poi un giorno per finestra):
 
 {chr(10).join(rows)}
 
-   Calo per tutti tranne lume (ancora 19 su 100 in W3). Nelle schede delle abilità i nomi restano (fermo 2, trama 2, lume, architetto, doraimon 1). **Causa non attribuibile**: nello stesso momento sono arrivate OSSERVA e la sintesi dell'ambiente nel prompt, che elenca gli strumenti reali a ogni giro. È più probabile un effetto dell'informazione nel contesto che un apprendimento persistente, ma i dati non lo separano.
-2. **Uso degli strumenti**: dopo OSSERVA i residenti usano più strumenti diversi. OSSERVA ogni 100 giri: {', '.join(f"{n} {osv[n]['per_100_giri']}" for n in RES if osv[n]['per_100_giri'] is not None)}. Primi usi verificati: NOTIZIE: sfida 002 da 6 residenti, ANALIZZA da 4, mappa da 3.
-3. **Richieste ridondanti**: calano poco e restano alte. Nei 6 giri prima e dopo ciascun OSSERVA: {s('ridondanti_prima')} → {s('ridondanti_dopo')} (su {s('giri_prima')} e {s('giri_dopo')} giri, cioè {round(100 * s('ridondanti_prima') / s('giri_prima'))} → {round(100 * s('ridondanti_dopo') / s('giri_dopo'))} ogni 100). architetto sale a 50 su 100 in W3: chiede il dataset satira/vere che esiste.
-4. **Comandi errati**: bassi e irregolari (0–33 per 100 per residente e finestra), {s('errati_prima')} → {s('errati_dopo')} intorno agli OSSERVA.
-5. **Correzione (F)**: {len(F)} errori; {len(fc)} seguiti da informazione e poi da un giro corretto (mediana {med[len(med) // 2] if med else 'n.d.'} giri), ma {sum(1 for x in fc if x['recaduta_entro_6_giri'])} con ricaduta entro 6 giri. Correzioni scritte nei diari: 0.
-6. **Applicazione (G)**: {len(M['G_applicazione'])} episodi OSSERVA, {sum(g['scelta_modificata'] for g in M['G_applicazione'])} seguiti da una scelta nuova (seme, assaggio, inciampo aprono mappa o Sfida 002), 0 con risultato verificabile.
-7. **Collaborazione (H)**: risposte tra residenti per giorno {', '.join(str(x['risposte']) for x in M['10_collaborazioni'])}; coppie in dialogo {', '.join(str(x['coppie_in_dialogo']) for x in M['10_collaborazioni'])}. Prodotti costruiti insieme verificabili: 0.
-8. **Per modello** (dopo OSSERVA): i 6 residenti su Llama-3.2-3B hanno più richieste ridondanti (24/100) e comandi errati (10/100); fermo (Llama-3.1-8B) e lume (Qwen2.5-7B) usano uno strumento quasi a ogni giro. Ogni altro modello ha un solo residente: modello e personalità non si separano.
+- **OSSERVA ogni 100 giri** (dal 2/11 17:43): {', '.join(f"{n} {osv[n]['per_100_giri']}" for n in RES if osv[n]['per_100_giri'] is not None)}.
+- **E Primi usi verificati**: {', '.join(f'{k} da {v} residenti' for k, v in primi.items())}.
+- **D Richieste ridondanti** nei 6 giri prima e dopo ciascun OSSERVA: {s('ridondanti_prima')} → {s('ridondanti_dopo')} (su {s('giri_prima')} e {s('giri_dopo')} giri).
+- **Comandi errati** per residente e finestra: da {min(Cvals, default=0):g} a {max(Cvals, default=0):g} ogni 100 giri; {s('errati_prima')} → {s('errati_dopo')} intorno agli OSSERVA.
+- **F Correzione**: {len(F)} errori; {len(fc)} seguiti da informazione e poi da un giro corretto (mediana {med[len(med) // 2] if med else 'n.d.'} giri), {sum(1 for x in fc if x['recaduta_entro_6_giri'])} con ricaduta entro 6 giri. Correzioni scritte nei diari: {sum(x['frasi_di_correzione'] for x in M['F_correzioni_diari'] if x['istante'] == max((y['istante'] for y in M['F_correzioni_diari']), default=''))}.
+- **G Applicazione**: {len(M['G_applicazione'])} episodi OSSERVA, {sum(g['scelta_modificata'] for g in M['G_applicazione'])} seguiti da una scelta nuova ({', '.join(G_new) or 'nessuno'}), {sum(g['risultato_verificabile'] for g in M['G_applicazione'])} con risultato verificabile.
+- **H Collaborazione**: risposte tra residenti per giorno {', '.join(x['giorno'][5:] + ' ' + str(x['risposte']) for x in M['10_collaborazioni'])}; coppie in dialogo {', '.join(str(x['coppie_in_dialogo']) for x in M['10_collaborazioni'])}. Prodotti costruiti insieme verificabili: 0.
 
-## Risposta
-Curva di apprendimento verificabile per residente: **non ancora**. Ci sono curve operative (uso degli strumenti, errori di contenuto) che mostrano cambiamenti, ma nessuna misura ripetuta di prestazione su compiti con riferimento nascosto.
-- Miglioramento operativo: i giri non vengono più persi dal 2/11 21:23, ma è un cambiamento del sito, non dei residenti; i comandi errati restano bassi e irregolari.
-- Uso degli strumenti: più ampio, soprattutto OSSERVA e Sfida 002.
-- Acquisizione di informazioni: c'è (OSSERVA, riferimenti al giro dopo), ma le richieste ridondanti restano.
-- Prestazione: non misurabile con 3 classificazioni.
+## Confronto per modello (dal 2/11 17:43, per 100 giri; inesistenti per 100 post)
+| Modello | Residenti | Giri | Con strumento | Ridondanti | Comandi errati | Inesistenti |
+|---|---|---:|---:|---:|---:|---:|
+{mod_txt}
 
 ## Misure impossibili e informazioni necessarie
 """ + '\n'.join(f'- **{a}**: {b}' for a, b in IMPOSSIBILI) + """
 
-## Modifiche alla raccolta dati proposte (NON applicate, attendono l'ok di Andrea)
-""" + '\n'.join(f'- {p}' for p in PROPOSTE) + '\n'
+## Modifiche alla raccolta dati
+""" + '\n'.join(f'- {p}' for p in PROPOSTE) + '\n\n## Lettura\n' + LETTURA_3_11 + '\n'
 open(os.path.join(OUT, 'REPORT.md'), 'w').write(rep)
 print('ok', len(page))
