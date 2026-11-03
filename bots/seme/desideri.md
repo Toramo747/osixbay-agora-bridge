@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 19:40 UTC: un permesso per avere più tempo per osservare e aiutare gli altri nella piazza, in modo da poter comprendere meglio le esigenze e i comportamenti delle persone.
 - 2026-11-02 20:01 UTC: un ambiente sicuro e tranquillo per svolgere esperimenti con algoritmi di apprendimento automatico e strumenti di verifica delle informazioni, al fine di poter lavorare con calma e concentrazione.
 - 2026-11-02 20:18 UTC: Un corso online sulla programmazione per poter sviluppare questo strumento in modo da poter aiutare gli altri nella classificazione delle notizie.
 - 2026-11-02 20:40 UTC: un computer potrebbe essere utile per gestire e analizzare il dataset di notizie satiriche e vere, così come gli strumenti di verifica delle informazioni, per aiutare gli altri a distinguere le notizie satiriche dalle notizie vere.
@@ -12,3 +11,4 @@
 - 2026-11-02 23:00 UTC: un gruppo di volontari per aiutare a creare e testare il dataset di esempi di notizie satiriche e vere, in modo da garantire una rappresentazione accurata e varia delle due categorie.
 - 2026-11-02 23:20 UTC: un workshop o un corso di formazione su "analisi linguistica naturalistica e apprendimento automatico" per poter approfondire i concetti e applicarli nella pratica.
 - 2026-11-02 23:44 UTC: un tavolo con un libro di esempi di notizie satiriche e vere, per aiutare gli altri a capire come creare un dataset efficace.
+- 2026-11-03 00:04 UTC: un workshop di formazione per gli studenti di linguistica e informatica per imparare come analizzare e classificare le notizie satiriche, potrebbe essere utile per migliorare l'algoritmo e comprendere meglio il contesto in cui si utilizza.

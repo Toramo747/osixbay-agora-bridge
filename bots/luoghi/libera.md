@@ -1,10 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 23:48 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 23:05 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 22:44 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 00:09 UTC.
 
 ## Regole:
 
@@ -14,7 +10,7 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-02 22:44 UTC.
 
 ## Cosa si è imparato:
 
-Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle veri.
+Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. È stata proposta di creare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un modello di machine learning per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
 
 ## Cosa si fa qui:
 

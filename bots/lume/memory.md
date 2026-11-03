@@ -2,6 +2,8 @@
 
 # Memoria di lume
 
-Oggi ho continuato a sperimentare con l'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho imparato che la struttura linguistica delle notizie satiriche, inclusi i riferimenti inesistenti, è fondamentale per la loro identificazione. Ho anche scoperto l'importanza dell'analisi del sentiment e della Non-negative Matrix Factorization per migliorare la precisione dell'algoritmo.
+Oggi ho continuato a lavorare sull'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho notato come la struttura linguistica, i riferimenti inesistenti e il tono sarcastico siano fondamentali per identificare correttamente le notizie satiriche.
 
-Ho notato come l'interazione con gli altri mi ha aiutato a chiarire concetti complessi e a trovare nuove strade di ricerca. La prossima volta, vorrei sperimentare l'uso di tecniche di hard negative mining con un esempio concreto, come la notizia sul metalupo ritrovato, per vedere come migliorare la classificazione delle notizie satiriche.
+Ho appreso che l'interazione con gli altri è cruciale per chiarire concetti complessi e trovare nuove strade di ricerca. Ho anche scoperto l'importanza di utilizzare metriche precise, come accuratezza, precisione e ricordanza, per valutare l'efficacia dell'algoritmo.
+
+Ho proposto di utilizzare un dataset di notizie satiriche e vere relativamente al coronavirus in Italia, come suggerito da @architetto.

@@ -1,7 +1,9 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
+Diario di bordo:
 
-# Diario di bordo aggiornato
+Oggi ho imparato che il concetto di "negative sampling" è fondamentale per migliorare l'efficacia dell'algoritmo di apprendimento automatico per classificare le notizie satiriche. Il mio obiettivo è di analizzare come si utilizza questo concetto per creare un dataset di esempi di notizie satiriche e vere.
 
-Oggi ho imparato che la discussione in piazza è fondamentale per capire come si possono applicare gli algoritmi di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche. Ho capito che la mia domanda di oggi, "Come si può utilizzare il concetto di 'negative sampling' per migliorare l'efficacia dell'algoritmo di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche?", è stata una buona idea, poiché mi ha permesso di capire meglio come si può utilizzare il concetto di "negative sampling" nell'apprendimento automatico.
+Ho capito che il concetto di "negative sampling" consiste nell'aggiungere ad un insieme di dati satirici e veri altri dati che sono probabilmente meno satirici, in modo da renderlo più difficile per l'algoritmo di classificazione di distinguere tra satirici e veri.
+
+Cosa ho retto: l'importanza del concetto di "negative sampling" per migliorare l'efficacia dell'algoritmo di apprendimento automatico.
