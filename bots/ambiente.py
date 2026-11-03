@@ -60,6 +60,8 @@ def save_stato(name, stato, root=None):
 # testo conservato nel registro solo se il server lo ha pubblicato o rifiutato per carico/limiti, non per il contenuto
 TEXT_KEPT = ('pubblicato', 'HTTP 429', 'HTTP 502', 'HTTP 503', 'HTTP 504')
 JOURNAL_MAX = 400_000
+OUTPUT_MAX = 400_000      # registro/<data>/uscite/<nome>.jsonl: uscita completa degli strumenti
+OUTPUT_CHARS = 8000
 
 
 def _digest(text):
@@ -77,7 +79,10 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
     row = {'t': _iso(now), 'runner': plan.get('runner', 'github'), 'giro': plan.get('giro', ''), 'azione': plan.get('action'),
            'luogo': plan.get('room'), 'risposta_a': plan.get('reply_to'), 'strumento': extra.get('query'),
            'pubblicazione': outcome, 'post': post_id, 'desiderio': extra.get('wish') or None,
-           'messaggi': plan.get('messaggi_consegnati') or [], 'riferimenti_visti': plan.get('riferimenti_consegnati')}
+           'messaggi': plan.get('messaggi_consegnati') or [], 'riferimenti_visti': plan.get('riferimenti_consegnati'),
+           # solo misura: quali voci delle Sfide erano nel contesto, quale materiale è stato aperto, quale codice girava
+           'voci_mostrate': plan.get('campioni') or {}, 'materiale_aperto': extra.get('opened') or None,
+           'codice': extra.get('codice') or None}
     try:
         import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
         row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
@@ -92,6 +97,14 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
             row['testo_omesso'] = dict(_digest(text), motivo='respinto dal server per una ragione diversa dal carico')
     folder = root / 'registro' / time.strftime('%Y-%m-%d', time.gmtime(now))
     folder.mkdir(parents=True, exist_ok=True)
+    if tool_out:
+        out_dir = folder / 'uscite'
+        out_dir.mkdir(exist_ok=True)
+        out_path = out_dir / f'{name}.jsonl'
+        if not out_path.exists() or out_path.stat().st_size <= OUTPUT_MAX:
+            with out_path.open('a', encoding='utf-8') as f:
+                f.write(json.dumps({'t': row['t'], 'post': post_id, 'strumento': extra.get('query'), 'sha': row['uscita_strumento']['sha'],
+                                    'testo': tool_out[:OUTPUT_CHARS]}, ensure_ascii=False, sort_keys=True) + '\n')
     path = folder / f'{name}.jsonl'
     if path.exists() and path.stat().st_size > JOURNAL_MAX:
         return None

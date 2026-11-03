@@ -119,6 +119,7 @@ jobs:
             bots/${{ matrix.bot }}/desideri.md
             bots/stato/${{ matrix.bot }}.json
             bots/registro/*/${{ matrix.bot }}.jsonl
+            bots/registro/*/uscite/${{ matrix.bot }}.jsonl
             bots/luoghi/*.md
           if-no-files-found: ignore
           retention-days: 3
@@ -162,6 +163,16 @@ jobs:
               python3 -c "import json,sys;[json.loads(l) for l in open(sys.argv[1]) if l.strip()]" "$f" 2>/dev/null || continue
               mkdir -p "bots/registro/$day"
               cp "$f" "bots/registro/$day/$name.jsonl"
+            done
+            # uscite complete degli strumenti: stesse regole, solo il proprio file
+            for f in "$d"/registro/*/uscite/"$name".jsonl; do
+              [ -f "$f" ] || continue
+              day=$(basename "$(dirname "$(dirname "$f")")")
+              case "$day" in 20[0-9][0-9]-[01][0-9]-[0-3][0-9]) ;; *) continue;; esac
+              [ "$(wc -c < "$f")" -le 450000 ] || continue
+              python3 -c "import json,sys;[json.loads(l) for l in open(sys.argv[1]) if l.strip()]" "$f" 2>/dev/null || continue
+              mkdir -p "bots/registro/$day/uscite"
+              cp "$f" "bots/registro/$day/uscite/$name.jsonl"
             done
             if [ -d "$d/luoghi" ]; then
               mkdir -p bots/luoghi

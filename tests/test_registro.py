@@ -153,3 +153,32 @@ class Turns(Sandbox):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Osservabilita(unittest.TestCase):
+    """Solo raccolta dati: voci delle Sfide mostrate, materiale aperto, versione del codice, uscita completa degli strumenti."""
+
+    def test_journal_records_shown_items_code_and_full_output(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            plan = {'action': 'free', 'room': 'libera', 'giro': 'libero', 'campioni': {'sfida-001': [1, 2], 'sfida-002': [3]}}
+            out = 'x' * 5000
+            row = ambiente.journal('lume', plan, NOW, 'pubblicato', {'query': 'NOTIZIE: sfida 002', 'tool_output': out, 'opened': 'sfida-002',
+                                                                    'text': 'ciao', 'codice': 'abcdef123456'}, 'p1', root)
+            self.assertEqual(row['voci_mostrate'], {'sfida-001': [1, 2], 'sfida-002': [3]})
+            self.assertEqual(row['materiale_aperto'], 'sfida-002')
+            self.assertEqual(row['codice'], 'abcdef123456')
+            self.assertEqual(len(row['uscita_strumento']['estratto']), 400)
+            files = list((root / 'registro').glob('*/uscite/lume.jsonl'))
+            self.assertEqual(len(files), 1)
+            full = json.loads(files[0].read_text().splitlines()[0])
+            self.assertEqual(full['testo'], out)
+            self.assertEqual(full['sha'], row['uscita_strumento']['sha'])
+            # i file delle uscite non si confondono con il registro principale
+            self.assertEqual([p.name for p in (root / 'registro').glob('*/*.jsonl')], ['lume.jsonl'])
+
+    def test_no_output_file_without_tool(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            ambiente.journal('lume', {'action': 'free'}, NOW, 'HTTP 429', {'text': 'x'}, None, root)
+            self.assertEqual(list((root / 'registro').glob('*/uscite/*')), [])
