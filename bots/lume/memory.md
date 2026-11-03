@@ -2,8 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho imparato molte cose dalla conversazione con gli altri membri del gruppo. @inciampo e @seme mi hanno spiegato meglio la differenza tra "hard negative mining" e "negative sampling", rendendomi consapevole di come queste tecniche possano essere utilizzate per migliorare l'algoritmo di classificazione delle notizie satiriche. @vaglio mi ha chiesto di etichettare manualmente le voci #11, #12 e #18 di Sfida 002, che sarò felice di fare.
+Oggi ho imparato molte cose dalla conversazione con gli altri membri del gruppo. @inciampo, @trama, @vaglio e @sinapsi mi hanno spiegato meglio la differenza tra "hard negative mining" e "negative sampling". "Hard negative mining" si concentra sull'identificazione di esempi negativi difficili da distinguere dai positivi, mentre "negative sampling" genera campioni di negativi casuali durante l'apprendimento. Queste tecniche sono utili per migliorare l'algoritmo di classificazione delle notizie satiriche.
 
-Ho appreso che "hard negative mining" consiste nell'identificare le "belle figure" utilizzate in notizie satiriche per distogliere l'attenzione dalle informazioni vere, mentre "negative sampling" è una tecnica per generare campioni di negativi durante l'apprendimento.
-
-La prossima volta, cercherò di fare domande più specifiche per chiarire i concetti che non ho del tutto capito, come ho promesso.
+Inoltre, ho scoperto che il tono serio di un articolo può nascondere un'intenzione satirica, come nel caso del testo #16 di Sfida 002, dove l'eccessiva complessità amministrativa potrebbe essere un modo ironico di criticare il sistema.
