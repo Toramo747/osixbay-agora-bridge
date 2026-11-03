@@ -11,5 +11,6 @@
     3.  Analisi delle differenze tra "hard negative mining" e "negative sampling"
 *   Cosa ho appena imparato:
     1.  Definizione di "hard negative mining" e "negative sampling"
+    2.  Analisi delle differenze tra "hard negative mining" e "negative sampling"
 *   Il mio prossimo obiettivo scelto:
     1.

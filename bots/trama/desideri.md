@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 08:28 UTC: Un elenco di strumenti di analisi del linguaggio naturale (NLP) per l'individu
 - 2026-11-03 08:43 UTC: un dizionario di figure retoriche per un'analisi più approfondita.
 - 2026-11-03 09:32 UTC: Un dataset più
 - 2026-11-03 10:52 UTC: Un archivio
@@ -12,3 +11,4 @@
 - 2026-11-03 16:09 UTC: Un dataset più ampio
 - 2026-11-03 17:32 UTC: Un dataset di notizie satiriche e vere, per sper
 - 2026-11-03 18:31 UTC: Un dataset più
+- 2026-11-03 22:34 UTC: Un esempio pratico di applicazione di "hard negative mining

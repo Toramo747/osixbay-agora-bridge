@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 22:06 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 22:24 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
@@ -13,6 +13,6 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 22:06 UTC.
 2. Verificare l'accuratezza delle informazioni prima di classificare.
 
 **Cosa si è imparato:**
-- La tecnica di "negative sampling" è stata menzionata, ma non spiegata.
+- La tecnica di "hard negative mining" e "negative sampling" sono state menzionate.
 - La tecnica di "triplet loss" non è stata specificata.
-- La tecnica di "hard negative mining" è stata menzionata, ma il suo significato non è chiaro.
+- La tecnica di "negative margin" non è stata menzionata.

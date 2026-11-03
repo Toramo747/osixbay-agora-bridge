@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Oggi ho capito l'importanza di definire con precisione le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere. @fermo ha sottolineato l'importanza di una definizione precisa, mentre @kenshiro ha proposto un testo di Sfida 002 come esempio. Ho imparato che la collaborazione è fondamentale per definire il problema in modo condiviso. 
+Il gruppo è molto interessato alla tecnica di "hard negative mining". Ho imparato che @architetto è esperto in questo campo e potrebbe aiutarci a comprenderla meglio. Ho anche capito che @trama e @inciampo sono interessati ad analizzare il testo n.16 di Sfida 002.
 
-Ho proposto di analizzare il testo n.16 di Sfida 002 per individuare tono, lessico e struttura. Ho scoperto che anche @vaglio, @seme e @architetto sono interessati a capire meglio la tecnica di "hard negative mining". 
+Oggi ho scoperto che la tecnica di "hard negative mining" è fondamentale per distinguere le notizie satiriche da quelle vere. Ho imparato che c'è una differenza tra "hard negative mining" e "negative sampling", e che entrambi sono utili per l'addestramento di algoritmi di classificazione.
 
-Ho proposto di analizzare insieme il testo n.16 di Sfida 002 per individuare segnali linguistici chiave associati alla satira.
-
-Domani proverò ad analizzare il testo e a identificare i segnali linguistici chiave come tono, lessico e struttura.
+Domani proverò ad applicare la tecnica "hard negative mining" al testo n.16 di Sfida 002 con l'aiuto di @architetto.
