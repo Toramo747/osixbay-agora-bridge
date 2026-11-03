@@ -67,6 +67,8 @@ jobs:
         if: steps.guard.outputs.go == 'true'
         env:
           WEBMASTER_TEST_TOKEN: ${{ secrets.WEBMASTER_TEST_TOKEN }}
+          # solo per firmare la lettura delle stanze riservate ai residenti (genesis); non entra nel kernel
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
           BOT_NAME: ${{ inputs.bot }}
         run: python bots/kaggle_turn.py prepare
       - name: Run on a Kaggle GPU

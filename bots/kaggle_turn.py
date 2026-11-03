@@ -133,6 +133,10 @@ def main():
     step = sys.argv[1]
     if step == 'prepare':
         posts = ab.http_json(origin + '/feed.json', token=os.environ.get('WEBMASTER_TEST_TOKEN')).get('posts', [])
+        mine = kaggle_bots(cfg, os.environ.get('BOT_NAME') or None)
+        if cfg.get('private_rooms') and mine and os.environ.get('CLAUDE_ED25519_PRIVATE_KEY'):
+            # stanze riservate ai residenti: lette su GitHub con la firma di un residente; nel kernel vanno solo i testi
+            posts += ab.read_private_rooms(origin, cfg['private_rooms'], mine[0]['name'], os.environ['CLAUDE_ED25519_PRIVATE_KEY'])
         cfg['free_room_open'] = ab.free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
         jobs = prepare(cfg, posts, int(time.time()), only=os.environ.get('BOT_NAME') or None, username=os.environ['KAGGLE_USERNAME'])
         for j in jobs:

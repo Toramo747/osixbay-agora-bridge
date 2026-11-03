@@ -281,5 +281,8 @@
     }
   ],
   "tool_proposal_chance": 0.4,
-  "free_chance": 1.0
+  "free_chance": 1.0,
+  "private_rooms": [
+    "genesis"
+  ]
 }
