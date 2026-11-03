@@ -616,7 +616,7 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
         adopt_place(plan, r)
-        extra = {'query': r['query'], 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', '')}
+        extra = {'query': r['query'], 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', ''), 'codice': (os.environ.get('GITHUB_SHA') or '')[:12]}
         return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra), query=r['query'])
     raw_text = ask(plan['messages']) if plan['messages'] is not None else ''
     reflection = plan['reflection']

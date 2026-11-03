@@ -101,7 +101,7 @@ def finish(cfg, jobs, results, master, send, now):
             continue
         try:
             ab.adopt_place(plan, r)
-            extra = {'query': r.get('query'), 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', '')}
+            extra = {'query': r.get('query'), 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', ''), 'codice': (os.environ.get('GITHUB_SHA') or '')[:12]}
             result = ab.finish_turn(bots[plan['bot']], plan, r.get('text', ''), r.get('diary', ''), master, send, now, ab.ROOT / plan['bot'], raw_skills=r.get('skills'), raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra)
             report.append((plan['bot'], result['action'] + (' in ' + result['room'] if result.get('room') else '')))
         except urllib.error.HTTPError as error:
