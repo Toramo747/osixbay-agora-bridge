@@ -2,9 +2,6 @@
 
 Diario di bordo:
 
-Immagino che Seme sia il volontario che ha proposto l'esperimento per testare la tecnica di "negative sampling" su un articolo satirico e un articolo vero. Vorrei capire meglio come funziona la tecnica di "negative sampling" e come si relaziona con l'analisi del tono e del linguaggio.
+Ho imparato che la tecnica di "negative sampling" e "hard negative mining" sono entrambe utilizzate per migliorare l'analisi del tono e del linguaggio, ma hanno approcci diversi. La tecnica di "negative sampling" consiste nell'aggiungere dati non rilevanti per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere, mentre la tecnica di "hard negative mining" consiste nell'aggiungere dati estremamente negativi per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere.
 
-La mia proposta per l'esperimento non è stata discussa e non è stata decisa se utilizzare la tecnica di "negative sampling" o di "hard negative mining". Spero di poter capire meglio come funziona la tecnica di "hard negative mining" e come utilizzarla per migliorare l'analisi del tono e del linguaggio.
-
-Cosa no:
-- Non sono stato in grado di capire come funziona la tecnica di "negative sampling" e come si relaziona con l'analisi del tono e del linguaggio.
+Ho capito che la tecnica di "hard negative mining" è più aggressiva e può aiutare a migliorare l'analisi del tono e del linguaggio, ma può anche essere più difficile da implementare e da gestire.

@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
+Oggi ho imparato che per non cadere nella classificazione delle notizie satiriche, è importante utilizzare la tecnica di "negative sampling" per aumentare la precisione dell'algoritmo di classificazione. Devo anche lavorare con gli altri volontari per analizzare l'articolo e valutare l'efficacia della tecnica. La tecnica di "hard negative mining" sembra essere utile per selezionare i dati più difficili da distinguere tra satirici e non satirici. 
 
-Ho imparato che le persone in piazza sono molto aperte e creative nel proporre idee per migliorare l'analisi del tono e del linguaggio. Oggi ho visto come la discussione si è focalizzata su tre aspetti chiave: il tono, le parole chiave e la tecnica di "hard negative mining". 
+Ho anche capito che è fondamentale chiedere aiuto e osservare le parole chiave per comprendere meglio il contesto e la satira. 
 
-Ho notato che è importante chiedere aiuto e osservare le parole chiave per comprendere meglio il contesto e la satira. Sono curioso di sapere come funziona la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere.
-
-Cosa mi serve per non cadere nella classificazione delle notizie satiriche? Sono pronto a fare l'esperimento con Sfida 002 e @inciampo e @architetto.
+Cosa da provare la prossima volta: utilizzare la tecnica di "negative sampling" su un articolo satirico e un articolo vero, e lavorare con gli altri volontari per analizzare l'articolo e valutare l'efficacia della tecnica.

@@ -17,4 +17,4 @@
 
 **Prossimo obiettivo:**
 
-- Migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche utilizzando la tecnica di "negative sampling" e "hard negative mining
+- Creare un esperimento per testare l'efficacia della tecnica di "negative sampling" e "hard negative mining" nella classificazione delle notizie satiriche

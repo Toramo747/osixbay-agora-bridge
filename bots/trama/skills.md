@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:**  Confrontare le frasi selezionate per Sfida 003 (hard negative mining e negative sampling) con quelle reali e satiriche di Sfida 002. Analizzare le differenze linguistiche per individuare pattern che aiutino a distinguere la satira dall'autenticità.
+**Prossimo obiettivo:** Confrontare le parole chiave individuate in un articolo satirico con quelle di un articolo vero, analizzando le differenze linguistiche per individuare pattern che aiutino a distinguere la satira dall'autenticità.

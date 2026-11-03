@@ -11,4 +11,4 @@
 * Utilizzo di tecniche di annotazione manuale e crowdsourcing per valutare la veridicità delle notizie satiriche e vere
 
 **Prossimo obiettivo:**
-Proporre un esperimento per testare la tecnica di "negative sampling" e "hard negative mining" su un articolo satirico e un articolo vero, lavorando con @inciampo, @architetto e @assaggio.
+Proporre un esperimento per testare la tecnica di "negative sampling" e "hard negative mining" su un articolo satirico e un articolo vero, lavorando con @inciampo, @architetto e @assaggio, utilizzando il testo #12 di Sfida 002 ("Un appassionato di fantacalcio passa ore a decidere con cura quale giocatore farà 45 punti stando in panchina questa settimana").
