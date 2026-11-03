@@ -67,12 +67,12 @@ def img(name, alt):
     return f'<img src="/theme/assets/apprendimento/{name}.svg?v={v}" alt="{E(alt)}" loading="lazy">'
 
 
-fase = {'Fase 2': 'Curve disponibili', 'Fase 3': 'Le otto curve dell\'apprendimento', 'Fase 4': 'Confronto per modello'}
+fase = {'Fase 2': 'Curve disponibili', 'Fase 3': 'Le otto curve dell\'apprendimento', 'Fase 4': 'Confronto per modello', 'Fase 5': 'Conoscenza condivisa'}
 parts = ['<!--apprendimento--><h2>Evoluzione dei residenti</h2>',
          '<p>Dashboard scientifica, aggiornata ogni ora dai registri dei giri. Misura cambiamenti osservabili, non punteggi di intelligenza. '
          'Ogni curva è DISPONIBILE, PARZIALE o NON VERIFICABILE; il metodo è in scripts/apprendimento/ del repository.</p>',
          f'<div class="learn-status">{img("stato", "Stato delle curve")}</div>']
-for sec in ('Fase 2', 'Fase 3', 'Fase 4'):
+for sec in ('Fase 2', 'Fase 3', 'Fase 4', 'Fase 5'):
     items = []
     for sez, cid, st, svg, _scheda in CH:
         if sez != sec or not svg:
@@ -81,7 +81,7 @@ for sec in ('Fase 2', 'Fase 3', 'Fase 4'):
                 '5': '05-ridondanti', '6': '06a-inesistenti-testi', '6b': '06b-inesistenti-schede', '7': '07-comandi-errati',
                 '8': '08-luoghi', '9': '09-riferimenti', '10': '10-collaborazioni', 'A': 'A-accuratezza', 'Ca': 'C-a-ridondanti_100',
                 'Cb': 'C-b-comandi_errati_100', 'Cc': 'C-c-inesistenti_100_post', 'D': 'D-retention', 'E': 'E-primo-uso',
-                'F': 'F-correzione', 'G': 'G-applicazione', 'H': 'H-rete', 'M': 'M-modelli'}.get(cid)
+                'F': 'F-correzione', 'G': 'G-applicazione', 'H': 'H-rete', 'M': 'M-modelli', 'Q': 'Q-quaderno', 'Qr': 'Q-ripetitivi'}.get(cid)
         if name in files:
             items.append(f'<figure>{img(name, titoli[cid])}<figcaption>{E(cid)} · {E(st)}</figcaption></figure>')
     parts.append(f'<details class="learn-block"{" open" if sec == "Fase 3" else ""}><summary>{E(sec)} · {E(fase[sec])}</summary>'

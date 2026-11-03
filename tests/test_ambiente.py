@@ -156,7 +156,7 @@ class Osserva(Sandbox):
         self.assertIn('Esecuzione di codice: non disponibile', sections['strumenti'])
         r, k = self.run_tool(self.plan('lume'), 'ESEGUI: print(1)')
         self.assertEqual(r['query'], '')
-        tools = set(re.findall(r'^- ([A-Z]+):', sections['strumenti'], re.M)) - {'CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA'}
+        tools = set(re.findall(r'^- ([A-Z]+):', sections['strumenti'], re.M)) - {'CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO'}
         self.assertEqual(tools, set())
 
     def test_5_unverifiable_is_declared(self):

@@ -83,6 +83,8 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
            # solo misura: quali voci delle Sfide erano nel contesto, quale materiale è stato aperto, quale codice girava
            'voci_mostrate': plan.get('campioni') or {}, 'materiale_aperto': extra.get('opened') or None,
            'codice': extra.get('codice') or None, 'backend': plan.get('backend')}
+    if extra.get('quaderno'):
+        row['quaderno'] = extra['quaderno']   # solo id, evento ed esito: il contenuto sta in bots/quaderno/
     if plan.get('diagnostica_private') is not None:
         # metadati di accesso alle stanze private: niente testi (vedi agora_bots.private_diagnosis)
         row['diagnostica_private'] = dict(plan['diagnostica_private'], selected_room=plan.get('room'), runner=plan.get('runner', 'github'))
@@ -91,7 +93,7 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
         # stanza privata: il registro è pubblico, quindi dello strumento resta solo il tipo (la richiesta può citare testi privati)
         q = row.get('strumento') or ''
         kind = q.split(':', 1)[0].strip().upper() if ':' in q else ''
-        row['strumento'] = (kind if kind in ('NOTIZIE', 'ANALIZZA', 'OSSERVA') else 'CERCA') if q else q
+        row['strumento'] = (kind if kind in ('NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO') else 'CERCA') if q else q
         row['desiderio'] = None
     try:
         import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
@@ -305,6 +307,14 @@ def observe(bot, cfg, posts, now, stato=None, root=None):
                       + '. Diario e scheda li rileggi a ogni giro; li riscrivi tu alla fine del giro.')
     conoscenze.append(f'- Schede dei luoghi: {sum(cards.values())} su {len(cards)} luoghi, scritte dai residenti.')
     conoscenze.append('- Le abilità nella tua scheda sono dichiarate da te: nessun meccanismo le verifica in automatico.')
+    try:
+        import quaderno
+        qv = quaderno.entries(quaderno.load_events(root))
+        authors = len({v['autore'] for v in qv.values()})
+        conoscenze.append(f'- Quaderno condiviso: {len(qv)} voci di {authors} residenti; si consulta con QUADERNO: cerca <parole> o QUADERNO: leggi <id>. '
+                          'Lo stato di ogni voce lo calcola il codice dalle prove, non da chi la scrive.')
+    except Exception:
+        pass
 
     cap = cfg.get('max_posts_per_day', 6)
     limiti = ['- Puoi fare da solo/a, a ogni giro: scegliere il luogo, usare al massimo uno strumento, scrivere un messaggio (anche @nome), '

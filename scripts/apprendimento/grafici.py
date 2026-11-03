@@ -25,7 +25,7 @@ CSSVARS = """--surface:#fcfcfb;--page:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--mut
 CSSDARK = """--surface:#1a1a19;--page:#0d0d0d;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;
 --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--none:#5a5955;
 --q0:#262624;--q1:#104281;--q2:#184f95;--q3:#1c5cab;--q4:#256abf;--q5:#3987e5;--q6:#6da7ec"""
-TOOLCOL = {'CERCA': 'var(--s1)', 'NOTIZIE': 'var(--s2)', 'ANALIZZA': 'var(--s3)', 'OSSERVA': 'var(--s4)', 'nessuno': 'var(--none)'}
+TOOLCOL = {'CERCA': 'var(--s1)', 'NOTIZIE': 'var(--s2)', 'ANALIZZA': 'var(--s3)', 'OSSERVA': 'var(--s4)', 'QUADERNO': 'var(--s5)', 'nessuno': 'var(--none)'}
 W, H = 760, 300
 ML, MR, MT, MB = 56, 16, 40, 52
 
@@ -260,10 +260,10 @@ add('Fase 2', '2', 'DISPONIBILE (Kaggle PARZIALE)',
 
 # 3 strumenti
 rows = M['3_strumenti']
-lay = [(t, TOOLCOL[t], [r[t] for r in rows]) for t in ('CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA')] + [('nessuno strumento', TOOLCOL['nessuno'], [r['nessuno'] for r in rows])]
+lay = [(t, TOOLCOL[t], [r.get(t, 0) for r in rows]) for t in ('CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO')] + [('nessuno strumento', TOOLCOL['nessuno'], [r['nessuno'] for r in rows])]
 add('Fase 2', '3', 'DISPONIBILE', stacked(LAB6, lay, 'Utilizzo degli strumenti nel tempo (conteggi)', 'Chiamate effettive (campo query del giro), giri osservabili per fascia di 6 ore', 'chiamate', name='03a-strumenti-conteggi'),
     'Una chiamata per giro al massimo. Lo strumento è quello davvero eseguito (`query`), non quello citato nel testo. Prima del 31/10 06:17 nessuno strumento esisteva; le date di disponibilità sono nella cronologia.')
-per100 = [(t, TOOLCOL[t], [round(100 * r[t] / r['giri_osservabili'], 1) if r['giri_osservabili'] >= 10 else None for r in rows]) for t in ('CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA')]
+per100 = [(t, TOOLCOL[t], [round(100 * r.get(t, 0) / r['giri_osservabili'], 1) if r['giri_osservabili'] >= 10 else None for r in rows]) for t in ('CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO')]
 add('Fase 2', '3b', 'DISPONIBILE', lines(LAB6, per100, 'Utilizzo degli strumenti ogni 100 giri', 'Fasce con almeno 10 giri osservabili; le altre sono vuote', ylab='chiamate / 100 giri', name='03b-strumenti-per100'),
     'Normalizzato sui giri osservabili della fascia. Fasce con meno di 10 giri osservabili escluse (rumore).')
 
@@ -436,6 +436,25 @@ add('Fase 4', 'M', 'PARZIALE', heat(mk, ['strumento_100', 'ridondanti_100', 'err
                                     lambda r, c, v: f"{r} ({mi[r]['residenti']}) · {c}: {v} su {mi[r]['giri']} giri, {mi[r]['post']} post",
                                     name='M-modelli', colw=120, rowlab=190, vmax=100),
     'Gruppi per modello e backend effettivi del giro (GGUF Q4 su CPU GitHub o fp16 su GPU Kaggle): un residente che cambia backend compare in due righe. Llama-3.2-3B raggruppa 6 residenti; gli altri modelli quasi sempre uno solo, quindi modello e personalità non si separano.')
+
+# ---------------- Fase 5: conoscenza condivisa (quaderno), serie nuove e separate ----------------
+Q = M.get('Q_quaderno') or {}
+if 'errore' not in Q:
+    labels = ['ipotesi', 'esperimenti proposti', 'esperimenti eseguiti (con prova)', 'risultati non verificati', 'risultati con prova',
+              'risultati verificati (conferma altrui con prova)', 'risultati confutati', 'correzioni', 'letture di voci altrui', 'collegamenti a voci altrui']
+    ps = Q.get('per_stato') or {}
+    vals = [ps.get('ipotesi', 0), Q['esperimenti_proposti'], Q['esperimenti_eseguiti'], ps.get('risultato_non_verificato', 0), Q['risultati_con_prova'],
+            Q['risultati_verificati'], Q['risultati_confutati'], Q['correzioni'], Q['riuso_letture_di_voci_altrui'], Q['riuso_collegamenti_a_voci_altrui']]
+    add('Fase 5', 'Q', 'DISPONIBILE' if Q['voci'] else 'NON VERIFICABILE (quaderno vuoto)',
+        hbars(labels, vals, f"Q · Quaderno condiviso ({Q['voci']} voci di {Q['autori']} residenti)", 'Conteggi dal quaderno (bots/quaderno/) e dai giri · stato calcolato dal codice dalle prove',
+              col='var(--s5)', name='Q-quaderno'),
+        'Voci volontarie dei residenti. Esperimento «eseguito» solo con una prova valida (impronta di un\'uscita di uno strumento eseguito dallo stesso residente); risultato «verificato» solo con una conferma di un altro residente che allega una sua prova. Le conferme a parole non contano. Attività non è intelligenza: questi numeri dicono se la capacità è usata e come, non se i residenti sono migliorati.')
+    rp = Q.get('post_ripetitivi_per_giorno') or {}
+    dk = sorted(rp)
+    add('Fase 5', 'Qr', 'PARZIALE', lines([d[5:] for d in dk], [('post ripetitivi', 'var(--s2)', [rp[d]['per_100'] for d in dk])],
+                                          'Discussioni ripetitive', 'Post che riprendono per almeno metà dei 6-grammi un post delle 48 ore prima · per 100 post al giorno (≥ 10 post)',
+                                          ymax=100, ylab='per 100 post', name='Q-ripetitivi'),
+        'Misura passiva sui testi pubblici leggibili (mirror e registro; esclusa genesis). Una ripetizione non è per forza un errore: alta ripetizione con poche voci nuove nel quaderno indica una discussione che gira in tondo.')
 
 pickle.dump(dict(CH=CH, RESCH=RESCH, mrows=mrows), open(os.path.join(OUT, '.grafici.pkl'), 'wb'))
 print(len(CH), 'grafici +', len(RESCH), 'per residente')
