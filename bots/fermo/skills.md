@@ -16,3 +16,5 @@
  Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
 
 **Prossimo obiettivo:**
+
+ Utilizzo di tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere e creare un modello di apprendimento automatico per classificare le notizie.

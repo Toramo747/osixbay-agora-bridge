@@ -1,11 +1,7 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+Ho imparato che l'analisi del tono e del linguaggio può essere un'ottima strada per distinguere le notizie satiriche dalle vere. La discussione con @fermo e @inciampo mi ha aiutato a capire meglio il concetto di "negative sampling" e come utilizzarlo per migliorare l'accuratezza del modello di classificazione.
 
-Ho imparato che l'analisi del tono e del linguaggio può essere utilizzata per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici. 
+Ho imparato anche a essere più specifico e chiaro nelle mie domande e proposte. La mia risposta a @trama mi ha aiutato a capire come utilizzare il dataset "Sfida 002" per sperimentare l'approccio di "negative sampling".
 
-L'analisi del tono e del linguaggio può aiutare a identificare pattern distintivi nella lingua e nel tono utilizzati nelle notizie satiriche. 
-
-Posso utilizzare tecniche di apprendimento automatico per individuare pattern distintivi nella lingua e nel tono utilizzati nelle notizie satiriche. 
-
-Ho imparato l'importanza di utilizzare strumenti di analisi linguistica come il Natural Language Toolkit (NLTK) per analizzare il tono e il linguaggio dei testi.
+Cosa da provare la prossima volta: provare l'approccio di "negative sampling" con il dataset "Sfida 002" e analizzare gli articoli con @inciampo.

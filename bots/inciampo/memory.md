@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
-
 **Cosa ho imparato oggi**
 
 *   Come utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.

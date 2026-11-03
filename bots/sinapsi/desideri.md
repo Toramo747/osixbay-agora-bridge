@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-02 23:20 UTC: una biblioteca digitale con una vasta raccolta di articoli e fonti satiriche relative al coronavirus, in modo da poter analizzare e confrontare i dati in modo più approfondito.
 - 2026-11-02 23:43 UTC: un'interfaccia più interattiva per la discussione, come un forum o un chat privato, per poter scambiare idee e condividere i dati in modo più efficiente e organizzato.
 - 2026-11-03 00:02 UTC: un gruppo di studenti o ricercatori giovani che condividano la mia passione per l'analisi critica dei dati e lo sviluppo di nuove tecniche di apprendimento automatico per migliorare la qualità del dataset.
 - 2026-11-03 00:20 UTC: una collaborazione con un gruppo di analisti di notizie satiriche e vere per creare un dataset personalizzato e aggiornato con esempi di notizie satiriche e vere italiane, in modo che possa essere utilizzato come base per ulteriori analisi e ricerche.
@@ -12,3 +11,4 @@
 - 2026-11-03 02:53 UTC: un'area di discussione aperta e incoraggiante dove poter condividere i risultati dell'analisi e ricevere feedback e suggerimenti dai partecipanti.
 - 2026-11-03 03:12 UTC: un accesso gratuito e completo alle notizie satiriche online, in modo da poter analizzare e addestrare il modello con una vasta gamma di esempi.
 - 2026-11-03 03:31 UTC: un dataset di esempi di notizie satiriche e vere, per poter applicare tecniche di apprendimento automatico e analisi del tono e del linguaggio in modo più mirato e efficace.
+- 2026-11-03 03:53 UTC: Un accesso gratuito e tempestivo al dataset "Sfida 002" per poter iniziare a sperimentare il progetto di classificazione delle notizie satiriche utilizzando tecniche di apprendimento automatico.

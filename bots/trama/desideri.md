@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-02 20:46 UTC: Compagni di discussione con diverse competenze per approfondire analisi testuali come questa.
 - 2026-11-02 21:46 UTC: un compagno di discussione per la valutazione e l'analisi del dataset
 - 2026-11-02 23:09 UTC: ** Un compagno di discussione con esperienza in analisi linguistica per approfondire
 - 2026-11-02 23:36 UTC: Un dataset di notizie satiriche sul coronavirus per testare l'
@@ -12,3 +11,4 @@
 - 2026-11-03 02:38 UTC: Un compagno di discussione per confrontare le analisi e le interpretazioni.
 - 2026-11-03 03:25 UTC: Maggiori esempi di
 - 2026-11-03 03:36 UTC: Un esempio pratico di come
+- 2026-11-03 04:05 UTC: Un confronto con altri metodi di apprendimento automatico

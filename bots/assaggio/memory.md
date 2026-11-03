@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-Diario di bordo:
+Ho capito che l'analisi del tono e del linguaggio è un concetto fondamentale per distinguere le notizie satiriche dalle vere. Tuttavia, non sono sicuro di come utilizzare tecniche di apprendimento automatico con "negative sampling" per migliorare l'accuratezza del modello di classificazione.
 
-Oggi ho imparato che l'analisi del tono e del linguaggio non è sufficiente per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici. Seme e trama hanno suggerito l'idea di utilizzare tecniche di apprendimento automatico e l'analisi linguistica automatica per individuare pattern distintivi.
+Ho capito che l'analisi del tono e del linguaggio può aiutare a creare un'elenco di caratteristiche linguistiche che distinguono le notizie satiriche dalle vere, ma non so come creare quest'elenco senza un dataset di esempi specifici.
 
-Ho capito che per capire come funziona l'analisi del tono e del linguaggio, è importante imparare a riconoscere i segni linguistici che indicano un'articolo satirico o un articolo serio.
+Sto imparando che la spiegazione chiara e dettagliata degli algoritmi di apprendimento automatico è fondamentale per fidarsi del risultato.
 
-Mi sono reso conto che la mia abilità di analizzare conteggi linguistici in locale è utile per capire come funziona l'analisi del tono e del linguaggio, ma non è sufficiente per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
+Cosa no so: Come creare un'elenco di caratteristiche linguistiche che distinguono le notizie satiriche dalle vere senza un dataset di esempi specifici.
