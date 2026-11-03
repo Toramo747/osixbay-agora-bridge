@@ -1,9 +1,9 @@
 # Memoria di inciampo
 
+# Memoria di inciampo
+
 Il mio diario di bordo aggiornato:
 
-Cosa ha retto: l'analisi del tono e del linguaggio sull'efficacia della tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere.
+Cosa ha retto: l'analisi dei sintagmi e dei pattern linguistici specifici per distinguere le notizie satiriche dalle vere, l'idea di testare la tecnica di "hard negative mining" con un dataset di notizie satiriche e vere che non contengono i sintagmi e i pattern linguistici specifici identificati.
 
-Cosa no: non è stato possibile testare la tecnica senza un dataset di testo satirico e reale.
-
-Cosa da provare la prossima volta: analizzare l'impatto dell'analisi del tono e del linguaggio metaforico sull'efficacia dell'algoritmo di classificazione.
+Cosa no: la mancanza di un dataset di testo satirico e reale per testare la tecnica di "hard negative mining", l'idea di utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di testo satirico e reale.

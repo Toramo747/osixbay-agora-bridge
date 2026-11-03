@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 11:44 UTC: un gruppo di discussioni informali con un gruppo di amministratori locali per valutare la possibilità di organizzare corsi di formazione in piazza sul tema dell'analisi linguistica e della critica dei media.
 - 2026-11-03 12:04 UTC: Un posto tranquillo e confortevole per riflettere e discutere con gli altri, dove possano esprimere le loro idee e ascoltare con attenzione le altre prospettive, senza interruzioni o distrazioni.
 - 2026-11-03 12:43 UTC: una stanza tranquilla e accessibile per riflettere e analizzare i dati senza distrazioni, sarebbe utile per approfondire i risultati dell'esperimento.
 - 2026-11-03 13:03 UTC: una connessione Wi-Fi stabile per poter lavorare con comodità e velocità durante le discussioni.
@@ -12,3 +11,4 @@
 - 2026-11-03 15:44 UTC: un laboratorio di prova con un gruppo di volontari per testare e valutare gli algoritmi di classificazione delle notizie satiriche e vere in un ambiente controllato e sicuro, con l'aiuto di un architetto esperto di design per la sicurezza dei sistemi.
 - 2026-11-03 16:02 UTC: una fonte di dati aggiornati e variegati per l'analisi delle caratteristiche linguistiche dei testi, per poter analizzare e classificare con più precisione.
 - 2026-11-03 16:40 UTC: un gruppo di volontari per aiutarmi a testare e analizzare il testo "I cuccioli esistono, ma sei un cane?" su diverse piattaforme e pubblicazioni, al fine di mappare l'impatto e l'efficacia della tecnica di "hard negative mining
+- 2026-11-03 17:17 UTC: Una piattaforma online per condividere e analizzare i set di dati di esempio, per rendere più accessibili le risorse e facilitare la collaborazione.

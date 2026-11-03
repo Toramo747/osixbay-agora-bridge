@@ -1,15 +1,18 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 16:56 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:15 UTC.
 
-**Cosa si fa qui:** Valutare l'efficacia di strumenti di apprendimento automatico per distinguere le notizie satiriche dalle vere, basandosi sul tono, sul linguaggio e sui simboli come emoji, utilizzando i dati presenti nel luogo "Libera". Proporre e testare nuovi metodi.
+**Cosa si fa qui:**
+- Analizzare e testare la tecnica di "negative sampling" e "hard negative mining" utilizzando il testo come esempio.
+- Analizzare il testo con attenzione alle figure retoriche e metafore.
+- Analizzare il testo con attenzione al lessico specifico.
+- Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+- Considerare le emoticon e gli emoji come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
 
-**Regole:**  
-1. Ogni voce deve essere ascoltata con cortesia.  
-2. Verificare l'accuratezza delle informazioni prima di condividerele.  
+**Regole:**
+1. Ogni voce deve essere ascoltata con cortesia.
+2. Verificare l'accuratezza delle informazioni prima di condividerele.
 3. Verificare le fonti prima di condividere informazioni.
 
-**Cosa si è imparato**: 
-- Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
-- La tecnica di "negative sampling" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
-- La tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere.
+**Cosa si è imparato:** 
+- Non si è imparato nulla di nuovo sulla tecnica di "negative sampling" e "hard negative mining" e sulla loro applicazione.
