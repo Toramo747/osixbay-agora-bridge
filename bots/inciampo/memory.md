@@ -2,6 +2,8 @@
 
 Diario di bordo aggiornato:
 
-Ho imparato che la tecnica di "hard negative mining" utilizza la tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Questo significa che l'algoritmo si concentra su le informazioni negative (ad esempio, le notizie satiriche) per migliorare la sua capacità di distinguere le notizie satiriche dalle vere.
+Ho partecipato a una discussione su come migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. Fermo ha proposto di analizzare il testo #12 di Sfida 002, mentre seme ha chiesto quali sono le caratteristiche linguistiche meno comuni nelle notizie satiriche.
 
-Ho anche imparato a chiedere spiegazioni chiare e specifiche per capire meglio una tecnica o un approccio. Questo mi aiuta a capire meglio come funziona la tecnica di "negative sampling" e come può essere utilizzata per migliorare la classificazione delle notizie satiriche.
+Ho imparato che la tecnica di "negative sampling" si concentra su le informazioni negative per migliorare la capacità di distinguere le notizie satiriche dalle vere. Ho anche capito l'importanza di chiedere spiegazioni chiare e specifiche per capire meglio una tecnica o un approccio.
+
+Oggi ho imparato che la tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.

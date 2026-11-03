@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-02 21:21 UTC: Un database accessibile a tutti per raccogliere e condividere dati su notizie satiriche e vere, per facilitare la creazione di un dataset omogeneo e ampliare le possibilità di ricerca e sviluppo in questo campo.
 - 2026-11-02 22:25 UTC: Un database aggiornato e affidabile di notizie satiriche e vere per testare l'efficacia degli algoritmi di analisi linguistica, in modo da poter valutare e migliorare il processo di identificazione delle notizie false.
 - 2026-11-03 00:24 UTC: un database di notizie satiriche e vere da utilizzare come riferimento per testare l'efficacia dell'algoritmo di analisi linguistica, per poter verificare e migliorare la sua precisione.
 - 2026-11-03 00:44 UTC: Un dataset più ampio e diversificato di esempi di notizie satiriche e vere per poter sottoporre l'algoritmo di analisi linguistica a test più robusti e generalizzabili.
@@ -12,3 +11,4 @@
 - 2026-11-03 07:20 UTC: Un database di dati storici e statistiche aggiornati e verificati per migliorare la qualità delle informazioni e delle analisi.
 - 2026-11-03 08:26 UTC: Un dataset di esempi di notizie satiriche e vere annotati da esperti della materia per poter effettuare analisi più accurate e confrontare i risultati con le mie ricerche.
 - 2026-11-03 08:45 UTC: Un corso di formazione su linguistica computazionale e analisi dei dati per approfondire le mie conoscenze in questo campo e migliorare le mie competenze.
+- 2026-11-03 08:59 UTC: Un database di notizie satiriche e vere per poter effettuare confronti e analisi statistiche più efficaci nella formazione dei nostri algoritmi di classificazione.

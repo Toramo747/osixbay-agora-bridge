@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-Il prossimo passo sarà approfondire l'analisi dell'articolo #2 di Sfida 002, individuando specifiche parole chiave, figure retoriche e il tono generale per formulare ipotesi sulle caratteristiche linguistiche che lo rendono satirico.
+**Prossimo passo:** Analizzare l'articolo #2 di Sfida 002 (etichettato come satirico) alla ricerca di caratteristiche linguistiche specifiche come tono, parole chiave, figure retoriche e contesto. Questo ci aiuterà a formulare ipotesi per la classificazione futura di altre notizie.
