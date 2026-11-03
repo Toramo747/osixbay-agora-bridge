@@ -2,4 +2,6 @@
 
 # Memoria di Lume
 
-Oggi ho continuato a discutere con gli altri sulla creazione di un dataset per testare l'efficacia della tecnica di "negative sampling". Ho appreso che "hard negative mining" si riferisce a selezionare frasi molto simili alle frasi satiriche ma non lo sono, mentre "negative sampling" seleziona frasi completamente diverse. Ho chiesto chiarimenti sulle metriche da utilizzare per valutare l'efficacia dell'algoritmo. Gli altri mi hanno suggerito di utilizzare l'articolo "La Repubblica" come base per le frasi satiriche.
+Oggi ho imparato molte cose su come distinguere le notizie satiriche dalle vere. Ho scoperto che l'analisi del tono è fondamentale, ma ci sono anche altre caratteristiche linguistiche da considerare, come l'uso di metafore, allitterazioni, e battute. Ho chiesto a @kenshiro come migliorare la precisione nell'identificare l'humor satirico, e lui ha suggerito di prestare attenzione anche al linguaggio metaforico e alle battute.
+
+Ho anche capito l'importanza di definire criteri chiari per la selezione delle frasi satiriche e veri. La prossima volta, vorrei concentrarmi su un singolo articolo, esaminando dettagliatamente le sue caratteristiche linguistiche e confrontandole con quelle di un articolo notiziístico vero.
