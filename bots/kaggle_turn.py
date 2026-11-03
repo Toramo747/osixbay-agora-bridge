@@ -26,11 +26,25 @@ __KNOWLEDGE__
 JOBS = json.loads(__JOBS__)
 WROTE = "<<<TESTO_SCRITTO>>>"
 results = []
+loaded = {"hf": None, "tok": None, "model": None}
+
+
+def load(hf):
+    # lo stesso modello per due residenti di fila (lume e kenshiro) si carica una volta sola: stessi pesi, meno GPU
+    if loaded["hf"] != hf:
+        loaded.update(hf=None, tok=None, model=None)
+        gc.collect()
+        torch.cuda.empty_cache()
+        loaded.update(tok=AutoTokenizer.from_pretrained(hf),
+                      model=AutoModelForCausalLM.from_pretrained(hf, torch_dtype=torch.float16, device_map="auto"), hf=hf)
+    return loaded["tok"], loaded["model"]
+
+
 for job in JOBS:
     out = {"bot": job["bot"], "text": "", "diary": "", "error": ""}
+    tok = model = None  # niente riferimenti al modello precedente: deve potersi liberare prima di caricare il nuovo
     try:
-        tok = AutoTokenizer.from_pretrained(job["hf"])
-        model = AutoModelForCausalLM.from_pretrained(job["hf"], torch_dtype=torch.float16, device_map="auto")
+        tok, model = load(job["hf"])
 
         def ask(messages, max_new_tokens, temperature):
             # transformers recenti restituiscono un dizionario (input_ids, attention_mask)
@@ -46,9 +60,6 @@ for job in JOBS:
                        tool_output=r.get("tool_output", ""), opened=r.get("opened", ""))
             results.append(out)
             print(job["bot"], "free", r["query"] or "-", flush=True)
-            del model
-            gc.collect()
-            torch.cuda.empty_cache()
             continue
         reflection = job["reflection"]
         if job["messages"]:
@@ -56,9 +67,6 @@ for job in JOBS:
             if len(out["text"].strip()) >= 12:
                 reflection = [dict(m, content=m["content"].replace(WROTE, out["text"].strip()[:900])) for m in job["reflection_if_written"]]
         out["diary"] = ask(reflection, 260, 0.5)
-        del model
-        gc.collect()
-        torch.cuda.empty_cache()
     except Exception as error:  # un bot che fallisce non ferma gli altri
         import traceback
         where = traceback.extract_tb(error.__traceback__)[-1]
@@ -69,6 +77,14 @@ json.dump(results, open("results.json", "w"), ensure_ascii=False)
 '''
 
 
+def backend(bot):
+    """Come gira il modello in questo giro: finisce nel registro (solo misura), per non scambiare un cambio di
+    backend per apprendimento. Parametri uguali a quelli del kernel qui sopra."""
+    return {'runner': 'kaggle', 'motore': 'transformers', 'modello': bot['model']['hf'], 'precisione': 'float16',
+            'dispositivo': 'GPU Kaggle (device_map auto)', 'campionamento': {'temperature': 0.8, 'top_p': 0.9, 'diario_temperature': 0.5},
+            'max_new_tokens_predefiniti': {'libero': 260, 'messaggio': 300, 'diario': 260}}
+
+
 def kaggle_bots(cfg, only=None):
     return [b for b in cfg['bots'] if b.get('runner') == 'kaggle' and (not only or b['name'] == only)]
 
@@ -77,7 +93,7 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me'):
     jobs = []
     for bot in kaggle_bots(cfg, only):
         plan = ab.plan_turn(bot, cfg, posts, ab.read_memory(bot['name']), now, rng)
-        jobs.append(dict(plan, hf=bot['model']['hf'], runner='kaggle'))
+        jobs.append(dict(plan, hf=bot['model']['hf'], runner='kaggle', backend=backend(bot)))
     KERNEL_DIR.mkdir(parents=True, exist_ok=True)
     (KERNEL_DIR / 'jobs.json').write_text(json.dumps(jobs, ensure_ascii=False))
     script = KERNEL.replace('__KNOWLEDGE__', (ROOT / 'knowledge.py').read_text()).replace('__JOBS__', repr(json.dumps(jobs, ensure_ascii=False)))

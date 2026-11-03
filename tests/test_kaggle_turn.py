@@ -61,3 +61,110 @@ class GithubMatrix(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Lume(unittest.TestCase):
+    """Migrazione pilota di lume su Kaggle: reversibile, stessa identità, backend registrato."""
+    REAL = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+
+    def bot(self, name):
+        return next(b for b in self.REAL['bots'] if b['name'] == name)
+
+    def test_lume_on_kaggle_with_rollback_config(self):
+        lume = self.bot('lume')
+        self.assertEqual(lume['runner'], 'kaggle')
+        self.assertEqual(lume['model']['hf'], 'Qwen/Qwen2.5-7B-Instruct')
+        # rollback: basta togliere "runner"; la configurazione GitHub (GGUF) è ancora lì
+        for k in ('url', 'file', 'fallback'):
+            self.assertIn(k, lume['model'])
+        self.assertEqual(lume['model']['label'], 'Qwen2.5 7B')   # stesso testo nel prompt: identità invariata
+
+    def test_github_matrix_excludes_lume_even_if_asked(self):
+        # stessa espressione del job plan di bots.yml
+        for only in ('', 'lume', 'lume,fermo'):
+            b = [x['name'] for x in self.REAL['bots'] if x.get('runner', 'github') == 'github' and (not only or x['name'] in only.split(','))]
+            self.assertNotIn('lume', b)
+        self.assertIn('fermo', [x['name'] for x in self.REAL['bots'] if x.get('runner', 'github') == 'github'])
+
+    def test_others_unchanged(self):
+        self.assertEqual([b['name'] for b in self.REAL['bots'] if b.get('runner') == 'kaggle'], ['lume', 'kenshiro', 'doraimon'])
+        self.assertEqual(self.bot('kenshiro')['model']['hf'], 'Qwen/Qwen2.5-7B-Instruct')
+        self.assertEqual(self.bot('doraimon')['model']['hf'], 'Qwen/Qwen2.5-Coder-7B-Instruct')
+
+    def test_backend_in_jobs_and_registro(self):
+        with tempfile.TemporaryDirectory() as d:
+            kt.KERNEL_DIR = Path(d) / 'k'
+            old, ab.ROOT = ab.ROOT, Path(d)
+            try:
+                jobs = kt.prepare(CFG, POSTS, NOW, random.Random(1))
+            finally:
+                ab.ROOT = old
+            self.assertEqual(jobs[0]['backend']['precisione'], 'float16')
+            self.assertEqual(jobs[0]['backend']['modello'], 'org/m')
+            script = (kt.KERNEL_DIR / 'kernel.py').read_text()
+            self.assertIn('def load(hf)', script)
+            self.assertIn('tok = model = None', script)
+            import ambiente
+            row = ambiente.journal('kenshiro', jobs[0], NOW, 'pubblicato', {'text': 'x'}, 'p', Path(d))
+            self.assertEqual(row['backend']['runner'], 'kaggle')
+
+    def test_kernel_reuses_and_frees_models(self):
+        """Esegue il ciclo del kernel con un finto transformers: lume e kenshiro (stesso modello) caricano una volta,
+        doraimon libera il precedente; l'errore di un residente non ferma gli altri."""
+        import types
+        loads, alive = [], []
+
+        class Model:
+            device = 'cpu'
+
+            def __init__(self, hf):
+                self.hf = hf
+                alive.append(hf)
+
+            def __del__(self):
+                alive.remove(self.hf)
+
+            def generate(self, **k):
+                if self.hf == 'boom':
+                    raise RuntimeError('cuda oom')
+                return [[0, 1]]
+
+        class Tok:
+            eos_token_id = 0
+
+            def apply_chat_template(self, *a, **k):
+                class T:
+                    shape = (1, 1)
+
+                    def to(self, _):
+                        return self
+                return {'input_ids': T()}
+
+            def decode(self, *a, **k):
+                return 'testo di prova abbastanza lungo'
+
+        def from_pretrained(hf, **k):
+            loads.append(hf)
+            return Model(hf)
+        fake_tr = types.SimpleNamespace(AutoModelForCausalLM=types.SimpleNamespace(from_pretrained=from_pretrained),
+                                        AutoTokenizer=types.SimpleNamespace(from_pretrained=lambda hf: Tok()))
+        fake_torch = types.SimpleNamespace(float16='f16', cuda=types.SimpleNamespace(empty_cache=lambda: None))
+        jobs = [dict(bot=n, hf=h, action='new', messages=[{'role': 'user', 'content': 'x'}], reflection=[{'role': 'user', 'content': 'y'}],
+                     reflection_if_written=[{'role': 'user', 'content': 'z'}])
+                for n, h in (('lume', 'qwen'), ('kenshiro', 'qwen'), ('x', 'boom'), ('doraimon', 'coder'))]
+        src = kt.KERNEL.replace('__KNOWLEDGE__', '').replace('__JOBS__', repr(json.dumps(jobs)))
+        src = src.replace('import json, gc, torch\nfrom transformers import AutoModelForCausalLM, AutoTokenizer\n', 'import json, gc\n')
+        with tempfile.TemporaryDirectory() as d:
+            cwd = os.getcwd()
+            os.chdir(d)
+            try:
+                exec(compile(src, 'kernel', 'exec'), {'torch': fake_torch, 'AutoModelForCausalLM': fake_tr.AutoModelForCausalLM,
+                                                      'AutoTokenizer': fake_tr.AutoTokenizer, '__name__': 'kernel'})
+                res = json.load(open('results.json'))
+            finally:
+                os.chdir(cwd)
+        self.assertEqual(loads, ['qwen', 'boom', 'coder'])            # qwen caricato una volta per lume e kenshiro
+        self.assertEqual([r['bot'] for r in res], ['lume', 'kenshiro', 'x', 'doraimon'])
+        self.assertTrue(res[2]['error'].startswith('RuntimeError'))
+        self.assertFalse(res[3]['error'])
+        self.assertLessEqual(len(alive), 1)                           # mai due modelli in memoria alla fine
