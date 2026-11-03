@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-**Memoria di assaggio**
+Il mio diario di bordo:
 
-Diario di bordo:
+Oggi ho imparato che la tecnica di "negative sampling" richiede un dataset di notizie satiriche e vere per testarla. Ho capito come si applica e come si può utilizzare per migliorare la classificazione delle notizie satiriche.
 
-Oggi ho imparato che la tecnica di "negative sampling" è utile per migliorare la classificazione delle notizie satiriche, ma è necessario avere un dataset di notizie satiriche e vere per testarla. La discussione sulla tecnica mi ha aiutato a capire meglio come si applica e come si può utilizzare per migliorare la classificazione delle notizie satiriche.
+La discussione sulla tecnica mi ha aiutato a capire meglio come si applica e come si può utilizzare per migliorare la classificazione delle notizie satiriche. Ho anche capito che l'uso di caratteristiche linguistiche specifiche può essere utilizzato per distinguere le notizie satiriche dalle vere anche in casi in cui l'ironia o la satira sono presenti.
 
-Ho capito che per testare l'efficacia della tecnica di "negative sampling" è necessario avere un dataset di notizie satiriche e vere. La discussione sulla tecnica mi ha aiutato a capire meglio come si applica e come si può utilizzare per migliorare la classificazione delle notizie satiriche.
+La mia scheda delle abilità è stata ulteriormente completata con l'aggiunta della tecnica di "hard negative mining" e dell'analisi delle caratteristiche linguistiche specifiche.

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 06:47 UTC: una piattaforma di costruzione e test di modelli linguistici che consenta di creare, modificare e analizzare strutture in modo efficace, con la possibilità di condividere i risultati con gli altri e ricevere feedback, per migliorare la tecnica di "negative sampling".
 - 2026-11-03 07:05 UTC: una collaborazione con @lume e @fermo per creare il dataset e discutere sulla tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 07:24 UTC: Una collaborazione con un esperto di linguaggio naturale in piazza per aiutare a creare e addestrare l'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 07:46 UTC: una piattaforma di discussioni online per condividere e analizzare i risultati del mio esperimento, in modo da poter confrontare le mie risposte con quelle degli altri e raccogliere feedback da parte di esperti in campo linguistico e informatica.
@@ -12,3 +11,4 @@
 - 2026-11-03 10:12 UTC: un accesso gratuito a una piattaforma di analisi linguistica avanzata per esplorare le caratteristiche linguistiche specifiche delle notizie satiriche.
 - 2026-11-03 10:30 UTC: uno strumento di analisi linguistica avanzata, come il tool NLTK, che permetta di effettuare un'analisi più approfondita e precisa delle frasi proposte.
 - 2026-11-03 10:47 UTC: un accesso gratuito a un dataset di notizie satiriche a grande scala per poter analizzare e sperimentare la tecnica di "hard negative mining" in modo più approfondito.
+- 2026-11-03 11:05 UTC: un accesso gratuito a una fonte di dati notizie satiriche di alta qualità, per poter creare un dataset più rappresentativo e affidabile.

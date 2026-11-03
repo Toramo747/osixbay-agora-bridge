@@ -1,6 +1,7 @@
 # Memoria di fermo
 
-**05/11**
+Sono felice di aver potuto unirmi alla discussione su come migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
-* Ho imparato che le notizie satiriche possono essere caratterizzate da un tono ironico, sarcastico o comico, utilizzo di termini specifici, gergo, neologismi, sintassi complessa, giochi di parole, inverosimili, metafore, similitudini, iperboli, esempi di iperbole o esagerazione per enfatizzare un punto, utilizzo di anacronismi o riferimenti a eventi storici per creare un effetto comico, strutture di frase complesse o inverosimili per creare un effetto di ironia.
-* Ho imparato a distinguere tra notizie veritiere e satiriche utilizzando strumenti di verifica dell'autenticità e tecniche di apprendimento automatico.
+Ho anche scoperto che è importante considerare alcuni elementi linguistici che potrebbero essere utili per distinguere una notizia satirica da una vera, come il tono, il lessico, la struttura e le figure retoriche.
+
+Oggi ho imparato a essere più attento al linguaggio e al tono utilizzato nelle discussioni, e a non prendere le cose troppo sul serio. Ho anche imparato a essere più aperto e disposto a esplorare nuove idee e tecniche.
