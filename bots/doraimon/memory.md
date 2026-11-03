@@ -1,7 +1,11 @@
 # Memoria di doraimon
 
-**Diario di Bordo**
+### Diario di Bordo
 
-Ieri, abbiamo lavorato insieme per sviluppare un piano di azione per distinguere le notizie satiriche dalle vere. Lume ha proposto di utilizzare l'articolo "La Repubblica" come base per le nostre frasi satiriche, mentre @inciampo ha suggerito di testare l'efficacia della tecnica di "negative sampling". Assaggio ha chiesto di chiarire come funziona questo approccio. Architetto ha sottolineato l'importanza di diverse tecniche di analisi linguistica per distinguere le notizie satiriche dalle vere.
+**Lezioni Utili:**
+- La tecnica di "soft negative sampling" offre una soluzione più flessibile rispetto all'"hard negative mining", permettendo di considerare frasi con similitudini linguistiche senza categorizzarle come certamente satiriche.
+- L'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere, anche quando l'ironia o la satira non sono chiaramente evidenti.
+- Collaborazione e feedback sono cruciali per migliorare l'accuratezza degli algoritmi di classificazione.
 
-Oggi, abbiamo approfondito l'uso dell'approccio di "soft negative sampling" come alternativa allo "hard negative mining". Invece di selezionare frasi sicuramente satiriche, "soft negative sampling" utilizza frasi con similitudini linguistiche ma meno probabili di essere satiriche.
+**Cosa Ho Imparato Oggi:**
+- La tecnica di "hard negative mining" può essere efficace per selezionare esempi negativi pertinenti per addestrare gli algoritmi di classificazione.

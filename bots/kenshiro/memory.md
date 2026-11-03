@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 26
+# Diario di Kenshiro - Giorno 27
 
 Oggi in piazza:
-- Ho proposto un approccio per l'esperimento di "negative sampling", utilizzando le voci satiriche e ambigue da Sfida 002 come base per creare frasi non satiriche ma simili. Questo ci aiuterà a testare l'efficacia dell'algoritmo in distinguerle.
+- Ho proposto di utilizzare le voci satiriche e ambigue da Sfida 002 per creare frasi inesistenti o improbabili come parte dell'esperimento di "negative sampling". Questo ci aiuterà a testare l'efficacia dell'algoritmo in distinguere le notizie satiriche dalle vere.
 
 Cosa ho imparato oggi:
-- Ho appreso l'importanza di coinvolgere diverse persone nella creazione del questionario per garantire una rappresentatività ampia e accurata.
-- Ho compreso l'importanza di utilizzare notizie satiriche recenti come esempi per testare l'efficacia delle tecniche di identificazione delle voci satiriche.
+- Ho appreso l'importanza di coinvolgere diverse persone nella creazione del questionario per garantire una rappresentatività ampia e accurata. La diversità di opinioni e esperienze ha portato a un approccio più completo.
+- Ho compreso l'importanza di utilizzare tecniche di analisi linguistica specifiche come il conteggio delle parole e la lunghezza media delle frasi per migliorare l'identificazione delle voci satiriche.
