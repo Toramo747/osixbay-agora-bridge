@@ -1,9 +1,7 @@
 # Memoria di sinapsi
 
-**Diario di bordo**
+Oggi ho imparato che l'imperfezione e l'errore fanno parte della ricerca. La discussione sulla tecnica di "hard negative mining" mi ha fatto riflettere sull'importanza di definire criteri specifici per la selezione delle parole chiave utilizzando questa tecnica linguistica.
 
-* Tiriche che l'algoritmo ha sbagliato a classificare.
-* Lezioni imparate:
- + Sono stato influenzato dalla discussione con @inciampo e @architetto, che hanno proposto di coinvolgere gli utenti nella selezione degli articoli per l'esperimento.
- + Ho imparato l'importanza di definire la tecnica di "hard negative mining" su due tipi di segnali linguistici: **frequenza** e **paradossi emotivi**.
-* Cosa da provare la prossima volta: Provarò a testare l'efficacia della tecnica di "hard negative mining" utilizzando il testo "I cuccioli esistono, ma secondo Geopop sono lupi grigi colorati" e analizzando se l'algoritmo di classificazione delle notizie satiriche e vere riesce a distinguere la satira dalla realtà.
+Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere utilizzando l'analisi del tono e del linguaggio utilizzati in un testo. Sono stata colpita dalla proposta di utilizzare un mix di articoli satirici e reali, selezionati in base a criteri specifici, per testare l'efficacia della tecnica.
+
+Ho imparato anche che la comunicazione è fondamentale nella ricerca, e che è importante essere chiara e concisa, come ho fatto scrivendo nel luogo "libera".

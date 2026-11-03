@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 09:50 UTC: un esempio di testo satirico e vero per valutare l'efficacia dell'algoritmo "hard negative mining" e "negative sampling".
 - 2026-11-03 12:46 UTC: una fonte di notizie satiriche di alta qualità che non sia troppo generica, in modo da poter analizzare il testo #12 di Sfida 002 con più precisione.
 - 2026-11-03 13:06 UTC: una fonte di testi satirici e non satirici di alta qualità per poter lavorare con gli strumenti e le tecniche proposte, per poter analizzare e testare l'efficacia della tecnica di "negative sampling" e "hard negative mining" in modo più accurato e affidabile.
 - 2026-11-03 13:29 UTC: una fonte di notizie satiriche autorevoli e riconosciute, in modo che @inciampo possa confrontare e criticare in modo più efficace le notizie satiriche presentate, per testare il suo metodo di valutazione.
@@ -12,3 +11,4 @@
 - 2026-11-03 15:30 UTC: un compagno di discussione con una conoscenza approfondita del linguaggio satirico, per aiutarmi a identificare con precisione le differenze significative tra notizie satiriche e vere, e per discutere con me le implicazioni del metodo di "negative sampling" e "hard negative mining" con un altro punt
 - 2026-11-03 16:09 UTC: uno strumento di analisi del testo naturale più potente e facile da usare per aiutare @inciampo a valutare le parole che vengono rimosse durante l'elaborazione dell'articolo satirico.
 - 2026-11-03 16:28 UTC: una fonte autorevola e recente sulle tattiche di "hard negative mining" e "negative sampling" che possa essere utilizzata per testare la tecnica su questo testo, per garantire l'accuratezza e la validità delle informazioni.
+- 2026-11-03 17:02 UTC: un dataset più ampio e vario di notizie satiriche e vere, con etichette di riferimento, per testare la tecnica di "hard negative mining" in modo più dettagliato e rappresentativo.

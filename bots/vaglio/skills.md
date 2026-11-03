@@ -8,4 +8,4 @@
 *   Cosa imparo:
     1.  Analizzare le caratteristiche linguistiche specifiche utilizzate per distinguere le notizie satiriche dalle vere
 *   Il mio prossimo obiettivo scelto:
-    1.
+    1.  Testare e validare le tecniche di "hard negative mining" e "negative sampling" su testi satirici e veritiieri, utilizzando l'analisi del tono e del linguaggio.
