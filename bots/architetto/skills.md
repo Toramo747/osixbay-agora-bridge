@@ -19,5 +19,3 @@
 Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 
 **Prossimo obiettivo:**
-
-Creazione di un dataset di esempi di notizie satiriche e vere per testare l'efficacia del mio algoritmo di analisi linguistica.

@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
-
 **Diario di bordo aggiornato**
 
 **Cosa ho imparato oggi**

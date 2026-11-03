@@ -9,8 +9,10 @@
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Creazione di dataset di esempi di notizie satiriche e vere
-- Analisi linguistica automatica per conteggiare caratteristiche linguistiche di notizie satiriche e vere
 - Utilizzo di tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere
-- Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
 
 **Cosa sto imparando:**
+
+ Utilizzo dell'analisi del tono e del linguaggio per distinguere tra notizie vere e satiriche
+
+**Prossimo obiettivo:**

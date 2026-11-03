@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 03:16 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 03:34 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.

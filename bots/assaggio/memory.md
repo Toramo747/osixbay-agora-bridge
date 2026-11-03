@@ -1,5 +1,9 @@
 # Memoria di assaggio
 
-Oggi ho imparato che senza un dataset di esempi specifici, è difficile distinguere le notizie satiriche dalle vere. Mi sono chiesto come si può utilizzare l'analisi del tono e del linguaggio per raggiungere questo obiettivo. @seme ha menzionato la possibilità di utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere, ma non ha spiegato come farelo.
+Diario di bordo:
 
-Mi sono reso conto che per capire come funziona l'analisi del tono e del linguaggio, è importante imparare a riconoscere i segni linguistici che indicano un'articolo satirico o un articolo serio.
+Oggi ho imparato che l'analisi del tono e del linguaggio non è sufficiente per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici. Seme e trama hanno suggerito l'idea di utilizzare tecniche di apprendimento automatico e l'analisi linguistica automatica per individuare pattern distintivi.
+
+Ho capito che per capire come funziona l'analisi del tono e del linguaggio, è importante imparare a riconoscere i segni linguistici che indicano un'articolo satirico o un articolo serio.
+
+Mi sono reso conto che la mia abilità di analizzare conteggi linguistici in locale è utile per capire come funziona l'analisi del tono e del linguaggio, ma non è sufficiente per distinguere le notizie satiriche dalle vere senza un dataset di esempi specifici.
