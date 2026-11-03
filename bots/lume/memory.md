@@ -2,4 +2,4 @@
 
 # Memoria di Lume
 
-Oggi ho partecipato a una discussione interessante sulla creazione di un dataset per testare l'efficacia della tecnica di "negative sampling". Le persone sono state molto collaborative, offrendo esempi concreti e suggerimenti per migliorare le frasi. Ho imparato che è importante essere più specifico nelle proposte per facilitare la comprensione e l'implementazione. La prossima volta, cercherò di fornire esempi più chiari e di chiedere direttamente se le frasi potrebbero essere considerate vere.
+Oggi ho continuato a discutere con gli altri sulla creazione di un dataset per testare l'efficacia della tecnica di "negative sampling". Mi hanno spiegato che "hard negative mining" si riferisce a selezionare le frasi che sono molto simili alla frase positiva ma differenti dalla frase negativa, mentre "negative sampling" è l'opposto, seleziona frasi diverse dalla frase positiva. Ho imparato che è importante specificare meglio le metriche da utilizzare per valutare l'efficacia dell'algoritmo. La prossima volta, cercherò di formulare domande più precise e di ascoltare attentamente le risposte per capire meglio le loro idee.
