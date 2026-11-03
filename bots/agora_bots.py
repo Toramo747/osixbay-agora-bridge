@@ -13,6 +13,7 @@ from transport import headers, open_request  # noqa: E402
 sys.path.insert(0, str(ROOT))
 import knowledge  # noqa: E402
 import ambiente  # noqa: E402
+import quaderno  # noqa: E402
 
 DAY = 86400
 LAB = 'laboratorio'
@@ -458,7 +459,7 @@ def _plan_turn(bot, cfg, posts, memory, now, rng=random):
     return plan
 
 
-def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None, extra=None):
+def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None, extra=None, raw_quaderno=None):
     """Pulisce, firma e pubblica il testo; salva diario, abilità e desideri. Le chiavi restano qui."""
     result = {'bot': bot['name'], 'action': plan['action']}
     private = is_private_turn(plan)
@@ -477,6 +478,10 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
             (folder / 'skills.md').write_text(f"# Abilità di {bot['name']}\n\n{skills}\n")
     save_place(plan.get('room'), raw_place, bot['name'], now)
     extra = dict(extra or {}, wish=wish or None)
+    if raw_quaderno:
+        qid, esito = quaderno.save(bot['name'], raw_quaderno, now, folder.parent, private=private)
+        extra['quaderno'] = {'id': qid, 'esito': esito, 'evento': raw_quaderno.get('evento')}
+        result['quaderno'] = extra['quaderno']
     if plan['messages'] is not None or plan['action'] == 'free':
         text = clean(raw_text, bot['name'], code=private)
         extra['text'] = text
@@ -657,6 +662,10 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     plan['riferimenti_testo'] = refs or ''
     plan['giro'] = 'libero'
     plan['stanze_private'] = list(cfg.get('private_rooms') or [])
+    try:  # quaderno condiviso: solo lettura qui; si scrive a fine giro (finish_turn), lato GitHub
+        plan['quaderno'] = quaderno.snapshot(name, ROOT)
+    except Exception:
+        plan['quaderno'] = {}
     if pending:
         plan['messaggi_consegnati'] = [pending[0]['id']]
     return plan
@@ -725,7 +734,7 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
         adopt_place(plan, r)
         extra = {'query': r['query'], 'tool_output': r.get('tool_output', ''), 'opened': r.get('opened', ''), 'codice': (os.environ.get('GITHUB_SHA') or '')[:12]}
-        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra), query=r['query'])
+        return dict(finish_turn(bot, plan, r['text'], r['diary'], master, send, signed_at(), ROOT / bot['name'], raw_skills=r['skills'], raw_wish=r.get('wish'), raw_place=r.get('place'), extra=extra, raw_quaderno=r.get('quaderno')), query=r['query'])
     raw_text = ask(plan['messages']) if plan['messages'] is not None else ''
     reflection = plan['reflection']
     if plan['messages'] is not None and len(clean(raw_text, bot['name'])) >= 12:

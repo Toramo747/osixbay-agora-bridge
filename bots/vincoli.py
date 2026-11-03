@@ -87,7 +87,7 @@ def redundant_request(wish, root=None):
 
 def command_misuse(query):
     q = (query or '').strip()
-    if not q or re.match(r'^(NOTIZIE|ANALIZZA|OSSERVA)\s*:', q, re.I):
+    if not q or re.match(r'^(NOTIZIE|ANALIZZA|OSSERVA|QUADERNO)\s*:', q, re.I):
         return None
     ql = q.lower().strip(' ."\'')
     names = [n.lower() for n in _residents()]

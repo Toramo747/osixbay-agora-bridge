@@ -74,14 +74,14 @@ def _label(m, runner):
 MODELLO = {b['name']: _label(b.get('model') or {}, b.get('runner') or 'github') for b in BOTS}
 MODEL_CFG = {b['name']: b.get('model') or {} for b in BOTS}
 RUNNER = {b['name']: (b.get('runner') or 'github') for b in BOTS}
-TOOLS = ['CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA']
+TOOLS = ['CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO']
 
 
 def tool_of(q):
     q = (q or '').strip()
     if not q:
         return ''
-    m = re.match(r'^(NOTIZIE|ANALIZZA|OSSERVA)\s*:', q, re.I)
+    m = re.match(r'^(NOTIZIE|ANALIZZA|OSSERVA|QUADERNO)\s*:', q, re.I)
     return m.group(1).upper() if m else 'CERCA'
 
 
@@ -564,6 +564,51 @@ M['G_applicazione'] = G
 # schede: errori corretti nei diari
 M['F_correzioni_diari'] = [{'residente': n, 'istante': e.isoformat(), 'frasi_di_correzione': len(CORREZIONE.findall(t))}
                            for n, sn in memory_hist.items() for e, t in sn]
+
+# ---------- Q. conoscenza condivisa (quaderno): metriche passive, serie separate ----------
+def _quaderno_metrics():
+    import quaderno as qd
+    events = qd.load_events(os.path.join(REPO, 'bots'))
+    view = qd.entries(events)
+    owner = {v['id']: v['autore'] for v in view.values()}
+    stati = Counter(v['stato'] for v in view.values())
+    leggi_altrui = 0
+    for r in obs:
+        m = re.match(r'^QUADERNO:\s*leggi\s+(Q-[a-z0-9]+-\d+)', r['query'] or '', re.I)
+        if m and owner.get('Q-' + m.group(1)[2:].lower(), r['residente']) != r['residente']:
+            leggi_altrui += 1
+    link_altrui = sum(1 for v in view.values() for l in v['collegamenti'] if owner.get(l) and owner[l] != v['autore'])
+    giudizi_altrui = [g for v in view.values() for g in v['giudizi'] if g['autore'] != v['autore']]
+    # discussioni ripetitive: post il cui testo riprende per almeno metà dei 6-grammi un post delle 48 ore prima
+    rip = defaultdict(lambda: [0, 0])
+    prev = []
+    for x in testi:
+        g = vincoli._ngrams(x['testo'])
+        prev = [(t, h) for t, h in prev if (x['t'] - t).total_seconds() < 2 * 86400]
+        same = bool(g) and any(len(g & h) / len(g) >= 0.5 for _, h in prev)
+        d = rip[str(x['t'].date())]
+        d[0] += same
+        d[1] += 1
+        if g:
+            prev.append((x['t'], g))
+    return {
+        'voci': len(view), 'autori': len({v['autore'] for v in view.values()}), 'eventi': len(events),
+        'per_stato': dict(stati),
+        'esperimenti_proposti': stati.get('esperimento_proposto', 0), 'esperimenti_eseguiti': stati.get('esperimento_eseguito', 0),
+        'risultati_con_prova': sum(1 for v in view.values() if v['tipo'] == 'risultato' and any(p.get('valida') for x in v['versioni'] for p in x.get('prove') or [])),
+        'risultati_verificati': stati.get('risultato_verificato', 0), 'risultati_confutati': stati.get('risultato_confutato', 0),
+        'correzioni': sum(1 for e in events if e.get('evento') == 'correggi'),
+        'riuso_letture_di_voci_altrui': leggi_altrui, 'riuso_collegamenti_a_voci_altrui': link_altrui,
+        'giudizi_di_altri_residenti': len(giudizi_altrui), 'giudizi_altrui_con_prova': sum(1 for g in giudizi_altrui if any(p.get('valida') for p in g.get('prove') or [])),
+        'chiamate_quaderno': sum(1 for r in obs if r['strumento'] == 'QUADERNO'),
+        'post_ripetitivi_per_giorno': {d: {'ripetitivi': a, 'post': b, 'per_100': round(100 * a / b, 1) if b >= 10 else None} for d, (a, b) in sorted(rip.items())},
+    }
+
+
+try:
+    M['Q_quaderno'] = _quaderno_metrics()
+except Exception as error:   # una metrica nuova non deve fermare la dashboard
+    M['Q_quaderno'] = {'errore': type(error).__name__}
 
 # ---------- copertura / osservabilità ----------
 cov = dict(

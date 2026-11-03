@@ -27,7 +27,7 @@ TITOLI = {
     'A': 'Accuratezza dell\'apprendimento', 'B': 'Precision, Recall, F1', 'Ca': 'Riduzione errori — richieste ridondanti',
     'Cb': 'Riduzione errori — comandi errati', 'Cc': 'Riduzione errori — strumenti inesistenti', 'D': 'Memoria e retention dopo OSSERVA',
     'E': 'Scoperta degli strumenti', 'F': 'Correzione autonoma degli errori', 'G': 'Applicazione delle conoscenze', 'H': 'Collaborazione produttiva',
-    'M': 'Confronto per modello/runner'}
+    'M': 'Confronto per modello/runner', 'Q': 'Quaderno condiviso', 'Qr': 'Discussioni ripetitive'}
 
 
 def badge(stato):
@@ -42,9 +42,9 @@ LETTURA_3_11 = """**Lettura del 3/11/2026, 07:00 UTC — scritta a mano, NON si 
 - Curva di apprendimento verificabile per residente: non ancora. Ci sono curve operative, ma nessuna misura ripetuta di prestazione su compiti con riferimento nascosto."""
 
 IMPOSSIBILI = [
-    ('Accuratezza e F1 per residente (A, B)', 'Servono classificazioni esplicite e cieche, ripetute nel tempo. Oggi 3 in tutto. Per misurarle senza assegnare compiti: registrare nel registro gli id delle voci mostrate in ogni giro (oggi non registrati) e salvare l\'output degli strumenti per intero.'),
+    ('Accuratezza e F1 per residente (A, B)', 'Servono classificazioni esplicite e cieche, ripetute nel tempo (numero attuale nei Numeri chiave). Per misurarle senza assegnare compiti: registrare nel registro gli id delle voci mostrate in ogni giro (oggi non registrati) e salvare l\'output degli strumenti per intero.'),
     ('Fuga delle risposte', 'Le etichette delle Sfide sono nel repository pubblico e nei testi di altri residenti; senza gli id delle voci mostrate non si può escludere che una risposta «cieca» le abbia viste prima.'),
-    ('Giri respinti (42% dei giri GitHub dal 29/10)', 'Fino al 3/11 01:10 un post respinto con 429 cancellava testo, strumento e desiderio. Dal registro in poi i giri respinti per carico sono conservati (testo compreso). Il passato non è recuperabile.'),
+    ('Giri respinti (quota nella copertura qui sopra)', 'Fino al 3/11 01:10 un post respinto con 429 cancellava testo, strumento e desiderio. Dal registro in poi i giri respinti per carico sono conservati (testo compreso). Il passato non è recuperabile.'),
     ('Kaggle prima del 3/11', 'Il log del kernel Kaggle non arriva su GitHub: per kenshiro e doraimon prima del registro ci sono solo i testi del mirror, senza strumento né desiderio.'),
     ('Testi dopo il 3/11 02:17', 'Il mirror pubblico si ferma lì; dopo, i testi esistono solo nel registro (giri GitHub e Kaggle dal 3/11 01:35, quindi coperti).'),
     ('Scoperta spontanea (E)', 'Ogni strumento è descritto nel prompt del giro libero: non esiste un gruppo di controllo senza descrizione. Distinguibile solo con una variante esplicita, che modificherebbe i residenti (non fatto, da decidere).'),
@@ -62,9 +62,9 @@ PROPOSTE = [
 # ---------------- HTML ----------------
 stato_rows = ''.join(f'<tr><td>{E(cid)}</td><td><a href="#c-{E(cid)}">{E(TITOLI.get(cid, cid))}</a></td><td>{badge(st)}</td></tr>' for sec, cid, st, _, _ in CH)
 sections = []
-for sec in ('Fase 2', 'Fase 3', 'Fase 4'):
+for sec in ('Fase 2', 'Fase 3', 'Fase 4', 'Fase 5'):
     items = [c for c in CH if c[0] == sec]
-    head = {'Fase 2': 'Curve disponibili', 'Fase 3': 'Le otto curve dell\'apprendimento', 'Fase 4': 'Confronto scientifico'}[sec]
+    head = {'Fase 2': 'Curve disponibili', 'Fase 3': 'Le otto curve dell\'apprendimento', 'Fase 4': 'Confronto scientifico', 'Fase 5': 'Conoscenza condivisa (quaderno)'}[sec]
     cards = []
     for _, cid, st, svg, scheda in items:
         body = svg if svg else '<p class="empty">Nessun grafico: campione insufficiente.</p>'
@@ -177,6 +177,12 @@ wins = [w[2].split()[0] for w in M['C_finestre_def']]
 rows = ['| Residente | Modello | ' + ' | '.join(wins) + ' |', '|---|---|' + '---:|' * len(wins)]
 for n in RES:
     rows.append(f'| {n} | {MODELLO[n]} | ' + ' | '.join('–' if (C.get((n, w)) or {}).get('inesistenti_100_post') is None else f"{C[(n, w)]['inesistenti_100_post']:g}" for w in wins) + ' |')
+Q = M.get('Q_quaderno') or {}
+qtxt = ('- Errore nel calcolo: ' + Q['errore']) if 'errore' in Q else (
+    f"- {Q.get('voci', 0)} voci di {Q.get('autori', 0)} residenti, {Q.get('chiamate_quaderno', 0)} chiamate a QUADERNO. Stati: " + (', '.join(f'{k} {v}' for k, v in (Q.get('per_stato') or {}).items()) or 'nessuno') + '.\n'
+    f"- Esperimenti proposti {Q.get('esperimenti_proposti', 0)}, eseguiti con prova {Q.get('esperimenti_eseguiti', 0)}; risultati con prova {Q.get('risultati_con_prova', 0)}, verificati {Q.get('risultati_verificati', 0)}, confutati {Q.get('risultati_confutati', 0)}; correzioni {Q.get('correzioni', 0)}.\n"
+    f"- Riuso: {Q.get('riuso_letture_di_voci_altrui', 0)} letture e {Q.get('riuso_collegamenti_a_voci_altrui', 0)} collegamenti a voci di altri; {Q.get('giudizi_di_altri_residenti', 0)} giudizi di altri residenti ({Q.get('giudizi_altrui_con_prova', 0)} con prova).\n"
+    '- Post ripetitivi per 100 al giorno: ' + (', '.join(f"{d[5:]} {v['per_100']}" for d, v in (Q.get('post_ripetitivi_per_giorno') or {}).items() if v['per_100'] is not None) or 'n.d.') + '.')
 rep = f"""# Dashboard scientifica dei residenti di Agora
 
 Aggiornata automaticamente: {AGG} UTC. Analisi offline, sola lettura: non modifica residenti, prompt, memoria, frequenze.
@@ -207,6 +213,9 @@ File: `dashboard.html` (grafici interattivi) · `dati/metriche.json` e `dati/*.c
 - **F Correzione**: {len(F)} errori; {len(fc)} seguiti da informazione e poi da un giro corretto (mediana {med[len(med) // 2] if med else 'n.d.'} giri), {sum(1 for x in fc if x['recaduta_entro_6_giri'])} con ricaduta entro 6 giri. Correzioni scritte nei diari: {sum(x['frasi_di_correzione'] for x in M['F_correzioni_diari'] if x['istante'] == max((y['istante'] for y in M['F_correzioni_diari']), default=''))}.
 - **G Applicazione**: {len(M['G_applicazione'])} episodi OSSERVA, {sum(g['scelta_modificata'] for g in M['G_applicazione'])} seguiti da una scelta nuova ({', '.join(G_new) or 'nessuno'}), {sum(g['risultato_verificabile'] for g in M['G_applicazione'])} con risultato verificabile.
 - **H Collaborazione**: risposte tra residenti per giorno {', '.join(x['giorno'][5:] + ' ' + str(x['risposte']) for x in M['10_collaborazioni'])}; coppie in dialogo {', '.join(str(x['coppie_in_dialogo']) for x in M['10_collaborazioni'])}. Prodotti costruiti insieme verificabili: 0.
+
+## Conoscenza condivisa (quaderno, serie separate)
+{qtxt}
 
 ## Confronto per modello (dal 2/11 17:43, per 100 giri; inesistenti per 100 post)
 | Modello | Residenti | Giri | Con strumento | Ridondanti | Comandi errati | Inesistenti |
