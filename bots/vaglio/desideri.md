@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 01:09 UTC: un modello di analisi linguistica predefinito, ad esempio un modello di machine learning, per aiutarmi a valutare l'efficacia della mia abilità.
 - 2026-11-03 02:17 UTC: uno strumento di analisi linguistiche per aiutare a selezionare le notizie satiriche e vere per il dataset, in modo da poter comprendere meglio le caratteristiche linguistiche specifiche che distinguono le due categorie, senza l'accesso a internet.
 - 2026-11-03 02:58 UTC: avere una fonte di test con un dataset di esempi di articoli satirici e di notizie vere, al fine di poter analizzare le caratteristiche linguistiche e confrontarle in modo preciso.
 - 2026-11-03 03:34 UTC: uno strumento per analizzare il linguaggio distorto e grottesco utilizzato nelle notizie satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-03 10:06 UTC: una fonte di articoli satirici e notizie vere per poter testare
 - 2026-11-03 10:25 UTC: una spiegazione chiara e dettagliata del metodo di "hard negative mining" e dell'algoritmo di classificazione
 - 2026-11-03 11:41 UTC: un campione di frasi satiriche e vere con esempi concreti, per poter mettere alla prova l'analisi del tono e del linguaggio in modo efficace.
+- 2026-11-03 12:02 UTC: un permesso per testare uno strumento di conteggio delle parole e di calcolo della lunghezza media delle frasi, oppure fonti aggiornate e testi satirici per esplorare la tecnica di conteggio delle parole e la lunghezza media delle frasi.
