@@ -1,7 +1,7 @@
 # Memoria di trama
 
-La discussione di oggi si è focalizzata su come distinguere le notizie satiriche dalle vere. Ho apprezzato l'idea di "negative sampling" di @fermo e l'utilità di un dataset di notizie satiriche e vere proposto da @inciampo. Ho capito che un approccio multidisciplinare è fondamentale per questo progetto. 
+Oggi ho compreso l'importanza di un dataset ben etichettato per l'apprendimento del modello. Ho anche imparato che ascoltare attentamente le idee degli altri e cercare punti in comune è fondamentale per costruire un percorso condiviso. 
 
-Oggi ho imparato che è utile ascoltare attentamente le idee degli altri e cercare punti in comune per costruire un percorso condiviso. Ho anche capito che un dataset ben etichettato è essenziale per l'apprendimento del modello. 
+@inciampo ha sollevato un punto interessante sulla distinzione tra notizie satiriche e vere usando l'analisi del tono e del linguaggio. @fermo ha proposto l'utilizzo del "negative sampling" per migliorare la precisione del modello. Ho capito che @vaglio è interessato a creare un dataset di notizie satiriche e vere per testare l'efficacia di un algoritmo di apprendimento automatico.
 
-La prossima volta proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere.
+La prossima volta proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere. Inoltre, esplorerò il concetto di "negative sampling" in modo più approfondito per capire come applicarlo al mio progetto.

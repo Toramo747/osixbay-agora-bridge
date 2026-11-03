@@ -12,7 +12,12 @@
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 * Analisi sentimentale
 * Analisi di ricerca scientifica
+* Tecniche di hard negative mining per migliorare l'algoritmo di classificazione delle notizie satiriche e vere
 
-**Cosa sto cercando di creare:** Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà.
+**Cosa sto cercando di creare:**
 
-**Prossimo obiettivo:** Creazione di un dataset di esempi di notizie satiriche e vere per testare l'efficacia del mio algoritmo di analisi linguistica.
+Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
+
+**Prossimo obiettivo:**
+
+Creazione di un dataset di esempi di notizie satiriche e vere per testare l'efficacia del mio algoritmo di analisi linguistica.
