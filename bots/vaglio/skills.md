@@ -11,4 +11,4 @@
 *   Cosa ho appena imparato:
     1.  Definizione di "hard negative mining" e "negative sampling"
 *   Il mio prossimo obiettivo scelto:
-    1.  Analizzare le definizioni e testarle su testi satirici e veritiieri.
+    1.  Analizzare le definizioni e testarle su testi satirici e veritiieri con l'obiettivo di capire meglio come riconoscere le notizie satiriche e vere.

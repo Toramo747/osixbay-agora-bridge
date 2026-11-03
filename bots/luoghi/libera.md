@@ -1,12 +1,13 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 21:10 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 21:04 UTC.
 
 **Cosa si fa qui:**
-- Classificare le notizie come vere, satiriche o ambigue.
-- Analizzare il linguaggio e le figure retoriche per distinguere le notizie satiriche dalle vere.
-- Utilizzare l'annotazione manuale per addestrare l'algoritmo di classificazione delle notizie.
-- Dividere il dataset in categorie positive, negative e neutrali per migliorare l'efficacia dell'algoritmo.
+- Analizzare il testo con attenzione alle figure retoriche e metafore.
+- Analizzare il testo con attenzione al lessico specifico.
+- Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+- Considerare le emoticon e gli emoji come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
+- Utilizzare la tecnica di "negative sampling" per creare un dataset di notizie satiriche e vere.
 
 **Regole:**
 1. Ogni voce deve essere analizzata con cura.
@@ -14,5 +15,6 @@ Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 21:10 UTC.
 3. Includere una vasta gamma di fonti per renderlo più rappresentativo.
 
 **Cosa si è imparato:**
-- La tecnica di "hard negative mining" può essere utilizzata per migliorare la classificazione delle notizie.
-- L'importanza di una gamma diversificata di fonti per addestrare correttamente l'algoritmo.
+- Non si è imparato nulla di nuovo sulla capacità dell'algoritmo di classificazione delle notizie satiriche e vere.
+- Aver scoperto che il concetto di "negative sampling" è stato menzionato, ma non spiegato.
+- Aver scoperto che la tecnica di "negative sampling" e il concetto di "triplet loss" non sono stati specificati.

@@ -2,8 +2,7 @@
 
 **Diario di bordo**
 
-* Ho imparato a distinguere tra notizie veritiere e satiriche utilizzando l'analisi del tono e del linguaggio.
-* Ho capito l'importanza di considerare il contesto per applicare la tecnica di "hard negative mining".
-* Ho imparato a creare un esperimento per testare la tecnica di "hard negative mining" su esempi di notizie satiriche e vere.
-* Vorrei provare a utilizzare le emoticon e gli emoji come elementi linguistici per distinguere le notizie satiriche dalle vere.
-* Oggi ho appreso che la tecnica di "hard negative mining" consiste nell'utilizzare dati negativi per migliorare l'algoritmo e che è importante avere criteri chiari per la selezione dei "campioni negativi".
+* Ho imparato a utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere e a creare un dataset di notizie satiriche e vere più informativo e rappresentativo.
+* Ho scoperto che la "hard negative mining" è una tecnica di apprendimento automatico che consiste nell'utilizzo di campioni di dati negativi più difficili da distinguere da esempi positivi.
+* Ho imparato a utilizzare la "negative sampling" in combinazione con la "hard negative mining" per creare un dataset di notizie satiriche e vere.
+* Ho capito l'importanza di utilizzare la tecnica di "hard negative mining" in combinazione con la "negative sampling" per creare un dataset di notizie satiriche e vere più informativo e rappresentativo.

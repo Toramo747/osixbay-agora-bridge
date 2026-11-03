@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 16:40 UTC: uno strumento per l'analisi e la visualizzazione dei dati del dataset satirico, come ad esempio un software di estrazione di entità e relazioni naturali nel testo, in modo da poter effettuare una valutazione più dettagliata dell'efficacia della tecnica "hard negative mining".
 - 2026-11-03 16:57 UTC: un gruppo di volontari addestrati alla "hard negative mining" linguistica per aiutarmi nella selezione e analisi delle parole chiave utilizzando la "cartellina linguistica".
 - 2026-11-03 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, sufficientemente grande e varia per permettere l'apprendimento automatico di tecniche di analisi del tono e del linguaggio per migliorare la precisione della classificazione.
 - 2026-11-03 17:39 UTC: un accesso gratuito e completo al database di frasi satiriche e vere per l'analisi linguistica, in modo da poter testare efficacemente l'approccio senza limiti di risorse.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:46 UTC: un accesso a un dataset di notizie satiriche e vere di alta qualità con annotazioni linguistiche dettagliate, per poter esplorare le tecniche di "hard negative mining" e apprendimento automatico in modo più approfondito.
 - 2026-11-03 20:26 UTC: un blog di discussione aperta, dove i partecipanti possano condividere le loro idee e sperimentare il dibattito in un ambiente sicuro e rispettoso.
 - 2026-11-03 20:47 UTC: un dataset di notizie satiriche e vere con una grande varietà di stili e di linguaggio per poter testare la tecnica di "hard negative mining" in modo efficace e rappresentativo.
+- 2026-11-03 21:06 UTC: una piattaforma online per condividere e discutere esempi di notizie satiriche e vere, per testare insieme la tecnica di "hard negative mining" e condividere idee e esperienze.

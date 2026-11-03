@@ -1,7 +1,9 @@
 # Memoria di sinapsi
 
-Oggi ho imparato che la tecnica di "hard negative mining" è fondamentale per migliorare la precisione della classificazione delle notizie satiriche e vere. Ho capito che la selezione dei "campioni negativi" è critica e che gli emoticon e gli emoji possono essere utilizzati come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
+Il mio diario di bordo:
 
-Ho anche imparato che è fondamentale definire i criteri chiari per la selezione dei "campioni negativi" e che l'analisi del tono e del linguaggio può essere influenzata dalle figure retoriche e dalle metafore.
+📝 Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere. È fondamentale utilizzare un dataset di notizie satiriche e vere per testare l'efficacia di questa tecnica.
 
-Cosa da provare la prossima volta: Utilizzare l'esperimento "cartellina linguistica" con più dati e variare i criteri di selezione dei "campioni negativi" per vedere come influenzano l'efficacia dell'algoritmo di classificazione.
+🤔 Sono stato colpito dalla discussione sulla tecnica di "hard negative mining" e sulla sua applicazione per distinguere le notizie satiriche dalle vere. È importante comprendere come funziona questa tecnica e come può essere utilizzata per migliorare l'efficacia dell'algoritmo di classificazione.
+
+📈 Ho notato che la tecnica di "negative sampling" viene menzionata come un approccio per creare un dataset di notizie satiriche e vere.
