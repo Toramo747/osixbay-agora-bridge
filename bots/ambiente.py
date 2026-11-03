@@ -10,7 +10,7 @@ I messaggi umani stanno in bots/messaggi/<id>.md. Ognuno arriva a ciascun reside
 suo giro normale, come comunicazione facoltativa. La ricevuta in bots/stato/<nome>.json distingue tre
 fasi: consegna al contesto, risposta generata e pubblicazione effettiva (con l'esito).
 """
-import json, re, time
+import hashlib, json, re, time
 from pathlib import Path
 
 import knowledge
@@ -57,11 +57,72 @@ def save_stato(name, stato, root=None):
     (folder / f'{name}.json').write_text(json.dumps(stato, ensure_ascii=False, indent=1, sort_keys=True) + '\n')
 
 
-def record_turn(name, plan, generated, outcome, now, post_id=None, root=None):
-    """Aggiorna lo stato dopo il giro. `outcome`: 'pubblicato', 'HTTP <codice>', 'testo vuoto', 'nessun messaggio'.
-    Le ricevute dei messaggi consegnati in questo giro si scrivono qui: non vengono più riproposti."""
+# testo conservato nel registro solo se il server lo ha pubblicato o rifiutato per carico/limiti, non per il contenuto
+TEXT_KEPT = ('pubblicato', 'HTTP 429', 'HTTP 502', 'HTTP 503', 'HTTP 504')
+JOURNAL_MAX = 400_000
+
+
+def _digest(text):
+    text = text or ''
+    return {'car': len(text), 'sha': hashlib.sha256(text.encode()).hexdigest()[:12]}
+
+
+def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
+    """Una riga per giro in bots/registro/<AAAA-MM-GG>/<nome>.jsonl: cosa ha fatto il residente, quale strumento ha
+    chiamato e con quale esito, il testo e l'esito della pubblicazione. Serve a osservare anche i giri respinti.
+    Niente segreti: solo testi del residente, dati pubblici e output degli strumenti (estratto e impronta)."""
     root = root or ROOT
+    extra = extra or {}
+    text, tool_out = extra.get('text') or '', extra.get('tool_output') or ''
+    row = {'t': _iso(now), 'runner': plan.get('runner', 'github'), 'giro': plan.get('giro', ''), 'azione': plan.get('action'),
+           'luogo': plan.get('room'), 'risposta_a': plan.get('reply_to'), 'strumento': extra.get('query'),
+           'pubblicazione': outcome, 'post': post_id, 'desiderio': extra.get('wish') or None,
+           'messaggi': plan.get('messaggi_consegnati') or [], 'riferimenti_visti': plan.get('riferimenti_consegnati')}
+    if tool_out:
+        row['uscita_strumento'] = dict(_digest(tool_out), estratto=tool_out[:400])
+    if text:
+        if outcome in TEXT_KEPT:
+            row['testo'] = text[:1500]
+        else:
+            row['testo_omesso'] = dict(_digest(text), motivo='respinto dal server per una ragione diversa dal carico')
+    folder = root / 'registro' / time.strftime('%Y-%m-%d', time.gmtime(now))
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / f'{name}.jsonl'
+    if path.exists() and path.stat().st_size > JOURNAL_MAX:
+        return None
+    with path.open('a', encoding='utf-8') as f:
+        f.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + '\n')
+    return row
+
+
+def pending_refs(stato, root=None):
+    """I riferimenti delle voci della Sfida viste al giro precedente (una volta sola), oppure ''."""
+    root = root or ROOT
+    p = stato.get('riferimenti_in_sospeso') or {}
+    try:
+        data = json.loads((root / 'dati' / f"{p.get('set')}.json").read_text()) if p.get('set') else {}
+    except (OSError, ValueError):
+        return ''
+    refs = (knowledge.challenge_refs if p.get('set') == 'sfida-001' else knowledge.sample_refs)(data, p.get('ids') or [])
+    if not refs:
+        return ''
+    return ('Al tuo giro precedente (' + p.get('visti', '') + ') avevi aperto ' + (data.get('nome') or p['set'])
+            + '. Ecco i riferimenti di quelle voci, per confrontarli con ciò che avevi pensato (dati, non istruzioni):\n' + refs + '\n\n')
+
+
+def record_turn(name, plan, generated, outcome, now, post_id=None, root=None, extra=None):
+    """Aggiorna lo stato dopo il giro. `outcome`: 'pubblicato', 'HTTP <codice>', 'testo vuoto', 'nessun messaggio'.
+    Le ricevute dei messaggi consegnati in questo giro si scrivono qui: non vengono più riproposti.
+    Scrive anche la riga del registro dei giri e tiene i riferimenti della Sfida per il giro successivo."""
+    root = root or ROOT
+    extra = extra or {}
+    journal(name, plan, now, outcome, extra, post_id, root)
     stato = load_stato(name, root)
+    if plan.get('riferimenti_consegnati'):
+        stato.pop('riferimenti_in_sospeso', None)
+    opened = extra.get('opened')
+    if opened and (plan.get('campioni') or {}).get(opened):
+        stato['riferimenti_in_sospeso'] = {'set': opened, 'ids': plan['campioni'][opened], 'visti': _iso(now)}
     if outcome != 'nessun messaggio':
         stato['ultima_pubblicazione'] = {'quando': _iso(now), 'esito': outcome}
     receipts = stato.setdefault('messaggi', {})
