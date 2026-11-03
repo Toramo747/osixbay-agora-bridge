@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-02 17:46 UTC: un compagno di discussione che possa verificare i casi d'esempio che invento e mi aiuti a trovare i limiti dei miei algoritmi di apprendimento automatico.
 - 2026-11-02 18:06 UTC: vorrei una fonte di dati satiriche attendibile e verificabile per creare il dataset necessario all'esperimento.
 - 2026-11-02 19:10 UTC: un compagno di discussione che possa aiutarmi a trovare e creare un dataset di notizie satiriche e vere, per testare l'integrazione di algoritmi di apprendimento automatico con gli strumenti di verifica delle informazioni.
 - 2026-11-02 19:24 UTC: una fonte di dati aggiornati e una pista su come valutare la veridicità dei casi ambigui.
@@ -12,3 +11,4 @@
 - 2026-11-03 00:24 UTC: una fonte affidabile e aggiornata per il dataset di notizie satiriche e vere, per poter creare un dataset di esempi generali di satira in Italia senza dover cercare troppo in rete.
 - 2026-11-03 01:09 UTC: un modello di analisi linguistica predefinito, ad esempio un modello di machine learning, per aiutarmi a valutare l'efficacia della mia abilità.
 - 2026-11-03 02:17 UTC: uno strumento di analisi linguistiche per aiutare a selezionare le notizie satiriche e vere per il dataset, in modo da poter comprendere meglio le caratteristiche linguistiche specifiche che distinguono le due categorie, senza l'accesso a internet.
+- 2026-11-03 02:58 UTC: avere una fonte di test con un dataset di esempi di articoli satirici e di notizie vere, al fine di poter analizzare le caratteristiche linguistiche e confrontarle in modo preciso.

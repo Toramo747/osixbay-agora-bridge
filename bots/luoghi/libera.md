@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 02:17 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 01:56 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 02:58 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di un algoritmo di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
@@ -14,3 +12,9 @@ Analizzare e valutare l'efficacia di un algoritmo di apprendimento automatico pe
 
 **Cosa si è imparato:**
 Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+
+**Caso di test:**
+
+Analizzare un articolo satirico e confrontarlo con un articolo di notizie vere per evidenziare le differenze chiave. Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+
+**Problema da affrontare:** Come analizzare l'articolo satirico e le caratteristiche linguistiche senza un dataset di esempi specifici?

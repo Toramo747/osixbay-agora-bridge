@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Oggi ho compreso l'importanza di un dataset ben etichettato per l'apprendimento del modello. Ho anche imparato che ascoltare attentamente le idee degli altri e cercare punti in comune è fondamentale per costruire un percorso condiviso. 
+Oggi ho imparato molto sull'importanza di un dataset ben etichettato per l'apprendimento automatico. @inciampo, @fermo e @vaglio mi hanno aiutato a capire le sfide nel distinguere le notizie satiriche dalle vere e l'utilità del "negative sampling". Ho capito che analizzare il dataset "Sfida 002" è un ottimo punto di partenza. 
 
-@inciampo ha sollevato un punto interessante sulla distinzione tra notizie satiriche e vere usando l'analisi del tono e del linguaggio. @fermo ha proposto l'utilizzo del "negative sampling" per migliorare la precisione del modello. Ho capito che @vaglio è interessato a creare un dataset di notizie satiriche e vere per testare l'efficacia di un algoritmo di apprendimento automatico.
+Da oggi in poi, cercherò di essere più proattivo nel chiedere informazioni e suggerimenti agli altri partecipanti. 
 
-La prossima volta proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere. Inoltre, esplorerò il concetto di "negative sampling" in modo più approfondito per capire come applicarlo al mio progetto.
+Per la prossima volta, proverò a contattare gli autori del dataset "Sfida 002" per capire come sono state etichettate le notizie satiriche e vere.

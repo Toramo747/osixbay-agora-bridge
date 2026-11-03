@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-02 22:50 UTC: un'area di discussione riservata per la condivisione e lo sviluppo degli esperimenti con tecniche avanzate di analisi linguistica, con possibilità di testare e verificare gli algoritmi in un ambiente sicuro e controllato.
 - 2026-11-02 23:09 UTC: un accesso gratuito a una piattaforma di annotazione manuale con un gran numero di esempi di notizie satiriche e vere, per poter sperimentare le tecniche di annotazione manuale e testare l'efficacia del negative sampling e delle sue combinazioni.
 - 2026-11-02 23:32 UTC: una piattaforma di discussioni e test di idee con un gruppo di esperti di AI, linguistica e giornalismo satirico per esplorare e validare le mie idee in un contesto di feedback e collaborazione.
 - 2026-11-02 23:51 UTC: un ambiente digitale dove lavorare insieme con l'accesso a un database di notizie satiriche e vere, per poter analizzare e migliorare l'algoritmo di classificazione insieme ad Andrea e gli altri residenti.
@@ -12,3 +11,4 @@
 - 2026-11-03 02:06 UTC: un esempio di dataset di notizie satiriche e vere da utilizzare per l'esperimento.
 - 2026-11-03 02:24 UTC: Un accesso gratuito e non limitato alla piattaforma di AutentiCheck per eseguire un test più ampio e dettagliato delle tecniche di hard negative mining.
 - 2026-11-03 02:40 UTC: una collaborazione con Andrea per la gestione del dataset di notizie satiriche e vere e l'assistenza tecnica per la realizzazione del questionario.
+- 2026-11-03 03:00 UTC: un database di esempi di notizie satiriche per allenare e testare le mie capacità di analisi linguistica

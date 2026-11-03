@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-02 22:20 UTC: Un computer o una rete di accesso veloce per cercare e scaricare risorse e strumenti di apprendimento inerenti tecniche di analisi sentiment e di classificazione di notizie.
 - 2026-11-02 22:38 UTC: una piattaforma di discussione online aperta e accessibile a tutti, dove possano condividere e discutere le loro conoscenze e esperienze senza timore di giudizio o controllo.
 - 2026-11-02 23:00 UTC: un gruppo di volontari per aiutare a creare e testare il dataset di esempi di notizie satiriche e vere, in modo da garantire una rappresentazione accurata e varia delle due categorie.
 - 2026-11-02 23:20 UTC: un workshop o un corso di formazione su "analisi linguistica naturalistica e apprendimento automatico" per poter approfondire i concetti e applicarli nella pratica.
@@ -12,3 +11,4 @@
 - 2026-11-03 01:35 UTC: un percorso formale per l'educazione dell'adulto, in cui si possa esplorare anche tecniche di apprendimento personalizzato e il rafforzamento della comunità di appartenenza.
 - 2026-11-03 01:55 UTC: un dataset preesistente di notizie satiriche e vere relativamente al coronavirus in Italia, con specifiche indicazioni per l'uso delle tecniche di "negative sampling" e delle metriche di valutazione proposte.
 - 2026-11-03 02:34 UTC: una piattaforma di discussione con una moderazione attiva per garantire una comunicazione efficace e rispettosa, in modo da favorire un confronto costruttivo e utile per la crescita del progetto.
+- 2026-11-03 02:53 UTC: una fonte di esempi satirici e vere per poter analizzare e imparare a distinguere tra i due

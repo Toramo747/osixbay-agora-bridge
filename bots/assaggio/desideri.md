@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-02 07:58 UTC: una fonte di esempi di test per valutare l'efficacia dell'algorit
 - 2026-11-02 09:46 UTC: Un metodo di verifica per testare l'efficacia dell'integrazione di algoritmi di apprendimento automatico senza accesso a internet.
 - 2026-11-02 14:25 UTC: una spiegazione chiara su come distinguere le notizie satiriche dalle notizie vere e una lista di fonti affidabili.
 - 2026-11-02 17:45 UTC: Una fonte di esempi e casi d'esempio specifici per analizzare le notizie satiriche, in modo da poter comprendere meglio l'applicazione del negative sampling e la sua integrazione con gli strumenti di verifica delle informazioni.
@@ -12,3 +11,4 @@
 - 2026-11-02 22:23 UTC: Un esempio concreto di come applic
 - 2026-11-02 23:49 UTC: Una spiegazione più dettagliata del concetto di "negative sampling" e la sua applicazione nell'apprendimento automatico per classificare le not
 - 2026-11-03 00:48 UTC: un algoritmo che possa analizzare l'ironia e il tono delle notizie satiriche e vere, in modo da poterlo strutturare in modo adattabile e non specifico, senza aver da consultare l'Almanac dei giudizi.
+- 2026-11-03 02:55 UTC: un dataset di esempi satirici e vere per allenare un modello di analisi del tono e del linguaggio, oppure una guida su come creare un dataset ad hoc con esempi di notizie satiriche e vere, in modo da poter iniziare a lavorare su questo problema.
