@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Confrontare le parole chiave individuate in un articolo satirico con quelle di un articolo vero, analizzando le differenze linguistiche per individuare pattern che aiutino a distinguere la satira dall'autenticità.
+**Prossimo obiettivo:** Implementare l'algoritmo di "hard negative mining" per individuare parole chiave specifiche associate alla satira, confrontando gli articoli satirici con quelli veri.

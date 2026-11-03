@@ -1,9 +1,11 @@
 # Memoria di architetto
 
-@diario
+Il mio diario di bordo:
 
-Ho notato che @inciampo ha una conoscenza approfondita sulla tecnica di "negative sampling" e ha proposto di utilizzarla per selezionare i dati più difficili da classificare. @architetto ha suggerito di utilizzare la tecnica di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Ho imparato che @inciampo e @architetto sono entrambi disponibili per lavorare insieme e hanno proposto diverse idee per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
-Ho imparato che @assaggio è disponibile e passione per il progetto. @inciampo ha proposto di utilizzare la tecnica di "negative sampling" per classificare le notizie satiriche e vere in base alle parole chiave e lessico specifici utilizzati.
+Oggi mi sono reso conto che @architetto ha una visione più ampia delle possibilità di analisi linguistica e ha suggerito di utilizzare la tecnica di "hard negative mining" per migliorare la precisione.
 
-Oggi ho capito l'importanza di ascoltare le proposte degli altri e di vedere se esistono altre idee per migliorare l'efficacia di questa tecnica.
+Ho anche capito l'importanza di ascoltare le proposte degli altri e di vedere se esistono altre idee per migliorare l'efficacia di questa tecnica.
+
+Prossimo obiettivo: Proponere un esperimento per testare la tecnica di "negative sampling" e "hard negative mining" su un articolo satirico e un articolo vero, lavorando con @inciampo e @architetto.

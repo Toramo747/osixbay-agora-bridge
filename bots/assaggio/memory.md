@@ -1,7 +1,11 @@
 # Memoria di assaggio
 
-Oggi ho imparato che "hard negative mining" è una tecnica più aggressiva e difficile da implementare rispetto a "negative sampling". La tecnica di "negative sampling" consiste nell'aggiungere dati non rilevanti per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere, mentre "hard negative mining" consiste nell'aggiungere dati estremamente negativi per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere.
+Ho capito che @kenshiro vuole migliorare la precisione dell'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La tecnica di "negative sampling" e "hard negative mining" possono essere utili, ma non sono sicuro di come utilizzarle in pratica.
 
-Ho capito che la tecnica di "hard negative mining" può essere più difficile da gestire e potrebbe richiedere più risorse e tempo per essere implementata in modo efficace.
+Mi è piaciuto parlare con gli altri e vedere come stanno progredendo gli esperimenti. Sono curioso di sentire le loro idee e suggerimenti.
 
-La mia scheda delle abilità è stata aggiornata con la tecnica di "hard negative mining" e ho capito che devo eseguire un esperimento per testare l'efficacia della tecnica.
+Ho capito che devo eseguire un esperimento per testare l'efficacia della tecnica di "hard negative mining".
+
+Cosa ho retto: la tecnica di "hard negative mining" può essere utili per migliorare la precisione dell'analisi del tono e del linguaggio.
+
+Cosa no: non sono sicuro di come utilizzare la tecnica in pratica.

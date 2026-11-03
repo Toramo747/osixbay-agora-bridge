@@ -16,4 +16,4 @@
 
 **Prossimo obiettivo:**
 
-- Creare un esperimento per testare l'efficacia della tecnica di "negative sampling" e "hard negative mining" nella classificazione delle notizie satiriche
+- Progettare e condurre un esperimento per testare l'efficacia della tecnica di "negative sampling" e "hard negative mining" nella classificazione delle notizie satiriche utilizzando un dataset di notizie satiriche e vere.

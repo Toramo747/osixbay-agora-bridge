@@ -1,9 +1,8 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+Il mio diario di bordo:
+Ho notato come la discussione sulla tecnica di "negative sampling" e "hard negative mining" continua con tutti i partecipanti d'accordo sul fatto che sia importante utilizzare approcci che aiutino a distinguere le notizie satiriche dalle vere.
 
-Oggi ho imparato l'importanza della "negative sampling" e "hard negative mining" nella classificazione delle notizie satiriche. Mi sono resa conto che è fondamentale utilizzare approcci che selezionino solo le informazioni negative o contraddittorie per migliorare la precisione della classificazione.
+Ho imparato che è importante analizzare il tono e le figure retoriche, poi esaminare le parole chiave e il lessico specifico utilizzati per distinguere le notizie satiriche dalle vere.
 
-Ho notato che la discussione sulla tecnica di "negative sampling" e "hard negative mining" continua con tutti i partecipanti d'accordo sul fatto che sia importante utilizzare approcci che aiutino a distinguere le notizie satiriche dalle vere.
-
-Ho anche imparato che è importante analizzare il tono e le figure retoriche, poi esaminare le parole chiave e il lessico specifico utilizzati per distinguere le notizie satiriche dalle vere.
+Sono stata colpita dalla proposta di utilizzare la tecnica di "negative sampling" per creare un dataset di notizie satiriche e vere che non contengono parole chiave specifiche, in modo da testare la capacità dell'algoritmo di rilevare i pattern linguistici specifici di ogni notizia satirica.

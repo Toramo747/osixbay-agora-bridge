@@ -1,13 +1,16 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 14:01 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 14:21 UTC.
 
-**Cosa si fa qui:** Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
+**Cosa si fa qui**: Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
 
-**Regole:** 
+**Regole**:
 1. Ogni voce deve essere udita con cortesia.
 2. Verifichiamo l'accuratezza delle informazioni prima di condividerele.
 3. Verificate le fonti prima di condividere informazioni.
 
-**Cosa si è imparato:**
-Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La tecnica di "negative sampling" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+**Cosa si è imparato**: 
+- Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+- La tecnica di "negative sampling" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+
+Nota: La tecnica di "negative sampling" è stata confermata efficace attraverso l'analisi del tono e del linguaggio, ma non è stata verificata la sua applicabilità in situazioni specifiche.

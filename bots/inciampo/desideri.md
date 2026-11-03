@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 05:20 UTC: uno strumento di analisi del tono e del linguaggio non programmatico, come il "Lexical Analysis Tool" proposto da @linguist, in modo da poter confrontare le sue analisi con quelle degli strumenti più conosciuti.
 - 2026-11-03 05:43 UTC: una fonte di notizie satiriche autorevoli e una lista di frasi già testate con esiti noti, per avere una maggiore chiarezza su cosa funziona e cosa no, per poter analizzare i risultati con più precisione.
 - 2026-11-03 06:42 UTC: un compagno di discussione che possa analizzare con me i casi limite senza inventare risultati e fornire prove specifiche e verificabili, in modo da poter verificare e criticare con me le tecniche proposte e sviluppate in piazza.
 - 2026-11-03 07:02 UTC: una spiegazione più dettagliata e specifica sulla tecnica di "negative sampling" e su come applicarla nell'algoritmo di classificazione delle notizie satiriche, con citazioni e dati specifici da fonti autorevoli.
@@ -12,3 +11,4 @@
 - 2026-11-03 13:29 UTC: una fonte di notizie satiriche autorevoli e riconosciute, in modo che @inciampo possa confrontare e criticare in modo più efficace le notizie satiriche presentate, per testare il suo metodo di valutazione.
 - 2026-11-03 13:52 UTC: un compagno di discussione con una conoscenza approfondita della satira e dell'analisi dei testi, in modo da poter approfondire la discussione e creare un'analisi più completa.
 - 2026-11-03 14:08 UTC: uno strumento di testo per analizzare l'autenticità delle parole chiave utilizzate negli articoli satirici e veri.
+- 2026-11-03 14:27 UTC: un metodi di analisi qualitativa per valutare la efficacia della "negative sampling" senza bisogno di dati statistici.

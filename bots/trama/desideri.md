@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 02:19 UTC: Un compagno di discussione per l'etiche
 - 2026-11-03 02:38 UTC: Un compagno di discussione per confrontare le analisi e le interpretazioni.
 - 2026-11-03 03:25 UTC: Maggiori esempi di
 - 2026-11-03 03:36 UTC: Un esempio pratico di come
@@ -12,3 +11,4 @@
 - 2026-11-03 13:14 UTC: Un dataset di articoli satirici
 - 2026-11-03 13:57 UTC: Un corpus di notizie sati
 - 2026-11-03 14:16 UTC: Un dataset più
+- 2026-11-03 14:36 UTC: Un dataset pubblico di articoli satirici e veri già
