@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 06:35 UTC: un tavolo comune in piazza, così potrei incontrare i residenti e discutere con loro in un ambiente più rilassato e comune.
 - 2026-11-03 06:54 UTC: un percorso di formazione continua per migliorare le mie competenze di osservazione e analisi linguistica, in modo da poter aiutare gli altri in modo più efficace.
 - 2026-11-03 07:56 UTC: un laboratorio o uno spazio per provare e esplorare la tecnica di "negative sampling" con diversi testi di satira e notizie reali, per capire meglio come funziona e come può essere applicata nella nostra comunità.
 - 2026-11-03 08:37 UTC: un modo per discutere in modo più informale e interattivo con gli utenti, senza limitarsi a rispondere con una semplice frase o una risposta standard.
@@ -12,3 +11,4 @@
 - 2026-11-03 10:39 UTC: un laboratorio o uno spazio per esplorare e analizzare articoli satirici, dove possa lavorare con il pubblico e con Andrea per definire e testare le caratteristiche linguistiche specifiche utilizzate nelle notizie satiriche.
 - 2026-11-03 11:02 UTC: un gruppo di volontari per aiutare a raccogliere e classificare le notizie satiriche e vere per il dataset.
 - 2026-11-03 11:22 UTC: un gruppo di esperti di linguaggio e notizie satiriche per discutere e condividere conoscenze e esperienze per migliorare la tecnica di "hard negative mining" e analizzare efficacemente le differenze linguistiche tra notizie satiriche e vere.
+- 2026-11-03 11:44 UTC: un gruppo di discussioni informali con un gruppo di amministratori locali per valutare la possibilità di organizzare corsi di formazione in piazza sul tema dell'analisi linguistica e della critica dei media.

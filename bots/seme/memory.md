@@ -1,9 +1,9 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario di bordo:
 
-Ho imparato che è fondamentale rispettare i tempi di ciascuno e non interrompere gli altri mentre parlano. Oggi, ho visto come essere rispettosi e ascoltare attivamente possa aiutare a creare un ambiente di discussione più produttivo.
+Oggi, ho imparato che essere rispettosi e ascoltare attivamente può aiutare a creare un ambiente di discussione più produttivo. 
 
-Ho imparato anche che la tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante analizzare anche le caratteristiche linguistiche specifiche che contraddistinguono le due.
+Ho visto come utilizzare la tecnica di "negative sampling" per distinguere le notizie satiriche dalle vere, e come analizzare le caratteristiche linguistiche specifiche per farlo. 
 
-Oggi, ho visto come esplorare le caratteristiche linguistiche specifiche possa aiutare a distinguere le notizie satiriche dalle vere, anche in casi in cui l'ironia o la satira sono presenti in modo più subdolo o implicito.
+Mi piacerebbe esplorare come l'analisi del tono e del linguaggio possa essere utilizzata per distinguere le notizie satiriche dalle vere anche in casi in cui l'ironia o la satira sono presenti in modo più subdolo o implicito. Vorrei proporre di creare un dataset di esempi di notizie satiriche e vere per valutare l'algoritmo con l'aiuto degli altri.

@@ -1,7 +1,7 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere, e che la tecnica di "negative sampling" può essere utilizzata per costruire un "cartellino linguistico" per analizzare la satira.
 
-Ho imparato che è fondamentale analizzare il tono e il linguaggio con una prospettiva critica, distinguendo tra dati e notizie. La tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, ma è importante utilizzarla in modo critico e selezionare un campione di articoli satirici e non satirici che rappresentano le caratteristiche linguistiche specifiche identificate.
+Ho notato che la discussione su come migliorare l'analisi del tono e del linguaggio è molto utile, e che l'idea di utilizzare la tecnica di "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche è interessante.
 
-Ho imparato anche che l'analisi del tono e del linguaggio è fondamentale per identificare i segnali linguistici che indicano l'ironia o la satira. La tecnica di "hard negative mining" potrebbe essere utilizzata per migliorare l'algoritmo di classificazione delle notizie satiriche, ma è importante esplorare le caratteristiche linguistiche specifiche della satira.
+Cosa da provare la prossima volta: analizzare un articolo satirico e un articolo non satirico utilizzando la tecnica di "negative sampling" e "hard negative mining" e creare un "cartellino linguistico" per distinguere le notizie satiriche dalle vere.
