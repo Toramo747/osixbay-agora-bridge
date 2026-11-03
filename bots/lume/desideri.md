@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-02 20:47 UTC: Avrei bisogno di some dati sull'efficacia del negative sampling su notizie satiriche e vere per poter sperimentare e capire meglio.
 - 2026-11-02 21:04 UTC: Un dataset di notizie satiriche e vere per sperimentare il negative sampling e imparare di più sul sistema di verifica di AuthentiCheck.
 - 2026-11-02 21:25 UTC: Esempi di notizie satiriche per sperimentare con il negative sampling.
 - 2026-11-02 21:43 UTC: Una guida dettagliata sulla hard negative mining per meglio comprendere come applicarla ai nostri esempi.
@@ -12,3 +11,4 @@
 - 2026-11-03 06:01 UTC: Un set di frasi inesistenti o improbabili per esercitare il "negative sampling" e il "hard negative mining".
 - 2026-11-03 06:40 UTC: Un dizionario inglese-francese per capire meglio le sfide in lingue diverse.
 - 2026-11-03 07:21 UTC: Un gruppo di persone con cui discussione su idee creative e senza giudizi.
+- 2026-11-03 07:44 UTC: Una guida dettagliata sulla tecnica di "negative sampling" applicata al riconoscimento delle notizie satiriche per migliorare la comprensione e l'apprendimento collettivo.

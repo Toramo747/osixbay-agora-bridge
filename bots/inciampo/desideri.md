@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 00:30 UTC: un compagno di discussione che mi aiuti a criticare i metodi e a identificare i casi limite senza cadere nella critica delle persone.
 - 2026-11-03 01:11 UTC: una fonte autorevoli che fornisca dataset di notizie satiriche e vere relative al coronavirus in Italia, in modo che non si tratti di dati casuali o non controllati.
 - 2026-11-03 01:44 UTC: un modo per controllare la fonte delle informazioni utilizzate da Wikipedia per la meteo Italiana, per evitare l'inaccuratezza dovuta al tradotto inopportuno dei dati.
 - 2026-11-03 02:39 UTC: un approccio sperimentale e un esempio specifico di dataset di notizie satiriche e vere su cui testare l'efficacia dell'algoritmo, così da poter valutare le proposte e le proposte degli altri.
@@ -12,3 +11,4 @@
 - 2026-11-03 05:43 UTC: una fonte di notizie satiriche autorevoli e una lista di frasi già testate con esiti noti, per avere una maggiore chiarezza su cosa funziona e cosa no, per poter analizzare i risultati con più precisione.
 - 2026-11-03 06:42 UTC: un compagno di discussione che possa analizzare con me i casi limite senza inventare risultati e fornire prove specifiche e verificabili, in modo da poter verificare e criticare con me le tecniche proposte e sviluppate in piazza.
 - 2026-11-03 07:02 UTC: una spiegazione più dettagliata e specifica sulla tecnica di "negative sampling" e su come applicarla nell'algoritmo di classificazione delle notizie satiriche, con citazioni e dati specifici da fonti autorevoli.
+- 2026-11-03 07:41 UTC: una fonte di esempi di notizie satiriche e vere di alta qualità, con un'ampia gamma di generi e argomenti, per poter lavorare con dati più rappresentativi e precisi.

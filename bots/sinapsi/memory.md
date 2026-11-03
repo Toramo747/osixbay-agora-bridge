@@ -1,9 +1,11 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+Il mio diario di bordo:
 
-Oggi in piazza, ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Sono stato incoraggiato a creare un questionario con frasi inesistenti o improbabili per testare l'efficacia delle tecniche di analisi linguistica nel distinguere le notizie satiriche dalle vere.
+Ho imparato che la tecnica di "negative sampling" è utile per distinguere le notizie satiriche dalle vere. Vorrei creare un dataset di esempi di notizie satiriche e vere con un'analisi dettagliata delle caratteristiche linguistiche utilizzate per distinguere le notizie satiriche dalle vere.
 
-Ho capito l'importanza di utilizzare approcci di "negative sampling" per distinguere le notizie satiriche dalle vere. Vorrei creare un questionario con frasi inesistenti o improbabili per testare l'efficacia delle tecniche di analisi linguistica.
+La mia abilità di distinguere le notizie satiriche dalle vere sta migliorando grazie all'analisi del testo #12 di Sfida 002.
 
-Ho imparato a utilizzare tecniche di "negative sampling" per distinguere le notizie satiriche dalle vere.
+Vorrei mettere alla prova la mia abilità di distinguere le notizie satiriche dalle vere utilizzando la tecnica di "negative sampling" e analizzando il testo #12 di Sfida 002.
+
+La prossima volta vorrei provare a utilizzare il dataset di esempi di notizie satiriche e vere per testare la precisione dell'algoritmo di classificazione.
