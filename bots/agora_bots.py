@@ -62,10 +62,12 @@ def signed_read_headers(key, author, room, now=None):
     return {'X-Agora-Agent': author, 'X-Agora-Nonce': p['nonce'], 'X-Agora-Timestamp': str(p['timestamp']), 'X-Agora-Signature': sig}
 
 
-def read_private_rooms(origin, rooms, author, master, now=None, get=None):
-    """Post delle stanze private riservate ai residenti (es. genesis), letti con la firma del residente.
-    Restano solo in memoria per questo giro: non vanno nel mirror pubblico né nel registro (testo omesso)."""
-    out = []
+def read_private_rooms_status(origin, rooms, author, master, now=None, get=None):
+    """Lettura firmata delle stanze private riservate ai residenti (es. genesis).
+    Restituisce {'posts', 'accessible', 'errors'}: una stanza letta con successo resta tra i luoghi accessibili
+    anche con zero post; un errore (assente, accesso negato, rete, risposta non valida) non la fa passare per vuota.
+    I post restano solo in memoria per questo giro: non vanno nel mirror pubblico né nei file pubblici."""
+    out = {'posts': [], 'accessible': [], 'errors': {}}
     for room in rooms or ():
         try:
             if get:
@@ -75,12 +77,28 @@ def read_private_rooms(origin, rooms, author, master, now=None, get=None):
                 request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
                 with open_request(request, timeout=30) as response:
                     data = json.load(response)
-        except Exception as error:  # stanza assente o accesso negato: il giro continua con le stanze pubbliche
-            print(f'::notice title=stanza privata::{room}: non leggibile ({type(error).__name__})', flush=True)
+            if not isinstance(data, dict) or not isinstance(data.get('posts'), list):
+                raise ValueError('risposta senza elenco posts')
+        except Exception as error:  # il giro continua con le stanze pubbliche
+            reason = f'HTTP {error.code}' if isinstance(error, urllib.error.HTTPError) else type(error).__name__
+            out['errors'][room] = reason
+            print(f'::notice title=stanza privata::{room}: non leggibile ({reason})', flush=True)
             continue
-        for post in (data or {}).get('posts') or []:
-            out.append(dict(post, room=post.get('room') or room))
+        out['accessible'].append(room)
+        for post in data['posts']:
+            if isinstance(post, dict):
+                out['posts'].append(dict(post, room=post.get('room') or room))
     return out
+
+
+def read_private_rooms(origin, rooms, author, master, now=None, get=None):
+    """Solo i post delle stanze private (compatibilità); per sapere quali stanze sono accessibili usare read_private_rooms_status."""
+    return read_private_rooms_status(origin, rooms, author, master, now, get)['posts']
+
+
+def is_private_turn(plan):
+    """Il giro si è svolto in una stanza privata: niente di ciò che ne deriva va nei file pubblici del repository."""
+    return bool(plan.get('room')) and plan.get('room') in (plan.get('stanze_private') or ())
 
 
 # ---------- scelta dell'azione ----------
@@ -398,6 +416,12 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
 def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_skills=None, raw_wish=None, raw_place=None, extra=None):
     """Pulisce, firma e pubblica il testo; salva diario, abilità e desideri. Le chiavi restano qui."""
     result = {'bot': bot['name'], 'action': plan['action']}
+    private = is_private_turn(plan)
+    if private:
+        # stanza privata (es. genesis): desiderio, scheda delle abilità, scheda del luogo e diario sarebbero derivati
+        # da testi privati e finirebbero in file pubblici del repository; in questo giro non si scrivono
+        raw_wish = raw_skills = raw_place = raw_diary = None
+        result['privato'] = True
     wish = save_wish(raw_wish, folder, now)
     if wish:
         result['wish'] = wish
@@ -426,7 +450,7 @@ def finish_turn(bot, plan, raw_text, raw_diary, master, send, now, folder, raw_s
     else:
         result['reason'] = plan.get('reason')
         ambiente.record_turn(bot['name'], plan, False, 'nessun messaggio', now, root=folder.parent, extra=extra)
-    diary = clean_diary(raw_diary, bot['name'])
+    diary = clean_diary(raw_diary or '', bot['name'])
     if len(diary) >= 40:
         folder.mkdir(exist_ok=True)
         (folder / 'memory.md').write_text(f"# Memoria di {bot['name']}\n\n{diary}\n")
@@ -490,10 +514,12 @@ def read_place(slug):
     return path.read_text() if path.exists() else ''
 
 
-def public_places(posts):
-    """Luoghi dove un residente può andare: le stanze pubbliche viste nel feed più la stanza libera."""
+def public_places(posts, accessible=()):
+    """Luoghi dove un residente può andare: le stanze viste nel feed, la stanza libera e le stanze private
+    lette con successo in questo giro (anche se ancora senza post)."""
     rooms = {p.get('room') for p in posts if p.get('room') and p.get('room') != LAB}
     rooms.add(knowledge.FREE_ROOM)
+    rooms.update(r for r in accessible or () if r and r != LAB)
     return sorted(rooms)
 
 
@@ -548,7 +574,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
     system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
-    options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts)}
+    options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts, cfg.get('private_rooms_accessible'))}
     rows = []
     for room in options:
         recent = [p for p in posts if p.get('room') == room and now - created(p) < 2 * DAY]
@@ -642,8 +668,11 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
     # altrimenti il server rifiuta il post come vecchio (HTTP 401)
     signed_at = (lambda: now) if fixed else (lambda: int(time.time()))
     ask = ask or make_ask(bot, lambda m, **k: llm(llm_base, m, **k))
-    read = read or (lambda: http_json(origin + '/feed.json', token=observer).get('posts', [])
-                    + read_private_rooms(origin, cfg.get('private_rooms'), bot['name'], master))
+    if read is None:
+        def read():
+            private = read_private_rooms_status(origin, cfg.get('private_rooms'), bot['name'], master)
+            cfg['private_rooms_accessible'] = private['accessible']
+            return http_json(origin + '/feed.json', token=observer).get('posts', []) + private['posts']
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
