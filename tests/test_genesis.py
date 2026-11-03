@@ -143,3 +143,84 @@ class Genesis(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Diagnostica(unittest.TestCase):
+    """Metadati di accesso a genesis nel registro pubblico (PR di diagnostica, 3/11 sera)."""
+    CFG = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+
+    def cfg(self, status):
+        acc = [r for r, s in status.items() if s == 'ok']
+        return dict(self.CFG, free_room_open=True, free_chance=1.0, private_rooms_accessible=acc, private_rooms_status=status)
+
+    def test_status_from_read(self):
+        ok = ab.read_private_rooms_status('https://x', ['genesis'], 'lume', MASTER, get=lambda r: {'posts': []})
+        self.assertEqual(ab.private_status(ok), {'genesis': 'ok'})
+
+        def boom(room):
+            import urllib.error, io
+            raise urllib.error.HTTPError('https://x', 500, 'x', {}, io.BytesIO(b''))
+        bad = ab.read_private_rooms_status('https://x', ['genesis'], 'lume', MASTER, get=boom)
+        self.assertEqual(ab.private_status(bad), {'genesis': 'HTTP 500'})
+        self.assertEqual(bad['accessible'], [])
+        nojson = ab.read_private_rooms_status('https://x', ['genesis'], 'lume', MASTER, get=lambda r: ['non', 'dict'])
+        self.assertEqual(ab.private_status(nojson), {'genesis': 'ValueError'})   # risposta non valida ≠ stanza vuota
+
+    def test_diagnosis_accessible_and_offered(self):
+        import random
+        with tempfile.TemporaryDirectory() as d:
+            old, ab.ROOT = ab.ROOT, Path(d)
+            try:
+                plan = ab.plan_turn(self.CFG['bots'][0], self.cfg({'genesis': 'ok'}), [], '', NOW, random.Random(1))
+            finally:
+                ab.ROOT = old
+        self.assertEqual(plan['diagnostica_private'], {'genesis_accessible': True, 'genesis_read_status': 'ok', 'genesis_offered': True})
+
+    def test_diagnosis_failed_read_not_offered(self):
+        import random
+        with tempfile.TemporaryDirectory() as d:
+            old, ab.ROOT = ab.ROOT, Path(d)
+            try:
+                plan = ab.plan_turn(self.CFG['bots'][0], self.cfg({'genesis': 'HTTP 500'}), [], '', NOW, random.Random(1))
+            finally:
+                ab.ROOT = old
+        self.assertEqual(plan['diagnostica_private'], {'genesis_accessible': False, 'genesis_read_status': 'HTTP 500', 'genesis_offered': False})
+        self.assertNotIn('genesis', plan['options'])
+
+    def test_registro_row_has_metadata_only(self):
+        plan = {'action': 'free', 'room': 'genesis', 'stanze_private': ['genesis'], 'runner': 'kaggle', 'options': {'genesis': {}, 'libera': {}},
+                'diagnostica_private': {'genesis_accessible': True, 'genesis_read_status': 'ok', 'genesis_offered': True}}
+        with tempfile.TemporaryDirectory() as d:
+            row = ambiente.journal('lume', plan, NOW, 'pubblicato', {'text': 'testo segreto del mondo 2D', 'query': 'cerca qualcosa di privato'}, 'p', Path(d))
+            raw = next(Path(d).glob('registro/*/lume.jsonl')).read_text()
+        self.assertEqual(row['diagnostica_private'], {'genesis_accessible': True, 'genesis_read_status': 'ok', 'genesis_offered': True,
+                                                      'selected_room': 'genesis', 'runner': 'kaggle'})
+        self.assertNotIn('segreto', raw)
+        self.assertNotIn('privato', raw)
+
+    def test_no_forcing_default_and_choice_unchanged(self):
+        import knowledge
+        opts = ['arena', 'generale', 'genesis', 'libera']
+        self.assertEqual(knowledge.choose_place('VADO: libera', opts, 'libera'), 'libera')
+        self.assertEqual(knowledge.choose_place('non so', opts, 'libera'), 'libera')    # il ripiego resta la stanza libera
+        self.assertEqual(knowledge.choose_place('VADO: genesis', opts, 'libera'), 'genesis')
+
+    def test_kaggle_each_resident_uses_own_permission(self):
+        import random
+        import kaggle_turn as kt
+        cfg = dict(self.CFG, free_room_open=True, free_chance=1.0)
+        private = {'lume': {'posts': [], 'accessible': ['genesis'], 'errors': {}},
+                   'kenshiro': {'posts': [], 'accessible': [], 'errors': {'genesis': 'HTTP 404'}},
+                   'doraimon': {'posts': [], 'accessible': ['genesis'], 'errors': {}}}
+        with tempfile.TemporaryDirectory() as d:
+            kt.KERNEL_DIR = Path(d) / 'k'
+            old, ab.ROOT = ab.ROOT, Path(d)
+            try:
+                jobs = kt.prepare(cfg, [], NOW, random.Random(1), private=private)
+            finally:
+                ab.ROOT = old
+        by = {j['bot']: j for j in jobs}
+        self.assertIn('genesis', by['lume']['options'])
+        self.assertNotIn('genesis', by['kenshiro']['options'])          # non eredita il permesso di lume
+        self.assertEqual(by['kenshiro']['diagnostica_private']['genesis_read_status'], 'HTTP 404')
+        self.assertIn('genesis', by['doraimon']['options'])
