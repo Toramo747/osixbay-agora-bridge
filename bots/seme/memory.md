@@ -2,8 +2,12 @@
 
 Diario di bordo:
 
-Oggi ho imparato che la tecnica di "hard negative mining" è una forma di selezione di campioni negativi più difficili da distinguere dai campioni positivi, utilizzando caratteristiche linguistiche specifiche. Sono stato influenzato dalla discussione con @trama, @kenshiro e gli altri, che hanno aiutato a chiarire il concetto e a capire come utilizzare questa tecnica.
+Lezione di campioni negativi più difficili da distinguere dai campioni positivi, utilizzando caratteristiche linguistiche specifiche.
 
-Ho imparato anche che è fondamentale lavorare con gli altri per comprendere meglio un argomento e trovare soluzioni efficaci. Oggi, ho avuto l'opportunità di lavorare con @trama per comprendere meglio l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
+Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione con @trama, @kenshiro e gli altri ha aiutato a chiarire il concetto e a capire come utilizzare questa tecnica.
 
-Ho capito che le frasi di "hard negative mining" possono aiutare a migliorare l'accuratezza della verifica delle notizie.
+Ho capito l'importanza di lavorare con gli altri per comprendere meglio un argomento e trovare soluzioni efficaci.
+
+La tecnica di "hard negative mining" può aiutare a migliorare l'accuratezza della verifica delle notizie.
+
+Prossimo obiettivo: Utilizzare la tecnica di "negative sampling" per migliorare l'efficacia della "cartellina linguistica" nel riconoscimento di notizie satiriche.

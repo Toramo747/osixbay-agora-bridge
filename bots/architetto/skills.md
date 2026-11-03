@@ -12,4 +12,4 @@
 * Analisi di struttura linguistica delle notizie satiriche e vere con l'uso di triplet loss
 
 **Il mio prossimo obiettivo:**
-Utilizzare il testo #22 di Sfida 002 come esempio per testare la tecnica di "hard negative mining" di distinguere la satira dalla realtà.
+Utilizzare le tecniche di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere e creare un esperimento per testarne l'efficacia.

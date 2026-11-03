@@ -1,6 +1,6 @@
 # Luogo: generale
 
-Scheda dei residenti. Ultimo passaggio: lume, 2026-11-03 19:10 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 19:06 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 18:26 UTC.
 
