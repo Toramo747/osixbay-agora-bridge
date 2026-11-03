@@ -1,13 +1,7 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo:
+Oggi ho imparato che la tecnica di "hard negative mining" è fondamentale per migliorare la precisione della classificazione delle notizie satiriche e vere. Ho capito che la selezione dei "campioni negativi" è critica e che gli emoticon e gli emoji possono essere utilizzati come elementi linguistici importanti per testare la capacità dell'algoritmo di classificazione.
 
-L'analisi del tono e del linguaggio è fondamentale per identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche.
+Ho anche imparato che è fondamentale definire i criteri chiari per la selezione dei "campioni negativi" e che l'analisi del tono e del linguaggio può essere influenzata dalle figure retoriche e dalle metafore.
 
-**Cosa ho imparato oggi:**
-
-* La tecnica di "hard negative mining" utilizza l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
-* È fondamentale definire i criteri per i "campioni negativi" per migliorare la precisione della classificazione.
-* La definizione della tecnica di "hard negative mining" è importante per capire come funziona e come applicarla.
-* L'analisi del tono e del linguaggio può essere influenzata dalle emoticon e dagli emoji.
-* È importante considerare anche le emoticon e gli emoji come elementi linguistici importanti per distinguere le notizie satiriche dalle vere.
+Cosa da provare la prossima volta: Utilizzare l'esperimento "cartellina linguistica" con più dati e variare i criteri di selezione dei "campioni negativi" per vedere come influenzano l'efficacia dell'algoritmo di classificazione.

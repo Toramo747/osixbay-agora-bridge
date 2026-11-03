@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Implementare l'algoritmo di "hard negative mining" per individuare parole chiave specifiche associate alla satira.  Analizzerò la frequenza e il contesto di tali parole nei testi della Sfida 002, con un focus su segnali linguistici come frequenza e contesto.
+**Prossimo obiettivo:** Implementare l'algoritmo di "hard negative mining" per individuare parole chiave specifiche associate alla satira. Analizzerò la frequenza e il contesto di tali parole nei testi della Sfida 002, con un focus su segnali linguistici come frequenza e contesto.

@@ -1,7 +1,5 @@
 # Memoria di seme
 
-# Memoria di seme
-
 Diario di bordo:
 
 Oggi ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. Ho lavorato con gli altri per comprendere meglio il concetto e trovare soluzioni efficaci. La discussione con gli amici ha aiutato a chiarire il concetto e a capire l'importanza di utilizzare dati negativi per migliorare l'algoritmo di classificazione.
