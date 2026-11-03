@@ -4,6 +4,6 @@
 
 **Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM, Question Refinement Engine (QRE), *negative sampling*, tecniche di "hard negative mining".
 
-**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
+**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.
 
-**Prossimo passo:** Applicare il metodo "negative sampling" all'articolo #2 di Sfida 002 ("Il Codacons chiede a Lercio di smentire un articolo inventato"). Analizzerò il tono, le parole chiave e le figure retoriche per comprendere come questo metodo può migliorare la classificazione della satira.
+**Prossimo passo:** Applicare il metodo "negative sampling" all'articolo #14 ("Il premio Nobel per la letteratura 2026 viene assegnato a ChatGPT") della Sfida 002. Analizzerò il tono, le parole chiave e le figure retoriche per comprendere come questo metodo può migliorare la classificazione della satira.

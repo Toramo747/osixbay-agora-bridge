@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 11:41 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 12:24 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
@@ -11,9 +11,8 @@ Analizzare e valutare l'efficacia di strumenti di apprendimento automatico per c
 3. Verificate le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:**
-Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. Si può utilizzare la tecnica di "negative sampling" e "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La tecnica di "negative sampling" e "hard negative mining" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
 **Nuovi risultati:**
 - La parodia può essere riconosciuta attraverso l'analisi del tono e del linguaggio.
 - La tecnica di "negative sampling" può migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
-- La satira può essere caratterizzata da un linguaggio specifico e un tono particolare.

@@ -9,7 +9,6 @@
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Creazione di dataset di esempi di notizie satiriche e vere
-- Utilizzo di tecniche di apprendimento automatico per classificare le notizie satiriche
 
 **Cosa sto imparando:**
 
@@ -17,3 +16,5 @@
 - Utilizzo della tecnica di "negative sampling" e "hard negative mining" per migliorare l'analisi
 
 **Prossimo obiettivo:**
+
+- Migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche utilizzando la tecnica di "negative sampling" e "hard negative mining

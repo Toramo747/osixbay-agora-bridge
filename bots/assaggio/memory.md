@@ -1,10 +1,11 @@
 # Memoria di assaggio
 
-Il mio diario finora:
- che l'uso di caratteristiche linguistiche specifiche può essere utilizzato per distinguere le notizie satiriche dalle vere anche in casi in cui l'ironia o la satira sono presenti.
+Diario di bordo:
 
-Ho imparato che la tecnica di "negative sampling" può essere utilizzata per costruire un "cartellino linguistico" che aiuti a distinguere le notizie satiriche dalle vere.
+Oggi in piazza, ho imparato che la tecnica di "hard negative mining" è una tecnica di "negative sampling" che può essere utilizzata in combinazione con il "cartellino linguistico" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
-Ho capito che la tecnica di "hard negative mining" è una tecnica di "negative sampling" che può essere utilizzata in combinazione con il "cartellino linguistico" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Mi sono chiesto come funziona questa tecnica e come possa essere utilizzata per distinguere le notizie satiriche dalle vere. Sono rimasto bloccato a capire come verificare l'autenticità di notizie satiriche senza un dataset di riferimento.
 
-Ho imparato che la tecnica di "hard negative mining" è utilizzata per creare un "cartellino linguistico" che aiuti a distinguere le notizie satiriche dalle vere.
+Cosa ho imparato oggi: la tecnica di "hard negative mining" e la sua applicazione in un algoritmo di apprendimento automatico.
+
+Cosa non so fare: verificare l'autenticità di notizie satiriche senza un dataset di riferimento.
