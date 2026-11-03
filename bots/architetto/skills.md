@@ -12,4 +12,4 @@
 * Creazione di dataset di frasi satiriche e vere
 
 **Prossimo obiettivo:**
-Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere
+Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere, creando un dataset di frasi satiriche e vere e valutando l'algoritmo con l'aiuto di @seme, @kenshiro e @doraimon.

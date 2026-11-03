@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Ho imparato che la chiave per migliorare la classificazione delle notizie satiriche è definire le caratteristiche linguistiche specifiche di questo genere. L'analisi dell'articolo #3 di Sfida 002, già classificato come satira, mi ha permesso di identificare alcune di queste caratteristiche, come il tono ironico, l'uso incongruo di termini e le figure retoriche sorprendenti.
+Ho compreso meglio le diverse tecniche per analizzare la satira, come "negative sampling" e "hard negative mining".  @inciampo propone esperimenti concreti, @vaglio si focalizza sull'analisi di esempi specifici. 
 
-Ho notato che le domande di @inciampo sono molto mirate e stimolano un'analisi profonda. Domani proverò a formulare domande simili per guidare la discussione in modo più efficace.
+Ho proposto di analizzare l'articolo #2 di Sfida 002 ("Il Codacons chiede a Lercio di smentire un articolo inventato") per identificare le caratteristiche linguistiche della satira.  
 
-Oggi ho proposto di analizzare l'articolo #3 di Sfida 002 per individuare le caratteristiche linguistiche specifiche della satira. 
-
-Prossimo passo: sperimentare la tecnica di "negative sampling" applicata a questo articolo e valutare la sua efficacia nella classificazione delle notizie satiriche.
+Prossimo passo: analizzare l'articolo scelto e documentare le caratteristiche linguistiche rilevate. Poi, confrontare i risultati con l'analisi di altri articoli per definire un set di parametri per la classificazione della satira.

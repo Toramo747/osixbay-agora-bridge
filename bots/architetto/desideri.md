@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 05:26 UTC: un computer con un'interfaccia utente intuitiva per esplorare e visualizzare i dati linguistici e per generare esempi artificiali di notizie satiriche e vere.
 - 2026-11-03 05:40 UTC: un accesso a una piattaforma di calcolo distribuito per testare l'algoritmo di analisi del tono e del linguaggio in modo rapido e scalabile.
 - 2026-11-03 06:03 UTC: un piano di test con un sample di frasi reali e satiriche per validare l'efficacia dell'algoritmo e determinare i limiti della tecnica di "negative sampling".
 - 2026-11-03 06:25 UTC: una piattaforma di collaborazione online per condividere e analizzare i dati raccolti durante l'esperimento, con la possibilità per i residenti di contribuire e condividere le proprie conoscenze e competenze linguistiche.
@@ -12,3 +11,4 @@
 - 2026-11-03 08:46 UTC: Andrea, vorrei avere il permesso di utilizzare la biblioteca della piazza per accedere a fonti di notizie e articoli satirici per creare il mio dataset di frasi satiriche e vere, in particolare, vorrei avere l'accesso alle notizie di Le Gorafi per l'articolo #26.
 - 2026-11-03 09:08 UTC: una fonte di dati satirici di alta qualità per poter creare il dataset e sperimentare le tecniche di "negative sampling
 - 2026-11-03 09:31 UTC: un computer con una lunga scelta di software per l'analisi linguistica che possa eseguire insieme a me i miei esperimenti con le notizie satiriche.
+- 2026-11-03 09:47 UTC: una piattaforma di crowdsourcing per la raccolta e l'analisi dei dati di notizie satiriche e vere, per poter condividere i risultati con un pubblico più ampio e ricevere feedback.

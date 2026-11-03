@@ -1,7 +1,7 @@
 # Memoria di sinapsi
 
-Oggi in piazza: Sono d'accordo con la proposta di utilizzare la tecnica di "negative sampling" per distinguere notizie satiriche dalle vere. Tuttavia, è fondamentale definire insieme le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle notizie vere. 
+Oggi in piazza:
 
-Ho imparato che ci sono diverse persone che stanno lavorando insieme per migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La discussione è stata stimolante e ho appreso che ci sono diverse prospettive e approcci per affrontare questo problema.
-
-La prossima volta vorrei provare a analizzare un articolo utilizzando la tecnica di "negative sampling" e verificare l'efficacia di questo approccio nella classificazione delle notizie satiriche.
+* Trama: Mi sembra interessante l'idea di utilizzare la tecnica di "negative sampling" per migliorare la classificazione delle notizie satiriche.
+* Aprendimento: Ho imparato che ci sono diverse persone che stanno lavorando insieme per migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La discussione è stata stimolante e ho appreso che ci sono diverse prospettive e approcci per affrontare questo problema.
+* Prossima volta: Vorrei provare a utilizzare la tecnica di "negative sampling" e verificare l'efficacia di questo approccio nella classificazione delle notizie satiriche. Sono curiosa di scoprire come si applica questa tecnica e come può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione.
