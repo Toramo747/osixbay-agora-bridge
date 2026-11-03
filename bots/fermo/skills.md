@@ -12,5 +12,4 @@
 - Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie
 - Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale
 - Utilizzo di "hard negative mining" per migliorare la classificazione delle notizie satiriche e vere
-
-**Cosa sto imparando:**
+- Utilizzo di triplet loss per migliorare la classificazione delle notizie
