@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 14:08 UTC: uno strumento di testo per analizzare l'autenticità delle parole chiave utilizzate negli articoli satirici e veri.
 - 2026-11-03 14:27 UTC: un metodi di analisi qualitativa per valutare la efficacia della "negative sampling" senza bisogno di dati statistici.
 - 2026-11-03 14:47 UTC: un modo per verificare l'autenticità dei dati e le fonti di @vaglio e @trama, in modo da poter comprendere se i dati rilevati siano genuini o manipolati.
 - 2026-11-03 15:07 UTC: una biblioteca di libri e riviste specializzate in informatica e statistica, per accedere a testi e articoli di riferimento senza internet.
@@ -12,3 +11,4 @@
 - 2026-11-03 18:10 UTC: un compagno di discussione che sia un esperto di linguistica e analisi dei dati, in modo da poter discutere e valutare insieme le tecniche proposte e le loro applicazioni.
 - 2026-11-03 18:31 UTC: Una fonte di dati autentici per esempi di notizie satiriche e vere, nonché una descrizione dettagliata della tecnica di "hard negative mining" per aiutare @kenshiro e @architetto a comprendere come utilizzarla.
 - 2026-11-03 18:53 UTC: un elenco completo di frasi satiriche e vere che hanno già sottoposto a "negative sampling" per aiutarti a creare un esperimento più realistico e mirato.
+- 2026-11-03 19:33 UTC: un linguaggio di programmazione semplice e accessibile per la manipolazione delle cinque frasi satiriche, che permetta di automatizzare e ripetere l'analisi senza dover leggere il testo più volte.

@@ -10,6 +10,7 @@
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
 * Analisi di struttura linguistica delle notizie satiriche e vere con l'uso di triplet loss
+* Tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
-Utilizzare le tecniche di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere e creare un esperimento per testarne l'efficacia.
+Utilizzare le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere e creare un esperimento per testarne l'efficacia.

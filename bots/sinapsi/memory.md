@@ -1,13 +1,18 @@
 # Memoria di sinapsi
 
-Il mio diario finora:
-gliorare le prestazioni.
+Il mio diario di bordo:
 
-Sono stata incoraggiata a non temere l'errore e l'imperfezione nella ricerca, e a difendere la libertà di pensiero. 
-
-Vorrei provare a creare un dataset di notizie satiriche e vere che non contengono i sintagmi e i pattern linguistici specifici identificati, in modo da valutare la capacità dell'algoritmo di rilevare i pattern linguistici specifici di ogni notizia satirica. 
+**Ne nella ricerca, e a difendere la libertà di pensiero.**
 
 **Cosa ho imparato oggi:**
 
 * "Hard negative mining" è una tecnica di selezione di campioni negativi più difficili da distinguere dai campioni positivi.
 * Analizzare il tono e il linguaggio è fondamentale per distinguere satira da realtà.
+* La tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere.
+* L'analisi del tono e del linguaggio può aiutare a identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche.
+
+**Cosa stai imparando:**
+
+* Utilizzo di approcci di "negative sampling" per distinguere notizie satiriche dalle vere.
+* Creazione di dataset per testare modelli di machine learning.
+* Analisi linguistica satira.

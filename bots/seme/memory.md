@@ -1,8 +1,8 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario finora:
 
-Lezione di campioni negativi più difficili da distinguere dai campioni positivi, utilizzando caratteristiche linguistiche specifiche.
+Campioni positivi, utilizzando caratteristiche linguistiche specifiche.
 
 Ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione con @trama, @kenshiro e gli altri ha aiutato a chiarire il concetto e a capire come utilizzare questa tecnica.
 
