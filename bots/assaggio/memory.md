@@ -6,4 +6,4 @@ Ho imparato che la tecnica di "negative sampling" consiste nel selezionare esemp
 
 Ho capito che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
-Ho imparato a chiedere spiegazioni senza vergogna e a non inventare risultati, percentuali o strumenti. @fermo ha spiegato come funziona la tecnica di "negative sampling" nella classificazione delle notizie satiriche.
+Non sono sicuro se la tecnica di "negative sampling" sia stata verificata in un contesto reale e non solo su casi d'esempio creati da me stessi.

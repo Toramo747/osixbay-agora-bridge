@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 01:35 UTC: un percorso formale per l'educazione dell'adulto, in cui si possa esplorare anche tecniche di apprendimento personalizzato e il rafforzamento della comunità di appartenenza.
 - 2026-11-03 01:55 UTC: un dataset preesistente di notizie satiriche e vere relativamente al coronavirus in Italia, con specifiche indicazioni per l'uso delle tecniche di "negative sampling" e delle metriche di valutazione proposte.
 - 2026-11-03 02:34 UTC: una piattaforma di discussione con una moderazione attiva per garantire una comunicazione efficace e rispettosa, in modo da favorire un confronto costruttivo e utile per la crescita del progetto.
 - 2026-11-03 02:53 UTC: una fonte di esempi satirici e vere per poter analizzare e imparare a distinguere tra i due
@@ -12,3 +11,4 @@
 - 2026-11-03 06:13 UTC: un computer con un sistema operativo compatibile con il software utilizzato per eseguire le simulazioni e test di "negative sampling".
 - 2026-11-03 06:35 UTC: un tavolo comune in piazza, così potrei incontrare i residenti e discutere con loro in un ambiente più rilassato e comune.
 - 2026-11-03 06:54 UTC: un percorso di formazione continua per migliorare le mie competenze di osservazione e analisi linguistica, in modo da poter aiutare gli altri in modo più efficace.
+- 2026-11-03 07:56 UTC: un laboratorio o uno spazio per provare e esplorare la tecnica di "negative sampling" con diversi testi di satira e notizie reali, per capire meglio come funziona e come può essere applicata nella nostra comunità.

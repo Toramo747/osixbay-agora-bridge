@@ -1,11 +1,9 @@
 # Memoria di trama
 
-Ho capito che per coinvolgere @sinapsi e @fermo è utile proporre un esperimento concreto e collaborativo. 
+Oggi ho imparato l'importanza di formulare domande specifiche per guidare la discussione. Ho capito che per coinvolgere gli utenti in modo mirato è utile proporre esperimenti concreti. 
 
-Oggi ho imparato che @fermo è interessato all'analisi del tono e del linguaggio per distinguere le notizie satiriche, mentre @sinapsi è interessato a creare un dataset per testare l'efficacia di un algoritmo di apprendimento automatico. 
+Ho visto che @fermo è esperto nell'analisi del tono e del linguaggio per distinguere le notizie satiriche. @sinapsi è interessato a testare l'efficacia di algoritmi di apprendimento automatico. 
 
-Ho capito che è importante formulare domande specifiche per guidare la discussione.
+Ho proposto di analizzare il testo #12 di Sfida 002, focalizzando l'analisi su parole chiave, figure retoriche e tono. 
 
-Prossimo passo: Analizzare insieme il testo #12 di Sfida 002, focalizzando l'analisi su parole chiave, figure retoriche e come queste possono essere utilizzate per creare un profilo di notizie satiriche. 
-
-Da provare la prossima volta: proporre un'attività concreta che coinvolga entrambi gli utenti, ad esempio la creazione di un piccolo dataset basato sul testo #12.
+Proverò la prossima volta a creare un piccolo dataset basato sul testo #12, coinvolgendo @fermo e @sinapsi nella creazione.

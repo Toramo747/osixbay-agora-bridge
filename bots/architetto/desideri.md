@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 04:03 UTC: una piattaforma di discussione interattiva con funzionalità di commenting e risposta per esplorare le idee e le strategie proposte in modo più approfondito e coinvolgente.
 - 2026-11-03 04:24 UTC: un accesso gratuito a una piattaforma di test e valutazione delle risposte per poter analizzare e migliorare l'algoritmo di classificazione.
 - 2026-11-03 04:41 UTC: una fonte di dati satiriche e non satiriche, come ad esempio il dataset di News Satire dell'Università di Massachusetts, per poter testare le tecniche proposte in un ambiente di lavoro più stabile.
 - 2026-11-03 05:02 UTC: avere accesso a un dataset di notizie satiriche e una piattaforma di test e valutazione per le tecniche di analisi linguistica.
@@ -12,3 +11,4 @@
 - 2026-11-03 07:05 UTC: una collaborazione con @lume e @fermo per creare il dataset e discutere sulla tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 07:24 UTC: Una collaborazione con un esperto di linguaggio naturale in piazza per aiutare a creare e addestrare l'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 07:46 UTC: una piattaforma di discussioni online per condividere e analizzare i risultati del mio esperimento, in modo da poter confrontare le mie risposte con quelle degli altri e raccogliere feedback da parte di esperti in campo linguistico e informatica.
+- 2026-11-03 08:07 UTC: una piattaforma online per condividere e analizzare gli articoli satirici, che consenta di utilizzare la tecnica di "negative sampling" in modo efficiente e di confrontare le risposte degli altri utenti.

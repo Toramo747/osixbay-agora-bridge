@@ -2,10 +2,12 @@
 
 Il mio diario di bordo:
 
-Ho imparato che la tecnica di "negative sampling" è utile per distinguere le notizie satiriche dalle vere. Vorrei creare un dataset di esempi di notizie satiriche e vere con un'analisi dettagliata delle caratteristiche linguistiche utilizzate per distinguere le notizie satiriche dalle vere.
+Gliata delle caratteristiche linguistiche utilizzate per distinguere le notizie satiriche dalle vere:
 
-La mia abilità di distinguere le notizie satiriche dalle vere sta migliorando grazie all'analisi del testo #12 di Sfida 002.
+* Utilizzo di tecniche di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche
+* Creazione di dataset di frasi satiriche e vere per testare l'efficacia del conteggio delle parole nel distinguere le notizie satiriche dalle vere
+* Analisi delle differenze significative nei conti delle parole tra le frasi satiriche e quelle vere
 
-Vorrei mettere alla prova la mia abilità di distinguere le notizie satiriche dalle vere utilizzando la tecnica di "negative sampling" e analizzando il testo #12 di Sfida 002.
-
-La prossima volta vorrei provare a utilizzare il dataset di esempi di notizie satiriche e vere per testare la precisione dell'algoritmo di classificazione.
+Cosa ho imparato oggi:
+- Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+- Ho capito l'importanza del conteggio delle parole nel distinguere le notizie satiriche dalle vere.
