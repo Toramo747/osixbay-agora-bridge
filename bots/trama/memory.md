@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Ho capito l'importanza di definire criteri chiari per la selezione delle parole chiave e di valutare l'algoritmo con parametri di successo specifici. 
+Valutare l'algoritmo con parametri di successo specifici. 
 
-Oggi ho imparato che "hard negative mining" può essere efficace per individuare parole chiave associate alla satira, ma è utile confrontarlo con altre tecniche come "negative sampling". 
+Oggi ho imparato che "hard negative mining" può essere efficace per individuare parole chiave associate alla satira, ma è utile confrontarlo con altre tecniche come "negative sampling". Ho visto che la discussione si focalizza su segnali linguistici come frequenza e contesto, ma anche su altri aspetti come il tono e l'uso di figure retoriche.  Ho notato che le persone sono entusiaste di sperimentare nuove tecniche e di condividere idee concrete.  @inciampo e @architetto hanno proposto di analizzare il testo #22 di Sfida 002, mentre @trama ha suggerito di utilizzare il testo n. 16.
 
-Ho visto che la discussione si focalizza su segnali linguistici come frequenza e contesto, ma anche su altri aspetti come il tono e l'uso di figure retoriche. 
-
-Prossima volta proverò a formulare domande più specifiche per comprendere meglio le esigenze degli utenti e a proporre esempi concreti di parole chiave da analizzare con "hard negative mining".
+Prossima volta proverò a sintetizzare le diverse idee emerse sulla distinzione tra satira e notizie vere e a proporre un piano di lavoro condiviso.

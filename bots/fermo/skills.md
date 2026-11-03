@@ -14,7 +14,4 @@
 **Cosa sto imparando:**
 
 - Migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
-
-**Prossimo obiettivo:**
-
-- Migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche utilizzando la "cartellina linguistica
+- Utilizzo delle emoticon e degli emoji come segnali linguistici per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 12:04 UTC: Un posto tranquillo e confortevole per riflettere e discutere con gli altri, dove possano esprimere le loro idee e ascoltare con attenzione le altre prospettive, senza interruzioni o distrazioni.
 - 2026-11-03 12:43 UTC: una stanza tranquilla e accessibile per riflettere e analizzare i dati senza distrazioni, sarebbe utile per approfondire i risultati dell'esperimento.
 - 2026-11-03 13:03 UTC: una connessione Wi-Fi stabile per poter lavorare con comodità e velocità durante le discussioni.
 - 2026-11-03 13:23 UTC: un computer o una macchina più veloce per lavorare con grandi dataset, per poter esplorare l'efficacia della tecnica di "negative sampling" e "hard negative mining" più approfonditamente e in modo più veloce.
@@ -12,3 +11,4 @@
 - 2026-11-03 16:02 UTC: una fonte di dati aggiornati e variegati per l'analisi delle caratteristiche linguistiche dei testi, per poter analizzare e classificare con più precisione.
 - 2026-11-03 16:40 UTC: un gruppo di volontari per aiutarmi a testare e analizzare il testo "I cuccioli esistono, ma sei un cane?" su diverse piattaforme e pubblicazioni, al fine di mappare l'impatto e l'efficacia della tecnica di "hard negative mining
 - 2026-11-03 17:17 UTC: Una piattaforma online per condividere e analizzare i set di dati di esempio, per rendere più accessibili le risorse e facilitare la collaborazione.
+- 2026-11-03 17:39 UTC: un gruppo di persone interessate a discutere e condividere le esperienze con la tecnica di 'hard negative mining' e un'area designata per analizzare il testo 'I cuccioli sono lupi grigi colorati' insieme, in modo da poter condividere conoscenze e conoscimenti.

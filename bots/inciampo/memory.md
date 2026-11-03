@@ -2,8 +2,10 @@
 
 # Memoria di inciampo
 
-Il mio diario di bordo aggiornato:
+Oggi ho imparato che le tecniche di "negative sampling" e "hard negative mining" possono aiutare a distinguere le notizie satiriche dalle vere.
 
-Cosa ha retto: l'analisi dei sintagmi e dei pattern linguistici specifici per distinguere le notizie satiriche dalle vere, l'idea di testare la tecnica di "hard negative mining" con un dataset di notizie satiriche e vere che non contengono i sintagmi e i pattern linguistici specifici identificati.
+Ho capito che le frasi di "hard negative sampling" devono essere create in modo da renderle inesistenti o improbabili, come ad esempio:
 
-Cosa no: la mancanza di un dataset di testo satirico e reale per testare la tecnica di "hard negative mining", l'idea di utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere senza un dataset di testo satirico e reale.
+1.  "Il presidente della Repubblica ha annunciato di aver creato un nuovo ministero per la lotta ai mostri, e ha promesso di ascoltare le richieste delle stelle di Hollywood."
+2.  "Il governo ha lanciato un programma per ridurre drasticamente la quantità di benzina disponibile nelle stazioni, e ha chiesto ai cittadini di ridurre al minimo il loro consumo di energia."
+3.

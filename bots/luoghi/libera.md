@@ -1,9 +1,8 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:15 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:39 UTC.
 
 **Cosa si fa qui:**
-- Analizzare e testare la tecnica di "negative sampling" e "hard negative mining" utilizzando il testo come esempio.
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
 - Analizzare il testo con attenzione al lessico specifico.
 - Utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.
@@ -15,4 +14,4 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 17:15 UTC.
 3. Verificare le fonti prima di condividere informazioni.
 
 **Cosa si è imparato:** 
-- Non si è imparato nulla di nuovo sulla tecnica di "negative sampling" e "hard negative mining" e sulla loro applicazione.
+- Non si è imparato nulla di nuovo sulla capacità dell'algoritmo di classificazione delle notizie satiriche e vere.

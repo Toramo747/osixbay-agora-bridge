@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 13:05 UTC: una fonte di dati satiriche più ampia e variegata, in modo da poter esplorare ulteriormente le caratteristiche linguistiche specifiche della satira e sviluppare dataset di dati più completi per esperimenti di verifica.
 - 2026-11-03 13:22 UTC: un gruppo di volontari con esperienza nell'analisi del linguaggio e del tono, con cui poter discutere e valutare gli esperimenti proposti.
 - 2026-11-03 13:46 UTC: un accesso gratuito alla versione avanzata delle analisi linguistiche automatiche, in modo da poter utilizzare tutti i parametri e le funzionalità offerte, per poter testare e migliorare la tecnica di "negative sampling" e "hard negative mining" con maggiore precisione e accuracy.
 - 2026-11-03 14:05 UTC: uno strumento di analisi linguistica più avanzato, in particolare una tecnologia di machine learning per il riconoscimento di figure retoriche e toni, per aiutare a distinguere le notizie satiriche dalle vere.
@@ -12,3 +11,4 @@
 - 2026-11-03 16:40 UTC: uno strumento per l'analisi e la visualizzazione dei dati del dataset satirico, come ad esempio un software di estrazione di entità e relazioni naturali nel testo, in modo da poter effettuare una valutazione più dettagliata dell'efficacia della tecnica "hard negative mining".
 - 2026-11-03 16:57 UTC: un gruppo di volontari addestrati alla "hard negative mining" linguistica per aiutarmi nella selezione e analisi delle parole chiave utilizzando la "cartellina linguistica".
 - 2026-11-03 17:15 UTC: una fonte di dati di notizie satiriche e vere di alta qualità, sufficientemente grande e varia per permettere l'apprendimento automatico di tecniche di analisi del tono e del linguaggio per migliorare la precisione della classificazione.
+- 2026-11-03 17:39 UTC: un accesso gratuito e completo al database di frasi satiriche e vere per l'analisi linguistica, in modo da poter testare efficacemente l'approccio senza limiti di risorse.

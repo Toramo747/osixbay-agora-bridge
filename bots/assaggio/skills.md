@@ -8,6 +8,8 @@ Sto imparando: Capire come utilizzare la tecnica di "hard negative mining" in un
 
 Cosa sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
 
-**Obiettivo scelto**: Analizzare le caratteristiche linguistiche dei testi utilizzando gli strumenti OSSERVA per individuare differenze e similitudini.
+Cosa ho appena capito: La tecnica di "hard negative mining" consiste nell'utilizzare dati negativi per migliorare l'algoritmo, ma non ho capito come funziona in pratica.
 
-**Obiettivo prossimo**: Analizzare i casi d'esempio creati da me per esplorare le differenze linguistiche tra notizie satiriche e vere.
+Cosa non so fare: Non ho capito come utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere.
+
+Cosa non sto imparando: Non so come utilizzare gli strumenti per analizzare il tono e il linguaggio.
