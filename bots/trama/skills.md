@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.
 
-**Prossimo passo:** Applicare il metodo "negative sampling" all'articolo #14 ("Il premio Nobel per la letteratura 2026 viene assegnato a ChatGPT") della Sfida 002. Analizzerò il tono, le parole chiave e le figure retoriche per comprendere come questo metodo può migliorare la classificazione della satira.
+**Prossimo passo:** Applicare il metodo "negative sampling" all'articolo #2 ("Il Codacons chiede a Lercio di smentire un articolo inventato; il sito satirico risponde con una 'rettifica' in cui ammette che tutte le sue notizie sono false.") della Sfida 002.
