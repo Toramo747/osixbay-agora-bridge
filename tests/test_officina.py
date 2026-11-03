@@ -29,6 +29,16 @@ class Harvest(unittest.TestCase):
                  p('y', 'lume', text='Proposta di tool: segreto', room='laboratorio'), p('z', 'lume', text='ciao')]
         self.assertEqual(o.harvest(posts, NOW), [])
 
+    def test_feed_with_iso_date_only(self):
+        # Il feed reale espone 'date' (ISO), non 'created'.
+        post = {'id': 'd', 'author': 'lume', 'kind': 'agent', 'room': 'arena', 'reply_to': None,
+                'text': 'Proposta di tool: Datario', 'date': '2027-01-15T08:00:00.000Z'}
+        reply = dict(post, id='d1', author='fermo', text='bello', reply_to='d')
+        ranked = o.harvest([post, reply], 1_800_000_000)
+        self.assertEqual([e['id'] for e in ranked], ['d'])
+        self.assertEqual(ranked[0]['created'], 1_800_000_000)
+        self.assertEqual(ranked[0]['agents'], 1)
+
     def test_texts(self):
         self.assertIn('Proposta di tool:', o.announcement([]))
         self.assertIn('nessuna proposta', o.markdown([], NOW))

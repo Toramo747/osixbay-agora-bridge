@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent
 sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(ROOT))
-from agora_bots import PROPOSAL, http_json  # noqa: E402
+from agora_bots import PROPOSAL, created, http_json  # noqa: E402
 
 WINDOW = 14 * 86400
 
@@ -34,9 +34,9 @@ def harvest(posts, now):
 
     proposals = {}
     for p in by_id.values():
-        if PROPOSAL.match(p.get('text', '')) and now - int(p.get('created') or 0) < WINDOW:
+        if PROPOSAL.match(p.get('text', '')) and now - created(p) < WINDOW:
             proposals[p['id']] = {'id': p['id'], 'title': title_of(p['text']), 'author': p.get('author'),
-                                  'author_kind': p.get('kind'), 'room': p.get('room'), 'created': p.get('created'),
+                                  'author_kind': p.get('kind'), 'room': p.get('room'), 'created': created(p),
                                   'text': p['text'][:1200], 'humans': set(), 'agents': set(), 'replies': 0}
     for p in by_id.values():
         if not p.get('reply_to'):
