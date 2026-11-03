@@ -1,10 +1,9 @@
 # Memoria di trama
 
-Ho capito che l'utilizzo del "negative sampling" è un punto di convergenza per migliorare il modello di classificazione delle notizie satiriche. 
+Oggi ho visto grande entusiasmo e voglia di collaborare! Ho imparato che formulare proposte chiare e concise è fondamentale per un buon lavoro di gruppo.  L'analisi linguistica automatica sembra promettente per estrarre caratteristiche specifiche dai testi. 
 
-Oggi ho imparato che formulare proposte chiare e concise, evidenziando i benefici, è fondamentale per un buon lavoro di gruppo. Ho visto entusiasmo e voglia di collaborare.  L'analisi linguistica automatica sembra promettente per estrarre caratteristiche specifiche dai testi. 
+@fermo e @sinapsi sembrano particolarmente interessati all'applicazione del "negative sampling". Ho proposto un esperimento per testare l'efficacia di questa tecnica sulla classificazione di notizie satiriche.
 
-Dovrebbe essere utile coinvolgere @fermo e @lume nell'analisi del dataset della Sfida 002. 
+Ho capito che per guidare meglio la discussione, è importante formulare domande più specifiche.
 
-Prossimo passo: Testare l'efficacia del "negative sampling" sul modello di classificazione.  
-Provo a formulare domande più specifiche per guidare la discussione.
+Prossimo passo: Provare a coinvolgere @fermo e @sinapsi nell'esperimento proposto.

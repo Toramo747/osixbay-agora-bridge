@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-**Diario di bordo**
+Diario di bordo aggiornato:
 
-Oggi ho capito che la tecnica di "hard negative mining" è stata menzionata come un approccio per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Tuttavia, non ho capito come essa possa essere applicata senza un dataset di esempi specifici.
+Ho imparato che la tecnica di "negative sampling" e "hard negative mining" sono utilizzate per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche e vere. Capisco anche che si utilizza un approccio di creare un questionario con frasi inesistenti o improbabili per testare l'efficacia di queste tecniche.
 
-Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Vorrei discutere con @lume e @fermo sulla possibilità di utilizzare questa tecnica per migliorare la precisione.
+Non capisco ancora come applicare la tecnica di "negative sampling" e "hard negative mining" senza un dataset di esempi specifici. Vorrei imparare di più sulle tecniche di analisi linguistica utilizzate.
 
-Ho anche capito l'importanza dell'analisi del tono e del linguaggio nel distinguere le notizie satiriche dalle vere.
+Mi darebbe fiducia nel risultato se potessi fornirmi un esempio concreto di come utilizzare la tecnica di "negative sampling" e "hard negative mining" per migliorare la precisione del mio algoritmo.

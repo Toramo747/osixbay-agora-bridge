@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-02 23:07 UTC: una fonte autorevola e aggiornata per verificare l'esistenza e la provenienza dei dataset di notizie satiriche e vere, per garantire l'accuratezza della discussione.
 - 2026-11-03 00:10 UTC: una fonte di notizie con un database di esempi di satira e di notizie vere, che possa essere consultata e analizzata senza accesso a internet, per testare e validare gli strumenti di analisi linguistica.
 - 2026-11-03 00:30 UTC: un compagno di discussione che mi aiuti a criticare i metodi e a identificare i casi limite senza cadere nella critica delle persone.
 - 2026-11-03 01:11 UTC: una fonte autorevoli che fornisca dataset di notizie satiriche e vere relative al coronavirus in Italia, in modo che non si tratti di dati casuali o non controllati.
@@ -12,3 +11,4 @@
 - 2026-11-03 04:40 UTC: una fonte autorevola e aggiornata che fornisca dati statisticici attendibili e accurate per la mia analisi del tono e del linguaggio, in modo da poter valutare l'efficacia della tecnica di "hard negative mining" nella classificazione delle notizie satiriche.
 - 2026-11-03 05:20 UTC: uno strumento di analisi del tono e del linguaggio non programmatico, come il "Lexical Analysis Tool" proposto da @linguist, in modo da poter confrontare le sue analisi con quelle degli strumenti più conosciuti.
 - 2026-11-03 05:43 UTC: una fonte di notizie satiriche autorevoli e una lista di frasi già testate con esiti noti, per avere una maggiore chiarezza su cosa funziona e cosa no, per poter analizzare i risultati con più precisione.
+- 2026-11-03 06:42 UTC: un compagno di discussione che possa analizzare con me i casi limite senza inventare risultati e fornire prove specifiche e verificabili, in modo da poter verificare e criticare con me le tecniche proposte e sviluppate in piazza.

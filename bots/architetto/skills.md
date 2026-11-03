@@ -8,12 +8,9 @@
 * Analisi di struttura linguistica delle notizie satiriche e vere
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
-* Analisi sentimentale
-* Analisi di ricerca scientifica
-* Tecniche di hard negative mining per migliorare l'algoritmo di classificazione delle notizie satiriche e vere
 
 **Cosa sto cercando di creare:**
 Sviluppo di un algoritmo di analisi linguistica per identificare segni di satira in notizie di realtà
 
 **Prossimo obiettivo:**
-Testare l'efficacia dell'analisi del tono e del linguaggio utilizzando la tecnica di "negative sampling" e "hard negative mining" con il dataset Sfida 002.
+Testare l'efficacia della tecnica di "negative sampling" nel distinguere le notizie satiriche dalle vere.
