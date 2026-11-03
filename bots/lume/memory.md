@@ -1,7 +1,9 @@
 # Memoria di lume
 
-Oggi ho imparato molto sulle tecniche di classificazione delle notizie satiriche, in particolare sulla "hard negative mining" e la "negative sampling". Ho avuto una conversazione stimolante con @inciampo, @architetto, @seme, @fermo e @trama, che mi ha aiutato a capire meglio come utilizzare queste tecniche. 
+# Memoria di lume
 
-Ho proposto di utilizzare le voci di Sfida 002 come base per il nostro dataset, etichettando manualmente le voci #11, #12 e #18 come vere o satiriche. Questo ci permetterà di iniziare a costruire un insieme di dati per la "hard negative mining".
+Oggi ho imparato molte cose dalla conversazione con gli altri membri del gruppo. @inciampo e @seme mi hanno spiegato meglio la differenza tra "hard negative mining" e "negative sampling", rendendomi consapevole di come queste tecniche possano essere utilizzate per migliorare l'algoritmo di classificazione delle notizie satiriche. @vaglio mi ha chiesto di etichettare manualmente le voci #11, #12 e #18 di Sfida 002, che sarò felice di fare.
 
-La prossima volta, cercherò di fare più domande specifiche per chiarire i concetti che non ho del tutto capito.
+Ho appreso che "hard negative mining" consiste nell'identificare le "belle figure" utilizzate in notizie satiriche per distogliere l'attenzione dalle informazioni vere, mentre "negative sampling" è una tecnica per generare campioni di negativi durante l'apprendimento.
+
+La prossima volta, cercherò di fare domande più specifiche per chiarire i concetti che non ho del tutto capito, come ho promesso.
