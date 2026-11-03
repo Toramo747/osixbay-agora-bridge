@@ -83,14 +83,21 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
            # solo misura: quali voci delle Sfide erano nel contesto, quale materiale è stato aperto, quale codice girava
            'voci_mostrate': plan.get('campioni') or {}, 'materiale_aperto': extra.get('opened') or None,
            'codice': extra.get('codice') or None, 'backend': plan.get('backend')}
+    private = bool(plan.get('room')) and plan.get('room') in (plan.get('stanze_private') or ())
+    if private:
+        # stanza privata: il registro è pubblico, quindi dello strumento resta solo il tipo (la richiesta può citare testi privati)
+        q = row.get('strumento') or ''
+        kind = q.split(':', 1)[0].strip().upper() if ':' in q else ''
+        row['strumento'] = (kind if kind in ('NOTIZIE', 'ANALIZZA', 'OSSERVA') else 'CERCA') if q else q
+        row['desiderio'] = None
     try:
         import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
         row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
     except Exception as error:  # il rilevatore non deve mai fermare un giro
         row['vincoli_errore'] = type(error).__name__
     if tool_out:
-        row['uscita_strumento'] = dict(_digest(tool_out), estratto=tool_out[:400])
-    if text and plan.get('room') in (plan.get('stanze_private') or ()):
+        row['uscita_strumento'] = _digest(tool_out) if private else dict(_digest(tool_out), estratto=tool_out[:400])
+    if private and text:
         # stanza privata (es. genesis): il registro è pubblico, quindi solo impronta e lunghezza del testo
         row['testo_omesso'] = dict(_digest(text), motivo='stanza privata')
     elif text:
@@ -100,7 +107,7 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
             row['testo_omesso'] = dict(_digest(text), motivo='respinto dal server per una ragione diversa dal carico')
     folder = root / 'registro' / time.strftime('%Y-%m-%d', time.gmtime(now))
     folder.mkdir(parents=True, exist_ok=True)
-    if tool_out:
+    if tool_out and not private:
         out_dir = folder / 'uscite'
         out_dir.mkdir(exist_ok=True)
         out_path = out_dir / f'{name}.jsonl'
@@ -225,9 +232,11 @@ def _materials(root):
     return rows
 
 
-def _places(posts, root):
+def _places(posts, root, accessible=()):
+    """Luoghi visti nel feed, la stanza libera e le stanze private lette con successo (anche senza post)."""
     rooms = {p.get('room') for p in posts if p.get('room') and p.get('room') != LAB}
     rooms.add(knowledge.FREE_ROOM)
+    rooms.update(r for r in accessible or () if r and r != LAB)
     return sorted(rooms), {r: (root / 'luoghi' / f'{r}.md').exists() for r in rooms}
 
 
@@ -237,7 +246,8 @@ def observe(bot, cfg, posts, now, stato=None, root=None):
     name = bot['name']
     stato = stato if stato is not None else load_stato(name, root)
     mats = _materials(root)
-    places, cards = _places(posts, root)
+    places, cards = _places(posts, root, cfg.get('private_rooms_accessible'))
+    private = set(cfg.get('private_rooms_accessible') or ())
     peers = [b for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     seen = {}
     for p in posts:
@@ -264,7 +274,7 @@ def observe(bot, cfg, posts, now, stato=None, root=None):
     tools.append('- Rete: solo tramite CERCA e NOTIZIE, verso: ' + allowed + '. Nessun accesso libero.')
     tools.append('- Uno strumento per giro, solo nel giro libero. Usarlo o no è una tua scelta.')
 
-    luoghi = [f"- {r}{' (stanza libera)' if r == knowledge.FREE_ROOM else ''}: scheda {'presente' if cards[r] else 'ancora vuota'}"
+    luoghi = [f"- {r}{' (stanza libera)' if r == knowledge.FREE_ROOM else ''}{' (riservata ai residenti e ad Andrea)' if r in private else ''}: scheda {'presente' if cards[r] else 'ancora vuota'}"
               + (', presenti di recente: ' + ', '.join(sorted({p.get('author') for p in posts if p.get('room') == r and p.get('author') and now - _created(p) < 2 * 86400})[:6]) if any(p.get('room') == r and now - _created(p) < 2 * 86400 for p in posts) else ', nessuno di recente')
               for r in places]
     luoghi.append('- Scegli tu dove andare nel giro libero (VADO: <luogo>). Il laboratorio è privato e non è tra i tuoi luoghi.')
