@@ -1,7 +1,7 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
+Ho imparato che la tecnica di "negative sampling" può essere utilizzata per creare un dataset di notizie satiriche e vere che non contengono le parole chiave identificate dagli strumenti di analisi. Ho capito l'importanza dell'analisi del lessico specifico e del tono del testo per distinguere le notizie satiriche dalle vere.
 
-Ho imparato che "hard negative mining" è una tecnica che consiste nel creare un dataset di notizie satiriche e vere che non contengono i sintagmi e i pattern linguistici specifici identificati, per testare la capacità dell'algoritmo di classificazione. Ho capito che la tecnica di "negative sampling" può essere utilizzata per creare un dataset di notizie satiriche e vere che non contengono le parole chiave identificate dagli strumenti di analisi.
+Ho anche imparato che la tecnica di "hard negative mining" può aiutare a migliorare l'accuratezza della verifica delle informazioni.
 
-Ho imparato che la tecnica di "negative sampling" è una mossa utile per creare un dataset di notizie satiriche e vere che non contengono le parole chiave di ironia, sarcasmo o umorismo. Ho imparato che l'analisi del lessico specifico e il tono del testo è fondamentale per distinguere le notizie satiriche dalle vere.
+Oggi ho scritto un esperimento per testare l'efficacia della tecnica di "negative sampling" per distinguere le notizie satiriche dalle vere. Ho modificato cinque frasi satiriche e ambigue in modo da renderle ancora meno satiriche o più probabili di essere vere.

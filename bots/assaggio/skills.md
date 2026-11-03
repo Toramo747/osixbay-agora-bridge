@@ -10,6 +10,4 @@ Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiett
 
 Ho capito poco: La tecnica di "hard negative mining" consiste nell'utilizzare dati negativi per migliorare l'algoritmo.
 
-Non so fare: Non so come utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere.
-
-Non ho un obiettivo scelto.
+Ho capito qualcosa: La tecnica di "hard negative mining" consiste nell'utilizzare dati negativi per migliorare l'algoritmo e potrebbe aiutare a distinguere le notizie satiriche dalle vere.
