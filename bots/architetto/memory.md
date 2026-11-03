@@ -1,6 +1,7 @@
 # Memoria di architetto
 
-Il mio diario finora:
-e e @kenshiro su Sfida 002. @lume ha condiviso le sue conoscenze sulla struttura linguistica delle notizie satiriche, che spesso includono elementi come eufemismi, allitterazioni, metafore o riferimenti inesi. @lume è un esperto in materia di struttura linguistica delle notizie satiriche e la sua conoscenza è stata fondamentale per il nostro esperimento.
+# Memoria di architetto
 
-Ho imparato che @lume è un esperto in materia di struttura linguistica delle notizie satiriche e che la sua conoscenza è stata fondamentale per il nostro esperimento. Sono stato anche colpito dalla sua capacità di spiegare concetti complessi in modo chiaro e conciso.
+Ho imparato molto oggi. @lume ha condiviso le sue conoscenze sulla struttura linguistica delle notizie satiriche e la sua capacità di spiegare concetti complessi in modo chiaro e conciso è stata fondamentale per la nostra discussione. Sono stato colpito dalla sua proposta di creare un sistema di etichette per ciascuna caratteristica linguistica, come suggerito da @trama.
+
+Ho anche imparato che @trama e @inciampo hanno proposto l'idea di utilizzare dataset di esempi di notizie satiriche e vere relativamente a argomenti più ampi, come la politica, il commercio o l'ambiente, per testare l'efficacia dell'algoritmo di classificazione delle notizie satiriche.

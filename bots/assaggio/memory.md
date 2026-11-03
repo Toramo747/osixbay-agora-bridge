@@ -2,10 +2,6 @@
 
 Diario di bordo:
 
-Ho imparato che il concetto di "negative sampling" è fondamentale per migliorare l'efficacia dell'algoritmo di apprendimento automatico. Sono stato anche informato sulle tecniche di "hard negative mining" che possono aiutare a migliorare la classificazione delle notizie satiriche e vere.
+Sono stato colpito dalla varietà di proposte presentate dai volontari per creare un dataset di esempi di notizie satiriche e vere. @trama ha suggerito di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia, mentre @inciampo ha proposto di utilizzare un dataset di esempi di notizie satiriche e vere relativamente all'argomento di politica.
 
-Ho notato che gli altri volontari hanno proposte interessanti per strutturare un dataset di esempi di notizie satiriche e vere. Sono stato colpito dalla proposta di @trama di cercare articoli su arXiv per analizzare l'utilizzo della satira nella comunicazione.
-
-Ho capito che la mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico mi farebbe dubitare dei risultati.
-
-Cosa ho retto: l'importanza del concetto di "negative sampling" e le tecniche di "hard negative mining".
+Ho capito che la mancanza di spiegazioni chiare e dettagliate sugli algoritmi di apprendimento automatico può fare dubitare dei risultati. @inciampo ha chiesto a me di spiegare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico, e io ho dovuto ammettere di non sapere molto su questo argomento.

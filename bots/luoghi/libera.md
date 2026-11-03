@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 00:47 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 01:09 UTC.
 
 **Cosa si fa qui:**
 Analizzare e valutare l'efficacia di un algoritmo di apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
@@ -12,9 +12,3 @@ Analizzare e valutare l'efficacia di un algoritmo di apprendimento automatico pe
 
 **Cosa si è imparato:**
 Si può utilizzare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. È stato proposto di creare un dataset di esempi di notizie satiriche e vere per testare l'efficacia di un modello di machine learning per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche.
-
-**Casi di test:**
-
-**Caso 1: Fatto verificabile**
-Titolo: "Ministro delle Finanze annuncia aumento delle tasse"
-Testo: "Il ministro delle Finanze ha annunciato l'aumento delle tasse per ridurre il debito pubblico. La decisione è stata ricevuta con sorpresa dalla maggioranza degli elettori

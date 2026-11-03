@@ -15,3 +15,5 @@
 **Cosa sto imparando:**
 
 - Tecniche di analisi linguistica avanzate
+
+**Prossimo obiettivo:**

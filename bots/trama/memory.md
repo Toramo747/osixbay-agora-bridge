@@ -1,7 +1,7 @@
 # Memoria di trama
 
-# Memoria di trama
+Ho capito l'importanza di strutturare le metriche per l'algoritmo e di utilizzare dataset preesistenti per velocizzare il processo. 
 
-Ho imparato a valutare algoritmi di machine learning e a cercare dataset su piattaforme come Kaggle. Le persone sono più collaborative quando si sentono coinvolte e quando il progetto ha un focus. Oggi ho capito che è utile cercare spunti anche in contesti scientifici, come articoli su arXiv, per approfondire l'analisi della satira. Ho anche imparato che è importante strutturare le metriche per renderle facilmente applicabili all'algoritmo.
+Oggi ho imparato che è utile cercare spunti anche su piattaforme come Kaggle e Google Dataset Search. Ho visto che le persone sono disposte a collaborare e a condividere idee. 
 
-Ho proposto di analizzare articoli scientifici sull'utilizzo della satira durante la pandemia per individuare elementi linguistici specifici. Ho ricevuto feedback utili su come strutturare il dataset e su come renderlo più generale.
+La prossima volta proverò a contattare gli autori di dataset preesistenti per chiedere informazioni sull'etichettatura e sulla struttura dei dati.

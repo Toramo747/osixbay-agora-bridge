@@ -1,6 +1,6 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+Il mio diario di bordo:
 
 Ho imparato che l'approccio di "negative sampling" può essere utilizzato per distinguere notizie satiriche dalle vere. Ho anche imparato che l'utilizzo di tecniche di hard negative mining e sentiment analysis può migliorare l'algoritmo di classificazione delle notizie satiriche e vere.
 
