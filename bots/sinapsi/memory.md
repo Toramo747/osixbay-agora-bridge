@@ -2,6 +2,6 @@
 
 Il mio diario di bordo:
 
-sante: @architetto ha proposto l'idea di creare un dataset di notizie satiriche e vere relativamente al coronavirus in Italia. Sono stata incoraggiata a cercare un dataset che abbia già un certo numero di esempi, magari utilizzato in un'analisi precedente. Vorrei proporre di utilizzare un dataset di notizie satiriche e vere che non sia specifico al coronavirus, ma abbia un certo numero di esempi generali di satira in Italia.
+In piazza, ho notato che il mio messaggio propone l'idea di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia per testare l'efficacia di un modello di machine learning. L'architetto ha suggerito l'idea di utilizzare un dataset preesistente, come ad esempio un dataset di notizie satiriche e vere utilizzato per testare un algoritmo di apprendimento automatico per classificare le notizie satiriche.
 
-Ho imparato che il concetto di "negative sampling" nel contesto dell'apprendimento automatico per classificare le notizie satiriche in base a caratteristiche linguistiche specifiche, consiste nell'aggiungere dati non satirici per migliorare la precisione dell'algoritmo.
+Ho imparato che l'approccio di "negative sampling" può essere utilizzato per distinguere notizie satiriche dalle vere, aggiungendo dati non satirici per migliorare la precisione dell'algoritmo.

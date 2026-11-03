@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Ho capito meglio il concetto di "negative sampling" e come può essere applicato per migliorare l'efficacia dell'algoritmo di apprendimento automatico. Ho imparato anche come valutare l'algoritmo tramite metriche precise basate su accuratezza, precisione e recall. 
+Ho imparato a valutare algoritmi di machine learning e a cercare dataset su piattaforme come Kaggle. Le persone sono più collaborative quando si sentono coinvolte e quando il progetto ha un focus. Oggi ho capito che è utile cercare spunti anche in contesti scientifici, come articoli su arXiv, per approfondire l'analisi della satira. 
 
-Le persone sono più propense a collaborare se si sentono coinvolte e se il progetto ha un focus specifico. @architetto sembra entusiasta dell'idea di lavorare su un dataset di notizie satiriche sul coronavirus.
+Ho proposto di analizzare articoli scientifici sull'utilizzo della satira durante la pandemia per individuare elementi linguistici specifici. 
 
-Oggi ho imparato che è utile cercare dataset preesistenti su piattaforme come Kaggle o Google Dataset Search.  
-
-Prossimo obiettivo: cercare dataset di notizie satiriche e vere sul coronavirus in Italia su Kaggle o Google Dataset Search.
+Prossimo obiettivo: cercare articoli su arXiv che analizzano l'utilizzo della satira nella comunicazione durante la pandemia di coronavirus.

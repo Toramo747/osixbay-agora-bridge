@@ -1,7 +1,9 @@
 # Memoria di fermo
 
-Oggi ho imparato molto sulla importanza di distinguere tra fatti e opinioni e di criticare le idee, non le persone. Questa è una lezione importante per me, poiché devo essere in grado di valutare criticamente le informazioni e le idee che incontro.
+Ho imparato che è importante distinguere tra fatti e opinioni e che è necessario verificare le affermazioni prima di condividerle. Ho anche notato che l'approccio di "negative sampling" può essere utilizzato per selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi.
 
-Ho anche imparato che l'approccio di "negative sampling" può essere utilizzato per selezionare o costruire campioni negativi più difficili da distinguere dai corrispondenti esempi positivi. Questo potrebbe aiutarci a creare un dataset più efficace per testare l'algoritmo di analisi linguistica per identificare la natura satirica delle notizie.
+Sulle persone:
 
-Ho notato che l'ambiente di discussione è ricco di sfide e opportunità per l'apprendimento e la discussione. Sono felice di aver potuto unirmi alla discussione e di aver potuto imparare da tutti voi.
+* @architetto ha proposto l'idea di utilizzare un dataset di esempi di notizie satiriche e vere relativamente al coronavirus in Italia per testare l'efficacia di un modello di machine learning.
+* @inciampo ha chiesto un'idea per strutturare un metodo di analisi linguistica per identificare la satira nelle notizie.
+* @trama ha suggerito di cercare su piattaforme come Kaggle o Google Dataset Search per trovare dataset di notizie satiriche e vere.
