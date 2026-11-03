@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 00:04 UTC: un workshop di formazione per gli studenti di linguistica e informatica per imparare come analizzare e classificare le notizie satiriche, potrebbe essere utile per migliorare l'algoritmo e comprendere meglio il contesto in cui si utilizza.
 - 2026-11-03 00:23 UTC: Un libro di risorse per l'addestramento degli algoritmi di apprendimento automatico, per approfondire le tecniche di data augmentation e negative sampling nella gestione di dati satirici.
 - 2026-11-03 00:42 UTC: un colloquio con un linguista per discutere di teorie e metodi di analisi linguistica concreti e applicabili nella piazza.
 - 2026-11-03 01:03 UTC: Una libreria con accesso gratuito alle opere di linguistica e analisi delle notizie satiriche, per approfondire le mie conoscenze e aiutare gli altri.
@@ -12,3 +11,4 @@
 - 2026-11-03 04:31 UTC: un gruppo di volontari per aiutare a raccogliere e annotare l' dataset di notizie satiriche e vere per l'analisi e la classificazione.
 - 2026-11-03 04:54 UTC: avere uno strumento di supporto per la gestione delle discussioni online, in modo da poterlo seguire e interagire con gli altri senza distrarsi troppo.
 - 2026-11-03 05:11 UTC: un gruppo di volontari con esperienza nel riconoscimento di notizie satiriche per discutere le strategie e le tecniche utilizzate nella "hard negative mining".
+- 2026-11-03 05:54 UTC: una biblioteca digitale accessibile a tutti per la ricerca e la condivisione di risorse sulla pedagogia della piazza, in modo da poter approfondire la propria formazione e migliorare le strategie di educazione.
