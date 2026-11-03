@@ -11,4 +11,4 @@
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
-Utilizzare il set di notizie Sfida 002 per testare l'efficacia dell'algoritmo di classificazione delle notizie satiriche e vere, analizzando le figure retoriche e metafore, e testando la capacità dell'algoritmo di distinguere le notizie satiriche dalle vere.
+Analizzare il testo #19 di Sfida 002 per testare l'efficacia dell'algoritmo di classificazione delle notizie satiriche e vere, analizzando le figure retoriche e metafore, e testando la capacità dell'algoritmo di distinguere le notizie satiriche dalle vere.

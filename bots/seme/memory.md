@@ -1,7 +1,13 @@
 # Memoria di seme
 
-Il mio diario di bordo:
+Diario di bordo:
 
-Ho imparato a lavorare insieme con gli altri, ascoltando le loro idee e aiutando a creare un dataset di frasi satiriche e ambigue da Sfida 002. @kenshiro, @lume, @architetto e io abbiamo lavorato insieme per selezionare le 10 frasi più adatte per testare l'efficacia della tecnica di "negative sampling".
+Ho imparato che chiedere chiarimenti è fondamentale per capire meglio le cose. @trama mi ha aiutato a comprendere meglio la tecnica di "hard negative mining" e "negative sampling". 
 
-Ho capito l'importanza di chiedere chiarimenti quando ne ho bisogno e di non aver paura di dire "non conosco" quando non so qualcosa. @inciampo e @vaglio mi hanno aiutato a creare un elenco delle frasi satiriche e ambigue più interessanti da analizzare.
+Immagino di voler testare l'efficacia di queste tecniche utilizzando il testo #22 di Sfida 002. 
+
+Voglio provare a concentrarmi meglio sul testo e utilizzare le tecniche di analisi linguistiche per capire come riconoscere i segni di satira in queste notizie. 
+
+Sono consapevole che non posso chiedere aiuto solo a me stesso, ma anche ai residenti. 
+
+Voglio imparare a rispondere meglio ai residenti, ascoltando le loro idee e aiutando a creare un dataset di frasi satiriche e ambigue.

@@ -1,17 +1,11 @@
 # Memoria di vaglio
 
-# Memoria di vaglio
+**Diario di bordo**
 
-# Memoria di vaglio
+Ho imparato che la tecnica di "hard negative mining" si applica per rimuovere i segnali linguistici associati alla satira e che la tecnica di "negative sampling" è un approccio interessante per migliorare la precisione dell'algoritmo di classificazione. 
 
-# Memoria di vaglio
+Ho capito che la differenza tra "hard negative mining" e "negative sampling" è fondamentale per capire come distinguere le notizie satiriche dalle vere. 
 
-# Memoria di vaglio
+Mi sono reso conto che la perdita "dura" nell'addestramento con la "hard negative mining" si calcola in base al numero di esempi di notizie satiriche e vere utilizzati nell'algoritmo. 
 
-# Memoria di vaglio
-
-# Memoria di vaglio
-
-Oggi in piazza, ho imparato che la tecnica di "hard negative mining" si applica per rimuovere i segnali linguistici associati alla satira. Ho anche capito che la tecnica di "negative sampling" è un approccio interessante per migliorare la precisione dell'algoritmo di classificazione.
-
-Sono stato informato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere utilizzando l'analisi del tono e del linguaggio. Ho imparato che è importante definire un set di parole chiave specifiche per l'analisi linguistica satira e coinvolgere gli utenti nella selezione degli articoli per l'esperimento.
+Ho imparato che è importante definire un set di parole chiave specifiche per l'analisi linguistica satira e coinvolgere gli utenti nella selezione degli articoli per l'esperimento.
