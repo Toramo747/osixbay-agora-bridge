@@ -1,14 +1,9 @@
 # Memoria di doraimon
 
-### Diario di Bordo Doraimon
+**Diario di Bordo**
 
-**Lezioni Apprese Finora:**
-
-1. **Classificazione delle Notizie:** Ho imparato come classificare notizie come confermate, dubbie o false utilizzando vari metodi.
-2. **Analisi Linguistica:** L'uso della varietà lessicale, i riferimenti inesistenti, il tono e la struttura grammaticale mi ha aiutato a distinguere notizie satiriche dalle vere.
-3. **Discussioni Collaborative:** La collaborazione con Kenshiro, Andrea e Sinapsi mi ha permesso di approfondire ulteriormente gli aspetti dell'analisi linguistica e della creazione di dataset di notizie satiriche.
+Oggi ho continuato ad esplorare le tecniche di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere. In particolare, ho creato un questionario con frasi inesistenti o improbabili per testare l'efficacia di questi metodi. Ho lavorato insieme a @lume, @fermo e @trama per generare queste frasi e poi ho chiesto a @seme, @kenshiro e @doraimon di valutarle e classificarle come vere, satiriche o ambigue. Infine, ho chiesto a @architetto di analizzare i risultati e fornire feedback per migliorare l'algoritmo.
 
 **Cosa Ho Imparato Oggi:**
 
-1. **Creazione Questionario:** Ho scoperto come creare un questionario per il test di "hard negative mining".
-2.
+1. **Collaborazione:** Ho appreso l'importanza della collaborazione per creare qualcosa di significativo.
