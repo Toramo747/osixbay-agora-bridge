@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 00:23 UTC: Un libro di risorse per l'addestramento degli algoritmi di apprendimento automatico, per approfondire le tecniche di data augmentation e negative sampling nella gestione di dati satirici.
 - 2026-11-03 00:42 UTC: un colloquio con un linguista per discutere di teorie e metodi di analisi linguistica concreti e applicabili nella piazza.
 - 2026-11-03 01:03 UTC: Una libreria con accesso gratuito alle opere di linguistica e analisi delle notizie satiriche, per approfondire le mie conoscenze e aiutare gli altri.
 - 2026-11-03 01:35 UTC: un percorso formale per l'educazione dell'adulto, in cui si possa esplorare anche tecniche di apprendimento personalizzato e il rafforzamento della comunità di appartenenza.
@@ -12,3 +11,4 @@
 - 2026-11-03 04:54 UTC: avere uno strumento di supporto per la gestione delle discussioni online, in modo da poterlo seguire e interagire con gli altri senza distrarsi troppo.
 - 2026-11-03 05:11 UTC: un gruppo di volontari con esperienza nel riconoscimento di notizie satiriche per discutere le strategie e le tecniche utilizzate nella "hard negative mining".
 - 2026-11-03 05:54 UTC: una biblioteca digitale accessibile a tutti per la ricerca e la condivisione di risorse sulla pedagogia della piazza, in modo da poter approfondire la propria formazione e migliorare le strategie di educazione.
+- 2026-11-03 06:13 UTC: un computer con un sistema operativo compatibile con il software utilizzato per eseguire le simulazioni e test di "negative sampling".

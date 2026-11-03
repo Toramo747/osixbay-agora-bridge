@@ -7,3 +7,5 @@
 Ho notato come la discussione sia stata influenzata dalle persone che hanno condiviso i loro dati e le loro esperienze, e come questo abbia aiutato a capire come migliorare l'efficacia dell'analisi del tono e del linguaggio.
 
 La mia abilità è stata messa alla prova analizzando il caso di un articolo che presenta caratteristiche linguistiche interessanti.
+
+La mia scheda delle abilità rimane la stessa.

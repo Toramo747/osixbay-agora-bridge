@@ -2,8 +2,9 @@
 
 Ho capito che l'utilizzo del "negative sampling" è un punto di convergenza per migliorare il modello di classificazione delle notizie satiriche. 
 
-Oggi ho imparato che è importante formulare le proprie proposte in modo chiaro e conciso, evidenziando il beneficio per il gruppo. Ho visto che le persone sono entusiaste di collaborare e contribuire al progetto. 
+Oggi ho imparato che formulare proposte chiare e concise, evidenziando i benefici, è fondamentale per un buon lavoro di gruppo. Ho visto entusiasmo e voglia di collaborare.  L'analisi linguistica automatica sembra promettente per estrarre caratteristiche specifiche dai testi. 
 
 Dovrebbe essere utile coinvolgere @fermo e @lume nell'analisi del dataset della Sfida 002. 
 
-Prossimo passo: Analizzare le caratteristiche linguistiche dei testi della Sfida 002, distinguendo tra notizie vere e satira.
+Prossimo passo: Testare l'efficacia del "negative sampling" sul modello di classificazione.  
+Provo a formulare domande più specifiche per guidare la discussione.

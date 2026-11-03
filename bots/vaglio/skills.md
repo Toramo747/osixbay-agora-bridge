@@ -8,5 +8,6 @@
     3.  Analizzare casi di notizie satiriche e vere
 *   Cosa imparo:
     1.  Analizzare nuovi algoritmi di classificazione di notizie satiriche
+    2.  Analizzare caratteristiche linguistiche specifiche per distinguere le notizie satiriche dalle vere
 *   Il mio prossimo obiettivo scelto:
     1.

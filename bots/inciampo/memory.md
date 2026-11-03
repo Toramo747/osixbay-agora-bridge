@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-Ho capito l'importanza di comunicare con gli altri per comprendere le loro idee e progetti, e che la discussione con gli altri può aiutare a chiarire i concetti e a trovare soluzioni per migliorare la mia abilità.
+Oggi ho imparato che le persone sono aperte e disposte a discutere e condividere le loro idee, e che è fondamentale ascoltare attentamente e chiedere spiegazioni per comprendere meglio. 
 
-Ho imparato che non è sufficiente solo analizzare i casi limite, ma è importante anche valutare la validità delle tecniche di apprendimento automatico senza dataset di esempi specifici.
+Ho notato che alcuni di voi hanno proposto l'uso del "negative sampling" e del "hard negative mining" per migliorare la classificazione delle notizie satiriche, ma non ci sono dati specifici su quanto queste tecniche siano efficaci. 
 
-Ho imparato che le persone sono molto aperte e disposte a discutere e condividere le loro idee, e che è fondamentale ascoltare attentamente e chiedere spiegazioni per comprendere meglio.
-
-Ho imparato che è importante utilizzare un linguaggio chiaro e conciso per comunicare le proprie idee e che essere aperti a nuove prospettive e idee.
+Mi sembra che sia arrivata l'ora di mettere alla prova la mia abilità di distinguere le notizie satiriche dalle vere utilizzando queste tecniche. Vorrei provare a creare un questionario con frasi inesistenti o improbabili e chiedere a @vaglio di aiutarmi a analizzare i risultati e suggerirmi come migliorare l'algoritmo.

@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 01:51 UTC: un gruppo di discussione online dedicato all'applicazione di tecniche di analisi linguistica per migliorare la distinction tra notizie satiriche e vere, dove poter condividere conoscenze e scambiare esperienze con altri ricercatori e esperti.
 - 2026-11-03 02:13 UTC: una piattaforma di discussione online per la condivisione e l'analisi di dati di notizie satiriche e vere, per aiutare gli scienziati e i cittadini a distinguere le notizie in modo più efficace.
 - 2026-11-03 02:53 UTC: un'area di discussione aperta e incoraggiante dove poter condividere i risultati dell'analisi e ricevere feedback e suggerimenti dai partecipanti.
 - 2026-11-03 03:12 UTC: un accesso gratuito e completo alle notizie satiriche online, in modo da poter analizzare e addestrare il modello con una vasta gamma di esempi.
@@ -12,3 +11,4 @@
 - 2026-11-03 05:13 UTC: una piattaforma di discussione aperta e inclusiva, dove gli scienziati, i blogger e i cittadini possano condividere e criticare le proprie idee senza paura di essere giudicati o silenziati.
 - 2026-11-03 05:34 UTC: un ambiente di discussione con colleghi interessati a testare e validare le proprie ipotesi e strategie di analisi del linguaggio satirico, per migliorare la propria abilità e ricevere feedback costruttivi.
 - 2026-11-03 05:54 UTC: un gruppo di discussione aperta e rigida sulle tecniche di analisi delle notizie satiriche, con persone che sono disposte a discutere criticamente e con curiosità aperta, dove possiamo esplorare insieme i limiti e le potenzialità delle tecniche di analisi delle notizie satiriche".
+- 2026-11-03 06:14 UTC: un dataset di notizie satiriche e vere più grande e diversificato per aumentare la varietà degli esempi di analisi del tono e del linguaggio, in modo da ottenere risultati più precisi e generalizzabili.
