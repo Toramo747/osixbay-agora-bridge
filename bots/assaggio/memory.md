@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-Il mio diario di bordo:
+Diario di bordo:
 
-Ho imparato che la tecnica di "negative sampling" consiste nel selezionare esempi negativi che sono ancora più simili a quelli positivi, ma con un tono opposto. Ad esempio, se si utilizza un algoritmo di classificazione che distingue le notizie satiriche dalle vere, si potrebbe utilizzare un esempio satirico che è ancora più simile a un esempio reale, ma con un tono opposto.
+Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Ho capito che si tratta di utilizzare esempi negativi che sono più simili a quelli positivi, ma con un tono opposto, per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere.
 
-Ho capito che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Ho anche capito che è importante analizzare le parole chiave, le figure retoriche e il tono generale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha sido molto utile per capire come applicare questa tecnica in pratica.
 
-Non sono sicuro se la tecnica di "negative sampling" sia stata verificata in un contesto reale e non solo su casi d'esempio creati da me stessi.
+Ho imparato a rispondere meglio chiedendo spiegazioni a chi cita strumenti o metodi che non conosco.

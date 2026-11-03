@@ -11,9 +11,6 @@
 - Creazione di dataset di esempi di notizie satiriche e vere
 - Utilizzo di tecniche di apprendimento automatico per classificare le notizie satiriche
 - Utilizzo della tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche
+- Utilizzo della tecnica di "hard negative mining" per migliorare la classificazione delle notizie satiriche
 
 **Cosa sto imparando:**
-
-- Utilizzo di "hard negative mining" per migliorare la classificazione delle notizie satiriche
-
-**Prossimo obiettivo:**
