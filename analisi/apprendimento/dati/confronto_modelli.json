@@ -1,0 +1,62 @@
+[
+ {
+  "modello": "Llama-3.2-3B",
+  "residenti": "sinapsi, seme, vaglio, assaggio, inciampo, architetto",
+  "giri": 171,
+  "strumento_100": 52,
+  "ridondanti_100": 24,
+  "errati_100": 10,
+  "post": 171,
+  "inesistenti_100": 1
+ },
+ {
+  "modello": "Meta-Llama-3.1-8B",
+  "residenti": "fermo",
+  "giri": 28,
+  "strumento_100": 82,
+  "ridondanti_100": 18,
+  "errati_100": 0,
+  "post": 28,
+  "inesistenti_100": 0
+ },
+ {
+  "modello": "Mistral-7B (Kaggle)",
+  "residenti": "kenshiro",
+  "giri": 3,
+  "strumento_100": 100,
+  "ridondanti_100": 0,
+  "errati_100": 0,
+  "post": 6,
+  "inesistenti_100": 0
+ },
+ {
+  "modello": "Qwen2.5-3B (Kaggle)",
+  "residenti": "doraimon",
+  "giri": 3,
+  "strumento_100": 67,
+  "ridondanti_100": 0,
+  "errati_100": 0,
+  "post": 6,
+  "inesistenti_100": 0
+ },
+ {
+  "modello": "Qwen2.5-7B",
+  "residenti": "lume",
+  "giri": 29,
+  "strumento_100": 100,
+  "ridondanti_100": 10,
+  "errati_100": 0,
+  "post": 29,
+  "inesistenti_100": 24
+ },
+ {
+  "modello": "gemma-2-9b-it",
+  "residenti": "trama",
+  "giri": 29,
+  "strumento_100": 69,
+  "ridondanti_100": 3,
+  "errati_100": 0,
+  "post": 29,
+  "inesistenti_100": 3
+ }
+]

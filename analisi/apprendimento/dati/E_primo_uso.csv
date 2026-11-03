@@ -1,0 +1,67 @@
+residente,strumento,disponibile_da,primo_uso,giri_osservabili_prima_del_primo_uso,ore_dalla_disponibilita,spontaneita,osservabilita
+lume,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T11:25:17.931283+00:00,8,29.1,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+lume,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-01T13:47:43.961866+00:00,1,5.4,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+lume,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-02T21:43:46.898576+00:00,1,14.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+lume,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,29,,,log + registro
+lume,ANALIZZA,2026-11-02T06:22:00+00:00,,30,,,log + registro
+lume,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-03T01:30:25.592660+00:00,12,7.8,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+fermo,CERCA,2026-10-31T06:17:00+00:00,2026-10-31T08:02:43.426142+00:00,0,1.8,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+fermo,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-02T01:17:34.651811+00:00,20,16.9,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+fermo,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-03T06:37:17.074530+00:00,27,22.9,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+fermo,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,28,,,log + registro
+fermo,ANALIZZA,2026-11-02T06:22:00+00:00,2026-11-03T01:40:58.651681+00:00,13,19.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+fermo,OSSERVA,2026-11-02T17:43:00+00:00,,28,,,log + registro
+trama,CERCA,2026-10-31T06:17:00+00:00,2026-10-31T13:34:19.516816+00:00,1,7.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+trama,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-01T13:53:58.200517+00:00,1,5.5,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+trama,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-02T21:46:52.087892+00:00,1,14.1,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+trama,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,29,,,log + registro
+trama,ANALIZZA,2026-11-02T06:22:00+00:00,2026-11-02T22:10:59.964191+00:00,2,15.8,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+trama,OSSERVA,2026-11-02T17:43:00+00:00,,29,,,log + registro
+sinapsi,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T06:21:06.020051+00:00,0,24.1,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+sinapsi,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-01T16:50:55.381094+00:00,2,8.5,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+sinapsi,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,,28,,,log + registro
+sinapsi,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,28,,,log + registro
+sinapsi,ANALIZZA,2026-11-02T06:22:00+00:00,2026-11-03T01:37:15.271505+00:00,13,19.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+sinapsi,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-03T02:53:01.742212+00:00,16,9.2,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+seme,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T06:26:00.908322+00:00,0,24.2,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+seme,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-02T02:50:46.665709+00:00,24,18.5,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+seme,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,,28,,,log + registro
+seme,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,2026-11-02T22:38:43.088997+00:00,3,14.9,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+seme,ANALIZZA,2026-11-02T06:22:00+00:00,,29,,,log + registro
+seme,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-02T21:40:26.624133+00:00,0,4.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+kenshiro,CERCA,2026-10-31T06:17:00+00:00,2026-11-03T02:16:00+00:00,0,68.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,solo registro (Kaggle)
+kenshiro,NOTIZIE,2026-11-01T08:23:00+00:00,,3,,,solo registro (Kaggle)
+kenshiro,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,,3,,,solo registro (Kaggle)
+kenshiro,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,3,,,solo registro (Kaggle)
+kenshiro,ANALIZZA,2026-11-02T06:22:00+00:00,,3,,,solo registro (Kaggle)
+kenshiro,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-03T03:14:00+00:00,1,9.5,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,solo registro (Kaggle)
+doraimon,CERCA,2026-10-31T06:17:00+00:00,,3,,,solo registro (Kaggle)
+doraimon,NOTIZIE,2026-11-01T08:23:00+00:00,,3,,,solo registro (Kaggle)
+doraimon,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,,3,,,solo registro (Kaggle)
+doraimon,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,3,,,solo registro (Kaggle)
+doraimon,ANALIZZA,2026-11-02T06:22:00+00:00,2026-11-03T02:16:00+00:00,0,19.9,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,solo registro (Kaggle)
+doraimon,OSSERVA,2026-11-02T17:43:00+00:00,,3,,,solo registro (Kaggle)
+vaglio,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T08:06:58.746722+00:00,0,25.8,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+vaglio,NOTIZIE,2026-11-01T08:23:00+00:00,,67,,,log + registro
+vaglio,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,,28,,,log + registro
+vaglio,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,28,,,log + registro
+vaglio,ANALIZZA,2026-11-02T06:22:00+00:00,,29,,,log + registro
+vaglio,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-02T22:44:49.967231+00:00,3,5.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+assaggio,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T11:29:11.684461+00:00,1,29.2,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+assaggio,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-01T19:29:15.348138+00:00,10,11.1,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+assaggio,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-03T05:40:47.080639+00:00,25,22.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+assaggio,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,2026-11-03T02:02:08.633734+00:00,14,18.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+assaggio,ANALIZZA,2026-11-02T06:22:00+00:00,,30,,,log + registro
+assaggio,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-02T23:27:01.481225+00:00,6,5.7,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+inciampo,CERCA,2026-10-31T06:17:00+00:00,2026-11-01T08:12:22.466209+00:00,0,25.9,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+inciampo,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-01T18:55:37.136954+00:00,8,10.5,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+inciampo,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-03T04:03:52.512516+00:00,20,20.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+inciampo,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,2026-11-02T23:07:17.938887+00:00,5,15.4,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+inciampo,ANALIZZA,2026-11-02T06:22:00+00:00,,30,,,log + registro
+inciampo,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-02T22:06:40.125341+00:00,2,4.4,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+architetto,CERCA,2026-10-31T06:17:00+00:00,2026-11-02T08:03:39.804084+00:00,6,49.8,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+architetto,NOTIZIE,2026-11-01T08:23:00+00:00,2026-11-02T08:42:03.243289+00:00,8,24.3,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+architetto,NOTIZIE: sfida 002,2026-11-02T07:43:00+00:00,2026-11-02T08:42:03.243289+00:00,2,1.0,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
+architetto,NOTIZIE: mappa,2026-11-02T07:43:00+00:00,,42,,,log + registro
+architetto,ANALIZZA,2026-11-02T06:22:00+00:00,,46,,,log + registro
+architetto,OSSERVA,2026-11-02T17:43:00+00:00,2026-11-03T01:47:39.408971+00:00,13,8.1,NON VERIFICABILE: lo strumento è elencato nel prompt e (dal 2/11 17:43) nella sintesi dell'ambiente,log + registro
