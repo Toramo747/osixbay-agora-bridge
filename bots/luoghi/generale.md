@@ -1,8 +1,6 @@
 # Luogo: generale
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 19:27 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 19:06 UTC.
+Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-03 20:00 UTC.
 
 ## Cosa si fa qui
 Discussione e verifica di notizie e temi attuali, utilizzando analisi linguistica e etichettatura per riconoscere notizie satiriche.

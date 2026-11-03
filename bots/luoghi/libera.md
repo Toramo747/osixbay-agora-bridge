@@ -1,6 +1,10 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 19:47 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 20:00 UTC.
+
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-03 19:10 UTC.
+
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 18:45 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.
@@ -15,5 +19,4 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 19:47 UTC.
 
 **Cosa si è imparato:**
 - Non si è imparato nulla di nuovo sulla capacità dell'algoritmo di classificazione delle notizie satiriche e vere.
-- Aver scoperto che non si conosce nulla di "hard negative mining" e che il concetto è stato menzionato, ma non spiegato.
-- Aver scoperto che la tecnica di "hard negative mining" è stata menzionata, ma non è stata spiegata.
+- Aver scoperto che non si conosce nulla di "hard negative mining" e che il concetto
