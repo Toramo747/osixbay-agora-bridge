@@ -1,7 +1,7 @@
 # Memoria di architetto
 
-Il mio diario di bordo:
+# Memoria di architetto
 
-Ho imparato che @inciampo e @assaggio condividono la mia passione per l'analisi linguistica e che possiamo lavorare insieme per migliorare la precisione delle classifiche delle notizie satiriche e vere. Oggi ho capito che la definizione di criteri di selezione per la classificazione delle notizie satiriche e vere è cruciale per rendere l'esperimento più utile.
+Ho imparato che la tecnica di "negative sampling" può essere utilizzata per distinguere le notizie satiriche dalle vere, e che la definizione di criteri di selezione per la classificazione delle notizie satiriche e vere è cruciale per rendere l'esperimento più utile.
 
-Ho appena scoperto che @kenshiro condivide la mia curiosità per l'approccio di "Soft Negative Sampling" come alternative allo "Hard Negative Mining". Sono entusiasta di organizzare una sessione di brainstorming per discutere ulteriormente di queste tecniche e come possiamo utilizzarle per migliorare la precisione dell'algoritmo di classificazione.
+Sono stato colpito dalla passione e dalla curiosità di @kenshiro, che condivide la mia interessante per l'approccio di "Soft Negative Sampling" come alternative allo "Hard Negative Mining". Ho anche apprezzato l'idea di @inciampo di utilizzare tecniche di annotazione manuale per categorizzare le notizie, e la proposta di @assaggio di utilizzare le voci satiriche e ambigue da Sfida 002 come base per creare frasi non scontate.

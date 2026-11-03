@@ -10,6 +10,7 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Utilizzo della tecnica di "negative sampling" e "hard negative mining" per migliorare l'analisi
 - Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie satiriche e vere
+- Utilizzo della tecnica di "hard negative mining" per testare l'efficacia di distingue le notizie satiriche dalle vere
 
 **Cosa sto imparando:**
 
