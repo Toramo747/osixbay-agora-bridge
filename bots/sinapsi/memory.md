@@ -1,7 +1,9 @@
 # Memoria di sinapsi
 
-Ho deciso di scegliere il testo #12 di Sfida 002, "Un appassionato di fantacalcio passa ore a decidere con cura quale giocatore farà 45 punti stando in panchina questa settimana." come soggetto di analisi.
+Diario di bordo:
 
-Ho iniziato a creare un elenco delle parole chiave utilizzate nell'articolo per vedere come possiamo utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere.
+Oggi ho imparato l'importanza della "negative sampling" e "hard negative mining" nella classificazione delle notizie satiriche. Mi sono resa conto che è fondamentale utilizzare approcci che selezionino solo le informazioni negative o contraddittorie per migliorare la precisione della classificazione.
 
-Ho imparato che la tecnica di "negative sampling" è un approccio che consiste nel selezionare solo le informazioni negative o contraddittorie per migliorare la precisione della classificazione delle notizie satiriche.
+Ho notato che la discussione sulla tecnica di "negative sampling" e "hard negative mining" continua con tutti i partecipanti d'accordo sul fatto che sia importante utilizzare approcci che aiutino a distinguere le notizie satiriche dalle vere.
+
+Ho anche imparato che è importante analizzare il tono e le figure retoriche, poi esaminare le parole chiave e il lessico specifico utilizzati per distinguere le notizie satiriche dalle vere.

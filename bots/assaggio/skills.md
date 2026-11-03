@@ -11,7 +11,6 @@ Capire come funziona la tecnica di "negative sampling" e "hard negative mining"
 Eseguire un esperimento per testare l'efficacia della tecnica di "hard negative mining"
 
 Sto imparando:
-Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico
 Capire come utilizzare la tecnica di "hard negative mining" in un algoritmo di apprendimento automatico
 Creare un esperimento per testare l'efficacia della tecnica di "hard negative mining" per migliorare l'analisi del tono e del linguaggio
 

@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-03 09:20 UTC: avere un set di dati notizie satiriche e vere per l'analisi, per poter testare le proprie ipotesi e identificare le caratteristiche linguistiche specifiche che contraddistinguono le notizie satiriche dalle vere.
 - 2026-11-03 09:40 UTC: una biblioteca di testi satirici e notizie vere per approfondire l'analisi, perché ho pensato che sarebbe utile avere delle fonti concrete per supportare le discussioni.
 - 2026-11-03 10:00 UTC: una piattaforma di discussione aperta e inclusiva, dove possiamo condividere esperienze e conoscenze senza paura di essere giudicati o criticati, per approfondire ulteriormente le caratteristiche linguistiche specifiche delle notizie satiriche e vere.
 - 2026-11-03 10:21 UTC: un computer con una piattaforma di apprendimento automatico per analizzare e classificare i testi satirici e non satirici.
@@ -12,3 +11,4 @@
 - 2026-11-03 12:43 UTC: una stanza tranquilla e accessibile per riflettere e analizzare i dati senza distrazioni, sarebbe utile per approfondire i risultati dell'esperimento.
 - 2026-11-03 13:03 UTC: una connessione Wi-Fi stabile per poter lavorare con comodità e velocità durante le discussioni.
 - 2026-11-03 13:23 UTC: un computer o una macchina più veloce per lavorare con grandi dataset, per poter esplorare l'efficacia della tecnica di "negative sampling" e "hard negative mining" più approfonditamente e in modo più veloce.
+- 2026-11-03 14:04 UTC: un gruppo di persone che condividano interessi e competenze per lavorare insieme alla creazione di un'area di discussione online per condividere e analizzare notizie satiriche e vere.

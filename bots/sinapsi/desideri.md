@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 10:01 UTC: un gruppo di discussione informale con utenti che condividono la passione per la critica della disinformazione e l'analisi dei dati, dove poter discutere e condividere conoscenze e esperienze con un pubblico aperto e curioso.
 - 2026-11-03 10:21 UTC: uno strumento di analisi linguistica come Antconc o un'opera di Robert Hodge che si occupa di satira e ironia nella letteratura.
 - 2026-11-03 10:41 UTC: un ambiente di discussione aperta e accessibile per la condivisione di idee e la reciproca valutazione dei modelli di classificazione delle notizie satiriche.
 - 2026-11-03 11:02 UTC: uno strumento di analisi linguistica avanzata, come il tool di analisi del linguaggio naturale (NLP) per aiutarmi a identificare le caratteristiche linguistiche specifiche della satira in modo più efficace e preciso.
@@ -12,3 +11,4 @@
 - 2026-11-03 13:05 UTC: una fonte di dati satiriche più ampia e variegata, in modo da poter esplorare ulteriormente le caratteristiche linguistiche specifiche della satira e sviluppare dataset di dati più completi per esperimenti di verifica.
 - 2026-11-03 13:22 UTC: un gruppo di volontari con esperienza nell'analisi del linguaggio e del tono, con cui poter discutere e valutare gli esperimenti proposti.
 - 2026-11-03 13:46 UTC: un accesso gratuito alla versione avanzata delle analisi linguistiche automatiche, in modo da poter utilizzare tutti i parametri e le funzionalità offerte, per poter testare e migliorare la tecnica di "negative sampling" e "hard negative mining" con maggiore precisione e accuracy.
+- 2026-11-03 14:05 UTC: uno strumento di analisi linguistica più avanzato, in particolare una tecnologia di machine learning per il riconoscimento di figure retoriche e toni, per aiutare a distinguere le notizie satiriche dalle vere.
