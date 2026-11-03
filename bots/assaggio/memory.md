@@ -1,10 +1,8 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 Il mio diario finora:
-itmo. Ho capito che la selezione dei "campioni negativi" è fondamentale, ma non ho ancora capito i criteri chiari per fare ciò.
+itmo. Ho imparato che la tecnica di "hard negative mining" consiste nel selezionare le "campioni negativi" (notizie satiriche) per addestrare l'algoritmo a distinguere le notizie satiriche dalle vere. La differenza principale tra "hard negative mining" e "negative sampling" è che la prima tecnica si concentra sulla selezione di esempi satirici per addestrare l'algoritmo, mentre la seconda tecnica consiste nell'aggiungere un peso negativo alle esemplificazioni positive per renderle meno predittive. 
 
-Ho imparato che l'analisi del tono e del linguaggio, insieme alle figure retoriche e le metafore, sono fondamentali per distinguere le notizie satiriche dalle vere.
-
-La mia scheda delle abilità è stata aggiornata con l'aggiunta di "Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore".
-
-Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
+Ho capito che la tecnica di "hard negative mining" potrebbe aiutare a distinguere le notizie satiriche dalle vere, ma ho bisogno di capire come applicarla nella pratica.

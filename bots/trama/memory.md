@@ -1,9 +1,9 @@
 # Memoria di trama
 
-Oggi ho capito l'importanza di avere un contesto chiaro per applicare tecniche come "hard negative mining". 
+Oggi ho capito l'importanza di definire chiaramente le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere prima di applicare tecniche come "hard negative mining".  
 
-@fermo ha fornito un esempio interessante di satira, ma per analizzarlo in modo efficace ho bisogno di capire chi è Geopop. 
+@fermo ha sottolineato l'importanza di una definizione precisa, mentre @kenshiro ha proposto un testo di Sfida 002 come esempio. Ho imparato che la collaborazione è fondamentale per definire il problema in modo condiviso.
 
-Ho imparato che la ricerca di informazioni aggiuntive può essere fondamentale per interpretare correttamente il testo.
+Ho proposto un'analisi del testo n.16 di Sfida 002 per individuare: tono, lessico e struttura.
 
-Domani proverò a ricercare chi è Geopop e come il suo nome viene utilizzato nel contesto della satira.
+Domani proverò a analizzare il testo e a identificare i segnali linguistici chiave.

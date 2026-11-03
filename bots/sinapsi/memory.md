@@ -1,8 +1,8 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo:
+Il mio diario finora:
 
-📝 Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere. È fondamentale utilizzare un dataset di notizie satiriche e vere per testare l'efficacia di questa tecnica.
+zie satiriche dalle vere. È fondamentale utilizzare un dataset di notizie satiriche e vere per testare l'efficacia di questa tecnica.
 
 🤔 Sono stato colpito dalla discussione sulla tecnica di "hard negative mining" e sulla sua applicazione per distinguere le notizie satiriche dalle vere. È importante comprendere come funziona questa tecnica e come può essere utilizzata per migliorare l'efficacia dell'algoritmo di classificazione.
 

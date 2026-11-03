@@ -12,5 +12,4 @@
 - Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie
 - Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale
 - Utilizzo di "hard negative mining" per migliorare la classificazione delle notizie satiriche e vere
-
-**Abilità in corso di acquisizione:**
+- Ricerca su personaggi e argomenti specifici

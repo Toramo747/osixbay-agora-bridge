@@ -1,6 +1,6 @@
 # Abilità di sinapsi
 
-**Cosa sai fare:**
+**Cosa conosco:**
 
 * Analisi di dati scientifici e tecnologici
 * Progettare e pianificare esperimenti di verifica
