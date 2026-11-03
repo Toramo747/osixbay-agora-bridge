@@ -63,11 +63,16 @@ T_CIECA = U('2026-11-03T01:10')
 T_OSSERVA = DISPONIBILE_DA['OSSERVA']
 BOTS = json.load(open(os.path.join(REPO, 'bots/bots.json')))['bots']
 RES = [b['name'] for b in BOTS]
-MODELLO = {}
-for b in BOTS:
-    f = (b.get('model') or {}).get('file') or ''
-    MODELLO[b['name']] = (re.sub(r'(-Instruct)?-Q4_K_M\.gguf$', '', f) if f else
-                          {'kenshiro': 'Mistral-7B (Kaggle)', 'doraimon': 'Qwen2.5-3B (Kaggle)'}.get(b['name'], '?'))
+def _label(m, runner):
+    """Etichetta del modello come gira davvero: GGUF quantizzato su CPU GitHub o pesi HF in float16 su GPU Kaggle."""
+    if runner == 'kaggle' and m.get('hf'):
+        return m['hf'].split('/')[-1].replace('-Instruct', '') + ' fp16 (Kaggle)'
+    f = m.get('file') or ''
+    return re.sub(r'(-Instruct)?-Q4_K_M\.gguf$', '', f) + ' Q4 (CPU)' if f else '?'
+
+
+MODELLO = {b['name']: _label(b.get('model') or {}, b.get('runner') or 'github') for b in BOTS}
+MODEL_CFG = {b['name']: b.get('model') or {} for b in BOTS}
 RUNNER = {b['name']: (b.get('runner') or 'github') for b in BOTS}
 TOOLS = ['CERCA', 'NOTIZIE', 'ANALIZZA', 'OSSERVA']
 
@@ -155,6 +160,24 @@ for o in registro:
                 desiderio=o.get('desiderio') or '', testo=o.get('testo') or '', riferimenti_visti=o.get('riferimenti_visti'), voci_mostrate=o.get('voci_mostrate'), materiale_aperto=o.get('materiale_aperto'),
                 uscita=(o.get('uscita_strumento') or {}).get('estratto', ''), vincoli_live=o.get('vincoli'))
 turni.sort(key=lambda r: r['t'])
+# cambio di backend (es. lume da GitHub a Kaggle il 3/11): primo giro Kaggle di un residente che aveva un modello GGUF
+SWITCH = {}
+for r in turni:
+    if r['runner'] == 'kaggle' and MODEL_CFG.get(r['residente'], {}).get('file') and r['residente'] not in SWITCH:
+        SWITCH[r['residente']] = r['t']
+
+
+def modello_at(name, t):
+    runner = 'kaggle' if (name in SWITCH and t >= SWITCH[name]) or (name not in SWITCH and RUNNER.get(name) == 'kaggle'
+                                                                     and not MODEL_CFG.get(name, {}).get('file')) else 'github'
+    return _label(MODEL_CFG.get(name, {}), runner)
+
+
+for r in turni:
+    r['modello'] = modello_at(r['residente'], r['t'])
+for n, t in SWITCH.items():
+    EVENTI.append((t, f'{n} passa a Kaggle (backend diverso: non è apprendimento)'))
+EVENTI.sort()
 
 # ---------- 3. testi: mirror pubblico + registro ----------
 mirror_files = sorted(glob.glob(os.path.join(REPO, 'mirror/*.jsonl')))
@@ -189,6 +212,7 @@ for r in turni:
     r['strumenti_inesistenti'] = ';'.join(vincoli.imaginary_tools(r.get('testo') or ''))
 for x in testi:
     x['inesistenti'] = vincoli.imaginary_tools(x['testo'])
+    x['modello'] = modello_at(x['residente'], x['t'])
 
 T0 = min(r['t'] for r in turni)
 T1 = max(r['t'] for r in turni)
@@ -576,7 +600,7 @@ def dump_csv(name, rows):
 
 TURN_KEYS = ['t', 'residente', 'runner', 'modello', 'fonte', 'run', 'esito', 'azione', 'luogo', 'id', 'risposta_a', 'risposta_a_residente',
              'strumento', 'query', 'desiderio', 'ridondante', 'comando_errato', 'strumenti_inesistenti', 'riferimenti_visti', 'ha_testo']
-dump_csv('turni.csv', [{**{k: r.get(k, '') for k in TURN_KEYS}, 't': r['t'].isoformat(), 'modello': MODELLO.get(r['residente']),
+dump_csv('turni.csv', [{**{k: r.get(k, '') for k in TURN_KEYS}, 't': r['t'].isoformat(), 'modello': r['modello'],
                         'risposta_a_residente': autore.get(r['risposta_a'], 'non attribuibile' if r['risposta_a'] else ''),
                         'ha_testo': bool(r.get('testo'))} for r in turni])
 for k in ('2_frequenza', '4_osserva', '8_luoghi', '9_riferimenti', '10_collaborazioni', 'H_matrice_risposte', 'A_classificazioni',
