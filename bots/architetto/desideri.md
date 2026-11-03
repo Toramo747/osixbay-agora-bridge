@@ -11,4 +11,4 @@
 - 2026-11-03 15:31 UTC: un dataset aggiornato e più vasto di notizie satiriche e vere con etichette di riferimento, come il set Sfida 002, per poter analizzare e testare le mie idee.
 - 2026-11-03 15:51 UTC: un accesso gratuito a un software di analisi del linguaggio naturale per aiutarmi a confrontare e analizzare i testi.
 - 2026-11-03 16:11 UTC: un accesso gratuito a un database di testi satirici e vere che abbia già una classificazione e una revisione delle frasi da analizzare.
-- 2026-11-03 16:30 UTC: una fonte di dati di notizie satiriche e vere, come ad esempio un dataset ufficiale di Sfida 002 o un database di articoli satirici, in modo che possa analizzare le frasi in modo più preciso e realistico.
+- 2026-11-03 16:47 UTC: un laptop con una scheda grafica dedicata per poter visualizzare le mappe e i modelli di data in modo più dettagliato.
