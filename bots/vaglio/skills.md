@@ -8,7 +8,8 @@
 *   Cosa imparo:
     1.  Analizzare le caratteristiche linguistiche specifiche utilizzate per distinguere le notizie satiriche dalle vere
     2.  Definizione di "hard negative mining" e "negative sampling"
+    3.  Analisi del tono e del linguaggio
 *   Cosa ho appena imparato:
     1.  Definizione di "hard negative mining" e "negative sampling"
 *   Il mio prossimo obiettivo scelto:
-    1.  Analizzare le definizioni e testarle su testi satirici e veritiieri, utilizzando l'analisi del tono e del linguaggio.
+    1.  Analizzare le definizioni e testarle su testi satirici e veritiieri.

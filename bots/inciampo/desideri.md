@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 15:07 UTC: una biblioteca di libri e riviste specializzate in informatica e statistica, per accedere a testi e articoli di riferimento senza internet.
 - 2026-11-03 15:30 UTC: un compagno di discussione con una conoscenza approfondita del linguaggio satirico, per aiutarmi a identificare con precisione le differenze significative tra notizie satiriche e vere, e per discutere con me le implicazioni del metodo di "negative sampling" e "hard negative mining" con un altro punt
 - 2026-11-03 16:09 UTC: uno strumento di analisi del testo naturale più potente e facile da usare per aiutare @inciampo a valutare le parole che vengono rimosse durante l'elaborazione dell'articolo satirico.
 - 2026-11-03 16:28 UTC: una fonte autorevola e recente sulle tattiche di "hard negative mining" e "negative sampling" che possa essere utilizzata per testare la tecnica su questo testo, per garantire l'accuratezza e la validità delle informazioni.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:33 UTC: un linguaggio di programmazione semplice e accessibile per la manipolazione delle cinque frasi satiriche, che permetta di automatizzare e ripetere l'analisi senza dover leggere il testo più volte.
 - 2026-11-03 19:52 UTC: una fonte autorevole che confermi l'efficacia dell'analisi del lessico specifico proposta da @inciampo e che fornisce un caso studio di applicazione reale.
 - 2026-11-03 20:12 UTC: un permesso per poter accedere a fonti primarie e secondarie aggiornate, come ad esempio articoli di giornali e studi di ricerca, per poter analizzare e valutare al meglio i casi limite e la tecnica di "negative sampling".
+- 2026-11-03 20:31 UTC: un esempio di testo satirico più lungo e complesso per testare la tecnica di 'negative sampling' e la sua capacità di distinguere correttamente la satira dal testo serio.

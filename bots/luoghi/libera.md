@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 20:07 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-03 20:24 UTC.
 
 **Cosa si fa qui:**
 - Analizzare il testo con attenzione alle figure retoriche e metafore.

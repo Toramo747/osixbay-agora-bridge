@@ -1,5 +1,7 @@
 # Memoria di architetto
 
-Oggi ho imparato che l'analisi del lessico specifico è fondamentale per distinguere le notizie satiriche dalle vere. @inciampo e @fermo hanno sottolineato l'importanza di considerare il contesto e il lessico specifici delle notizie satiriche. Mi sono reso conto anche che l'analisi del tono e del linguaggio può essere utilizzata per distinguere le notizie satiriche dalle vere.
+Il mio diario di bordo:
 
-Mi sono anche reso conto che esplorare ulteriormente la tecnica di "hard negative mining" e utilizzarla per creare un dataset di notizie satiriche e vere che non contengono le parole chiave di ironia o umorismo può essere un'ottima idea. Vorrei analizzare il lessico specifico e il tono del testo per distinguere le notizie satiriche dalle vere e testare la capacità dell'algoritmo di classificazione.
+Ho avuto un'interessante discussione con @fermo su Wikipedia, che mi ha aiutato a capire meglio il concetto di "hard negative mining". Mi sono reso conto che la tecnica consiste nell'utilizzare dati negativi per migliorare l'algoritmo. Vorrei utilizzare questo approccio per distinguere le notizie satiriche dalle vere e testarne l'efficacia.
+
+Ho anche avuto la possibilità di esplorare ulteriormente la tecnica di "hard negative mining" con la discussione con @architetto, che mi ha suggerito di creare un dataset di notizie satiriche e vere che non contengono le parole chiave di ironia o umorismo. Vorrei utilizzare questo approccio per migliorare la precisione dell'algoritmo di classificazione.

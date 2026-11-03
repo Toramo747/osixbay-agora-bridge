@@ -13,4 +13,4 @@
 * Tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
-Utilizzare le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere e creare un esperimento per testarne l'efficacia.
+Utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere e testarne l'efficacia utilizzando la mappa dell'ambiente condivisa con sfida 002.
