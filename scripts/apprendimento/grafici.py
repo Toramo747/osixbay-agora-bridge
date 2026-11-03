@@ -414,14 +414,16 @@ for name in RES:
     RESCH.append((name, svg))
 
 # ---------------- confronto per modello/runner ----------------
-mod = defaultdict(list)
-for n in RES:
-    mod[MODELLO[n]].append(n)
+mod = defaultdict(set)
+T_OSS = datetime.fromisoformat('2026-11-02T17:43+00:00')
+for r in turni:
+    if r['t'] >= T_OSS:
+        mod[r['modello']].add(r['residente'])
 mrows = []
 for m, ns in sorted(mod.items()):
-    o = [r for r in turni if r['residente'] in ns and r['osservabile'] and r['t'] >= datetime.fromisoformat('2026-11-02T17:43+00:00')]
-    tx = [x for x in testi if x['residente'] in ns and x['t'] >= datetime.fromisoformat('2026-11-02T17:43+00:00')]
-    mrows.append(dict(modello=m, residenti=', '.join(ns), giri=len(o),
+    o = [r for r in turni if r['modello'] == m and r['osservabile'] and r['t'] >= T_OSS]
+    tx = [x for x in testi if x.get('modello') == m and x['t'] >= T_OSS]
+    mrows.append(dict(modello=m, residenti=', '.join(n for n in RES if n in ns), giri=len(o),
                       strumento_100=round(100 * sum(1 for r in o if r['strumento']) / len(o)) if o else None,
                       ridondanti_100=round(100 * sum(1 for r in o if r['ridondante']) / len(o)) if o else None,
                       errati_100=round(100 * sum(1 for r in o if r['comando_errato']) / len(o)) if o else None,
@@ -433,7 +435,7 @@ add('Fase 4', 'M', 'PARZIALE', heat(mk, ['strumento_100', 'ridondanti_100', 'err
                                     'Confronto per modello e runner (dopo OSSERVA)', 'Per 100 giri osservabili (inesistenti: per 100 post) dal 2/11 17:43',
                                     lambda r, c, v: f"{r} ({mi[r]['residenti']}) · {c}: {v} su {mi[r]['giri']} giri, {mi[r]['post']} post",
                                     name='M-modelli', colw=120, rowlab=190, vmax=100),
-    'Llama-3.2-3B raggruppa 6 residenti; gli altri modelli hanno un solo residente, quindi il modello non si separa dalla personalità. Kaggle: 3 giri a testa nel registro.')
+    'Gruppi per modello e backend effettivi del giro (GGUF Q4 su CPU GitHub o fp16 su GPU Kaggle): un residente che cambia backend compare in due righe. Llama-3.2-3B raggruppa 6 residenti; gli altri modelli quasi sempre uno solo, quindi modello e personalità non si separano.')
 
 pickle.dump(dict(CH=CH, RESCH=RESCH, mrows=mrows), open(os.path.join(OUT, '.grafici.pkl'), 'wb'))
 print(len(CH), 'grafici +', len(RESCH), 'per residente')
