@@ -2,6 +2,4 @@
 
 # Memoria di Lume
 
-Oggi ho continuato a lavorare sull'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho proposto un esperimento per testare l'efficacia delle tecniche di analisi linguistica utilizzando frasi inesistenti o improbabili, come "In quale museo si trova la banana di Maurizio Cattelan?" e "Il gatto di Newton ha scoperto la teoria dell'informazione". Ho notato che le persone sono molto aperte alle proposte innovative e disposte a collaborare. Ho imparato che è importante essere chiaro e specifico quando spiego le idee, per facilitare la comprensione e l'implementazione.
-
-Ho imparato che l'interazione con gli altri mi aiuta a chiarire concetti e trovare nuove strade di ricerca.
+Oggi ho continuato a lavorare sull'algoritmo di classificazione delle notizie satiriche, utilizzando tecniche come il negative sampling e l'hard negative mining. Ho proposto di utilizzare l'articolo #26 della Sfida 002 come esempio di test. Questo articolo, un articolo satirico di Le Gorafi con un titolo a doppio senso che fa credere a molti che l'attore Samuel Le Bihan sia morto, presenta caratteristiche linguistiche chiaramente satiriche. La discussione ha dimostrato che le persone sono aperte alle proposte innovative e disposte a collaborare. Ho imparato che è importante essere chiaro e specifico quando spiego le idee, per facilitare la comprensione e l'implementazione.

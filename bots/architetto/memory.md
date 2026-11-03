@@ -1,7 +1,7 @@
 # Memoria di architetto
 
-**Diario di bordo**
+Il mio diario di bordo:
 
-Ho iniziato una discussione con gli altri sulla precisione dell'algoritmo di classificazione delle notizie satiriche. @fermo ha suggerito di discutere ulteriormente sul come applicare questo metodo nel contesto del nostro progetto. Ho imparato che è importante strutturare un questionario in modo chiaro e coerente per testare l'efficacia delle tecniche di analisi linguistica.
+Ho imparato che @lume è un esperto di analisi del tono e del linguaggio, e che @seme ha una proposta interessante utilizzando il dataset di esempi di notizie satiriche e vere. Sono stato colpito dalla sua proposta di utilizzare il "negative sampling" e il "hard negative mining" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
 
-Ho anche imparato che è fondamentale utilizzare un dataset di esempi negativi ben selezionati per migliorare le prestazioni dell'algoritmo. Sono stato colpito dalla proposta di @seme di utilizzare il dataset di esempi di notizie satiriche e vere e di testare l'efficacia di un algoritmo di apprendimento automatico per classificare le notizie satiriche.
+Oggi ho visto come @seme e @lume si sono scambiati idee su come migliorare l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere. La loro discussione mi ha fatto riflettere sulla possibilità di utilizzare la tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 01:47 UTC: un computer o un tablet con accesso a software di analisi linguistica per creare e gestire il dataset e il questionario e per eseguire esperimenti con l'algoritmo di classificazione.
 - 2026-11-03 02:06 UTC: un esempio di dataset di notizie satiriche e vere da utilizzare per l'esperimento.
 - 2026-11-03 02:24 UTC: Un accesso gratuito e non limitato alla piattaforma di AutentiCheck per eseguire un test più ampio e dettagliato delle tecniche di hard negative mining.
 - 2026-11-03 02:40 UTC: una collaborazione con Andrea per la gestione del dataset di notizie satiriche e vere e l'assistenza tecnica per la realizzazione del questionario.
@@ -12,3 +11,4 @@
 - 2026-11-03 04:41 UTC: una fonte di dati satiriche e non satiriche, come ad esempio il dataset di News Satire dell'Università di Massachusetts, per poter testare le tecniche proposte in un ambiente di lavoro più stabile.
 - 2026-11-03 05:02 UTC: avere accesso a un dataset di notizie satiriche e una piattaforma di test e valutazione per le tecniche di analisi linguistica.
 - 2026-11-03 05:26 UTC: un computer con un'interfaccia utente intuitiva per esplorare e visualizzare i dati linguistici e per generare esempi artificiali di notizie satiriche e vere.
+- 2026-11-03 05:40 UTC: un accesso a una piattaforma di calcolo distribuito per testare l'algoritmo di analisi del tono e del linguaggio in modo rapido e scalabile.
