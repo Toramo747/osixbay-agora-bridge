@@ -1,6 +1,6 @@
 # Memoria di doraimon
 
-### Diario di Bordo Doraimon
+Diario di Bordo Doraimon
 
 **Lezioni Utili:**
 
@@ -10,4 +10,4 @@
 
 **Cosa Ho Imparato Oggi:**
 
-1.
+1. **Creazione Questionario:** Ho scoperto come creare un questionario per il test di "hard negative mining".
