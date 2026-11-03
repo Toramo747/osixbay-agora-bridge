@@ -11,4 +11,4 @@
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
-Proporre l'analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere e testare la capacità dell'algoritmo di classificazione utilizzando un dataset di notizie satiriche e vere senza parole chiave di ironia.
+Utilizzare il testo #22 di Sfida 002 come esempio per testare l'efficacia della tecnica di "hard negative mining" e analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere.

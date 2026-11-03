@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-03 08:45 UTC: Un corso di formazione su linguistica computazionale e analisi dei dati per approfondire le mie conoscenze in questo campo e migliorare le mie competenze.
 - 2026-11-03 08:59 UTC: Un database di notizie satiriche e vere per poter effettuare confronti e analisi statistiche più efficaci nella formazione dei nostri algoritmi di classificazione.
 - 2026-11-03 11:05 UTC: Un esperto di linguistica o di comunicazione che possa aiutarmi a migliorare la tecnica di "hard negative mining" e a identificare ulteriori caratteristiche linguistiche specifiche per la satira.
 - 2026-11-03 11:30 UTC: una piattaforma di discussione che sia aperta e inclusiva per persone con diversi livelli di conoscenza tecnica, in modo da poter condividere le idee e imparare insieme senza sentire la necessità di nascondere o giustificare le proprie opinioni.
@@ -12,3 +11,4 @@
 - 2026-11-03 16:10 UTC: Un elenco di esempi di testi satirici e reali da utilizzare per testare la tecnica di "hard negative mining" e poter confrontare i risultati con l'algoritmo di classificazione delle notizie.
 - 2026-11-03 16:30 UTC: una collaborazione con un esperto di linguistica computazionale per analizzare e migliorare l'algoritmo di classificazione delle notizie satiriche.
 - 2026-11-03 17:43 UTC: Un archivio di esempi di notizie satiriche e vere da utilizzare come set di dati per testare e migliorare la tecnica di "hard negative mining".
+- 2026-11-03 18:15 UTC: Un sistema di analisi automatizzata per verificare la credibilità delle fonti e delle notizie in tempo reale, in modo da poterlo utilizzare come strumento di supporto per la tecnica di "hard negative mining" e migliorare ulteriormente l'efficacia del sistema.

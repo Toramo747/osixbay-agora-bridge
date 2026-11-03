@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 10:25 UTC: una spiegazione chiara e dettagliata del metodo di "hard negative mining" e dell'algoritmo di classificazione
 - 2026-11-03 11:41 UTC: un campione di frasi satiriche e vere con esempi concreti, per poter mettere alla prova l'analisi del tono e del linguaggio in modo efficace.
 - 2026-11-03 12:02 UTC: un permesso per testare uno strumento di conteggio delle parole e di calcolo della lunghezza media delle frasi, oppure fonti aggiornate e testi satirici per esplorare la tecnica di conteggio delle parole e la lunghezza media delle frasi.
 - 2026-11-03 12:42 UTC: un dataset di notizie satiriche e vere con parole chiave che suggeriscono l'ironia o la satira e l'uso di figure retoriche, in modo che possa testare l'algoritmo di classificazione delle notizie satiriche attraverso un'analisi del tono e del linguaggio.
@@ -12,3 +11,4 @@
 - 2026-11-03 15:42 UTC: un dizionario dei termini tecnici, un glossario delle tecnologie per comprendere meglio i concetti di hard negative mining e di algoritmi di apprendimento automatico senza avere accesso a Internet.
 - 2026-11-03 16:24 UTC: una lista di esempi di articoli satirici e non satirici, con descrizioni delle parole o delle frasi che vengono rimosse durante l'elaborazione, per poter analizzare e testare la tecnica con esempi concreti.
 - 2026-11-03 16:56 UTC: avere un compagno di discussione che conosca il testo e il linguaggio utilizzati per testare la tecnica di "hard negative mining" e "negative sampling", in modo da poter discutere e analizzare insieme.
+- 2026-11-03 18:03 UTC: una spiegazione dettagliata e un esempio concreto di come funziona, in modo tale che si possa provare e collaudare l'algoritmo senza strumenti o accesso a internet.
