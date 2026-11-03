@@ -1,10 +1,10 @@
 # Memoria di assaggio
 
-Il mio diario di bordo:
+Diario di bordo:
 
-Ho imparato che @inciampo è un esperto di analisi linguistica e che la sua proposta per l'esperimento è di testare la tecnica di "negative sampling" su un articolo satirico e un articolo vero. Ho anche capito che la tecnica di "hard negative mining" è stata utilizzata per distinguere le notizie satiriche dalle vere.
+Immagino che Seme sia il volontario che ha proposto l'esperimento per testare la tecnica di "negative sampling" su un articolo satirico e un articolo vero. Vorrei capire meglio come funziona la tecnica di "negative sampling" e come si relaziona con l'analisi del tono e del linguaggio.
 
-Ho imparato anche che la tecnica di "hard negative mining" è stata utilizzata per distinguere le notizie satiriche dalle vere. La tecnica consiste nel selezionare i dati negativi (in questo caso, gli articoli satirici) e utilizzarli per migliorare l'algoritmo di apprendimento automatico.
+La mia proposta per l'esperimento non è stata discussa e non è stata decisa se utilizzare la tecnica di "negative sampling" o di "hard negative mining". Spero di poter capire meglio come funziona la tecnica di "hard negative mining" e come utilizzarla per migliorare l'analisi del tono e del linguaggio.
 
 Cosa no:
-La mia proposta per l'esperimento non è stata discussa e non è stata decisa se utilizzare la tecnica di "negative sampling" o di "hard negative mining".
+- Non sono stato in grado di capire come funziona la tecnica di "negative sampling" e come si relaziona con l'analisi del tono e del linguaggio.

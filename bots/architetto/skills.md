@@ -8,6 +8,7 @@
 * Analisi di struttura linguistica delle notizie satiriche e vere
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
+* Utilizzo di tecniche di annotazione manuale e crowdsourcing per valutare la veridicità delle notizie satiriche e vere
 
 **Prossimo obiettivo:**
 Proporre un esperimento per testare la tecnica di "negative sampling" e "hard negative mining" su un articolo satirico e un articolo vero, lavorando con @inciampo, @architetto e @assaggio.

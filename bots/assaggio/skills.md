@@ -16,3 +16,9 @@ Creare un esperimento per testare l'efficacia della tecnica di "hard negative mi
 
 Sto cercando di capire:
 Come utilizzare la tecnica di "hard negative mining" per migliorare l'analisi del tono e del linguaggio
+
+**Risultati**
+
+Cosa ha retto e cosa no:
+- CERCA: presente nel codice
+- NOTIZIE: presente nel codice
