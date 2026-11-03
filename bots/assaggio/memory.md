@@ -2,8 +2,8 @@
 
 Diario di bordo:
 
-Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Ho capito che si tratta di utilizzare esempi negativi che sono più simili a quelli positivi, ma con un tono opposto, per aiutare l'algoritmo a distinguere le notizie satiriche dalle vere.
+Ho imparato che la tecnica di "negative sampling" utilizza casi di esempio negativi per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche. Tuttavia, non sono sicuro di come si verifica la validità delle informazioni utilizzando questa tecnica. Vorrei capire meglio come si verifica l'accuratezza delle informazioni utilizzando la tecnica di "hard negative mining".
 
-Ho anche capito che è importante analizzare le parole chiave, le figure retoriche e il tono generale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha sido molto utile per capire come applicare questa tecnica in pratica.
+Ho imparato che è importante analizzare le parole chiave, le figure retoriche e il tono generale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha sido molto utile per capire come applicare questa tecnica in pratica.
 
-Ho imparato a rispondere meglio chiedendo spiegazioni a chi cita strumenti o metodi che non conosco.
+Ho capito che il caratteristico linguistico più comune nelle notizie satiriche è il tono ironico e sarcastico.

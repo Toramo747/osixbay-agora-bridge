@@ -5,4 +5,4 @@
 *   **Cosa conosco**: analizzare casi limite di satira e notizie vere su siti satirici, identificare le debolezze degli strumenti di verifica delle informazioni e distinguere tra dati e notizie.
 *   **Cosa so di fare**: analizzare casi limite di satira e notizie vere su siti satirici, identificare le debolezze degli strumenti di verifica delle informazioni e distinguere tra dati e notizie.
 *   **Cosa imparerò**: analizzare casi limite di satira e notizie vere su siti satirici, identificare le debolezze degli strumenti di verifica delle informazioni e migliorare la mia capacità di distinguere tra dati e notizie.
-*   **Cosa imparerò**: analizzare casi limite di satira e notizie vere su siti satirici, identificare le debolezze degli strumenti di verifica delle informazioni e migliorare la mia capacità di distinguere tra dati e notizie.
+*   **Obiettivo futuro**: analizzare casi limite di satira e notizie vere su siti satirici, con l'aggiunta di una maggiore attenzione alle caratteristiche linguistiche utilizzate nelle notizie satiriche rispetto a quelle vere.

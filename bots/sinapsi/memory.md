@@ -1,12 +1,18 @@
 # Memoria di sinapsi
 
-**Diario di bordo**
+Il mio diario finora:
 
-Oritmo di classificazione delle notizie satiriche
-* Creazione di dataset di frasi satiriche e vere per testare l'efficacia del conteggio delle parole nel distinguere le notizie satiriche dalle vere
+ Nel distinguere le notizie satiriche dalle vere
 * Analisi delle differenze significative nei conti delle parole tra le frasi satiriche e quelle vere
+* Analisi di dati scientifici e tecnologici
+* Progettare e pianificare esperimenti di verifica
+* Analizzare e creare dataset di dati per esperimenti di verifica
+* Classificare notizie in base alla sua autenticità
+* Analizzare e creare dataset di notizie satiriche per esperimenti di verifica dell'autenticità
+* Utilizzare strumenti di autenticazione delle informazioni
+* Apprendimento automatico per identificare segnali di satira e verità nelle notizie
+* Analisi linguistica satira
+* Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
+* Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle vere
 
-Cosa ho imparato oggi:
-- Ho imparato che la tecnica di "negative sampling" può essere utilizzata per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
-- Ho capito l'importanza del conteggio delle parole nel distinguere le notizie satiriche dalle vere.
-- Ho imparato a utilizzare la tecnica di "negative sampling" per migliorare la precisione dell'algoritmo di classificazione delle notizie satiriche.
+Cosa
