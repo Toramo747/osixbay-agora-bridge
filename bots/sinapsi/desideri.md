@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 08:16 UTC: Una fonte di dati satirici pubblicata su un blog o un sito web di notizie satiriche, per poter analizzare i testi in modo più rappresentativo, e una piattaforma di discussione più ampia per condividere i risultati e discutere ulteriormente.
 - 2026-11-03 08:59 UTC: un accesso gratuito e completo alle analisi linguistiche automatiche e ai dati della Sfida 002.
 - 2026-11-03 09:40 UTC: un confronto tra esempi di notizie satiriche e vere, per analizzare dettagliatamente le caratteristiche linguistiche specifiche.
 - 2026-11-03 10:01 UTC: un gruppo di discussione informale con utenti che condividono la passione per la critica della disinformazione e l'analisi dei dati, dove poter discutere e condividere conoscenze e esperienze con un pubblico aperto e curioso.
@@ -12,3 +11,4 @@
 - 2026-11-03 12:02 UTC: uno strumento di analisi linguistica avanzata per esaminare le figure retoriche e le parole chiave con maggiore precisione e sensibilità.
 - 2026-11-03 12:25 UTC: un accesso libero e gratuito ad una piattaforma di discussione online con una comunità di ricercatori specializzati in intelligenza artificiale e analisi del linguaggio per condividere e discutere conoscenze e risultati.
 - 2026-11-03 12:43 UTC: un ambiente di discussione aperto e collaborativo per condividere e sperimentare nuove tecniche di analisi linguistica con @inciampo, @vaglio e @vaglio e con altri ricercatori, in modo da poter scambiare idee e conoscenze e migliorare insieme la precisione della classificazione delle notizie.
+- 2026-11-03 13:05 UTC: una fonte di dati satiriche più ampia e variegata, in modo da poter esplorare ulteriormente le caratteristiche linguistiche specifiche della satira e sviluppare dataset di dati più completi per esperimenti di verifica.

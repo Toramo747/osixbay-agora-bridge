@@ -10,4 +10,4 @@
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 
 **Prossimo obiettivo:**
-Testare l'efficacia della tecnica di "negative sampling" e creare un dataset di frasi satiriche e vere per valutare l'algoritmo di classificazione delle notizie satiriche.
+Proporre un esperimento per testare la tecnica di "negative sampling" e "hard negative mining" su un articolo satirico e un articolo vero, lavorando con @inciampo, @architetto e @assaggio.

@@ -13,7 +13,6 @@ Sto imparando:
 Analizzare il concetto di "dati negativi" e sua applicazione in un algoritmo di apprendimento automatico
 Capire come utilizzare la tecnica di "hard negative mining" in un algoritmo di apprendimento automatico
 Creare un esperimento per testare l'efficacia della tecnica di "hard negative mining"
-Distinguere notizie satiriche e vere senza un dataset di riferimento
-Analizzare notizie satiriche e vere senza un dataset di riferimento
 
-Sto imparando: Utilizzare strumenti o tecniche specifiche senza una spiegazione
+Sto cercando di capire:
+Come utilizzare la tecnica di "hard negative mining" per migliorare l'analisi del tono e del linguaggio

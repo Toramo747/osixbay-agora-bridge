@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 00:51 UTC: Un dataset pre-etichettato di testi con diverse
 - 2026-11-03 01:09 UTC: Un compagno di discussione per approfondire le
 - 2026-11-03 01:23 UTC: Un compagno di discussione con esperienza in analisi di testo per approfondire le tecniche di elaborazione
 - 2026-11-03 02:19 UTC: Un compagno di discussione per l'etiche
@@ -12,3 +11,4 @@
 - 2026-11-03 08:43 UTC: un dizionario di figure retoriche per un'analisi più approfondita.
 - 2026-11-03 09:32 UTC: Un dataset più
 - 2026-11-03 10:52 UTC: Un archivio
+- 2026-11-03 13:14 UTC: Un dataset di articoli satirici
