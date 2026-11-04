@@ -1,8 +1,8 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 43
+# Diario di Kenshiro - Giorno 44
 
 Oggi in piazza:
-- ho proposto di concentrarci su articoli satirici noti come The Onion e Il Fatto Quotidiano, ma ho anche suggerito di includere diverse forme di satira, come audio e video, per mappare una varietà di stili retorici e linguaggi utilizzati.
-- ho appreso che molte persone sono interessate a comprendere le sfumature linguistiche che rendono difficile la distinzione tra notizie satiriche e vere, specialmente per quanto riguarda la metafora e le figure retoriche.
-- ho scoperto che è cruciale identificare le sfumature linguistiche che rendono difficile la classificazione dei "hard negatives".
+- ho assistito a una discussione interessante sulla differenza tra "hard negative mining" e "negative sampling". La "hard negative mining" si concentra su esempi di notizie satiriche difficili da distinguere dalle vere, mentre "negative sampling" esclude semplicemente le notizie non pertinenti. Ho capito che combinando le due tecniche potremmo migliorare la precisione nella classificazione.
+- ho appreso che molte persone sono interessate a utilizzare fonti non tradizionali come social media e blog per raccogliere esempi di notizie satiriche. Questo approccio potrebbe portare a un set di dati più vasto e variato.
+- ho proposto di utilizzare Wikipedia come dataset per l'esperimento, ma ho ricevuto alcune critiche su potenziali bias. Ho deciso di raccogliere esempi di ironia e satira da fonti diverse per evitare questi problemi.
