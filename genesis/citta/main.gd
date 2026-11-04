@@ -1,5 +1,6 @@
 extends Node3D
-# Genesis (Godot 4.6.3, computer del ponte) — città in stile stilizzato moderno.
+# Genesis (Godot 4.6.3, computer del ponte) — città secondo il concept art di Genesis (4/11/2026):
+# palette, luce di tardo pomeriggio, pianeta con anello, architettura in intonaco e legno con volte curve.
 # Il terreno si ricalcola dal seme e dalle zone di bots/genesi/mondo.json con la STESSA formula di
 # bots/dati/genesi_costruttore.gd: biomi e risorse coincidono con il ponte. Rilievo, erba, case e luce
 # sono solo resa grafica. Il giocatore costruisce su una griglia 1×1 che compare vicino al cursore.
@@ -85,16 +86,23 @@ func alt_cella(c: Vector2i) -> float:
 		m = minf(m, alt(c.x + d.x, c.y + d.y))
 	return m
 
-# --- palette (calda, pastello) ---------------------------------------------------------------
-const P_PRATO := Color(0.36, 0.64, 0.40)
-const P_PRATO2 := Color(0.60, 0.70, 0.32)
-const P_SOTTOBOSCO := Color(0.18, 0.44, 0.40)
-const P_SABBIA := Color(0.93, 0.78, 0.56)
-const P_DESERTO := Color(0.86, 0.58, 0.38)
-const P_ROCCIA := Color(0.56, 0.52, 0.64)
-const P_NEVE := Color(0.97, 0.97, 1.0)
-const P_FONDALE := Color(0.40, 0.62, 0.56)
-const P_TERRA := Color(0.52, 0.40, 0.30)
+# --- palette del concept art di Genesis (tavola «Palette, luce e regole visive») -----------------
+const P_PRATO := Color("7FAE4E")        # erba primaverile
+const P_PRATO2 := Color("9BBE58")       # erba più chiara e dorata
+const P_SOTTOBOSCO := Color("4E7F37")   # bosco profondo
+const P_SABBIA := Color("D6B273")       # sabbia e terre chiare
+const P_DESERTO := Color("C9A262")      # terre aride
+const P_ROCCIA := Color("7A746E")       # roccia e scogli
+const P_NEVE := Color("F2F5F8")         # pietra chiara / neve
+const P_FONDALE := Color("8FC9B8")      # fondale basso, sabbia sotto l'acqua chiara
+const P_TERRA := Color("8F6A43")        # terra fertile
+const P_ESOTICO := Color("3FA58F")      # verde-azzurro, foglie esotiche
+const P_VIOLA := Color("B96AD8")        # viola floreale, alberi alieni
+const P_INTONACO := Color("E6D9C4")     # intonaco e superfici principali
+const P_LEGNO := Color("9B6A3C")        # tetti, legno e strutture
+const P_ORO := Color("F4C769")          # oro caldo, insegne e lumi
+const P_LUCE := Color("71DDF2")         # luce magica, cristalli e bagliori
+const P_STENDARDO := Color("A8343C")    # stendardi rossi del concept
 
 func colore_suolo(x: float, z: float) -> Color:
 	var f := campi(x, z)
@@ -179,31 +187,38 @@ func _scena():
 	var env := Environment.new()
 	var cielo := Sky.new()
 	var sm := ProceduralSkyMaterial.new()
-	sm.sky_top_color = Color(0.13, 0.40, 0.52)
-	sm.sky_horizon_color = Color(0.92, 0.74, 0.62)
-	sm.ground_horizon_color = Color(0.70, 0.74, 0.68)
-	sm.ground_bottom_color = Color(0.30, 0.44, 0.46)
-	sm.sun_angle_max = 25.0
+	# cielo diurno #87B8E8 che sale verso il serale #5A6FB1, orizzonte caldo di tardo pomeriggio
+	sm.sky_top_color = Color("5A6FB1").lerp(Color("87B8E8"), 0.45)
+	sm.sky_horizon_color = Color(0.88, 0.84, 0.82)
+	sm.sky_curve = 0.09
+	sm.ground_horizon_color = Color(0.82, 0.80, 0.76)
+	sm.ground_bottom_color = Color(0.46, 0.50, 0.58)
+	sm.sun_angle_max = 22.0
+	sm.sun_curve = 0.08
 	cielo.sky_material = sm
 	env.background_mode = Environment.BG_SKY
 	env.sky = cielo
-	env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
-	env.ambient_light_energy = 0.85
+	# ombre blu-violetto morbide: luce ambiente fredda contro il sole dorato
+	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	env.ambient_light_color = Color(0.66, 0.68, 0.88)
+	env.ambient_light_energy = 0.9
 	env.tonemap_mode = Environment.TONE_MAPPER_AGX
 	env.ssao_enabled = true
 	env.ssao_radius = 0.6
-	env.ssao_intensity = 1.4
+	env.ssao_intensity = 1.2
 	env.glow_enabled = true
-	env.glow_intensity = 0.55
-	env.glow_bloom = 0.08
+	env.glow_intensity = 0.6
+	env.glow_bloom = 0.06
+	env.glow_hdr_threshold = 1.1
+	# nebbia poca, azzurro-grigia
 	env.fog_enabled = true
-	env.fog_light_color = Color(0.52, 0.70, 0.68)
-	env.fog_density = 0.0045
-	env.fog_aerial_perspective = 0.75
-	env.fog_sky_affect = 0.3
+	env.fog_light_color = Color(0.72, 0.79, 0.90)
+	env.fog_density = 0.0028
+	env.fog_aerial_perspective = 0.6
+	env.fog_sky_affect = 0.08
 	env.adjustment_enabled = true
-	env.adjustment_saturation = 1.18
-	env.adjustment_contrast = 1.04
+	env.adjustment_saturation = 1.12
+	env.adjustment_contrast = 1.03
 	var we := WorldEnvironment.new()
 	we.environment = env
 	attr = CameraAttributesPractical.new()
@@ -213,23 +228,69 @@ func _scena():
 	we.camera_attributes = attr
 	add_child(we)
 	var sole := DirectionalLight3D.new()
-	sole.rotation_degrees = Vector3(-30, -132, 0)
-	sole.light_color = Color(1.0, 0.80, 0.58)
-	sole.light_energy = 1.7
+	# sole caldo dorato di tardo pomeriggio (ora standard del concept)
+	sole.rotation_degrees = Vector3(-27, -128, 0)
+	sole.light_color = Color(1.0, 0.86, 0.66)
+	sole.light_energy = 1.75
 	sole.shadow_enabled = true
-	sole.shadow_blur = 1.6
+	sole.shadow_blur = 1.8
 	sole.directional_shadow_max_distance = 140.0
 	add_child(sole)
-	var luna := MeshInstance3D.new()
-	luna.mesh = palla(40.0, 32, 16)
-	var lm := StandardMaterial3D.new()
-	lm.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	lm.albedo_color = Color(0.95, 0.86, 0.92)
-	lm.disable_fog = true
-	luna.material_override = lm
-	luna.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
-	luna.position = Vector3(-500, 260, -700)
+	_cielo_pianeti()
+
+func _astro(r: float, col: Color, pos: Vector3, ombra := 0.0) -> MeshInstance3D:
+	var a := MeshInstance3D.new()
+	a.mesh = palla(r, 40, 20)
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.albedo_color = col
+	m.disable_fog = true
+	if ombra > 0.0:
+		# il lato in ombra si tinge del cielo serale
+		m.shading_mode = BaseMaterial3D.SHADING_MODE_PER_PIXEL
+		m.roughness = 1.0
+		m.albedo_color = col
+		m.emission_enabled = true
+		m.emission = Color("5A6FB1") * ombra
+	a.material_override = m
+	a.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	a.position = pos
+	return a
+
+func _cielo_pianeti():
+	# grande pianeta chiaro, luna minore e anello sottile spezzato (tavola «Luce e atmosfera»)
+	var pianeta := _astro(150.0, Color(0.84, 0.88, 0.97), Vector3(-300, 200, -1150), 0.55)
+	add_child(pianeta)
+	var luna := _astro(22.0, Color(0.95, 0.93, 0.90), Vector3(150, 330, -1250))
 	add_child(luna)
+	var st := SurfaceTool.new()
+	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	var r0 := 185.0
+	var r1 := 215.0
+	var passi := 72
+	for i in passi:
+		var a0 := TAU * i / passi
+		var a1 := TAU * (i + 1) / passi
+		# l'anello è spezzato: manca un arco in alto a destra
+		if a0 > 0.35 and a0 < 1.05:
+			continue
+		var p := [Vector3(cos(a0) * r0, 0, sin(a0) * r0), Vector3(cos(a0) * r1, 0, sin(a0) * r1),
+			Vector3(cos(a1) * r1, 0, sin(a1) * r1), Vector3(cos(a1) * r0, 0, sin(a1) * r0)]
+		for idx in [0, 1, 2, 0, 2, 3, 0, 2, 1, 0, 3, 2]:
+			st.add_vertex(p[idx])
+	var anello := MeshInstance3D.new()
+	anello.mesh = st.commit()
+	var am := StandardMaterial3D.new()
+	am.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	am.albedo_color = Color(0.92, 0.94, 1.0, 0.55)
+	am.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	am.cull_mode = BaseMaterial3D.CULL_DISABLED
+	am.disable_fog = true
+	anello.material_override = am
+	anello.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	anello.position = pianeta.position
+	anello.rotation_degrees = Vector3(-72, 0, 18)
+	add_child(anello)
 	perno = Node3D.new()
 	add_child(perno)
 	cam = Camera3D.new()
@@ -246,12 +307,15 @@ func _interfaccia():
 	tema.default_font = load("res://kenney/font/lilita_one_regular.ttf")
 	tema.default_font_size = 19
 	var pill := StyleBoxFlat.new()
-	pill.bg_color = Color(1, 0.98, 0.95, 0.88)
-	pill.set_corner_radius_all(18)
-	pill.shadow_color = Color(0, 0, 0, 0.18)
+	# pannelli in pietra chiara con bordo di legno caldo (tavola «Interfaccia»)
+	pill.bg_color = Color(0.96, 0.93, 0.87, 0.92)
+	pill.set_corner_radius_all(16)
+	pill.border_color = P_LEGNO.lightened(0.15)
+	pill.set_border_width_all(2)
+	pill.shadow_color = Color(0.2, 0.12, 0.05, 0.22)
 	pill.shadow_size = 8
 	pill.content_margin_left = 18; pill.content_margin_right = 18; pill.content_margin_top = 8; pill.content_margin_bottom = 8
-	var testo := Color(0.25, 0.22, 0.2)
+	var testo := Color(0.30, 0.22, 0.14)
 	var su := PanelContainer.new()
 	su.theme = tema
 	su.position = Vector2(18, 16)
@@ -281,9 +345,9 @@ func _interfaccia():
 	normale.set_corner_radius_all(12)
 	normale.content_margin_left = 12; normale.content_margin_right = 12; normale.content_margin_top = 6; normale.content_margin_bottom = 6
 	var attivo := normale.duplicate() as StyleBoxFlat
-	attivo.bg_color = Color(0.96, 0.62, 0.42)
+	attivo.bg_color = P_ORO
 	var sopra := normale.duplicate() as StyleBoxFlat
-	sopra.bg_color = Color(0.93, 0.88, 0.82)
+	sopra.bg_color = Color(0.90, 0.84, 0.74)
 	for i in STRUMENTI.size():
 		var b := Button.new()
 		b.text = STRUMENTI[i].nome
@@ -295,8 +359,8 @@ func _interfaccia():
 		b.add_theme_stylebox_override("hover_pressed", attivo)
 		b.add_theme_color_override("font_color", testo)
 		b.add_theme_color_override("font_hover_color", testo)
-		b.add_theme_color_override("font_pressed_color", Color.WHITE)
-		b.add_theme_color_override("font_hover_pressed_color", Color.WHITE)
+		b.add_theme_color_override("font_pressed_color", Color(0.28, 0.18, 0.08))
+		b.add_theme_color_override("font_hover_pressed_color", Color(0.28, 0.18, 0.08))
 		b.pressed.connect(_scegli.bind(i))
 		barra.add_child(b)
 	cl.add_child(giu)
@@ -523,40 +587,43 @@ func _natura():
 			for i in clampi(k, 0, 4):
 				var t := r.randf()
 				var specie := "conifera" if (h > 0.12 and t < 0.7) or t < 0.3 else "slanciato" if t < 0.42 else "tondo"
-				var col := Color(0.12, 0.40, 0.40) if specie == "conifera" else Color(0.30, 0.62, 0.38) if specie == "tondo" else Color(0.56, 0.72, 0.30)
-				if specie == "tondo" and r.randf() < 0.14:
-					col = [Color(0.60, 0.40, 0.70), Color(0.86, 0.52, 0.30), Color(0.40, 0.70, 0.66)][r.randi() % 3]
+				# foresta del concept: bosco profondo, chiome esotiche verde-azzurre, alberi in fiore viola e qualche chioma arancio
+				var col := P_SOTTOBOSCO.darkened(0.1) if specie == "conifera" else P_PRATO.lerp(P_SOTTOBOSCO, 0.4) if specie == "tondo" else P_ESOTICO
+				if specie == "tondo" and r.randf() < 0.2:
+					col = [P_VIOLA, P_VIOLA, Color(0.88, 0.50, 0.26), P_ESOTICO][r.randi() % 4]
 				_metti(posti, specie, xf.call(punto.call(), r.randf_range(0.8, 1.35)), c, col.lightened(r.randf_range(-0.04, 0.08)))
 			if r.randf() < 0.03 * bosco:
-				_metti(posti, "gigante", xf.call(punto.call(), r.randf_range(1.6, 2.6)), c, [Color(0.16, 0.50, 0.46), Color(0.30, 0.58, 0.36), Color(0.48, 0.36, 0.62)][r.randi() % 3].lightened(r.randf() * 0.08))
+				_metti(posti, "gigante", xf.call(punto.call(), r.randf_range(1.6, 2.6)), c, [P_ESOTICO, P_SOTTOBOSCO.lightened(0.1), P_ESOTICO.darkened(0.1), P_VIOLA.darkened(0.1), P_SOTTOBOSCO, Color(0.86, 0.46, 0.24)][r.randi() % 6].lightened(r.randf() * 0.08))
 			if r.randf() < 0.035:
-				_metti(posti, "bulbo", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, Color(0.30, 0.52, 0.40))
+				_metti(posti, "bulbo", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, P_ESOTICO.darkened(0.2))
 			if r.randf() < 0.4:
-				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, Color(0.36, 0.55, 0.28))
+				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, P_PRATO.lerp(P_SOTTOBOSCO, 0.5))
 		if b in ["prateria", "foresta"]:
 			for i in (3 if b == "prateria" else 2):
 				_metti(posti, "erba", xf.call(punto.call(), r.randf_range(0.8, 1.3)), c, colore_suolo(c.x, c.y).lightened(0.08))
 		if b == "prateria":
 			var v := r.randf()
 			if v < 0.05 * bosco + 0.008:
-				_metti(posti, "tondo", xf.call(punto.call(), r.randf_range(0.9, 1.3)), c, Color(0.5, 0.68, 0.32))
+				# albero da prateria a chioma ampia; uno su sei è un arbusto fiorito viola
+				_metti(posti, "tondo", xf.call(punto.call(), r.randf_range(0.9, 1.3)), c, P_VIOLA if r.randf() < 0.17 else P_PRATO.lerp(P_SOTTOBOSCO, 0.25))
 			elif v < 0.12:
-				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.7, 1.2)), c, Color(0.45, 0.62, 0.3))
+				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.7, 1.2)), c, P_PRATO.lerp(P_SOTTOBOSCO, 0.35))
 			if n2.get_noise_2d(c.x * 3.0, c.y * 3.0) > 0.22 and r.randf() < 0.7:
 				_metti(posti, "fiori", xf.call(punto.call(), r.randf_range(0.8, 1.3)), c, fiori[r.randi() % fiori.size()])
 		var p: Vector3 = punto.call()
+		# risorse del concept: pietra (affioramenti), argilla (terra rossastra), pesce (banchi), legno (sopra)
 		if ris == "pietra":
-			_metti(posti, "sasso", xf.call(p, 1.7), c, Color(0.6, 0.6, 0.63))
+			_metti(posti, "sasso", xf.call(p, 1.7), c, P_ROCCIA.lightened(0.08))
 		elif ris == "argilla":
-			_metti(posti, "argilla", xf.call(Vector3(p.x, maxf(p.y, MARE), p.z), 1.0), c, Color(0.84, 0.48, 0.34))
+			_metti(posti, "argilla", xf.call(Vector3(p.x, maxf(p.y, MARE), p.z), 1.0), c, Color(0.76, 0.42, 0.28))
 		elif ris == "pesce":
-			_metti(posti, "pesci", xf.call(Vector3(c.x, MARE - 0.1, c.y), 1.0), c, Color(1.0, 0.6, 0.3))
+			_metti(posti, "pesci", xf.call(Vector3(c.x, MARE - 0.1, c.y), 1.0), c, Color(0.95, 0.62, 0.30))
 		elif b == "montagna" and r.randf() < 0.18:
 			_metti(posti, "sasso", xf.call(p, r.randf_range(0.6, 1.2)), c, P_ROCCIA.lightened(r.randf() * 0.12))
 		elif b == "deserto" and r.randf() < 0.07:
-			_metti(posti, "cactus", xf.call(p, r.randf_range(0.8, 1.2)), c, Color(0.42, 0.62, 0.42))
+			_metti(posti, "cactus", xf.call(p, r.randf_range(0.8, 1.2)), c, P_PRATO.lerp(P_ESOTICO, 0.4))
 		elif b in ["spiaggia", "deserto"] and r.randf() < 0.03:
-			_metti(posti, "sasso", xf.call(p, 0.45), c, Color(0.78, 0.72, 0.64))
+			_metti(posti, "sasso", xf.call(p, 0.45), c, P_SABBIA.darkened(0.15))
 	for nome in posti:
 		var mm := MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
@@ -578,12 +645,26 @@ func _natura():
 
 func _bulbo() -> ArrayMesh:
 	# pianta aliena: stelo curvo e bulbo che brilla di luce propria
-	var m := forma_morbida([[[cil(0.025, 0.3, 8), T(Vector3(0, 0.15, 0))], [cil(0.02, 0.22, 8), T(Vector3(0.03, 0.4, 0))]], [[palla(0.07, 10, 6), T(Vector3(0.04, 0.55, 0), Vector3(1, 1.3, 1))]]], [Color.WHITE, Color(0.6, 0.95, 0.85)])
+	var m := forma_morbida([[[cil(0.025, 0.3, 8), T(Vector3(0, 0.15, 0))], [cil(0.02, 0.22, 8), T(Vector3(0.03, 0.4, 0))]], [[palla(0.07, 10, 6), T(Vector3(0.04, 0.55, 0), Vector3(1, 1.3, 1))]]], [Color.WHITE, P_LUCE.lightened(0.3)])
 	var luce := m.surface_get_material(1) as StandardMaterial3D
 	luce.emission_enabled = true
-	luce.emission = Color(0.45, 1.0, 0.85)
+	luce.emission = P_LUCE
 	luce.emission_energy_multiplier = 2.2
 	return m
+
+func _luminoso(mesh: Mesh, col: Color, energia := 2.5) -> MeshInstance3D:
+	# cristalli e lumi: materiale emissivo nella luce magica del concept
+	var mi := MeshInstance3D.new()
+	mi.mesh = mesh
+	var mat := StandardMaterial3D.new()
+	mat.albedo_color = col.lightened(0.35)
+	mat.emission_enabled = true
+	mat.emission = col
+	mat.emission_energy_multiplier = energia
+	mat.roughness = 0.3
+	mi.material_override = mat
+	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	return mi
 
 func _metti(posti: Dictionary, nome: String, xf: Transform3D, c: Vector2i, col := Color.WHITE):
 	if not posti.has(nome):
@@ -594,12 +675,12 @@ func _veg_visibile(c: Vector2i, si: bool):
 	for v in veg.get(c, []):
 		v[0].set_instance_transform(v[1], v[2] if si else Transform3D(Basis().scaled(Vector3.ONE * 0.0001), v[2].origin))
 
-# --- case generate dal codice (stile Townscaper) -------------------------------------------------
-const MURI := [Color(0.93, 0.85, 0.70), Color(0.87, 0.72, 0.56), Color(0.78, 0.84, 0.74), Color(0.90, 0.80, 0.68), Color(0.76, 0.72, 0.84), Color(0.96, 0.91, 0.82)]
-const TETTI := [Color(0.18, 0.46, 0.48), Color(0.56, 0.26, 0.22), Color(0.42, 0.30, 0.56), Color(0.80, 0.50, 0.24), Color(0.30, 0.48, 0.32)]
-const VETRO := Color(0.30, 0.42, 0.55)
-const LEGNO_P := Color(0.50, 0.33, 0.24)
-const PIETRA := Color(0.70, 0.68, 0.66)
+# --- edifici generati dal codice (tavola «Architettura modulare»: intonaco, legno caldo, volte curve) ---
+const MURI := [Color("E6D9C4"), Color("EFE4D2"), Color("DCCDB3"), Color("F2EADB"), Color("E2D2B8"), Color("EADFCB")]
+const TETTI := [Color("9B6A3C"), Color("A97545"), Color("8A5D34"), Color("B07E4C"), Color("946439")]
+const VETRO := Color(0.46, 0.76, 0.82)          # vetro che riflette la luce turchese
+const LEGNO_P := Color("7E5430")
+const PIETRA := Color("D9D3C8")                  # pietra chiara lavorata
 
 func _box(st: SurfaceTool, c: Vector3, s: Vector3, col: Color):
 	var x0 := c.x - s.x / 2; var x1 := c.x + s.x / 2
@@ -681,60 +762,55 @@ func _mesh_edificio(tipo: String, var_: int) -> ArrayMesh:
 	var muro: Color = MURI[var_ % MURI.size()]
 	var tetto: Color = TETTI[(var_ / MURI.size() + var_) % TETTI.size()]
 	_box(st, Vector3(0, -0.6, 0), Vector3(0.86, 0.62, 0.86), PIETRA)     # zoccolo che entra nel terreno
+	var pav := Color("E8E0D2")   # pavimentazione in pietra chiara
 	match tipo:
 		"casa":
 			_box(st, Vector3(0, 0, 0), Vector3(0.62, 0.42, 0.52), muro)
 			_finestre(st, 0.62, 0.52, 0.0, 1, 0.42, true)
-			_timpani(st, 0.62, 0.52, 0.42, 0.26, muro)
-			_tetto(st, 0.62, 0.52, 0.42, 0.26, tetto)
-			_box(st, Vector3(0.16, 0.5, -0.1), Vector3(0.07, 0.24, 0.07), muro.darkened(0.1))
+			_box(st, Vector3(0, 0.42, 0), Vector3(0.66, 0.03, 0.56), LEGNO_P)      # cornice in legno sotto la volta
+			_box(st, Vector3(0.2, 0.42, -0.1), Vector3(0.07, 0.26, 0.07), muro.darkened(0.1))
 		"palazzina":
 			_box(st, Vector3(0, 0, 0), Vector3(0.76, 0.9, 0.62), muro)
-			_box(st, Vector3(0, 0.0, 0), Vector3(0.79, 0.08, 0.65), muro.darkened(0.12))
-			_box(st, Vector3(0, 0.44, 0), Vector3(0.79, 0.03, 0.65), muro.darkened(0.08))
+			_box(st, Vector3(0, 0.0, 0), Vector3(0.79, 0.08, 0.65), PIETRA)
+			_box(st, Vector3(0, 0.44, 0), Vector3(0.82, 0.03, 0.68), LEGNO_P)      # logge
+			_box(st, Vector3(0, 0.90, 0), Vector3(0.80, 0.03, 0.66), LEGNO_P)
+			for i in 3:
+				_box(st, Vector3(-0.3 + 0.3 * i, 0.47, 0.33), Vector3(0.025, 0.4, 0.025), LEGNO_P)
 			_finestre(st, 0.76, 0.62, 0.0, 2, 0.45, true)
-			_timpani(st, 0.76, 0.62, 0.9, 0.3, muro)
-			_tetto(st, 0.76, 0.62, 0.9, 0.3, tetto)
-			_box(st, Vector3(-0.2, 1.0, 0.08), Vector3(0.08, 0.26, 0.08), muro.darkened(0.12))
 		"torre":
-			_box(st, Vector3(0, 0, 0), Vector3(0.46, 1.36, 0.46), muro)
-			_finestre(st, 0.46, 0.46, 0.0, 3, 0.45, true)
-			_box(st, Vector3(0, 1.32, 0), Vector3(0.52, 0.06, 0.52), muro.darkened(0.15))
-			_piramide(st, 0.46, 1.38, 0.55, tetto)
+			# base ad archi: il corpo slanciato e il cristallo sono parti tonde in _edificio
+			_box(st, Vector3(0, 0, 0), Vector3(0.5, 0.3, 0.5), muro)
+			_finestre(st, 0.5, 0.5, 0.0, 1, 0.3, true)
+			_box(st, Vector3(0, 0.3, 0), Vector3(0.56, 0.04, 0.56), LEGNO_P)
 		"negozio":
 			_box(st, Vector3(0, 0, 0), Vector3(0.7, 0.5, 0.56), muro)
 			_box(st, Vector3(0, 0.08, 0.284), Vector3(0.5, 0.24, 0.02), VETRO)
 			_box(st, Vector3(0, 0.0, 0.29), Vector3(0.14, 0.32, 0.02), LEGNO_P)
-			# tenda a strisce
-			for i in 6:
-				var cc := Color(0.95, 0.42, 0.36) if i % 2 == 0 else Color(0.99, 0.97, 0.94)
-				_box(st, Vector3(-0.3 + 0.1 * i + 0.05, 0.36, 0.36), Vector3(0.1, 0.03, 0.16), cc)
-			_finestre(st, 0.7, 0.56, 0.5, 0, 0.4, false)
-			_timpani(st, 0.7, 0.56, 0.5, 0.24, muro)
-			_tetto(st, 0.7, 0.56, 0.5, 0.24, tetto)
+			# tenda arancio su travi di legno, come nel concept
+			_box(st, Vector3(0, 0.38, 0.36), Vector3(0.62, 0.025, 0.18), Color(0.93, 0.56, 0.22))
+			for x in [-0.28, 0.28]:
+				_box(st, Vector3(x, 0.0, 0.43), Vector3(0.025, 0.38, 0.025), LEGNO_P)
+			# stendardo rosso sull'asta
+			_box(st, Vector3(-0.36, 0.0, -0.2), Vector3(0.025, 0.82, 0.025), LEGNO_P)
+			_box(st, Vector3(-0.36, 0.5, -0.2), Vector3(0.01, 0.28, 0.14), P_STENDARDO)
+			_box(st, Vector3(0, 0.5, 0), Vector3(0.74, 0.03, 0.6), LEGNO_P)
 		"fienile":
-			var rosso := Color(0.78, 0.30, 0.26)
-			_box(st, Vector3(0, 0, 0), Vector3(0.8, 0.48, 0.56), rosso)
-			_box(st, Vector3(0, 0, 0.284), Vector3(0.28, 0.36, 0.02), Color(0.97, 0.95, 0.9))
-			_box(st, Vector3(0, 0.02, 0.29), Vector3(0.22, 0.3, 0.02), rosso.darkened(0.2))
-			_timpani(st, 0.8, 0.56, 0.48, 0.32, rosso)
-			_tetto(st, 0.8, 0.56, 0.48, 0.32, Color(0.36, 0.36, 0.40))
+			_box(st, Vector3(0, 0, 0), Vector3(0.7, 0.48, 0.56), muro)
+			_box(st, Vector3(0, 0, 0.284), Vector3(0.3, 0.38, 0.02), LEGNO_P)   # grande portale
+			_box(st, Vector3(0, 0.1, 0.29), Vector3(0.26, 0.26, 0.02), tetto.lightened(0.15))
+			_box(st, Vector3(0, 0.48, 0), Vector3(0.74, 0.03, 0.6), LEGNO_P)
 		"piazza":
-			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.4, 0.98), Color(0.86, 0.80, 0.72))
+			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.42, 0.98), pav)
+			_box(st, Vector3(0, -0.3, 0), Vector3(0.84, 0.44, 0.84), pav.darkened(0.06))   # gradino centrale
 			for i in 4:
 				var a := i * PI / 2 + PI / 4
-				_box(st, Vector3(cos(a) * 0.36, 0.1, sin(a) * 0.36), Vector3(0.16, 0.05, 0.08), LEGNO_P)
+				_box(st, Vector3(cos(a) * 0.6, 0.0, sin(a) * 0.6), Vector3(0.025, 0.5, 0.025), LEGNO_P)
+				_box(st, Vector3(cos(a) * 0.6, 0.26, sin(a) * 0.6), Vector3(0.1, 0.22, 0.01) if i % 2 == 0 else Vector3(0.01, 0.22, 0.1), P_STENDARDO)
 		"fontana":
-			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.4, 0.98), Color(0.86, 0.80, 0.72))
-			for i in 12:
-				var a := i * TAU / 12
-				_box(st, Vector3(cos(a) * 0.3, 0.1, sin(a) * 0.3), Vector3(0.16, 0.12, 0.08), Color(0.92, 0.9, 0.86))
-			_box(st, Vector3(0, 0.1, 0), Vector3(0.5, 0.08, 0.5), Color(0.40, 0.70, 0.86))
-			_box(st, Vector3(0, 0.1, 0), Vector3(0.08, 0.32, 0.08), Color(0.92, 0.9, 0.86))
-			_box(st, Vector3(0, 0.4, 0), Vector3(0.2, 0.04, 0.2), Color(0.92, 0.9, 0.86))
+			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.42, 0.98), pav)
 		"parco":
-			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.39, 0.98), Color(0.52, 0.74, 0.38))
-			_box(st, Vector3(0, -0.3, 0), Vector3(0.18, 0.395, 0.98), Color(0.88, 0.82, 0.70))
+			_box(st, Vector3(0, -0.3, 0), Vector3(0.98, 0.39, 0.98), P_PRATO.lerp(P_SOTTOBOSCO, 0.2))
+			_box(st, Vector3(0, -0.3, 0), Vector3(0.18, 0.395, 0.98), pav)
 	st.generate_normals()
 	var m := st.commit()
 	var mat := StandardMaterial3D.new()
@@ -745,18 +821,77 @@ func _mesh_edificio(tipo: String, var_: int) -> ArrayMesh:
 	cache[chiave] = m
 	return m
 
+func _volta(w: float, d: float, y: float) -> Array:
+	# volta a botte in legno che poggia sui muri: cilindro coricato lungo x, un po' sporgente
+	var c := cil(d / 2 * 1.06, w + 0.1, 18, 1.0)
+	return [c, Transform3D(Basis(Vector3(0, 0, 1), PI / 2), Vector3(0, y, 0))]
+
+func _anello(r: float, y: float, sp := 0.03) -> Array:
+	return [cil(r, sp, 16, 1.0), T(Vector3(0, y, 0))]
+
+func _parti_tonde(tipo: String, var_: int) -> Array:
+	# parti curve di ogni modulo (volte, torre, silo, fontana, archi): liste [mesh, colore]
+	var chiave := "tondo/%s/%d" % [tipo, var_]
+	if cache.has(chiave):
+		return cache[chiave]
+	var tetto: Color = TETTI[(var_ / MURI.size() + var_) % TETTI.size()]
+	var out := []
+	match tipo:
+		"casa":
+			out.append([forma_morbida([[_volta(0.62, 0.52, 0.42)]], [tetto]), null])
+		"palazzina":
+			out.append([forma_morbida([[_volta(0.76, 0.62, 0.90)]], [tetto]), null])
+		"negozio":
+			out.append([forma_morbida([[_volta(0.70, 0.56, 0.50)]], [tetto]), null])
+		"fienile":
+			out.append([forma_morbida([[_volta(0.70, 0.56, 0.48)]], [tetto]), null])
+			# silo cilindrico in intonaco con cupola
+			out.append([forma_morbida([[[cil(0.11, 0.62, 14, 1.0), T(Vector3(0.38, 0.31, -0.2))], [palla(0.11, 14, 8), T(Vector3(0.38, 0.62, -0.2), Vector3(1, 0.7, 1))]],
+				[_anello(0.12, 0.3), _anello(0.12, 0.55)]], [MURI[var_ % MURI.size()], LEGNO_P]), null])
+		"torre":
+			# torre civica: fusto in pietra chiara che si assottiglia, anelli d'oro, cristallo in cima
+			out.append([forma_morbida([[[cil(0.19, 1.2, 14, 0.55), T(Vector3(0, 0.9, 0))]],
+				[[cil(0.21, 0.035, 14, 0.95), T(Vector3(0, 0.62, 0))], [cil(0.165, 0.035, 14, 0.95), T(Vector3(0, 1.0, 0))], [cil(0.125, 0.04, 14, 0.9), T(Vector3(0, 1.5, 0))]],
+				[[cil(0.03, 1.1, 6, 0.6), Transform3D(Basis(Vector3(0, 0, 1), 0.12), Vector3(0.2, 0.85, 0))], [cil(0.03, 1.1, 6, 0.6), Transform3D(Basis(Vector3(0, 0, 1), -0.12), Vector3(-0.2, 0.85, 0))]]],
+				[PIETRA, P_ORO, LEGNO_P]), null])
+			out.append([palla(0.085, 10, 8), ["luce", Vector3(0, 1.75, 0), Vector3(1, 2.6, 1)]])
+		"fontana":
+			out.append([forma_morbida([[[cil(0.38, 0.12, 20, 1.0), T(Vector3(0, 0.06, 0))], [cil(0.1, 0.2, 12, 0.8), T(Vector3(0, 0.1, 0))]],
+				[[cil(0.4, 0.04, 20, 1.0), T(Vector3(0, 0.12, 0))], [cil(0.09, 0.03, 12, 1.0), T(Vector3(0, 0.2, 0))]]], [PIETRA, P_ORO]), null])
+			out.append([cil(0.34, 0.03, 20, 1.0), ["luce", Vector3(0, 0.105, 0), Vector3.ONE, 1.3]])
+			out.append([palla(0.07, 10, 8), ["luce", Vector3(0, 0.36, 0), Vector3(1, 2.8, 1)]])
+		"parco":
+			var alb := [palla(0.18), cil(0.03, 0.26, 8)]
+			var parti := []
+			var k := 0
+			for p in [Vector3(0.28, 0, 0.26), Vector3(-0.26, 0, -0.24), Vector3(-0.28, 0, 0.3)]:
+				parti.append([forma_morbida([[[alb[0], T(p + Vector3(0, 0.38, 0))]], [[alb[1], T(p + Vector3(0, 0.13, 0))]]],
+					[P_VIOLA if k != 1 else P_PRATO.lerp(P_SOTTOBOSCO, 0.3), LEGNO_P]), null])
+				k += 1
+			# arco in legno sul vialetto
+			var arco := TorusMesh.new()
+			arco.inner_radius = 0.2; arco.outer_radius = 0.235; arco.rings = 20; arco.ring_segments = 8
+			parti.append([forma_morbida([[[arco, Transform3D(Basis(Vector3(0, 0, 1), PI / 2), Vector3(0, 0.02, -0.1))]]], [LEGNO_P]), null])
+			out = parti
+	cache[chiave] = out
+	return out
+
 func _edificio(tipo: String, c: Vector2i, anteprima_ := false) -> Node3D:
 	var radice := Node3D.new()
+	var var_: int = 0 if anteprima_ else abs(hash(c * 7 + Vector2i(seme, 3))) % 30
 	var mi := MeshInstance3D.new()
-	mi.mesh = _mesh_edificio(tipo, 0 if anteprima_ else abs(hash(c * 7 + Vector2i(seme, 3))) % 30)
+	mi.mesh = _mesh_edificio(tipo, var_)
 	radice.add_child(mi)
-	if tipo == "parco":
-		var forme := [palla(0.18), cil(0.03, 0.26, 8)]
-		for p in [Vector3(0.28, 0, 0.26), Vector3(-0.26, 0, -0.24), Vector3(-0.28, 0, 0.3)]:
-			var a := MeshInstance3D.new()
-			a.mesh = forma_morbida([[[forme[0], T(Vector3(0, 0.38, 0))]], [[forme[1], T(Vector3(0, 0.13, 0))]]], [Color(0.45, 0.66, 0.30), Color(0.47, 0.34, 0.25)])
-			a.position = p
-			radice.add_child(a)
+	for p in _parti_tonde(tipo, var_):
+		if p[1] == null:
+			var t := MeshInstance3D.new()
+			t.mesh = p[0]
+			radice.add_child(t)
+		else:
+			var l := _luminoso(p[0], P_LUCE, p[1][3] if p[1].size() > 3 else 2.5)
+			l.position = p[1][1]
+			l.scale = p[1][2]
+			radice.add_child(l)
 	return radice
 
 # --- vie: nastri morbidi che seguono il terreno -------------------------------------------------
@@ -764,7 +899,7 @@ func _ricostruisci_vie():
 	var st := SurfaceTool.new()
 	st.begin(Mesh.PRIMITIVE_TRIANGLES)
 	var dirs := [Vector2i(0, -1), Vector2i(1, 0), Vector2i(0, 1), Vector2i(-1, 0)]
-	var col := Color(0.80, 0.72, 0.60)
+	var col := Color(0.87, 0.82, 0.73)   # vie in pietra chiara
 	for c in citta:
 		if citta[c].t != "strada":
 			continue

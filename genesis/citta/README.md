@@ -1,6 +1,6 @@
 # Genesis
 
-Scena Godot 4.6.3 da aprire sul computer del ponte: il mondo di Genesis in stile stilizzato moderno (ispirato a Tiny Glade e Townscaper), dove si costruisce come in un city builder.
+Scena Godot 4.6.3 da aprire sul computer del ponte: il mondo di Genesis secondo il concept art del 4/11/2026 (palette, luce di tardo pomeriggio, pianeta con anello, architettura in intonaco e legno con volte curve, torre civica di cristallo), dove si costruisce come in un city builder. Scala: 1 cella = 6 m.
 
 - **Aprire:** in Godot 4.6.3 → Importa → questa cartella → Esegui (F5).
 - **Terreno:** scarica `bots/genesi/mondo.json` (seme e zone) e ricalcola il mondo con la stessa formula di `bots/dati/genesi_costruttore.gd`: biomi e risorse coincidono con il ponte. Rilievo morbido, erba al vento, alberi, acqua e luce sono solo resa grafica.

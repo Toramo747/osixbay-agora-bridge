@@ -2,8 +2,8 @@ shader_type spatial;
 render_mode blend_mix, cull_back, specular_schlick_ggx;
 // Acqua: la profondità arriva dal fondale del generatore (COLOR.r: 0 = riva, 1 = largo),
 // così colore e schiuma sono gli stessi con ogni renderer.
-uniform vec4 bassa : source_color = vec4(0.34, 0.80, 0.70, 1.0);
-uniform vec4 profonda : source_color = vec4(0.05, 0.30, 0.40, 1.0);
+uniform vec4 bassa : source_color = vec4(0.278, 0.722, 0.788, 1.0); // #47B8C9 acqua chiara
+uniform vec4 profonda : source_color = vec4(0.114, 0.435, 0.549, 1.0); // #1D6F8C acqua profonda
 uniform float ampiezza = 0.012;
 varying float prof;
 varying vec3 mondo;

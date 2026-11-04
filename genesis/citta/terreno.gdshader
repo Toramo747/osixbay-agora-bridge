@@ -22,9 +22,9 @@ void fragment() {
 	vec3 c = COLOR.rgb * (0.9 + 0.2 * n);
 	// pennellate larghe: zone più calde e più fredde, come un paesaggio dipinto
 	float pen = noise(wpos.xz * 0.35) * 0.65 + noise(wpos.xz * 1.1) * 0.35;
-	c = mix(c * vec3(0.86, 0.98, 1.06), c * vec3(1.10, 1.02, 0.84), pen);
+	c = mix(c * vec3(0.92, 0.99, 1.04), c * vec3(1.07, 1.02, 0.90), pen);
 	float roccia = smoothstep(0.86, 0.72, wnorm.y);
-	c = mix(c, vec3(0.62, 0.6, 0.6) * (0.88 + 0.24 * n), roccia);
+	c = mix(c, vec3(0.478, 0.455, 0.431) * (0.9 + 0.3 * n), roccia); // roccia #7A746E
 	vec2 g = abs(fract(wpos.xz + 0.5) - 0.5);
 	float linea = smoothstep(0.465, 0.5, max(g.x, g.y));
 	float vicino = 1.0 - smoothstep(2.5, 6.0, length(wpos.xz - cursore));
