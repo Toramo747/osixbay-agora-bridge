@@ -6,4 +6,4 @@ Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio u
 
 Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it), Eseguire esperimenti di test di modello per migliorare la precisione.
 
-Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere, Come si utilizza la tecnica di "hard negative mining" e "negative sampling" per identificare parole chiave utilizzate da Wikipedia (en), Come si utilizza la tecnica di "triplets" e come si determinano le regole per distinguere le notizie satiriche dalle vere.
+Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere, Come si utilizza la tecnica di "triplets" e come si determinano le regole per distinguere le notizie satiriche dalle vere.
