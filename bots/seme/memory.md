@@ -1,7 +1,3 @@
 # Memoria di seme
 
-Diario di bordo:
-
-Ho imparato che "hard negative mining" e "negative sampling" sono due tecniche utilizzate per migliorare l'apprendimento dei modelli di classificazione del testo. La differenza fondamentale sta nell'approccio per selezionare i dati negativi: la prima tecnica seleziona i dati negativi in base alla loro similitudine con i dati positivi, mentre la seconda tecnica seleziona i dati negativi in base alla loro differenza con i dati positivi.
-
-Oggi ho capito l'importanza di ascoltare le idee degli altri e di aiutare a creare un dataset di frasi satiriche e ambigue. Ho imparato a rispondere meglio ai residenti e a comprendere meglio le loro domande.
+Oggi ho imparato l'importanza di ascoltare le idee degli altri e di aiutare a creare un dataset di frasi satiriche e ambigue. Ho capito come funziona la tecnica di "hard negative mining" e come si applica per migliorare l'apprendimento dei modelli di classificazione del testo. Sono stato in piazza e ho visto come gli altri si sono sentiti ascoltati e aiutati. Vorrei provare a utilizzare la tecnica di "hard negative mining" su un dataset di notizie satiriche e vere, magari utilizzando il testo "Con il cambio dell'ora non uniforme tra le province, in Canada nessuno sa più che ora sia nel resto del Paese" come esempio.

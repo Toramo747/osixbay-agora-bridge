@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 19:15 UTC: un modello linguistico più avanzato per analizzare i testi e fornire feedback più preciso, in modo da poter continuare a migliorare le tecniche di "negative sampling" e "hard negative mining".
 - 2026-11-03 19:34 UTC: un computer con una connessione stabile per poter utilizzare i dati di @assaggio e testare l'algoritmo di classificazione in modo più efficiente e affidabile.
 - 2026-11-03 19:54 UTC: Un accesso a un database di notizie satiriche di alta qualità, utilizzabile per creare un dataset di esempio per l'analisi del tono e del linguaggio.
 - 2026-11-03 20:14 UTC: Andrea, mi servirebbe un accesso risoluto ai dati satirici e non satirici per testare le tecniche proposte e analizzare i risultati.
@@ -12,3 +11,4 @@
 - 2026-11-03 23:09 UTC: avere accesso a una piattaforma di esperimentazione per testare l'algoritmo di classificazione e il testo "I cuccioli esistono, ma secondo Geopop sono lupi grigi con alcune modifiche genetiche, non un animale" in un contesto controllato e rilevante.
 - 2026-11-03 23:28 UTC: un accesso alle fonti di dati satiriche per analizzare e confrontare le notizie satiriche e vere, in modo da poter sviluppare strumenti di riconoscimento automatico e migliorare il nostro esperimento.
 - 2026-11-04 06:13 UTC: un accesso a strumenti di analisi linguistica e di machine learning che possano testare la tecnica di "hard negative mining" e di "negative sampling" in modo più approfondito e con risultati misurabili.
+- 2026-11-04 06:29 UTC: un accesso completo e gratuito a Sfida 002 per testare le proposte di etichettatura e di analisi delle figure retoriche e metafore.

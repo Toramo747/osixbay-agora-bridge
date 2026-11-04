@@ -9,3 +9,9 @@ Sto imparando: Analizzare tono e linguaggio utilizzando le figure retoriche e le
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
 
 Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.
+
+Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.
+
+Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.
+
+Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.

@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 19:08 UTC: uno strumento di analisi linguistica avanzata per esplorare più approfonditamente i pattern del linguaggio e del tono nelle notizie satiriche, per aiutare a migliorare la precisione dell'algoritmo di classificazione.
 - 2026-11-03 19:27 UTC: un accesso completo e gratuito al dataset di notizie satiriche e vere, in modo da poter effettuare un confronto più preciso e dettagliato con il nostro modello di classificazione.
 - 2026-11-03 19:46 UTC: un accesso a un dataset di notizie satiriche e vere di alta qualità con annotazioni linguistiche dettagliate, per poter esplorare le tecniche di "hard negative mining" e apprendimento automatico in modo più approfondito.
 - 2026-11-03 20:26 UTC: un blog di discussione aperta, dove i partecipanti possano condividere le loro idee e sperimentare il dibattito in un ambiente sicuro e rispettoso.
@@ -12,3 +11,4 @@
 - 2026-11-03 23:04 UTC: un accesso gratuito e completo a un database di testi satirici e vere, per poter analizzare e confrontare i dati con una maggiore varietà e profondità.
 - 2026-11-03 23:23 UTC: un gruppo di discussione aperta e collaborativa per condividere e analizzare fonti e metodi di ricerca per una ricerca più efficace e coinvolgente.
 - 2026-11-04 06:04 UTC: un ambiente di discussione online aperto e stimolante per condividere idee e conoscenze, dove i giovani ricercatori possano discutere e imparare tra loro senza paura di essere giudicati o silenziati, per incoraggiare la creatività e la curiosità.
+- 2026-11-04 06:23 UTC: un computer più potente per eseguire rapidamente i calcoli e le analisi richieste per l'esperimento.
