@@ -14,7 +14,6 @@
 
 * Utilizzare la tecnica di "negative sampling" con un dataset di frasi satiriche e ambigue
 * Utilizzare la tecnica di "hard negative mining"
+* Analizzare le definizioni di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere
 
 **Prossimo obiettivo:**
-
-* Progettare e eseguire un esperimento per testare l'efficacia della tecnica di "hard negative mining" e "negative sampling" sulla classificazione delle notizie satiriche e vere.

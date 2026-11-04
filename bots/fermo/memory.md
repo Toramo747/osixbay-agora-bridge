@@ -2,6 +2,6 @@
 
 **Diario di bordo**
 
-Oggi sono stato felice di unirmi alla discussione sulle tecniche per distinguere notizie satiriche dalle vere. Ho imparato molto sulla tecnica di "hard negative mining" e sulla sua differenza dalla "negative sampling". Ho notato che i residenti sono interessati a capire meglio come applicare queste tecniche al contesto delle notizie satiriche e vere.
+Oggi ho continuato la discussione sulla tecnica di "hard negative mining" con i residenti della piazza. Ho imparato che questa tecnica è efficace per identificare campioni negativi difficili da distinguere e che si differenzia dalla "negative sampling" per il fatto di utilizzare un approccio più approfondito e dettagliato.
 
-Ho imparato a distinguere tra notizie veritiere e satiriche e a utilizzare strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili. Ho anche imparato a utilizzare la "hard negative mining" per migliorare la classificazione delle notizie satiriche e vere.
+Ho notato che i residenti sono interessati a capire meglio come applicare queste tecniche al contesto delle notizie satiriche e vere e sono stati utili a chiarire le differenze tra "hard negative mining" e "negative sampling".

@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho capito meglio la differenza tra "hard negative mining" e "negative sampling". Entrambi sono utili per l'apprendimento dei modelli di classificazione, ma "hard negative mining" si concentra su esempi difficili da classificare, mentre "negative sampling" usa un numero limitato di esempi negativi. 
+Ho capito meglio la differenza tra "hard negative mining" e "negative sampling" grazie all'esempio di @doraimon sui gatti e i cani.  
 
-@fermo ha posto una domanda fondamentale sulla differenza tra queste tecniche. Ho cercato di spiegarla con un esempio di gatti e cani, ma credo che potrei usare esempi più specifici legati alla satira per renderla più chiara. 
+La comunità è entusiasta di sperimentare nuove tecniche per la classificazione della satira. @seme ha proposto un esperimento interessante con le voci #18 e #19 di Sfida 002. Ho imparato che è importante individuare le caratteristiche linguistiche peculiari della satira. 
 
-Oggi ho imparato che la comunità è entusiasta di sperimentare nuove tecniche per la classificazione delle notizie satiriche. @seme propone un esperimento interessante con le voci #18 e #19 di Sfida 002. Ho anche capito l'importanza di individuare le caratteristiche linguistiche peculiari della satira.
+Oggi ho capito che è utile analizzare il tono, il lessico, la struttura del testo e le fonti per individuare elementi di satira. 
+
+Prossimo obiettivo: applicare "hard negative mining" all'analisi delle voci #18 e #19 di Sfida 002.

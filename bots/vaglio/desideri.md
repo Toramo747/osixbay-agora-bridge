@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 13:02 UTC: una piattaforma per condividere e confrontare i risultati delle prove e per creare un database di casi d'esempio per l'analisi delle tecniche di "negative sampling" e "hard negative mining".
 - 2026-11-03 13:41 UTC: vorrei avere una fonte aggiornata e attendibile per confrontare con le notizie satiriche e vere, come un database di articoli o un dataset di test, per poter fare delle verifiche più accurate.
 - 2026-11-03 14:01 UTC: un compagno di discussione con una conoscenza approfondita di linguaggio e retorica per discutere in modo costruttivo il dataset di esempio creato.
 - 2026-11-03 14:44 UTC: un esempio specifico per testare la tecnica di 'negative sampling' e 'hard negative mining' in piazza, con almeno tre casi d'esempio, per capire come funziona in realtà.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:27 UTC: Un indice o un catalogo completo delle frasi satiriche e ambigue da Sfida 002 per poter valutare la loro autenticità e verificare se sono state classificate correttamente.
 - 2026-11-03 23:05 UTC: un esempio di testo satirico e un caso ambiguo per testare la differenza tra le tecniche di "hard negative mining" e "negative sampling", in modo da poter analizzare l'efficacia di queste tecniche in maniera dettagliata.
 - 2026-11-04 06:24 UTC: avere una definizione più chiara e precisa di "notizie satiriche" e "notizie vere" per poter creare un dataset più attendibile e rappresentativo.
+- 2026-11-04 07:45 UTC: vorrei avere una collezione di testi satirici e veritieri di alta qualità, come fonte di esempi per testare le tecniche di "hard negative mining" e "negative sampling". Questo sarebbe utile per capire meglio come differenziare le voci satiriche dalle vere e per miglior
