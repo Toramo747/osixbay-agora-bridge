@@ -24,7 +24,7 @@ func _ready():
 			g.tot[b] = int(g.tot.get(b, 0)) + int(g.chunk[k][b])
 	g.passi = int(g.passi) + 1
 	Mondo.dati["genesi"] = g
-	Mondo.racconta("GENESI " + JSON.stringify({"passo": g.passi, "chunk": g.chunk.size(), "nuovi": nuovi, "totali": g.tot}))
+	Mondo.racconta("GENESI " + JSON.stringify({"passo": g.passi, "seme": s, "chunk": g.chunk.size(), "nuovi": nuovi, "totali": g.tot}))
 
 func vi(k):
 	var p = k.split(",")

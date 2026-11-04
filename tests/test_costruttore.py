@@ -15,6 +15,7 @@ CFG = json.loads((REPO / 'bots' / 'bots.json').read_text())
 BOT = next(b for b in CFG['bots'] if b['name'] == 'genesi-costruttore')
 OPEN = dict(CFG, private_rooms_accessible=['genesis'])
 ME = 'genesi-costruttore'
+cs.PUBLIC_WORLD = Path(tempfile.mkdtemp()) / 'genesi' / 'mondo.json'  # i test non scrivono nel repository
 
 
 def step(pid, ago, direction='est'):
@@ -143,3 +144,34 @@ class EmulatedBridge(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class PublicWorld(unittest.TestCase):
+    """Eccezione decisa da Andrea (4/11): seme, esiti e zone pubblici; nient'altro di genesis."""
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp)
+
+    def test_only_seed_outcomes_and_zones(self):
+        ok = {'id': 'b2', 'author': 'genesis-godot', 'room': 'genesis', 'created': NOW - 10, 'reply_to': 's2',
+              'text': 'C:/Users/andrea/ponte\nGENESI {"passo": 2, "seme": 4242, "chunk": 5, "nuovi": ["1,0", "-1,0", "../x"], "totali": {"oceano": 9}}'}
+        b1 = dict(bridge('b1', 's1', passo=1, ago=7000), text='GENESI {"passo": 1, "chunk": 1, "nuovi": ["0,0"], "totali": {}}')
+        posts = [step('s1', 7200), b1, step('s2', 3600), ok, step('s3', 60)]
+        world = cs.public_world(cs.history(posts, ME))
+        self.assertEqual(world, {'seme': 4242, 'zone': ['0,0', '1,0', '-1,0'],
+                                 'passi': [{'passo': 1, 'esito': 'riuscito'}, {'passo': 2, 'esito': 'riuscito'}],
+                                 'passo_in_attesa_del_ponte': True})
+        text = json.dumps(world)
+        for leak in ('Users', 'andrea', 'nota', 'gdscript', 'oceano', '../x'):
+            self.assertNotIn(leak, text)
+
+    def test_failed_step_and_write_only_on_change(self):
+        posts = [step('s1', 7200), bridge('b1', 's1', ok=False, ago=7000)]
+        world = cs.public_world(cs.history(posts, ME))
+        self.assertEqual((world['seme'], world['zone'], world['passi']), (None, [], [{'passo': 1, 'esito': 'fallito'}]))
+        path = self.tmp / 'genesi' / 'mondo.json'
+        self.assertTrue(cs.save_public_world(cs.history(posts, ME), path))
+        self.assertFalse(cs.save_public_world(cs.history(posts, ME), path))
+
+    def test_script_reports_seed(self):
+        self.assertIn('"seme": s', cs.script('est'))

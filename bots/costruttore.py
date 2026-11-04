@@ -34,6 +34,8 @@ CHUNKS_PER_STEP = 4
 WAIT_REPOST = 48 * 3600          # senza risposta del ponte per 48 h si ripropone il passo (una volta per volta)
 MESSAGE_MAX = 1800               # limite dei messaggi in genesis
 NOTE_MAX = 160
+PUBLIC_WORLD = ROOT / 'genesi' / 'mondo.json'  # unica eccezione alla privacy di genesis, decisa da Andrea il 4/11
+CHUNK_RE = re.compile(r'^-?\d+,-?\d+$')
 
 RULES = (
     'Sei genesi-costruttore. Costruisci SOLO il terreno del mondo Genesis: geografia, biomi, risorse naturali. '
@@ -78,6 +80,37 @@ def history(posts, me):
         out.append({'id': p['id'], 'quando': ab.created(p), 'risposta': r is not None,
                     'esito': bridge_result(r.get('text')) if r else None, 'testo': p.get('text') or ''})
     return out
+
+
+def public_world(steps):
+    """Dati del mondo pubblicabili (decisione di Andrea, 4/11): solo seme, esito dei passi e zone.
+    Mai testi di genesis né la risposta del ponte così com'è (potrebbe contenere percorsi del computer)."""
+    seed, zones, log = None, [], []
+    answered = [s for s in reversed(steps) if s['risposta']]           # dal più vecchio
+    for i, s in enumerate(answered, 1):
+        e = s['esito'] if isinstance(s['esito'], dict) else None
+        n = e.get('passo') if e else None
+        log.append({'passo': n if isinstance(n, int) and not isinstance(n, bool) else i, 'esito': 'riuscito' if e else 'fallito'})
+        if not e:
+            continue
+        if isinstance(e.get('seme'), int) and not isinstance(e.get('seme'), bool):
+            seed = e['seme']
+        for z in e.get('nuovi') or []:
+            if isinstance(z, str) and CHUNK_RE.match(z) and z not in zones:
+                zones.append(z)
+    pending = bool(steps) and not steps[0]['risposta']
+    return {'seme': seed, 'zone': zones, 'passi': log, 'passo_in_attesa_del_ponte': pending}
+
+
+def save_public_world(steps, path=None):
+    """Scrive il file solo se cambia, così i giri senza novità non fanno commit."""
+    path = path or PUBLIC_WORLD
+    text = json.dumps(public_world(steps), ensure_ascii=False, indent=1) + '\n'
+    if path.exists() and path.read_text() == text:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text)
+    return True
 
 
 def last_direction(text):
