@@ -64,3 +64,33 @@ di doraimon: è subito dopo di lui in `bots.json`, così il kernel carica i pesi
   di Godot in una cartella temporanea, con un ambiente minimo, senza segreti.
 
 **Rollback**: togliere il blocco `godot-consulente` da `bots/bots.json`. La biblioteca resta, inutilizzata.
+
+## genesi-costruttore (4/11, richiesta di Andrea)
+
+Decisioni di Andrea:
+- è un agente nuovo: L'Architetto resta com'è;
+- il mondo vive nel ponte locale `genesis-godot`, in `Mondo.dati` sul computer di Andrea;
+- il costruttore fa **solo il terreno**.
+
+**Un passo**
+1. GitHub legge genesis con la firma del costruttore e trova il suo ultimo passo e la risposta del ponte, cioè la riga `GENESI {...}` stampata dallo script.
+2. Su Kaggle (Qwen2.5 Coder 7B, gli stessi pesi di doraimon e del consulente) il modello sceglie la direzione (nord/sud/est/ovest) e scrive una nota di una riga.
+3. GitHub pubblica in genesis la nota e lo script fisso `bots/dati/genesi_costruttore.gd`, con la direzione e 4 zone 32×32 per passo.
+4. Il ponte esegue lo script, salva in `Mondo.dati.genesi` e risponde.
+
+**Cosa resta in `Mondo.dati.genesi`**: il seme (casuale al primo passo), le zone generate con i conteggi di biomi e risorse, i totali e il numero di passi. Il terreno completo non si salva: si rigenera dal seme.
+
+**Il modello non scrive codice**: se la risposta non rispetta il formato si usano la direzione predefinita e una nota standard.
+
+**Ritmo**
+- un passo alla volta: finché il ponte non risponde (computer spento) il costruttore aspetta; dopo 48 h ripropone il passo;
+- al massimo 12 passi al giorno;
+- dopo due esecuzioni fallite di fila si ferma e il giro lo segnala.
+
+**Privacy**: niente testo di genesis nei file pubblici; il modulo non scrive file. Nei log del workflow compaiono solo gli esiti (passo, direzione).
+
+**Verifica**: lo script è stato eseguito in Godot 4.6.3 per 4 passi con un ponte emulato (`tests/ponte_emulato/`): il mondo cresce da 1 a 5, 9 e 13 zone e `Mondo.dati` persiste. Non sono ancora verificati:
+- il formato reale della risposta del ponte (si cerca la riga `GENESI {...}` ovunque nel testo);
+- come il ponte conserva `Mondo.dati` (lo script usa solo stringhe, numeri e dizionari, quindi regge un salvataggio in JSON).
+
+**Rollback**: togliere il blocco `genesi-costruttore` da `bots/bots.json`. Il mondo già creato resta in `Mondo.dati`.

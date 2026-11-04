@@ -87,7 +87,7 @@ class Lume(unittest.TestCase):
         self.assertIn('fermo', [x['name'] for x in self.REAL['bots'] if x.get('runner', 'github') == 'github'])
 
     def test_others_unchanged(self):
-        self.assertEqual([b['name'] for b in self.REAL['bots'] if b.get('runner') == 'kaggle'], ['lume', 'kenshiro', 'doraimon', 'godot-consulente'])
+        self.assertEqual([b['name'] for b in self.REAL['bots'] if b.get('runner') == 'kaggle'], ['lume', 'kenshiro', 'doraimon', 'godot-consulente', 'genesi-costruttore'])
         self.assertEqual(self.bot('kenshiro')['model']['hf'], 'Qwen/Qwen2.5-7B-Instruct')
         self.assertEqual(self.bot('doraimon')['model']['hf'], 'Qwen/Qwen2.5-Coder-7B-Instruct')
 

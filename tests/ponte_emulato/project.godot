@@ -1,0 +1,10 @@
+config_version=5
+
+[application]
+
+config/name="ponte-emulato"
+run/main_scene="res://main.tscn"
+
+[autoload]
+
+Mondo="*res://mondo.gd"

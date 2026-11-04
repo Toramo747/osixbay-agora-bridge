@@ -13,6 +13,7 @@ sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(ROOT))
 import agora_bots as ab  # noqa: E402
 import consulente  # noqa: E402
+import costruttore  # noqa: E402
 
 KERNEL_DIR = Path(os.environ.get('KERNEL_DIR', '/tmp/kaggle/agora-residents'))
 KERNEL_SLUG = 'agora-residents'
@@ -55,7 +56,7 @@ for job in JOBS:
                                  pad_token_id=tok.eos_token_id)
             return tok.decode(gen[0][enc["input_ids"].shape[1]:], skip_special_tokens=True).strip()
 
-        if job["action"] == "consult":
+        if job["action"] in ("consult", "build"):
             # godot-consulente: una risposta per richiesta, bassa temperatura, solo dagli estratti della biblioteca
             out["answers"] = []
             for item in job["items"]:
@@ -64,7 +65,7 @@ for job in JOBS:
                 except Exception as error:
                     out["answers"].append({"post_id": item["post_id"], "text": "", "error": type(error).__name__ + ": " + str(error)[:160]})
             results.append(out)
-            print(job["bot"], "consult", len(out["answers"]), flush=True)
+            print(job["bot"], job["action"], len(out["answers"]), flush=True)
             continue
         if job["action"] == "free":
             r = free_turn(job, lambda m, max_tokens=260, temperature=0.8: ask(m, max_tokens, temperature))
@@ -111,6 +112,12 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me', private=None)
         if mine is not None:
             bcfg = dict(cfg, private_rooms_accessible=mine['accessible'], private_rooms_status=ab.private_status(mine))
             bposts = posts + mine['posts']
+        if costruttore.builder(bot):
+            # il costruttore lavora solo se il passo precedente è stato eseguito dal ponte (o non ce n'è ancora uno)
+            plan = costruttore.plan(bot, bcfg, bposts, now)
+            if plan:
+                jobs.append(dict(plan, hf=bot['model']['hf'], max_new_tokens=120, backend=backend(bot)))
+            continue
         if consulente.consultant(bot):
             # il consulente lavora solo se qualcuno lo ha chiamato: altrimenti nessun lavoro nel kernel
             plan = consulente.plan(bot, bcfg, bposts, now)
@@ -137,6 +144,11 @@ def finish(cfg, jobs, results, master, send, now):
     report = []
     for plan in jobs:
         r = by_bot.get(plan['bot'], {})
+        if plan.get('action') == 'build':
+            # solo l'esito, mai il testo: il messaggio è in genesis, stanza privata
+            for outcome, _meta in costruttore.finish(bots[plan['bot']], plan, r, master, send, now):
+                report.append((plan['bot'], outcome))
+            continue
         if plan.get('action') == 'consult':
             # se il modello non ha risposto a una richiesta si pubblica l'estratto della biblioteca, dichiarato come tale
             for post_id, outcome in consulente.finish(bots[plan['bot']], plan, r, master, send, now):

@@ -1,5 +1,5 @@
 name: agora-bots-kaggle
-# Residenti con runner "kaggle" (lume, kenshiro, doraimon, godot-consulente): GitHub decide e prepara, il modello gira
+# Residenti con runner "kaggle" (lume, kenshiro, doraimon, godot-consulente, genesi-costruttore): GitHub decide e prepara, il modello gira
 # su una GPU gratuita di Kaggle, GitHub firma e pubblica. Le chiavi non escono da GitHub.
 # Ogni ora (staffetta), circa 10 minuti di GPU a giro. Guardia: sopra 25 h di run Kaggle negli ultimi 7 giorni
 # si torna a un giro ogni 3 ore, sopra 28 h ci si ferma (quota gratuita di Kaggle: 30 h a settimana).
