@@ -1,0 +1,65 @@
+{
+  "_nota": "Domande di controllo. 'atteso' descrive cosa deve risultare secondo la documentazione ufficiale Godot 4.6 (verità di riferimento scritta a mano a partire dalle fonti). Campi: trovato, url (sottostringa di un riferimento entro i primi 3), firma (sottostringa di una firma), livello, voce, stato, ereditarieta, problemi (tipi attesi), valido, alternativa, non_livello.",
+  "domande": [
+    {"id": "gd01", "categoria": "GDScript", "comando": "GODOT: cerca static typing in GDScript", "atteso": {"trovato": true, "url": "gdscript/static_typing.html"}},
+    {"id": "gd02", "categoria": "GDScript", "comando": "GODOT: metodo @export_range", "atteso": {"trovato": true, "url": "class_@gdscript.html", "firma": "@export_range("}},
+    {"id": "gd03", "categoria": "GDScript", "comando": "GODOT: cerca await signal coroutines", "atteso": {"trovato": true, "url": "gdscript_basics.html"}},
+    {"id": "gd04", "categoria": "GDScript", "comando": "GODOT: metodo @onready", "atteso": {"trovato": true, "url": "class_@gdscript.html"}},
+    {"id": "gd05", "categoria": "GDScript", "comando": "GODOT: cerca lambda functions GDScript", "atteso": {"trovato": true, "url": "gdscript_basics.html"}},
+    {"id": "gd06", "categoria": "GDScript", "comando": "GODOT: classe Callable", "atteso": {"trovato": true, "url": "class_callable.html"}},
+
+    {"id": "api01", "categoria": "classi e API", "comando": "GODOT: classe TileMapLayer", "atteso": {"trovato": true, "url": "class_tilemaplayer.html", "ereditarieta": "Node2D"}},
+    {"id": "api02", "categoria": "classi e API", "comando": "GODOT: metodo CharacterBody2D.move_and_slide", "atteso": {"trovato": true, "firma": "func move_and_slide() -> bool"}},
+    {"id": "api03", "categoria": "classi e API", "comando": "GODOT: metodo Node.add_child", "atteso": {"trovato": true, "url": "class_node.html#class-node-method-add-child"}},
+    {"id": "api04", "categoria": "classi e API", "comando": "GODOT: metodo Object.connect", "atteso": {"trovato": true, "firma": "signal: StringName, callable: Callable"}},
+    {"id": "api05", "categoria": "classi e API", "comando": "GODOT: classe FastNoiseLite", "atteso": {"trovato": true, "ereditarieta": "Noise"}},
+    {"id": "api06", "categoria": "classi e API", "comando": "GODOT: metodo Timer.timeout", "atteso": {"trovato": true, "firma": "signal timeout()"}},
+
+    {"id": "map01", "categoria": "generazione mappe", "comando": "GODOT: progetta generazione procedurale del mondo", "atteso": {"trovato": true, "voce": "generazione-procedurale", "livello": "catalogo"}},
+    {"id": "map02", "categoria": "generazione mappe", "comando": "GODOT: cerca TileSet terrain sets autotiling", "atteso": {"trovato": true, "url": "using_tilesets.html"}},
+    {"id": "map03", "categoria": "generazione mappe", "comando": "GODOT: metodo TileMapLayer.set_cell", "atteso": {"trovato": true, "url": "method-set-cell", "firma": "coords: Vector2i"}},
+    {"id": "map04", "categoria": "generazione mappe", "comando": "GODOT: esempio FastNoiseLite", "atteso": {"trovato": true, "livello": "eseguito"}},
+    {"id": "map05", "categoria": "generazione mappe", "comando": "GODOT: metodo FastNoiseLite.get_noise_2d", "atteso": {"trovato": true, "firma": "func get_noise_2d(x: float, y: float) -> float"}},
+
+    {"id": "nav01", "categoria": "movimento e navigazione", "comando": "GODOT: cerca NavigationAgent2D path following", "atteso": {"trovato": true, "url": "navigation_using_navigationagents.html"}},
+    {"id": "nav02", "categoria": "movimento e navigazione", "comando": "GODOT: metodo AStarGrid2D.get_id_path", "atteso": {"trovato": true, "firma": "from_id: Vector2i, to_id: Vector2i"}},
+    {"id": "nav03", "categoria": "movimento e navigazione", "comando": "GODOT: classe NavigationObstacle2D", "atteso": {"trovato": true, "url": "class_navigationobstacle2d.html"}},
+    {"id": "nav04", "categoria": "movimento e navigazione", "comando": "GODOT: cerca CharacterBody2D move_and_slide", "atteso": {"trovato": true, "url": "using_character_body_2d.html"}},
+    {"id": "nav05", "categoria": "movimento e navigazione", "comando": "GODOT: esempio AStarGrid2D get_id_path", "atteso": {"trovato": true, "livello": "eseguito"}},
+
+    {"id": "per01", "categoria": "persistenza", "comando": "GODOT: cerca saving games JSON", "atteso": {"trovato": true, "url": "io/saving_games.html"}},
+    {"id": "per02", "categoria": "persistenza", "comando": "GODOT: metodo FileAccess.open", "atteso": {"trovato": true, "firma": "static func open(path: String, flags: int"}},
+    {"id": "per03", "categoria": "persistenza", "comando": "GODOT: metodo JSON.parse_string", "atteso": {"trovato": true, "firma": "static func parse_string(json_string: String) -> Variant"}},
+    {"id": "per04", "categoria": "persistenza", "comando": "GODOT: cerca user:// data paths", "atteso": {"trovato": true, "url": "io/data_paths.html"}},
+
+    {"id": "net01", "categoria": "networking", "comando": "GODOT: cerca high-level multiplayer rpc authority", "atteso": {"trovato": true, "url": "networking/high_level_multiplayer.html"}},
+    {"id": "net02", "categoria": "networking", "comando": "GODOT: metodo ENetMultiplayerPeer.create_server", "atteso": {"trovato": true, "firma": "port: int"}},
+    {"id": "net03", "categoria": "networking", "comando": "GODOT: metodo @rpc", "atteso": {"trovato": true, "url": "class_@gdscript.html"}},
+    {"id": "net04", "categoria": "networking", "comando": "GODOT: cerca exporting for dedicated servers", "atteso": {"trovato": true, "url": "exporting_for_dedicated_servers.html"}},
+
+    {"id": "opt01", "categoria": "ottimizzazione", "comando": "GODOT: cerca optimization using servers", "atteso": {"trovato": true, "url": "performance/using_servers.html"}},
+    {"id": "opt02", "categoria": "ottimizzazione", "comando": "GODOT: classe WorkerThreadPool", "atteso": {"trovato": true, "url": "class_workerthreadpool.html"}},
+    {"id": "opt03", "categoria": "ottimizzazione", "comando": "GODOT: cerca command line headless", "atteso": {"trovato": true, "url": "editor/command_line_tutorial.html"}},
+    {"id": "opt04", "categoria": "ottimizzazione", "comando": "GODOT: cerca MultiMesh many instances", "atteso": {"trovato": true, "url": "using_multimesh.html"}},
+
+    {"id": "gen01", "categoria": "architettura Genesis", "comando": "GODOT: progetta memoria spaziale degli agenti", "atteso": {"trovato": true, "voce": "memoria-spaziale"}},
+    {"id": "gen02", "categoria": "architettura Genesis", "comando": "GODOT: progetta sicurezza e controllo delle modifiche", "atteso": {"trovato": true, "voce": "sicurezza-modifiche"}},
+    {"id": "gen03", "categoria": "architettura Genesis", "comando": "GODOT: progetta simulazione efficiente su hardware limitato", "atteso": {"trovato": true, "voce": "hardware-limitato"}},
+    {"id": "gen04", "categoria": "architettura Genesis", "comando": "GODOT: progetta caricamento del terreno a chunk", "atteso": {"trovato": true, "voce": "chunk-streaming"}},
+    {"id": "gen05", "categoria": "architettura Genesis", "comando": "GODOT: progetta cronologia degli eventi", "atteso": {"trovato": true, "voce": "eventi-cronologie"}},
+    {"id": "gen06", "categoria": "architettura Genesis", "comando": "GODOT: verifica extends Node2D\nfunc _ready() -> void:\n\tvar g := AStarGrid2D.new()\n\tg.region = Rect2i(0, 0, 8, 8)\n\tg.update()\n\tprint(g.get_id_path(Vector2i.ZERO, Vector2i(3, 3)))\n", "atteso": {"trovato": true, "valido": true}},
+
+    {"id": "neg01", "categoria": "negativo: API inesistente", "comando": "GODOT: classe SuperWorldManager3000", "atteso": {"trovato": false}},
+    {"id": "neg02", "categoria": "negativo: API inesistente", "comando": "GODOT: metodo Node.teleport_to_mars", "atteso": {"trovato": false}},
+    {"id": "neg03", "categoria": "negativo: API inesistente", "comando": "GODOT: metodo get_noise_9d", "atteso": {"trovato": false}},
+    {"id": "neg04", "categoria": "negativo: obsoleto", "comando": "GODOT: compatibilità KinematicBody2D", "atteso": {"stato": "rinominata_da_godot3", "alternativa": "CharacterBody2D"}},
+    {"id": "neg05", "categoria": "negativo: obsoleto", "comando": "GODOT: compatibilità TileMap", "atteso": {"stato": "deprecata"}},
+    {"id": "neg06", "categoria": "negativo: obsoleto", "comando": "GODOT: compatibilità TileMap.get_navigation_map", "atteso": {"stato": "deprecata"}},
+    {"id": "neg07", "categoria": "negativo: obsoleto", "comando": "GODOT: classe Navigation2DServer", "atteso": {"trovato": false, "alternativa": "NavigationServer2D"}},
+    {"id": "neg08", "categoria": "negativo: obsoleto", "comando": "GODOT: verifica extends KinematicBody2D\nonready var s = $Sprite\nfunc _ready():\n\tyield(get_tree(), \"idle_frame\")\n\tconnect(\"hit\", self, \"_on_hit\")\n", "atteso": {"valido": false, "problemi": ["sintassi_godot3", "classe_inesistente"]}},
+    {"id": "neg09", "categoria": "negativo: richiesta impossibile", "comando": "GODOT: cerca xyzzy plugh frobnicate", "atteso": {"trovato": false}},
+    {"id": "neg10", "categoria": "negativo: richiesta impossibile", "comando": "GODOT: progetta teletrasporto quantistico istantaneo", "atteso": {"non_livello": "catalogo"}},
+    {"id": "neg11", "categoria": "negativo: richiesta impossibile", "comando": "GODOT: compatibilità Node.download_more_ram", "atteso": {"trovato": false, "stato": "inesistente"}},
+    {"id": "neg12", "categoria": "negativo: comando errato", "comando": "GODOT: inventa una API", "atteso": {"trovato": false}}
+  ]
+}

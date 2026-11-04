@@ -1,0 +1,109 @@
+{
+  "godot_version": "4.6.3-stable",
+  "eseguito_il": "2026-11-04T08:52:29+00:00",
+  "superati": 8,
+  "totale": 8,
+  "risultati": [
+    {
+      "esempio": "astar_grid",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.17,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "lunghezza percorso: 19",
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "cronologia_eventi",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.16,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "memoria_spaziale",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.15,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "persistenza_json",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.16,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "byte JSON: 73 byte binari: 120",
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "procgen_chunks",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.25,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "biomi distinti su 144 chunk: 6",
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "rete_enet",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.18,
+      "isolamento_rete": "rete isolata: solo loopback",
+      "motivo": null,
+      "output": [
+        "client id: 1412169793 frame: 4",
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "simulazione_batch",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.16,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "entita: 10000 tick: 20 secondi: 0.012 tick/s: 1689.2",
+        "EXAMPLE_OK"
+      ]
+    },
+    {
+      "esempio": "tilemap_chunk",
+      "funzionante": true,
+      "eseguito": true,
+      "exit_code": 0,
+      "secondi": 0.16,
+      "isolamento_rete": "rete isolata: nessuna interfaccia",
+      "motivo": null,
+      "output": [
+        "EXAMPLE_OK"
+      ]
+    }
+  ]
+}

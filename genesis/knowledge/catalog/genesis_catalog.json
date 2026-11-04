@@ -1,0 +1,269 @@
+{
+  "versione_catalogo": 1,
+  "godot_version": "4.6.3-stable",
+  "contesto": "Genesis: mondo 2D persistente, molto vasto, inizialmente sconosciuto agli abitanti. Gli agenti esplorano, costruiscono, cooperano, competono e propongono in autonomia. Nessuna storia, missione o civiltà imposta a priori: il catalogo descrive strumenti tecnici, non contenuti.",
+  "legenda": {
+    "supportato_godot": "funzionalità nativa di Godot 4.6, con API verificata nell'indice (classe/membro esistente)",
+    "codice_aggiuntivo": "realizzabile scrivendo codice nostro sopra le API native; nessuna funzione Godot dedicata",
+    "ipotesi": "idea plausibile ma non verificata: va sperimentata e misurata prima di adottarla"
+  },
+  "voci": [
+    {
+      "id": "generazione-procedurale",
+      "titolo": "Generazione procedurale del mondo",
+      "parole_chiave": ["generazione", "procedurale", "procedural", "generation", "terreno", "terrain", "rumore", "noise", "seed", "mappa", "map", "world", "mondo"],
+      "supportato_godot": [
+        {"api": "FastNoiseLite", "nota": "rumore Simplex/Perlin/Cellular/Value con frattali; deterministico per seed"},
+        {"api": "FastNoiseLite.get_noise_2d", "nota": "valore di rumore in un punto, chiamabile cella per cella"},
+        {"api": "RandomNumberGenerator.seed", "nota": "generatore pseudo-casuale riproducibile"},
+        {"api": "Noise.get_image", "nota": "immagine di rumore, utile per anteprime/debug"}
+      ],
+      "codice_aggiuntivo": [
+        "funzione deterministica (seed, coordinate) -> contenuto della cella: il terreno intatto non va salvato, si rigenera",
+        "seed derivati per strato (altitudine, umidità, risorse) per evitare correlazioni indesiderate"
+      ],
+      "ipotesi": [
+        "regole di erosione o fiumi calcolate a chunk: richiedono dati dei chunk vicini, va misurato il costo"
+      ],
+      "doc": ["tutorials/math/random_number_generation.rst"],
+      "esempi": ["procgen_chunks"]
+    },
+    {
+      "id": "biomi-risorse",
+      "titolo": "Biomi e risorse distribuiti spazialmente",
+      "parole_chiave": ["biomi", "bioma", "biome", "risorse", "resources", "distribuzione", "umidità", "moisture", "minerali"],
+      "supportato_godot": [
+        {"api": "FastNoiseLite", "nota": "più campi di rumore (altitudine, umidità) combinati in soglie"},
+        {"api": "TileSet.add_custom_data_layer", "nota": "dati personalizzati per tile (es. tipo di risorsa)"},
+        {"api": "TileData.get_custom_data", "nota": "lettura del dato personalizzato di un tile"},
+        {"api": "TileMapLayer.get_cell_tile_data", "nota": "TileData della cella"}
+      ],
+      "codice_aggiuntivo": [
+        "tabella bioma -> risorse con probabilità, campionata con seed derivato dalla cella",
+        "risorse consumabili: stato modificato salvato come differenza rispetto al terreno generato"
+      ],
+      "ipotesi": ["rigenerazione delle risorse nel tempo come processo dell'ecosistema"],
+      "doc": ["tutorials/2d/using_tilesets.rst"],
+      "esempi": ["procgen_chunks"]
+    },
+    {
+      "id": "chunk-streaming",
+      "titolo": "Caricamento del terreno a chunk",
+      "parole_chiave": ["chunk", "streaming", "caricamento", "loading", "scaricare", "unload", "tilemap", "tilemaplayer", "esteso", "large", "infinito"],
+      "supportato_godot": [
+        {"api": "TileMapLayer.set_cell", "nota": "scrittura di una cella (TileMap è deprecato: usare TileMapLayer)"},
+        {"api": "TileMapLayer.erase_cell", "nota": "scaricare un chunk = cancellarne le celle"},
+        {"api": "TileMapLayer.set_cells_terrain_connect", "nota": "terreni con transizioni automatiche"},
+        {"api": "WorkerThreadPool.add_task", "nota": "generazione dei chunk fuori dal thread principale"},
+        {"api": "ResourceLoader.load_threaded_request", "nota": "caricamento di risorse in background"}
+      ],
+      "codice_aggiuntivo": [
+        "gestore dei chunk attivi attorno agli osservatori (agenti) con raggio di caricamento e isteresi",
+        "le coordinate serializzate da TileMapLayer sono interi a 16 bit con segno (-32768..32767): per un mondo più ampio usare più TileMapLayer con origine propria o tenere solo i chunk vicini"
+      ],
+      "ipotesi": ["un TileMapLayer per chunk contro un unico layer condiviso: confrontare i tempi di aggiornamento"],
+      "doc": ["tutorials/2d/using_tilemaps.rst", "tutorials/io/background_loading.rst", "tutorials/performance/using_multiple_threads.rst", "tutorials/performance/thread_safe_apis.rst"],
+      "esempi": ["tilemap_chunk", "procgen_chunks"]
+    },
+    {
+      "id": "coordinate-mondi-estesi",
+      "titolo": "Sistemi di coordinate e mondi molto estesi",
+      "parole_chiave": ["coordinate", "coordinates", "precisione", "precision", "float", "double", "origine", "origin", "esteso", "large world"],
+      "supportato_godot": [
+        {"api": "Vector2i", "nota": "coordinate intere di cella/chunk: nessuna perdita di precisione"},
+        {"api": "TileMapLayer.local_to_map", "nota": "conversione posizione -> cella"},
+        {"api": "TileMapLayer.map_to_local", "nota": "conversione cella -> posizione"}
+      ],
+      "codice_aggiuntivo": [
+        "stato del mondo in coordinate intere (cella/chunk); posizioni float solo vicino all'origine della scena",
+        "spostamento dell'origine (origin shifting) quando la telecamera si allontana troppo"
+      ],
+      "ipotesi": [],
+      "limitazioni": ["la documentazione indica che le large world coordinates (build double precision) servono soprattutto al 3D e che il rendering 2D non ne beneficia; i binari ufficiali sono a precisione singola"],
+      "doc": ["tutorials/physics/large_world_coordinates.rst", "tutorials/2d/2d_transforms.rst"],
+      "esempi": ["procgen_chunks", "tilemap_chunk"]
+    },
+    {
+      "id": "navigazione",
+      "titolo": "Navigazione, pathfinding e ostacoli",
+      "parole_chiave": ["navigazione", "navigation", "pathfinding", "percorso", "path", "ostacoli", "obstacles", "astar", "a*", "movimento"],
+      "supportato_godot": [
+        {"api": "AStarGrid2D", "nota": "A* su griglia: celle solide, pesi, diagonali"},
+        {"api": "AStarGrid2D.get_id_path", "nota": "percorso in celle"},
+        {"api": "AStarGrid2D.set_point_solid", "nota": "ostacolo"},
+        {"api": "NavigationAgent2D", "nota": "pathfinding su navmesh ed evitamento"},
+        {"api": "NavigationServer2D", "nota": "API a basso livello di mappe e regioni"},
+        {"api": "NavigationObstacle2D", "nota": "ostacoli dinamici per l'evitamento"}
+      ],
+      "codice_aggiuntivo": [
+        "pathfinding gerarchico: A* fra chunk, poi AStarGrid2D dentro il chunk (una griglia unica sull'intero mondo non è praticabile)"
+      ],
+      "ipotesi": ["NavigationServer2D in headless per agenti senza grafica: verificare costi con molte regioni"],
+      "doc": ["tutorials/navigation/navigation_introduction_2d.rst", "tutorials/navigation/navigation_using_navigationagents.rst", "tutorials/navigation/navigation_using_navigationobstacles.rst", "tutorials/navigation/navigation_optimizing_performance.rst"],
+      "esempi": ["astar_grid"]
+    },
+    {
+      "id": "esplorazione-percezione",
+      "titolo": "Sistemi di esplorazione e percezione",
+      "parole_chiave": ["esplorazione", "exploration", "percezione", "perception", "vista", "vision", "sensori", "raycast", "nebbia", "fog"],
+      "supportato_godot": [
+        {"api": "Area2D.body_entered", "nota": "rilevare corpi che entrano in un raggio"},
+        {"api": "RayCast2D", "nota": "linea di vista"},
+        {"api": "PhysicsDirectSpaceState2D.intersect_ray", "nota": "raycast da codice, senza nodi"},
+        {"api": "PhysicsDirectSpaceState2D.intersect_shape", "nota": "interrogazione di un'area"}
+      ],
+      "codice_aggiuntivo": [
+        "percezione su griglia (raggio in celle) senza fisica: più economica per molti agenti",
+        "nebbia di guerra per agente = insieme dei chunk/celle già percepiti"
+      ],
+      "ipotesi": ["percezione parziale e rumorosa (errori di osservazione) per rendere l'esplorazione significativa"],
+      "doc": ["tutorials/physics/ray-casting.rst", "tutorials/physics/using_area_2d.rst"],
+      "esempi": ["memoria_spaziale"]
+    },
+    {
+      "id": "memoria-spaziale",
+      "titolo": "Memoria spaziale degli agenti",
+      "parole_chiave": ["memoria", "memory", "mappa mentale", "ricordo", "landmark", "esplorato", "explored"],
+      "supportato_godot": [
+        {"api": "Dictionary", "nota": "chiavi Vector2i per chunk/celle ricordati"},
+        {"api": "AStarGrid2D", "nota": "pianificare sui soli luoghi noti"}
+      ],
+      "codice_aggiuntivo": [
+        "Godot non ha un sistema di memoria per agenti: struttura dati propria (chunk esplorati, punti notevoli, ultima osservazione)",
+        "serializzazione della memoria insieme allo stato dell'agente"
+      ],
+      "ipotesi": ["oblio progressivo dei ricordi vecchi per limitare la memoria"],
+      "doc": ["tutorials/best_practices/data_preferences.rst"],
+      "esempi": ["memoria_spaziale"]
+    },
+    {
+      "id": "costruzione",
+      "titolo": "Costruzione di oggetti ed edifici",
+      "parole_chiave": ["costruzione", "costruire", "building", "build", "edifici", "oggetti", "structures", "piazzare", "place"],
+      "supportato_godot": [
+        {"api": "TileMapLayer.set_cell", "nota": "strutture come tile su un layer dedicato"},
+        {"api": "PackedScene.instantiate", "nota": "strutture complesse come scene"},
+        {"api": "Node.add_child", "nota": "inserimento nel mondo"},
+        {"api": "TileSet.add_custom_data_layer", "nota": "proprietà di costruzione (costo, durata)"}
+      ],
+      "codice_aggiuntivo": [
+        "regole di validità (cella libera, risorse disponibili, permessi) controllate dal server prima di applicare",
+        "registro delle costruzioni come eventi (chi, cosa, dove, quando)"
+      ],
+      "ipotesi": ["oggetti componibili proposti dagli agenti come dati (non codice) validati da uno schema"],
+      "doc": ["tutorials/scripting/nodes_and_scene_instances.rst", "tutorials/2d/using_tilemaps.rst"],
+      "esempi": ["tilemap_chunk", "cronologia_eventi"]
+    },
+    {
+      "id": "ecosistemi",
+      "titolo": "Simulazione di ecosistemi",
+      "parole_chiave": ["ecosistema", "ecosystem", "simulazione", "simulation", "crescita", "piante", "animali", "tick"],
+      "supportato_godot": [
+        {"api": "Node._physics_process", "nota": "passo fisso, adatto a un tick di simulazione"},
+        {"api": "Timer", "nota": "eventi periodici"},
+        {"api": "WorkerThreadPool.add_group_task", "nota": "aggiornamento parallelo di gruppi di entità"}
+      ],
+      "codice_aggiuntivo": [
+        "modello dell'ecosistema (crescita, consumo, rigenerazione) e suo tick: tutto da scrivere",
+        "simulazione a bassa frequenza per i chunk lontani, piena vicino agli osservatori"
+      ],
+      "ipotesi": ["simulazione 'a recupero': i chunk non osservati avanzano di N tick quando ricaricati"],
+      "doc": ["tutorials/scripting/idle_and_physics_processing.rst", "tutorials/performance/using_multiple_threads.rst"],
+      "esempi": ["simulazione_batch"]
+    },
+    {
+      "id": "persistenza",
+      "titolo": "Persistenza degli stati",
+      "parole_chiave": ["persistenza", "persistence", "salvataggio", "save", "load", "caricare", "serializzazione", "serialization", "json"],
+      "supportato_godot": [
+        {"api": "FileAccess", "nota": "lettura/scrittura file in user://"},
+        {"api": "JSON.stringify", "nota": "serializzazione leggibile"},
+        {"api": "JSON.parse_string", "nota": "parsing (i numeri tornano float, Vector2i non esiste in JSON)"},
+        {"api": "@GlobalScope.var_to_bytes", "nota": "formato binario che conserva i tipi Godot"},
+        {"api": "ResourceSaver.save", "nota": "salvataggio di Resource (.tres/.res)"},
+        {"api": "ConfigFile", "nota": "file di configurazione a sezioni"}
+      ],
+      "codice_aggiuntivo": [
+        "salvare solo le differenze rispetto al mondo generato (seed + modifiche)",
+        "scrittura atomica: file temporaneo + rinomina; numero di versione del formato"
+      ],
+      "ipotesi": ["database SQLite tramite estensione GDExtension di terze parti: non nativo, valutare licenza e manutenzione"],
+      "doc": ["tutorials/io/saving_games.rst", "tutorials/io/data_paths.rst", "tutorials/io/binary_serialization_api.rst", "tutorials/io/runtime_file_loading_and_saving.rst"],
+      "esempi": ["persistenza_json"]
+    },
+    {
+      "id": "eventi-cronologie",
+      "titolo": "Eventi e cronologie",
+      "parole_chiave": ["eventi", "events", "cronologia", "chronicle", "storia", "history", "log", "registro", "segnali", "signals"],
+      "supportato_godot": [
+        {"api": "Object.connect", "nota": "segnali: notifica interna degli eventi"},
+        {"api": "Object.emit_signal", "nota": "emissione"},
+        {"api": "FileAccess.seek_end", "nota": "append a un registro su file"},
+        {"api": "Time.get_unix_time_from_system", "nota": "marcatura temporale reale"}
+      ],
+      "codice_aggiuntivo": [
+        "registro append-only (JSON Lines) con tick di simulazione, autore, tipo, luogo",
+        "ricostruzione dello stato rileggendo gli eventi"
+      ],
+      "ipotesi": ["cronache leggibili generate dagli agenti a partire dal registro"],
+      "doc": ["getting_started/step_by_step/signals.rst"],
+      "esempi": ["cronologia_eventi"]
+    },
+    {
+      "id": "utenti-umani",
+      "titolo": "Interazione futura con utenti umani",
+      "parole_chiave": ["umani", "humans", "utenti", "users", "client", "multiplayer", "rete", "network", "websocket", "server"],
+      "supportato_godot": [
+        {"api": "ENetMultiplayerPeer", "nota": "rete UDP affidabile per client nativi"},
+        {"api": "WebSocketMultiplayerPeer", "nota": "rete per client web"},
+        {"api": "MultiplayerSynchronizer", "nota": "sincronizzazione di proprietà"},
+        {"api": "MultiplayerSpawner", "nota": "replica delle istanze"},
+        {"api": "@GDScript.@rpc", "nota": "chiamate remote annotate"}
+      ],
+      "codice_aggiuntivo": [
+        "server dedicato headless come unica fonte di verità; umani e agenti inviano intenzioni, non stati"
+      ],
+      "ipotesi": ["client web di sola osservazione esportato per HTML5"],
+      "doc": ["tutorials/networking/high_level_multiplayer.rst", "tutorials/networking/websocket.rst", "tutorials/export/exporting_for_dedicated_servers.rst"],
+      "esempi": ["rete_enet"]
+    },
+    {
+      "id": "sicurezza-modifiche",
+      "titolo": "Sicurezza e controllo delle modifiche",
+      "parole_chiave": ["sicurezza", "security", "autorizzazione", "authority", "validazione", "validation", "permessi", "cheat", "controllo"],
+      "supportato_godot": [
+        {"api": "Node.set_multiplayer_authority", "nota": "chi ha autorità su un nodo"},
+        {"api": "MultiplayerAPI.get_remote_sender_id", "nota": "chi ha inviato una RPC: base per i controlli"},
+        {"api": "@GlobalScope.bytes_to_var", "nota": "decodifica senza oggetti (sicura); bytes_to_var_with_objects può includere codice eseguibile"},
+        {"api": "TLSOptions", "nota": "cifratura dei canali"}
+      ],
+      "codice_aggiuntivo": [
+        "la documentazione raccomanda logica server-authoritative, validazione degli argomenti RPC e limiti di frequenza",
+        "modifiche al mondo proposte come dati, validate dal server, registrate nella cronologia"
+      ],
+      "ipotesi": ["quote di azioni per agente per tick come difesa contro abusi"],
+      "doc": ["tutorials/networking/high_level_multiplayer.rst", "tutorials/networking/ssl_certificates.rst"],
+      "esempi": ["rete_enet", "cronologia_eventi"]
+    },
+    {
+      "id": "hardware-limitato",
+      "titolo": "Simulazione efficiente su hardware limitato",
+      "parole_chiave": ["ottimizzazione", "optimization", "prestazioni", "performance", "headless", "memoria", "cpu", "hardware", "efficiente", "server"],
+      "supportato_godot": [
+        {"api": "PackedVector2Array", "nota": "dati compatti per molte entità"},
+        {"api": "RenderingServer", "nota": "disegno senza un Node per entità"},
+        {"api": "MultiMeshInstance2D", "nota": "molte istanze in una draw call"},
+        {"api": "Engine.physics_ticks_per_second", "nota": "frequenza del tick"},
+        {"api": "OS.low_processor_usage_mode", "nota": "riduce il consumo CPU quando possibile"},
+        {"api": "WorkerThreadPool", "nota": "parallelismo"}
+      ],
+      "codice_aggiuntivo": [
+        "server headless (--headless) senza rendering per la simulazione; la grafica solo nei client",
+        "entità come righe di array invece che nodi; livelli di dettaglio della simulazione"
+      ],
+      "ipotesi": ["misurare il numero massimo di agenti per tick sull'host reale prima di fissare limiti"],
+      "doc": ["tutorials/performance/using_servers.rst", "tutorials/performance/cpu_optimization.rst", "tutorials/performance/general_optimization.rst", "tutorials/editor/command_line_tutorial.rst", "tutorials/export/exporting_for_dedicated_servers.rst"],
+      "esempi": ["simulazione_batch"]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "godot_version": "4.6.3-stable",
+  "generato_il": "2026-11-04T08:53:20+00:00",
+  "fonti": {
+    "godot-docs": {
+      "file_selezionati": 501,
+      "file_registrati": 501,
+      "file_con_contenuto": 501,
+      "file_contenuto_attesi": 501,
+      "copertura_pct": 100.0,
+      "byte_cache": 5538063
+    },
+    "godot-class-reference": {
+      "file_selezionati": 1066,
+      "file_registrati": 1066,
+      "file_con_contenuto": 1066,
+      "file_contenuto_attesi": 1066,
+      "copertura_pct": 100.0,
+      "byte_cache": 9124670
+    },
+    "godot-demo-projects": {
+      "file_selezionati": 731,
+      "file_registrati": 731,
+      "file_con_contenuto": 599,
+      "file_contenuto_attesi": 599,
+      "copertura_pct": 100.0,
+      "byte_cache": 1474114
+    }
+  },
+  "aree": [
+    {
+      "area": "1. GDScript",
+      "pagine": 9,
+      "sezioni": 183,
+      "classi_chiave_presenti": [
+        "@GDScript",
+        "GDScript"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "2. Classi e API",
+      "pagine": 0,
+      "sezioni": 0,
+      "classi_chiave_presenti": [],
+      "classi_chiave_mancanti": [],
+      "nota": "1065 classi dal riferimento XML",
+      "lacuna": null
+    },
+    {
+      "area": "3. Nodi, scene, segnali, risorse",
+      "pagine": 11,
+      "sezioni": 70,
+      "classi_chiave_presenti": [
+        "Node",
+        "PackedScene",
+        "Resource",
+        "Signal"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "4. Rendering 2D, TileMapLayer, sprite, animazioni",
+      "pagine": 23,
+      "sezioni": 276,
+      "classi_chiave_presenti": [
+        "TileMapLayer",
+        "Sprite2D",
+        "AnimatedSprite2D",
+        "AnimationPlayer"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "5. Generazione procedurale",
+      "pagine": 1,
+      "sezioni": 10,
+      "classi_chiave_presenti": [
+        "FastNoiseLite",
+        "RandomNumberGenerator",
+        "Noise"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "6. Coordinate e mondi estesi",
+      "pagine": 3,
+      "sezioni": 36,
+      "classi_chiave_presenti": [
+        "Vector2i",
+        "Transform2D"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "7. Navigazione e pathfinding",
+      "pagine": 19,
+      "sezioni": 63,
+      "classi_chiave_presenti": [
+        "AStarGrid2D",
+        "NavigationAgent2D",
+        "NavigationServer2D"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "8. Simulazione di agenti ed entità",
+      "pagine": 2,
+      "sezioni": 8,
+      "classi_chiave_presenti": [
+        "WorkerThreadPool"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": "nessuna guida ufficiale dedicata alla simulazione di molti agenti: coperta da catalogo Genesis + esempio simulazione_batch"
+    },
+    {
+      "area": "9. Fisica e collisioni",
+      "pagine": 20,
+      "sezioni": 153,
+      "classi_chiave_presenti": [
+        "CharacterBody2D",
+        "Area2D",
+        "PhysicsDirectSpaceState2D"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "10. Inventario, risorse, economia",
+      "pagine": 2,
+      "sezioni": 12,
+      "classi_chiave_presenti": [
+        "Resource",
+        "Dictionary"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": "Godot non ha sistemi nativi di inventario o economia: solo Resource/Dictionary; da sviluppare (catalogo)"
+    },
+    {
+      "area": "11. Persistenza",
+      "pagine": 6,
+      "sezioni": 66,
+      "classi_chiave_presenti": [
+        "FileAccess",
+        "JSON",
+        "ResourceSaver",
+        "ConfigFile"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "12. Networking e multiplayer",
+      "pagine": 7,
+      "sezioni": 40,
+      "classi_chiave_presenti": [
+        "MultiplayerAPI",
+        "ENetMultiplayerPeer",
+        "MultiplayerSynchronizer"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "13. Ottimizzazione e prestazioni",
+      "pagine": 13,
+      "sezioni": 102,
+      "classi_chiave_presenti": [
+        "RenderingServer",
+        "MultiMesh"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "14. Riga di comando e headless",
+      "pagine": 2,
+      "sezioni": 17,
+      "classi_chiave_presenti": [
+        "OS",
+        "DisplayServer"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "15. Test, debug, validazione",
+      "pagine": 8,
+      "sezioni": 73,
+      "classi_chiave_presenti": [
+        "EngineDebugger"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": "Godot non offre un framework nativo di unit test per i progetti GDScript: si usano script headless (come examples/) o addon di terze parti non acquisiti"
+    },
+    {
+      "area": "16. Esportazione e distribuzione",
+      "pagine": 16,
+      "sezioni": 121,
+      "classi_chiave_presenti": [
+        "EditorExportPlugin"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    },
+    {
+      "area": "17. Esempi ufficiali",
+      "pagine": 451,
+      "sezioni": 0,
+      "classi_chiave_presenti": [],
+      "classi_chiave_mancanti": [],
+      "nota": "451 script .gd dei demo ufficiali",
+      "lacuna": null
+    },
+    {
+      "area": "Extra: formati, JSON, serializzazione",
+      "pagine": 5,
+      "sezioni": 63,
+      "classi_chiave_presenti": [
+        "JSON",
+        "Marshalls"
+      ],
+      "classi_chiave_mancanti": [],
+      "nota": "",
+      "lacuna": null
+    }
+  ],
+  "indice_byte": 45993984,
+  "conteggi": {
+    "sezioni_manuale": 4040,
+    "pagine_manuale": 501,
+    "readme_demo": 148,
+    "classi": 1065,
+    "metodi": 10436,
+    "membri_per_tipo": {
+      "annotation": 36,
+      "constant": 5779,
+      "constructor": 154,
+      "enum": 765,
+      "method": 10436,
+      "operator": 351,
+      "property": 6787,
+      "signal": 490,
+      "theme_item": 621
+    },
+    "api_deprecate": 267,
+    "api_sperimentali": 14,
+    "esempi_totali": 3075,
+    "esempi_gdscript": 1818,
+    "esempi_per_fonte": {
+      "godot-class-reference": 774,
+      "godot-demo-projects": 451,
+      "godot-docs": 1850
+    },
+    "rinomine_godot3": 1592,
+    "esempi_locali_eseguiti_ok": "8/8"
+  }
+}

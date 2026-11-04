@@ -1,0 +1,63 @@
+{
+  "godot_version": "4.6.3-stable",
+  "docs_release": "4.6",
+  "acquisito_il": "2026-11-04T08:52:24+00:00",
+  "sources": [
+    {
+      "id": "godot-docs",
+      "titolo": "Godot Engine documentation (manuale e tutorial)",
+      "url": "https://github.com/godotengine/godot-docs",
+      "ref": "4.6",
+      "commit": "b10b7ed373c2d15555186914b82e167169b5b87b",
+      "url_base": "https://docs.godotengine.org/en/4.6/",
+      "licenza": "CC BY 3.0 (testi del manuale); vedi LICENSE.txt del repository",
+      "attribuzione": "Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)",
+      "redistribuibile": "si, con attribuzione e indicazione delle modifiche (CC BY 3.0)",
+      "licenza_sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "file": 501,
+      "byte": 5538063,
+      "contenuto_sha256": "21a8e4b663f30b6f46f411a5d33f923c5d652cd211ff695497a351eae54367ef"
+    },
+    {
+      "id": "godot-class-reference",
+      "titolo": "Godot class reference (XML del motore, fonte delle pagine classes/)",
+      "url": "https://github.com/godotengine/godot",
+      "ref": "4.6.3-stable",
+      "commit": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+      "url_base": "https://docs.godotengine.org/en/4.6/classes/",
+      "licenza": "MIT (Godot Engine); vedi LICENSE.txt e COPYRIGHT.txt",
+      "attribuzione": "Copyright (c) 2014-present Godot Engine contributors; (c) 2007-2014 Juan Linietsky, Ariel Manzur",
+      "redistribuibile": "si, mantenendo l'avviso di copyright MIT",
+      "licenza_sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "file": 1066,
+      "byte": 9124670,
+      "contenuto_sha256": "09f8e69ad6b393bd1ca29986e448c4f675c4b1f9f3229a7d99294b4c2703d23c"
+    },
+    {
+      "id": "godot-demo-projects",
+      "titolo": "Godot demo projects (esempi ufficiali)",
+      "url": "https://github.com/godotengine/godot-demo-projects",
+      "ref": "master@2026-07-03 (ultimo commit prima di \"Update demos for Godot 4.7\" #1332; demo aggiornati per 4.6 in #1294)",
+      "commit": "52f6a4fa6efe7be4e441d69437bf856a9bdbac51",
+      "url_base": "https://github.com/godotengine/godot-demo-projects/blob/52f6a4fa6efe7be4e441d69437bf856a9bdbac51/",
+      "licenza": "MIT (codice); alcuni asset hanno licenze proprie indicate nelle cartelle dei demo: non vengono acquisiti",
+      "attribuzione": "Copyright (c) 2014-present Godot Engine contributors; (c) 2007-2014 Juan Linietsky, Ariel Manzur",
+      "redistribuibile": "si per il codice .gd (MIT); asset grafici/audio esclusi dall'acquisizione",
+      "licenza_sha256": "0339177149b474f7ff676d32218ecb3a8f2538955610023c3769763720d09e4c",
+      "file": 731,
+      "byte": 1474114,
+      "contenuto_sha256": "8d208e38fee0818fb0d0b5877a3ac6cc18ac518d8b995f73417cef8a970eccaf"
+    }
+  ],
+  "godot_binary": {
+    "file": "Godot_v4.6.3-stable_linux.x86_64.zip",
+    "url": "https://github.com/godotengine/godot/releases/download/4.6.3-stable/Godot_v4.6.3-stable_linux.x86_64.zip",
+    "sha512_verificato": "a035258da32b77f966a5376f9fa29c30a6adde826a85ba918e1605bd1fc9823eba7d85f1dd5e748956bd2ba72827c0025ffa11bb82aec91128c407a2e723c99c",
+    "sha512_fonte": "https://github.com/godotengine/godot/releases/download/4.6.3-stable/SHA512-SUMS.txt"
+  },
+  "ultima_variazione": {
+    "aggiunti": 0,
+    "rimossi": 0,
+    "modificati": 0
+  }
+}
