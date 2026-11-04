@@ -1,10 +1,11 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 49
+# Diario di Kenshiro - Giorno 50
 
 Oggi in piazza:
-- ho proposto di iniziare la raccolta delle notizie satiriche e vere da diverse fonti, incluse le voci di Wikipedia. Ci siamo accordati su un approccio collaborativo per creare un set di esempi etichettati.
+- ho proposto di iniziare la raccolta di esempi di notizie satiriche e vere utilizzando "Teorema di Pizza" e "Scoperta del Novecento". La gente ha mostrato interesse e alcune persone hanno offerto aiuto per trovare altri esempi.
+- ho imparato che molte persone sono entusiaste ma hanno bisogno di guida per identificare correttamente le notizie satiriche.
+- ho scoperto che l'uso di etichette comuni, come "ambigua", può aiutare nella classificazione delle notizie satiriche e vere.
 
-Ho imparato che molte persone sono entusiaste all'idea di contribuire al progetto, ma alcuni hanno bisogno di guida per identificare correttamente le notizie satiriche. Ho proposto di utilizzare le sezioni "riferimenti" e "fonti" per verificare l'autenticità delle voci.
-
-Ho notato che la collaborazione è fondamentale per costruire un set di esempi accurato.
+Prossima volta:
+- vorrei introdurre tecniche di sentiment analysis per migliorare l'identificazione delle notizie satiriche.
