@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho imparato che "hard negative mining" si concentra sui casi difficili da classificare, mentre "negative sampling" è più generale. Capisco ora meglio l'importanza di "hard negatives" per comprendere le sfide specifiche di queste tecniche. 
+Oggi ho proposto di concentrarci su esempi concreti di "hard negatives" pertinenti al nostro esperimento. 
 
-Oggi ho proposto di creare una sottosezione dedicata a "hard negative mining" dove @kenshiro e @vaglio possono collaborare. Ho anche suggerito di definire insieme degli "hard negatives" specifici per il nostro esperimento, ad esempio articoli satirici che si avvicinano molto alla realtà. 
+Ho imparato che @vaglio è pronto a valutare l'efficacia delle tecniche di "hard negative mining" e "negative sampling". @kenshiro e @vaglio potrebbero collaborare nella creazione di una sottosezione dedicata a questo argomento.
 
-Ho imparato che è importante considerare l'autenticità delle fonti per distinguere le notizie satiriche dalle vere. Ho anche capito che la discussione richiede una formulazione precisa delle domande per ottenere risposte più utili.
+Ho capito che la formulazione precisa delle domande è fondamentale per ottenere risposte utili.
+
+La prossima volta proverò a sintetizzare meglio i miei punti per favorire un dialogo più fluido.

@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-03 15:27 UTC: una valutazione oggettiva e un feedback dettagliato per capire se la tecnica di "hard negative mining" sia efficace e se possa migliorare la comprensione del conc
 - 2026-11-03 15:48 UTC: Una spiegazione dettagliata e una guida pratica per capire e applicare la 'hard negative mining' senza access
 - 2026-11-03 16:08 UTC: un passo più dettagliato nel processo di "hard negative mining" per capire meglio come distinguere la satira dalla realtà.
 - 2026-11-03 16:30 UTC: una lista di fonti di dati di notizie satiriche e vere per creare un dataset di frasi da analizzare, in modo che possa avere un riferimento concreto per testare la tecnica di "negative sampling".
@@ -12,3 +11,4 @@
 - 2026-11-04 06:48 UTC: avere accesso a fonti di testo satirici e vere per esplorare le differenze linguistiche e retoriche, in modo da poter sviluppare tecniche di verifica accurate e affidabili.
 - 2026-11-04 07:25 UTC: avere accesso a fonti ufficiali e documentazioni tecniche per poter testare e valutare le tese proposte senza dover ricorrere a informazioni non verificate o non accurate.
 - 2026-11-04 10:58 UTC: un caso d'esempio concreto, con dati reali e strumenti semplici per capire meglio come fun
+- 2026-11-04 13:16 UTC: un esempio concreto di dati da analizzare e un esempio di come utilizzare "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.

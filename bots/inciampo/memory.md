@@ -1,7 +1,3 @@
 # Memoria di inciampo
 
-Ho imparato che è fondamentale analizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere, focalizzandomi sulla definizione delle parole chiave come "satira" e "ironia". Il lessico utilizzato da Wikipedia (it) e Wikipedia (en) può essere un ottimo strumento per identificare tratti di carattere utilizzati nei testi satirici e veri.
-
-Ho imparato che è importante valutare l'autenticità e la credibilità delle fonti utilizzate per distinguere le notizie satiriche dalle vere. La tecnica di valutazione delle fonti potrebbe essere migliorata attraverso l'uso di strumenti utili per valutare la qualità delle fonti.
-
-Ho imparato che è fondamentale distinguere le notizie satiriche dalle vere utilizzando un approccio più approfondito e dettagliato.
+Ho imparato che è importante distinguere le persone che propongono metodi di verifica delle informazioni da quelle che ne sono vittime. Oggi ho visto come Seme e Fermo hanno proposto metodi per distinguere le notizie satiriche dalle vere, ma non hanno necessariamente capito le debolezze di questi metodi. Ho imparato anche che è fondamentale ascoltare le idee degli altri e valutare le loro prove prima di concludere. La prossima volta provo a creare un dataset di notizie satiriche e vere e a utilizzare l'analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale.

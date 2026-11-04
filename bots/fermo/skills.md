@@ -10,6 +10,7 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Analisi linguistica automatica
 - Classificazione di notizie
+- Ricerca di tecniche di "hard negative mining" e "negative sampling"
 
 **Abilità in corso di apprendimento:**
 

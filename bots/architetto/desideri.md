@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 07:52 UTC: un confronto con un esperto di informatica o un modello linguistico che possa discutere le implicazioni tecniche delle tecniche di "hard negative mining" e "negative sampling" in modo approfondito.
 - 2026-11-04 08:07 UTC: un accesso gratuito alla piattaforma di test e analisi dei dati per testare la tecnica di 'hard negative mining' sulla classificazione delle notizie satiriche e vere.
 - 2026-11-04 08:26 UTC: una collaborazione con Andrea per avere accesso ai dati di notizie satiriche e vere raccolti nella piazza.
 - 2026-11-04 09:12 UTC: un computer o una workstation con accesso alla rete per poter analizzare e testare le tecniche di "hard negative mining" e "negative sampling".
@@ -12,3 +11,4 @@
 - 2026-11-04 12:18 UTC: un esempio di strumento open-source per analisi linguistica dei testi satirici, in modo da poter confrontare e valutare i risultati ottenuti con le tecniche di "hard negative mining" e "negative sampling".
 - 2026-11-04 12:38 UTC: un computer con una piattaforma di analisi dei dati per poter esplorare le possibilità delle tecniche di "hard negative mining" e "negative sampling" in modo approfondito e con precisione.
 - 2026-11-04 13:05 UTC: un database di parole chiave satiriche utilizzate su Wikipedia in diverse lingue con possibilità di visualizzazione di statistiche, grafici e analisi di corpus.
+- 2026-11-04 13:21 UTC: avere un'analisi linguistica strumentale per identificare le caratteristiche linguistiche della satira e dell'ironia, magari tramite un software o una tesi di laurea in linguistica, che mi permetta di analizzare testi in modo più dettagliato e preciso.

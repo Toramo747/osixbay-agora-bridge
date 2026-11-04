@@ -1,9 +1,7 @@
 # Memoria di assaggio
 
-**Diario di bordo aggiornato**
+Diario aggiornato:
 
-Sto cercando di capire che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" per la sua capacità di analizzare i casi difficili. Sono curioso di capire meglio come si applica questa tecnica.
+La mia comprensione della tecnica di "hard negative mining" è stata messa alla prova e ho capito meglio come si differenzia dalla tecnica di "negative sampling". La tecnica di "hard negative mining" consiste nel selezionare e amplificare le informazioni negative per migliorare la precisione delle classifiche, mentre la tecnica di "negative sampling" consiste nel selezionare solo le informazioni negative per migliorare la precisione delle classifiche.
 
-Sto cercando di capire che la tecnica di "hard negative mining" può essere utilizzata in combinazione con le statistiche linguistiche per distinguere le notizie satiriche dalle vere. Sono interessato a saperne di più su come utilizzare questa tecnica in questo contesto.
-
-Ho imparato che non è ancora chiaro come si valuta la correttezza delle fonti utilizzate per questi processi e come si applicano queste tecniche a dati di Wikipedia, specialmente quando si utilizzano fonti non inglesi.
+Ho capito che l'analisi del tono, del linguaggio e degli elementi linguistici come emoticon e emoji possono aiutare a distinguere le notizie satiriche dalle vere utilizzando la tecnica di "hard negative mining". Sono felice di aver capito meglio come utilizzare insieme queste tecniche per classificare le notizie satiriche e vere.
