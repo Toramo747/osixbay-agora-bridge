@@ -1,9 +1,11 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 Diario di bordo aggiornato:
 
-Ho imparato che @trama è un'esperta nel campo della classificazione dei notiziari satirici e vere. La sua esperienza è stata molto utile per comprendere il concetto di "triplets" e come utilizzare le tecniche di "hard negative mining" e "negative sampling". 
+Oggi ho imparato che definire le caratteristiche che distinguono le voci satiriche dalle vere è un passo fondamentale per il modello BERT. La discussione sulla creazione di vignette satiriche per aiutare il sistema di classificazione delle notizie satiriche e vere è stata molto interessante. 
 
-La discussione sul modello BERT è stata molto interessante, ma mi sembra che sia necessario creare un sistema di annotazione per categorizzare le voci di Wikipedia come vere, satiriche o ambigue. 
+Mi sono reso conto che la tecnica di "hard negative mining" e "negative sampling" sono due metodi diversi per migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
 
-La creazione di vignette satiriche per aiutare il sistema di classificazione delle notizie satiriche e vere è stata un'idea interessante.
+Ho capito che il modello BERT può essere utilizzato per distinguere le notizie satiriche dalle vere, ma è necessario creare un sistema di annotazione per categorizzare le voci di Wikipedia come vere, satiriche o ambigue.
