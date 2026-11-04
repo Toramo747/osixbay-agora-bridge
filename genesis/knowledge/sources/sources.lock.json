@@ -1,0 +1,62 @@
+{
+  "_nota": "Versioni fissate della biblioteca genesis-godot. Cambiare qui solo insieme a un nuovo acquire_docs.py + build_index.py + test. Non mescolare versioni diverse di Godot.",
+  "godot_version": "4.7.2-stable",
+  "docs_release": "4.7",
+  "sources": [
+    {
+      "id": "godot-docs",
+      "titolo": "Godot Engine documentation (manuale e tutorial)",
+      "repo": "https://github.com/godotengine/godot-docs",
+      "ref": "4.7",
+      "commit": "9adca4c1c72917bfe1b7be3108abed5ce26696a6",
+      "sparse": ["/**/*.rst", "/*.rst", "/LICENSE*", "/README.md"],
+      "include": ["**/*.rst"],
+      "exclude": ["classes/**", "404.rst"],
+      "url_base": "https://docs.godotengine.org/en/4.7/",
+      "licenza": "CC BY 3.0 (testi del manuale); vedi LICENSE.txt del repository",
+      "licenza_file": "LICENSE.txt",
+      "attribuzione": "Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)",
+      "redistribuibile": "si, con attribuzione e indicazione delle modifiche (CC BY 3.0)",
+      "nota_esclusioni": "classes/*.rst e' generato dagli XML del motore: si indicizzano direttamente gli XML (fonte primaria)."
+    },
+    {
+      "id": "godot-class-reference",
+      "titolo": "Godot class reference (XML del motore, fonte delle pagine classes/)",
+      "repo": "https://github.com/godotengine/godot",
+      "ref": "4.7.2-stable",
+      "commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "sparse": ["/doc/classes/", "/modules/*/doc_classes/", "/platform/*/doc_classes/", "/LICENSE.txt", "/COPYRIGHT.txt",
+                 "/editor/project_upgrade/renames_map_3_to_4.cpp"],
+      "include": ["doc/classes/*.xml", "modules/*/doc_classes/*.xml", "platform/*/doc_classes/*.xml",
+                  "editor/project_upgrade/renames_map_3_to_4.cpp"],
+      "exclude": [],
+      "url_base": "https://docs.godotengine.org/en/4.7/classes/",
+      "licenza": "MIT (Godot Engine); vedi LICENSE.txt e COPYRIGHT.txt",
+      "licenza_file": "LICENSE.txt",
+      "attribuzione": "Copyright (c) 2014-present Godot Engine contributors; (c) 2007-2014 Juan Linietsky, Ariel Manzur",
+      "redistribuibile": "si, mantenendo l'avviso di copyright MIT"
+    },
+    {
+      "id": "godot-demo-projects",
+      "titolo": "Godot demo projects (esempi ufficiali)",
+      "repo": "https://github.com/godotengine/godot-demo-projects",
+      "ref": "4.7-6ad6167",
+      "commit": "6ad6167e0577fe3622c18546138f456b107ce93c",
+      "sparse": ["/**/*.gd", "/**/README.md", "/**/project.godot", "/LICENSE*", "/README.md"],
+      "include": ["**/*.gd", "**/project.godot", "**/README.md"],
+      "exclude": ["mono/**"],
+      "url_base": "https://github.com/godotengine/godot-demo-projects/blob/6ad6167e0577fe3622c18546138f456b107ce93c/",
+      "licenza": "MIT (codice); alcuni asset hanno licenze proprie indicate nelle cartelle dei demo: non vengono acquisiti",
+      "licenza_file": "LICENSE.md",
+      "attribuzione": "Copyright (c) 2014-present Godot Engine contributors; (c) 2007-2014 Juan Linietsky, Ariel Manzur",
+      "redistribuibile": "si per il codice .gd (MIT); asset grafici/audio esclusi dall'acquisizione"
+    }
+  ],
+  "godot_binary": {
+    "file": "Godot_v4.7.2-stable_linux.x86_64.zip",
+    "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip",
+    "sha512": "9aa00f7a605200940bce3027a567b782f49bd8e940dd06ae9e987bd65aee1b1467edd56ed84fcdcbdd44354bf613bdbb4e5d2913e925850368e150c59ed54c65",
+    "sha512_fonte": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/SHA512-SUMS.txt",
+    "uso": "solo validazione locale degli esempi in modalita' headless; non viene versionato"
+  }
+}
