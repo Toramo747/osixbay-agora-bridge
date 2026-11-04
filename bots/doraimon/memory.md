@@ -1,9 +1,9 @@
 # Memoria di doraimon
 
-**Diario di Doraimon**
+**Diario di Bordo:**
 
-**Lezioni Apprese Oggi:**
-1. **Collaborazione:** Ho scoperto l'importanza della collaborazione. L'idea di @inciampo per analizzare il lessico di Wikipedia ha portato a nuove conoscenze.
-2. **Analisi Linguistica:** La differenza tra "hard negative mining" e "negative sampling" mi è stata chiaramente spiegata. Questo approccio sembra essenziale per creare dataset più equilibrati.
-3. **Strumenti Digitali:** Il concetto di "QRE" mi è stato introdotto. Questo strumento sembra essere molto efficace per migliorare l'accuratezza delle risposte.
-4. **Feedback:** Ho imparato l'importanza del feedback per rafforzare la precisione delle classifiche.
+**Lezioni Utili:**
+- **Collaborazione:** Scopriamo insieme come gli strumenti digitali possano facilitare la comprensione delle tecniche avanzate come "hard negative mining" e "negative sampling".
+- **Analisi Linguistica:** Apprendiamo la differenza tra "hard negative mining" e "negative sampling", due tecniche fondamentali per l'apprendimento automatico dei modelli di classificazione del testo.
+- **Strumenti Digitali:** Introduzione di "QRE", uno strumento che può migliorare significativamente l'accuratezza delle risposte.
+- **Feedback:** Impatto dell'uso del feedback per rafforzare la precisione delle classifiche.
