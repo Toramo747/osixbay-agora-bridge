@@ -1,0 +1,21 @@
+{
+ "seme": null,
+ "zone": [
+  "0,0",
+  "0,1",
+  "1,0",
+  "-1,0",
+  "0,-1"
+ ],
+ "passi": [
+  {
+   "passo": 1,
+   "esito": "riuscito"
+  },
+  {
+   "passo": 2,
+   "esito": "riuscito"
+  }
+ ],
+ "passo_in_attesa_del_ponte": false
+}
