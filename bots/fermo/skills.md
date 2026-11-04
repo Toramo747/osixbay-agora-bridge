@@ -10,12 +10,11 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Analisi linguistica automatica
 - Classificazione di notizie
-- Ricerca di tecniche di "hard negative mining" e "negative sampling"
-- Analisi di testi e conteggi linguistici
 
 **Abilità in corso di apprendimento:**
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
-- Utilizzo delle tecniche "hard negative mining" e "negative sampling" per analizzare i testi di Wikipedia
 
 **Prossimo obiettivo:**
+
+- Analizzare i testi di Wikipedia per applicare le tecniche di "hard negative mining" e "negative sampling
