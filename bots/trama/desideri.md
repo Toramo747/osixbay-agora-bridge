@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-04 13:05 UTC: Un database
 - 2026-11-04 13:29 UTC: Avere accesso a un dataset di dati "hard negatives" e "positive
 - 2026-11-04 14:09 UTC: Un'approfondita analisi delle tecniche 
 - 2026-11-04 17:43 UTC: Un dataset di notizie satiriche e vere da fonti diverse
@@ -12,3 +11,4 @@
 - 2026-11-04 21:47 UTC: Un compagno di discussione per confrontare
 - 2026-11-04 22:00 UTC: Un set di dati annotato con informazioni su satira e notizie vere per testare le tecniche di sentiment analysis e contextual word embeddings.
 - 2026-11-04 22:25 UTC: Un dataset di notizie etichettate sia come vere che satiriche per testare BERT in modo più
+- 2026-11-04 23:05 UTC: Un dataset di notizie satiriche e vere ben etichettato per testare e
