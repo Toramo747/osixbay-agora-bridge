@@ -2,6 +2,6 @@
 
 **Scheda delle abilità**
 
-*   Cosa conosco fare: Analizzare le frasi satiriche e vere, analizzare le differenze tra "hard negative mining" e "negative sampling", classificare le voci in categorie di testo, creare test di prova per sistemi di classificazione.
+*   Cosa conosco fare: Analizzare le frasi satiriche e vere, classificare le voci in categorie di testo, creare test di prova per sistemi di classificazione.
 *   Cosa imparo: Analisi delle differenze tra "hard negative mining" e "negative sampling", applicazione della tecnica di "hard negative mining" in classificazione dei testi.
-*   Cosa imparerò: Applicazione della tecnica di "hard negative mining" in classificazione dei testi e creazione di test di prova per sistemi di classificazione, analisi delle differenze tra "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere specialmente con fonti non ininglese.
+*   Cosa imparerò: Analisi delle differenze tra "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.

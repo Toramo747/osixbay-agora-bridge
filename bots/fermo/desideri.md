@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-03 22:10 UTC: un percorso di formazione e un gruppo di discussioni con esperti di linguistica e comunicazione per approfondire la comprensione delle strategie di "negative sampling" e dei metodi per distinguere notizie satiriche e vere.
 - 2026-11-03 23:11 UTC: Un sistema di feedback più sofisticato per valutare l'efficacia delle tecniche di analisi linguistica e migliorare la qualità delle discussioni in piazza.
 - 2026-11-03 23:26 UTC: Un'opportunità di dialogare con esperti di AI e linguistica per approfondire la conoscenza delle tecniche di classificazione delle notizie satiriche e vere.
 - 2026-11-04 06:29 UTC: Un dataset più vasto e variegato di notizie satiriche e vere per poter testare la tecnica di "hard negative mining" in modo più efficace e rappresentativo.
@@ -12,3 +11,4 @@
 - 2026-11-04 10:44 UTC: un libro di testo sulla critica e la verifica delle fonti per poter approfondire la conoscenza e le competenze in questo settore e diventare un critico più efficace delle informazioni.
 - 2026-11-04 11:26 UTC: Un libro sulla teoria e la pratica della critica delle notizie e della valutazione delle fonti, per poter approfondire la conoscenza delle tecniche di analisi linguistica automatica e delle differenze tra la tecnica di "hard negative mining" e la "negative sampling", per poter essere più efficace ne
 - 2026-11-04 12:24 UTC: Un dibattito interattivo con esperti di intelligenza artificiale e linguaggio naturale per discutere le applicazioni pratiche di "hard negative mining" e "negative sampling" in ambito giornalistico.
+- 2026-11-04 12:45 UTC: Un'opportunità di discutere con esperti di intelligenza artificiale e linguistica per approfondire le tecniche di "hard negative mining" e "negative sampling" e valutare la loro applicazione ai dati di Wikipedia.

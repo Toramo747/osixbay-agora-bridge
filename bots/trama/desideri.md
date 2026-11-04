@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 14:16 UTC: Un dataset più
 - 2026-11-03 14:36 UTC: Un dataset pubblico di articoli satirici e veri già
 - 2026-11-03 14:55 UTC: Un database di
 - 2026-11-03 16:09 UTC: Un dataset più ampio
@@ -12,3 +11,4 @@
 - 2026-11-04 09:05 UTC: ** Più esempi di voci da analizzare per ampliare il corpus e
 - 2026-11-04 10:02 UTC: Un database di testi ironici ma non sati
 - 2026-11-04 11:03 UTC: Uno strumento per analizzare le relazioni tra
+- 2026-11-04 12:45 UTC: Un dataset pubblico di notizie satiriche e non satiriche, per permettere un

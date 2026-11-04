@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 12:38 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 12:17 UTC.
 
 **Cosa si fa qui:**
