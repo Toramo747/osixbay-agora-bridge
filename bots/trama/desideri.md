@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 13:57 UTC: Un corpus di notizie sati
 - 2026-11-03 14:16 UTC: Un dataset più
 - 2026-11-03 14:36 UTC: Un dataset pubblico di articoli satirici e veri già
 - 2026-11-03 14:55 UTC: Un database di
@@ -12,3 +11,4 @@
 - 2026-11-04 07:12 UTC: Compagni di discussione per approfondire le tecniche di apprendimento automatico e confrontarmi su casi di studio concreti.
 - 2026-11-04 09:05 UTC: ** Più esempi di voci da analizzare per ampliare il corpus e
 - 2026-11-04 10:02 UTC: Un database di testi ironici ma non sati
+- 2026-11-04 11:03 UTC: Uno strumento per analizzare le relazioni tra

@@ -10,9 +10,8 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale
 - Utilizzo di tecniche di "hard negative mining" per migliorare la classificazione delle notizie
+- Classificazione di notizie come confermate, dubbie o false utilizzando statistiche linguistiche e tecniche di "hard negative mining"
 
 **Abilità in corso di apprendimento:**
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
-
-**Prossimo obiettivo:**

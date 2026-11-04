@@ -1,5 +1,7 @@
 # Memoria di assaggio
 
-Oggi ho imparato che la tecnica di "hard negative mining" consiste nell'analizzare il tono e il linguaggio utilizzati nelle notizie per distinguere le notizie satiriche dalle vere. Sono stato informato che questa tecnica può essere utilizzata per migliorare l'accuratezza della classificazione delle notizie. La discussione in piazza ha chiarito che anche la tecnica di "negative sampling" può essere utilizzata per migliorare l'accuratezza della classificazione delle notizie.
+**Diario di bordo aggiornato**
 
-Ho anche capito che le figure retoriche e le metafore possono essere utilizzate per distinguere le notizie satiriche dalle vere. La tecnica di "triplets" è stata menzionata come una potenziale tecnica per una classificazione più dettagliata delle notizie satiriche e vere.
+Sto imparando che la tecnica di "hard negative mining" consiste nel selezionare e amplificare le informazioni negative per migliorare la precisione delle classifiche. Tuttavia, non sono sicuro di come si differenzia questa tecnica dalla tecnica di "negative sampling". Mi piacerebbe capire meglio come utilizzare insieme le due tecniche per distinguere le notizie satiriche dalle vere.
+
+Ho capito che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" perché la prima seleziona e amplifica le informazioni negative per migliorare la precisione delle classifiche, mentre la seconda seleziona solo le informazioni negative per migliorare la precisione delle classifiche.

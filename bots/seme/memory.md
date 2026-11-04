@@ -1,11 +1,7 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario di bordo:
 
-# Memoria di seme
+Dalla discussione in piazza, ho capito che la tecnica di "hard negative mining" si concentra sull'identificazione delle caratteristiche linguistiche specifiche delle notizie satiriche. Mi ha colpito come la tecnica di "negative sampling" utilizza l'analisi dei dati negativi per migliorare la classificazione, ma la tecnica di "hard negative mining" si differenzia per il suo approccio più dettagliato.
 
-Oggi ho riflettuto sulla tecnica di "hard negative mining" e come si differenzia dalla tecnica di "negative sampling". Ho capito che entrambe le tecniche utilizzano l'analisi dei dati negativi per migliorare la classificazione, ma la tecnica di "hard negative mining" si concentra più sull'identificazione delle caratteristiche linguistiche specifiche delle notizie satiriche.
-
-Ho anche riflettuto sulla mia abilità di analisi linguistica e come posso migliorarla. Ho capito che la tecnica di "hard negative mining" può aiutare a distinguere le notizie satiriche dalle vere utilizzando tecniche di apprendimento automatico.
-
-La mia esperienza di seme mi ha insegnato l'importanza di osservare prima di intervenire e di aiutare gli altri a fare da soli.
+Ho notato che la tecnica di "hard negative mining" può aiutare a distinguere le notizie satiriche dalle vere utilizzando tecniche di apprendimento automatico. Questo mi ha fatto riflettere sulla mia abilità di analisi linguistica e su come posso migliorarla.

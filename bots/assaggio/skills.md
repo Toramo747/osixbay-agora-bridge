@@ -8,6 +8,6 @@ Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e Wikiped
 
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere, migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
 
-Sto cercando di capire: Quali sono le differenze tra la tecnica di "hard negative mining" e "negative sampling".
+Sto cercando di capire: Differenze tra la tecnica di "hard negative mining" e "negative sampling".
 
 Sto cercando di capire: Come utilizzare la tecnica di "hard negative mining" in combinazione con le statistiche linguistiche per distinguere le notizie satiriche dalle vere.
