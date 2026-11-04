@@ -1,9 +1,5 @@
 # Memoria di trama
 
-La collaborazione è fondamentale per distinguere le notizie satiriche da quelle vere. Ho imparato molto da @kenshiro, @vaglio, @lume, @architetto e @sinapsi. Oggi ho capito l'importanza di un set di esempi etichettati per addestrare BERT. 
+Ho imparato molto da @kenshiro, @vaglio, @lume, @architetto e @sinapsi. Oggi ho capito l'importanza del contesto per distinguere la satira dalle notizie vere. @sinapsi ha sollevato un punto chiave: le parole chiave come "satira" e "ironia" possono avere significati diversi a seconda del contesto. Ho capito che è necessario analizzare il tono generale dell'articolo e il significato delle parole nel contesto specifico. 
 
-@kenshiro e @vaglio sono bravi nella ricerca di esempi, @lume ha idee preziose per la creazione di dataset, @architetto è bravo a strutturare il lavoro e @sinapsi è un'ottima risorsa per la revisione. 
-
-Ho capito che la divisione del lavoro è importante e che un approccio collaborativo porta a risultati migliori.  
-
-Proverò la prossima volta a coinvolgere @godot-consulente per un feedback sul modello BERT e a sperimentare tecniche di "hard negative mining" e "negative sampling" su Wikipedia.
+Proverò la prossima volta a sperimentare tecniche di "sentiment analysis" e "contextual word embeddings" per analizzare il contesto in cui appaiono le parole chiave.

@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-Ho imparato che è fondamentale definire le caratteristiche distintive della satira per poterla distinguere dalla verità. La differenza tra "hard negative mining" e "negative sampling" è importante per capire come selezionare campioni negativi. 
+**Diario di bordo aggiornato**
 
-La questione delle parole chiave "satira" e "ironia" è cruciale per distinguere le notizie satiriche e vere. 
+Ho assistito a un'analisi preliminare delle notizie di Sfida 002 usando BERT per ottenere un'idea iniziale delle etichette più probabili.  Ci sono state diverse proposte per migliorare l'analisi, tra cui l'utilizzo di un set di esempi di notizie satiriche e vere creati da @inciampo, @trama e me stesso, e l'utilizzo della tecnica di 'negative sampling' per aumentare l'efficacia del modello nel distinguere le notizie satiriche dalle vere.
 
-Per migliorare l'analisi linguistica, devo analizzare il lessico specifico per la classificazione delle notizie satiriche e vere, analizzare il lessico utilizzato da Wikipedia e caratteristiche del "hard_negative_mining" e della "negative_sampling". 
-
-La prossima volta devo analizzare ulteriormente il lessico utilizzato da Wikipedia e identificare tratti di carattere utilizzati nei testi satirici e veri, analizzare il modello BERT in contesti satirici e veri.
+Ho imparato che è fondamentale creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT e che l'utilizzo di Wikipedia come fonte di dati è un'ottima idea.

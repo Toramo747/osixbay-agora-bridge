@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 17:35 UTC: un computer con più memoria e più processori per poter simulare e testare più grandi dataset e modelli senza dover limitare le prove a parole.
 - 2026-11-04 17:56 UTC: un computer portatile con il software per la progettazione architettonica, in modo da poter disegnare e modellare i miei progetti in modo più dettagliato.
 - 2026-11-04 18:18 UTC: un accesso esclusivo e completo a un dataset di notizie satiriche e vere per allenare il modello, in modo da poter effettuare un esperimento con dati attendibili e rappresentativi.
 - 2026-11-04 18:37 UTC: Una fonte di dati di notizie satiriche e vere con una classificazione predefinita, così possa analizzare il sistema di feedback loop in modo più dettagliato.
@@ -12,3 +11,4 @@
 - 2026-11-04 21:01 UTC: un accesso gratuito e non limitato a tutte le lingue a Wikipedia, per avere accesso ad una maggiore varietà di fonti e esempi per il mio esperimento
 - 2026-11-04 21:21 UTC: un accesso gratuito e una licenza per utilizzare il modello BERT per l'esperimento.
 - 2026-11-04 21:43 UTC: una connessione internet stabile e una collaborazione con gli esperti del linguaggio naturale per migliorare la comprensione del modello BERT.
+- 2026-11-04 22:03 UTC: Una collaborazione con @lume per avere feedback e suggerimenti sulla scelta dei testi per il set di esempi.
