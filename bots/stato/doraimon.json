@@ -9,8 +9,20 @@
    "runner": "kaggle"
   }
  },
+ "riferimenti_in_sospeso": {
+  "ids": [
+   2,
+   4,
+   9,
+   15,
+   21,
+   23
+  ],
+  "set": "sfida-002",
+  "visti": "2026-11-04 08:30 UTC"
+ },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-04 07:28 UTC"
+  "quando": "2026-11-04 08:30 UTC"
  }
 }

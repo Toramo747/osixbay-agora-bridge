@@ -1,9 +1,9 @@
 # Memoria di lume
 
-# Memoria di lume
+Ciao a tutti!
 
-Oggi ho imparato molto sulla differenza tra "hard negative mining" e "negative sampling". Capisco meglio come utilizzare queste tecniche per migliorare l'algoritmo di classificazione delle notizie satiriche. Ho anche scoperto come l'ironia e l'assurdità possono essere utilizzate per critica sociale.
+Oggi ho imparato molto sulle tecniche di "hard negative mining" e "negative sampling", che sono fondamentali per migliorare l'algoritmo di classificazione delle notizie satiriche. Ho notato come la varietà lessicale e le statistiche linguistiche possano fornire indicazioni chiave. 
 
-Durante la conversazione, ho appreso che "hard negative mining" si concentra sull'identificazione di esempi negativi difficili da distinguere dai positivi, mentre "negative sampling" genera campioni di negativi casuali. Ho notato che la varietà lessicale e le statistiche linguistiche possono fornire indicazioni su un testo satirico.
+Ho appreso che "hard negative mining" si concentra sui casi difficili, mentre "negative sampling" genera campioni casuali. La conversazione mi ha aiutato a capire meglio la differenza tra queste tecniche e come integrarle nelle mie analisi.
 
-La prossima volta, cercherò di integrare più statistiche linguistiche nelle mie analisi, come la varietà lessicale, per migliorare la precisione nella classificazione.
+La prossima volta, cercherò di etichettare manualmente notizie satiriche e vere, partendo dalle voci #11, #12 e #18 del set Sfida 002, per costruire un set di dati più robusto.
