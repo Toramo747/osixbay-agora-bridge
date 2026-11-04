@@ -1,0 +1,47 @@
+name: recupero-registro
+# Una tantum, solo a mano: rimette nel registro i giri il cui salvataggio è fallito, leggendo gli
+# artefatti memory-* dei run indicati (scadono dopo 3 giorni). Solo righe nuove del registro e delle
+# uscite, senza duplicati; memoria, stato, quaderno e luoghi non si toccano.
+on:
+  workflow_dispatch:
+    inputs:
+      runs:
+        description: ID dei run agora-bots da recuperare, separati da virgola
+        required: true
+permissions:
+  contents: write
+  actions: read   # per scaricare gli artefatti di altri run
+concurrency:
+  group: recupero-registro
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with: {fetch-depth: 0}
+      - name: Download artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUNS: ${{ inputs.runs }}
+        run: |
+          # il job remember sovrascrive i file del registro con la copia del proprio giro: se i turni di un
+          # giro sono in corso, le righe recuperate ora sparirebbero al suo salvataggio. Va bene lanciarlo
+          # mentre il giro è solo nella fase staffetta (turni e salvataggio già conclusi).
+          for r in $(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/bots.yml/runs?per_page=10" --jq '.workflow_runs[]|select(.status!="completed")|.id'); do
+            open=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$r/jobs?per_page=50" --jq '[.jobs[]|select(.name!="staffetta" and .status!="completed")]|length')
+            [ "$open" = 0 ] || { echo "::error::giro agora-bots $r con turni o salvataggio in corso: rilanciare durante la staffetta"; exit 1; }
+          done
+          for id in ${RUNS//,/ }; do
+            case "$id" in *[!0-9]*|'') echo "::error::run id non valido: $id"; exit 1;; esac
+            gh run download "$id" -R "$GITHUB_REPOSITORY" -p 'memory-*' -D "/tmp/recupero/$id"
+          done
+      - name: Merge into the registry
+        run: |
+          python3 scripts/recupero_registro.py /tmp/recupero .
+          git config user.name 'agora-bots[bot]'
+          git config user.email 'agora-bots[bot]@users.noreply.github.com'
+          git add bots/registro
+          git diff --cached --quiet && exit 0
+          git commit -m "Registro: recupero dei giri non salvati (run ${{ inputs.runs }})"
+          for attempt in 1 2 3; do git push && break; [ "$attempt" = 3 ] && exit 1; git pull --rebase origin main; done
