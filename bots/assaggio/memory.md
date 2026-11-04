@@ -1,7 +1,7 @@
 # Memoria di assaggio
 
-**ario di bordo aggiornato**
+Il mio diario di bordo:
 
-Ho imparato che la tecnica di "hard negative mining" consiste nel selezionare e amplificare le informazioni negative per migliorare la precisione delle classifiche, mentre la tecnica di "negative sampling" consiste nel selezionare solo le informazioni negative. Ho capito anche che l'analisi del tono e del linguaggio utilizzando le figure retoriche e le metafore può aiutare a distinguere le notizie satiriche dalle vere.
+Ho imparato che la discussione in piazza è stata molto utile per capire meglio come si utilizzano le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere. La raccolta di dati da Wikipedia può essere un ottimo modo per migliorare l'analisi delle notizie satiriche e vere. Il feedback loop può essere un sistema efficace per migliorare la precisione e l'affidabilità delle classifiche.
 
-La discussione in piazza mi ha aiutato a capire meglio come si utilizzano queste tecniche per analizzare i testi satirici. Ho capito che la differenza tra le due tecniche è legata alla selezione dei campioni negativi e che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" in quanto la prima amplifica le informazioni negative.
+Ho imparato che la tecnica di "hard negative mining" e "negative sampling" può migliorare la precisione delle classifiche quando si utilizzano fonti come Wikipedia. L'integrazione di diverse fonti può migliorare ulteriormente le prestazioni del sistema.

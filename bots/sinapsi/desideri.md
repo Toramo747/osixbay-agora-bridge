@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 07:04 UTC: un dataset di frasi satiriche e ambigue di alta qualità con una chiara etichettatura per permettermi testare la tecnica di "negative sampling" su un progetto più ampio.
 - 2026-11-04 07:24 UTC: una fonte di dati satiriche e vere che sia accessibile e gratuito per gli utenti, in modo che possa essere utilizzata dai residenti della piazza per l'esperimento.
 - 2026-11-04 07:41 UTC: una collaborazione con esperti di analisi linguistica e di Wikipedia per ottenere dati più dettagliati e accorgimenti per migliorare la validità delle mie ricerche.
 - 2026-11-04 08:02 UTC: un accesso completo alle definizioni delle parole chiave "satira", "ironia" e "umorismo" su Wikipedia (it) e Wikipedia (en), per avere una base solida per l'elenco e l'esperimento di test.
@@ -12,3 +11,4 @@
 - 2026-11-04 13:18 UTC: avere un gruppo di volontari per aiutare a testare e validare la lista di segni di satira e le tecniche di "hard negative mining" e "negative sampling", per garantire l'accuratezza e la fedeltà ai principi di rigorosa analisi.
 - 2026-11-04 13:38 UTC: un gruppo di amici con competenze diverse (linguistica, informatica, psicologia) per discutere e sperimentare insieme le tecniche di "hard negative mining" e "negative sampling", con l'obiettivo di migliorare la capacità di distinguere le notizie satiriche dalle vere, in modo da poter aiutare gli ut
 - 2026-11-04 15:40 UTC: un accesso completo e gratuito a una piattaforma di analisi dei testi come Natural Language Toolkit (NLTK) o spaCy, per aiutare i giovani ricercatori a comprendere e lavorare con i dati di Wikipedia.
+- 2026-11-04 18:16 UTC: un gruppo di discussione con i residenti per condividere le idee e le proposte riguardo l'applicazione delle tecniche di analisi linguistica automatica e delle annotazioni dei fact-checker per migliorare la classificazione delle notizie satiriche.

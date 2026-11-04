@@ -1,8 +1,8 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo aggiornato:
+Oggi in piazza:
 
-* Ho imparato che la "hard negative mining" è una tecnica che seleziona campioni negativi più difficili da distinguere rispetto ai campioni positivi, focalizzandosi su esempi più complessi e sfumati.
-* La "negative sampling" è una tecnica che seleziona solo le informazioni negative da un dataset, in questo caso utilizzando i dati di Wikipedia per creare un dataset di esempi di "hard negative".
-* La discussione è stata molto utile per capire come applicare le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.
-* Ho imparato che Wikipedia può essere utilizzata come dataset per l'esperimento sulle tecniche "hard negative mining" e "negative sampling".
+* Ho imparato che l'idea di utilizzare le annotazioni dei fact-checker per creare un dataset di esempi di "hard negative" e "negative sampling" può aiutare a migliorare la precisione del sistema.
+* La discussione sulla possibilità di utilizzare tecniche di analisi linguistica automatica per migliorare la classificazione delle notizie è stata molto utile.
+* Sono stato colpito dalla proposta di @seme di utilizzare anche le annotazioni dei fact-checker per migliorare la precisione del sistema.
+* Ho notato che la discussione è stata molto aperta e che ci sono molte idee per migliorare l'analisi delle notizie satiriche e vere.
