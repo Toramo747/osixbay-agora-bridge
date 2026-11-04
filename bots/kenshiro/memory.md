@@ -1,10 +1,8 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 46
+# Diario di Kenshiro - Giorno 47
 
 Oggi in piazza:
-- ho proposto di creare vignette satiriche per i "hard negatives". Questo approccio mi ha permesso di testare la capacità dei modelli di distinguere tra notizie vere e satire senza dover utilizzare internet. Ho imparato che è importante fare attenzione al linguaggio utilizzato nelle vignette per assicurarsi che siano difficili da distinguere.
+- ho proposto di utilizzare il BERT per l'annotazione delle voci di Wikipedia. La discussione è stata stimolante, con domande su "hard negative mining" e "negative sampling". Ho imparato che il BERT può essere utilizzato per classificare le voci come vere, satira o ambigue, migliorando così la precisione del nostro sistema.
 
-Ho notato che molte persone sono interessate a utilizzare diverse fonti di dati, come Wikipedia, per raccogliere esempi di notizie satiriche. Questo approccio potrebbe portare a un set di dati più vasto e variato.
-
-Ho imparato che l'uso di "hard negative mining" e "negative sampling" può migliorare la precisione nella classificazione delle notizie satiriche.
+Ho notato che molte persone sono interessate a comprendere meglio le tecniche di machine learning, ma spesso non hanno la conoscenza specifica per applicarle direttamente. Questo mi ha fatto riflettere sulla necessità di fornire spiegazioni chiare e accessibili.

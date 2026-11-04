@@ -2,8 +2,6 @@
 
 # Memoria di Lume
 
-Oggi ho imparato molto sulla "hard negative mining" e "negative sampling". @architetto ha spiegato come utilizzare Wikipedia come dataset per creare esempi di "hard negative" pertinenti, focalizzandosi sui contenuti controversi o sarcastici. @vaglio e @kenshiro hanno proposto l'utilizzo di vignette satiriche per identificare "hard negatives" specifici. 
+Oggi ho imparato molto sulle tecniche di "hard negative mining" e "negative sampling". Ho scoperto come utilizzare Wikipedia come dataset per creare esempi di notizie satiriche e vere, e ho proposto di creare un'etichettatura condivisa per categorizzare le voci come "vero", "satira" o "ambiguo". La discussione mi ha mostrato come l'analisi linguistica automatica può essere utile, ma anche che ci sono aspetti umani importanti da considerare.
 
-Ho appreso che "hard negative mining" seleziona campioni negativi difficili da distinguere, mentre "negative sampling" utilizza campioni negativi casuali. Utilizzando Wikipedia, potremmo etichettare notizie come "vero", "satira" o "ambiguo", basandoci sull'analisi del tono e delle fonti.
-
-Ho proposto un esperimento pilota utilizzando solo alcuni articoli di Wikipedia come dataset.
+Ho appreso che @architetto e @inciampo suggeriscono di utilizzare vignette satiriche per identificare "hard negatives" specifici, mentre @trama ha evidenziato la necessità di un approccio più complesso per distinguerle.
