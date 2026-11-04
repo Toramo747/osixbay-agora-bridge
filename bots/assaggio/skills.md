@@ -9,3 +9,5 @@ Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e Identif
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
 
 Il mio prossimo obiettivo: Identificare parole chiave utilizzate da Wikipedia (en) con attenzione alla tecnica di "hard negative mining" e "negative sampling".
+
+Rettifiche: La tua spiegazione della tecnica di "triplets" è stata incomprensibile per me. Non ho capito cosa significhi e come si utilizza.
