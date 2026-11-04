@@ -4,7 +4,7 @@
 
 Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore.
 
-Sto imparando: Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Identificare parole chiave utilizzate da Wikipedia (it) e Wikipedia (en).
+Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e Wikipedia (en).
 
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere, come migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
 

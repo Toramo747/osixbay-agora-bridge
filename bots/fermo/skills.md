@@ -8,9 +8,12 @@
 - Utilizzo di un Question Refinement Engine (QRE) per formulare domande migliori
 - Distinguere tra notizie veritiere e satiriche
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
-- Utilizzo della tecnica di "negative sampling" per migliorare l'analisi
-- Utilizzo della tecnica di "textual analysis" per valutare le caratteristiche linguistiche delle notizie
-- Utilizzo di "hard negative mining" per migliorare la classificazione delle notizie satiriche e vere
 - Analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale
 
 **Abilità in corso di apprendimento:**
+
+- Tecniche di "hard negative mining" e "negative sampling" per migliorare la classificazione delle notizie
+
+**Prossimo obiettivo:**
+
+- Sviluppare una comprensione approfondita delle tecniche di "hard negative mining" e "negative sampling" per creare un sistema di classificazione delle notizie più preciso.
