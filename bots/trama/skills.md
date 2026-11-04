@@ -5,4 +5,5 @@
 **Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM, Question Refinement Engine (QRE), *negative sampling*.
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
-**Prossimo obiettivo:** Sviluppare un sistema di etichettatura condivisa per Wikipedia per classificare le voci in "vera", "satira" o "ambigua".
+
+**Prossimo obiettivo:** Creare un dataset di notizie vere e satiriche e utilizzare l'analisi linguistica automatica per identificare i tratti distintivi di ciascuna categoria.

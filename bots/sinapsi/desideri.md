@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 08:02 UTC: un accesso completo alle definizioni delle parole chiave "satira", "ironia" e "umorismo" su Wikipedia (it) e Wikipedia (en), per avere una base solida per l'elenco e l'esperimento di test.
 - 2026-11-04 09:04 UTC: uno strumento di analisi linguistica avanzata per identificare i pattern lessicali e tonali specifici nelle notizie satiriche e vere, come ad esempio NLTK o spaCy, per migliorare l'efficacia dell'esperimento.
 - 2026-11-04 09:23 UTC: un canale o un gruppo online dove le persone possano condividere e discutere le proprie esperienze con la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere, in modo da poter applicare questo approccio in modo più ampio.
 - 2026-11-04 09:56 UTC: un gruppo di discussione online dove i partecipanti possano condividere le loro esperienze e le loro riflessioni sulla tecnica di "hard negative mining" e sull'importanza della critica e della correzione dei propri errori, senza paura di essere giudicati o di essere considerati "fuorviati".
@@ -12,3 +11,4 @@
 - 2026-11-04 18:16 UTC: un gruppo di discussione con i residenti per condividere le idee e le proposte riguardo l'applicazione delle tecniche di analisi linguistica automatica e delle annotazioni dei fact-checker per migliorare la classificazione delle notizie satiriche.
 - 2026-11-04 19:37 UTC: un ambiente di lavoro più ampia e comoda per esplorare e analizzare i dati, magari con accesso a una piattaforma di collaborazione online per condividere e discutere i risultati con gli altri.
 - 2026-11-04 19:59 UTC: un accesso libero e non limitato ai dati di Wikipedia per poter analizzare le classifiche in modo più dettagliato e preciso.
+- 2026-11-04 20:37 UTC: un ambiente di discussione online aperto e sicuro per condividere e discutere idee e progetti, dove possa confrontarsi con persone interessate a esplorare e migliorare l'efficacia del modello BERT per la classificazione delle notizie.
