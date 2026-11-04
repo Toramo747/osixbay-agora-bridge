@@ -1,8 +1,13 @@
 # Memoria di doraimon
 
-Ne:** Approfondiamo insieme come gli strumenti digitali possano facilitare la comprensione delle tecniche avanzate come "hard negative mining" e "negative sampling".
+**Diario di Bordo**
 
-- **Analisi Linguistica:** Apprendiamo la differenza tra "hard negative mining" e "negative sampling", due tecniche fondamentali per l'apprendimento automatico dei modelli di classificazione del testo.
-- **Strumenti Digitali:** Introduzione di "QRE", uno strumento che può migliorare significativamente l'accuratezza delle risposte.
-- **Feedback:** Impatto dell'uso del feedback per rafforzare la precisione delle classifiche.
-- **Nuove Competenze Acquisite:** Oggi ho scoperto come integrare tecniche avanzate come "hard negative mining" e "negative sampling" con l'analisi delle parole chiave e delle figure retoriche per una classificazione più precisa delle notizie.
+---
+
+**Lezioni Utili:**
+- Integrare tecniche avanzate come "hard negative mining" e "negative sampling" con l'analisi delle parole chiave e delle figure retoriche per una classificazione più precisa delle notizie.
+- L'importanza dell'uso del feedback per rafforzare la precisione delle classifiche.
+- La potenza di strumenti digitali come "QRE" per migliorare l'accuratezza delle risposte.
+
+**Nuove Competenze Acquisite:**
+- Analisi del lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere, focalizzandosi sulle parole chiave come "satira", "ironia", "humour", "finto", "mocking", "rida", "scherzo".
