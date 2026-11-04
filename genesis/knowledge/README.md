@@ -9,14 +9,19 @@ Genesis, Render, workflow o produzione.
 
 | voce | valore |
 |---|---|
-| Godot | **4.7.2-stable** (commit `ed1daf0bf001b61586d9930840f2f1394092c079`) |
-| Manuale | branch `4.7` di godot-docs, commit `9adca4c1c72917bfe1b7be3108abed5ce26696a6` |
-| Demo ufficiali | tag `4.7-6ad6167`, commit `6ad6167e0577fe3622c18546138f456b107ce93c` |
-| Binario di prova | `Godot_v4.7.2-stable_linux.x86_64.zip`, SHA512 verificato con `SHA512-SUMS.txt` ufficiale |
+| Godot | **4.6.3-stable** (tag, commit `35e80b3a8822a9df9be390814b62f44c0a9c69e8`) |
+| Manuale | branch `4.6` di godot-docs, commit `b10b7ed373c2d15555186914b82e167169b5b87b` |
+| Demo ufficiali | commit `52f6a4fa6efe7be4e441d69437bf856a9bdbac51`: l'ultimo prima dell'aggiornamento dei demo a 4.7 (#1332); i demo erano stati aggiornati per 4.6 in #1294 |
+| Binario di prova | `Godot_v4.6.3-stable_linux.x86_64.zip`, SHA512 verificato con `SHA512-SUMS.txt` ufficiale; il binario si presenta come `4.6.3.stable.official.7d41c59c4` |
 
-Tutte le fonti sono della stessa release, 4.7. Le uniche eccezioni sono le guide di migrazione
-`upgrading_to_godot_4.x` e la tabella delle rinomine 3→4: parlano di versioni precedenti, e lo fanno
-apposta. Per ogni fonte il manifest (`manifest.json`) registra URL, ref, commit, data di acquisizione,
+Perché 4.6: il ponte `genesis-godot` di Andrea esegue il codice dei residenti in Godot 4.6. Il consulente
+non deve proporre API che lì non esistono.
+
+Tutte le fonti appartengono alla serie 4.6. Ci sono due eccezioni, volute:
+- le guide di migrazione `upgrading_to_godot_4.x` e la tabella delle rinomine 3→4 parlano di versioni
+  precedenti;
+- le pagine delle classi del manuale 4.6 sono state sincronizzate il 3/5/2026, prima della 4.6.3 (20/5).
+  Per i pochi membri aggiunti dopo quella data, l'URL punta alla pagina della classe senza ancora. Per ogni fonte il manifest (`manifest.json`) registra URL, ref, commit, data di acquisizione,
 licenza e hash SHA256 del contenuto. `sources/files.sha256` riporta l'hash di ogni singolo file.
 
 ## Uso rapido
@@ -56,7 +61,7 @@ genesis/
     sources/               sources.lock.json (versionato), files.sha256 (versionato), cache/ (ignorata)
     index/                 godot.sqlite (ignorato, si ricostruisce)
     catalog/               genesis_catalog.json: catalogo tecnico Genesis
-    examples/              8 esempi GDScript con test headless
+    examples/              8 esempi GDScript con test headless (Godot 4.6.3)
     tests/                 questions.json (52 domande), test_library.py
     reports/               copertura, risultati test, validazione esempi, esempi di interrogazione
 ```

@@ -1,9 +1,9 @@
 {
   "versione_catalogo": 1,
-  "godot_version": "4.7.2-stable",
+  "godot_version": "4.6.3-stable",
   "contesto": "Genesis: mondo 2D persistente, molto vasto, inizialmente sconosciuto agli abitanti. Gli agenti esplorano, costruiscono, cooperano, competono e propongono in autonomia. Nessuna storia, missione o civiltà imposta a priori: il catalogo descrive strumenti tecnici, non contenuti.",
   "legenda": {
-    "supportato_godot": "funzionalità nativa di Godot 4.7, con API verificata nell'indice (classe/membro esistente)",
+    "supportato_godot": "funzionalità nativa di Godot 4.6, con API verificata nell'indice (classe/membro esistente)",
     "codice_aggiuntivo": "realizzabile scrivendo codice nostro sopra le API native; nessuna funzione Godot dedicata",
     "ipotesi": "idea plausibile ma non verificata: va sperimentata e misurata prima di adottarla"
   },

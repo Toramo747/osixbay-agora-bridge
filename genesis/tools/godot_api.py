@@ -8,7 +8,7 @@ Comandi:
   GODOT: progetta <componente>    voce del catalogo Genesis + API e documenti verificati
   GODOT: verifica <codice>        analisi statica (API inesistenti/obsolete, sintassi Godot 3) e,
                                   se disponibile, parsing isolato con Godot headless --check-only
-  GODOT: compatibilità <API>      esistenza in 4.7, deprecazione, rinomina da Godot 3
+  GODOT: compatibilità <API>      esistenza nella versione fissata, deprecazione, rinomina da Godot 3
 
 Ogni risposta è un dizionario con: operazione, richiesta, trovato, versione_godot, spiegazione,
 riferimenti, esempio, limitazioni, livello_verifica, alternative. Se la documentazione non contiene la
@@ -367,7 +367,7 @@ class GodotLibrary:
         ok = not problems
         spieg = ('Nessun problema rilevato.' if ok else f'{len(problems)} problemi rilevati.') + \
             ' Il codice NON è stato eseguito: un esito positivo non garantisce il comportamento a runtime.'
-        refs = [self._ref('Upgrading from Godot 3 to Godot 4', 'https://docs.godotengine.org/en/4.7/tutorials/migrating/upgrading_to_godot_4.html', 'godot-docs')] \
+        refs = [self._ref('Upgrading from Godot 3 to Godot 4', self.meta.get('docs_url', 'https://docs.godotengine.org/en/stable') + '/tutorials/migrating/upgrading_to_godot_4.html', 'godot-docs')] \
             if any(p['tipo'] in ('sintassi_godot3', 'metodo_godot3') for p in problems) else []
         return self._resp('verifica', _short(code, 120), True, spieg, refs, None, notes, livello, [],
                           valido=ok, problemi=problems, parsing=parse)

@@ -1,22 +1,22 @@
 {
-  "godot_version": "4.7.2-stable",
-  "generato_il": "2026-11-04T08:40:37+00:00",
+  "godot_version": "4.6.3-stable",
+  "generato_il": "2026-11-04T08:53:20+00:00",
   "fonti": {
     "godot-docs": {
-      "file_selezionati": 516,
-      "file_registrati": 516,
-      "file_con_contenuto": 516,
-      "file_contenuto_attesi": 516,
+      "file_selezionati": 501,
+      "file_registrati": 501,
+      "file_con_contenuto": 501,
+      "file_contenuto_attesi": 501,
       "copertura_pct": 100.0,
-      "byte_cache": 5624024
+      "byte_cache": 5538063
     },
     "godot-class-reference": {
-      "file_selezionati": 1079,
-      "file_registrati": 1079,
-      "file_con_contenuto": 1079,
-      "file_contenuto_attesi": 1079,
+      "file_selezionati": 1066,
+      "file_registrati": 1066,
+      "file_con_contenuto": 1066,
+      "file_contenuto_attesi": 1066,
       "copertura_pct": 100.0,
-      "byte_cache": 9487585
+      "byte_cache": 9124670
     },
     "godot-demo-projects": {
       "file_selezionati": 731,
@@ -24,14 +24,14 @@
       "file_con_contenuto": 599,
       "file_contenuto_attesi": 599,
       "copertura_pct": 100.0,
-      "byte_cache": 1475260
+      "byte_cache": 1474114
     }
   },
   "aree": [
     {
       "area": "1. GDScript",
       "pagine": 9,
-      "sezioni": 185,
+      "sezioni": 183,
       "classi_chiave_presenti": [
         "@GDScript",
         "GDScript"
@@ -46,7 +46,7 @@
       "sezioni": 0,
       "classi_chiave_presenti": [],
       "classi_chiave_mancanti": [],
-      "nota": "1078 classi dal riferimento XML",
+      "nota": "1065 classi dal riferimento XML",
       "lacuna": null
     },
     {
@@ -66,7 +66,7 @@
     {
       "area": "4. Rendering 2D, TileMapLayer, sprite, animazioni",
       "pagine": 23,
-      "sezioni": 278,
+      "sezioni": 276,
       "classi_chiave_presenti": [
         "TileMapLayer",
         "Sprite2D",
@@ -129,7 +129,7 @@
     {
       "area": "9. Fisica e collisioni",
       "pagine": 20,
-      "sezioni": 151,
+      "sezioni": 153,
       "classi_chiave_presenti": [
         "CharacterBody2D",
         "Area2D",
@@ -168,7 +168,7 @@
     {
       "area": "12. Networking e multiplayer",
       "pagine": 7,
-      "sezioni": 42,
+      "sezioni": 40,
       "classi_chiave_presenti": [
         "MultiplayerAPI",
         "ENetMultiplayerPeer",
@@ -216,7 +216,7 @@
     {
       "area": "16. Esportazione e distribuzione",
       "pagine": 16,
-      "sezioni": 128,
+      "sezioni": 121,
       "classi_chiave_presenti": [
         "EditorExportPlugin"
       ],
@@ -235,8 +235,8 @@
     },
     {
       "area": "Extra: formati, JSON, serializzazione",
-      "pagine": 4,
-      "sezioni": 61,
+      "pagine": 5,
+      "sezioni": 63,
       "classi_chiave_presenti": [
         "JSON",
         "Marshalls"
@@ -246,34 +246,34 @@
       "lacuna": null
     }
   ],
-  "indice_byte": 47124480,
+  "indice_byte": 45993984,
   "conteggi": {
-    "sezioni_manuale": 4113,
-    "pagine_manuale": 516,
+    "sezioni_manuale": 4040,
+    "pagine_manuale": 501,
     "readme_demo": 148,
-    "classi": 1078,
-    "metodi": 10732,
+    "classi": 1065,
+    "metodi": 10436,
     "membri_per_tipo": {
       "annotation": 36,
-      "constant": 6012,
+      "constant": 5779,
       "constructor": 154,
-      "enum": 793,
-      "method": 10732,
+      "enum": 765,
+      "method": 10436,
       "operator": 351,
-      "property": 6999,
-      "signal": 503,
-      "theme_item": 635
+      "property": 6787,
+      "signal": 490,
+      "theme_item": 621
     },
-    "api_deprecate": 476,
+    "api_deprecate": 267,
     "api_sperimentali": 14,
-    "esempi_totali": 3120,
-    "esempi_gdscript": 1850,
+    "esempi_totali": 3075,
+    "esempi_gdscript": 1818,
     "esempi_per_fonte": {
-      "godot-class-reference": 790,
+      "godot-class-reference": 774,
       "godot-demo-projects": 451,
-      "godot-docs": 1879
+      "godot-docs": 1850
     },
-    "rinomine_godot3": 1593,
+    "rinomine_godot3": 1592,
     "esempi_locali_eseguiti_ok": "8/8"
   }
 }

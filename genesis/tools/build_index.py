@@ -37,6 +37,7 @@ CREATE VIRTUAL TABLE IF NOT EXISTS examples_fts USING fts5(title, context, code,
 CREATE TABLE IF NOT EXISTS renames(category TEXT, old TEXT, new TEXT);
 CREATE INDEX IF NOT EXISTS renames_old ON renames(old);
 """
+DOCS_URL = 'https://docs.godotengine.org/en/' + lock()['docs_release']
 HEADING = set('=-~^"\'`#*+<>_:.')
 
 
@@ -129,7 +130,7 @@ def clean_bb(text):
     text = re.sub(r'\[url=([^\]]+)\]([^\[]*)\[/url\]', r'\2 (\1)', text)
     text = re.sub(r'\[/?(?:b|i|u|code|kbd|br|center|codeblock|gdscript|csharp|lb|rb)\]', '', text)
     text = re.sub(r'\[([A-Z@][A-Za-z0-9_@.]*)\]', r'\1', text)
-    text = text.replace('$DOCS_URL', 'https://docs.godotengine.org/en/4.7')
+    text = text.replace('$DOCS_URL', DOCS_URL)
     return '\n'.join(l.strip() for l in text.strip().splitlines()).strip()
 
 
@@ -273,6 +274,25 @@ def insert(db, table, fts, row, fts_cols):
                [cur.lastrowid] + [row.get(c) or '' for c in fts_cols])
 
 
+_LABELS = {}
+
+
+def published_labels(page):
+    """Ancore presenti nella pagina classes/<page>.rst del manuale (None se la pagina non è nella cache)."""
+    if page not in _LABELS:
+        f = CACHE / 'godot-docs' / 'classes' / f'{page}.rst'
+        _LABELS[page] = {slug(l) for l in re.findall(r'^\.\. _([^:]+):\s*$', f.read_text(errors='replace'), re.M)} if f.exists() else None
+    return _LABELS[page]
+
+
+def check_url(url):
+    """Se il manuale pubblicato non ha l'ancora (membro aggiunto dopo l'ultima sincronizzazione delle pagine classi),
+    si cita la pagina senza ancora invece di un link rotto."""
+    page, _, anc = url.rsplit('/', 1)[1].partition('#')
+    labels = published_labels(page[:-5])
+    return url.split('#')[0] if anc and labels is not None and anc not in labels else url
+
+
 def index_file(db, src, root, rel, raw):
     sid, base = src['id'], src['url_base']
     text = raw.decode('utf-8', errors='replace')
@@ -285,6 +305,7 @@ def index_file(db, src, root, rel, raw):
     elif sid == 'godot-class-reference' and rel.endswith('.xml'):
         rows, exs = parse_class_xml(text, rel, base)
         for r in rows:
+            r['url'] = check_url(r['url'])
             insert(db, 'members', 'api_fts', {'source': sid, 'path': rel, **r}, ['class', 'name', 'signature', 'description'])
         for e in exs:
             insert(db, 'examples', 'examples_fts', {'source': sid, 'path': rel, **e}, ['title', 'context', 'code'])
@@ -335,7 +356,7 @@ def build(full=False, db_path=INDEX):
             delete_path(db, src['id'], rel); stats['rimossi'] += 1
     meta = {'godot_version': cfg['godot_version'], 'docs_release': cfg['docs_release'],
             'commits': ';'.join(f"{s['id']}@{s['commit']}" for s in cfg['sources']),
-            'built_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}
+            'docs_url': DOCS_URL, 'built_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}
     db.executemany('INSERT OR REPLACE INTO meta VALUES(?,?)', meta.items())
     db.commit()
     for fts in ('docs_fts', 'api_fts', 'examples_fts'):

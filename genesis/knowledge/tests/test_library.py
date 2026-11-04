@@ -98,7 +98,7 @@ class Library(unittest.TestCase):
                 self.assertTrue((EXAMPLES / e / 'test.gd').exists(), e)
 
     def test_api_urls_match_official_class_pages(self):
-        """Ogni URL dell'API deve puntare a una pagina e a un'ancora che esistono nelle pagine ufficiali generate."""
+        """Ogni URL dell'API deve puntare a una pagina e (se c'è) a un'ancora che esistono nelle pagine ufficiali generate."""
         root = CACHE / 'godot-docs' / 'classes'
         if not root.exists():
             self.skipTest('pagine classes/ assenti nella cache')

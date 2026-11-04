@@ -1,5 +1,5 @@
 {
-  "_nota": "Domande di controllo. 'atteso' descrive cosa deve risultare secondo la documentazione ufficiale Godot 4.7 (verità di riferimento scritta a mano a partire dalle fonti). Campi: trovato, url (sottostringa di un riferimento entro i primi 3), firma (sottostringa di una firma), livello, voce, stato, ereditarieta, problemi (tipi attesi), valido, alternativa, non_livello.",
+  "_nota": "Domande di controllo. 'atteso' descrive cosa deve risultare secondo la documentazione ufficiale Godot 4.6 (verità di riferimento scritta a mano a partire dalle fonti). Campi: trovato, url (sottostringa di un riferimento entro i primi 3), firma (sottostringa di una firma), livello, voce, stato, ereditarieta, problemi (tipi attesi), valido, alternativa, non_livello.",
   "domande": [
     {"id": "gd01", "categoria": "GDScript", "comando": "GODOT: cerca static typing in GDScript", "atteso": {"trovato": true, "url": "gdscript/static_typing.html"}},
     {"id": "gd02", "categoria": "GDScript", "comando": "GODOT: metodo @export_range", "atteso": {"trovato": true, "url": "class_@gdscript.html", "firma": "@export_range("}},

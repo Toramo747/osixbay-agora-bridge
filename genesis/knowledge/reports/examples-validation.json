@@ -1,6 +1,6 @@
 {
-  "godot_version": "4.7.2-stable",
-  "eseguito_il": "2026-11-04T08:40:37+00:00",
+  "godot_version": "4.6.3-stable",
+  "eseguito_il": "2026-11-04T08:52:29+00:00",
   "superati": 8,
   "totale": 8,
   "risultati": [
@@ -22,7 +22,7 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.17,
+      "secondi": 0.16,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [
@@ -34,7 +34,7 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.18,
+      "secondi": 0.15,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [
@@ -46,7 +46,7 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.17,
+      "secondi": 0.16,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [
@@ -59,7 +59,7 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.26,
+      "secondi": 0.25,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [
@@ -72,11 +72,11 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.29,
+      "secondi": 0.18,
       "isolamento_rete": "rete isolata: solo loopback",
       "motivo": null,
       "output": [
-        "client id: 1242532799 frame: 4",
+        "client id: 1412169793 frame: 4",
         "EXAMPLE_OK"
       ]
     },
@@ -85,11 +85,11 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.27,
+      "secondi": 0.16,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [
-        "entita: 10000 tick: 20 secondi: 0.011 tick/s: 1811.8",
+        "entita: 10000 tick: 20 secondi: 0.012 tick/s: 1689.2",
         "EXAMPLE_OK"
       ]
     },
@@ -98,7 +98,7 @@
       "funzionante": true,
       "eseguito": true,
       "exit_code": 0,
-      "secondi": 0.18,
+      "secondi": 0.16,
       "isolamento_rete": "rete isolata: nessuna interfaccia",
       "motivo": null,
       "output": [

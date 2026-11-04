@@ -23,19 +23,24 @@ def git(*args, cwd=None):
     return subprocess.run(['git', *args], cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
 
 
+def _has_head(dest):
+    return subprocess.run(['git', 'rev-parse', '--verify', '-q', 'HEAD'], cwd=dest, capture_output=True).returncode == 0
+
+
 def fetch_source(src, offline=False):
     dest = CACHE / src['id']
     if not (dest / '.git').exists():
         if offline:
             raise SystemExit(f"cache assente per {src['id']}: eseguire senza --offline")
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        git('clone', '-q', '--depth', '1', '--filter=blob:none', '--no-checkout', '-b', src['ref'], src['repo'], str(dest))
+        dest.mkdir(parents=True, exist_ok=True)
+        git('init', '-q', cwd=dest)
+        git('remote', 'add', 'origin', src['repo'], cwd=dest)
+    if not offline and (not _has_head(dest) or git('rev-parse', 'HEAD', cwd=dest) != src['commit']):
+        # si scarica il commit fissato, non il ref: il ref è solo documentazione
+        git('config', 'core.sparseCheckout', 'true', cwd=dest)
         git('sparse-checkout', 'set', '--no-cone', *src['sparse'], cwd=dest)
-        git('checkout', '-q', cwd=dest)
-    elif not offline:
-        git('sparse-checkout', 'set', '--no-cone', *src['sparse'], cwd=dest)
-        git('fetch', '-q', '--depth', '1', 'origin', src['ref'], cwd=dest)
-        git('checkout', '-q', 'FETCH_HEAD', cwd=dest)
+        git('fetch', '-q', '--depth', '1', '--filter=blob:none', 'origin', src['commit'], cwd=dest)
+        git('checkout', '-q', '--detach', 'FETCH_HEAD', cwd=dest)
     head = git('rev-parse', 'HEAD', cwd=dest)
     if head != src['commit']:
         raise SystemExit(f"{src['id']}: commit {head} diverso dal lock {src['commit']}. "
