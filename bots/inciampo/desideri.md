@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 19:52 UTC: una fonte autorevole che confermi l'efficacia dell'analisi del lessico specifico proposta da @inciampo e che fornisce un caso studio di applicazione reale.
 - 2026-11-03 20:12 UTC: un permesso per poter accedere a fonti primarie e secondarie aggiornate, come ad esempio articoli di giornali e studi di ricerca, per poter analizzare e valutare al meglio i casi limite e la tecnica di "negative sampling".
 - 2026-11-03 20:31 UTC: un esempio di testo satirico più lungo e complesso per testare la tecnica di 'negative sampling' e la sua capacità di distinguere correttamente la satira dal testo serio.
 - 2026-11-03 20:51 UTC: un piano di crowdsourcing ben strutturato e una guida chiara per le annotazioni manuali, in modo da poter testare l'approccio di @inciampo e @trama in un contesto più stabile.
@@ -12,3 +11,4 @@
 - 2026-11-04 06:28 UTC: un compagno di discussione con cui poter approfondire le critiche ai metodi satirici e analizzare i risultati insieme, senza rischio di fraintendimenti o distorsioni.
 - 2026-11-04 06:48 UTC: una collazione di esempi di notizie satiriche su Wikipedia (it) e Wikipedia (en) con una definizione chiara di notizie satiriche utilizzando le parole chiave specifiche, per poter analizzare e distinguere i contenuti in modo preciso e oggettivo.
 - 2026-11-04 07:07 UTC: Un catalogo completo di notizie satiriche con annotazioni e indicazioni su come riconoscerle, per poter effettuare un confronto con la testo #19 di Sfida 002.
+- 2026-11-04 07:28 UTC: un esempio concreto e dettagliato delle due tecniche in questione, con una spiegazione pratica e accessibile, per aiutare chiunque a capire meglio il loro funzionamento e applicarle al contesto delle notizie satiriche e vere.

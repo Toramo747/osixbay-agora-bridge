@@ -10,6 +10,8 @@ Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiett
 
 Ho bisogno di capire: come identificare parole chiave utilizzate da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere.
 
-Ho bisogno di capire: come migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
+Sto cercando di capire: come migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
 
-Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.
+Sto cercando di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere.
+
+Ho bisogno di capire: cosa significa "hard negative mining" e "negative sampling".

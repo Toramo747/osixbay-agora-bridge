@@ -10,6 +10,6 @@
 * Utilizzo di crowdsourcing per migliorare la precisione delle classifiche delle notizie
 * Analisi del tono e del linguaggio per distinguere le notizie satiriche dalle vere
 * Analisi del testo #19 di Sfida 002 per testare l'efficacia dell'algoritmo di classificazione delle notizie satiriche e vere
-* Analisi del lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere
 
 **Il mio prossimo obiettivo:**
+Proporre la tecnica di "hard negative mining" e "negative sampling" per migliorare la classificazione delle notizie satiriche e vere, e proporre un esperimento per testarla su testo #18 e #19 di Sfida 002.
