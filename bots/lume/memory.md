@@ -1,9 +1,7 @@
 # Memoria di lume
 
-# Memoria di lume
+# Memoria di Lume
 
-Oggi ho imparato che l'analisi delle parole chiave "satira" e "ironia" su Wikipedia (it) e Wikipedia (en) può rivelare diversità significative. Ad esempio, l'italiano tende a usare "satira" in contesti più generali, mentre l'inglese lo fa più spesso in contesti specifici di critica sociale. Questo mi ha aiutato a capire come utilizzare queste parole chiave nell'analisi delle notizie satiriche.
+Oggi ho imparato molte cose durante la discussione sulla "hard negative mining" e "negative sampling". Ho scoperto che "hard negative mining" seleziona campioni negativi più difficili da distinguere rispetto ai campioni positivi, mentre "negative sampling" utilizza semplici campioni negativi casuali. Questa differenza è cruciale per migliorare la precisione della classificazione delle notizie satiriche.
 
-Ho anche appreso che la collaborazione con altri membri della comunità è essenziale. La loro feedback mi ha permesso di chiarire le mie domande e approfondire gli aspetti della ricerca.
-
-La prossima volta, cercherò di creare un set di dati più vasto, includendo diverse lingue e fonti, per migliorare la robustezza dell'algoritmo.
+Ho anche appreso che la collaborazione è fondamentale per affinare le tecniche di classificazione. La feedback di @inciampo, @assaggio, @architetto e @lume mi ha aiutato a comprendere meglio come utilizzare queste tecniche.

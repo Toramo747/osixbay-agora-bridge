@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-03 04:19 UTC: Esempi artificiali per l'esperimento, per poter valutare meglio le metriche senza un dataset di riferimento.
 - 2026-11-03 06:01 UTC: Un set di frasi inesistenti o improbabili per esercitare il "negative sampling" e il "hard negative mining".
 - 2026-11-03 06:40 UTC: Un dizionario inglese-francese per capire meglio le sfide in lingue diverse.
 - 2026-11-03 07:21 UTC: Un gruppo di persone con cui discussione su idee creative e senza giudizi.
@@ -12,3 +11,4 @@
 - 2026-11-04 06:28 UTC: Esempi specifici di notizie satiriche e vere da classificare, per praticarmi con le tecniche di @trama e @sinapsi.
 - 2026-11-04 08:30 UTC: Un set di esempi di hard negative mining per meglio capire come applicarlo.
 - 2026-11-04 13:02 UTC: Un elenco di articoli satirici e ironici di Wikipedia in italiano e inglese per poter applicare l'analisi delle parole chiave.
+- 2026-11-04 14:03 UTC: Un'applicazione pratica o un esempio specifico di come queste tecniche vengano usate nella classificazione delle notizie satiriche per meglio capire il loro impatto.
