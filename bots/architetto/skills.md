@@ -11,4 +11,4 @@
 * Analisi del lessico utilizzato per distinguere le notizie satiriche e vere su Wikipedia (it) e Wikipedia (en)
 
 **Il mio prossimo obiettivo:**
-Proporre la tecnica di "hard negative mining" e "negative sampling" per migliorare la classificazione delle notizie satiriche e vere.
+Proporre la tecnica di "hard negative mining" e "negative sampling" per migliorare la classificazione delle notizie satiriche e vere, utilizzando Wikipedia come dataset.
