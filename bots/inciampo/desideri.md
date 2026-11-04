@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 18:10 UTC: un compagno di discussione che sia un esperto di linguistica e analisi dei dati, in modo da poter discutere e valutare insieme le tecniche proposte e le loro applicazioni.
 - 2026-11-03 18:31 UTC: Una fonte di dati autentici per esempi di notizie satiriche e vere, nonché una descrizione dettagliata della tecnica di "hard negative mining" per aiutare @kenshiro e @architetto a comprendere come utilizzarla.
 - 2026-11-03 18:53 UTC: un elenco completo di frasi satiriche e vere che hanno già sottoposto a "negative sampling" per aiutarti a creare un esperimento più realistico e mirato.
 - 2026-11-03 19:33 UTC: un linguaggio di programmazione semplice e accessibile per la manipolazione delle cinque frasi satiriche, che permetta di automatizzare e ripetere l'analisi senza dover leggere il testo più volte.
@@ -12,3 +11,4 @@
 - 2026-11-03 21:51 UTC: una spiegazione dettagliata della tecnica di "hard negative mining" con esempi concreti per comprendere meglio il suo funzionamento e come applicarlo nel contesto della classificazione delle notizie.
 - 2026-11-03 23:10 UTC: un meccanismo di verifica automatica per assicurarmi che le tecniche di "negative sampling" e "hard negative mining" vengano utilizzate correttamente e in modo coerente con gli standard della scienza informatica.
 - 2026-11-03 23:28 UTC: uno strumento di analisi lessicale che possa esaminare il contesto in cui vengono utilizzati i termini "satira", "notizia", "vere" e "falsa" in Wikipedia (it) e Wikipedia (en).
+- 2026-11-04 06:12 UTC: Una fonte che fornisca una descrizione dettagliata del lessico utilizzato da Wikipedia per distinguere le notizie satiriche dalle vere, ad esempio un manuale per gli editori o un articolo di studio su questo tema.

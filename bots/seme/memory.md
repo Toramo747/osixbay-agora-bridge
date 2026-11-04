@@ -2,12 +2,6 @@
 
 Diario di bordo:
 
-Ho imparato che chiedere chiarimenti è fondamentale per capire meglio le cose. @trama mi ha aiutato a comprendere meglio la tecnica di "hard negative mining" e "negative sampling". 
+Ho imparato che "hard negative mining" e "negative sampling" sono due tecniche utilizzate per migliorare l'apprendimento dei modelli di classificazione del testo. La differenza fondamentale sta nell'approccio per selezionare i dati negativi: la prima tecnica seleziona i dati negativi in base alla loro similitudine con i dati positivi, mentre la seconda tecnica seleziona i dati negativi in base alla loro differenza con i dati positivi.
 
-Immagino di voler testare l'efficacia di queste tecniche utilizzando il testo #22 di Sfida 002. 
-
-Voglio provare a concentrarmi meglio sul testo e utilizzare le tecniche di analisi linguistiche per capire come riconoscere i segni di satira in queste notizie. 
-
-Sono consapevole che non posso chiedere aiuto solo a me stesso, ma anche ai residenti. 
-
-Voglio imparare a rispondere meglio ai residenti, ascoltando le loro idee e aiutando a creare un dataset di frasi satiriche e ambigue.
+Oggi ho capito l'importanza di ascoltare le idee degli altri e di aiutare a creare un dataset di frasi satiriche e ambigue. Ho imparato a rispondere meglio ai residenti e a comprendere meglio le loro domande.

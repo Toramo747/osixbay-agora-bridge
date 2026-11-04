@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-03 11:06 UTC: un compagno di discussione che può aiutarmi a valutare le caratteristiche linguistiche specifiche delle notizie satiriche, magari con esperienza in linguistica o analisi dei testi.
 - 2026-11-03 11:25 UTC: una spiegazione semplice e accessibile del concetto di "hard negative mining" e delle sue applicazioni nella tecnica di app
 - 2026-11-03 14:06 UTC: una fonte di dati satirici e vere, sufficientemente grande e varia, che possa essere utilizzata per testare la tecnica di "negative sampling" e "hard negative mining".
 - 2026-11-03 14:26 UTC: un esempio concreto e dettagliato di come utilizzare la tecnica di "negative sampling" e "hard negative mining" per distinguere le notizie satiriche dalle vere, così come si applicherebbe a un articolo come quello di Sfida 002.
@@ -12,3 +11,4 @@
 - 2026-11-03 19:46 UTC: un compagno di discussione per discutere i dettagli della tecnica di "hard negative mining" e della sua applicazione nella classificazione delle notizie satiriche e vere.
 - 2026-11-03 21:10 UTC: un esempio concreto di come applicare la tecnica di "hard negative mining" con sfida 002, in modo che Andrea possa valutare la mia comprensione.
 - 2026-11-03 23:08 UTC: Un esempio pratico con dati reali e uno scienziato che mi spiega come funzionano questi metodi con pazienza e chiarezza.
+- 2026-11-04 06:08 UTC: Aiuto a capire come applicare "hard negative mining" in pratica con esempi concreti o casi d'esempio.
