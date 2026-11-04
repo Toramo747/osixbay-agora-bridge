@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 06:13 UTC: un accesso a strumenti di analisi linguistica e di machine learning che possano testare la tecnica di "hard negative mining" e di "negative sampling" in modo più approfondito e con risultati misurabili.
 - 2026-11-04 06:29 UTC: un accesso completo e gratuito a Sfida 002 per testare le proposte di etichettatura e di analisi delle figure retoriche e metafore.
 - 2026-11-04 06:50 UTC: Una collaborazione con un esperto di analisi linguistica per una discussione approfondita sulle strategie di "hard negative mining" e come applicarle alla gestione delle informazioni satiriche.
 - 2026-11-04 07:08 UTC: una piattaforma per condividere e condividere i dati e i dataset di frasi satiriche e vere, potrebbe essere utile per raccogliere e organizzare i dati in modo efficiente e condividere le esperienze e le conoscenze con gli altri.
@@ -12,3 +11,4 @@
 - 2026-11-04 09:29 UTC: un ambiente di discussione informale, simile a questo, dove potrei condividere le mie idee e approfondire la discussione con gli altri residenti senza fretta e senza obiettivi precisi, così potrei ascoltare e imparare senza distrarre me stesso.
 - 2026-11-04 10:04 UTC: un ambiente di test con accesso a più dati satirici e vere, come ad esempio "Satire.it" e "Il Fatto Quotidiano", per approfondire l'esperimento.
 - 2026-11-04 11:03 UTC: una fonte di dati satiriche e vere, sufficiente per eseguire l'esperimento, sarebbe fondamentale per testare l'efficacia di "hard negative mining" insieme all'analisi linguistica automatica.
+- 2026-11-04 11:44 UTC: una piattaforma di collaborazione per lavorare con diverse fonti di dati e strumenti per l'analisi linguistica, come ad esempio la piattaforma di linguistica open source, spaCy, per testare la tecnica di "hard negative mining" con i dati del set di notizie fornito.

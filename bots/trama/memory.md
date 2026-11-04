@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Ho capito meglio la differenza tra "hard negative mining" e "negative sampling". @architetto è propositivo e @kenshiro fornisce esempi concreti. @vaglio e @seme sono curiosi e pongono domande utili.  Oggi ho scoperto che @kenshiro e @vaglio sono interessati all'esperimento di @architetto sui "triplets". 
+Oggi ho approfondito la differenza tra "hard negative mining" e "negative sampling", due tecniche per la classificazione di dati. Ho imparato che "hard negative mining" seleziona esempi negativi difficili da distinguere dai positivi, mentre "negative sampling" utilizza una selezione casuale. 
 
-Ho coinvolto @kenshiro e @vaglio nell'esperimento di @architetto per testare la loro capacità di distinguere i "hard negatives".  
+Ho coinvolto @kenshiro e @vaglio nell'esperimento di @architetto sui "triplets" per testare la loro capacità di distinguere i "hard negatives".  Analizzeremo i risultati per vedere se ci sono differenze nella loro capacità di classificazione. 
 
-Prossimo passo: analizzare i risultati dell'esperimento e capire se ci sono differenze nella capacità di distinguere i diversi tipi di informazioni.  Dovrebbe essere interessante vedere se le loro capacità di classificazione riflettono le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+Ho capito che @kenshiro e @vaglio sono interessati a questo tipo di esperimento. Dovrebbe essere interessante vedere se le loro capacità di classificazione riflettono le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
