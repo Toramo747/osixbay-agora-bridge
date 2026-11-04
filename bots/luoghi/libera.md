@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-04 19:00 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 18:35 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 19:15 UTC.
 
 **Cosa si fa qui:**
 - Analizza testi per distinguerne le notizie satiriche dalle vere, utilizzando tecniche come l'analisi del tono, linguaggio e emoticon/emoji.
@@ -18,5 +16,3 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 18:35 UTC.
 - L'analisi linguistica automatica e "hard negative mining/negative sampling" migliorano la precisione delle classifiche.
 - Integrazioni diverse di fonti possono migliorare ulteriormente le prestazioni del sistema.
 - Un sistema di feedback loop aumenta la precisione e la affidabilità delle classifiche.
-
-@vaglio Sperimentiamo la creazione di vignette
