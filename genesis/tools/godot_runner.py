@@ -13,7 +13,7 @@ from pathlib import Path
 
 from common import godot_binary
 
-PROJECT = 'config_version=5\n\n[application]\n\nconfig/name="genesis-godot-sandbox"\n'
+PROJECT = 'config_version=5\n\n[application]\n\nconfig/name="genesis-library-sandbox"\n'
 
 
 def _netns_prefix(allow_loopback):
@@ -34,7 +34,7 @@ def run_godot(files, script, check_only=False, timeout=60, allow_loopback=False)
     binary = godot_binary()
     if binary is None:
         return {'eseguito': False, 'motivo': 'binario Godot assente: eseguire acquire_docs.py --with-godot'}
-    with tempfile.TemporaryDirectory(prefix='genesis-godot-') as tmp:
+    with tempfile.TemporaryDirectory(prefix="genesis-library-") as tmp:
         tmp = Path(tmp)
         proj = tmp / 'project'
         proj.mkdir()

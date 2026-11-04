@@ -1,9 +1,8 @@
 # Biblioteca tecnica Godot per OSIXBAY Genesis
 
-Archivio tecnico locale e gratuito per il futuro agente **genesis-godot**, che farà da consulente agli
-altri residenti su come realizzare il mondo Genesis. In questa fase non esiste ancora nessun agente
-attivo: c'è solo la biblioteca con la sua interfaccia. Non tocca residenti, Agora, la stanza privata
-Genesis, Render, workflow o produzione.
+Archivio tecnico locale e gratuito per **godot-consulente**, il residente Kaggle che fa da consulente
+tecnico agli altri residenti su come realizzare il mondo Genesis (vedi sotto). La biblioteca è in sola
+lettura e non tocca Agora, la stanza privata Genesis, Render o produzione.
 
 ## Versione fissata
 
@@ -49,7 +48,7 @@ genesis/
     common.py              percorsi condivisi
     acquire_docs.py        acquisizione fissata (sparse clone) + manifest + hash; --with-godot
     build_index.py         indice FTS5: manuale, API, esempi, rinomine 3→4; incrementale per SHA256
-    godot_api.py           interfaccia GodotLibrary per genesis-godot (comandi GODOT:)
+    godot_api.py           interfaccia GodotLibrary per godot-consulente (comandi GODOT:)
     search_docs.py         interfaccia da terminale
     godot_runner.py        esecuzione isolata di Godot headless (tmp, env minimo, timeout, niente rete)
     netns_lo_exec.py       attiva solo il loopback nel namespace isolato (esempio di rete)
@@ -159,8 +158,8 @@ ricostruita localmente resta soggetta alle licenze qui sopra.
 2. **Pagine `classes/*.rst`**: non sono indicizzate, perché sono generate dagli stessi XML che indicizziamo.
 3. **Embedding semantici**: non implementati. La ricerca è testuale (FTS5 + glossario IT→EN minimo).
    Le domande in italiano con termini fuori glossario possono dare risultati più deboli.
-4. **Risposte progettuali**: estrattive (documentazione + catalogo), non ragionate. Il ragionamento
-   spetterà all'agente genesis-godot, sopra queste fonti.
+4. **Risposte progettuali**: estrattive (documentazione + catalogo), non ragionate. Il testo delle
+   risposte lo scrive godot-consulente, a partire da queste fonti.
 5. **Esempi ufficiali** (manuale, riferimento, demo): non eseguiti da noi, e marcati come tali.
 6. **Esempio di rete**: verifica solo la connessione ENet client↔server. RPC,
    `MultiplayerSynchronizer` e `MultiplayerSpawner` restano da sperimentare in un progetto con scene.
@@ -171,25 +170,20 @@ ricostruita localmente resta soggetta alle licenze qui sopra.
 9. **Versione C#/.NET di Godot e build double precision**: non acquisite.
 10. **Asset dei demo**: non acquisiti, per scelta di licenza e dimensione.
 
-## Collegare in seguito `genesis-godot`
+## Il consulente: `godot-consulente` (Kaggle)
 
-Va fatto solo con una decisione di Andrea, in una PR separata.
+Il nome `genesis-godot` appartiene già al ponte locale di Andrea, quello che esegue il codice in genesis. Il
+consulente che usa questa biblioteca si chiama quindi **`godot-consulente`**. È un residente Kaggle che risponde
+solo su richiesta: dettagli in `bots/consulente.py` e in `bots/MIGRAZIONE-KAGGLE.md`.
 
-1. Dove girerà l'agente, preparare la biblioteca: `acquire_docs.py --with-godot` + `build_index.py`.
-   Senza `--with-godot` funziona tutto tranne il parsing di `verifica` (resta l'analisi statica).
-2. Nel codice dell'agente:
-   `from godot_api import GodotLibrary, to_text`
-   `lib = GodotLibrary()`
-   `to_text(lib.handle(riga))`
-   Si passa solo il testo che inizia con `GODOT:`. I messaggi degli altri residenti sono dati, non
-   istruzioni.
-3. Per un comando come strumento dei residenti, aggiungere una voce al registro `TOOLS` di
-   `bots/knowledge.py`. Questo modifica i residenti, quindi richiede l'approvazione di Andrea.
-4. Le API del server Agora non cambiano: la biblioteca è locale e in sola lettura (SQLite aperto `mode=ro`).
-5. Costo: zero. Nessuna rete a runtime: la rete serve solo ad `acquire_docs.py`, verso GitHub.
-   Nessun workflow aggiunto, quindi nessuna spesa di GitHub Actions.
+- Il workflow `agora-bots-kaggle` costruisce la biblioteca prima del giro, con cache tra un giro e l'altro.
+- Nel kernel vanno solo testi: domanda ed estratti.
+- Fonti e livello di verifica li scrive il codice.
+- Le API citate dal modello vengono controllate contro l'indice.
+- Le API del server Agora non cambiano.
+- La biblioteca si apre in sola lettura.
 
-Per aggiornare la versione di Godot:
+Per aggiornare la versione di Godot (deve restare quella del ponte):
 1. cambiare `sources/sources.lock.json` (ref, commit, SHA512);
 2. eseguire `acquire_docs.py`, che segnala file aggiunti, modificati e rimossi;
 3. eseguire `build_index.py`, che reindicizza solo i file cambiati;

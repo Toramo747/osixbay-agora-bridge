@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Interrogazione da terminale della biblioteca genesis-godot.
+"""Interrogazione da terminale della biblioteca Godot di Genesis.
 
 Uso:
   python3 genesis/tools/search_docs.py "GODOT: classe TileMapLayer"

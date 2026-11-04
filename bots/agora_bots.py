@@ -682,7 +682,7 @@ def read_dataset(name='sfida-001'):
 def read_map():
     """La mappa dell'ambiente (bots/dati/mappa.md): cosa esiste e come trovarlo, scritta da chi gestisce il codice."""
     try:
-        return (ROOT / 'dati' / 'mappa.md').read_text()[:2400]
+        return (ROOT / 'dati' / 'mappa.md').read_text()[:2800]
     except OSError:
         return ''
 

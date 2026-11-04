@@ -1,4 +1,4 @@
-"""Interfaccia della biblioteca per il futuro agente genesis-godot (non ancora creato né attivato).
+"""Interfaccia della biblioteca usata da godot-consulente (bots/consulente.py).
 
 Comandi:
   GODOT: cerca <argomento>        ricerca nel manuale, nell'API e negli esempi
@@ -290,7 +290,7 @@ class GodotLibrary:
         for v in self.catalog.get('voci', []):
             kw = {k.lower() for k in v['parole_chiave']} | set(re.findall(r'\w+', v['titolo'].lower())) - STOP
             s = len(toks & kw)
-            if s:
+            if s >= 2:      # una sola parola in comune (es. «mondo») non basta per scegliere una voce del catalogo
                 scored.append((s, v))
         if not scored:
             base = self.cerca(componente)

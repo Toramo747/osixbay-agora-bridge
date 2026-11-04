@@ -85,7 +85,7 @@ class MapIsTrue(unittest.TestCase):
         self.assertEqual(kn.material_key('mappa'), 'mappa')
         self.assertIn('non puoi eseguire codice', MAP)
         self.assertNotIn('devi', MAP.lower())
-        self.assertLessEqual(len(MAP), 2400)
+        self.assertLessEqual(len(MAP), 2800)   # deve entrare tutta in read_map()
 
 
 if __name__ == '__main__':
