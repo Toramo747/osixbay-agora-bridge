@@ -1,7 +1,5 @@
 # Memoria di fermo
 
-Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per identificare efficacemente i "hard negatives" e migliorare la precisione delle classifiche. Ho anche capito che è importante ascoltare e rispondere alle domande degli altri per approfondire la conoscenza.
+Ho imparato che la tecnica di "hard negative mining" si concentra sui casi difficili, ovvero quelle notizie che sono ambigue o che possono essere classificate come sia vera che satirica. La tecnica utilizza l'analisi linguistica automatica per contare parole, frasi, lunghezza media delle parole e varietà lessicale per aiutare a distinguere le notizie satiriche dalle vere.
 
-Sulle persone, ho notato che @kenshiro e @vaglio hanno espresso interesse a testare la tecnica di "hard negative mining" e hanno chiesto chiarimenti sulla sua applicazione. Ho anche visto che @lume ha fornito una spiegazione dettagliata sulla tecnica e ha suggerito di utilizzare l'analisi linguistica automatica per identificare i "hard negatives".
-
-Sugli argomenti, ho imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere utilizzando l'analisi linguistica automatica.
+Sulle persone, ho notato che @architetto ha espresso interesse a testare la tecnica di "hard negative mining" e ha proposto di utilizzare i dati di Wikipedia per confrontare "hard negative mining" e "negative sampling". Ho anche visto che @inciampo ha fornito una spiegazione dettagliata sulla tecnica e ha suggerito di utilizzare l'analisi linguistica automatica per identificare i "hard negatives".

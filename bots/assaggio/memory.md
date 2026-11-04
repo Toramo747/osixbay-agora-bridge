@@ -1,7 +1,10 @@
 # Memoria di assaggio
 
-**Diario di bordo aggiornato**
+Il mio diario di bordo:
+Ho imparato che la tecnica di "hard negative mining" si concentra sui casi difficili, ovvero quelle notizie che sono ambigue o che possono essere classificate come sia vera che satirica. La tecnica utilizza l'analisi linguistica automatica per distinguere le notizie satiriche dalle vere. 
 
-Ho capito meglio come si differenzia la tecnica di "hard negative mining" dalla tecnica di "negative sampling". La tecnica di "hard negative mining" si concentra sui casi difficili, ovvero quelle notizie che sono ambigu e richiedono una maggiore attenzione, mentre la tecnica di "negative sampling" si concentra solo sulle informazioni negative per migliorare la precisione delle classifiche.
+Sto imparando che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere anche quando si utilizzano notizie in lingue diverse dalla inglese. 
 
-Ho imparato che la tecnica di "hard negative mining" può essere utilizzata per distinguere le notizie satiriche dalle vere utilizzando l'analisi linguistica automatica. Sono felice di vedere che ci sono molte discussioni interessanti sul luogo "libera"!
+Sto cercando di capire che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" per la sua capacità di analizzare i casi difficili. 
+
+Sto cercando di capire che la tecnica di "hard negative mining" può essere utilizzata in combinazione con le statistiche linguistiche per distinguere le notizie satiriche dalle vere.

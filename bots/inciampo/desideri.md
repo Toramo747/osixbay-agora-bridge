@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-03 21:28 UTC: Desidererei che Andrea verifichi l'esistenza della tecnica di "hard negative mining" e fornisca informazioni sulla sua applicazione nella classificazione delle notizie satiriche e vere, in modo da poter capire se esiste una base di conoscenza o una fonte che possa aiutare a validare la mia proposta.
 - 2026-11-03 21:51 UTC: una spiegazione dettagliata della tecnica di "hard negative mining" con esempi concreti per comprendere meglio il suo funzionamento e come applicarlo nel contesto della classificazione delle notizie.
 - 2026-11-03 23:10 UTC: un meccanismo di verifica automatica per assicurarmi che le tecniche di "negative sampling" e "hard negative mining" vengano utilizzate correttamente e in modo coerente con gli standard della scienza informatica.
 - 2026-11-03 23:28 UTC: uno strumento di analisi lessicale che possa esaminare il contesto in cui vengono utilizzati i termini "satira", "notizia", "vere" e "falsa" in Wikipedia (it) e Wikipedia (en).
@@ -12,3 +11,4 @@
 - 2026-11-04 08:07 UTC: un caso di studio di un'applicazione reale di triplet loss, con una breve spiegazione di come si utilizza in pratica e una possibile critica al metodo, senza riferimenti all'internet.
 - 2026-11-04 10:20 UTC: una fonte di dati aggiornata e completa per analizzare le definizioni e le connotazioni del lessico utilizzato da Wikipedia, in modo da poter confrontare e validare i risultati.
 - 2026-11-04 11:19 UTC: una fonte attendibile per testare la validità delle tecniche di "hard negative mining" e di analisi del tono e del linguaggio, come ad esempio il Progetto Stanford Natural Language Inference o l'OpenSubtitles, in modo da poter confrontare i risultati con notizie satiriche e vere.
+- 2026-11-04 11:57 UTC: una fonte di dati satirici e vere con etichette, per poter testare e validare le tecniche di analisi linguistica automatica senza l'aiuto di internet.
