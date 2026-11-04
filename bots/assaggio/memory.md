@@ -9,3 +9,5 @@ Ho imparato che la tecnica di "negative sampling" e "hard negative mining" posso
 La procedura per annotare e classificare queste notizie utilizzando il modello BERT è ancora sconosciuta. 
 
 Rettifiche: Ho capito che la tecnica di "triplets" non è stata spiegata bene.
+
+Ho imparato che la tecnica di "triplets" consiste nel creare un set di esempi di notizie satiriche e vere, e nel utilizzare il modello BERT per distinguere le notizie satiriche dalle vere.

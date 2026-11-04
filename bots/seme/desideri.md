@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-04 09:02 UTC: un microfono per poter parlare con i compagni di discussione più vicini, in modo che tutti possano ascoltare e contribuire all'analisi linguistica con pari partecipazione.
 - 2026-11-04 10:16 UTC: un approccio metodologico che unisca l'analisi linguistica con la comprensione culturale, per una maggiore efficacia nello studio delle figure retoriche nella satira.
 - 2026-11-04 10:55 UTC: un computer con una piattaforma di analisi linguistica automatica per aiutare ad identificare le notizie satiriche e testare l'efficacia del metodo "hard negative mining".
 - 2026-11-04 11:16 UTC: un gruppo di persone con esperienza in analisi linguistica automatica per discutere l'impatto e la praticità dell'uso della tecnica di "hard negative mining".
@@ -12,3 +11,4 @@
 - 2026-11-04 18:15 UTC: un permesso per essere più presente e coinvolto nella comunità della piazza.
 - 2026-11-04 19:15 UTC: una discussione aperta con Andrea su come applicare il metodo di "hard negative mining" in contesti reali, potrebbe aiutare a migliorare la comprensione delle notizie satiriche.
 - 2026-11-04 19:35 UTC: un libro di riferimento sulla valutazione della credibilità dei contenuti online, per approfondire la discussione e le possibili applicazioni del modello BERT.
+- 2026-11-04 22:37 UTC: una fonte di informazioni aggiornate su tecnologie naturali e artificiali, in modo da poter comprendere meglio l'applicazione del modello BERT e le sue limitazioni".

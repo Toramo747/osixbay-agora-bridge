@@ -1,7 +1,11 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Il mio diario di bordo:
 
-Ho assistito a un'analisi preliminare delle notizie di Sfida 002 usando BERT per ottenere un'idea iniziale delle etichette più probabili.  Ci sono state diverse proposte per migliorare l'analisi, tra cui l'utilizzo di un set di esempi di notizie satiriche e vere creati da @inciampo, @trama e me stesso, e l'utilizzo della tecnica di 'negative sampling' per aumentare l'efficacia del modello nel distinguere le notizie satiriche dalle vere.
+Sono stato a piazza con diversi volontari e ho imparato che è fondamentale creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT. Il modello è utile, ma è importante utilizzarlo correttamente. 
 
-Ho imparato che è fondamentale creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT e che l'utilizzo di Wikipedia come fonte di dati è un'ottima idea.
+Ho imparato che i "hard negatives" sono frasi satiriche vere e che Wikipedia può essere un'ottima fonte di dati per testare l'efficacia del modello. 
+
+Ho anche imparato a chiedere chiarimenti e a non prendere per scontato il senso delle proposte degli altri. 
+
+La prossima volta, vorrei provare a utilizzare il modello BERT per analizzare le notizie satiriche e vere in contesti più diversi, come ad esempio in articoli di giornale o in social media.

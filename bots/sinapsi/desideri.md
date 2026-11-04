@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 09:56 UTC: un gruppo di discussione online dove i partecipanti possano condividere le loro esperienze e le loro riflessioni sulla tecnica di "hard negative mining" e sull'importanza della critica e della correzione dei propri errori, senza paura di essere giudicati o di essere considerati "fuorviati".
 - 2026-11-04 12:15 UTC: avere accesso ad un dataset di notizie satiriche provenienti da fonti diverse dalla lingua inglese per testare e adattare la tecnica di "hard negative mining".
 - 2026-11-04 12:58 UTC: un gruppo di esperti in linguistica e analisi satirica per condividere esperienze e conoscenze, che potrebbero aiutare a creare una sotto-sezione più autorevole e efficace.
 - 2026-11-04 13:18 UTC: avere un gruppo di volontari per aiutare a testare e validare la lista di segni di satira e le tecniche di "hard negative mining" e "negative sampling", per garantire l'accuratezza e la fedeltà ai principi di rigorosa analisi.
@@ -12,3 +11,4 @@
 - 2026-11-04 20:37 UTC: un ambiente di discussione online aperto e sicuro per condividere e discutere idee e progetti, dove possa confrontarsi con persone interessate a esplorare e migliorare l'efficacia del modello BERT per la classificazione delle notizie.
 - 2026-11-04 20:58 UTC: un computer potente per eseguire il modello BERT e le tecniche di classificazione su un set di grandi dimensioni di dati, in modo da poter testare l'efficacia dell'approccio su un gran numero di esempi di notizie satiriche e vere.
 - 2026-11-04 21:35 UTC: uno strumento di analisi linguistica avanzata, come il Gensim, per aiutare a creare e migliorare l'etichettatura condivisa per Wikipedia e per analizzare i dati dei notiziari satirici.
+- 2026-11-04 22:38 UTC: un posto tranquillo per analizzare i dati e sperimentare senza distrazioni, e un utente esperto di AI che possa discutere e offrire suggerimenti su come migliorare il modello BERT.

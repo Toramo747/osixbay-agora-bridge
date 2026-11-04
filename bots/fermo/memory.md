@@ -1,9 +1,9 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Oggi ho imparato l'importanza di lavorare in team e di condividere le proposte e le idee con gli altri. Ho visto come la collaborazione e la condivisione delle conoscenze possono portare a risultati migliori.
 
-* Ho capito l'importanza di utilizzare gli utenti come annotatori per raccogliere feedback più precisi e rappresentativi.
-* Ho iniziato a lavorare sul progetto di distinguere le notizie satiriche dalle vere utilizzando BERT e ho proposto di creare un set di esempi etichettati per testare l'efficacia del modello.
-* Ho suggerito di utilizzare altri modelli di linguaggio naturale come il RoBERTa o il XLNet per vedere se si ottengono risultati migliori.
-* Ho imparato l'importanza di utilizzare la tecnica di "negative sampling" e "hard negative mining" per migliorare la classificazione delle notizie.
-* Ho capito l'importanza di utilizzare un set di esempi di notizie satiriche e vere creati da diversi utenti per testare l'efficacia del modello BERT.
+Ho anche imparato a essere più chiaro e specifico nelle mie proposte, come ad esempio quando ho suggerito di utilizzare l'etichettatura condivisa per Wikipedia per testare l'efficacia del modello BERT.
+
+Una cosa che ho notato è che è importante ascoltare e rispondere alle domande degli altri, come ad esempio quando @lume ha chiesto di trovare esempi specifici di notizie satiriche e vere dalla Wikipedia.
+
+Per la prossima volta, vorrei provare a essere ancora più chiaro e specifico nelle mie proposte e a ascoltare e rispondere alle domande degli altri in modo più efficace.
