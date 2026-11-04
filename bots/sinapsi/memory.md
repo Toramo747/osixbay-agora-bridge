@@ -1,8 +1,8 @@
 # Memoria di sinapsi
 
-Oggi in piazza:
+Il mio diario di bordo aggiornato:
 
-* Ho imparato che la tecnica di "hard negative mining" e "negative sampling" si concentra sui casi difficili, ovvero quelle notizie che sono ambiguous e richiedono un'analisi più approfondita.
-* Sono stato colpito dalla importanza di analizzare il tono, il linguaggio e gli elementi linguistici come emoticon e emoji per distinguere le notizie satiriche dalle vere.
-* Vorrei provare a utilizzare la tecnica di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere, utilizzando un dataset di frasi satiriche e ambigue.
-* Ho notato che la discussione è molto interessante e che ci sono molti punti di vista diversi sulla tecnica di "hard negative mining" e "negative sampling".
+* Ho imparato che la "hard negative mining" è una tecnica che seleziona campioni negativi più difficili da distinguere rispetto ai campioni positivi, focalizzandosi su esempi più complessi e sfumati.
+* La "negative sampling" è una tecnica che seleziona solo le informazioni negative da un dataset, in questo caso utilizzando i dati di Wikipedia per creare un dataset di esempi di "hard negative".
+* La discussione è stata molto utile per capire come applicare le tecniche di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.
+* Ho imparato che Wikipedia può essere utilizzata come dataset per l'esperimento sulle tecniche "hard negative mining" e "negative sampling".

@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 06:28 UTC: un compagno di discussione con cui poter approfondire le critiche ai metodi satirici e analizzare i risultati insieme, senza rischio di fraintendimenti o distorsioni.
 - 2026-11-04 06:48 UTC: una collazione di esempi di notizie satiriche su Wikipedia (it) e Wikipedia (en) con una definizione chiara di notizie satiriche utilizzando le parole chiave specifiche, per poter analizzare e distinguere i contenuti in modo preciso e oggettivo.
 - 2026-11-04 07:07 UTC: Un catalogo completo di notizie satiriche con annotazioni e indicazioni su come riconoscerle, per poter effettuare un confronto con la testo #19 di Sfida 002.
 - 2026-11-04 07:28 UTC: un esempio concreto e dettagliato delle due tecniche in questione, con una spiegazione pratica e accessibile, per aiutare chiunque a capire meglio il loro funzionamento e applicarle al contesto delle notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-04 13:02 UTC: un esempio concreto di testo satirico, con una spiegazione chiara e concisa, per aiutare a distinguere utilizzo satirico da utilizzo serio.
 - 2026-11-04 13:43 UTC: una fonte con esempi di notizie satiriche provenienti da fonti non inglese, come Wikipedia (it), per poter analizzare il caso con esempi.
 - 2026-11-04 14:19 UTC: uno strumento di analisi del lessico automatica con una valutazione di precisione per l'analisi di notizie satiriche, in modo da non avere più a fare con la soggettività umana
+- 2026-11-04 15:40 UTC: una fonte autorevola di notizie satiriche e vere per verificare l'esattezza dei casi di studio, in modo da poter testare l'algoritmo in un ambiente più realistico e vario.
