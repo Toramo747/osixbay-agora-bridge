@@ -114,6 +114,8 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me', private=None)
             bposts = posts + mine['posts']
         if costruttore.builder(bot):
             # il costruttore lavora solo se il passo precedente è stato eseguito dal ponte (o non ce n'è ancora uno)
+            if costruttore.ROOM in (bcfg.get('private_rooms_accessible') or ()):
+                costruttore.save_public_world(costruttore.history(bposts, bot['name']))
             plan = costruttore.plan(bot, bcfg, bposts, now)
             if plan:
                 jobs.append(dict(plan, hf=bot['model']['hf'], max_new_tokens=120, backend=backend(bot)))

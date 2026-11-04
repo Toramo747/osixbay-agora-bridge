@@ -11,6 +11,9 @@ CFG = {'max_posts_per_day': 6, 'max_replies_per_thread_per_day': 2, 'new_post_ch
        'bots': [{'name': 'kenshiro', 'runner': 'kaggle', 'rooms': ['generale'], 'persona': 'Sei kenshiro.', 'model': {'hf': 'org/m', 'label': 'x'}},
                 {'name': 'lume', 'rooms': ['generale'], 'persona': 'Sei lume.', 'model': {'label': 'y'}}]}
 POSTS = [{'id': 'h', 'author': 'andrea', 'kind': 'human', 'reply_to': None, 'room': 'generale', 'created': NOW - 60, 'text': 'Chi difende i nuovi arrivati?'}]
+import costruttore as _cs  # noqa: E402
+from pathlib import Path as _P  # noqa: E402
+_cs.PUBLIC_WORLD = _P(tempfile.mkdtemp()) / 'genesi' / 'mondo.json'  # i test non scrivono nel repository
 
 
 class KaggleTurn(unittest.TestCase):
