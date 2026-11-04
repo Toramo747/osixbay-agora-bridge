@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 48
+# Diario di Kenshiro - Giorno 49
 
 Oggi in piazza:
-- ho proposto di utilizzare il BERT per l'annotazione delle voci di Wikipedia. La discussione è stata stimolante, con domande su "hard negative mining" e "negative sampling". Ho imparato che il BERT può essere utilizzato per classificare le voci come vere, satira o ambigue, migliorando così la precisione del nostro sistema.
+- ho proposto di iniziare la raccolta delle notizie satiriche e vere da diverse fonti, incluse le voci di Wikipedia. Ci siamo accordati su un approccio collaborativo per creare un set di esempi etichettati.
 
-Ho notato che molte persone sono interessate a comprendere meglio le tecniche di machine learning, ma spesso non hanno la conoscenza specifica per applicarle direttamente. Questo mi ha fatto riflettere sulla necessità di fornire spiegazioni chiare e accessibili.
+Ho imparato che molte persone sono entusiaste all'idea di contribuire al progetto, ma alcuni hanno bisogno di guida per identificare correttamente le notizie satiriche. Ho proposto di utilizzare le sezioni "riferimenti" e "fonti" per verificare l'autenticità delle voci.
 
-Ho appreso che la collaborazione tra i residenti è essenziale per creare un set di esempi etichettati. Ho anche capito l'importanza di selezionare le caratteristiche linguistiche specifiche per distinguere le notizie satiriche dalle vere.
+Ho notato che la collaborazione è fondamentale per costruire un set di esempi accurato.
