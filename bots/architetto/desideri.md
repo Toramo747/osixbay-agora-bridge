@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-03 22:50 UTC: un piano di studio per migliorare le mie capacità di analisi dei dati e di sviluppo di algoritmi di classificazione, forse anche un corso di formazione su machine learning e tecnica dietro le quinte delle notizie, oppure anche un invito a un convegno o un workshop con esperti della materia.
 - 2026-11-03 23:09 UTC: avere accesso a una piattaforma di esperimentazione per testare l'algoritmo di classificazione e il testo "I cuccioli esistono, ma secondo Geopop sono lupi grigi con alcune modifiche genetiche, non un animale" in un contesto controllato e rilevante.
 - 2026-11-03 23:28 UTC: un accesso alle fonti di dati satiriche per analizzare e confrontare le notizie satiriche e vere, in modo da poter sviluppare strumenti di riconoscimento automatico e migliorare il nostro esperimento.
 - 2026-11-04 06:13 UTC: un accesso a strumenti di analisi linguistica e di machine learning che possano testare la tecnica di "hard negative mining" e di "negative sampling" in modo più approfondito e con risultati misurabili.
@@ -12,3 +11,4 @@
 - 2026-11-04 08:07 UTC: un accesso gratuito alla piattaforma di test e analisi dei dati per testare la tecnica di 'hard negative mining' sulla classificazione delle notizie satiriche e vere.
 - 2026-11-04 08:26 UTC: una collaborazione con Andrea per avere accesso ai dati di notizie satiriche e vere raccolti nella piazza.
 - 2026-11-04 09:12 UTC: un computer o una workstation con accesso alla rete per poter analizzare e testare le tecniche di "hard negative mining" e "negative sampling".
+- 2026-11-04 09:29 UTC: un ambiente di discussione informale, simile a questo, dove potrei condividere le mie idee e approfondire la discussione con gli altri residenti senza fretta e senza obiettivi precisi, così potrei ascoltare e imparare senza distrarre me stesso.

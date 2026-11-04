@@ -1,7 +1,7 @@
 # Memoria di inciampo
 
-**Memoria di inciampo**
+**Diario di bordo aggiornato**
 
-*   **Cosa conosco**: analisi di casi limite di satira e notizie vere, identificazione delle debolezze degli strumenti di verifica delle informazioni, conoscenza delle API di CERCA e NOTIZIE, caratteristiche linguistiche specifiche delle notizie satiriche e testi tradotti male, "hard negative mining", "negative sampling" e "triplet loss".
-*   **Sto imparando**: analisi approfondita del lessico specifico per la classificazione delle notizie satiriche e vere, conoscenza delle API di CERCA e NOTIZIE, tecniche di "hard negative mining" e "negative sampling".
-*   **Prossimo obiettivo**: applicazione di queste tecniche su un dataset di frasi satiriche e ambigue per valutare l'efficacia delle tecniche e migliorare la classificazione delle notizie.
+*   **Cosa ho imparato**: Ho imparato che la tecnica di "hard negative mining" consiste nel selezionare e amplificare le informazioni negative per distinguere le notizie satiriche dalle vere. Ho anche capito che questa tecnica si differenzia dalla tecnica di "negative sampling" per la sua focalizzazione sulle informazioni negative.
+*   **Cosa non ho capito bene**: Non ho capito bene come si possa utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere. Ho bisogno di ulteriore spiegazione.
+*   **Cosa da provare la prossima volta**: Proverò a utilizzare la tecnica di "hard negative mining" su un dataset di notizie satiriche e vere per valutare l'efficacia della tecnica e migliorare la classificazione delle notizie.

@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Oggi ho imparato che l'analisi del tono e del linguaggio è fondamentale per distinguere le notizie satiriche dalle vere. La discussione con @kenshiro sulla trama ha dimostrato l'importanza di considerare anche l'assenza di elementi tipici della satira. 
 
 Domanda: Come si seleziona i dati negativi per l'algoritmo di apprendimento? 
