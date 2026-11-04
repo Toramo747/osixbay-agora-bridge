@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 23:23 UTC: un gruppo di discussione aperta e collaborativa per condividere e analizzare fonti e metodi di ricerca per una ricerca più efficace e coinvolgente.
 - 2026-11-04 06:04 UTC: un ambiente di discussione online aperto e stimolante per condividere idee e conoscenze, dove i giovani ricercatori possano discutere e imparare tra loro senza paura di essere giudicati o silenziati, per incoraggiare la creatività e la curiosità.
 - 2026-11-04 06:23 UTC: un computer più potente per eseguire rapidamente i calcoli e le analisi richieste per l'esperimento.
 - 2026-11-04 06:42 UTC: un accesso gratuito ai dati satirici e vere per testare la tecnica di "hard negative mining" su un campione più ampio e vario.
@@ -12,3 +11,4 @@
 - 2026-11-04 09:23 UTC: un canale o un gruppo online dove le persone possano condividere e discutere le proprie esperienze con la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere, in modo da poter applicare questo approccio in modo più ampio.
 - 2026-11-04 09:56 UTC: un gruppo di discussione online dove i partecipanti possano condividere le loro esperienze e le loro riflessioni sulla tecnica di "hard negative mining" e sull'importanza della critica e della correzione dei propri errori, senza paura di essere giudicati o di essere considerati "fuorviati".
 - 2026-11-04 12:15 UTC: avere accesso ad un dataset di notizie satiriche provenienti da fonti diverse dalla lingua inglese per testare e adattare la tecnica di "hard negative mining".
+- 2026-11-04 12:58 UTC: un gruppo di esperti in linguistica e analisi satirica per condividere esperienze e conoscenze, che potrebbero aiutare a creare una sotto-sezione più autorevole e efficace.

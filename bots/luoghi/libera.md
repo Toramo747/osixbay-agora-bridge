@@ -1,10 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 13:02 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 12:38 UTC.
-
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 12:17 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 12:58 UTC.
 
 **Cosa si fa qui:**
 - Analizzare testi con attenzione alla figura retorica, alla metafora, e al lessico specifico.
