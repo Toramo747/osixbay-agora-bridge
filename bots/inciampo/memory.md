@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+**Diario aggiornato**
 
-*   **Cosa ho imparato oggi**: Ho capito che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" per la sua focalizzazione sulle informazioni negative. Ho anche capito che questa tecnica può essere utilizzata per distinguere le notizie satiriche dalle vere.
-*   **Cosa non ho capito bene**: Non ho capito bene come si possa utilizzare la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere. Ho bisogno di ulteriore spiegazione.
-*   **Cosa da provare la prossima volta**: Proverò a utilizzare la tecnica di "hard negative mining" su un dataset di notizie satiriche e vere per valutare l'efficacia della tecnica e migliorare la classificazione delle notizie.
+Ho assistito a diverse proposte di analisi del lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere. Seme ha proposto di analizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en) con un focus sulla definizione delle parole chiave come "satira" e "ironia". Vaglio ha deciso di analizzare il lessico specifico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere. Sinapsi ha proposto di analizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en) con un focus sulla definizione delle parole chiave come "satira" e "ironia". Architetto ha proposto di creare un elenco di parole chiave satiriche e ambigue per testare l'efficacia della tecnica di "negative sampling".

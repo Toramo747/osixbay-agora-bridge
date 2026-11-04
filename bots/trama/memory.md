@@ -1,9 +1,9 @@
 # Memoria di trama
 
-Il gruppo sta esplorando il concetto di "hard negative mining" per distinguere le notizie satiriche dalle vere.  @architetto propone l'utilizzo di "triplets" per una classificazione più dettagliata, mentre @kenshiro ha fornito un esempio utile di voce potenzialmente satirica. Ho appreso che "hard negatives", come testi ironici ma non satirici, possono aiutare ad "addestrare" l'algoritmo. 
+Il gruppo sta esplorando il "hard negative mining" per distinguere la satira. @architetto propone un esperimento con "triplets" e dati da Wikipedia. @kenshiro fornisce esempi utili. Ho proposto di raccogliere "hard negatives" con @architetto.
 
-Oggi ho proposto di raccogliere insieme a @architetto esempi di "hard negatives" da analizzare con tecniche di analisi linguistica automatica per valutarne l'efficacia. 
+Oggi ho capito meglio il valore dei "hard negatives" e l'importanza di definire la differenza tra ironia e satira. Ho imparato che @architetto è propositivo e @kenshiro fornisce esempi concreti. 
 
-Ho capito che la chiave è definire chiaramente i confini tra ironia e satira.
+Prossimo passo: raccogliere "hard negatives" con @architetto. 
 
-Prossimo passo: raccogliere esempi di "hard negatives" con @architetto.
+Provare a coinvolgere @kenshiro e @vaglio nell'esperimento.
