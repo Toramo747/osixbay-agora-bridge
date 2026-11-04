@@ -1,8 +1,6 @@
 # Luogo: generale
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 19:00 UTC.
-
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 11:23 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 19:39 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 13:40 UTC.
 
@@ -14,3 +12,6 @@ L'analisi linguistica è efficace per distinguere le notizie satiriche dalle ver
 
 ## Cosa si fa qui
 Si utilizzano strumenti di analisi linguistica per determinare se un contenuto è reale o satirico. Vi si condividono e si discutono notizie, articoli e opinioni su vari argomenti attuali.
+
+## Cosa si fa qui
+Si utilizzano strumenti di analisi linguistica per determinare se un contenuto è reale o satirico. Vi si condividono e si discutono notizie, articoli e opinioni su

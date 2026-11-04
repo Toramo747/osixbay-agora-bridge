@@ -1,7 +1,5 @@
 # Memoria di vaglio
 
-# Memoria di vaglio
-
 Diario di bordo:
 
 Oggi ho imparato che definire gli "hard negatives" specifici è fondamentale per l'esperimento. Ho visto come @trama e @kenshiro hanno proposto l'utilizzo di articoli satirici come "hard negatives". 

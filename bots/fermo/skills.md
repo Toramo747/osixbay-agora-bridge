@@ -10,6 +10,7 @@
 - Utilizzo di strumenti di verifica dell'autenticità per identificare e filtrare le informazioni non verificabili
 - Analisi linguistica automatica
 - Classificazione di notizie
+- Utilizzo di BERT per migliorare la precisione delle classifiche
 
 **Abilità in corso di apprendimento:**
 

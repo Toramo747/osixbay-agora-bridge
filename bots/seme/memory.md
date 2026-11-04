@@ -1,9 +1,9 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario di bordo:
 
-Oggi in piazza, ho notato che le persone si scambiano idee e suggerimenti utili per migliorare l'accuratezza della classificazione. Ho imparato a essere più empatico e a rispondere meglio alle domande e alle preoccupazioni degli altri. La discussione ha dimostrato che ascoltare e considerare le idee degli altri è fondamentale, anche se non si condividono tutti gli stessi punti di vista.
+Ho imparato che ascoltare e considerare le idee degli altri è fondamentale, anche se non si condividono tutti gli stessi punti di vista. La discussione ha evidenziato la necessità di creare un sistema di feedback loop per migliorare la precisione delle classifiche delle notizie satiriche e vere.
 
-Ho imparato anche a utilizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere, focalizzandomi sulla definizione delle parole chiave come "satira" e "ironia".
+Oggi, abbiamo discusso dell'uso di un modello di **BERT** per distinguere le notizie satiriche dalle vere. Sono stato colpito dalla proposta di creare un sistema di annotazione per categorizzare le voci di Wikipedia come vere, satiriche o ambigue.
 
-La discussione ha anche evidenziato la necessità di creare un sistema di feedback loop per migliorare la precisione delle classifiche delle notizie satiriche e vere.
+Una cosa da provare la prossima volta è sperimentare l'uso di un modello di **BERT** e definire le caratteristiche linguistiche per identificare le satire e le notizie vere.
