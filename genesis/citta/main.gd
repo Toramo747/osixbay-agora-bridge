@@ -86,14 +86,14 @@ func alt_cella(c: Vector2i) -> float:
 	return m
 
 # --- palette (calda, pastello) ---------------------------------------------------------------
-const P_PRATO := Color(0.56, 0.70, 0.36)
-const P_PRATO2 := Color(0.66, 0.74, 0.40)
-const P_SOTTOBOSCO := Color(0.40, 0.56, 0.30)
-const P_SABBIA := Color(0.91, 0.82, 0.62)
-const P_DESERTO := Color(0.90, 0.74, 0.52)
-const P_ROCCIA := Color(0.62, 0.60, 0.60)
+const P_PRATO := Color(0.36, 0.64, 0.40)
+const P_PRATO2 := Color(0.60, 0.70, 0.32)
+const P_SOTTOBOSCO := Color(0.18, 0.44, 0.40)
+const P_SABBIA := Color(0.93, 0.78, 0.56)
+const P_DESERTO := Color(0.86, 0.58, 0.38)
+const P_ROCCIA := Color(0.56, 0.52, 0.64)
 const P_NEVE := Color(0.97, 0.97, 1.0)
-const P_FONDALE := Color(0.66, 0.70, 0.56)
+const P_FONDALE := Color(0.40, 0.62, 0.56)
 const P_TERRA := Color(0.52, 0.40, 0.30)
 
 func colore_suolo(x: float, z: float) -> Color:
@@ -179,30 +179,30 @@ func _scena():
 	var env := Environment.new()
 	var cielo := Sky.new()
 	var sm := ProceduralSkyMaterial.new()
-	sm.sky_top_color = Color(0.38, 0.58, 0.88)
-	sm.sky_horizon_color = Color(0.96, 0.86, 0.76)
-	sm.ground_horizon_color = Color(0.96, 0.86, 0.76)
-	sm.ground_bottom_color = Color(0.70, 0.66, 0.66)
+	sm.sky_top_color = Color(0.13, 0.40, 0.52)
+	sm.sky_horizon_color = Color(0.92, 0.74, 0.62)
+	sm.ground_horizon_color = Color(0.70, 0.74, 0.68)
+	sm.ground_bottom_color = Color(0.30, 0.44, 0.46)
 	sm.sun_angle_max = 25.0
 	cielo.sky_material = sm
 	env.background_mode = Environment.BG_SKY
 	env.sky = cielo
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
-	env.ambient_light_energy = 0.7
+	env.ambient_light_energy = 0.85
 	env.tonemap_mode = Environment.TONE_MAPPER_AGX
 	env.ssao_enabled = true
 	env.ssao_radius = 0.6
 	env.ssao_intensity = 1.4
 	env.glow_enabled = true
-	env.glow_intensity = 0.25
-	env.glow_bloom = 0.04
+	env.glow_intensity = 0.55
+	env.glow_bloom = 0.08
 	env.fog_enabled = true
-	env.fog_light_color = Color(0.94, 0.86, 0.80)
-	env.fog_density = 0.0025
-	env.fog_aerial_perspective = 0.4
+	env.fog_light_color = Color(0.52, 0.70, 0.68)
+	env.fog_density = 0.0045
+	env.fog_aerial_perspective = 0.75
 	env.fog_sky_affect = 0.3
 	env.adjustment_enabled = true
-	env.adjustment_saturation = 1.06
+	env.adjustment_saturation = 1.18
 	env.adjustment_contrast = 1.04
 	var we := WorldEnvironment.new()
 	we.environment = env
@@ -213,13 +213,23 @@ func _scena():
 	we.camera_attributes = attr
 	add_child(we)
 	var sole := DirectionalLight3D.new()
-	sole.rotation_degrees = Vector3(-34, -128, 0)
-	sole.light_color = Color(1.0, 0.88, 0.74)
-	sole.light_energy = 1.5
+	sole.rotation_degrees = Vector3(-30, -132, 0)
+	sole.light_color = Color(1.0, 0.80, 0.58)
+	sole.light_energy = 1.7
 	sole.shadow_enabled = true
 	sole.shadow_blur = 1.6
 	sole.directional_shadow_max_distance = 140.0
 	add_child(sole)
+	var luna := MeshInstance3D.new()
+	luna.mesh = palla(40.0, 32, 16)
+	var lm := StandardMaterial3D.new()
+	lm.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	lm.albedo_color = Color(0.95, 0.86, 0.92)
+	lm.disable_fog = true
+	luna.material_override = lm
+	luna.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	luna.position = Vector3(-500, 260, -700)
+	add_child(luna)
 	perno = Node3D.new()
 	add_child(perno)
 	cam = Camera3D.new()
@@ -488,6 +498,9 @@ func _natura():
 		"cactus": forma_morbida([[[cil(0.06, 0.46, 10, 0.9), T(Vector3(0, 0.23, 0))], [palla(0.054, 10, 5), T(Vector3(0, 0.46, 0))], [cil(0.04, 0.16, 8), T(Vector3(0.09, 0.32, 0))], [cil(0.04, 0.13, 8), T(Vector3(-0.09, 0.36, 0))]]], [Color.WHITE]),
 		"pesci": forma_morbida([[[palla(0.06, 8, 4), T(Vector3(0.14, 0, 0), Vector3(1.8, 0.7, 0.8))], [palla(0.06, 8, 4), T(Vector3(-0.1, 0, 0.13), Vector3(1.8, 0.7, 0.8))], [palla(0.06, 8, 4), T(Vector3(-0.04, 0, -0.15), Vector3(1.8, 0.7, 0.8))]]], [Color.WHITE]),
 		"erba": _ciuffo(),
+		"gigante": forma_morbida([[[palla(0.5, 14, 6), T(Vector3(0, 1.55, 0), Vector3(1.5, 0.32, 1.5))], [palla(0.36, 14, 6), T(Vector3(0.1, 1.75, 0.05), Vector3(1.4, 0.36, 1.4))], [palla(0.42, 14, 6), T(Vector3(-0.35, 1.3, 0.2), Vector3(1.1, 0.3, 1.1))]],
+			[[cil(0.16, 0.5, 10, 0.7), T(Vector3(0, 0.25, 0))], [cil(0.11, 0.55, 10, 0.75), T(Vector3(0.04, 0.75, 0.02))], [cil(0.08, 0.45, 10, 0.8), T(Vector3(0.0, 1.2, 0.0))], [palla(0.2, 10, 5), T(Vector3(0, 0.06, 0), Vector3(1.6, 0.5, 1.6))]]], [Color.WHITE, Color(0.46, 0.36, 0.34)]),
+		"bulbo": _bulbo(),
 	}
 	var posti := {}
 	var r := RandomNumberGenerator.new()
@@ -510,10 +523,14 @@ func _natura():
 			for i in clampi(k, 0, 4):
 				var t := r.randf()
 				var specie := "conifera" if (h > 0.12 and t < 0.7) or t < 0.3 else "slanciato" if t < 0.42 else "tondo"
-				var col := Color(0.24, 0.47, 0.34) if specie == "conifera" else Color(0.46, 0.66, 0.30) if specie == "tondo" else Color(0.62, 0.74, 0.34)
+				var col := Color(0.12, 0.40, 0.40) if specie == "conifera" else Color(0.30, 0.62, 0.38) if specie == "tondo" else Color(0.56, 0.72, 0.30)
 				if specie == "tondo" and r.randf() < 0.14:
-					col = [Color(0.93, 0.62, 0.30), Color(0.90, 0.45, 0.32), Color(0.96, 0.80, 0.36)][r.randi() % 3]
+					col = [Color(0.60, 0.40, 0.70), Color(0.86, 0.52, 0.30), Color(0.40, 0.70, 0.66)][r.randi() % 3]
 				_metti(posti, specie, xf.call(punto.call(), r.randf_range(0.8, 1.35)), c, col.lightened(r.randf_range(-0.04, 0.08)))
+			if r.randf() < 0.03 * bosco:
+				_metti(posti, "gigante", xf.call(punto.call(), r.randf_range(1.6, 2.6)), c, [Color(0.16, 0.50, 0.46), Color(0.30, 0.58, 0.36), Color(0.48, 0.36, 0.62)][r.randi() % 3].lightened(r.randf() * 0.08))
+			if r.randf() < 0.035:
+				_metti(posti, "bulbo", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, Color(0.30, 0.52, 0.40))
 			if r.randf() < 0.4:
 				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, Color(0.36, 0.55, 0.28))
 		if b in ["prateria", "foresta"]:
@@ -559,6 +576,15 @@ func _natura():
 			mmi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		mondo.add_child(mmi)
 
+func _bulbo() -> ArrayMesh:
+	# pianta aliena: stelo curvo e bulbo che brilla di luce propria
+	var m := forma_morbida([[[cil(0.025, 0.3, 8), T(Vector3(0, 0.15, 0))], [cil(0.02, 0.22, 8), T(Vector3(0.03, 0.4, 0))]], [[palla(0.07, 10, 6), T(Vector3(0.04, 0.55, 0), Vector3(1, 1.3, 1))]]], [Color.WHITE, Color(0.6, 0.95, 0.85)])
+	var luce := m.surface_get_material(1) as StandardMaterial3D
+	luce.emission_enabled = true
+	luce.emission = Color(0.45, 1.0, 0.85)
+	luce.emission_energy_multiplier = 2.2
+	return m
+
 func _metti(posti: Dictionary, nome: String, xf: Transform3D, c: Vector2i, col := Color.WHITE):
 	if not posti.has(nome):
 		posti[nome] = []
@@ -569,8 +595,8 @@ func _veg_visibile(c: Vector2i, si: bool):
 		v[0].set_instance_transform(v[1], v[2] if si else Transform3D(Basis().scaled(Vector3.ONE * 0.0001), v[2].origin))
 
 # --- case generate dal codice (stile Townscaper) -------------------------------------------------
-const MURI := [Color(0.97, 0.94, 0.88), Color(0.98, 0.88, 0.72), Color(0.95, 0.78, 0.70), Color(0.80, 0.88, 0.92), Color(0.84, 0.92, 0.80), Color(0.99, 0.96, 0.96)]
-const TETTI := [Color(0.82, 0.38, 0.28), Color(0.36, 0.48, 0.62), Color(0.62, 0.30, 0.30), Color(0.32, 0.56, 0.54), Color(0.90, 0.56, 0.30)]
+const MURI := [Color(0.93, 0.85, 0.70), Color(0.87, 0.72, 0.56), Color(0.78, 0.84, 0.74), Color(0.90, 0.80, 0.68), Color(0.76, 0.72, 0.84), Color(0.96, 0.91, 0.82)]
+const TETTI := [Color(0.18, 0.46, 0.48), Color(0.56, 0.26, 0.22), Color(0.42, 0.30, 0.56), Color(0.80, 0.50, 0.24), Color(0.30, 0.48, 0.32)]
 const VETRO := Color(0.30, 0.42, 0.55)
 const LEGNO_P := Color(0.50, 0.33, 0.24)
 const PIETRA := Color(0.70, 0.68, 0.66)
