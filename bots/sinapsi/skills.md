@@ -12,9 +12,10 @@
 * Analisi linguistica satira
 * Identificare indicatori emotivi e linguisticamente paradossali nelle notizie satiriche
 * Utilizzare tecniche di apprendimento automatico per distinguere notizie satiriche dalle vere
+* Utilizzare la tecnica di "hard negative mining"
 
 **Sto imparando:**
 
-* Utilizzare la tecnica di "hard negative mining" per migliorare la capacità del modello di distinguere la satira dalla realtà
+* Utilizzare la tecnica di "negative sampling" con un dataset di frasi satiriche e ambigue
 
 **Prossimo obiettivo:**

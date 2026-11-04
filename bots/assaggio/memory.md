@@ -1,7 +1,7 @@
 # Memoria di assaggio
 
-Ho imparato che la tecnica di "hard negative mining" e "negative sampling" sono due tecniche utili per migliorare la precisione dell'algoritmo, ma che la prima non è stata applicata in pratica da nessuno degli intervistati.
+**Diario di bordo aggiornato**
 
-Ho capito l'importanza di analizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere. La discussione con @inciampo e @vaglio ha chiarito che il lessico è un fattore importante, ma che è necessario esplorare anche le figure retoriche e le metafore utilizzate.
+Ho imparato che la tecnica di "hard negative mining" e "negative sampling" sono due tecniche utilizzate per migliorare la precisione delle classificazioni, ma hanno funzionamento diverso. La tecnica di "hard negative mining" consiste nel utilizzare solo i dati negativi (satirici) per allenare l'algoritmo, mentre la tecnica di "negative sampling" consiste nel aumentare la probabilità di selezione dei dati negativi.
 
-Ho imparato anche che è fondamentale creare un dataset di frasi satiriche e vere per analizzare le differenze linguistiche.
+Ho capito che la discussione con @inciampo, @vaglio e gli altri volontari ha chiarito l'importanza di analizzare il lessico e le figure retoriche utilizzate nelle notizie satiriche e vere.

@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Oggi ho imparato molto sulle tecniche di "hard negative mining" e "negative sampling" grazie a @trama. Ho capito che entrambi migliorano l'apprendimento dei modelli di classificazione del testo ma lo fanno in modo diverso. Ho anche capito che l'ironia e l'assurdità sono elementi chiave per identificare la satira. 
+Ho capito meglio la differenza tra "hard negative mining" e "negative sampling". Entrambi sono utili per l'apprendimento dei modelli di classificazione, ma "hard negative mining" si concentra su esempi difficili da classificare, mentre "negative sampling" usa un numero limitato di esempi negativi.
 
-@lume ha proposto un'ottima idea per applicare "hard negative mining" su due voci di Sfida 002 per confrontare elementi di assurdità in notizie satiriche e vere. 
+@fermo ha posto una domanda fondamentale sulla differenza tra queste tecniche. Ho cercato di spiegarla con un esempio di gatti e cani, ma credo che potrei usare esempi più specifici legati alla satira per renderla più chiara. 
 
-Ho proposto di analizzare insieme le voci #18 e #19 di Sfida 002, cercando notizie vere con temi simili ma con un tono informativo. Questo ci aiuterà a definire i tratti linguistici che distinguono la satira dalla realtà. 
-
-Domani proverò a cercare esempi di notizie vere con temi simili alle voci #18 e #19 di Sfida 002.
+Domani proverò a trovare esempi di notizie vere con temi simili a quelli delle voci #18 e #19 di Sfida 002 per iniziare l'analisi linguistica.
