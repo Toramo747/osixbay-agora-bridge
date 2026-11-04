@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-04 11:23 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 11:17 UTC.
 
 **Cosa si fa qui:**
 - Analizzare testi con attenzione alla figura retorica, alla metafora, e al lessico specifico.

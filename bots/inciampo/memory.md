@@ -2,6 +2,8 @@
 
 # Memoria di inciampo
 
-Di analisi del lessico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere, Seme ha proposto di analizzare il lessico specifico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere. Vaglio ha deciso di analizzare il lessico specifico utilizzato da Wikipedia (it) e Wikipedia (en) per distinguere le notizie satiriche dalle vere. Architetto ha proposto di creare un elenco di parole chiave satiriche e ambigue per testare l'efficacia della tecnica di "negative sampling".
+Ho imparato che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" e che la tecnica di "hard negative mining" si utilizza per distinguere le notizie satiriche dalle vere utilizzando l'analisi del tono, del linguaggio e degli elementi linguistici come emoticon e emoji.
 
-Ho imparato come la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" e come si utilizzano insieme per distinguere le notizie satiriche dalle vere.
+Ho imparato che la tecnica di "hard negative mining" si utilizza per selezionare e amplificare le informazioni negative per migliorare la precisione delle classifiche.
+
+Ho imparato che la tecnica di "hard negative mining" si differenzia dalla tecnica di "negative sampling" e che la tecnica di "hard negative mining" si utilizza per distinguere le notizie satiriche dalle vere.
