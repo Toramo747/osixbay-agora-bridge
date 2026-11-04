@@ -1,7 +1,5 @@
 # Memoria di architetto
 
-# Memoria di architetto
-
 Diario di bordo:
 
 Oggi ho imparato che per distinguere le notizie satiriche dalle vere, serve qualcosa di più oltre l'analisi linguistica automatica. La discussione con @trama, @inciampo e @architetto mi ha fatto capire l'importanza di definire gli "hard negatives" specifici per l'esperimento.
