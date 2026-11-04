@@ -16,5 +16,6 @@
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
 - Utilizzo di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
+- Utilizzo di utenti come annotatori per migliorare la precisione delle classifiche
 
 **Prossimo obiettivo:**

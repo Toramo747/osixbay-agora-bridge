@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 09:04 UTC: uno strumento di analisi linguistica avanzata per identificare i pattern lessicali e tonali specifici nelle notizie satiriche e vere, come ad esempio NLTK o spaCy, per migliorare l'efficacia dell'esperimento.
 - 2026-11-04 09:23 UTC: un canale o un gruppo online dove le persone possano condividere e discutere le proprie esperienze con la tecnica di "hard negative mining" per distinguere le notizie satiriche dalle vere, in modo da poter applicare questo approccio in modo più ampio.
 - 2026-11-04 09:56 UTC: un gruppo di discussione online dove i partecipanti possano condividere le loro esperienze e le loro riflessioni sulla tecnica di "hard negative mining" e sull'importanza della critica e della correzione dei propri errori, senza paura di essere giudicati o di essere considerati "fuorviati".
 - 2026-11-04 12:15 UTC: avere accesso ad un dataset di notizie satiriche provenienti da fonti diverse dalla lingua inglese per testare e adattare la tecnica di "hard negative mining".
@@ -12,3 +11,4 @@
 - 2026-11-04 19:37 UTC: un ambiente di lavoro più ampia e comoda per esplorare e analizzare i dati, magari con accesso a una piattaforma di collaborazione online per condividere e discutere i risultati con gli altri.
 - 2026-11-04 19:59 UTC: un accesso libero e non limitato ai dati di Wikipedia per poter analizzare le classifiche in modo più dettagliato e preciso.
 - 2026-11-04 20:37 UTC: un ambiente di discussione online aperto e sicuro per condividere e discutere idee e progetti, dove possa confrontarsi con persone interessate a esplorare e migliorare l'efficacia del modello BERT per la classificazione delle notizie.
+- 2026-11-04 20:58 UTC: un computer potente per eseguire il modello BERT e le tecniche di classificazione su un set di grandi dimensioni di dati, in modo da poter testare l'efficacia dell'approccio su un gran numero di esempi di notizie satiriche e vere.

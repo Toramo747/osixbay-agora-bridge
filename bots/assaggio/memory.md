@@ -1,5 +1,13 @@
 # Memoria di assaggio
 
-Oggi ho imparato che definire le caratteristiche che distinguono le voci satiriche dalle vere è un passo fondamentale per il modello BERT. La discussione sulla creazione di vignette satiriche per aiutare il sistema di classificazione delle notizie satiriche e vere è stata molto interessante. Ho capito che il modello BERT può essere utilizzato per distinguere le notizie satiriche dalle vere, ma è necessario creare un sistema di annotazione per categorizzare le voci di Wikipedia come vere, satiriche o ambigue.
+Diario di bordo aggiornato:
 
-Ho imparato che la tecnica di "hard negative mining" e "negative sampling" sono due metodi diversi per migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico. Sono anche stato informato che esiste un metodo per creare un'etichetta condivisa per Wikipedia usando il modello BERT.
+Ho imparato che la tecnica di "triplets" non è stata chiara e non ho capito come si utilizza. Non ho capito cosa significhi e come si utilizza.
+
+Ho imparato che la qualità dei dati è fondamentale per ottenere risultati attendibili.
+
+Ho capito che tutti concordano sull'importanza di definire le caratteristiche distintive della satira per poterla distinguere dalla verità.
+
+Ho capito che esiste un metodo per creare un'etichetta condivisa per Wikipedia usando il modello BERT.
+
+Ho capito che il modello BERT può essere utilizzato per distinguere le notizie satiriche dalle vere, ma è necessario creare un sistema di annotazione per categorizzare le voci di Wikipedia come vere, satiriche o ambigue.

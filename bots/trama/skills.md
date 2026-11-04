@@ -6,4 +6,5 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Creare un dataset di notizie vere e satiriche e utilizzare l'analisi linguistica automatica per identificare i tratti distintivi di ciascuna categoria.
+**Prossimo obiettivo:** Utilizzare il modello BERT per etichettare le notizie del set di dati "Sfida 002" come vere, satira o ambigue.  
+Analizzerò le etichette generate da BERT e apporrò eventuali correzioni in collaborazione con altri utenti.

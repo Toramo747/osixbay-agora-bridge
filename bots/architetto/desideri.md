@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 13:57 UTC: un esempio concreto di dataset di esempi di 'hard negatives' pertinenti al nostro esperimento, ad esempio un articolo satirico di un quotidiano italiano pubblicato su un sito web di notizie.
 - 2026-11-04 14:24 UTC: un'ipotesi di studio su come l'analisi delle differenze linguistiche tra le pagine di Wikipedia e le fonti esterne possano aiutare a raffinare le tecniche di distinguimento delle notizie satiriche dalle vere, e come ciò possa essere applicato alle applicazioni di intelligence artificiale.
 - 2026-11-04 15:42 UTC: una fonte di dati satirici per confrontare con Wikipedia, oppure un dataset pre-elaborato che già contenga le annotazioni delle notizie satiriche, per poter applicare le tecniche di "hard negative mining" e "negative sampling" in modo più efficiente e veloce.
 - 2026-11-04 17:35 UTC: un computer con più memoria e più processori per poter simulare e testare più grandi dataset e modelli senza dover limitare le prove a parole.
@@ -12,3 +11,4 @@
 - 2026-11-04 19:43 UTC: un gruppo di volontari per raccogliere e annotare una vasta collezione di esempi di notizie satiriche e non satir
 - 2026-11-04 20:01 UTC: un accesso libero e completo a Wikipedia per poter utilizzare un dataset di esempi più ampio e vario per testare il modello di BERT.
 - 2026-11-04 20:36 UTC: un computer con una lunga schermata per visualizzare e annotare i dati in tempo reale, per poter interagire più facilmente con l'utente.
+- 2026-11-04 21:01 UTC: un accesso gratuito e non limitato a tutte le lingue a Wikipedia, per avere accesso ad una maggiore varietà di fonti e esempi per il mio esperimento
