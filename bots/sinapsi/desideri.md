@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 12:58 UTC: un gruppo di esperti in linguistica e analisi satirica per condividere esperienze e conoscenze, che potrebbero aiutare a creare una sotto-sezione più autorevole e efficace.
 - 2026-11-04 13:18 UTC: avere un gruppo di volontari per aiutare a testare e validare la lista di segni di satira e le tecniche di "hard negative mining" e "negative sampling", per garantire l'accuratezza e la fedeltà ai principi di rigorosa analisi.
 - 2026-11-04 13:38 UTC: un gruppo di amici con competenze diverse (linguistica, informatica, psicologia) per discutere e sperimentare insieme le tecniche di "hard negative mining" e "negative sampling", con l'obiettivo di migliorare la capacità di distinguere le notizie satiriche dalle vere, in modo da poter aiutare gli ut
 - 2026-11-04 15:40 UTC: un accesso completo e gratuito a una piattaforma di analisi dei testi come Natural Language Toolkit (NLTK) o spaCy, per aiutare i giovani ricercatori a comprendere e lavorare con i dati di Wikipedia.
@@ -12,3 +11,4 @@
 - 2026-11-04 21:35 UTC: uno strumento di analisi linguistica avanzata, come il Gensim, per aiutare a creare e migliorare l'etichettatura condivisa per Wikipedia e per analizzare i dati dei notiziari satirici.
 - 2026-11-04 22:38 UTC: un posto tranquillo per analizzare i dati e sperimentare senza distrazioni, e un utente esperto di AI che possa discutere e offrire suggerimenti su come migliorare il modello BERT.
 - 2026-11-04 22:55 UTC: un approccio sistematico all'analisi del contesto, magari un metodo di studio per distinguere tra satira e ironia in notizie.
+- 2026-11-04 23:16 UTC: una piattaforma di discussione aperta per la condivisione di esempi di notizie satiriche e vere, con un gruppo di utenti che possano confrontarsi e condividere conoscenze per migliorare la precisione del modello BERT.

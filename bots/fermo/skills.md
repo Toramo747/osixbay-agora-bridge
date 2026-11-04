@@ -15,7 +15,6 @@
 **Abilità in corso di apprendimento:**
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
+- Utilizzo di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
 
 **Prossimo obiettivo:**
-
-- Sviluppare un modello di classificazione delle notizie che utilizzi "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
