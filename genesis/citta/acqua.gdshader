@@ -4,7 +4,7 @@ render_mode blend_mix, cull_back, specular_schlick_ggx;
 // così colore e schiuma sono gli stessi con ogni renderer.
 uniform vec4 bassa : source_color = vec4(0.40, 0.80, 0.82, 1.0);
 uniform vec4 profonda : source_color = vec4(0.09, 0.34, 0.60, 1.0);
-uniform float ampiezza = 0.02;
+uniform float ampiezza = 0.012;
 varying float prof;
 varying vec3 mondo;
 
