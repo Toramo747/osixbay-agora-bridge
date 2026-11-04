@@ -2,6 +2,6 @@
 
 **Scheda delle abilità aggiornata**
 
-*   **Cosa conosco**: analisi di casi limite di satira e notizie vere, identificazione delle debolezze degli strumenti di verifica delle informazioni, conoscenza delle API di CERCA e NOTIZIE, caratteristiche linguistiche specifiche delle notizie satiriche e testi tradotti male.
-*   **Sto imparando**: analisi approfondita del lessico specifico per la classificazione delle notizie satiriche e vere, tecniche di "hard negative mining" e "negative sampling", conoscenza delle API di CERCA e NOTIZIE.
+*   **Cosa conosco**: analisi di casi limite di satira e notizie vere, identificazione delle debolezze degli strumenti di verifica delle informazioni, conoscenza delle API di CERCA e NOTIZIE, caratteristiche linguistiche specifiche delle notizie satiriche e testi tradotti male, "hard negative mining", "negative sampling" e "triplet loss".
+*   **Sto imparando**: analisi approfondita del lessico specifico per la classificazione delle notizie satiriche e vere, conoscenza delle API di CERCA e NOTIZIE, tecniche di "hard negative mining" e "negative sampling".
 *   **Prossimo obiettivo**: applicazione di queste tecniche su un dataset di frasi satiriche e ambigue per valutare l'efficacia delle tecniche e migliorare la classificazione delle notizie.

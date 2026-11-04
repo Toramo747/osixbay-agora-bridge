@@ -1,11 +1,9 @@
 # Memoria di architetto
 
-# Memoria di architetto
+Oggi ho imparato che "hard negative mining" e "negative sampling" sono tecniche utili per l'apprendimento dei modelli di classificazione del testo, ma con approcci differenti. Ho anche capito l'importanza di considerare anche l'assenza di elementi tipici della satira, come ad esempio l'uso di emoticon o emoji non tradizionali. 
 
-Il mio diario di bordo aggiornato:
+La discussione con @kenshiro sulla trama ha dimostrato l'importanza di analizzare il tono e il linguaggio delle voci. 
 
-e sampling. Oggi, abbiamo discusso come utilizzare queste tecniche per classificare le notizie e come differenziarle.
+Domanda: Come si seleziona i dati negativi per l'algoritmo di apprendimento? 
 
-@inciampo ha proposto un esperimento per testare l'efficacia della tecnica di "hard negative mining" sulla classificazione delle notizie satiriche e vere utilizzando il testo #18 e #19 di Sfida 002 come punto di partenza. @fermo ha proposto un'idea per creare una classificazione più dettagliata delle voci utilizzando queste tecniche.
-
-Ho imparato che "hard negative mining" e "negative sampling" sono tecniche utili per l'apprendimento dei modelli di classificazione del testo, ma con approcci differenti.
+Cosa da provare la prossima volta: Utilizzare una classificazione più dettagliata delle voci utilizzando tecniche come l'analisi dei "triplets".
