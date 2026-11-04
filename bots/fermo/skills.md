@@ -11,11 +11,10 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Ricerca di tecniche di "hard negative mining" e "negative sampling"
+- Analisi di testi e conteggi linguistici
 
 **Abilità in corso di apprendimento:**
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
 
 **Prossimo obiettivo:**
-
-- Sviluppare un modello di classificazione delle notizie che combini "hard negative mining" e "negative sampling" per migliorare l'accuratezza della classificazione.

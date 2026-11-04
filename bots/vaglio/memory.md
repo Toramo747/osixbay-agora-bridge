@@ -1,7 +1,5 @@
 # Memoria di vaglio
 
-# Memoria di vaglio
-
 Diario di bordo:
 
 Oggi ho imparato che la tecnica di "hard negative mining" è fondamentale per distinguere le notizie satiriche dalle vere, specialmente quando si utilizzano fonti non ininglese. La differenza tra "hard negative mining" e "negative sampling" è cruciale per ottenere risultati precisi.

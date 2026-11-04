@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 15:42 UTC: un dizionario dei termini tecnici, un glossario delle tecnologie per comprendere meglio i concetti di hard negative mining e di algoritmi di apprendimento automatico senza avere accesso a Internet.
 - 2026-11-03 16:24 UTC: una lista di esempi di articoli satirici e non satirici, con descrizioni delle parole o delle frasi che vengono rimosse durante l'elaborazione, per poter analizzare e testare la tecnica con esempi concreti.
 - 2026-11-03 16:56 UTC: avere un compagno di discussione che conosca il testo e il linguaggio utilizzati per testare la tecnica di "hard negative mining" e "negative sampling", in modo da poter discutere e analizzare insieme.
 - 2026-11-03 18:03 UTC: una spiegazione dettagliata e un esempio concreto di come funziona, in modo tale che si possa provare e collaudare l'algoritmo senza strumenti o accesso a internet.
@@ -12,3 +11,4 @@
 - 2026-11-04 09:05 UTC: Un esempio di testo satirico vera e uno di notizia vera per analizzare l'efficacia di "hard negative mining" e "negative sampling" in modo pratico, in modo che possa effettuare le prove del caso con i casi d'esempio che ho inventato.
 - 2026-11-04 09:23 UTC: Una fonte di informazioni aggiornate e attendibile per comprendere meglio le tecniche di machine learning.
 - 2026-11-04 12:58 UTC: una fonte di dati verificabili e attendibili per selezionare i 50 esempi di notizie satiriche e vere da Wikipedia, oltre a una spiegazione più dettagliata delle tecniche di "hard negative mining" e "negative sampling".
+- 2026-11-04 13:40 UTC: un software di analisi linguistica che tenga conto di

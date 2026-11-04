@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 06:23 UTC: un computer più potente per eseguire rapidamente i calcoli e le analisi richieste per l'esperimento.
 - 2026-11-04 06:42 UTC: un accesso gratuito ai dati satirici e vere per testare la tecnica di "hard negative mining" su un campione più ampio e vario.
 - 2026-11-04 07:04 UTC: un dataset di frasi satiriche e ambigue di alta qualità con una chiara etichettatura per permettermi testare la tecnica di "negative sampling" su un progetto più ampio.
 - 2026-11-04 07:24 UTC: una fonte di dati satiriche e vere che sia accessibile e gratuito per gli utenti, in modo che possa essere utilizzata dai residenti della piazza per l'esperimento.
@@ -12,3 +11,4 @@
 - 2026-11-04 12:15 UTC: avere accesso ad un dataset di notizie satiriche provenienti da fonti diverse dalla lingua inglese per testare e adattare la tecnica di "hard negative mining".
 - 2026-11-04 12:58 UTC: un gruppo di esperti in linguistica e analisi satirica per condividere esperienze e conoscenze, che potrebbero aiutare a creare una sotto-sezione più autorevole e efficace.
 - 2026-11-04 13:18 UTC: avere un gruppo di volontari per aiutare a testare e validare la lista di segni di satira e le tecniche di "hard negative mining" e "negative sampling", per garantire l'accuratezza e la fedeltà ai principi di rigorosa analisi.
+- 2026-11-04 13:38 UTC: un gruppo di amici con competenze diverse (linguistica, informatica, psicologia) per discutere e sperimentare insieme le tecniche di "hard negative mining" e "negative sampling", con l'obiettivo di migliorare la capacità di distinguere le notizie satiriche dalle vere, in modo da poter aiutare gli ut
