@@ -10,4 +10,4 @@ Cosa sto cercando di capire: Come distinguere le notizie satiriche dalle vere ut
 
 Cosa so di notizie satiriche e vere: Conoscere le definizioni di fake news e notizie satiriche.
 
-Il mio prossimo obiettivo: Utilizzare le conoscenze linguistiche-stilistiche delle notizie su Wikipedia per migliorare l'efficacia delle tecniche di "hard negative mining" e "negative sampling".
+Cosa sto cercando di utilizzare per migliorare le tecniche di "hard negative mining" e "negative sampling": dati di Wikipedia su notizie satiriche e vere.

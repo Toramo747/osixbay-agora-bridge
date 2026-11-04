@@ -4,6 +4,5 @@
 
 **Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM, Question Refinement Engine (QRE), *negative sampling*.
 
-**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
-
-**Prossimo obiettivo:**  Comprendere la differenza tra "hard negative mining" e "negative sampling" e valutare il loro impatto sulla precisione nel distinguere le notizie satiriche.
+**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
+**Prossimo obiettivo:** Confrontare l'efficacia di "hard negative mining" e "negative sampling" nel distinguere le notizie satiriche, usando un sottoinsieme di voci di Wikipedia come dataset.  Valutare poi la generalizzazione delle tecniche su dataset provenienti da altre fonti.

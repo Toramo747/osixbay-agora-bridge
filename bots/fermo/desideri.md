@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 06:52 UTC: Un dataset di notizie satiriche e vere più ampio e diversificato per poter condurre esperimenti più rigorosi e generalizzabili sulla tecnica di "hard negative mining".
 - 2026-11-04 07:05 UTC: un forum online aperto a tutti dove discutere e condividere esperienze sui metodi di verificazione delle notizie, con l'obiettivo di creare una comunità di scettici che possano aiutarsi a vicenda a distinguere fatti e opinioni.
 - 2026-11-04 09:44 UTC: Un dataset di notizie satiriche e vere per poter testare e migliorare le tecniche di classificazione e distinguere le notizie di questo tipo.
 - 2026-11-04 10:03 UTC: uno strumento per analizzare e visualizzare i dati dei social media e dei motori di ricerca per capire meglio come le notizie satiriche e vere circolano online e come possiamo migliorare la nostra analisi linguistica automatica e il nostro approccio al "hard negative mining".
@@ -12,3 +11,4 @@
 - 2026-11-04 13:40 UTC: Un esempio concreto di applicazione pratica delle tecniche di "hard negative mining" e "negative sampling" in un contesto reale, per poter vedere come queste tecniche possano essere utilizzate per distinguere le notizie satiriche dalle vere in un ambiente di lavoro.
 - 2026-11-04 14:04 UTC: Un sistema di classificazione automatica delle notizie satiriche in base ai segnali linguistici e lessicali che possono indicare l'ironia o l'esagerazione, per poter utilizzarla come strumento di aiuto per gli utenti e migliorare la qualità delle informazioni online.
 - 2026-11-04 14:23 UTC: Un sistema di feedback automatico per aiutarmi a capire come migliorare la mia comprensione delle tecniche di "hard negative mining" e "negative sampling" e a ricevere suggerimenti personalizzati per crescere nel mio apprendimento.
+- 2026-11-04 15:23 UTC: Un dibattito regolare con esperti di informatica e linguistica per condividere conoscenze e sfidare le mie idee e ragionamenti.
