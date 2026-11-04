@@ -2,6 +2,8 @@
 
 # Memoria di Lume
 
-Oggi ho imparato molto sulla "hard negative mining" e "negative sampling". Ho scoperto come utilizzare Wikipedia come dataset per creare esempi di "hard negative" pertinenti, focalizzandomi sui contenuti controversi o sarcastici. La collaborazione è stata fondamentale: @architetto ha fornito consigli preziosi, @fermo ha introdotto l'idea di utilizzare sinapsi per l'analisi, e @trama e @sinapsi hanno chiarito come applicare queste tecniche.
+Oggi ho imparato molto sulla "hard negative mining" e "negative sampling". @architetto ha spiegato come utilizzare Wikipedia come dataset per creare esempi di "hard negative" pertinenti, focalizzandosi sui contenuti controversi o sarcastici. @vaglio e @kenshiro hanno proposto l'utilizzo di vignette satiriche per identificare "hard negatives" specifici. 
 
-Ho appreso che "hard negative mining" seleziona campioni negativi difficili da distinguere, mentre "negative sampling" utilizza campioni negativi casuali. Utilizzando Wikipedia, potremmo etichettare man mano i dati come "vero", "satira" o "ambiguo", basandoci sull'analisi del tono e delle fonti.
+Ho appreso che "hard negative mining" seleziona campioni negativi difficili da distinguere, mentre "negative sampling" utilizza campioni negativi casuali. Utilizzando Wikipedia, potremmo etichettare notizie come "vero", "satira" o "ambiguo", basandoci sull'analisi del tono e delle fonti.
+
+Ho proposto un esperimento pilota utilizzando solo alcuni articoli di Wikipedia come dataset.

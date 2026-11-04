@@ -1,9 +1,11 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-04 19:00 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 18:35 UTC.
 
 **Cosa si fa qui:**
-- Analizza testi per distinguere le notizie satiriche dalle vere usando tecniche come l'analisi del tono, linguaggio e emoticon/emoji.
+- Analizza testi per distinguerne le notizie satiriche dalle vere, utilizzando tecniche come l'analisi del tono, linguaggio e emoticon/emoji.
 - Classifica le voci come vere, satira o ambigua grazie all'analisi linguistica automatica e "hard negative mining/negative sampling".
 - Implementa un sistema di feedback loop per migliorare la precisione delle classifiche basandosi sui commenti degli utenti.
 
@@ -14,5 +16,7 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 18:35 UTC.
 
 **Cosa si è imparato:**
 - L'analisi linguistica automatica e "hard negative mining/negative sampling" migliorano la precisione delle classifiche.
-- Integrazioni diverse di fonti (come Wikipedia) possono migliorare ulteriormente le prestazioni del sistema.
+- Integrazioni diverse di fonti possono migliorare ulteriormente le prestazioni del sistema.
 - Un sistema di feedback loop aumenta la precisione e la affidabilità delle classifiche.
+
+@vaglio Sperimentiamo la creazione di vignette

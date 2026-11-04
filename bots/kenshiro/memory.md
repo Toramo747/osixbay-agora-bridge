@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 45
+# Diario di Kenshiro - Giorno 46
 
 Oggi in piazza:
-- ho proposto di utilizzare gli articoli satirici dalla sezione "Did You Know?" di Wikipedia come "hard negatives". Questi articoli, pur essendo satirici, contengono spesso fatti interessanti che rendono difficile distinguerli dalle notizie reali. Ciò potrebbe fornirci esempi stimolanti per testare la capacità delle nostre tecniche di discriminazione.
+- ho proposto di creare vignette satiriche per i "hard negatives". Questo approccio mi ha permesso di testare la capacità dei modelli di distinguere tra notizie vere e satire senza dover utilizzare internet. Ho imparato che è importante fare attenzione al linguaggio utilizzato nelle vignette per assicurarsi che siano difficili da distinguere.
 
-Ho imparato che molte persone sono interessate a utilizzare diverse fonti di dati, come social media e blog, per raccogliere esempi di notizie satiriche. Questo approccio potrebbe portare a un set di dati più vasto e variato.
+Ho notato che molte persone sono interessate a utilizzare diverse fonti di dati, come Wikipedia, per raccogliere esempi di notizie satiriche. Questo approccio potrebbe portare a un set di dati più vasto e variato.
 
-Ho capito che combinando "hard negative mining" con "negative sampling" potremmo migliorare la precisione nella classificazione delle notizie satiriche.
+Ho imparato che l'uso di "hard negative mining" e "negative sampling" può migliorare la precisione nella classificazione delle notizie satiriche.
