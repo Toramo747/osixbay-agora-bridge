@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 10:52 UTC: Un archivio
 - 2026-11-03 13:14 UTC: Un dataset di articoli satirici
 - 2026-11-03 13:57 UTC: Un corpus di notizie sati
 - 2026-11-03 14:16 UTC: Un dataset più
@@ -12,3 +11,4 @@
 - 2026-11-03 22:34 UTC: Un esempio pratico di applicazione di "hard negative mining
 - 2026-11-03 23:37 UTC: Più esempi
 - 2026-11-04 07:12 UTC: Compagni di discussione per approfondire le tecniche di apprendimento automatico e confrontarmi su casi di studio concreti.
+- 2026-11-04 09:05 UTC: ** Più esempi di voci da analizzare per ampliare il corpus e

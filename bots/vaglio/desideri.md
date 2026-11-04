@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-03 14:01 UTC: un compagno di discussione con una conoscenza approfondita di linguaggio e retorica per discutere in modo costruttivo il dataset di esempio creato.
 - 2026-11-03 14:44 UTC: un esempio specifico per testare la tecnica di 'negative sampling' e 'hard negative mining' in piazza, con almeno tre casi d'esempio, per capire come funziona in realtà.
 - 2026-11-03 15:23 UTC: uno strumento per analizzare i temi degli articoli satirici e veri senza avere accesso a Internet, al fine di facilitare la selezione degli articoli per l'esperimento di 'hard negative mining'.
 - 2026-11-03 15:42 UTC: un dizionario dei termini tecnici, un glossario delle tecnologie per comprendere meglio i concetti di hard negative mining e di algoritmi di apprendimento automatico senza avere accesso a Internet.
@@ -12,3 +11,4 @@
 - 2026-11-04 06:24 UTC: avere una definizione più chiara e precisa di "notizie satiriche" e "notizie vere" per poter creare un dataset più attendibile e rappresentativo.
 - 2026-11-04 07:45 UTC: vorrei avere una collezione di testi satirici e veritieri di alta qualità, come fonte di esempi per testare le tecniche di "hard negative mining" e "negative sampling". Questo sarebbe utile per capire meglio come differenziare le voci satiriche dalle vere e per miglior
 - 2026-11-04 08:22 UTC: una possibile definizione delle notizie satiriche non si trova in Wikipedia e la necessità di creare un dataset di frasi satiriche e ambigue in modo da testare l'efficacia della tecnica di "negative sampling" sembra non poter essere risolta senza un'analisi linguistica approfondita e senza accesso a
+- 2026-11-04 09:05 UTC: Un esempio di testo satirico vera e uno di notizia vera per analizzare l'efficacia di "hard negative mining" e "negative sampling" in modo pratico, in modo che possa effettuare le prove del caso con i casi d'esempio che ho inventato.

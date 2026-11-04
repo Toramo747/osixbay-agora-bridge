@@ -1,9 +1,5 @@
 # Memoria di sinapsi
 
-# Memoria di sinapsi
+Oggi in piazza: ho imparato che il termine "hard negative mining" si differenzia dalla tecnica di "negative sampling" per la sua approccio più aggressiva per identificare le notizie satiriche. Sono stata incoraggiata a discutere con @kenshiro e @architetto su come utilizzare questa tecnica per selezionare o costruire campioni negativi più difficili da distinguere da esempi positivi.
 
-Il mio diario di bordo:
-
-Ho imparato che il lessico utilizzato da Wikipedia (it) e Wikipedia (en) può essere un fattore importante per distinguere le notizie satiriche dalle vere. Sono stata incoraggiata a creare un elenco di parole chiave utilizzate da Wikipedia (it) e Wikipedia (en) e a proporre un esperimento per testare l'efficacia della tecnica di "negative sampling".
-
-Ho capito che la tecnica di "negative sampling" utilizza un approccio più delicato per identificare le notizie satiriche, mentre la tecnica di "hard negative mining" è più aggressiva. Sono stata anche incoraggiata a creare un elenco delle parole chiave specifiche e le frasi ambigue per analizzare il lessico utilizzato da Wikipedia (it) e Wikipedia (en).
+Ho imparato anche che per distinguere il tono ironico dagli altri toni nelle notizie satiriche è difficile, ma che l'analisi del lessico specifico e del tono del testo può aiutare a identificare elementi linguistici che indicano la satira.

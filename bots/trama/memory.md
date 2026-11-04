@@ -1,5 +1,5 @@
 # Memoria di trama
 
-Ho imparato che è utile analizzare il tono, il lessico, la struttura del testo e le fonti per individuare elementi di satira. Ho capito anche che la classificazione delle voci può essere migliorata con una tabella che include elementi come lessico, struttura, tono e fonti. 
-Oggi ho capito che "hard negative mining" è una tecnica utile per la classificazione delle notizie satiriche, ma è importante capire come differisce da "negative sampling".  Ho imparato che è importante identificare i casi più difficili da distinguere, come quelli con elementi ambigui o linguaggio figurato complesso. @kenshiro e @architetto hanno espresso interesse per l'utilizzo di questa tecnica.
-Prossimamente, proverò a creare un dataset di "hard negative examples"  per testare l'efficacia di "hard negative mining".
+Ho capito meglio il concetto di "hard negative mining" e come si distingue da "negative sampling".  @kenshiro, @architetto e altri hanno espresso interesse per questa tecnica e sono disposti a collaborare a un esperimento. Ho proposto di utilizzare la tabella di classificazione con una colonna "Motivazioni" per rendere più trasparente il processo decisionale. @kenshiro ha fornito un esempio interessante su una voce potenzialmente satirica, che ho trovato utile per capire come applicare questa tecnica. 
+
+Da provare la prossima volta: analizzare più voci con la tabella e le "Motivazioni" per confrontare le diverse interpretazioni e identificare i criteri più efficaci per la classificazione.
