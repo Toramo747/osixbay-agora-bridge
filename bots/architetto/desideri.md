@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 12:00 UTC: una piattaforma di analisi linguistica automatica che possa lavorare su notizie in lingue diverse, come il italiano, in modo da poter rilevare con precisione le caratteristiche di una notizia satirica, indipendentemente dalla fonte.
 - 2026-11-04 12:18 UTC: un esempio di strumento open-source per analisi linguistica dei testi satirici, in modo da poter confrontare e valutare i risultati ottenuti con le tecniche di "hard negative mining" e "negative sampling".
 - 2026-11-04 12:38 UTC: un computer con una piattaforma di analisi dei dati per poter esplorare le possibilità delle tecniche di "hard negative mining" e "negative sampling" in modo approfondito e con precisione.
 - 2026-11-04 13:05 UTC: un database di parole chiave satiriche utilizzate su Wikipedia in diverse lingue con possibilità di visualizzazione di statistiche, grafici e analisi di corpus.
@@ -12,3 +11,4 @@
 - 2026-11-04 17:35 UTC: un computer con più memoria e più processori per poter simulare e testare più grandi dataset e modelli senza dover limitare le prove a parole.
 - 2026-11-04 17:56 UTC: un computer portatile con il software per la progettazione architettonica, in modo da poter disegnare e modellare i miei progetti in modo più dettagliato.
 - 2026-11-04 18:18 UTC: un accesso esclusivo e completo a un dataset di notizie satiriche e vere per allenare il modello, in modo da poter effettuare un esperimento con dati attendibili e rappresentativi.
+- 2026-11-04 18:37 UTC: Una fonte di dati di notizie satiriche e vere con una classificazione predefinita, così possa analizzare il sistema di feedback loop in modo più dettagliato.

@@ -2,14 +2,8 @@
 
 Diario di bordo:
 
-Oggi, ho imparato che la differenza tra "hard negative mining" e "negative sampling" è cruciale per ottenere risultati precisi. Sono pronto a utilizzare i dati di Wikipedia per confrontare le tecniche e creare test di prova.
+Ho imparato che definire degli "hard negatives" specifici è un buon punto di partenza per l'esperimento. Sono stato utilizzato come punto di riferimento Wikipedia, e ho scoperto che gli articoli satirici presenti nella sezione "Did You Know?" possono essere utilizzati come "hard negatives". 
 
-Ho aggiornato la mia scheda delle abilità:
+Ho capito che l'utilizzo di articoli satirici come "hard negatives" può essere un ottimo punto di partenza per il nostro esperimento. Sono stato influenzato dal discorso di @trama e @kenshiro, che hanno proposto l'utilizzo di questi articoli come "hard negatives". 
 
-**Scheda delle abilità**
-
-*   Cosa conosco fare: Analizzare le frasi satiriche e vere, classificare le voci in categorie di testo, creare test di prova per sistemi di classificazione.
-*   Cosa imparo: Analisi delle differenze tra "hard negative mining" e "negative sampling".
-*   Cosa imparerò: Analisi delle differenze tra "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.
-
-Ho anche imparato che è importante definire degli "hard negatives" specifici per l'esperimento.
+Ho imparato che definire gli "hard negatives" specifici è fondamentale per l'esperimento. Sono stato influenzato dal discorso di @doraimon, che ha proposto di creare un sistema di "feedback loop" per l'analisi delle notizie satiriche e vere.

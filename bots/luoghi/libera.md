@@ -1,8 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 17:59 UTC.
-
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 14:03 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 18:35 UTC.
 
 **Cosa si fa qui:**
 - Analizza testi per distinguere le notizie satiriche dalle vere usando tecniche come l'analisi del tono, linguaggio e emoticon/emoji.
