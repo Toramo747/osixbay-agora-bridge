@@ -28,6 +28,7 @@ var trascina := false
 var mosso := 0.0
 var foto := ""
 var demo := false
+var attr: CameraAttributesPractical
 
 # città
 var citta := {}            # Vector2i -> {"t": strumento, "r": rotazione}
@@ -164,12 +165,18 @@ func _scena():
 	env.glow_enabled = false
 	env.glow_intensity = 0.6
 	env.adjustment_enabled = true
-	env.adjustment_saturation = 1.18
+	env.adjustment_saturation = 1.05
 	env.adjustment_brightness = 0.9
 	env.tonemap_exposure = 0.9
+	env.adjustment_contrast = 1.06
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)
+	attr = CameraAttributesPractical.new()
+	attr.dof_blur_far_enabled = true
+	attr.dof_blur_near_enabled = true
+	attr.dof_blur_amount = 0.06
+	we.camera_attributes = attr
 	var sole := DirectionalLight3D.new()
 	sole.rotation_degrees = Vector3(-50, -150, 0)
 	sole.light_energy = 1.15
@@ -260,13 +267,21 @@ func _suona(s: String):
 	if suoni.has(s):
 		suoni[s].play()
 
-# --- terreno a tessere ---------------------------------------------------------------------
-const COL := {
-	"prateria": Color(0.38, 0.72, 0.42), "foresta": Color(0.29, 0.62, 0.38), "spiaggia": Color(0.95, 0.85, 0.62),
-	"deserto": Color(0.93, 0.76, 0.48), "montagna": Color(0.56, 0.55, 0.58), "oceano": Color(0.84, 0.76, 0.56),
-}
-const TERRA := Color(0.55, 0.40, 0.29)
-const ROCCIA := Color(0.46, 0.45, 0.48)
+# --- terreno: gradoni a griglia, coste fini, colori sfumati ---------------------------------
+const SUB := 4                 # suddivisione delle celle di costa per bordi più fini
+const TERRA := Color(0.50, 0.36, 0.25)
+const ROCCIA := Color(0.47, 0.46, 0.49)
+# palette unica, calda, intonata ai modelli Kenney
+const P_PRATO := Color(0.46, 0.62, 0.32)
+const P_PRATO2 := Color(0.55, 0.66, 0.35)
+const P_SOTTOBOSCO := Color(0.34, 0.49, 0.26)
+const P_SABBIA := Color(0.88, 0.77, 0.54)
+const P_DESERTO := Color(0.90, 0.72, 0.46)
+const P_ROCCIA := Color(0.55, 0.53, 0.55)
+const P_NEVE := Color(0.95, 0.96, 0.99)
+const P_FONDALE := Color(0.62, 0.66, 0.52)
+
+var n2 := FastNoiseLite.new()  # macchie dei boschi e sfumature (solo resa)
 
 func mesh_di(nome: String) -> Mesh:
 	if mesh_cache.has(nome):
@@ -279,6 +294,8 @@ func mesh_di(nome: String) -> Mesh:
 	return mesh
 
 func _costruisci():
+	n2.seed = seme + 1
+	n2.frequency = 0.06
 	var lo := zone[0]
 	var hi := zone[0]
 	for z in zone:
@@ -298,69 +315,119 @@ func _costruisci():
 	_tessere()
 
 func top(c: Vector2i) -> float:
-	# altezza del piano calpestabile (le tessere Kenney sono spesse 0.06)
 	return celle[c].y + 0.06
 
+func colore_suolo(x: float, z: float) -> Color:
+	# colore continuo dal campo del costruttore: le soglie dei biomi diventano sfumature
+	var f := campi(x, z)
+	var h := f.x; var m := f.y
+	var v := n2.get_noise_2d(x * 2.0, z * 2.0)
+	var c := P_PRATO.lerp(P_PRATO2, clamp(0.5 + v * 0.8, 0.0, 1.0))
+	c = c.lerp(P_SOTTOBOSCO, smoothstep(-0.02, 0.12, m))
+	c = c.lerp(P_DESERTO, smoothstep(-0.24, -0.36, m))
+	c = c.lerp(P_SABBIA, smoothstep(-0.09, -0.14, h))
+	c = c.lerp(P_ROCCIA, smoothstep(0.40, 0.47, h))
+	c = c.lerp(P_NEVE, smoothstep(0.62, 0.70, h))
+	if h < -0.2:
+		c = P_SABBIA.lerp(P_FONDALE, smoothstep(-0.2, -0.32, h)).darkened(smoothstep(-0.25, -0.6, h) * 0.45)
+	return c.lightened(v * 0.04)
+
+func _alt_sub(c: Vector2i, i: int, j: int) -> float:
+	# altezza di un quarto di cella: le celle costruibili restano piane, l'acqua segue il campo continuo
+	var px := c.x - 0.5 + (i + 0.5) / SUB
+	var pz := c.y - 0.5 + (j + 0.5) / SUB
+	var f := campi(px, pz)
+	var b := bioma(f.x, f.y)
+	if costruibile(c):
+		return top(c) if b != "oceano" else quota(livello(f.x, b), b) + 0.06
+	if celle[c].b == "oceano" and b != "oceano":
+		return 0.0
+	return quota(livello(f.x, b), b) + 0.06
+
 func _terreno():
+	# griglia fine: ogni cella è SUB×SUB quadratini; quelle uniformi si emettono come un solo quadrato
+	var hs := {}
+	var uni := {}
+	for c in celle:
+		var ref := -999.0
+		var tutte := true
+		for j in SUB:
+			for i in SUB:
+				var a := _alt_sub(c, i, j)
+				hs[c * SUB + Vector2i(i, j)] = a
+				if ref == -999.0: ref = a
+				elif abs(a - ref) > 0.001: tutte = false
+		uni[c] = tutte
 	var st := SurfaceTool.new()
 	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	var passo := 1.0 / SUB
+	for c in celle:
+		var x0: float = c.x - 0.5
+		var z0: float = c.y - 0.5
+		if uni[c]:
+			var y: float = hs[c * SUB]
+			_quad_col(st, x0, z0, 1.0, y)
+		else:
+			for j in SUB:
+				for i in SUB:
+					_quad_col(st, x0 + i * passo, z0 + j * passo, passo, hs[c * SUB + Vector2i(i, j)])
+	# pareti tra quadratini (o celle) a quote diverse e bordo del diorama
 	var dirs := [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]
 	for c in celle:
-		var d = celle[c]
-		var y := top(c)
-		var b: String = d.b
-		var x0: float = c.x - 0.5; var x1: float = c.x + 0.5; var z0: float = c.y - 0.5; var z1: float = c.y + 0.5
-		# piano superiore (sotto le tessere Kenney resta nascosto)
-		if not b in ["prateria", "foresta"]:
-			var tinta: Color = COL[b]
-			if b == "montagna":
-				tinta = ROCCIA.lerp(Color(0.95, 0.96, 1.0), clamp((d.liv - 6) / 2.0, 0.0, 1.0))
-			elif b == "oceano":
-				tinta = tinta.darkened(0.12 * -d.liv)
-			tinta = tinta.lightened(float(abs(hash(c)) % 7) * 0.006)
-			st.set_color(tinta)
-			_quad(st, Vector3(x0, y, z0), Vector3(x1, y, z0), Vector3(x1, y, z1), Vector3(x0, y, z1))
-		# pareti dei gradoni e del bordo
-		for k in 4:
-			var v: Vector2i = c + dirs[k]
-			var giu := BASE
-			if celle.has(v):
-				giu = top(v)
-			if giu >= y - 0.001:
-				continue
-			var a: Vector3; var e: Vector3
-			match k:
-				0: a = Vector3(x1, 0, z1); e = Vector3(x1, 0, z0)
-				1: a = Vector3(x0, 0, z0); e = Vector3(x0, 0, z1)
-				2: a = Vector3(x0, 0, z1); e = Vector3(x1, 0, z1)
-				3: a = Vector3(x1, 0, z0); e = Vector3(x0, 0, z0)
-			var bande := []
-			if b in ["prateria", "foresta"]:
-				bande = [[y, y - 0.08, COL.prateria.darkened(0.15)], [y - 0.08, giu, TERRA]]
-			elif b == "montagna":
-				bande = [[y, giu, ROCCIA.darkened(0.1)]]
-			elif b in ["spiaggia", "deserto", "oceano"]:
-				bande = [[y, giu, (COL[b] as Color).darkened(0.18)]]
-			if not celle.has(v):
-				# bordo del diorama: strati di terra e roccia
-				var fine := giu
-				bande[-1][1] = max(fine, y - 0.5) if bande.size() == 1 else max(fine, y - 0.6)
-				bande.append([bande[-1][1], max(fine, -1.2), TERRA.darkened(0.15)])
-				bande.append([max(fine, -1.2), fine, ROCCIA.darkened(0.25)])
-			for bd in bande:
-				var t0: float = bd[0]; var t1: float = bd[1]
-				if t0 - t1 < 0.001:
-					continue
-				st.set_color(bd[2])
-				_quad(st, Vector3(a.x, t0, a.z), Vector3(e.x, t0, e.z), Vector3(e.x, t1, e.z), Vector3(a.x, t1, a.z))
+		for j in SUB:
+			for i in SUB:
+				var s: Vector2i = c * SUB + Vector2i(i, j)
+				var y: float = hs[s]
+				for k in 4:
+					var v: Vector2i = s + dirs[k]
+					var vc := Vector2i(floori(float(v.x) / SUB), floori(float(v.y) / SUB))
+					# i lati interni alle celle uniformi non servono
+					if vc == c and uni[c]:
+						continue
+					var giu := BASE
+					if hs.has(v):
+						giu = hs[v]
+					if giu >= y - 0.001:
+						continue
+					var sx := s.x * passo - 0.5; var sz := s.y * passo - 0.5
+					var a: Vector3; var e: Vector3
+					match k:
+						0: a = Vector3(sx + passo, 0, sz + passo); e = Vector3(sx + passo, 0, sz)
+						1: a = Vector3(sx, 0, sz); e = Vector3(sx, 0, sz + passo)
+						2: a = Vector3(sx, 0, sz + passo); e = Vector3(sx + passo, 0, sz + passo)
+						3: a = Vector3(sx + passo, 0, sz); e = Vector3(sx, 0, sz)
+					var b: String = celle[c].b
+					var cima := colore_suolo(a.x, a.z).darkened(0.2)
+					var bande := [[y, max(giu, y - 0.07), cima]]
+					var corpo := ROCCIA.darkened(0.12) if b == "montagna" else TERRA
+					if b in ["spiaggia", "deserto", "oceano"]:
+						corpo = (P_SABBIA if b != "deserto" else P_DESERTO).darkened(0.25)
+					bande.append([y - 0.07, max(giu, -1.0), corpo])
+					if not hs.has(v):
+						bande.append([max(giu, -1.0), giu, ROCCIA.darkened(0.3)])
+					for bd in bande:
+						var t0: float = bd[0]; var t1: float = bd[1]
+						if t0 - t1 < 0.001:
+							continue
+						st.set_color(bd[2])
+						_quad(st, Vector3(a.x, t0, a.z), Vector3(e.x, t0, e.z), Vector3(e.x, t1, e.z), Vector3(a.x, t1, a.z))
 	st.generate_normals()
 	var mat := StandardMaterial3D.new()
 	mat.vertex_color_use_as_albedo = true
-	mat.roughness = 0.9
+	mat.roughness = 0.95
 	var mi := MeshInstance3D.new()
 	mi.mesh = st.commit()
 	mi.material_override = mat
 	mondo.add_child(mi)
+	_hs = hs
+
+var _hs := {}
+
+func _quad_col(st: SurfaceTool, x0: float, z0: float, l: float, y: float):
+	var p := [Vector3(x0, y, z0), Vector3(x0 + l, y, z0), Vector3(x0 + l, y, z0 + l), Vector3(x0, y, z0 + l)]
+	for k in [0, 1, 2, 0, 2, 3]:
+		st.set_color(colore_suolo(p[k].x, p[k].z))
+		st.add_vertex(p[k])
 
 func _quad(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, d: Vector3):
 	for v in [a, b, c, a, c, d]:
@@ -369,41 +436,51 @@ func _quad(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, d: Vector3):
 func _acqua():
 	var mat := ShaderMaterial.new()
 	mat.shader = load("res://acqua.gdshader")
-	mat.set_shader_parameter("profonda", Color(0.16, 0.47, 0.72))
-	mat.set_shader_parameter("chiara", Color(0.36, 0.72, 0.86))
-	mat.set_shader_parameter("ampiezza", 0.03)
-	var pareti := SurfaceTool.new()
-	pareti.begin(Mesh.PRIMITIVE_TRIANGLES)
 	for z in zone:
-		var pm := PlaneMesh.new()
-		pm.size = Vector2(32, 32)
-		pm.subdivide_width = 31
-		pm.subdivide_depth = 31
+		# superficie a griglia di mezza cella; nel colore la profondità del fondale
+		var st := SurfaceTool.new()
+		st.begin(Mesh.PRIMITIVE_TRIANGLES)
+		var ox := z.x * 32 - 0.5
+		var oz := z.y * 32 - 0.5
+		var pr := {}
+		for j in 65:
+			for i in 65:
+				var h := campi(ox + i * 0.5, oz + j * 0.5).x
+				pr[Vector2i(i, j)] = clamp((-0.2 - h) / 0.35, 0.0, 1.0)
+		for j in 64:
+			for i in 64:
+				var q := [Vector2i(i, j), Vector2i(i + 1, j), Vector2i(i + 1, j + 1), Vector2i(i, j + 1)]
+				for k in [0, 1, 2, 0, 2, 3]:
+					st.set_color(Color(pr[q[k]], 0, 0))
+					st.add_vertex(Vector3(ox + q[k].x * 0.5, MARE, oz + q[k].y * 0.5))
 		var w := MeshInstance3D.new()
-		w.mesh = pm
+		w.mesh = st.commit()
 		w.material_override = mat
-		w.position = Vector3(z.x * 32 + 15.5, MARE, z.y * 32 + 15.5)
 		w.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		mondo.add_child(w)
 	# acqua vista di lato sul bordo del diorama
+	var pareti := SurfaceTool.new()
+	pareti.begin(Mesh.PRIMITIVE_TRIANGLES)
+	var passo := 1.0 / SUB
 	var dirs := [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]
-	for c in celle:
-		if top(c) >= MARE:
+	for s in _hs:
+		var y: float = _hs[s]
+		if y >= MARE:
 			continue
 		for k in 4:
-			if celle.has(c + dirs[k]):
+			if _hs.has(s + dirs[k]):
 				continue
-			var x0: float = c.x - 0.5; var x1: float = c.x + 0.5; var z0: float = c.y - 0.5; var z1: float = c.y + 0.5
+			var sx: float = s.x * passo - 0.5; var sz: float = s.y * passo - 0.5
 			var a: Vector3; var e: Vector3
 			match k:
-				0: a = Vector3(x1, 0, z1); e = Vector3(x1, 0, z0)
-				1: a = Vector3(x0, 0, z0); e = Vector3(x0, 0, z1)
-				2: a = Vector3(x0, 0, z1); e = Vector3(x1, 0, z1)
-				3: a = Vector3(x1, 0, z0); e = Vector3(x0, 0, z0)
-			_quad(pareti, Vector3(a.x, MARE, a.z), Vector3(e.x, MARE, e.z), Vector3(e.x, top(c), e.z), Vector3(a.x, top(c), a.z))
+				0: a = Vector3(sx + passo, 0, sz + passo); e = Vector3(sx + passo, 0, sz)
+				1: a = Vector3(sx, 0, sz); e = Vector3(sx, 0, sz + passo)
+				2: a = Vector3(sx, 0, sz + passo); e = Vector3(sx + passo, 0, sz + passo)
+				3: a = Vector3(sx + passo, 0, sz); e = Vector3(sx, 0, sz)
+			_quad(pareti, Vector3(a.x, MARE, a.z), Vector3(e.x, MARE, e.z), Vector3(e.x, y, e.z), Vector3(a.x, y, a.z))
 	pareti.generate_normals()
 	var pm2 := StandardMaterial3D.new()
-	pm2.albedo_color = Color(0.25, 0.6, 0.82, 0.55)
+	pm2.albedo_color = Color(0.2, 0.55, 0.75, 0.6)
 	pm2.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	pm2.roughness = 0.1
 	var wi := MeshInstance3D.new()
@@ -412,24 +489,27 @@ func _acqua():
 	wi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	mondo.add_child(wi)
 
-# --- forme generate dal codice per ciò che il kit non ha -------------------------------------
-func forma(parti: Array, colore: Color) -> ArrayMesh:
-	var st := SurfaceTool.new()
-	st.begin(Mesh.PRIMITIVE_TRIANGLES)
-	for p in parti:
-		var src := SurfaceTool.new()
-		src.create_from(p[0], 0)
-		var arr := src.commit_to_arrays()
-		var verts: PackedVector3Array = arr[Mesh.ARRAY_VERTEX]
-		for i in (arr[Mesh.ARRAY_INDEX] as PackedInt32Array):
-			st.add_vertex(p[1] * verts[i])
-	st.generate_normals()
-	var am := st.commit()
-	var mat := StandardMaterial3D.new()
-	mat.albedo_color = colore
-	mat.roughness = 0.85
-	mat.vertex_color_use_as_albedo = false
-	am.surface_set_material(0, mat)
+# --- forme generate dal codice (alberi, rocce, fiori…) --------------------------------------
+func forma(parti: Array, colori: Array) -> ArrayMesh:
+	# parti: una lista per superficie; la superficie 0 prende il colore dell'istanza
+	var am := ArrayMesh.new()
+	for s in parti.size():
+		var st := SurfaceTool.new()
+		st.begin(Mesh.PRIMITIVE_TRIANGLES)
+		for p in parti[s]:
+			var src := SurfaceTool.new()
+			src.create_from(p[0], 0)
+			var arr := src.commit_to_arrays()
+			var verts: PackedVector3Array = arr[Mesh.ARRAY_VERTEX]
+			for i in (arr[Mesh.ARRAY_INDEX] as PackedInt32Array):
+				st.add_vertex(p[1] * verts[i])
+		st.generate_normals()
+		st.commit(am)
+		var mat := StandardMaterial3D.new()
+		mat.albedo_color = colori[s]
+		mat.roughness = 0.85
+		mat.vertex_color_use_as_albedo = s == 0
+		am.surface_set_material(s, mat)
 	return am
 
 func palla(r: float, seg := 6, anelli := 3) -> SphereMesh:
@@ -439,67 +519,103 @@ func palla(r: float, seg := 6, anelli := 3) -> SphereMesh:
 
 func cil(r: float, h: float, seg := 6) -> CylinderMesh:
 	var c := CylinderMesh.new()
-	c.top_radius = r * 0.85; c.bottom_radius = r; c.height = h; c.radial_segments = seg; c.rings = 1
+	c.top_radius = r * 0.8; c.bottom_radius = r; c.height = h; c.radial_segments = seg; c.rings = 1
+	return c
+
+func cono(r: float, h: float, seg := 7) -> CylinderMesh:
+	var c := CylinderMesh.new()
+	c.top_radius = 0.0; c.bottom_radius = r; c.height = h; c.radial_segments = seg; c.rings = 1
 	return c
 
 func T(pos: Vector3, sc := Vector3.ONE) -> Transform3D:
 	return Transform3D(Basis().scaled(sc), pos)
 
-func _tessere():
-	var forme := {
-		"roccia": forma([[palla(0.3), T(Vector3(0, 0.08, 0), Vector3(1.2, 0.7, 1))], [palla(0.18), T(Vector3(0.22, 0.05, 0.12))]], Color(0.62, 0.6, 0.62)),
-		"roccia_grande": forma([[palla(0.36), T(Vector3(0, 0.15, 0), Vector3(1.1, 1.0, 1))], [palla(0.24), T(Vector3(0.26, 0.08, 0.15))], [palla(0.2), T(Vector3(-0.22, 0.06, -0.18))]], Color(0.5, 0.5, 0.54)),
-		"argilla": forma([[palla(0.3), T(Vector3(0, 0.04, 0), Vector3(1.3, 0.5, 1.1))], [palla(0.18), T(Vector3(0.25, 0.03, 0.15), Vector3(1, 0.6, 1))]], Color(0.8, 0.42, 0.27)),
-		"cactus": forma([[cil(0.08, 0.55), T(Vector3(0, 0.27, 0))], [cil(0.05, 0.22), T(Vector3(0.12, 0.36, 0))], [cil(0.05, 0.18), T(Vector3(-0.11, 0.42, 0))]], Color(0.35, 0.6, 0.36)),
-		"pesci": forma([[palla(0.07, 5, 2), T(Vector3(0.15, 0, 0), Vector3(1.8, 0.7, 0.8))], [palla(0.07, 5, 2), T(Vector3(-0.12, 0, 0.14), Vector3(1.8, 0.7, 0.8))], [palla(0.07, 5, 2), T(Vector3(-0.05, 0, -0.16), Vector3(1.8, 0.7, 0.8))]], Color(1.0, 0.56, 0.24)),
+func _forme() -> Dictionary:
+	var legno := Color(0.45, 0.30, 0.2)
+	var b := Color.WHITE
+	return {
+		"pino": forma([[[cono(0.24, 0.38), T(Vector3(0, 0.3, 0))], [cono(0.19, 0.32), T(Vector3(0, 0.47, 0))], [cono(0.13, 0.26), T(Vector3(0, 0.62, 0))]],
+			[[cil(0.035, 0.18), T(Vector3(0, 0.09, 0))]]], [b, legno]),
+		"quercia": forma([[[palla(0.22, 7, 4), T(Vector3(0, 0.42, 0), Vector3(1, 0.85, 1))], [palla(0.15), T(Vector3(0.12, 0.36, 0.06))], [palla(0.14), T(Vector3(-0.11, 0.38, -0.07))]],
+			[[cil(0.04, 0.3), T(Vector3(0, 0.15, 0))]]], [b, legno]),
+		"pioppo": forma([[[palla(0.13, 6, 4), T(Vector3(0, 0.52, 0), Vector3(1, 2.4, 1))]], [[cil(0.03, 0.22), T(Vector3(0, 0.11, 0))]]], [b, legno]),
+		"cespuglio": forma([[[palla(0.13), T(Vector3(0, 0.07, 0), Vector3(1.2, 0.8, 1))], [palla(0.09), T(Vector3(0.1, 0.05, 0.04))]]], [b]),
+		"fiori": forma([[[palla(0.025, 4, 2), T(Vector3(0, 0.03, 0))], [palla(0.025, 4, 2), T(Vector3(0.08, 0.03, 0.05))], [palla(0.025, 4, 2), T(Vector3(-0.06, 0.03, 0.07))], [palla(0.025, 4, 2), T(Vector3(0.03, 0.03, -0.08))]]], [b]),
+		"roccia": forma([[[palla(0.3, 5, 3), T(Vector3(0, 0.08, 0), Vector3(1.2, 0.7, 1))], [palla(0.18, 5, 2), T(Vector3(0.22, 0.05, 0.12))]]], [b]),
+		"argilla": forma([[[palla(0.3), T(Vector3(0, 0.04, 0), Vector3(1.3, 0.5, 1.1))], [palla(0.18), T(Vector3(0.25, 0.03, 0.15), Vector3(1, 0.6, 1))]]], [b]),
+		"cactus": forma([[[cil(0.07, 0.5), T(Vector3(0, 0.25, 0))], [cil(0.045, 0.2), T(Vector3(0.1, 0.33, 0))], [cil(0.045, 0.16), T(Vector3(-0.1, 0.38, 0))]]], [b]),
+		"pesci": forma([[[palla(0.07, 5, 2), T(Vector3(0.15, 0, 0), Vector3(1.8, 0.7, 0.8))], [palla(0.07, 5, 2), T(Vector3(-0.12, 0, 0.14), Vector3(1.8, 0.7, 0.8))], [palla(0.07, 5, 2), T(Vector3(-0.05, 0, -0.16), Vector3(1.8, 0.7, 0.8))]]], [b]),
 	}
+
+func _tessere():
+	var forme := _forme()
 	var posti := {}
 	var r := RandomNumberGenerator.new()
+	var fiori := [Color(0.98, 0.9, 0.35), Color(0.95, 0.55, 0.6), Color(0.98, 0.98, 0.95), Color(0.65, 0.55, 0.95)]
 	for c in celle:
 		var d = celle[c]
 		r.seed = hash(Vector3i(c.x, c.y, seme))
-		var y: float = celle[c].y
-		var giro := Basis(Vector3.UP, (r.randi() % 4) * PI / 2)
 		var b: String = d.b
 		var ris: String = d.ris
-		var base := Transform3D(giro, Vector3(c.x, y, c.y))
-		if b == "prateria":
-			_metti(posti, "grass", base, c)
-		elif b == "foresta":
+		var y := top(c)
+		var bosco: float = clamp(0.5 + n2.get_noise_2d(c.x, c.y) * 1.4, 0.0, 1.0)   # macchie e radure
+		var punto := func(): return Vector3(c.x + r.randf_range(-0.42, 0.42), y, c.y + r.randf_range(-0.42, 0.42))
+		var xf := func(p: Vector3, s: float): return Transform3D(Basis(Vector3.UP, r.randf() * TAU).scaled(Vector3.ONE * s), p)
+		if b == "foresta" or ris == "legno":
+			var k := 3 if ris == "legno" else int(round(bosco * 3.4 + r.randf() * 0.8 - 0.4))
+			for i in clampi(k, 0, 4):
+				var t := r.randf()
+				var specie := "pino" if (d.h > 0.15 and t < 0.75) or t < 0.35 else "pioppo" if t < 0.45 else "quercia"
+				var col := Color(0.18, 0.42, 0.25) if specie == "pino" else Color(0.33, 0.58, 0.24) if specie == "quercia" else Color(0.45, 0.62, 0.25)
+				if r.randf() < 0.12 and specie == "quercia":
+					col = Color(0.78, 0.55, 0.2)      # qualche chioma autunnale
+				_metti(posti, specie, xf.call(punto.call(), r.randf_range(0.75, 1.35)), c, col.lightened(r.randf_range(-0.05, 0.1)))
+			if r.randf() < 0.35:
+				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.8, 1.4)), c, Color(0.3, 0.5, 0.22))
+		elif b == "prateria":
 			var v := r.randf()
-			_metti(posti, "grass-trees-tall" if ris == "legno" or v < 0.4 else "grass-trees" if v < 0.85 else "grass", base, c)
-		var sopra := Transform3D(Basis(Vector3.UP, r.randf() * TAU), Vector3(c.x + r.randf_range(-0.2, 0.2), top(c), c.y + r.randf_range(-0.2, 0.2)))
+			if v < 0.06 * bosco + 0.01:
+				_metti(posti, "quercia", xf.call(punto.call(), r.randf_range(0.8, 1.3)), c, Color(0.38, 0.62, 0.26))
+			elif v < 0.16:
+				_metti(posti, "cespuglio", xf.call(punto.call(), r.randf_range(0.7, 1.2)), c, Color(0.38, 0.6, 0.26))
+			if n2.get_noise_2d(c.x * 3.0, c.y * 3.0) > 0.25 and r.randf() < 0.6:
+				_metti(posti, "fiori", xf.call(punto.call(), r.randf_range(0.8, 1.3)), c, fiori[r.randi() % fiori.size()])
+		var p: Vector3 = punto.call()
 		if ris == "pietra":
-			_metti(posti, "roccia_grande", sopra.scaled_local(Vector3.ONE * 1.4), c)
+			_metti(posti, "roccia", xf.call(p, 1.6), c, Color(0.5, 0.5, 0.54))
 		elif ris == "argilla":
-			_metti(posti, "argilla", Transform3D(sopra.basis, Vector3(sopra.origin.x, max(top(c), MARE), sopra.origin.z)), c)
+			_metti(posti, "argilla", xf.call(Vector3(p.x, max(y, MARE), p.z), 1.0), c, Color(0.8, 0.42, 0.27))
 		elif ris == "pesce":
-			_metti(posti, "pesci", Transform3D(sopra.basis, Vector3(c.x, MARE - 0.08, c.y)), c)
-		elif b == "montagna" and r.randf() < 0.18:
-			_metti(posti, "roccia", sopra.scaled_local(Vector3.ONE * r.randf_range(0.7, 1.3)), c)
-		elif b == "deserto" and r.randf() < 0.06:
-			_metti(posti, "cactus", sopra.scaled_local(Vector3.ONE * r.randf_range(0.8, 1.2)), c)
-		elif b == "spiaggia" and r.randf() < 0.03:
-			_metti(posti, "roccia", sopra.scaled_local(Vector3.ONE * 0.5), c)
+			_metti(posti, "pesci", xf.call(Vector3(c.x, MARE - 0.08, c.y), 1.0), c, Color(1.0, 0.56, 0.24))
+		elif b == "montagna" and r.randf() < 0.2:
+			_metti(posti, "roccia", xf.call(p, r.randf_range(0.6, 1.2)), c, P_ROCCIA.lightened(r.randf() * 0.15))
+		elif b == "deserto" and r.randf() < 0.07:
+			_metti(posti, "cactus", xf.call(p, r.randf_range(0.8, 1.2)), c, Color(0.36, 0.58, 0.35))
+		elif b in ["spiaggia", "deserto"] and r.randf() < 0.03:
+			_metti(posti, "roccia", xf.call(p, 0.45), c, Color(0.7, 0.64, 0.56))
 	for nome in posti:
 		var mm := MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
-		mm.mesh = forme[nome] if forme.has(nome) else mesh_di(nome)
+		mm.use_colors = true
+		mm.mesh = forme[nome]
 		var lista: Array = posti[nome]
 		mm.instance_count = lista.size()
 		for i in lista.size():
 			mm.set_instance_transform(i, lista[i][0])
+			mm.set_instance_color(i, lista[i][2])
 			if not veg.has(lista[i][1]):
 				veg[lista[i][1]] = []
 			veg[lista[i][1]].append([mm, i, lista[i][0]])
 		var mmi := MultiMeshInstance3D.new()
 		mmi.multimesh = mm
+		if nome in ["fiori", "cespuglio"]:
+			mmi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		mondo.add_child(mmi)
 
-func _metti(posti: Dictionary, nome: String, xf: Transform3D, c: Vector2i):
+func _metti(posti: Dictionary, nome: String, xf: Transform3D, c: Vector2i, col := Color.WHITE):
 	if not posti.has(nome):
 		posti[nome] = []
-	posti[nome].append([xf, c])
+	posti[nome].append([xf, c, col])
 
 func _veg_visibile(c: Vector2i, si: bool):
 	for v in veg.get(c, []):
@@ -579,7 +695,7 @@ func _disegna(c: Vector2i):
 		if nome == "road-straight" and (c.x + c.y) % 6 == 0:
 			nome = "road-straight-lightposts"
 	var g := (load(M + nome + ".glb") as PackedScene).instantiate() as Node3D
-	g.position = Vector3(c.x, celle[c].y, c.y)
+	g.position = Vector3(c.x, top(c) + 0.004, c.y)
 	g.rotation.y = r * PI / 2 + GIRO.get(nome, 0.0)
 	mondo.add_child(g)
 	nodi[c] = g
@@ -614,6 +730,11 @@ func _carica_citta():
 func _camera():
 	perno.rotation_degrees = Vector3(pitch, yaw, 0)
 	cam.position = cam.position.lerp(Vector3(0, 0, zoom), 0.25)
+	if attr:   # effetto plastico (tilt-shift): nitido al centro, sfocato davanti e dietro
+		attr.dof_blur_far_distance = cam.position.z * 1.12
+		attr.dof_blur_far_transition = cam.position.z * 0.5
+		attr.dof_blur_near_distance = cam.position.z * 0.88
+		attr.dof_blur_near_transition = cam.position.z * 0.3
 
 func _process(dt):
 	var v := Vector3.ZERO
@@ -657,7 +778,7 @@ func _mira():
 	cursore.position = Vector3(c.x, top(c) + 0.02, c.y)
 	(cursore.material_override as StandardMaterial3D).albedo_color = Color(1, 1, 1, 0.45) if ok else Color(1, 0.25, 0.2, 0.45)
 	anteprima.visible = ok and STRUMENTI[strumento].id != "demolisci"
-	anteprima.position = Vector3(c.x, celle[c].y + 0.02, c.y)
+	anteprima.position = Vector3(c.x, top(c) + 0.02, c.y)
 	anteprima.rotation.y = rot * PI / 2
 
 func _unhandled_input(e):
@@ -731,6 +852,10 @@ func _demo():
 func _scatta():
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--zoomtot="): zoom *= float(a.substr(10))
+		elif a.begins_with("--centro="):
+			var cc = a.substr(9).split(",")
+			perno.position = Vector3(float(cc[0]), 0, float(cc[1]))
+		elif a.begins_with("--pitch="): pitch = float(a.substr(8))
 		elif a.begins_with("--yaw="): yaw = float(a.substr(6))
 	cam.position = Vector3(0, 0, zoom)
 	for i in 40:

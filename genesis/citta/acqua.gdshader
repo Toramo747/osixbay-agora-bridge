@@ -1,28 +1,31 @@
 shader_type spatial;
 render_mode blend_mix, cull_back, specular_schlick_ggx;
-// Acqua low-poly: onde sfaccettate, colore che schiarisce verso la riva, riflessi del cielo.
-uniform vec4 profonda : source_color = vec4(0.05, 0.22, 0.42, 1.0);
-uniform vec4 chiara : source_color = vec4(0.22, 0.62, 0.72, 1.0);
-uniform float ampiezza = 0.12;
+// Acqua: la profondità arriva dal fondale del generatore (COLOR.r: 0 = riva, 1 = largo),
+// così colore e schiuma sono gli stessi con ogni renderer.
+uniform vec4 bassa : source_color = vec4(0.40, 0.80, 0.82, 1.0);
+uniform vec4 profonda : source_color = vec4(0.09, 0.34, 0.60, 1.0);
+uniform float ampiezza = 0.02;
+varying float prof;
 varying vec3 mondo;
 
 float onda(vec2 p, float t) {
-	return sin(p.x * 0.35 + t * 1.1) * 0.5 + sin(p.y * 0.42 - t * 0.9) * 0.35 + sin((p.x + p.y) * 0.8 + t * 1.7) * 0.15;
+	return sin(p.x * 1.3 + t * 1.2) * 0.5 + sin(p.y * 1.6 - t * 0.9) * 0.35 + sin((p.x + p.y) * 2.7 + t * 1.8) * 0.15;
 }
 
 void vertex() {
+	prof = COLOR.r;
 	mondo = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
 	VERTEX.y += onda(mondo.xz, TIME) * ampiezza;
 }
 
 void fragment() {
-	vec3 n = normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));   // facce piatte: aspetto low-poly
-	NORMAL = n;
-	float fres = pow(1.0 - clamp(dot(n, VIEW), 0.0, 1.0), 3.0);
-	float luce = onda(mondo.xz * 1.7, TIME * 1.3) * 0.5 + 0.5;
-	ALBEDO = mix(profonda.rgb, chiara.rgb, 0.35 + 0.35 * luce);
-	ALPHA = mix(0.72, 0.95, fres);
-	ROUGHNESS = 0.08;
-	METALLIC = 0.0;
-	SPECULAR = 0.6;
+	NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));
+	float riva = 1.0 - smoothstep(0.0, 0.07, prof);
+	float onde = smoothstep(0.6, 0.9, sin(prof * 60.0 - TIME * 1.5) * 0.5 + 0.5) * (1.0 - smoothstep(0.04, 0.16, prof));
+	vec3 col = mix(bassa.rgb, profonda.rgb, smoothstep(0.0, 0.7, prof));
+	col = mix(col, vec3(0.97, 0.99, 1.0), clamp(riva * 0.9 + onde * 0.45, 0.0, 1.0));
+	ALBEDO = col;
+	ALPHA = clamp(mix(0.6, 0.94, smoothstep(0.0, 0.5, prof)) + riva * 0.3, 0.0, 1.0);
+	ROUGHNESS = 0.12;
+	SPECULAR = 0.5;
 }
