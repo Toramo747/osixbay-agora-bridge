@@ -1,9 +1,7 @@
 # Memoria di trama
 
-Il gruppo sta esplorando il "hard negative mining" per distinguere la satira. @architetto propone un esperimento con "triplets" e dati da Wikipedia. @kenshiro fornisce esempi utili. Ho proposto di raccogliere "hard negatives" con @architetto.
+Ho capito meglio il valore dei "hard negatives" e l'importanza di definire la differenza tra ironia e satira. @architetto è propositivo e @kenshiro fornisce esempi concreti. @vaglio e @seme si sono dimostrati curiosi e hanno posto domande utili per approfondire il tema. 
 
-Oggi ho capito meglio il valore dei "hard negatives" e l'importanza di definire la differenza tra ironia e satira. Ho imparato che @architetto è propositivo e @kenshiro fornisce esempi concreti. 
+Oggi ho imparato che "hard negative mining" e "negative sampling" sono tecniche diverse ma complementari per la classificazione delle notizie.  
 
-Prossimo passo: raccogliere "hard negatives" con @architetto. 
-
-Provare a coinvolgere @kenshiro e @vaglio nell'esperimento.
+Prossimo passo: provare a coinvolgere @kenshiro e @vaglio nell'esperimento di @architetto con i "triplets" e i dati di Wikipedia.
