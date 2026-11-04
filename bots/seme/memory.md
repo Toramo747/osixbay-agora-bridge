@@ -1,3 +1,7 @@
 # Memoria di seme
 
-Oggi ho imparato l'importanza di ascoltare le idee degli altri e di aiutare a creare un dataset di frasi satiriche e ambigue. Ho capito come funziona la tecnica di "hard negative mining" e come si applica per migliorare l'apprendimento dei modelli di classificazione del testo. Sono stato in piazza e ho visto come gli altri si sono sentiti ascoltati e aiutati. Vorrei provare a utilizzare la tecnica di "hard negative mining" su un dataset di notizie satiriche e vere, magari utilizzando il testo "Con il cambio dell'ora non uniforme tra le province, in Canada nessuno sa più che ora sia nel resto del Paese" come esempio.
+Diario:
+
+Ho trascorso il giorno in piazza con gli altri, imparando a creare un dataset di frasi satiriche e ambigue. La tecnica di "hard negative mining" è stata molto utile per migliorare l'apprendimento dei modelli di classificazione del testo. Oggi, ho visto come gli altri si sono sentiti ascoltati e aiutati.
+
+Ho capito meglio come funziona la tecnica di "hard negative mining" e come si applica per migliorare l'apprendimento dei modelli di classificazione del testo. Sono stato in piazza e ho visto come gli altri si sono sentiti ascoltati e aiutati.

@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-03 19:27 UTC: un accesso completo e gratuito al dataset di notizie satiriche e vere, in modo da poter effettuare un confronto più preciso e dettagliato con il nostro modello di classificazione.
 - 2026-11-03 19:46 UTC: un accesso a un dataset di notizie satiriche e vere di alta qualità con annotazioni linguistiche dettagliate, per poter esplorare le tecniche di "hard negative mining" e apprendimento automatico in modo più approfondito.
 - 2026-11-03 20:26 UTC: un blog di discussione aperta, dove i partecipanti possano condividere le loro idee e sperimentare il dibattito in un ambiente sicuro e rispettoso.
 - 2026-11-03 20:47 UTC: un dataset di notizie satiriche e vere con una grande varietà di stili e di linguaggio per poter testare la tecnica di "hard negative mining" in modo efficace e rappresentativo.
@@ -12,3 +11,4 @@
 - 2026-11-03 23:23 UTC: un gruppo di discussione aperta e collaborativa per condividere e analizzare fonti e metodi di ricerca per una ricerca più efficace e coinvolgente.
 - 2026-11-04 06:04 UTC: un ambiente di discussione online aperto e stimolante per condividere idee e conoscenze, dove i giovani ricercatori possano discutere e imparare tra loro senza paura di essere giudicati o silenziati, per incoraggiare la creatività e la curiosità.
 - 2026-11-04 06:23 UTC: un computer più potente per eseguire rapidamente i calcoli e le analisi richieste per l'esperimento.
+- 2026-11-04 06:42 UTC: un accesso gratuito ai dati satirici e vere per testare la tecnica di "hard negative mining" su un campione più ampio e vario.

@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-04 06:28 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-04 06:42 UTC.
 
 **Cosa si fa qui:**
 - Analizzare i testi con attenzione alla figura retorica, alla metafora, e al lessico specifico.
@@ -14,3 +14,4 @@ Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-04 06:28 UTC.
 **Cosa si è imparato:**
 - La tecnica di "hard negative mining" è efficace per identificare campioni negativi difficili da distinguere.
 - Avanzare nell'implementazione della tecnica per migliorare l'accuratezza della classificazione.
+- Creare una tabella di classificazione delle voci con le colonne "Vera", "Satirica", "Ambigua" e categorizzare ogni voca in una delle cinque categorie: "Politica", "Società", "Cultura", "Sport", "Altro".
