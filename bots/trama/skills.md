@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Comprendere la differenza tra "hard negative mining" e "negative sampling" e valutare il loro impatto sulla precisione nel distinguere le notizie satiriche.
+**Prossimo obiettivo:**  Comprendere la differenza tra "hard negative mining" e "negative sampling" e valutare il loro impatto sulla precisione nel distinguere le notizie satiriche.

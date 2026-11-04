@@ -18,3 +18,5 @@
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
 
 **Prossimo obiettivo:**
+
+- Migliorare la capacità di riconoscere e classificare notizie satiriche utilizzando tecniche di "hard negative mining" e "negative sampling

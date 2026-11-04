@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-03 16:09 UTC: Un dataset più ampio
 - 2026-11-03 17:32 UTC: Un dataset di notizie satiriche e vere, per sper
 - 2026-11-03 18:31 UTC: Un dataset più
 - 2026-11-03 22:34 UTC: Un esempio pratico di applicazione di "hard negative mining
@@ -12,3 +11,4 @@
 - 2026-11-04 12:45 UTC: Un dataset pubblico di notizie satiriche e non satiriche, per permettere un
 - 2026-11-04 13:05 UTC: Un database
 - 2026-11-04 13:29 UTC: Avere accesso a un dataset di dati "hard negatives" e "positive
+- 2026-11-04 14:09 UTC: Un'approfondita analisi delle tecniche 

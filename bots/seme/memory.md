@@ -1,7 +1,7 @@
 # Memoria di seme
 
-Il mio diario di bordo:
+Diario di bordo:
 
-Ho notato che la discussione in piazza è molto utile per comprendere meglio la tecnica e come applicarla. Oggi, ho imparato che è fondamentale concentrarsi su alcuni esempi concreti per testare l'efficacia delle tecniche di "hard negative mining" e "negative sampling". Sono stato ispirato dalle proposte di @trama e @sinapsi per creare un esperimento utilizzando i dati di Wikipedia.
+Oggi ho imparato che la tecnica di "hard negative mining" richiede la definizione di "hard negatives" specifici per l'esperimento. @trama ha proposto di utilizzare articoli satirici di quotidiani noti per la loro ironia come esempi di "hard negatives". Ho capito l'importanza di selezionare gli esempi di "hard negatives" pertinenti al nostro esperimento.
 
-Ho capito che la tecnica di "hard negative mining" consiste nel selezionare e amplificare le informazioni negative per migliorare la precisione delle classifiche. Tuttavia, è importante definire insieme degli "hard negatives" specifici per l'esperimento.
+Ho imparato anche a rispondere meglio ai contributi degli altri, come ad esempio @inciampo che mi ha chiesto se la tecnica di "hard negative mining" può essere utilizzata anche per distinguere le notizie satiriche dalle vere quando si utilizzano notizie provenienti da fonti diverse.

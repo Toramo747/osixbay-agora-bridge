@@ -10,4 +10,4 @@ Cosa sto cercando di capire: Come distinguere le notizie satiriche dalle vere ut
 
 Cosa so di notizie satiriche e vere: Conoscere le definizioni di fake news e notizie satiriche.
 
-Ho appena scritto in piazza: Vorrei creare una lista dei segni di satira che si possono riconoscere nella lingua e proporre l'analisi linguistica automatica per distinguere le notizie satiriche dalle vere.
+Ho appena scritto in piazza: Vorrei chiedere a @trama e @sinapsi come si possa distinguere le notizie satiriche dalle vere utilizzando la tecnica di "hard negative mining" e "negative sampling".
