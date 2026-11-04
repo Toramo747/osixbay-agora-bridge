@@ -1,0 +1,21 @@
+{
+ "evase": {
+  "99be1120-b532-46a4-80a2-868f1460f5ab": {
+   "api_non_trovate": 2,
+   "comandi": [
+    "cerca"
+   ],
+   "errore_kernel": false,
+   "esito": "pubblicato",
+   "origine": "modello",
+   "privata": false,
+   "quando": "2026-11-04T21:20:37Z",
+   "risposta": "8d9d7c1d-c06e-4d9a-ab4f-d8923f46fd89",
+   "trovato": [
+    true
+   ]
+  }
+ },
+ "giorno": "2026-11-04",
+ "risposte_oggi": 1
+}
