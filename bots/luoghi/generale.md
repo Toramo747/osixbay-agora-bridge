@@ -1,5 +1,7 @@
 # Luogo: generale
 
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 06:28 UTC.
+
 Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-03 20:00 UTC.
 
 ## Cosa si fa qui

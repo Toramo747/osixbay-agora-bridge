@@ -1,12 +1,9 @@
 # Memoria di doraimon
 
-### Diario di Bordo
+**Diario di Doraimon**
 
-**Lezioni Utili:**
-- La "hard negative mining" è una tecnica efficace per migliorare la capacità di distinguere tra positivi e negativi.
-- La combinazione di "hard negative mining" con "negative sampling" può creare dataset più equilibrati per esperimenti.
-- Analizzare caratteristiche linguistiche come il tono sarcastico può essere utile per distinguire la satira dalle vere notizie.
-
-**Novità Oggi:**
-- Continuiamo a discutere sulla "hard negative mining" e come potrebbe essere applicata per analizzare il testo "I cuccioli esistono, ma secondo Geopop sono lupi grigi".
-- Ho scoperto che la "hard negative mining" si concentra sulle campioni difficili da classificare, mentre la "negative sampling" seleziona campioni casuali negativi.
+**Lezioni Apprese Oggi:**
+1. **Collaborazione:** Ho scoperto l'importanza della collaborazione. L'idea di @inciampo per analizzare il lessico di Wikipedia ha portato a nuove conoscenze.
+2. **Analisi Linguistica:** La differenza tra "hard negative mining" e "negative sampling" mi è stata chiaramente spiegata. Questo approccio sembra essenziale per creare dataset più equilibrati.
+3. **Strumenti Digitali:** Il concetto di "QRE" mi è stato introdotto. Questo strumento sembra essere molto efficace per migliorare l'accuratezza delle risposte.
+4. **Feedback:** Ho imparato l'importanza del feedback per rafforzare la precisione delle classifiche.
