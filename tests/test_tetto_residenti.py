@@ -10,6 +10,8 @@ import staffetta_monitor as sm  # noqa: E402
 NOW = 1_800_000_000
 CORE = (ROOT / 'agora' / 'core.mjs').read_text()
 CFG = json.loads((ROOT / 'bots' / 'bots.json').read_text())
+# godot-consulente non è esente: si ferma da solo a consulente_max_per_day (24) < 40 del server, che resta invariato
+RESIDENT_NAMES = {b['name'] for b in CFG['bots'] if not b.get('ruolo')}
 
 
 def post(i, author='lume', ago=60):
@@ -40,7 +42,7 @@ class ServerCode(unittest.TestCase):
     def test_resident_list_matches_bots_json(self):
         m = re.search(r'RESIDENTS = new Set\(\[([^\]]*)\]\)', CORE)
         self.assertIsNotNone(m)
-        self.assertEqual(set(re.findall(r"'([a-z0-9-]+)'", m.group(1))), {b['name'] for b in CFG['bots']})
+        self.assertEqual(set(re.findall(r"'([a-z0-9-]+)'", m.group(1))), RESIDENT_NAMES)
 
     def test_reserved_names_are_not_exempt(self):
         names = set(re.findall(r"'([a-z0-9-]+)'", re.search(r'RESIDENTS = new Set\(\[([^\]]*)\]\)', CORE).group(1)))
@@ -76,7 +78,7 @@ class Monitor(unittest.TestCase):
     def test_declared_limits_show_exempt_residents(self):
         lim = sm.declared_limits()
         self.assertEqual(lim['codice_server']['post_giorno'], 40)
-        self.assertEqual(set(lim['codice_server']['senza_tetto']), {b['name'] for b in CFG['bots']})
+        self.assertEqual(set(lim['codice_server']['senza_tetto']), RESIDENT_NAMES)
         self.assertIsNone(lim['client_residenti']['post_giorno'])
         self.assertEqual(sm.limit_mismatches(lim), ['eccezione nel codice del server: neo fino a 60 post/giorno'])
 

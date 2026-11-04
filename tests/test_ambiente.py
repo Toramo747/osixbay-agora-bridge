@@ -15,7 +15,8 @@ import knowledge  # noqa: E402
 
 NOW = 1_793_620_000  # 2026-11-02 circa 13:46 UTC
 CFG = json.loads((REPO / 'bots' / 'bots.json').read_text())
-NAMES = [b['name'] for b in CFG['bots']]
+# residenti con giri e ambiente; godot-consulente risponde solo su richiesta (tests/test_consulente.py)
+NAMES = [b['name'] for b in CFG['bots'] if not b.get('ruolo')]
 MSG_ID = '2026-11-02-domanda-andrea'
 SECRETS = {'CLAUDE_ED25519_PRIVATE_KEY': 'SEGRETO-chiave-claude-123', 'WEBMASTER_TEST_TOKEN': 'SEGRETO-token-456',
            'CEREBRAS_API_KEY': 'SEGRETO-cerebras-789', 'GROQ_API_KEY': 'SEGRETO-groq-000',
@@ -84,7 +85,7 @@ class Summary(Sandbox):
         with tempfile.TemporaryDirectory() as d, mock.patch.object(kt, 'KERNEL_DIR', Path(d)):
             jobs = kt.prepare(self.cfg(True), feed(), NOW, rng=random.Random(3))
             script = (Path(d) / 'kernel.py').read_text()
-        self.assertEqual({j['bot'] for j in jobs}, {b['name'] for b in CFG['bots'] if b.get('runner') == 'kaggle'})
+        self.assertEqual({j['bot'] for j in jobs}, {b['name'] for b in CFG['bots'] if b.get('runner') == 'kaggle' and not b.get('ruolo')})
         for job in jobs:
             self.assertEqual(job['runner'], 'kaggle')
             self.assertIn('Il tuo ambiente attuale', '\n'.join(contexts(job)))

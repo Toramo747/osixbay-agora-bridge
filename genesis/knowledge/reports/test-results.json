@@ -1,12 +1,12 @@
 {
   "godot_version": "4.6.3-stable",
-  "eseguito_il": "2026-11-04T08:53:07+00:00",
+  "eseguito_il": "2026-11-04T08:58:03+00:00",
   "superati": 52,
   "falliti": 0,
   "totale": 52,
   "negativi": 12,
-  "tempo_mediano_ms": 1.2,
-  "tempo_max_ms": 188.6,
+  "tempo_mediano_ms": 1.4,
+  "tempo_max_ms": 194.7,
   "risultati": [
     {
       "id": "gd01",
@@ -19,7 +19,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/scripting/gdscript/static_typing.html",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 4.8
+      "tempo_ms": 4.4
     },
     {
       "id": "gd02",
@@ -32,7 +32,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_@gdscript.html#class-gdscript-annotation-export-range",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.2
+      "tempo_ms": 1.5
     },
     {
       "id": "gd03",
@@ -45,7 +45,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/scripting/gdscript/gdscript_basics.html#awaiting-signals-or-coroutines",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 3.2
+      "tempo_ms": 2.7
     },
     {
       "id": "gd04",
@@ -58,7 +58,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_@gdscript.html#class-gdscript-annotation-onready",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 4.0
+      "tempo_ms": 1.0
     },
     {
       "id": "gd05",
@@ -71,7 +71,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/scripting/gdscript/gdscript_basics.html#lambda-functions",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 4.5
+      "tempo_ms": 2.7
     },
     {
       "id": "gd06",
@@ -84,7 +84,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_callable.html",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 0.6
+      "tempo_ms": 0.4
     },
     {
       "id": "api01",
@@ -175,7 +175,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/math/random_number_generation.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 1.8
+      "tempo_ms": 1.6
     },
     {
       "id": "map02",
@@ -188,7 +188,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/2d/using_tilesets.html#creating-terrain-sets-autotiling",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 8.9
+      "tempo_ms": 8.6
     },
     {
       "id": "map03",
@@ -201,7 +201,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_tilemaplayer.html#class-tilemaplayer-method-set-cell",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.3
+      "tempo_ms": 1.2
     },
     {
       "id": "map04",
@@ -214,7 +214,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/math/random_number_generation.html#random-noise",
       "livello_verifica": "eseguito",
       "versione_compatibile": true,
-      "tempo_ms": 1.1
+      "tempo_ms": 1.0
     },
     {
       "id": "map05",
@@ -227,7 +227,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_noise.html#class-noise-method-get-noise-2d",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.1
+      "tempo_ms": 1.2
     },
     {
       "id": "nav01",
@@ -240,7 +240,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/navigation/navigation_introduction_2d.html#setup-for-2d-scene",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 2.0
+      "tempo_ms": 1.8
     },
     {
       "id": "nav02",
@@ -253,7 +253,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_astargrid2d.html#class-astargrid2d-method-get-id-path",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.1
+      "tempo_ms": 1.2
     },
     {
       "id": "nav03",
@@ -279,7 +279,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/physics/physics_introduction.html#ref-move-and-slide-class-characterbody2d-method-move-and-slide",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 2.3
+      "tempo_ms": 2.0
     },
     {
       "id": "nav05",
@@ -305,7 +305,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/io/saving_games.html#json-vs-binary-serialization",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 2.8
+      "tempo_ms": 2.7
     },
     {
       "id": "per02",
@@ -318,7 +318,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_fileaccess.html#class-fileaccess-method-open",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.1
+      "tempo_ms": 1.2
     },
     {
       "id": "per03",
@@ -344,7 +344,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/io/data_paths.html#accessing-persistent-user-data-user",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 2.2
+      "tempo_ms": 2.1
     },
     {
       "id": "net01",
@@ -357,7 +357,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html#remote-procedure-calls",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 1.2
+      "tempo_ms": 1.7
     },
     {
       "id": "net02",
@@ -370,7 +370,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_enetmultiplayerpeer.html#class-enetmultiplayerpeer-method-create-server",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.0
+      "tempo_ms": 1.7
     },
     {
       "id": "net03",
@@ -383,7 +383,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/classes/class_@gdscript.html#class-gdscript-annotation-rpc",
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.0
+      "tempo_ms": 1.4
     },
     {
       "id": "net04",
@@ -396,7 +396,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/export/exporting_for_dedicated_servers.html",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 1.3
+      "tempo_ms": 1.5
     },
     {
       "id": "opt01",
@@ -409,7 +409,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/performance/using_servers.html#getting-data-from-the-servers",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 1.0
+      "tempo_ms": 1.4
     },
     {
       "id": "opt02",
@@ -435,7 +435,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/editor/command_line_tutorial.html#exporting",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 1.3
+      "tempo_ms": 1.7
     },
     {
       "id": "opt04",
@@ -448,7 +448,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/performance/optimizing_3d_performance.html#use-manual-instancing-multimesh",
       "livello_verifica": "documentazione",
       "versione_compatibile": true,
-      "tempo_ms": 1.4
+      "tempo_ms": 2.1
     },
     {
       "id": "gen01",
@@ -461,7 +461,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/best_practices/data_preferences.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 0.8
+      "tempo_ms": 0.9
     },
     {
       "id": "gen02",
@@ -474,7 +474,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 2.2
+      "tempo_ms": 2.6
     },
     {
       "id": "gen03",
@@ -487,7 +487,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/performance/using_servers.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 3.6
+      "tempo_ms": 4.2
     },
     {
       "id": "gen04",
@@ -500,7 +500,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/2d/using_tilemaps.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 2.5
+      "tempo_ms": 3.2
     },
     {
       "id": "gen05",
@@ -513,7 +513,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/getting_started/step_by_step/signals.html",
       "livello_verifica": "catalogo",
       "versione_compatibile": true,
-      "tempo_ms": 0.5
+      "tempo_ms": 0.6
     },
     {
       "id": "gen06",
@@ -526,7 +526,7 @@
       "fonte": null,
       "livello_verifica": "parsing",
       "versione_compatibile": true,
-      "tempo_ms": 188.6
+      "tempo_ms": 194.7
     },
     {
       "id": "neg01",
@@ -539,7 +539,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 2.3
+      "tempo_ms": 3.1
     },
     {
       "id": "neg02",
@@ -552,7 +552,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 42.0
+      "tempo_ms": 50.2
     },
     {
       "id": "neg03",
@@ -565,7 +565,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 27.6
+      "tempo_ms": 30.8
     },
     {
       "id": "neg04",
@@ -617,7 +617,7 @@
       "fonte": null,
       "livello_verifica": "api",
       "versione_compatibile": true,
-      "tempo_ms": 1.4
+      "tempo_ms": 1.9
     },
     {
       "id": "neg08",
@@ -630,7 +630,7 @@
       "fonte": "https://docs.godotengine.org/en/4.6/tutorials/migrating/upgrading_to_godot_4.html",
       "livello_verifica": "parsing",
       "versione_compatibile": true,
-      "tempo_ms": 160.2
+      "tempo_ms": 181.0
     },
     {
       "id": "neg09",
@@ -643,7 +643,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 0.4
+      "tempo_ms": 0.5
     },
     {
       "id": "neg10",
@@ -656,7 +656,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 0.2
+      "tempo_ms": 0.3
     },
     {
       "id": "neg11",
@@ -669,7 +669,7 @@
       "fonte": null,
       "livello_verifica": "non_trovato",
       "versione_compatibile": true,
-      "tempo_ms": 1.3
+      "tempo_ms": 1.6
     },
     {
       "id": "neg12",

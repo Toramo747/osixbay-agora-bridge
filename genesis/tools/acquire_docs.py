@@ -83,6 +83,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument('--offline', action='store_true', help='usa solo la cache esistente')
     ap.add_argument('--with-godot', action='store_true', help='scarica e verifica anche il binario Godot')
+    ap.add_argument('--no-write', action='store_true', help='verifica soltanto: non riscrive manifest.json e files.sha256 '
+                    '(per i runner, così i file versionati non cambiano)')
     a = ap.parse_args(argv)
     cfg = lock()
     previous = {}
@@ -118,8 +120,9 @@ def main(argv=None):
     changes = {'aggiunti': sorted(set(current) - set(previous)), 'rimossi': sorted(set(previous) - set(current)),
                'modificati': sorted(k for k in current if k in previous and previous[k] != current[k])}
     manifest['ultima_variazione'] = {k: len(v) for k, v in changes.items()}
-    sums.write_text('\n'.join(lines) + '\n')
-    dump_json(MANIFEST, manifest)
+    if not a.no_write:
+        sums.write_text('\n'.join(lines) + '\n')
+        dump_json(MANIFEST, manifest)
     for s in manifest['sources']:
         print(f"{s['id']}: {s['file']} file, {s['byte']} byte, sha256 {s['contenuto_sha256'][:16]}…")
     print('variazioni rispetto alla volta precedente:', manifest['ultima_variazione'])

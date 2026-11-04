@@ -1,4 +1,4 @@
-"""Percorsi e utilità condivise della biblioteca genesis-godot. Solo libreria standard."""
+"""Percorsi e utilità condivise della biblioteca Godot di Genesis. Solo libreria standard."""
 import json, re
 from pathlib import Path
 

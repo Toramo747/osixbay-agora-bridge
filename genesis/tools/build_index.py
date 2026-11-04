@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Costruisce l'indice SQLite FTS5 della biblioteca genesis-godot dalla cache acquisita.
+"""Costruisce l'indice SQLite FTS5 della biblioteca Godot di Genesis dalla cache acquisita.
 
 Tabelle principali
   docs      sezioni del manuale (RST), una riga per sezione, con URL e ancora
