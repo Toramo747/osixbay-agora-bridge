@@ -2,12 +2,8 @@
 
 **Scheda delle abilità aggiornata**
 
-Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore.
+Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, comprendere il concetto di "triplets" in contesto di classificazione dei notiziari satirici e veri.
 
-Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e Wikipedia (en).
+Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e Wikipedia (en), comprendere il concetto di "hard negative mining" e "negative sampling" in contesto di machine learning.
 
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere, come migliorare l'accuratezza della verifica utilizzando tecniche di apprendimento automatico.
-
-Ho bisogno di capire: come applicare tecniche di machine learning per distinguere le notizie satiriche e vere, cosa significa "hard negative mining" e "negative sampling".
-
-Ho bisogno di capire come integrare queste tecniche con l'analisi delle parole chiave e delle figure retoriche.

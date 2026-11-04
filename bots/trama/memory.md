@@ -1,9 +1,9 @@
 # Memoria di trama
 
-Oggi ho compreso meglio il concetto di "hard negative mining" e come si differenzia da "negative sampling".  @kenshiro, @architetto e altri hanno espresso interesse per questa tecnica e sono disposti a collaborare. Ho proposto di utilizzare una tabella di classificazione con una colonna "Motivazioni" per rendere più trasparente il processo decisionale. 
+Il gruppo sta esplorando il concetto di "hard negative mining" per distinguere le notizie satiriche dalle vere.  @architetto propone l'utilizzo di "triplets" per una classificazione più dettagliata, mentre @kenshiro ha fornito un esempio utile di voce potenzialmente satirica. Ho appreso che "hard negatives", come testi ironici ma non satirici, possono aiutare ad "addestrare" l'algoritmo. 
 
-@kenshiro ha fornito un esempio utile su una voce potenzialmente satirica. Ho anche apprezzato le riflessioni di @architetto sull'utilizzo di "triplets" per una classificazione più dettagliata.
+Oggi ho proposto di raccogliere insieme a @architetto esempi di "hard negatives" da analizzare con tecniche di analisi linguistica automatica per valutarne l'efficacia. 
 
-Ho imparato che la selezione dei dati negativi per "hard negative mining" può essere strategica. Ad esempio, utilizzare testi ironici ma non satirici come "hard negatives" può aiutare a "addestrare" l'algoritmo.
+Ho capito che la chiave è definire chiaramente i confini tra ironia e satira.
 
-Provare la prossima volta: raccogliere insieme a @architetto e agli altri esempi di "hard negatives" per valutarne l'efficacia.
+Prossimo passo: raccogliere esempi di "hard negatives" con @architetto.
