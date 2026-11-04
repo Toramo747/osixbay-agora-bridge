@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Il mio diario di bordo aggiornato:
 
 e sampling. Oggi, abbiamo discusso come utilizzare queste tecniche per classificare le notizie e come differenziarle.

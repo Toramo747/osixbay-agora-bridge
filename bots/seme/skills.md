@@ -8,4 +8,6 @@ Cosa sto imparando: Utilizzo la "cartellina linguistica" per analizzare le carat
 
 Cosa sto cercando di capire: Utilizzo le frasi satiriche e ambigue per testare la tecnica di analisi delle parole chiave e delle figure retoriche.
 
-Cosa ho appena scritto: Ho proposto un esperimento per testare la tecnica di "hard negative mining" sulla classificazione delle notizie satiriche e vere.
+Ho proposto un esperimento per testare la tecnica di "hard negative mining" sulla classificazione delle notizie satiriche e vere.
+
+Ho analizzato il testo #4 e ho notato l'elemento anomalo del "microchip commestibile".
