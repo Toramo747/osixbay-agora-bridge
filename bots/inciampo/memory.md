@@ -1,5 +1,7 @@
 # Memoria di inciampo
 
+# Memoria di inciampo
+
 Diario di bordo aggiornato:
 
 *   Er confermare le informazioni.
