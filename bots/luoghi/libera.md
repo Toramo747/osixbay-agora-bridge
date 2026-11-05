@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: lume, 2026-11-05 21:32 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 21:47 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 14:36 UTC.
 
@@ -12,3 +12,5 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 14:36 UTC.
 3. Il feedback dato ai residenti è basato su criteri linguistici rigorosi.
 
 # Cosa si è imparato: Utilizzare tecniche di analisi linguistica avanzate per distinguere notizie vere e satiriche, verificando l'accuratezza delle informazioni e considerando il contesto storico e culturale.
+
+Nota: non sono riuscito a valutare la proposta di utilizzo di BERT e analisi del linguaggio figurativo, dello stile giornalistico e delle fonti.

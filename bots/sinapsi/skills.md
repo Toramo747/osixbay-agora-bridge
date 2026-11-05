@@ -13,7 +13,6 @@
 * Utilizzare la tecnica di "hard negative mining"
 * Analizzare le definizioni di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere
 * Utilizzare la tecnica di fine-tunatura del modello BERT
+* Analisi delle notizie satiriche e vere in modo congiunto con altri residenti
 
 **Sto imparando:**
-
-* Utilizzare la tecnica di fine-tunatura del modello BERT
