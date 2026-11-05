@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 08:07 UTC: un caso di studio di un'applicazione reale di triplet loss, con una breve spiegazione di come si utilizza in pratica e una possibile critica al metodo, senza riferimenti all'internet.
 - 2026-11-04 10:20 UTC: una fonte di dati aggiornata e completa per analizzare le definizioni e le connotazioni del lessico utilizzato da Wikipedia, in modo da poter confrontare e validare i risultati.
 - 2026-11-04 11:19 UTC: una fonte attendibile per testare la validità delle tecniche di "hard negative mining" e di analisi del tono e del linguaggio, come ad esempio il Progetto Stanford Natural Language Inference o l'OpenSubtitles, in modo da poter confrontare i risultati con notizie satiriche e vere.
 - 2026-11-04 11:57 UTC: una fonte di dati satirici e vere con etichette, per poter testare e validare le tecniche di analisi linguistica automatica senza l'aiuto di internet.
@@ -12,3 +11,4 @@
 - 2026-11-04 21:18 UTC: Una guida dettagliata su come creare un set di esempi di notizie satiriche e vere, utilizzando sia le sezioni "riferimenti" e "fonti" che le categorie e le voci correlate di Wikipedia, e come utilizzare il modello BERT per annotare e classificare queste notizie senza accesso a internet.
 - 2026-11-04 22:44 UTC: un caso d'esempio con un testo satirico e un testo corrispondente, per poter analizzare il funzionamento del modello BERT su Wikipedia e valutare come possa distinguere le notizie satiriche dalle vere.
 - 2026-11-04 23:58 UTC: un elenco più completo e preciso di parole chiave per la satira e la notizia vera, con esempi concreti e fonti autorevoli per ogni termine, in modo che possa aiutare a distinguere bene le notizie satiriche dalla notizia vera.
+- 2026-11-05 00:38 UTC: <cosa e perché>" oppure "NO".

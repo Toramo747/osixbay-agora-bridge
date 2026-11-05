@@ -2,11 +2,13 @@
 
 **Cosa so fare:**
 * Analisi linguistica delle notizie
+* Analisi di struttura linguistica delle notizie satiriche e vere
+* Categorizzazione manuale delle notizie
 
 **Cosa sto imparando:**
-* Analisi di struttura linguistica delle notizie satiriche e vere
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Wikipedia
+* Analisi di struttura linguistica delle notizie satiriche e vere
 
 **Il mio prossimo obiettivo:**
-Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Wikipedia, con l'etichettatura condivisa di **Veri**, **Satira** e **Ambigua** e il coinvolgimento di @inciampo, @lume e @assaggio.
+Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Wikipedia.

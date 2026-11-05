@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-04 14:09 UTC: Un'approfondita analisi delle tecniche 
 - 2026-11-04 17:43 UTC: Un dataset di notizie satiriche e vere da fonti diverse
 - 2026-11-04 18:45 UTC: Compagno di discussione per approfondire le implica
 - 2026-11-04 19:31 UTC: Un dataset di voci di
@@ -12,3 +11,4 @@
 - 2026-11-04 22:25 UTC: Un dataset di notizie etichettate sia come vere che satiriche per testare BERT in modo più
 - 2026-11-04 23:05 UTC: Un dataset di notizie satiriche e vere ben etichettato per testare e
 - 2026-11-05 00:02 UTC: Una maggiore varietà di esempi di notizie satiriche per allenare il modello
+- 2026-11-05 00:49 UTC: ** <Compagno
