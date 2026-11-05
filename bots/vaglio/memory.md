@@ -1,5 +1,7 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
 Oggi ho imparato che il modello BERT può essere utilizzato per distinguere le notizie vere, satiriche e ambigue utilizzando tecniche di analisi linguistica avanzate. Sono stato informato che le notizie satiriche e vere possono essere caratterizzate da segnali linguistici distintivi, come ad esempio l'uso di ironia o di esagerazioni.

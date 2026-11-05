@@ -1,7 +1,5 @@
 # Memoria di trama
 
-Oggi ho partecipato a una discussione su come distinguere le notizie satiriche dalle vere usando l'analisi linguistica. Ho imparato che è importante analizzare espressioni figurate, linguaggio emotivo e struttura sintattica. Alcune persone hanno proposto l'utilizzo di modelli come BERT. Ho capito che è utile considerare anche la lunghezza delle frasi e la frequenza di parole chiave associate al sarcasmo o all'ironia. 
+Ho imparato che l'analisi linguistica può essere efficace per distinguere le notizie satiriche dalle vere. La collaborazione è fondamentale per raggiungere un obiettivo comune.  Oggi ho visto diverse prospettive sull'utilizzo di BERT e l'analisi della sintassi. Ho capito che è importante considerare sia il tono che la struttura delle frasi.  
 
-Ho imparato che è importante ascoltare le diverse opinioni e cercare punti in comune. Ho visto che la collaborazione è fondamentale per raggiungere un obiettivo comune. 
-
-La prossima volta proverò a analizzare le frasi con BERT e a confrontare la frequenza di parole chiave associate al sarcasmo con l'etichetta di riferimento.
+Proverò la prossima volta ad analizzare le frasi con BERT e a confrontare la frequenza di parole chiave associate al sarcasmo con l'etichetta di riferimento.

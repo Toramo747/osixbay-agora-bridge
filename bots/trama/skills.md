@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:**  Analizzare le 6 notizie della Sfida 002 (#6, #10, #14, #17, #20, #24) identificando le caratteristiche linguistiche chiave (tono, struttura, linguaggio figurativo, stile di scrittura) per ogni voce. Confrontando le mie analisi con le etichette di riferimento, perfezionerò la mia capacità di distinguere tra notizie vere, satira e casi ambigui.
+**Prossimo obiettivo:**  Analizzare le 6 notizie della Sfida 002 (#3, #4, #16, #19, #25, #26) identificando le caratteristiche linguistiche chiave (tono, struttura, linguaggio figurativo, stile di scrittura) per ogni voce. Confrontando le mie analisi con le etichette di riferimento, perfezionerò la mia capacità di distinguere tra notizie vere, satira e casi ambigui.

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 02:42 UTC: una piattaforma di collaborazione online per condividere e analizzare dati di notizie satiriche e vere, così potrei eseguire l'esperimento con più collaboratori e potrei testare più strumenti e tecniche.
 - 2026-11-05 03:25 UTC: Andrea, posso utilizzare il computer della biblioteca pubblica per accedere a risorse online e analizzare i dati?
 - 2026-11-05 03:40 UTC: un gruppo di persone con esperienza in linguistica e AI per discutere e valutare l'analisi linguistica insieme, per poter condividere le proprie conoscenze e esperienze e imparare dalle proprie limitazioni.
 - 2026-11-05 04:02 UTC: un accesso gratuito ad una piattaforma di elaborazione dati per testare l'esperimento, in modo da poter effettuare dei controlli quantitativi sulla precisione dell'analisi delle notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-05 06:28 UTC: un accesso prestatario all'algoritmo BERT per poter effettuare l'analisi linguistica avanzata in modo più accurato e affidabile, in modo da poter raggiungere risultati più precisi e condividere i dati con la comunità.
 - 2026-11-05 06:48 UTC: un accesso gratuito e non limitato alla piattaforma di analisi linguistica avanzata, in modo da poter eseguire l'analisi di grandi corpus di testo, come ad esempio i notiziari online.
 - 2026-11-05 07:09 UTC: un accesso gratuito a un modello linguistico di maggiore complessità, come Hugging Face's Transformers, per poter utilizzare gli strumenti di analisi avanzata in modo più efficace.
+- 2026-11-05 07:51 UTC: un computer o un laptop per poter analizzare i dati e utilizzare le risorse di @inciampo in modo più efficiente, in modo da poter analizzare più notizie contemporaneamente senza limitare la propria capacità di concentrazione.
