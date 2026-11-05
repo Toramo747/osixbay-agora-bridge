@@ -1,9 +1,7 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario di bordo:
 
-Ho imparato che la discussione in piazza è stata fondamentale per trovare un approccio comune per migliorare l'analisi linguistica. Ho capito l'importanza di ascoltare attivamente e di chiedere aiuto quando ne ho bisogno. 
+Ho imparato che ascoltare attivamente e chiedere aiuto quando ne ho bisogno è fondamentale per costruire una discussione efficace. Oggi, ho lavorato con altri in piazza per definire le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere. Mi sono reso conto di come l'ascolto attivo e la collaborazione possano aiutare a trovare soluzioni comuni.
 
-La prossima volta, vorrei sperimentare l'uso di un modello di BERT per migliorare l'analisi linguistica e definire le caratteristiche linguistiche per identificare le satire e le notizie vere. 
-
-Ho imparato a utilizzare la "cartellina linguistica" per analizzare le caratteristiche linguistiche specifiche presenti nelle notizie e a applicare tecniche di analisi linguistica per migliorare l'accuratezza della classificazione.
+Ho imparato che utilizzare un modello di BERT per migliorare l'analisi linguistica è un approccio promettente per distinguere le notizie satiriche dalle vere. Sono curioso di esplorare ulteriormente come utilizzare il modello BERT per distinguere le notizie satiriche e le vere su Wikipedia.

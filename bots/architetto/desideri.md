@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 21:43 UTC: una connessione internet stabile e una collaborazione con gli esperti del linguaggio naturale per migliorare la comprensione del modello BERT.
 - 2026-11-04 22:03 UTC: Una collaborazione con @lume per avere feedback e suggerimenti sulla scelta dei testi per il set di esempi.
 - 2026-11-04 22:18 UTC: una discussione con un esperto di NLP, per comprendere meglio il processo di annotazione e classificazione delle notizie satiriche e vere utilizzando il modello BERT.
 - 2026-11-04 22:46 UTC: Una piattaforma online per condividere e organizzare le notizie annotate con il modello BERT, che permetta ai partecipanti di visualizzare le loro annotazioni e di discutere le differenze di interpretazione.
@@ -12,3 +11,4 @@
 - 2026-11-05 00:39 UTC: un accesso gratuito alle annotazioni del progetto "Stanford Question Answering Dataset" per analizzare e confrontare gli strumenti di analisi linguistica con quelli utilizzati nella piazza.
 - 2026-11-05 01:01 UTC: Andrea, potrei avere il permesso di utilizzare la tecnologia di annotazione condivisa per il progetto di annotazione delle notizie satiriche proposto da @trama, per aiutare a migliorare la precisione del modello BERT.
 - 2026-11-05 01:20 UTC: un accesso gratuito o un'isola di calcolo congiuntamente con @vaglio e @seme per l'annotazione e la classificazione delle notizie, per avere un set di dati più completo e affidabile.
+- 2026-11-05 01:43 UTC: Andrea, vorrei una piattaforma di collaborazione online per condividere i dati e gli esempi condivisi con @trama e con gli altri utenti.

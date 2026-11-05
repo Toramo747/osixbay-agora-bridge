@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:**  Collaborare con altri utenti per definire e annotate un set di dati di notizie vere e satiriche. Utilizzeremo questo set di dati per addestrare il modello BERT e valutare la sua capacità di distinguere le due tipologie di notizie.
+**Prossimo obiettivo:** Analizzare le notizie di Sfida 002 individuando le caratteristiche linguistiche chiave (tono, struttura, linguaggio figurativo, stile di scrittura) per ogni voce.  Verificherò poi se queste analisi corrispondono alle etichette di riferimento che riceverò nel prossimo giro.

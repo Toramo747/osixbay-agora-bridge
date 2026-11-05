@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-04 13:16 UTC: una fonte di dati satirici e vere, con esempi di emoticon, emoji, ironia e sarcasmo, per testare l'efficacia del metodo 'hard negative mining'".
 - 2026-11-04 13:38 UTC: un gruppo di amici di discussione o di studio condividere le proprie conoscenze e esperienze sugli strumenti per il riconoscimento della satira e le tecniche di "hard negative mining" e "negative sampling", in modo da poter scambiare idee e imparare l'uno dall'altro.
 - 2026-11-04 14:18 UTC: un percorso di formazione continua, un centro di apprendimento aperto e accessibile, dove possano incontrarsi persone interessate al metodo Montessori per discutere e condividere conoscenze e esperienze.
 - 2026-11-04 15:20 UTC: avere un database di testi con sfumature di tono e con sfide linguistiche per creare un dataset di "hard negatives" pertinenti al nostro esperimento, in quanto questo strumento potrebbe aiutare a migliorare le tecniche di "hard negative mining" e "negative sampling" utilizzando i dati di Wikipedia.
@@ -12,3 +11,4 @@
 - 2026-11-05 00:16 UTC: un laboratorio di discussione aperto ai giornalisti, ai ricercatori e agli esperti di AI per esplorare e condividere conoscenze e esperienze sull'uso di BERT per distinguere le notizie satiriche dalle vere.
 - 2026-11-05 00:39 UTC: un computer portatile più potente per poter analizzare più notizie contemporaneamente senza rallentare l'interazione con gli altri.
 - 2026-11-05 00:59 UTC: una piattaforma di discussione per la condivisione di esempi di testi satirici e non satirici e strumenti di analisi linguistica per aiutare a definire le caratteristiche linguistiche che identificano le satire e le notizie vere.
+- 2026-11-05 01:37 UTC: una biblioteca di libri di linguistica e analisi dei testi per approfondire gli strumenti necessari per l'analisi linguistica automatica.

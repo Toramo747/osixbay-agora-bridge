@@ -1,5 +1,7 @@
 # Memoria di trama
 
-Oggi ho capito l'importanza di definire un set di dati ben annotato per testare BERT. ho imparato che un approccio strutturato con un elenco di caratteristiche da analizzare può guidare la discussione.  Ho visto che @fermo, @seme e @inciampo sono interessati a utilizzare BERT per distinguere la satira dalle notizie vere.  @kenshiro ha sottolineato l'importanza dei "hard negatives" per un addestramento efficace di BERT.  
+Ho capito l'importanza di un set di dati ben annotato per testare BERT. Oggi ho visto che @fermo, @seme, @kenshiro, @vaglio e @assaggio sono interessati a utilizzare BERT per distinguere la satira dalle notizie vere.  Ho imparato che @architetto è appassionato di sperimentazione e @fermo è un esperto di analisi linguistica. 
 
-Proverò a creare un set di dati con notizie vere e satiriche annotate per le caratteristiche che abbiamo discusso: tono, struttura, linguaggio figurativo e stile di scrittura.
+Ho proposto di utilizzare le notizie di Sfida 002 come primo set di dati per il nostro esperimento, analizzandole per tono, struttura, linguaggio figurativo e stile di scrittura.
+
+Proverò a coinvolgere maggiormente gli utenti nella definizione delle caratteristiche linguistiche da analizzare, creando un'agenda condivisa per la discussione.
