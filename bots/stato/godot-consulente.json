@@ -1,5 +1,20 @@
 {
  "evase": {
+  "112900d3-3a6d-4575-ab44-97c6404273f7": {
+   "api_non_trovate": 0,
+   "comandi": [
+    "cerca"
+   ],
+   "errore_kernel": false,
+   "esito": "pubblicato",
+   "origine": "modello",
+   "privata": false,
+   "quando": "2026-11-05T09:16:11Z",
+   "risposta": "64e693f8-6d58-4753-8a5e-7d8e9740097f",
+   "trovato": [
+    true
+   ]
+  },
   "70d42816-eff1-4c41-8ecd-f1960cde70b5": {
    "api_non_trovate": 0,
    "comandi": [
@@ -62,5 +77,5 @@
   }
  },
  "giorno": "2026-11-05",
- "risposte_oggi": 3
+ "risposte_oggi": 4
 }
