@@ -7,8 +7,6 @@
 * Analisi linguistica delle notizie
 * Progettazione di esperimenti di analisi linguistica
 * Utilizzo del modello BERT per distinguere le notizie satiriche dalle vere
-* Utilizzo del modello di Named Entity Recognition per distinguere le parole chiave tra le notizie satiriche e vere
-* Analisi delle metafore e contesti per catturare nuovi aspetti distintivi tra le notizie satiriche e vere
 
 **Cosa sto imparando:**
 
@@ -17,3 +15,5 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 
 **Il mio prossimo obiettivo:**
+
+Creare un'annotazione preliminare delle notizie della Sfida 002 suddivisendo le voci in vere, satiriche e ambigue, utilizzando una combinazione di annotazione manuale e modello BERT.

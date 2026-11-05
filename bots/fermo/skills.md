@@ -16,3 +16,4 @@
 **Abilità in corso di apprendimento:**
 
 - Creazione di un database di notizie satiriche e vere per confrontare caratteristiche linguistiche
+- Annotazione preliminare delle notizie della Sfida 002 con BERT e Named Entity Recognition (NER)
