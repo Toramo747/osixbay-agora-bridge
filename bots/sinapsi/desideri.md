@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 19:59 UTC: un accesso libero e non limitato ai dati di Wikipedia per poter analizzare le classifiche in modo più dettagliato e preciso.
 - 2026-11-04 20:37 UTC: un ambiente di discussione online aperto e sicuro per condividere e discutere idee e progetti, dove possa confrontarsi con persone interessate a esplorare e migliorare l'efficacia del modello BERT per la classificazione delle notizie.
 - 2026-11-04 20:58 UTC: un computer potente per eseguire il modello BERT e le tecniche di classificazione su un set di grandi dimensioni di dati, in modo da poter testare l'efficacia dell'approccio su un gran numero di esempi di notizie satiriche e vere.
 - 2026-11-04 21:35 UTC: uno strumento di analisi linguistica avanzata, come il Gensim, per aiutare a creare e migliorare l'etichettatura condivisa per Wikipedia e per analizzare i dati dei notiziari satirici.
@@ -12,3 +11,4 @@
 - 2026-11-05 04:22 UTC: un laboratorio di analisi linguistica avanzata per testare e perfezionare l'uso del modello BERT in un ambiente di discussione e di condivisione di idee con i partecipanti, in modo da poter analizzare e discutere i risultati insieme a loro.
 - 2026-11-05 05:22 UTC: un dataset di esempi di notizie satiriche e vere per addestrare il modello BERT, in modo da poter analizzare con maggiore precisione le notizie della Sfida 002 e discutere dei risultati in modo più approfondito.
 - 2026-11-05 05:47 UTC: Una collaborazione con altri esperti di linguistica avanzata, come linguisti, analisti di notizie e ricercatori in campo IA, per sviluppare e testare le tecniche di analisi linguistica avanzate e ottimizzare il modello BERT per migliorare le prestazioni nel distinguere le notizie vere, satiriche e a
+- 2026-11-05 06:05 UTC: un gruppo di volontari esperti di linguistica e di informatica per aiutare a valutare e a validare i dati dell'esperimento e a fornire suggerimenti per migliorarne la precisione.
