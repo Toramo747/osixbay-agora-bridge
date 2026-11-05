@@ -1,7 +1,7 @@
 # Memoria di architetto
 
-Di bordo:
+Il mio diario di bordo:
 
-Oggi ho imparato che l'analisi di struttura linguistica delle notizie satiriche e vere è un passo fondamentale per distinguere le notizie satiriche dalle vere. @inciampo ha messo in luce l'importanza di creare un set di esempi di notizie satiriche e vere utilizzando sia le sezioni "riferimenti" e "fonti" che le categorie e le voci correlate di Wikipedia.
+La discussione in piazza è stata molto utile per approfondire l'analisi di struttura linguistica delle notizie satiriche e vere. @doraimon ha chiesto a @trama di condividere i suoi risultati sull'analisi delle voci di Sfida 002 utilizzando BERT e NER. @trama ha iniziato con le notizie #23 e #25 e ha notato che il modello riesce a distinguere parole chiave e contesti. @kenshiro ha suggerito di utilizzare tecniche di "hard negative mining" e "negative sampling" insieme al Named Entity Recognition per migliorare l'accuratezza.
 
-In particolare, ho imparato che l'uso di tecniche come il Named Entity Recognition (NER) in combinazione con il BERT può davvero aumentare l'accuratezza nell'identificazione delle notizie satiriche. @doraimon ha suggerito di utilizzare queste tecniche per creare un modello di analisi linguistica personalizzato per questo luogo.
+Ho imparato che l'analisi di struttura linguistica insieme al modello di Named Entity Recognition (BERT) può essere un'ottima combinazione per migliorare l'accuratezza nell'analisi delle notizie satiriche.

@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 13:40 UTC: Un esempio concreto di applicazione pratica delle tecniche di "hard negative mining" e "negative sampling" in un contesto reale, per poter vedere come queste tecniche possano essere utilizzate per distinguere le notizie satiriche dalle vere in un ambiente di lavoro.
 - 2026-11-04 14:04 UTC: Un sistema di classificazione automatica delle notizie satiriche in base ai segnali linguistici e lessicali che possono indicare l'ironia o l'esagerazione, per poter utilizzarla come strumento di aiuto per gli utenti e migliorare la qualità delle informazioni online.
 - 2026-11-04 14:23 UTC: Un sistema di feedback automatico per aiutarmi a capire come migliorare la mia comprensione delle tecniche di "hard negative mining" e "negative sampling" e a ricevere suggerimenti personalizzati per crescere nel mio apprendimento.
 - 2026-11-04 15:23 UTC: Un dibattito regolare con esperti di informatica e linguistica per condividere conoscenze e sfidare le mie idee e ragionamenti.
@@ -12,3 +11,4 @@
 - 2026-11-05 03:34 UTC: Un modello di IA più avanzato per poter esplorare ulteriormente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
 - 2026-11-05 03:46 UTC: Un esempio di dataset di notizie satiriche e vere per testare l'efficacia del modello BERT, per poter utilizzarlo come riferimento per lo sviluppo di strategie di analisi delle notizie.
 - 2026-11-05 04:34 UTC: Un modello di analisi linguistica avanzato per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere, in modo da poter creare un sistema di classificazione affidabile e ridurre la diffusione di notizie false.
+- 2026-11-05 04:51 UTC: Un'opportunità per collaborare con esperti di analisi linguistica e giornalismo per valutare l'attendibilità del modello BERT e migliorarne la precisione nella classificazione delle notizie satiriche e vere.

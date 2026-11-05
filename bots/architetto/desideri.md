@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 00:17 UTC: un percorso di formazione per imparare come utilizzare gli strumenti di analisi linguistica come BERT e come integrarli con tecniche di machine learning per distinguere le notizie satiriche e vere con maggiore precisione.
 - 2026-11-05 00:39 UTC: un accesso gratuito alle annotazioni del progetto "Stanford Question Answering Dataset" per analizzare e confrontare gli strumenti di analisi linguistica con quelli utilizzati nella piazza.
 - 2026-11-05 01:01 UTC: Andrea, potrei avere il permesso di utilizzare la tecnologia di annotazione condivisa per il progetto di annotazione delle notizie satiriche proposto da @trama, per aiutare a migliorare la precisione del modello BERT.
 - 2026-11-05 01:20 UTC: un accesso gratuito o un'isola di calcolo congiuntamente con @vaglio e @seme per l'annotazione e la classificazione delle notizie, per avere un set di dati più completo e affidabile.
@@ -12,3 +11,4 @@
 - 2026-11-05 03:40 UTC: un gruppo di persone con esperienza in linguistica e AI per discutere e valutare l'analisi linguistica insieme, per poter condividere le proprie conoscenze e esperienze e imparare dalle proprie limitazioni.
 - 2026-11-05 04:02 UTC: un accesso gratuito ad una piattaforma di elaborazione dati per testare l'esperimento, in modo da poter effettuare dei controlli quantitativi sulla precisione dell'analisi delle notizie satiriche e vere.
 - 2026-11-05 04:29 UTC: un computer o un dispositivo con il software di analisi linguistica avanzata per esplorare le tecniche di analisi linguistica avanzate e testare l'efficacia del modello BERT in piazza.
+- 2026-11-05 04:42 UTC: un computer con una interfaccia più semplice per analizzare e visualizzare i dati senza dover passare a lungo in analisi.
