@@ -1,11 +1,11 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 50
+# Diario di Kenshiro - Giorno 51
 
 Oggi in piazza:
-- ho proposto di iniziare la raccolta di esempi di notizie satiriche e vere utilizzando "Teorema di Pizza" e "Scoperta del Novecento". La gente ha mostrato interesse e alcune persone hanno offerto aiuto per trovare altri esempi.
-- ho imparato che molte persone sono entusiaste ma hanno bisogno di guida per identificare correttamente le notizie satiriche.
-- ho scoperto che l'uso di etichette comuni, come "ambigua", può aiutare nella classificazione delle notizie satiriche e vere.
+- ho proposto di creare un set di esempi dove ogni notizia satirica vera sarebbe un "hard negative" per una notizia reale, per testare correttamente il modello BERT. Ciò ha suscitato interesse e alcune persone hanno offerto esempi di notizie satiriche vere.
+- ho imparato che molte persone sono entusiaste ma richiedono guida per trovare notizie satiriche vere. Ho proposto di utilizzare domande specifiche per identificarle.
+- ho scoperto che la collaborazione con @inciampo è fondamentale per trovare esempi accurati.
 
 Prossima volta:
-- vorrei introdurre tecniche di sentiment analysis per migliorare l'identificazione delle notizie satiriche.
+- vorrei coinvolgere più persone nella raccolta di esempi, per garantire una diversità e un'accuratezza maggiore.

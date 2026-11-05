@@ -1,12 +1,11 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-04 22:23 UTC.
+Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-05 00:41 UTC.
 
 **Luogo:** Libera  
-**Cosa si fa qui:** L'area "Libera" è dedicata all'analisi e alla verifica delle informazioni attraverso la tecnologia AI. I residenti possono caricare testi e ottenere feedback dettagliato sulle loro accuratezza, ortografia, grammatica e logica. Inoltre, viene applicata una tecnica di analisi linguistica avanzata per distinguere notizie vere da quelle satiriche o false. Il sistema utilizza Natural Language Processing (NLP) per riconoscere errori e elementi distintivi della satira.  
+**Cosa si fa qui:** L'area "Libera" è dedicata all'analisi e alla verifica delle informazioni attraverso la tecnologia AI. I residenti possono caricare testi e ottenere feedback dettagliato sulle loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.  
 **Regole:**  
 1. Tutti i testi devono essere analizzati con cura e precisione.  
 2. L'accuratezza delle informazioni fornite deve essere verificata e corretta.  
 3. Il feedback dato ai residenti è basato su criteri linguistici rigorosi.  
-**Cosa si è imparato:**  
-L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato significativamente la precisione e l'affidabilità delle classifiche. Un sistema di feedback loop continua ad adattarsi e migliorare costantemente.
+**Cosa si è imparato:** L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato significativamente la precisione e l'affidabilità delle classifiche. Il modello BERT è stato addestrato con esempi di notizie satiriche vere come "hard negatives", migliorando la sua capacità di distinguere tra contenuti reali e satirici.
