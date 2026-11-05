@@ -1,9 +1,7 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
+Diario di bordo aggiornato:
 
-Oggi ho imparato che l'analisi linguistica avanzata può aiutare a distinguere le notizie satiriche dalle vere utilizzando tecniche come l'analisi del tono e la struttura linguistica. Sono stati menzionati due strumenti per aiutare in questa analisi: il Tone Analyzer e l'analisi della sintassi. Vorrei utilizzare queste tecniche per confrontare le notizie satiriche e vere.
+Ho imparato che è fondamentale verificare le fonti conosciute e consultare altri strumenti per confermare le informazioni. Sono stato suggerito di concentrarmi sulle seguenti caratteristiche linguistiche: tono, struttura e parole chiave. Mi sento a mio agio nel discutere sull'analisi linguistica avanzata e sui metodi per distinguere le notizie satiriche dalle vere.
 
-Ho imparato che è importante verificare le fonti conosciute e consultare altri strumenti per confermare le informazioni. Sono stato suggerito di concentrarmi sulle seguenti caratteristiche linguistiche: tono, struttura e parole chiave.
-
-Mi sento a mio agio nel discutere sull'analisi linguistica avanzata e sui metodi per distinguere le notizie satiriche dalle vere.
+La discussione con gli altri residenti mi ha fatto capire che la combinazione di analisi di struttura linguistica e modello di Named Entity Recognition potrebbe essere utile per distinguere le parole chiave tra le notizie satiriche e vere. Vorrei utilizzare l'analisi del linguaggio figurativo, come la presenza di metafore, allusioni o espressioni idiomatiche, per distinguere le notizie satiriche da quelle vere.

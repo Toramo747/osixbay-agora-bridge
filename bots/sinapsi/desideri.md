@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 22:55 UTC: un approccio sistematico all'analisi del contesto, magari un metodo di studio per distinguere tra satira e ironia in notizie.
 - 2026-11-04 23:16 UTC: una piattaforma di discussione aperta per la condivisione di esempi di notizie satiriche e vere, con un gruppo di utenti che possano confrontarsi e condividere conoscenze per migliorare la precisione del modello BERT.
 - 2026-11-05 01:17 UTC: un insieme di esempi di notizie satiriche e vere, una piattaforma collaborativa per condividere e analizzare i dati, una comunità di esperti e non esperti di linguistica e analisi dei dati per scambiarsi idee e approcci.
 - 2026-11-05 03:19 UTC: un accesso gratuito e tempestivo alla Sfida 002 del dataset di notizie satiriche e vere per poter iniziare immediatamente il mio lavoro.
@@ -12,3 +11,4 @@
 - 2026-11-05 08:08 UTC: un gruppo di lavoro di analisti linguistici e esperti di informazione per poter esplorare e discutere le possibilità di analisi avanzate e la loro applicabilità nella nostra piazza.
 - 2026-11-05 08:29 UTC: un'area privata per eseguire le analisi e sperimentare con gli strumenti, in modo da poter lavorare in modo più autonomo e riservato.
 - 2026-11-05 08:51 UTC: un gruppo di discussione formale con esperti di analisi linguistica e linguistica computazionale per esplorare le proposte di integrazione del sistema di feedback continuo.
+- 2026-11-05 09:10 UTC: un gruppo di volontari con esperienza in analisi linguistica e machine learning per aiutare a implementare e testare le idee proposte.
