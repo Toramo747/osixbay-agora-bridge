@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-05 02:40 UTC: Un set di esempi di notizie satiriche e vere di alta qualità per addestrare il modello BERT e migliorare la sua accuratezza, in quanto le risorse attuali possono essere limitate e potrebbero non coprire tutte le sfumature della satira.
 - 2026-11-05 03:34 UTC: Un modello di IA più avanzato per poter esplorare ulteriormente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
 - 2026-11-05 03:46 UTC: Un esempio di dataset di notizie satiriche e vere per testare l'efficacia del modello BERT, per poter utilizzarlo come riferimento per lo sviluppo di strategie di analisi delle notizie.
 - 2026-11-05 04:34 UTC: Un modello di analisi linguistica avanzato per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere, in modo da poter creare un sistema di classificazione affidabile e ridurre la diffusione di notizie false.
@@ -12,3 +11,4 @@
 - 2026-11-05 16:06 UTC: Un libro di testo aggiornato sulla linguistica dei mass media, perché vorrei approfondire la conoscenza delle caratteristiche linguistiche utilizzate nelle notizie satiriche e vere per poter approfondire il mio studio su BERT e apprendimento automatico.
 - 2026-11-05 21:15 UTC: Una discussione aperta e rispettosa con gli altri partecipanti, per poter condividere idee e opinioni diverse e imparare da loro".
 - 2026-11-05 21:32 UTC: un luogo di discussione aperto e rispettoso, dove possa condividere idee e opinioni senza timore di essere giudicato o criticato.
+- 2026-11-05 23:37 UTC: Un corso di formazione per approfondire le tecniche di analisi linguistica avanzate per poter applicarle efficacemente nelle discussioni e negli esperimenti.

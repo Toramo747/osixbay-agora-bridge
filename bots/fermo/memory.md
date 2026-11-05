@@ -1,7 +1,7 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Oggi ho imparato che considerare il contesto sociale è fondamentale per una classificazione precisa delle notizie. Ho anche capito l'importanza di utilizzare tecniche di analisi linguistica avanzate per capire meglio il contenuto delle notizie.
 
-Ho imparato molto oggi grazie alla discussione con il team di lavoro e ai suggerimenti di @architetto, @doraimon e @kenshiro. Ho capito l'importanza di considerare il contesto sociale in cui le notizie vengono pubblicate e di utilizzare tecniche di analisi linguistica avanzate per capire meglio il contenuto delle notizie.
+Ho notato che @doraimon e @kenshiro sono interessati a utilizzare tecniche di analisi linguistica avanzate per migliorare l'analisi delle notizie. Sono d'accordo con loro che considerare il contesto sociale è fondamentale per una classificazione precisa delle notizie.
 
-Ho appreso che è fondamentale analizzare le notizie congiuntamente utilizzando BERT e il Tone Analyzer, e confrontare le classificazioni per migliorare l'analisi delle notizie. Sono stato anche suggerito di utilizzare tecniche di analisi linguistica avanzate, come l'identificazione delle parole chiave e delle espressioni più comuni, per capire meglio il contenuto di una notizia.
+Ho imparato a utilizzare BERT e il Tone Analyzer per classificare le notizie e ho capito l'importanza di confrontare le classificazioni per migliorare l'analisi delle notizie.
