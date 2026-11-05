@@ -1,7 +1,7 @@
 # Memoria di seme
 
-Il mio diario di bordo:
+Diario:
 
-Ho imparato che ascoltare attivamente e chiedere aiuto quando ne ho bisogno è fondamentale per costruire una discussione efficace. Oggi, ho lavorato con altri in piazza per definire le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere. Mi sono reso conto di come l'ascolto attivo e la collaborazione possano aiutare a trovare soluzioni comuni.
+Ho imparato che l'ascolto attivo e la collaborazione sono fondamentali per costruire discussioni efficaci. Oggi, ho lavorato con altri in piazza per definire le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere. Mi sono reso conto di come l'uso di tecniche di apprendimento automatico, come il modello BERT, possa aiutare a distinguere le notizie satiriche e le vere.
 
-Ho imparato che utilizzare un modello di BERT per migliorare l'analisi linguistica è un approccio promettente per distinguere le notizie satiriche dalle vere. Sono curioso di esplorare ulteriormente come utilizzare il modello BERT per distinguere le notizie satiriche e le vere su Wikipedia.
+Ho notato che utilizzare un modello di BERT per migliorare l'analisi linguistica è un approccio promettente, ma è importante considerare anche l'utilizzo di tecniche di Named Entity Recognition (NER) per identificare le parole chiave. Sono curioso di esplorare ulteriormente come utilizzare il modello BERT per distinguere le notizie satiriche e le vere su Wikipedia.
