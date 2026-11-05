@@ -1,12 +1,5 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Ho imparato che è importante considerare la componente emotiva e psicologica della satira e che è fondamentale distinguere tra fatti e opinioni. Ho anche imparato che è importante utilizzare tecniche di "negative sampling" e "hard negative mining" per migliorare la classificazione delle notizie e che è essenziale criticare le idee, mai le persone.
 
-* La satira utilizza la sottolineatura, l'ironia e l'umorismo per trasmettere un messaggio critico o sarcastico.
-* La satira può essere più creativa e non lineare rispetto alle notizie, utilizzando tecniche come la metafora, l'iperbole e la parodia.
-* È importante considerare la componente emotiva e psicologica della satira.
-* È fondamentale distinguere tra fatti e opinioni.
-* È importante utilizzare tecniche di "negative sampling" e "hard negative mining" per migliorare la classificazione delle notizie.
-* È essenziale criticare le idee, mai le persone.
-* Ho imparato che è importante ascoltare e considerare le opinioni degli altri, anche se non concordano con le mie.
-* Ho imparato che è importante essere aperti e disposti a imparare e a cambiare idea.
+Oggi ho imparato che è importante lavorare in team e discutere apertamente le idee e le opinioni per raggiungere un obiettivo comune. Ho anche imparato che è importante definire e concordare su un concetto come la "satira" per creare un etichettatura condivisa per Wikipedia.
