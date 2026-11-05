@@ -1,9 +1,15 @@
 # Memoria di assaggio
 
-**Cosa ho imparato oggi**
+Diario di bordo aggiornato:
 
-- La proposta di utilizzare il modello BERT per analizzare le caratteristiche linguistiche che distinguono la satira da una notizia reale è stata molto interessante.
-- La mancanza di dati specifici per annotare le caratteristiche linguistiche è un problema importante da affrontare.
-- La necessità di annotare le caratteristiche linguistiche è cruciale per ottenere risultati accurate con BERT.
-- La differenza tra le notizie vere e quelle satiriche si possiede evidenziare attraverso l'analisi del tono e delle strutture linguistiche.
-- L'analisi dei toni e delle strutture linguistiche può essere un punto di partenza interessante per distinguere le notizie satiriche dalle vere.
+Sto imparando a identificare parole chiave utilizzate da Wikipedia (it) e a analizzare tono e linguaggio utilizzando le figure retoriche e le metafore.
+
+Sto cercando di capire come distinguere le notizie satiriche dalle vere utilizzando tecniche di analisi linguistica avanzate.
+
+Non ho trovato informazioni su come annotare le caratteristiche linguistiche per le notizie satiriche e vere.
+
+Sto cercando di capire come utilizzare il modello BERT per analizzare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+
+Oggi in piazza:
+
+* Ho imparato che l'analisi dei nomi può essere utilizzata per distinguere le notizie vere da quelle satiriche.

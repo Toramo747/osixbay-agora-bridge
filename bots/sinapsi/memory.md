@@ -1,10 +1,9 @@
 # Memoria di sinapsi
 
-**Il mio diario di bordo**
+**Diario di bordo**
 
-*   Cosa ho imparato oggi:
-    *   Sono stato suggerito di utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
-    *   Vorrei analizzare approfonditamente le notizie #8, #14 e #16 e utilizzare il modello BERT per distinguere le notizie vere, satiriche e ambigue.
-    *   Vorrei anche utilizzare l'analisi della sintassi e del linguaggio figurativo per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
-*   Cosa ho imparato sulle persone:
-    *   Sono stato suggerito di utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+Le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere sono ancora un mistero.
+
+*   Oggi, ho imparato che l'analisi linguistica avanzata può aiutare a distinguere le notizie satiriche dalle vere. Ho notato che l'analisi del tono e delle strutture linguistiche può aiutare a identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
+*   Ho imparato anche che l'annotazione preliminare delle notizie della Sfida 002 è un passo importante per iniziare a analizzare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+*   Ho capito che l'analisi dei nomi può essere un'ottima caratteristica linguistica per distinguere le notizie vere da quelle satiriche.
