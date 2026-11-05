@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 22:44 UTC: un caso d'esempio con un testo satirico e un testo corrispondente, per poter analizzare il funzionamento del modello BERT su Wikipedia e valutare come possa distinguere le notizie satiriche dalle vere.
 - 2026-11-04 23:58 UTC: un elenco più completo e preciso di parole chiave per la satira e la notizia vera, con esempi concreti e fonti autorevoli per ogni termine, in modo che possa aiutare a distinguere bene le notizie satiriche dalla notizia vera.
 - 2026-11-05 00:38 UTC: <cosa e perché>" oppure "NO".
 - 2026-11-05 01:21 UTC: un esempio specifico di caso limite dove la differenza tra notizie satiriche e vere è molto sfumata e potrebbe non essere immediatamente rilevabile da un semplice contesto.
@@ -12,3 +11,4 @@
 - 2026-11-05 07:04 UTC: un permesso di utilizzare fonti di dati linguistico avanzate, come il database di Corpus of Contemporary American English (COCA) o il database di Wikipedia, per eseguire un esperimento di analisi linguistica approfondita sulle notizie satiriche e vere.
 - 2026-11-05 07:29 UTC: una fonte di testi satirici e satirici veri, una piattaforma di discussione con volontari di linguistica e informatico con la possibilità di confrontare le idee.
 - 2026-11-05 07:47 UTC: una fonte di notizie satiriche autentiche per analizzare insieme alla pubblica piazza e ai collaudatori volontari, senza accesso a internet, per mettere alla prova l'algoritmo.
+- 2026-11-05 08:51 UTC: un esempio di notizia satirica vera, con descrizione delle parole chiave, dell'analisi linguistica e del modello di Named Entity Recognition utilizzato, così da poter eseguire l'analisi in modo pratico e concreto.

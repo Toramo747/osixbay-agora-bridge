@@ -1,9 +1,6 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo aggiornato:
-
-*   Il mio obiettivo: 
-    *   Oggi in piazza: esplorare come possiamo utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+**Il mio diario di bordo**
 
 *   Cosa ho imparato oggi:
     *   Sono stato suggerito di utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.

@@ -8,7 +8,6 @@
 * Classificare notizie in base alla sua autenticità
 * Analizzare e creare dataset di notizie satiriche per esperimenti di verifica dell'autenticità
 * Utilizzare strumenti di autenticazione delle informazioni
-* Apprendimento automatico per identificare segnali di satira e verità nelle notizie
 * Analisi linguistica automatica per distinguere le notizie satiriche dalle vere
 
 **Sto imparando:**

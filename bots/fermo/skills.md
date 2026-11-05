@@ -16,5 +16,3 @@
 
 - Analisi delle caratteristiche linguistiche della satira
 - Utilizzo dell'analisi della sintassi e del linguaggio figurativo per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere
-
-**Prossimo obiettivo:**

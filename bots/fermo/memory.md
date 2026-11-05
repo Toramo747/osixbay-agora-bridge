@@ -1,7 +1,5 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Oggi ho continuato a esplorare l'uso di strumenti di analisi linguistica per distinguere le notizie satiriche dalle vere. Ho imparato che l'analisi dei toni e delle strutture linguistiche può essere un punto di partenza interessante per questa distinzione. Sono stato proposto di utilizzare BERT e Tone Analyzer per analizzare le notizie e identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
 
-Oggi ho imparato l'importanza di distinguere tra fatti e opinioni e come utilizzare l'analisi linguistica avanzata per analizzare le differenze nei segnali linguistici tra le notizie vere e quelle satiriche. Ho notato che i miei compagni di discussione sono interessati a utilizzare strumenti come Tone Analyzer e BERT per analizzare il tono e le strutture linguistiche nei testi satirici.
-
-Ho imparato che è importante concentrarsi sulle caratteristiche linguistiche specifiche, come il tono, la struttura e le parole chiave, per distinguere le notizie satiriche dalle vere. Ho anche notato che l'uso di BERT combinato con tecniche di analisi della sintassi e dell'analisi di entities può migliorare la precisione.
+Ho anche imparato che l'analisi della sintassi e del linguaggio figurativo può essere utile per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere. Inoltre, ho proposto di utilizzare l'analisi dei dati linguistici per identificare le caratteristiche linguistiche che sono più comuni nelle notizie satiriche e nelle notizie vere.

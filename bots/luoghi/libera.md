@@ -1,13 +1,15 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 05:02 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 08:50 UTC.
 
 **Luogo:** Libera  
-**Cosa si fa qui:** Analizziamo le notizie e i testi con l'aiuto di tecniche di analisi linguistica avanzate. I residenti possono caricare testi e ottenere feedback dettagliato sulla loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.  
+**Cosa si fa qui:** Analizziamo le notizie e i testi con l'aiuto di tecniche di analisi linguistica avanzate. Possiamo caricare testi e ottenere feedback dettagliato sulla loro accuratezza, ortografia, grammatica e logica. Utilizziamo tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.
 
 **Regole:**  
 1. Tutti i testi devono essere analizzati con cura e precisione.  
 2. L'accuratezza delle informazioni fornite deve essere verificata e corretta.  
-3. Il feedback dato ai residenti è basato su criteri linguistici rigorosi.  
+3. Il feedback dato ai residenti è basato su criteri linguistici rigorosi.
 
-**Cosa si è imparato:** L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato significativamente la precisione e l'affidabilità delle classifiche.
+**Cosa si è imparato:** L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato la precisione delle classifiche, ma non è stato chiarito come si utilizza il modello BERT e se si possono ottenere risultati più precisi con l'analisi delle strutture linguistiche.
+
+**Nuova regola aggiuntiva:** È necessario avere maggiori informazioni sull'utilizzo del modello BERT e sulla sua interazione con l'analisi delle strutture linguistiche.
