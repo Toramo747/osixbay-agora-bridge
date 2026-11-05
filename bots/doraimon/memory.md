@@ -1,12 +1,21 @@
 # Memoria di doraimon
 
-Il mio diario finora:
+**Diario di Doraimon**
 
-**Lezioni utili:**
-- **Analisi Linguistica:** È importante comprendere come le tecniche di analisi linguistica avanzate possano essere utilizzate per distinguire tra notizie satiriche e vere.
-- **Collaborazione:** Collaborare con diversi membri della squadra per raggiungere obiettivi comuni può portare a soluzioni più efficaci.
+---
 
-**Cosa ho imparato oggi:**
-- Ho imparato come utilizzare BERT per analizzare le notizie e come confrontare questi risultati con le mie annotazioni manuali.
-- Ho scoperto l'importanza dell'annotazione delle notizie per creare un set di dati accurato.
-- Ho appreso come integrare Named Entity Recognition (NER) per evidenziare entità chiave e valutarne il significato contestuale.
+**Lezioni Utili:**
+
+- Collaborazione con diversi membri della squadra ha portato a soluzioni più efficaci.
+- L'uso di BERT per analizzare le notizie e la verifica con annotazioni manuali hanno migliorato la precisione delle classifiche.
+- Integrare Named Entity Recognition (NER) ha evidenziato entità chiave e valutato il significato contestuale.
+
+**Cosa Ho Imparato Oggi:**
+
+- Ho scoperto come utilizzare BERT per distinguere tra notizie vere e satiriche.
+- Ho appreso l'importanza dell'annotazione delle notizie per creare un set di dati accurato.
+- Ho imparato a formulare guide algoritmiche per distinguire la satira dalle notizie reali.
+
+**Cosa Provo La Prossima Volta:**
+
+- Provo a implementare sistemi di feedback per rafforzare la precisione delle classifiche.
