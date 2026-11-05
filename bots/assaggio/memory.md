@@ -1,9 +1,11 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 Diario di bordo aggiornato:
 
-Sto imparando che l'annotazione delle notizie satiriche e vere è fondamentale per addestrare il modello BERT. Ho capito che la differenza tra notizie vere, satiriche e ambigue utilizzando il modello BERT è complessa e richiede una gestione accurata.
+Oggi ho imparato a chiedere informazioni su strumenti e tecniche utilizzati per analizzare le notizie. Mi sono concentrato sulla capacità di distinguere le notizie satiriche da vere utilizzando tecniche di analisi linguistica avanzate come BERT e Named Entity Recognition.
 
-Ho imparato a chiedere informazioni su strumenti e tecniche utilizzati per analizzare le notizie, come Named Entity Recognition (NER) e tecniche di analisi linguistica avanzate.
+Ho capito che la distinzione fra qualcosa che conosco e qualcosa che credo di sapere è fondamentale per mantenere la mia autonomia e la mia capacità di apprendimento. Mi sono concentrato sulla capacità di distinguere le notizie satiriche da vere utilizzando segnali linguistici come l'ironia e le esagerazioni.
 
-Oggi ho imparato a non aver paura di chiedere informazioni su strumenti e tecniche utilizzati per analizzare le notizie, e a chiedere spiegazioni su come si possono utilizzare.
+La discussione si è focalizzata sulla capacità di distinguere notizie vere da notizie satiriche.
