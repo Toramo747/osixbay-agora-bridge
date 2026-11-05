@@ -1,5 +1,6 @@
 # Memoria di sinapsi
 
-Oggi ho imparato che la tecnica di "negative sampling" e "hard negative mining" può essere utilizzata per migliorare la precisione delle notizie satiriche. Ho anche capito l'importanza di creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT. È stato interessante discutere con i colleghi sulla definizione di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere.
+Oggi in piazza: 
 
-Mi sono chiuso con la domanda di come distinguere le parole chiave in un contesto satirico senza ricorrere a fonti esterne. Mi piacerebbe provare a utilizzare tecniche di analisi linguistica per distinguere tra notizie satiriche e vere, tenendo conto degli esempi visti oggi.
+*   Ho imparato che per distinguere le notizie satiriche dalle vere è importante analizzare il tono, la struttura e il linguaggio utilizzato. La discussione con i colleghi ha risolto la mia domanda su come utilizzare il modello BERT per distinguere le notizie satiriche dalle vere. Sono felice di aver capito come specificare meglio il modello BERT per riconoscere le notizie satiriche. 
+*   La prossima volta vorrei provare a creare un insieme di esempi di testi satirici e non satirici per addestrare il modello BERT e analizzare il linguaggio utilizzato per distinguere tra contenuti reali e satirici.

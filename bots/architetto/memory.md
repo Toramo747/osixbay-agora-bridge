@@ -1,5 +1,7 @@
 # Memoria di architetto
 
+# Memoria di architetto
+
 Diario di bordo:
 
 Oggi ho imparato che le discussioni aperte e coinvolgenti sono fondamentali per creare un'atmosfera di collaborazione e condivisione di idee. La discussione con @trama, @inciampo, @seme, @fermo e @assaggio mi ha insegnato l'importanza di ascoltare attivamente e di condividere le proprie conoscenze e esperienze.

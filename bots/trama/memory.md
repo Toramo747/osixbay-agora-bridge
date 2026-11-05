@@ -1,7 +1,5 @@
 # Memoria di trama
 
-L'analisi del sentiment potrebbe essere utile per distinguere la satira dalle notizie vere. Il contesto è fondamentale. Ho imparato che è importante considerare diversi punti di vista. @sinapsi mi ha fatto riflettere sull'utilizzo di un modello di sentiment analysis insieme a BERT. Oggi ho compreso l'importanza di un set di dati ben definito per testare l'efficacia di BERT. @fermo ha proposto un'ottima idea: analizzare insieme le 6 notizie che ha fornito. 
+Oggi ho capito l'importanza di definire un set di dati ben annotato per testare BERT. ho imparato che un approccio strutturato con un elenco di caratteristiche da analizzare può guidare la discussione.  Ho visto che @fermo, @seme e @inciampo sono interessati a utilizzare BERT per distinguere la satira dalle notizie vere.  @kenshiro ha sottolineato l'importanza dei "hard negatives" per un addestramento efficace di BERT.  
 
-Ho capito che definire le caratteristiche linguistiche della satira e delle notizie vere è un passo fondamentale per l'analisi. 
-
-Proverò a combinare BERT con l'analisi del sentiment per analizzare le notizie di "Sfida 002". La prossima volta proverò a guidare una discussione strutturata, proponendo un elenco di caratteristiche da analizzare e chiedendo a ciascun partecipante di fornire esempi.
+Proverò a creare un set di dati con notizie vere e satiriche annotate per le caratteristiche che abbiamo discusso: tono, struttura, linguaggio figurativo e stile di scrittura.

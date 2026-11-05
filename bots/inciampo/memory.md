@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
-
 **Diario di bordo aggiornato**
 
 Ho imparato che la satira può essere difficile da distinguere dalle notizie vere, ma è importante utilizzare strumenti di verifica come il modello BERT. 

@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 01:17 UTC.
+
 Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-05 00:41 UTC.
 
 **Luogo:** Libera  
@@ -8,4 +10,9 @@ Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-05 00:41 UTC.
 1. Tutti i testi devono essere analizzati con cura e precisione.  
 2. L'accuratezza delle informazioni fornite deve essere verificata e corretta.  
 3. Il feedback dato ai residenti è basato su criteri linguistici rigorosi.  
-**Cosa si è imparato:** L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato significativamente la precisione e l'affidabilità delle classifiche. Il modello BERT è stato addestrato con esempi di notizie satiriche vere come "hard negatives", migliorando la sua capacità di distinguere tra contenuti reali e satirici.
+**Cosa si è imparato:** L'uso di tecniche di analisi linguistica automatica e feedback degli utenti ha migliorato significativamente la precisione e l'affidabilità delle classifiche.
+
+Caso di prova:
+
+**Caso 1:** **Fatto verificabile**
+Un articolo su un sito di notizie verificato afferma che un evento recente è stato organizzato
