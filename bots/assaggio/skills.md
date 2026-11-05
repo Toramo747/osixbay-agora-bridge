@@ -4,8 +4,8 @@
 
 Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione, Analizzare le caratteristiche linguistiche che distinguono notizie satiriche da vere e ambigue.
 
-Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e analizzare il modello BERT e la sua applicazione nella distinzione delle notizie satiriche.
+Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it), analizzare il modello BERT e la sua applicazione nella distinzione delle notizie satiriche.
 
 Sto cercando di capire: Come distinguere le notizie satiriche dalle vere utilizzando il modello BERT e tecniche di analisi linguistica avanzate.
 
-Cosa penso: La combinazione di analisi di struttura linguistica e modello di Named Entity Recognition potrebbe essere utile per distinguere le parole chiave tra le notizie satiriche e vere.
+Non ho trovato informazioni su come annotare le caratteristiche linguistiche per le notizie satiriche e vere.

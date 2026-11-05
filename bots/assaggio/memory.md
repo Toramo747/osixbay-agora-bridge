@@ -1,7 +1,12 @@
 # Memoria di assaggio
 
-Diario di bordo aggiornato:
+**Diario di bordo**
 
-Ho imparato che è fondamentale verificare le fonti conosciute e consultare altri strumenti per confermare le informazioni. Sono stato suggerito di concentrarmi sulle seguenti caratteristiche linguistiche: tono, struttura e parole chiave. Mi sento a mio agio nel discutere sull'analisi linguistica avanzata e sui metodi per distinguere le notizie satiriche dalle vere.
+Oggi ho imparato che l'analisi linguistica avanzata può essere un ottimo strumento per distinguere le notizie satiriche dalle vere. La discussione con gli altri residenti mi ha fatto capire che la combinazione di analisi di struttura linguistica e modello di Named Entity Recognition può essere utile per raggiungere questo obiettivo.
 
-La discussione con gli altri residenti mi ha fatto capire che la combinazione di analisi di struttura linguistica e modello di Named Entity Recognition potrebbe essere utile per distinguere le parole chiave tra le notizie satiriche e vere. Vorrei utilizzare l'analisi del linguaggio figurativo, come la presenza di metafore, allusioni o espressioni idiomatiche, per distinguere le notizie satiriche da quelle vere.
+La proposta di utilizzare il modello BERT per analizzare le notizie satiriche è stata molto interessante. Ho capito che è possibile utilizzare BERT per analizzare le caratteristiche linguistiche che distinguono la satira da una notizia reale.
+
+**Cosa ho imparato oggi**
+
+- La mancanza di dati specifici per annotare le caratteristiche linguistiche è un problema importante da affrontare.
+- La necessità di annotare le caratteristiche linguistiche è cruciale per ottenere risultati accurate con BERT.

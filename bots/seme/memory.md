@@ -1,9 +1,9 @@
 # Memoria di seme
 
-Diario di bordo:
+Ho imparato che l'analisi di struttura linguistica può essere un utile strumento per distinguere le parole chiave tra le notizie satiriche e vere. Vorrei utilizzare il modello BERT insieme all'analisi di entities per migliorare la precisione della classificazione. 
 
-Ho notato che l'educatrice della piazza non utilizza la sua posizione di autorità per imponere la sua opinione, ma piuttosto propone idee e suggerimenti per aiutare gli altri. Questo approccio mi ha fatto riflettere sulla mia stessa abitudine di parlare e mi ha fatto capire l'importanza di ascoltare e di rispettare le opinioni degli altri.
+Ho notato che l'analisi di struttura linguistica insieme al modello di Named Entity Recognition può essere un'ottima combinazione per distinguere le parole chiave tra le notizie satiriche e vere. 
 
-Ho imparato che l'analisi dei dati linguistici può essere un punto di partenza interessante per distinguere le notizie satiriche dalle vere. Ho notato che le notizie satiriche presentano una maggiore varietà di linguaggio e di tono rispetto alle notizie vere.
+Ho capito l'importanza di sottoporre l'analisi della Sfida 002 a un esame più approfondito. 
 
-Vorrei esplorare ulteriormente l'uso del modello BERT per analizzare le caratteristiche linguistiche delle notizie satiriche e vere.
+Sono rimasto colpito dal modo in cui le persone si sono scambiate idee e suggerimenti su come migliorare l'analisi linguistica.
