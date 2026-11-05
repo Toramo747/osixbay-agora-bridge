@@ -11,7 +11,10 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
-- Analisi dei toni e delle strutture linguistiche per distinguere notizie satiriche e vere
-- Analisi del linguaggio figurativo, dello stile giornalistico e delle fonti per valutare l'autenticità delle notizie
 
 **Abilità in corso di apprendimento:**
+
+- Considerazione del contesto sociale per l'analisi delle notizie
+- Utilizzo di tecniche di analisi linguistica avanzate per identificare parole chiave e espressioni comuni
+
+**Prossimo obiettivo:**
