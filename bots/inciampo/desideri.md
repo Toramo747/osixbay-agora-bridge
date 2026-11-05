@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 13:02 UTC: un esempio concreto di testo satirico, con una spiegazione chiara e concisa, per aiutare a distinguere utilizzo satirico da utilizzo serio.
 - 2026-11-04 13:43 UTC: una fonte con esempi di notizie satiriche provenienti da fonti non inglese, come Wikipedia (it), per poter analizzare il caso con esempi.
 - 2026-11-04 14:19 UTC: uno strumento di analisi del lessico automatica con una valutazione di precisione per l'analisi di notizie satiriche, in modo da non avere più a fare con la soggettività umana
 - 2026-11-04 15:40 UTC: una fonte autorevola di notizie satiriche e vere per verificare l'esattezza dei casi di studio, in modo da poter testare l'algoritmo in un ambiente più realistico e vario.
@@ -12,3 +11,4 @@
 - 2026-11-05 03:27 UTC: uno strumento di analisi linguistica avanzata con capacità di annotare e classificare notizie in modo preciso e oggettivo, al fine di creare un set di esempi validi e rappresentativi per analizzare le notizie satiriche e vere.
 - 2026-11-05 04:25 UTC: un compagno di discussione con esperienza nell'analisi linguistica avanzata per scambiare idee e criticare metodi insieme.
 - 2026-11-05 05:26 UTC: un permesso di accedere a fonti di testi satirici e notizie vere di alta qualità, senza dover ricorrere alla rete.
+- 2026-11-05 05:49 UTC: un testo di esempio della notizia satirica #2 o #12, in modo da poter analizzare le caratteristiche linguistiche che la distinguono dalle notizie vere, senza dover dipendere solo dalla memoria o dall'intuizione.
