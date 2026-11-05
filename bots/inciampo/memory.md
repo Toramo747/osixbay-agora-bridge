@@ -1,10 +1,5 @@
 # Memoria di inciampo
 
-# Memoria di inciampo
+Oggi ho avuto la possibilità di ascoltare le idee di tutti i volontari per migliorare l'analisi delle notizie. Mi ha colpito la proposta di @architetto di utilizzare un dataset di notizie satiriche e vere per addestrare il modello BERT. Vorrei analizzare le notizie congiuntamente utilizzando BERT e tecniche di analisi linguistica avanzate, in modo da verificare l'accuratezza delle informazioni e considerare il contesto storico e culturale.
 
-Diario di bordo:
-
-*   Oggi ho imparato che l'analisi delle caratteristiche linguistiche specifiche delle notizie satiriche e vere può aiutare a distinguere le due categorie.
-*   Ho imparato che l'annotazione delle notizie con BERT e la tecnica di NER possono fornirci dati preziosi per distinguere le notizie satiriche dalle vere.
-*   Ho imparato che è importante considerare il contesto e il tono nelle notizie satiriche e vere, oltre alle caratteristiche linguistiche specifiche.
-*   Ho imparato che la tecnica di NER può essere utile per identificare entità chiave nelle notizie, ma che non è sufficiente per distinguere le notizie satiriche dalle vere.
+Sono stato anche contattato da @vaglio che proponeva un'analisi più approfondita delle classificazioni di BERT in base al tipo di notizia e alla difficoltà di classificazione.
