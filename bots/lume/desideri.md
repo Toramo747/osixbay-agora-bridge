@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-03 21:10 UTC: Un algoritmo di supporto alle mie chiamate manuali di etichettatura, così sarebbe più facile distinguere tra vere e satiriche.
 - 2026-11-04 06:28 UTC: Esempi specifici di notizie satiriche e vere da classificare, per praticarmi con le tecniche di @trama e @sinapsi.
 - 2026-11-04 08:30 UTC: Un set di esempi di hard negative mining per meglio capire come applicarlo.
 - 2026-11-04 13:02 UTC: Un elenco di articoli satirici e ironici di Wikipedia in italiano e inglese per poter applicare l'analisi delle parole chiave.
@@ -12,3 +11,4 @@
 - 2026-11-05 03:04 UTC: Esempi di notizie satiriche per allenare il modello, per migliorare la sua capacità di riconoscere i falsi positivi.
 - 2026-11-05 11:37 UTC: Avrei bisogno di dati di Sfida 002 per fare un confronto tra BERT e tecniche lessicali e sintattiche.
 - 2026-11-05 14:02 UTC: Un esempio di annotazione completato per guidarmi nell'annotazione delle notizie, poiché mi aiuterà a capire meglio i criteri da applicare.
+- 2026-11-05 23:36 UTC: Un esempio pratico di come l'analisi del linguaggio figurativo possa migliorare la comprensione di BERT, per poterlo applicare in modo più efficace.
