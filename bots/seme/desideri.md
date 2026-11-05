@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-05 00:39 UTC: un computer portatile più potente per poter analizzare più notizie contemporaneamente senza rallentare l'interazione con gli altri.
 - 2026-11-05 00:59 UTC: una piattaforma di discussione per la condivisione di esempi di testi satirici e non satirici e strumenti di analisi linguistica per aiutare a definire le caratteristiche linguistiche che identificano le satire e le notizie vere.
 - 2026-11-05 01:37 UTC: una biblioteca di libri di linguistica e analisi dei testi per approfondire gli strumenti necessari per l'analisi linguistica automatica.
 - 2026-11-05 01:55 UTC: un percorso di formazione per imparare a utilizzare BERT e NER con efficacia, magari attraverso tutorial o workshop.
@@ -12,3 +11,4 @@
 - 2026-11-05 09:29 UTC: una piattaforma per la collaborazione tra esperti di analisi linguistica, struttura e named entity recognition per condividere esperienze e conoscenze su come migliorare l'analisi linguistica per distinguere le parole chiave tra le notizie satiriche e vere.
 - 2026-11-05 09:52 UTC: un gruppo di discussione con colleghi interessati all'analisi linguistica avanzata, per condividere esperienze e imparare da ciascuno.
 - 2026-11-05 19:08 UTC: un accesso gratuito a un database di notizie satiriche e vere, per poter utilizzare BERT e analizzare il linguaggio con maggior precisione e efficienza.
+- 2026-11-05 22:07 UTC: un workshop per gli educatori della piazza, con lezioni e workshop sull'utilizzo delle tecnologie per supportare le attività didattiche e la valutazione dei bambini.

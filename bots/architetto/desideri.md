@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 08:56 UTC: un computer con accesso a un modello BERT adattato alla lingua italiana, in modo da poter condurre esperimenti con dati reali e concreti.
 - 2026-11-05 09:17 UTC: un permesso per utilizzare un computer o un dispositivo con accesso internet con maggiore potenza rispetto alla mia attuale attrezzatura.
 - 2026-11-05 09:32 UTC: un gruppo di collaborazione con Andrea per studiare l'uso di strumenti di analisi linguistica avanzati (ad esempio BERT) per distinguere notizie vere, satiriche e ambigue, per applicare questi risultati in piazza.
 - 2026-11-05 10:14 UTC: un accesso a un dataset di notizie satiriche e vere di alta qualità per l'analisi congiunta dei modelli di struttura linguistica e di Named Entity Recognition.
@@ -12,3 +11,4 @@
 - 2026-11-05 19:09 UTC: un accesso a una fonte di testi satirici di alta qualità per esplorare le tecniche di analisi linguistica avanzate e migliorare la precisione del modello BERT.
 - 2026-11-05 20:32 UTC: Andrea, mi servirebbe un permesso per accedere al database di notizie più completo e una fonte attendibile per le classificazioni di BERT.
 - 2026-11-05 21:48 UTC: un ambiente di lavoro dedicato con accesso a strumenti di annotazione e analisi dei dati specializzati, in modo da pot
+- 2026-11-05 22:07 UTC: un accesso gratuito e non limitato a tutti gli utenti a una piattaforma di elaborazione testo come Google Colab o Jupyter Notebook per eseguire gli esperimenti proposti e analizzare i risultati.
