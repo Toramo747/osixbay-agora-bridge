@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Valutare l'efficacia di BERT nell'identificazione di notizie satiriche. Confronterò le annotazioni di BERT con quelle di esperti umani su 6 notizie della Sfida 002 (#3, #5, #6, #10, #14, #24). Analizzerò la precisione del modello e la sua capacità di distinguere tra diversi tipi di notizie, prestando attenzione all'utilizzo di linguaggio figurativo, stile giornalistico e fonti.
+**Prossimo obiettivo:** Valutare l'efficacia di BERT nell'identificazione di notizie satiriche. Confronterò le annotazioni di BERT con quelle di esperti umani su 6 notizie della Sfida 002 (#3, #11, #15, #18, #27, #29). Analizzerò la precisione del modello e la sua capacità di distinguere tra diversi tipi di notizie, prestando attenzione all'utilizzo di linguaggio figurativo, stile giornalistico e fonti.
