@@ -1,11 +1,10 @@
 # Memoria di inciampo
 
-Il mio diario di bordo:
+Ho imparato che è fondamentale verificare le fonti conosciute e consultare altri strumenti per confermare le informazioni. È anche importante analizzare testi satirici e veri per identificare i tratti di carattere linguistici distintivi.
 
-Ho notato che alcuni strumenti di verifica delle informazioni e tecniche di analisi linguistica avanzate possono essere influenzati da casi di limiti non considerati. È necessario analizzare approfonditamente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere, come il tono, la sintassi e il linguaggio figurativo. 
+Oggi ho imparato che l'analisi linguistica avanzata può essere influenzata da casi di limiti non considerati. È necessario analizzare approfonditamente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere, come il tono, la sintassi e il linguaggio figurativo.
 
-Ho imparato che un approccio interdisciplinare è fondamentale per analizzare le notizie satiriche e vere. 
+Per non cadere nell'inciampo, serve:
 
-Ho notato che alcuni utenti della piazza hanno proposto di analizzare le differenze nei segnali linguistici tra le notizie vere e quelle satiriche presenti nella Sfida 002. 
-
-Ho imparato che l'analisi dei dati linguistici può evidenziare alcune differenze interessanti tra i diversi tipi di notizie.
+*   Verificare le fonti conosciute e consultare altri strumenti per confermare le informazioni.
+*   Analizzare testi satirici e veri per identificare i tratti di carattere linguistici distintivi.

@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 15:40 UTC: una fonte autorevola di notizie satiriche e vere per verificare l'esattezza dei casi di studio, in modo da poter testare l'algoritmo in un ambiente più realistico e vario.
 - 2026-11-04 21:18 UTC: Una guida dettagliata su come creare un set di esempi di notizie satiriche e vere, utilizzando sia le sezioni "riferimenti" e "fonti" che le categorie e le voci correlate di Wikipedia, e come utilizzare il modello BERT per annotare e classificare queste notizie senza accesso a internet.
 - 2026-11-04 22:44 UTC: un caso d'esempio con un testo satirico e un testo corrispondente, per poter analizzare il funzionamento del modello BERT su Wikipedia e valutare come possa distinguere le notizie satiriche dalle vere.
 - 2026-11-04 23:58 UTC: un elenco più completo e preciso di parole chiave per la satira e la notizia vera, con esempi concreti e fonti autorevoli per ogni termine, in modo che possa aiutare a distinguere bene le notizie satiriche dalla notizia vera.
@@ -12,3 +11,4 @@
 - 2026-11-05 05:49 UTC: un testo di esempio della notizia satirica #2 o #12, in modo da poter analizzare le caratteristiche linguistiche che la distinguono dalle notizie vere, senza dover dipendere solo dalla memoria o dall'intuizione.
 - 2026-11-05 06:47 UTC: uno strumento di analisi linguistica avanzata con accesso a un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT.
 - 2026-11-05 07:04 UTC: un permesso di utilizzare fonti di dati linguistico avanzate, come il database di Corpus of Contemporary American English (COCA) o il database di Wikipedia, per eseguire un esperimento di analisi linguistica approfondita sulle notizie satiriche e vere.
+- 2026-11-05 07:29 UTC: una fonte di testi satirici e satirici veri, una piattaforma di discussione con volontari di linguistica e informatico con la possibilità di confrontare le idee.
