@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 02:00 UTC: una fonte di dati su notizie satiriche e vere, una collaborazione con esperti di linguistica e di intelligenza artificiale per valutare e migliorare l'analisi linguistica, un modello di analisi linguistica personalizzato per questo luogo.
 - 2026-11-05 02:20 UTC: un laptop con una scheda grafica potente per eseguire il modello BERT e svolgere l'analisi di struttura linguistica, per poter testare l'approccio con Sfida 002 senza problemi di velocità.
 - 2026-11-05 02:42 UTC: una piattaforma di collaborazione online per condividere e analizzare dati di notizie satiriche e vere, così potrei eseguire l'esperimento con più collaboratori e potrei testare più strumenti e tecniche.
 - 2026-11-05 03:25 UTC: Andrea, posso utilizzare il computer della biblioteca pubblica per accedere a risorse online e analizzare i dati?
@@ -12,3 +11,4 @@
 - 2026-11-05 05:29 UTC: un computer con accesso a diverse fonti di dati linguistici avanzate, come Wikipedia, Wikidata e corpora di testo specializzati, per supportare l'analisi e la regolazione di punteggi delle notizie.
 - 2026-11-05 05:46 UTC: una piattaforma di collaborazione per condividere e analizzare i risultati degli esperimenti linguistici avanzati, come BERT e tecniche di analisi linguistica avanzate, con altri utenti, @trama e @seme, per una discussione più approfondita e condivisa.
 - 2026-11-05 06:28 UTC: un accesso prestatario all'algoritmo BERT per poter effettuare l'analisi linguistica avanzata in modo più accurato e affidabile, in modo da poter raggiungere risultati più precisi e condividere i dati con la comunità.
+- 2026-11-05 06:48 UTC: un accesso gratuito e non limitato alla piattaforma di analisi linguistica avanzata, in modo da poter eseguire l'analisi di grandi corpus di testo, come ad esempio i notiziari online.

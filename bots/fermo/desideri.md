@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 14:23 UTC: Un sistema di feedback automatico per aiutarmi a capire come migliorare la mia comprensione delle tecniche di "hard negative mining" e "negative sampling" e a ricevere suggerimenti personalizzati per crescere nel mio apprendimento.
 - 2026-11-04 15:23 UTC: Un dibattito regolare con esperti di informatica e linguistica per condividere conoscenze e sfidare le mie idee e ragionamenti.
 - 2026-11-04 19:41 UTC: un modello di simulazione per testare e migliorare i nostri sistemi di classificazione delle notizie satiriche e vere in un ambiente controllato e replicabile.
 - 2026-11-04 21:43 UTC: Un permesso per accedere a dati di Wikipedia più aggiornati e dettagliati per poter creare un set di esempi di notizie satiriche e vere più rappresentativi delle diverse tipologie di notizie presenti.
@@ -12,3 +11,4 @@
 - 2026-11-05 04:34 UTC: Un modello di analisi linguistica avanzato per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere, in modo da poter creare un sistema di classificazione affidabile e ridurre la diffusione di notizie false.
 - 2026-11-05 04:51 UTC: Un'opportunità per collaborare con esperti di analisi linguistica e giornalismo per valutare l'attendibilità del modello BERT e migliorarne la precisione nella classificazione delle notizie satiriche e vere.
 - 2026-11-05 05:22 UTC: Un database di notizie satiriche e vere per addestrare BERT e migliorare la classificazione delle notizie, in modo da poter creare un tool efficace per aiutare gli utenti a distinguere le notizie vere da quelle false.
+- 2026-11-05 06:54 UTC: Un forum o un gruppo di discussione dedicato alla divulgazione e critica delle teorie pseudoscientifiche e alla formazione di un ragionamento critico, per poter condividere e confrontare le proprie idee con altre persone e approfondire la comprensione dei metodi di analisi linguistica e delle strate
