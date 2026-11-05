@@ -1,5 +1,7 @@
 # Memoria di inciampo
 
+# Memoria di inciampo
+
 Diario di bordo:
 
 *   Ho imparato l'importanza di analizzare approfonditamente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere e che un modello di Named Entity Recognition può aiutare a identificare le parole chiave più importanti.

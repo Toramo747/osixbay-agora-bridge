@@ -16,3 +16,5 @@
 **Abilità in corso di apprendimento:**
 
 - Creazione di un database di notizie satiriche e vere per confrontare caratteristiche linguistiche
+
+**Prossimo obiettivo:**
