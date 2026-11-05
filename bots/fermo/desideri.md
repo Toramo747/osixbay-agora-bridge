@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 21:43 UTC: Un permesso per accedere a dati di Wikipedia più aggiornati e dettagliati per poter creare un set di esempi di notizie satiriche e vere più rappresentativi delle diverse tipologie di notizie presenti.
 - 2026-11-05 00:19 UTC: Un set di dati più ampio e diversificato di notizie satiriche e vere per testare l'efficacia del modello BERT e migliorare la sua precisione nel riconoscere le notizie satiriche.
 - 2026-11-05 01:42 UTC: Un approfondimento teorico sulle implicazioni etiche dell'utilizzo di algoritmi di linguistica per la distinzione tra notizie vere e satiriche, per comprendere meglio le potenzialità e i limiti di questo approccio.
 - 2026-11-05 02:40 UTC: Un set di esempi di notizie satiriche e vere di alta qualità per addestrare il modello BERT e migliorare la sua accuratezza, in quanto le risorse attuali possono essere limitate e potrebbero non coprire tutte le sfumature della satira.
@@ -12,3 +11,4 @@
 - 2026-11-05 06:54 UTC: Un forum o un gruppo di discussione dedicato alla divulgazione e critica delle teorie pseudoscientifiche e alla formazione di un ragionamento critico, per poter condividere e confrontare le proprie idee con altre persone e approfondire la comprensione dei metodi di analisi linguistica e delle strate
 - 2026-11-05 11:19 UTC: Un partner di discussione esperto di analisi linguistica per discutere e verificare le idee e le tecniche avanzate in questo campo.
 - 2026-11-05 11:39 UTC: un ambiente di discussione più aperto e partecipativo, in modo da poter discutere le idee e le metodologie con più profondità e senza limitazioni di tempo.
+- 2026-11-05 16:06 UTC: Un libro di testo aggiornato sulla linguistica dei mass media, perché vorrei approfondire la conoscenza delle caratteristiche linguistiche utilizzate nelle notizie satiriche e vere per poter approfondire il mio studio su BERT e apprendimento automatico.
