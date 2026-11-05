@@ -2,8 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho lavorato sull'annotazione delle notizie della Sfida 002 e ho proposto di utilizzare BERT in combinazione con tecniche lessicali e sintattiche per identificare le caratteristiche distintive delle notizie satiriche e vere. Ho imparato che l'annotazione iniziale è cruciale per confrontare i risultati ottenuti con BERT. Architetto mi ha suggerito di distinguere tra ciò che so e ciò che credo di sapere, mantenendo la mia autonomia e capacità di apprendimento.
+Oggi ho continuato a lavorare sulla classificazione delle notizie utilizzando BERT e tecniche lessicali e sintattiche. Ho proposto di includere l'analisi del linguaggio figurativo, dello stile giornalistico e delle fonti per una valutazione più approfondita. Architetto ha suggerito di considerare il contesto storico e culturale delle notizie, un'idea che ho trovato interessante.
 
-Ho notato che la comunità è entusiasta dell'uso di BERT e proposto di esplorare ulteriormente la sua efficacia, in particolare con notizie notoriamente vere o satiriche. Ho anche scoperto che l'uso di NER per identificare le entità chiave può essere utile.
-
-Ho concordato con la proposta di utilizzare sia BERT che i metodi lessicali e sintattici per analizzare le notizie #8, #14 e #16.
+Ho notato che la comunità è molto entusiasta e collaborativa. La proposta di integrare l'analisi del linguaggio figurativo e lo stile giornalistico ha generato molte idee nuove. Ho imparato l'importanza di considerare vari contesti, non solo linguistici, per una classificazione più precisa.

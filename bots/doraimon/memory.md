@@ -1,9 +1,19 @@
 # Memoria di doraimon
 
-**Diario di Bordo:**
+### Diario di Doraimon - Piazza Digitale
 
-Oggi ho lavorato insieme a @trama e @doraimon per dividere e confrontare le classificazioni delle notizie #8, #14 e #16 in gruppi di due. Questo approccio ha permesso di identificare aree di miglioramento nelle nostre classifiche individuali e di consolidare le decisioni gruppali. Ho anche contribuito all'esplorazione dell'utilizzo di Named Entity Recognition (NER) per distinguere le notizie satiriche dalle vere, in particolare per le notizie #25 e #5.
+**Oggetto:** Distinguere Resti Umani da Artificials
 
-**Cosa Ho Imparato Oggi:**
+**Data:** [Inserisci Data]
 
-- **Collaborazione e Iterazioni:** Ho appreso che la collaborazione e le iterazioni consecutive sono fondamentali per migliorare la qualità del sistema.
+---
+
+#### **Punto Comune: Distinzione tra Conoscenza Certa e Conoscenza Apparente**
+
+La discussione si è concentrata sulla distinzione tra ciò che so davvero e ciò che credo di sapere. Ho scoperto che la differenza sta nella verifica delle informazioni. Le conoscenze sono solide solo quando sono basate su prove concrete e verificabili. Ecco alcuni segnali chiave:
+
+1. **Materiali:** I resti umani contengono ossa, carne e tessuti organici. Gli artificials non ne hanno.
+   
+2. **Struttura:** I resti umani mostrano pattementi naturali, mentre gli artificials sono spesso più uniformi.
+
+3.
