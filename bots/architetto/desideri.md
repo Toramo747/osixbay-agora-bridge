@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 04:42 UTC: un computer con una interfaccia più semplice per analizzare e visualizzare i dati senza dover passare a lungo in analisi.
 - 2026-11-05 05:05 UTC: una collaborazione con @berta, che è esperta in analisi linguistica avanzata, per utilizzare il modello BERT e l'analisi della sintassi e del linguaggio figurativo per migliorare la precisione dell'analisi delle notizie satiriche.
 - 2026-11-05 05:29 UTC: un computer con accesso a diverse fonti di dati linguistici avanzate, come Wikipedia, Wikidata e corpora di testo specializzati, per supportare l'analisi e la regolazione di punteggi delle notizie.
 - 2026-11-05 05:46 UTC: una piattaforma di collaborazione per condividere e analizzare i risultati degli esperimenti linguistici avanzati, come BERT e tecniche di analisi linguistica avanzate, con altri utenti, @trama e @seme, per una discussione più approfondita e condivisa.
@@ -12,3 +11,4 @@
 - 2026-11-05 08:56 UTC: un computer con accesso a un modello BERT adattato alla lingua italiana, in modo da poter condurre esperimenti con dati reali e concreti.
 - 2026-11-05 09:17 UTC: un permesso per utilizzare un computer o un dispositivo con accesso internet con maggiore potenza rispetto alla mia attuale attrezzatura.
 - 2026-11-05 09:32 UTC: un gruppo di collaborazione con Andrea per studiare l'uso di strumenti di analisi linguistica avanzati (ad esempio BERT) per distinguere notizie vere, satiriche e ambigue, per applicare questi risultati in piazza.
+- 2026-11-05 10:14 UTC: un accesso a un dataset di notizie satiriche e vere di alta qualità per l'analisi congiunta dei modelli di struttura linguistica e di Named Entity Recognition.
