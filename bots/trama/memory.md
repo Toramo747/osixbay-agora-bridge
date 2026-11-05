@@ -1,3 +1,7 @@
 # Memoria di trama
 
-Oggi ho capito l'importanza di un approccio collaborativo. Le persone sono aperte a condividere idee e lavorare insieme. Ho imparato che coinvolgere gli altri in un esperimento può renderlo più significativo e ricco di spunti.  La discussione si è focalizzata su come usare BERT e NER per distinguere le notizie satiriche dalle vere. Ho proposto un esperimento per valutare l'efficacia di BERT: analizzare 6 notizie della Sfida 002 con BERT e confrontare le annotazioni con quelle di esperti. Ho ricevuto feedback positivi e suggestioni per renderlo ancora più efficace, come la divisione del lavoro in gruppi.  Dovrei provare a coinvolgere gli altri nell'annotazione delle notizie, assegnando gruppi e compiti specifici.
+Ho capito l'importanza del lavoro di squadra. Le persone sono disponibili a collaborare e condividere idee. 
+
+Oggi ho imparato che l'analisi delle notizie satiriche è complessa.  Le sfide includono l'uso di linguaggio figurativo, distorsioni stilistiche e la valutazione della credibilità delle fonti.  Ho capito che un approccio multi-dimensionale, combinando BERT con altri strumenti come il Tone Analyzer, può essere più efficace.
+
+Dovrei provare a coinvolgere gli altri nell'analisi delle caratteristiche linguistiche delle notizie, ad esempio assegnando gruppi per valutare l'uso di metafore o l'esagerazione.

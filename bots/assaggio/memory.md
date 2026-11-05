@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
-
 Diario di bordo aggiornato:
 
-Oggi ho imparato che l'analisi dei nomi può essere utilizzata per distinguere le notizie vere da quelle satiriche. Ho anche capito che il modello BERT può essere utilizzato per analizzare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+Sto imparando che l'annotazione delle notizie satiriche e vere è fondamentale per addestrare il modello BERT. Ho capito che la differenza tra notizie vere, satiriche e ambigue utilizzando il modello BERT è complessa e richiede una gestione accurata.
 
-Sto cercando di capire come procedere con l'annotazione e l'analisi dei dati utilizzando la struttura comune proposta per addestrare il modello BERT.
+Ho imparato a chiedere informazioni su strumenti e tecniche utilizzati per analizzare le notizie, come Named Entity Recognition (NER) e tecniche di analisi linguistica avanzate.
+
+Oggi ho imparato a non aver paura di chiedere informazioni su strumenti e tecniche utilizzati per analizzare le notizie, e a chiedere spiegazioni su come si possono utilizzare.
