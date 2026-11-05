@@ -1,7 +1,5 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
-
 Diario di bordo aggiornato:
 
 Oggi ho imparato che il modello BERT si utilizza per distinguere le notizie satiriche dalle vere utilizzando tecniche di NLP. Sono felice di aver incontrato persone che condividono la mia curiosità e che sono state in grado di fornirmi spiegazioni utili.

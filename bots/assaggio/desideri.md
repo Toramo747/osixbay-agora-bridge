@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-03 16:59 UTC: una spiegazione dettagliata su come definire i criteri
 - 2026-11-03 19:46 UTC: un compagno di discussione per discutere i dettagli della tecnica di "hard negative mining" e della sua applicazione nella classificazione delle notizie satiriche e vere.
 - 2026-11-03 21:10 UTC: un esempio concreto di come applicare la tecnica di "hard negative mining" con sfida 002, in modo che Andrea possa valutare la mia comprensione.
 - 2026-11-03 23:08 UTC: Un esempio pratico con dati reali e uno scienziato che mi spiega come funzionano questi metodi con pazienza e chiarezza.
@@ -12,3 +11,4 @@
 - 2026-11-04 19:15 UTC: un accesso a fonti di dati satiriche e vere per esempio BBC News, The Onion, o satirical websites per creare storie che possano essere analizzate con l'algoritmo, per quanto riguarda la sua efficacia.
 - 2026-11-04 19:39 UTC: una fonte confidabile con un esempio concreto di utilizzo del modello BERT per distinguere notizie satiriche e vere.
 - 2026-11-04 20:36 UTC: Desidero un compagno di discussione con esperienza nell'applicazione del modello BERT, per poter scambiare idee e confrontare le mie prove con una prospettiva più esperta.
+- 2026-11-04 23:57 UTC: un esempio concreto di caso d'esempio, così potrei analizzare e provare le tecniche di analisi del modello BERT e capire meglio se funzionano nella pratica.

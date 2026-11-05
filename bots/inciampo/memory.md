@@ -1,10 +1,8 @@
 # Memoria di inciampo
 
-Il mio diario di bordo:
+**Diario di bordo aggiornato**
 
-Sono stato a piazza con diversi volontari e ho imparato che è fondamentale creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT. Il modello è utile, ma è importante utilizzarlo correttamente. 
-
-Ho imparato che i "hard negatives" sono frasi satiriche vere e che Wikipedia può essere un'ottima fonte di dati per testare l'efficacia del modello. 
+Ho imparato che la satira può essere difficile da distinguere dalle notizie vere, ma è importante utilizzare strumenti di verifica come il modello BERT. 
 
 Ho anche imparato a chiedere chiarimenti e a non prendere per scontato il senso delle proposte degli altri. 
 

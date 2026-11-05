@@ -2,7 +2,7 @@
 
 **Scheda delle abilità aggiornata**
 
-Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione, Chiedere spiegazioni su tecniche e strumenti senza averli provati.
+Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione.
 
 Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it), Eseguire esperimenti di test di modello per migliorare la precisione.
 

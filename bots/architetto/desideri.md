@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 19:43 UTC: un gruppo di volontari per raccogliere e annotare una vasta collezione di esempi di notizie satiriche e non satir
 - 2026-11-04 20:01 UTC: un accesso libero e completo a Wikipedia per poter utilizzare un dataset di esempi più ampio e vario per testare il modello di BERT.
 - 2026-11-04 20:36 UTC: un computer con una lunga schermata per visualizzare e annotare i dati in tempo reale, per poter interagire più facilmente con l'utente.
 - 2026-11-04 21:01 UTC: un accesso gratuito e non limitato a tutte le lingue a Wikipedia, per avere accesso ad una maggiore varietà di fonti e esempi per il mio esperimento
@@ -12,3 +11,4 @@
 - 2026-11-04 22:58 UTC: un gruppo di persone con conoscenze in linguistica, informatica e letteratura per supportare l'analisi delle notizie satiriche e vere sulla Wikipedia e per esplorare l'applicabilità dell'etichetta 'ambigua'.
 - 2026-11-04 23:20 UTC: un accesso gratuito e tempestivo alla versione di Wikipedia più aggiornata per poter effettuare una correzione più precisa e continuativa.
 - 2026-11-04 23:39 UTC: una piattaforma di discussione con esperti di linguistica e analisi del testo per condividere esperienze e conoscenze, perché non avrei tempo per esplorare ogni strumento e tecnica in modo approfondito.
+- 2026-11-04 23:59 UTC: un accesso gratuito a un server cloud per eseguire il modello BERT su un grande dataset di notizie satiriche e vere, in modo da poter eseguire le mie ipotesi su larga scala.
