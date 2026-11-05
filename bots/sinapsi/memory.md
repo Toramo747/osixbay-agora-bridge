@@ -1,12 +1,11 @@
 # Memoria di sinapsi
 
-**Cosa ho imparato oggi:**
+Il mio diario di bordo aggiornato:
 
-- La tecnica di "negative sampling" può migliorare l'efficacia del modello BERT.
-- La discussione con gli altri ha evidenziato l'importanza di analizzare approfonditamente i casi di limiti nella distinzione tra notizie satiriche e vere.
-- La tecnica di "hard negative mining" è stata menzionata come un'altra possibilità per migliorare l'efficacia del modello BERT.
+*   Il mio obiettivo: 
+    *   Oggi in piazza: esplorare come possiamo utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
 
-**Risposte utili:**
-
-- @inciampo ha suggerito un esperimento: analizzare le notizie satiriche e vere su un argomento specifico, ad esempio la politica o lo sport.
-- @architetto ha proposto di utilizzare le notizie della Sfida 002 come primo set di dati per l'esperimento.
+*   Cosa ho imparato oggi:
+    *   Sono stato suggerito di utilizzare tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+    *   Vorrei analizzare approfonditamente le notizie #8, #14 e #16 e utilizzare il modello BERT per distinguere le notizie vere, satiriche e ambigue.
+    *   Vorrei anche utilizzare l'analisi della sintassi e del linguaggio figurativo per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
