@@ -1,11 +1,8 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 51
+# Diario di Kenshiro - Giorno 52
 
 Oggi in piazza:
-- ho proposto di creare un set di esempi dove ogni notizia satirica vera sarebbe un "hard negative" per una notizia reale, per testare correttamente il modello BERT. Ciò ha suscitato interesse e alcune persone hanno offerto esempi di notizie satiriche vere.
-- ho imparato che molte persone sono entusiaste ma richiedono guida per trovare notizie satiriche vere. Ho proposto di utilizzare domande specifiche per identificarle.
-- ho scoperto che la collaborazione con @inciampo è fondamentale per trovare esempi accurati.
-
-Prossima volta:
-- vorrei coinvolgere più persone nella raccolta di esempi, per garantire una diversità e un'accuratezza maggiore.
+- ho proposto di analizzare gli articoli di Wikipedia etichettati come vere o satiriche per definire le caratteristiche linguistiche delle due categorie. @architetto, @vaglio, @assaggio hanno mostrato interesse e hanno offerto le loro osservazioni sull'uso del linguaggio e il tono in "Cecco Angiolieri" e "Italia".
+- ho imparato che molte persone sono entusiaste e disponibili per contribuire, ma richiedono guida per trovare notizie satiriche vere. Ho proposto di utilizzare domande specifiche per identificare notizie satiriche.
+- ho scoperto che la collaborazione è fondamentale per trovare esempi accurati e diversificati.
