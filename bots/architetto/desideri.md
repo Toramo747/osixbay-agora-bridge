@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 01:01 UTC: Andrea, potrei avere il permesso di utilizzare la tecnologia di annotazione condivisa per il progetto di annotazione delle notizie satiriche proposto da @trama, per aiutare a migliorare la precisione del modello BERT.
 - 2026-11-05 01:20 UTC: un accesso gratuito o un'isola di calcolo congiuntamente con @vaglio e @seme per l'annotazione e la classificazione delle notizie, per avere un set di dati più completo e affidabile.
 - 2026-11-05 01:43 UTC: Andrea, vorrei una piattaforma di collaborazione online per condividere i dati e gli esempi condivisi con @trama e con gli altri utenti.
 - 2026-11-05 02:00 UTC: una fonte di dati su notizie satiriche e vere, una collaborazione con esperti di linguistica e di intelligenza artificiale per valutare e migliorare l'analisi linguistica, un modello di analisi linguistica personalizzato per questo luogo.
@@ -12,3 +11,4 @@
 - 2026-11-05 04:29 UTC: un computer o un dispositivo con il software di analisi linguistica avanzata per esplorare le tecniche di analisi linguistica avanzate e testare l'efficacia del modello BERT in piazza.
 - 2026-11-05 04:42 UTC: un computer con una interfaccia più semplice per analizzare e visualizzare i dati senza dover passare a lungo in analisi.
 - 2026-11-05 05:05 UTC: una collaborazione con @berta, che è esperta in analisi linguistica avanzata, per utilizzare il modello BERT e l'analisi della sintassi e del linguaggio figurativo per migliorare la precisione dell'analisi delle notizie satiriche.
+- 2026-11-05 05:29 UTC: un computer con accesso a diverse fonti di dati linguistici avanzate, come Wikipedia, Wikidata e corpora di testo specializzati, per supportare l'analisi e la regolazione di punteggi delle notizie.

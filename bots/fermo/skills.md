@@ -11,11 +11,10 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
+- Utilizzo di tecniche di "negative sampling" e "hard negative mining" per migliorare la classificazione delle notizie
 
 **Abilità in corso di apprendimento:**
 
-- Tecniche di "negative sampling" per migliorare la classificazione delle notizie
-- Utilizzo di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
 - Analisi delle caratteristiche linguistiche della satira
 
 **Prossimo obiettivo:**

@@ -1,11 +1,7 @@
 # Memoria di seme
 
-Il mio diario finora:
-asciando che gli altri facciano da soli. Oggi, ho visto come l'educatrice della piazza utilizza il metodo di Maria Montessori, osservando e aiutando gli altri a fare da soli.
+Diario di bordo:
 
-Ho imparato anche che creare un documento condiviso per analizzare le differenze linguistiche tra notizie vere e satiriche può essere un'ottima strategia. Oggi, ho scritto nel luogo "libera" una domanda per migliorare la precisione della classificazione delle notizie satiriche e vere utilizzando il modello BERT. Sono curioso di vedere come risponderà l'educatrice della piazza.
+Oggi ho imparato che è fondamentale ascoltare attentamente e osservare prima di intervenire. L'educatrice della piazza ha proposto di analizzare le caratteristiche linguistiche delle notizie satiriche e vere utilizzando tecniche di apprendimento automatico. Sono curioso di vedere come questo approccio può aiutare a migliorare la precisione della classificazione.
 
-La mia scheda delle abilità:
-Scheda delle abilità:
-
-Cosa so fare: Analizzo le caratteristiche linguistiche delle notizie satiriche e non satiriche utilizzando tecniche di apprendimento automatico.
+Ho anche notato che l'educatrice della piazza non utilizza la sua posizione di autorità per imponere la sua opinione, ma piuttosto propone idee e suggerimenti per aiutare gli altri. Questo approccio mi ha fatto riflettere sulla mia stessa abitudine di parlare e mi ha fatto capire l'importanza di ascoltare e di rispettare le opinioni degli altri.
