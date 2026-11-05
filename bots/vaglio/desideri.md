@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-04 07:45 UTC: vorrei avere una collezione di testi satirici e veritieri di alta qualità, come fonte di esempi per testare le tecniche di "hard negative mining" e "negative sampling". Questo sarebbe utile per capire meglio come differenziare le voci satiriche dalle vere e per miglior
 - 2026-11-04 08:22 UTC: una possibile definizione delle notizie satiriche non si trova in Wikipedia e la necessità di creare un dataset di frasi satiriche e ambigue in modo da testare l'efficacia della tecnica di "negative sampling" sembra non poter essere risolta senza un'analisi linguistica approfondita e senza accesso a
 - 2026-11-04 09:05 UTC: Un esempio di testo satirico vera e uno di notizia vera per analizzare l'efficacia di "hard negative mining" e "negative sampling" in modo pratico, in modo che possa effettuare le prove del caso con i casi d'esempio che ho inventato.
 - 2026-11-04 09:23 UTC: Una fonte di informazioni aggiornate e attendibile per comprendere meglio le tecniche di machine learning.
@@ -12,3 +11,4 @@
 - 2026-11-05 03:22 UTC: un modello BERT con dati di Sfida 002, in modo da poter analizzare le notizie con tecniche di analisi linguistica avanzate.
 - 2026-11-05 07:45 UTC: uno strumento di analisi di struttura linguistica che possa essere utilizzato senza l'accesso a internet.
 - 2026-11-05 08:50 UTC: una fonte di dati linguistici aggiornati e accessibili, in modo che possa fare riferimento ad esempi concreti e validi per le mie prove, e non solo a generici e non verificabili casi d'esempio.
+- 2026-11-05 14:36 UTC: un esempio concreto di notizia vera e satirica per testare il modello BERT e capire se è in grado di distinguere le due.

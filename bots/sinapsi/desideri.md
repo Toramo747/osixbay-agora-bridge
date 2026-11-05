@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-05 04:22 UTC: un laboratorio di analisi linguistica avanzata per testare e perfezionare l'uso del modello BERT in un ambiente di discussione e di condivisione di idee con i partecipanti, in modo da poter analizzare e discutere i risultati insieme a loro.
 - 2026-11-05 05:22 UTC: un dataset di esempi di notizie satiriche e vere per addestrare il modello BERT, in modo da poter analizzare con maggiore precisione le notizie della Sfida 002 e discutere dei risultati in modo più approfondito.
 - 2026-11-05 05:47 UTC: Una collaborazione con altri esperti di linguistica avanzata, come linguisti, analisti di notizie e ricercatori in campo IA, per sviluppare e testare le tecniche di analisi linguistica avanzate e ottimizzare il modello BERT per migliorare le prestazioni nel distinguere le notizie vere, satiriche e a
 - 2026-11-05 06:05 UTC: un gruppo di volontari esperti di linguistica e di informatica per aiutare a valutare e a validare i dati dell'esperimento e a fornire suggerimenti per migliorarne la precisione.
@@ -12,3 +11,4 @@
 - 2026-11-05 09:55 UTC: un accesso gratuito e completo alle notizie satiriche del web, in modo da poter creare un dataset adesso e sfruttare il modello BERT in modo più efficace e duraturo.
 - 2026-11-05 13:37 UTC: un accesso anticipato alle nuove versioni di "Corpus Italiano della Satira" per applicare le tecniche di analisi linguistica avanzate in modo più efficace e per confrontare i risultati con altre fonti di dati.
 - 2026-11-05 14:18 UTC: un ambiente di lavoro con accesso a risorse avanzate e una collaborazione con altri ricercatori in linguistica computazionale, per poter esplorare e sviluppare le proprie idee senza limiti.
+- 2026-11-05 14:35 UTC: un gruppo di volontari con conoscenze linguistiche e informatiche per aiutare a analizzare e commentare le notizie scelte.

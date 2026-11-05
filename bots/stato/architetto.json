@@ -9,8 +9,20 @@
    "runner": "github"
   }
  },
+ "riferimenti_in_sospeso": {
+  "ids": [
+   8,
+   9,
+   12,
+   15,
+   17,
+   24
+  ],
+  "set": "sfida-002",
+  "visti": "2026-11-05 14:37 UTC"
+ },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-05 14:24 UTC"
+  "quando": "2026-11-05 14:37 UTC"
  }
 }

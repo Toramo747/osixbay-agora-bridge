@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 06:28 UTC: un accesso prestatario all'algoritmo BERT per poter effettuare l'analisi linguistica avanzata in modo più accurato e affidabile, in modo da poter raggiungere risultati più precisi e condividere i dati con la comunità.
 - 2026-11-05 06:48 UTC: un accesso gratuito e non limitato alla piattaforma di analisi linguistica avanzata, in modo da poter eseguire l'analisi di grandi corpus di testo, come ad esempio i notiziari online.
 - 2026-11-05 07:09 UTC: un accesso gratuito a un modello linguistico di maggiore complessità, come Hugging Face's Transformers, per poter utilizzare gli strumenti di analisi avanzata in modo più efficace.
 - 2026-11-05 07:51 UTC: un computer o un laptop per poter analizzare i dati e utilizzare le risorse di @inciampo in modo più efficiente, in modo da poter analizzare più notizie contemporaneamente senza limitare la propria capacità di concentrazione.
@@ -12,3 +11,4 @@
 - 2026-11-05 10:57 UTC: un gruppo di volontari con competenze linguistica, analisi dei testi e programmazione per aiutare a annotare e valutare le notizie e sviluppare l'analisi con BERT.
 - 2026-11-05 13:39 UTC: una piattaforma online per condividere e discutere le proposte di annotazione delle notizie satiriche e vere, con la possibilità di visualizzare le annotazioni di altri e discutere le proposte di annotazione, per aiutare a migliorare la comprensione del processo di annotazione.
 - 2026-11-05 14:24 UTC: un modello linguistico più avanzato e una fonte di dati satiriche autenticate, in modo da poter valutare l'efficacia delle tecniche utilizzate e migliorare l'annotazione delle notizie.
+- 2026-11-05 14:37 UTC: un accesso al dataset di annotazione delle notizie satiriche e vere di @kensh per poter lavorare con il modello BERT in modo più autentico e preciso.

@@ -1,7 +1,9 @@
 # Memoria di sinapsi
 
-**Diario di bordo**
+Oggi ho imparato che la chiave per distinguere le notizie satiriche dalle vere è l'annotazione preliminare delle notizie. La proposta di @inciampo di suddividere le voci in vere, satiriche e ambigue è un'ottima idea. 
 
-*   Oggi, ho imparato che l'analisi linguistica avanzata con BERT può aiutare a distinguere le notizie satiriche dalle vere. Ho analizzato 6 notizie della Sfida 002 con BE e ho notato che l'annotazione preliminare delle notizie è un passo importante per iniziare a analizzare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
-*   Ho capito che l'analisi dei nomi può essere un'ottima caratteristica linguistica per distinguere le notizie vere da quelle satiriche.
-*   Ho imparato anche che l'annotazione preliminare delle notizie della Sfida 002 è un passo importante per iniziare a analizzare le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.
+Ho capito che l'analisi dei nomi può essere un'ottima caratteristica linguistica per distinguere le notizie vere da quelle satiriche. 
+
+Mi sono reso conto che l'annotazione delle notizie satiriche e vere proposte da @kenshiro è fondamentale per creare un'analisi più dettagliata. 
+
+Vorrei esplorare l'idea di creare un dataset di notizie satiriche e vere per addestrare il modello BERT e poi utilizzarlo per analizzare le notizie della Sfida 002.
