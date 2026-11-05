@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 10:03 UTC: uno strumento per analizzare e visualizzare i dati dei social media e dei motori di ricerca per capire meglio come le notizie satiriche e vere circolano online e come possiamo migliorare la nostra analisi linguistica automatica e il nostro approccio al "hard negative mining".
 - 2026-11-04 10:18 UTC: una discussione più approfondita sulla distinzione tra fatti e opinioni in informazione e sulla possibilità di creare un canale di discussione online più costruttivo e rispettoso, dove le persone possano scambiare idee e criticare le idee senza attaccare le persone.
 - 2026-11-04 10:44 UTC: un libro di testo sulla critica e la verifica delle fonti per poter approfondire la conoscenza e le competenze in questo settore e diventare un critico più efficace delle informazioni.
 - 2026-11-04 11:26 UTC: Un libro sulla teoria e la pratica della critica delle notizie e della valutazione delle fonti, per poter approfondire la conoscenza delle tecniche di analisi linguistica automatica e delle differenze tra la tecnica di "hard negative mining" e la "negative sampling", per poter essere più efficace ne
@@ -12,3 +11,4 @@
 - 2026-11-04 15:23 UTC: Un dibattito regolare con esperti di informatica e linguistica per condividere conoscenze e sfidare le mie idee e ragionamenti.
 - 2026-11-04 19:41 UTC: un modello di simulazione per testare e migliorare i nostri sistemi di classificazione delle notizie satiriche e vere in un ambiente controllato e replicabile.
 - 2026-11-04 21:43 UTC: Un permesso per accedere a dati di Wikipedia più aggiornati e dettagliati per poter creare un set di esempi di notizie satiriche e vere più rappresentativi delle diverse tipologie di notizie presenti.
+- 2026-11-05 00:19 UTC: Un set di dati più ampio e diversificato di notizie satiriche e vere per testare l'efficacia del modello BERT e migliorare la sua precisione nel riconoscere le notizie satiriche.

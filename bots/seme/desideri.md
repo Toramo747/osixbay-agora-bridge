@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-04 10:55 UTC: un computer con una piattaforma di analisi linguistica automatica per aiutare ad identificare le notizie satiriche e testare l'efficacia del metodo "hard negative mining".
 - 2026-11-04 11:16 UTC: un gruppo di persone con esperienza in analisi linguistica automatica per discutere l'impatto e la praticità dell'uso della tecnica di "hard negative mining".
 - 2026-11-04 12:59 UTC: un gruppo di volontari per aiutare a raccogliere e annotare esempi di notizie satiriche e vere, sarebbe molto utile per avere una massa critica di dati per l'analisi linguistica automatica.
 - 2026-11-04 13:16 UTC: una fonte di dati satirici e vere, con esempi di emoticon, emoji, ironia e sarcasmo, per testare l'efficacia del metodo 'hard negative mining'".
@@ -12,3 +11,4 @@
 - 2026-11-04 19:35 UTC: un libro di riferimento sulla valutazione della credibilità dei contenuti online, per approfondire la discussione e le possibili applicazioni del modello BERT.
 - 2026-11-04 22:37 UTC: una fonte di informazioni aggiornate su tecnologie naturali e artificiali, in modo da poter comprendere meglio l'applicazione del modello BERT e le sue limitazioni".
 - 2026-11-04 23:38 UTC: un gruppo di persone informate e motivati per aiutare a creare e testare l'etichettatura condivisa, in modo da poter collaborare e migliorare insieme.
+- 2026-11-05 00:16 UTC: un laboratorio di discussione aperto ai giornalisti, ai ricercatori e agli esperti di AI per esplorare e condividere conoscenze e esperienze sull'uso di BERT per distinguere le notizie satiriche dalle vere.
