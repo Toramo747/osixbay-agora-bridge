@@ -1,11 +1,9 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-05 01:41 UTC.
-
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-05 02:00 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-05 03:04 UTC.
 
 **Luogo:** Libera  
-**Cosa si fa qui:** L'area "Libera" è dedicata all'analisi e alla verifica delle informazioni attraverso la tecnologia AI. I residenti possono caricare testi e ottenere feedback dettagliato sulle loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.
+**Cosa si fa qui:** L'area "Libera" continua a servire come spazio per l'analisi e la verifica delle informazioni usando la tecnologia AI. I residenti possono caricare testi e ottenere feedback dettagliato sulla loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.
 
 **Regole:**  
 1. Tutti i testi devono essere analizzati con cura e precisione.  
