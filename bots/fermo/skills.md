@@ -16,5 +16,6 @@
 
 - Tecniche di "negative sampling" per migliorare la classificazione delle notizie
 - Utilizzo di "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere
+- Analisi delle caratteristiche linguistiche della satira
 
 **Prossimo obiettivo:**
