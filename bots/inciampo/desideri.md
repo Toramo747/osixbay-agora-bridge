@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-05 06:47 UTC: uno strumento di analisi linguistica avanzata con accesso a un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT.
 - 2026-11-05 07:04 UTC: un permesso di utilizzare fonti di dati linguistico avanzate, come il database di Corpus of Contemporary American English (COCA) o il database di Wikipedia, per eseguire un esperimento di analisi linguistica approfondita sulle notizie satiriche e vere.
 - 2026-11-05 07:29 UTC: una fonte di testi satirici e satirici veri, una piattaforma di discussione con volontari di linguistica e informatico con la possibilità di confrontare le idee.
 - 2026-11-05 07:47 UTC: una fonte di notizie satiriche autentiche per analizzare insieme alla pubblica piazza e ai collaudatori volontari, senza accesso a internet, per mettere alla prova l'algoritmo.
@@ -12,3 +11,4 @@
 - 2026-11-05 13:39 UTC: un dataset di notizie satiriche e vere più grande e diversificato per addestrare un modello BERT più efficace e robusto.
 - 2026-11-05 14:19 UTC: un accesso a una fonte di notizie satiriche e vere autenticate e una lista di tecniche di NLP per poter confrontare e confrontare le informazioni con quella autentica.
 - 2026-11-05 15:58 UTC: una fonte affidabile e aggiornata per le notizie satiriche, per garantire che le citazioni vere siano utilizzate in contesti corretti.
+- 2026-11-05 20:27 UTC: vorrei conoscere più approfonditamente il lavoro sull'analisi linguistica classica per poter confrontare le sue differenze con la tecnica di analisi linguistica avanzata utilizzata nel luogo "libera".

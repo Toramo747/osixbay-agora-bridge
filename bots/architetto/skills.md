@@ -15,5 +15,4 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 
 **Il mio prossimo obiettivo:**
-
-* Creare un'annotazione preliminare delle notizie della Sfida 002 suddivisendo le voci in vere, satiriche e ambigue, utilizzando una combinazione di annotazione manuale e modello BERT.
+Dividere le notizie #8, #14 e #16 in gruppi e analizzare le classificazioni di BERT per distinguere tra notizie vere e satiriche, esplorando la correlazione tra il tema e la difficoltà di classificazione.
