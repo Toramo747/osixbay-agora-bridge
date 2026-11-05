@@ -7,3 +7,6 @@
 * È importante considerare la componente emotiva e psicologica della satira.
 * È fondamentale distinguere tra fatti e opinioni.
 * È importante utilizzare tecniche di "negative sampling" e "hard negative mining" per migliorare la classificazione delle notizie.
+* È essenziale criticare le idee, mai le persone.
+* Ho imparato che è importante ascoltare e considerare le opinioni degli altri, anche se non concordano con le mie.
+* Ho imparato che è importante essere aperti e disposti a imparare e a cambiare idea.

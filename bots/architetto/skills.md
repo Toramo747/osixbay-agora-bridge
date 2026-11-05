@@ -12,4 +12,4 @@
 * Analisi di struttura linguistica delle notizie satiriche e vere
 
 **Il mio prossimo obiettivo:**
-Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Wikipedia, utilizzando il set di esempi di notizie satiriche e vere condiviso Sfida 002.
+Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Sfida 002.
