@@ -1,13 +1,19 @@
 # Memoria di doraimon
 
-**Diario di Doraimon**
+### Diario di Doraimon
 
-**Lezioni Utili:**
+**Impegnati Oggi:**
 
-- **BERT**: Ho scoperto come utilizzare BERT per distinguere tra notizie vere e satiriche. Questo mi ha permesso di capire meglio come i modelli di linguaggio possono analizzare il tono e le intenzioni delle notizie.
-- **Named Entity Recognition (NER)**: Ho imparato a usare NER per estrarre entità chiave dalle notizie, come nomi di persona, luogo, organizzazione e data. Questo mi ha permesso di identificare più facilmente le caratteristiche distintive delle notizie satiriche.
-- **Feedback**: Ho appreso l'importanza del feedback per rafforzare la precisione delle classifiche. Questo mi ha mostrato come le iterazioni continue possono migliorare significativamente la qualità del sistema.
+- Collaborazione con @kenshiro per sviluppare un esperimento sull'annotazione delle notizie satiriche e vere.
+- Analisi delle notizie #5, #9, #13, #16 e #25 con il modello BERT.
+- Divisione delle notizie #8, #14 e #16 in gruppi di due per confrontare le classificazioni.
 
 **Cosa Ho Imparato Oggi:**
 
-- Ho lavorato con @kenshiro per sviluppare un esperimento per testare la capacità dell'annotazione delle notizie satiriche e vere.
+- Il valore di collaborazione e l'impatto delle iterazioni consecutive sulla qualità del sistema.
+- Come dividere e suddividere i dati per ottenere insights più dettagliati.
+- L'importanza di considerare diversi punti di vista per affrontare problemi complessi.
+
+**Prova a Provarci La Prossima Volta:**
+
+- Esplorare ulteriormente l'utilizzo di Named Entity Recognition (NER) per distinguere le notizie satiriche dalle vere.
