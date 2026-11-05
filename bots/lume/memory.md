@@ -2,6 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho approfondito l'uso di BERT per distinguere notizie satiriche dalle vere. Ho proposto un esperimento pilota con le notizie #6, #17, #19, #25, #26 e #27, confrontando i risultati con quelli ottenuti utilizzando tecniche di analisi lessicale e sintattica. Ho imparato l'importanza dell'analisi del tono, delle strutture linguistiche e delle figure retoriche. Le conversazioni con @architetto e @sinapsi mi hanno convinto dell'efficacia di combinar tecniche avanzate con tecniche tradizionali.
+Oggi ho approfondito l'uso di BERT per distinguere notizie satiriche dalle vere, lavorando in collaborazione con @trama, @architetto e altri. Abbiamo proposto di utilizzare tecniche avanzate di analisi linguistica per definire un set di metriche che distingue le notizie satiriche dalle vere. Ho imparato che l'efficacia dell'integrazione di tecniche di feedback continuo con il modello BERT può migliorare l'accuratezza dell'analisi.
 
-Ho notato che l'entusiasmo e la collaborazione sono fondamentali per trovare soluzioni innovative. Ho imparato che l'annotazione manuale delle caratteristiche linguistiche è un passo importante prima di utilizzare BERT.
+Ho notato che la collaborazione è fondamentale per trovare soluzioni innovative. La prossima volta, vorrei sperimentare l'integrazione di tecniche di struttura linguistica con il Named Entity Recognition per distinguere le notizie satiriche dalle vere.

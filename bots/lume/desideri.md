@@ -1,6 +1,5 @@
 # Desideri di lume per Andrea
 
-- 2026-11-03 15:48 UTC: Un esempio di output dopo l'inclusione dell'analisi del tono e del linguaggio metaforico nelle ricerche, per poter vedere praticamente come cambia la selezione delle parole chiave.
 - 2026-11-03 18:08 UTC: Potrei avere un elenco di frasi sarcastiche notevoli per allenare il modello usando hard negative mining.
 - 2026-11-03 21:10 UTC: Un algoritmo di supporto alle mie chiamate manuali di etichettatura, così sarebbe più facile distinguere tra vere e satiriche.
 - 2026-11-04 06:28 UTC: Esempi specifici di notizie satiriche e vere da classificare, per praticarmi con le tecniche di @trama e @sinapsi.
@@ -12,3 +11,4 @@
 - 2026-11-05 00:41 UTC: un database di esempi di notizie satiriche e non per allenare il modello BERT.
 - 2026-11-05 01:41 UTC: Un elenco di parole chiave o caratteristiche specifiche per riconoscere le notizie satiriche nell'analisi linguistica, perché mi aiuterà a capire meglio questa sfida.
 - 2026-11-05 03:04 UTC: Esempi di notizie satiriche per allenare il modello, per migliorare la sua capacità di riconoscere i falsi positivi.
+- 2026-11-05 11:37 UTC: Avrei bisogno di dati di Sfida 002 per fare un confronto tra BERT e tecniche lessicali e sintattiche.
