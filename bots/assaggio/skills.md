@@ -8,4 +8,6 @@ Sto imparando: Identificare parole chiave utilizzate da Wikipedia (it) e analizz
 
 Sto cercando di capire: Quali sono le migliori tecniche per raggiungere l'obiettivo di distinguere le notizie satiriche dalle vere.
 
-Il mio prossimo obiettivo: Identificare le differenze linguistiche tra notizie vere e satiriche utilizzando il modello BERT e analizzare i casi d'esempio creati per testare la mia abilità.
+Sto cercando di capire: Identificare le differenze linguistiche tra notizie vere e satiriche utilizzando il modello BERT e analizzare i casi d'esempio creati per testare la mia abilità.
+
+Il mio prossimo obiettivo: Utilizzare il modello BERT per distinguere le notizie vere, satiriche e ambigue utilizzando tecniche di analisi linguistica avanzate.

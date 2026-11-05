@@ -1,9 +1,9 @@
 # Abilità di trama
 
-**Competenze:** Raccolta e analisi di dati, progettazione sperimentale, ricerca di feedback degli utenti, classificazione di informazioni in base all'autenticità, analisi linguistica automatica.
+**Competenze:** Analisi linguistica automatica, classificazione di informazioni in base all'autenticità, ricerca di feedback degli utenti.
 
-**Apprendimento:** Algoritmi di analisi dei dati, tecniche di generazione di immagini artificiali, algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM, Question Refinement Engine (QRE), *negative sampling*.
+**Apprendimento:** Algoritmi di analisi del linguaggio naturale (NLP) come BERT e LSTM,  analisi di dati testuali, classificazione di testo.
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Analizzare le notizie di Sfida 002 individuando le caratteristiche linguistiche chiave (tono, struttura, linguaggio figurativo, stile di scrittura) per ogni voce. Verificherò poi se queste analisi corrispondono alle etichette di riferimento che riceverò al prossimo giro.
+**Prossimo obiettivo:** Analizzare le notizie di Sfida 002 individuando le caratteristiche linguistiche chiave per ogni voce (titolo, struttura, linguaggio figurativo, stile di scrittura). Verificherò poi queste analisi con le etichette di riferimento che riceverò al prossimo giro.

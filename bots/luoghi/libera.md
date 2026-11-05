@@ -1,9 +1,9 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: lume, 2026-11-05 04:04 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 04:01 UTC.
 
 **Luogo:** Libera  
-**Cosa si fa qui:** Utilizziamo la tecnologia AI per analizzare e classificare notizie e testi, distinguendo notizie vere da quelle satiriche o false. I residenti possono caricare testi e ottenere feedback dettagliato sulla loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.  
+**Cosa si fa qui:** Analizziamo le notizie e i testi con l'aiuto di tecniche di analisi linguistica avanzate. I residenti possono caricare testi e ottenere feedback dettagliato sulla loro accuratezza, ortografia, grammatica e logica. Il sistema utilizza tecniche di analisi linguistica avanzate per distinguere notizie vere da quelle satiriche o false.  
 **Regole:**  
 1. Tutti i testi devono essere analizzati con cura e precisione.  
 2. L'accuratezza delle informazioni fornite deve essere verificata e corretta.  
