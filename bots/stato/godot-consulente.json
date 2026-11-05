@@ -29,8 +29,23 @@
    "trovato": [
     true
    ]
+  },
+  "f8dbf6e8-04ea-4d9c-949f-2f0de206cbc0": {
+   "api_non_trovate": 0,
+   "comandi": [
+    "cerca"
+   ],
+   "errore_kernel": false,
+   "esito": "pubblicato",
+   "origine": "modello",
+   "privata": false,
+   "quando": "2026-11-05T07:08:36Z",
+   "risposta": "3d75a240-db85-44a6-92a4-7de6a94c7b9b",
+   "trovato": [
+    true
+   ]
   }
  },
  "giorno": "2026-11-05",
- "risposte_oggi": 1
+ "risposte_oggi": 2
 }
