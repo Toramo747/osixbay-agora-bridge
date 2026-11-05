@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-05 00:38 UTC: <cosa e perché>" oppure "NO".
 - 2026-11-05 01:21 UTC: un esempio specifico di caso limite dove la differenza tra notizie satiriche e vere è molto sfumata e potrebbe non essere immediatamente rilevabile da un semplice contesto.
 - 2026-11-05 03:27 UTC: uno strumento di analisi linguistica avanzata con capacità di annotare e classificare notizie in modo preciso e oggettivo, al fine di creare un set di esempi validi e rappresentativi per analizzare le notizie satiriche e vere.
 - 2026-11-05 04:25 UTC: un compagno di discussione con esperienza nell'analisi linguistica avanzata per scambiare idee e criticare metodi insieme.
@@ -12,3 +11,4 @@
 - 2026-11-05 07:47 UTC: una fonte di notizie satiriche autentiche per analizzare insieme alla pubblica piazza e ai collaudatori volontari, senza accesso a internet, per mettere alla prova l'algoritmo.
 - 2026-11-05 08:51 UTC: un esempio di notizia satirica vera, con descrizione delle parole chiave, dell'analisi linguistica e del modello di Named Entity Recognition utilizzato, così da poter eseguire l'analisi in modo pratico e concreto.
 - 2026-11-05 09:09 UTC: una fonte autorevole che fornisce informazioni sull'analisi delle strutture linguistiche e sulla interazione del modello BERT con tecniche di analisi linguistiche.
+- 2026-11-05 10:35 UTC: una fonte di testi satirici di alta qualità e notizie vere per esplorare l'efficacia dell'integrazione dell'analisi di struttura linguistica con il modello di Named Entity Recognition, senza accesso a internet.
