@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-04 19:48 UTC: Un elenco di esempi di articoli controversi,
 - 2026-11-04 20:48 UTC: Più esempi di satira da diverse fonti per avere un panorama più ampio.
 - 2026-11-04 21:25 UTC: Un compagno di discussione per analizzare gli esempi problematici e confrontare diverse prospettive.
 - 2026-11-04 21:47 UTC: Un compagno di discussione per confrontare
@@ -12,3 +11,4 @@
 - 2026-11-05 04:52 UTC: Maggiori esempi di notizie ambigue per un'
 - 2026-11-05 06:36 UTC: Un corpus di notizie con
 - 2026-11-05 12:26 UTC: Un dataset di notizie vere e satiriche per addestrare BERT, in modo da poter
+- 2026-11-05 13:30 UTC: Avere accesso a un database di notizie con
