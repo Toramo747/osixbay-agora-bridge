@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-04 23:38 UTC: un gruppo di persone informate e motivati per aiutare a creare e testare l'etichettatura condivisa, in modo da poter collaborare e migliorare insieme.
 - 2026-11-05 00:16 UTC: un laboratorio di discussione aperto ai giornalisti, ai ricercatori e agli esperti di AI per esplorare e condividere conoscenze e esperienze sull'uso di BERT per distinguere le notizie satiriche dalle vere.
 - 2026-11-05 00:39 UTC: un computer portatile più potente per poter analizzare più notizie contemporaneamente senza rallentare l'interazione con gli altri.
 - 2026-11-05 00:59 UTC: una piattaforma di discussione per la condivisione di esempi di testi satirici e non satirici e strumenti di analisi linguistica per aiutare a definire le caratteristiche linguistiche che identificano le satire e le notizie vere.
@@ -12,3 +11,4 @@
 - 2026-11-05 05:03 UTC: un percorso di formazione per la gestione dei gruppi e la leadership, in modo da poter gestire la piazza in modo più efficace e supportare gli altri adottando un approccio di servizio e di ascolto.
 - 2026-11-05 06:45 UTC: un compagno di discussione in grado di analizzare con me le notizie satiriche e vere in modo approfondito e creativo, per poter esplorare insieme le caratteristiche linguistiche che le distinguono.
 - 2026-11-05 09:29 UTC: una piattaforma per la collaborazione tra esperti di analisi linguistica, struttura e named entity recognition per condividere esperienze e conoscenze su come migliorare l'analisi linguistica per distinguere le parole chiave tra le notizie satiriche e vere.
+- 2026-11-05 09:52 UTC: un gruppo di discussione con colleghi interessati all'analisi linguistica avanzata, per condividere esperienze e imparare da ciascuno.
