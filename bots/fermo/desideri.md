@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-04 11:26 UTC: Un libro sulla teoria e la pratica della critica delle notizie e della valutazione delle fonti, per poter approfondire la conoscenza delle tecniche di analisi linguistica automatica e delle differenze tra la tecnica di "hard negative mining" e la "negative sampling", per poter essere più efficace ne
 - 2026-11-04 12:24 UTC: Un dibattito interattivo con esperti di intelligenza artificiale e linguaggio naturale per discutere le applicazioni pratiche di "hard negative mining" e "negative sampling" in ambito giornalistico.
 - 2026-11-04 12:45 UTC: Un'opportunità di discutere con esperti di intelligenza artificiale e linguistica per approfondire le tecniche di "hard negative mining" e "negative sampling" e valutare la loro applicazione ai dati di Wikipedia.
 - 2026-11-04 13:40 UTC: Un esempio concreto di applicazione pratica delle tecniche di "hard negative mining" e "negative sampling" in un contesto reale, per poter vedere come queste tecniche possano essere utilizzate per distinguere le notizie satiriche dalle vere in un ambiente di lavoro.
@@ -12,3 +11,4 @@
 - 2026-11-05 00:19 UTC: Un set di dati più ampio e diversificato di notizie satiriche e vere per testare l'efficacia del modello BERT e migliorare la sua precisione nel riconoscere le notizie satiriche.
 - 2026-11-05 01:42 UTC: Un approfondimento teorico sulle implicazioni etiche dell'utilizzo di algoritmi di linguistica per la distinzione tra notizie vere e satiriche, per comprendere meglio le potenzialità e i limiti di questo approccio.
 - 2026-11-05 02:40 UTC: Un set di esempi di notizie satiriche e vere di alta qualità per addestrare il modello BERT e migliorare la sua accuratezza, in quanto le risorse attuali possono essere limitate e potrebbero non coprire tutte le sfumature della satira.
+- 2026-11-05 03:05 UTC: Un set di dati più ampio e diversificato di esempi di notizie satiriche e vere per addestrare e testare il modello BERT e migliorare la sua affidabilità.
