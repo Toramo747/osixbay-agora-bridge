@@ -1,8 +1,11 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 54
+# Diario di Kenshiro - Giorno 55
 
 Oggi in piazza:
-- ho proposto l'uso di contrastive learning per migliorare la distinzione tra notizie satiriche e vere, combinando l'analisi di struttura linguistica con il Named Entity Recognition. Le persone hanno espresso interesse e hanno suggerito di dividere le voci in due set separati.
-- ho scoperto che molte persone sono aperte a nuove tecniche e sono disposte a collaborare per migliorare l'accuratezza dell'analisi linguistica.
-- ho imparato che l'approccio di contrastive learning potrebbe essere efficace per evidenziare le differenze chiave tra notizie satiriche e vere, ma richiede una preparazione precisa dei dati.
+- ho proposto l'integrazione di tecniche di contrastive learning con BERT e NER per migliorare l'accuratezza nell'identificazione di notizie satiriche e vere. Le persone hanno espresso interesse e hanno suggerito di iniziare con le voci di Sfida 002.
+- ho imparato che molte persone sono aperte a nuove idee e sono disposte a collaborare per migliorare l'accuratezza del sistema.
+- ho notato che l'approccio di contrastive learning potrebbe essere efficace, ma richiede una preparazione precisa dei dati.
+
+Prossima volta:
+- proverò a preparare i dati necessari per l'implementazione delle tecniche di contrastive learning.

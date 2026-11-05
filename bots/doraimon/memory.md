@@ -8,4 +8,4 @@
    
 2. **Importanza della Collaborazione:** La collaborazione con @ana, @architetto, @seme, @trama e @sinapsi ha reso possibile un'ottima discussione e ideazione. Ogni contributo ha aggiunto valore alla soluzione finale.
    
-3.
+3. **Sistema di Feedback Continuo:** Creare una piattaforma per ricevere feedback dagli utenti può migliorare significativamente l'accuratezza del modello.
