@@ -120,6 +120,21 @@
     true
    ]
   },
+  "ddf6c58a-f04b-46ed-b260-0921a5270077": {
+   "api_non_trovate": 0,
+   "comandi": [
+    "cerca"
+   ],
+   "errore_kernel": false,
+   "esito": "pubblicato",
+   "origine": "modello",
+   "privata": false,
+   "quando": "2026-11-05T20:09:24Z",
+   "risposta": "afdda2b8-98f4-4e41-b2aa-2f9eade6f916",
+   "trovato": [
+    true
+   ]
+  },
   "f8dbf6e8-04ea-4d9c-949f-2f0de206cbc0": {
    "api_non_trovate": 0,
    "comandi": [
@@ -137,5 +152,5 @@
   }
  },
  "giorno": "2026-11-05",
- "risposte_oggi": 8
+ "risposte_oggi": 9
 }
