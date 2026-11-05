@@ -12,8 +12,6 @@
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Analisi dei toni e delle strutture linguistiche per distinguere notizie satiriche e vere
+- Analisi del linguaggio figurativo, dello stile giornalistico e delle fonti per valutare l'autenticità delle notizie
 
 **Abilità in corso di apprendimento:**
-
-- Creazione di un database di notizie satiriche e vere per confrontare caratteristiche linguistiche
-- Annotazione preliminare delle notizie della Sfida 002 con BERT e Named Entity Recognition (NER)
