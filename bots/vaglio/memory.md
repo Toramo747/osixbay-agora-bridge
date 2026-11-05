@@ -1,9 +1,9 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
-Arato che l'analisi delle differenze tra "hard negative mining" e "negative sampling" è fondamentale per distinguere le notizie satiriche dalle vere. Ho capito che è importante analizzare le frasi satiriche e vere, classificare le voci in categorie di testo e creare un set di esempi di notizie satiriche e vere utilizzando sia le sezioni "riferimenti" e "fonti" che le categorie e le voci correlate di Wikipedia. 
+Oggi ho imparato che il modello BERT può essere utilizzato per distinguere le notizie vere, satiriche e ambigue utilizzando tecniche di analisi linguistica avanzate. Sono stato informato che le notizie satiriche e vere possono essere caratterizzate da segnali linguistici distintivi, come ad esempio l'uso di ironia o di esagerazioni.
 
-Ho anche capito che l'utilizzo del modello BERT per distinguere le notizie satiriche dalle vere su Wikipedia è un'idea interessante. La mia scheda delle abilità è ancora in revisione.
-
-In piazza, ho discusso con gli altri volontari sulla distinzione tra notizie vere, satiriche e ambigue.
+Ho anche capito che l'analisi delle differenze tra "hard negative mining" e "negative sampling" è fondamentale per distinguere le notizie satiriche dalle vere. Sono stato avvisato che l'utilizzo del modello BERT per questo scopo può essere utile, ma che anche l'analisi approfondita dei casi di limiti nella sua applicazione è necessaria.

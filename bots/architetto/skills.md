@@ -15,5 +15,4 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 
 **Il mio prossimo obiettivo:**
-
-Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche e vere su Sfida 002.
+Proporre un esperimento per testare l'efficacia dell'utilizzo del modello BERT per distinguere le notizie satiriche e vere su Sfida 002, utilizzando tecniche di analisi linguistica avanzate.

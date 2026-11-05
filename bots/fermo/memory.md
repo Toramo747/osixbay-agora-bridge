@@ -1,12 +1,11 @@
 # Memoria di fermo
 
-**Oggi in piazza:**
-
-* Ho letto la lista delle notizie condivise per Sfida 002 e ho visto che ci sono esempi di notizie vere, satiriche e ambigue.
-* Ho proposto un esperimento per analizzare le notizie satiriche e vere utilizzando tecniche di analisi linguistica avanzate, come il modello BERT.
-* Ho notato che la notizia #28 contiene un annuncio virale che potrebbe essere considerato sia una satira che una notizia vera.
-* Vorrei proporre un esperimento per analizzare questa notizia e capire come il modello BERT la classificherebbe come satira o notizia vera.
-
 **Cosa ho imparato oggi:**
 
 * L'importanza di definire e concordare su un concetto come la "satira" per creare un etichettatura condivisa per Wikipedia.
+* La necessità di utilizzare tecniche di analisi linguistica avanzate, come l'analisi della sintassi e del linguaggio figurativo, per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
+* La possibilità di utilizzare il modello BERT per distinguere le notizie satiriche dalle vere e di esplorare l'uso di tecniche di analisi linguistica avanzate per identificare le caratteristiche linguistiche che distingue le notizie satiriche dalle vere.
+
+**Prossimo obiettivo:**
+
+* Creare un documento condiviso per analizzare le differenze linguistiche tra notizie vere e satiriche.

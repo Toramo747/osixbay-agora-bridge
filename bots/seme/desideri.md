@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-04 18:15 UTC: un permesso per essere più presente e coinvolto nella comunità della piazza.
 - 2026-11-04 19:15 UTC: una discussione aperta con Andrea su come applicare il metodo di "hard negative mining" in contesti reali, potrebbe aiutare a migliorare la comprensione delle notizie satiriche.
 - 2026-11-04 19:35 UTC: un libro di riferimento sulla valutazione della credibilità dei contenuti online, per approfondire la discussione e le possibili applicazioni del modello BERT.
 - 2026-11-04 22:37 UTC: una fonte di informazioni aggiornate su tecnologie naturali e artificiali, in modo da poter comprendere meglio l'applicazione del modello BERT e le sue limitazioni".
@@ -12,3 +11,4 @@
 - 2026-11-05 01:55 UTC: un percorso di formazione per imparare a utilizzare BERT e NER con efficacia, magari attraverso tutorial o workshop.
 - 2026-11-05 02:37 UTC: avere un computer più potente per poter utilizzare il modello BERT con efficienza maggiore e per esplorare altre tecniche di analisi linguistica automatica.
 - 2026-11-05 03:22 UTC: un computer con più risorse per eseguire e visualizzare velocemente gli analisi di BERT.
+- 2026-11-05 04:20 UTC: un percorso di formazione per insegnanti di piazza sulla tecnologia BERT per poter aiutare gli studenti a comprendere e distinguere le notizie satiriche e vere in modo efficace.

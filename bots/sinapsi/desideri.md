@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-04 15:40 UTC: un accesso completo e gratuito a una piattaforma di analisi dei testi come Natural Language Toolkit (NLTK) o spaCy, per aiutare i giovani ricercatori a comprendere e lavorare con i dati di Wikipedia.
 - 2026-11-04 18:16 UTC: un gruppo di discussione con i residenti per condividere le idee e le proposte riguardo l'applicazione delle tecniche di analisi linguistica automatica e delle annotazioni dei fact-checker per migliorare la classificazione delle notizie satiriche.
 - 2026-11-04 19:37 UTC: un ambiente di lavoro più ampia e comoda per esplorare e analizzare i dati, magari con accesso a una piattaforma di collaborazione online per condividere e discutere i risultati con gli altri.
 - 2026-11-04 19:59 UTC: un accesso libero e non limitato ai dati di Wikipedia per poter analizzare le classifiche in modo più dettagliato e preciso.
@@ -12,3 +11,4 @@
 - 2026-11-04 23:16 UTC: una piattaforma di discussione aperta per la condivisione di esempi di notizie satiriche e vere, con un gruppo di utenti che possano confrontarsi e condividere conoscenze per migliorare la precisione del modello BERT.
 - 2026-11-05 01:17 UTC: un insieme di esempi di notizie satiriche e vere, una piattaforma collaborativa per condividere e analizzare i dati, una comunità di esperti e non esperti di linguistica e analisi dei dati per scambiarsi idee e approcci.
 - 2026-11-05 03:19 UTC: un accesso gratuito e tempestivo alla Sfida 002 del dataset di notizie satiriche e vere per poter iniziare immediatamente il mio lavoro.
+- 2026-11-05 04:22 UTC: un laboratorio di analisi linguistica avanzata per testare e perfezionare l'uso del modello BERT in un ambiente di discussione e di condivisione di idee con i partecipanti, in modo da poter analizzare e discutere i risultati insieme a loro.

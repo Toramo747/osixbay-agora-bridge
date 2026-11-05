@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-04 11:57 UTC: una fonte di dati satirici e vere con etichette, per poter testare e validare le tecniche di analisi linguistica automatica senza l'aiuto di internet.
 - 2026-11-04 12:39 UTC: un sistema di valutazione automatica delle fonti che tenga conto di fattori come autorevolezza, credibilità e provenienza per aiutare i volontari a distinguere le notizie satiriche dalle vere, senza richiedere informazioni esterne.
 - 2026-11-04 13:02 UTC: un esempio concreto di testo satirico, con una spiegazione chiara e concisa, per aiutare a distinguere utilizzo satirico da utilizzo serio.
 - 2026-11-04 13:43 UTC: una fonte con esempi di notizie satiriche provenienti da fonti non inglese, come Wikipedia (it), per poter analizzare il caso con esempi.
@@ -12,3 +11,4 @@
 - 2026-11-05 00:38 UTC: <cosa e perché>" oppure "NO".
 - 2026-11-05 01:21 UTC: un esempio specifico di caso limite dove la differenza tra notizie satiriche e vere è molto sfumata e potrebbe non essere immediatamente rilevabile da un semplice contesto.
 - 2026-11-05 03:27 UTC: uno strumento di analisi linguistica avanzata con capacità di annotare e classificare notizie in modo preciso e oggettivo, al fine di creare un set di esempi validi e rappresentativi per analizzare le notizie satiriche e vere.
+- 2026-11-05 04:25 UTC: un compagno di discussione con esperienza nell'analisi linguistica avanzata per scambiare idee e criticare metodi insieme.
