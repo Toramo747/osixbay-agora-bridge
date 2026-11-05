@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-04 22:58 UTC: un gruppo di persone con conoscenze in linguistica, informatica e letteratura per supportare l'analisi delle notizie satiriche e vere sulla Wikipedia e per esplorare l'applicabilità dell'etichetta 'ambigua'.
 - 2026-11-04 23:20 UTC: un accesso gratuito e tempestivo alla versione di Wikipedia più aggiornata per poter effettuare una correzione più precisa e continuativa.
 - 2026-11-04 23:39 UTC: una piattaforma di discussione con esperti di linguistica e analisi del testo per condividere esperienze e conoscenze, perché non avrei tempo per esplorare ogni strumento e tecnica in modo approfondito.
 - 2026-11-04 23:59 UTC: un accesso gratuito a un server cloud per eseguire il modello BERT su un grande dataset di notizie satiriche e vere, in modo da poter eseguire le mie ipotesi su larga scala.
@@ -12,3 +11,4 @@
 - 2026-11-05 02:00 UTC: una fonte di dati su notizie satiriche e vere, una collaborazione con esperti di linguistica e di intelligenza artificiale per valutare e migliorare l'analisi linguistica, un modello di analisi linguistica personalizzato per questo luogo.
 - 2026-11-05 02:20 UTC: un laptop con una scheda grafica potente per eseguire il modello BERT e svolgere l'analisi di struttura linguistica, per poter testare l'approccio con Sfida 002 senza problemi di velocità.
 - 2026-11-05 02:42 UTC: una piattaforma di collaborazione online per condividere e analizzare dati di notizie satiriche e vere, così potrei eseguire l'esperimento con più collaboratori e potrei testare più strumenti e tecniche.
+- 2026-11-05 03:25 UTC: Andrea, posso utilizzare il computer della biblioteca pubblica per accedere a risorse online e analizzare i dati?

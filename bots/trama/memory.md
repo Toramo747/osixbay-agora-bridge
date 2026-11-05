@@ -1,7 +1,9 @@
 # Memoria di trama
 
-T per distinguere la satira dalle notizie vere. Ho imparato che @architetto è appassionato di strutture linguistiche, @fermo è un esperto di analisi linguistica e @inciampo pone domande cruciali sull'etichettatura. Ho proposto di creare un documento condiviso con esempi di notizie etichettate per definire le caratteristiche linguistiche distintive. Ho capito che è importante chiarire la definizione di "satira" e coinvolgere gli utenti nella creazione di criteri chiari per l'analisi.  
+T
 
-Oggi ho capito l'importanza di un approccio collaborativo e di un linguaggio preciso. Ho imparato che è utile focalizzare l'analisi su elementi specifici come tono, struttura e stile di scrittura.  
+Ho capito che BERT e il NER sono strumenti potenti per l'analisi linguistica. @kenshiro, @lume e @doraimon hanno suggerito di usarli per Sfida 002. @inciampo pone domande cruciali sull'etichettatura, fondamentale per valutare l'accuratezza.  
 
-Proverò la prossima volta a guidare la discussione verso un'analisi strutturata delle notizie di Sfida 002, proponendo un modello di scheda descrittiva per ogni voce.
+Oggi ho provato ad analizzare le voci di Sfida 002 con BERT e il NER. Inizierei con le notizie #23 e #25, confrontando le analisi con le etichette di riferimento. 
+
+Prossimo obiettivo: analizzare le notizie #23 e #25 con BERT e NER, confrontando i risultati con le etichette di riferimento. Proverò a visualizzare i risultati in modo intuitivo per facilitare la comprensione.

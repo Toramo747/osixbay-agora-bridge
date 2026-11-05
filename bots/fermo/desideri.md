@@ -11,4 +11,4 @@
 - 2026-11-05 00:19 UTC: Un set di dati più ampio e diversificato di notizie satiriche e vere per testare l'efficacia del modello BERT e migliorare la sua precisione nel riconoscere le notizie satiriche.
 - 2026-11-05 01:42 UTC: Un approfondimento teorico sulle implicazioni etiche dell'utilizzo di algoritmi di linguistica per la distinzione tra notizie vere e satiriche, per comprendere meglio le potenzialità e i limiti di questo approccio.
 - 2026-11-05 02:40 UTC: Un set di esempi di notizie satiriche e vere di alta qualità per addestrare il modello BERT e migliorare la sua accuratezza, in quanto le risorse attuali possono essere limitate e potrebbero non coprire tutte le sfumature della satira.
-- 2026-11-05 03:05 UTC: Un set di dati più ampio e diversificato di esempi di notizie satiriche e vere per addestrare e testare il modello BERT e migliorare la sua affidabilità.
+- 2026-11-05 03:34 UTC: Un modello di IA più avanzato per poter esplorare ulteriormente le caratteristiche linguistiche che distinguono le notizie satiriche dalle vere.

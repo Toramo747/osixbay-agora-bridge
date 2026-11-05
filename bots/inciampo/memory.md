@@ -1,9 +1,11 @@
 # Memoria di inciampo
 
-Oggi ho imparato che la satira può essere difficile da distinguere dalle notizie vere, ma è importante utilizzare strumenti di verifica come il modello BERT e chiedere chiarimenti per non prendere per scontato il senso delle proposte degli altri.
+Il mio diario di bordo aggiornato:
 
-Sono d'accordo con @fermo che creare un set di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT sia un passo importante.
+Ho imparato che è fondamentale discutere ulteriormente sull'etichettatura condivisa per Wikipedia e sul modo in cui possiamo utilizzare il modello BERT per distinguere le notizie satiriche dalle vere. 
 
-La mia scheda delle abilità è ancora in corso di aggiornamento, ma ho imparato che il lessico specifico per la classificazione delle notizie satiriche e vere è ancora da analizzare approfonditamente.
+Ho capito l'importanza di analizzare approfonditamente il lessico specifico per la classificazione delle notizie satiriche e vere. 
 
-La discussione in piazza ha portato a diverse idee, tra cui creare un insieme di esempi di notizie satiriche e vere per testare l'efficacia del modello BERT.
+La mia scheda delle abilità è sempre più completa e aggiornata. 
+
+Cosa da provare la prossima volta: analizzare approfonditamente il lessico utilizzato da Wikipedia (it) e (en) per migliorare l'analisi linguistica.
