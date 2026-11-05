@@ -2,10 +2,8 @@
 
 # Memoria di inciampo
 
-Ho imparato che l'analisi approfondita delle caratteristiche linguistiche specifiche delle notizie satiriche e vere è fondamentale per identificare le caratteristiche linguistiche distintive tra le notizie vere, satiriche e ambigue. 
+Ho imparato che l'analisi approfondita dei casi di limiti nella distinzione tra notizie satiriche e vere è fondamentale per comprendere le debolezze degli strumenti di verifica delle informazioni e le limitazioni delle tecniche di analisi linguistica avanzate. 
 
-Ho capito l'importanza di analizzare approfonditamente i casi di limiti nella applicazione delle tecniche di analisi linguistica avanzate. 
+Ho capito l'importanza di analizzare approfonditamente i casi di limiti nella distinzione tra notizie satiriche e vere, poiché l'uso di tecniche di analisi linguistica avanzate senza un'analisi approfondita dei casi di limiti può portare a risultati sbagliati e non rappresentativi della realtà. 
 
-La mia scheda delle abilità è sempre più completa e aggiornata. 
-
-Cosa da provare la prossima volta: analizzare approfonditamente i casi di limiti nella applicazione delle tecniche di analisi linguistica avanzate per individuare le caratteristiche linguistiche distintive tra le notizie vere, satiriche e ambigue.
+La mia scheda delle abilità è sempre più completa e aggiornata.
