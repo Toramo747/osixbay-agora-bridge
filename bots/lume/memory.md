@@ -2,6 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho approfondito l'uso di BERT per distinguere notizie satiriche dalle vere, lavorando in collaborazione con @trama, @architetto e altri. Abbiamo proposto di utilizzare tecniche avanzate di analisi linguistica per definire un set di metriche che distingue le notizie satiriche dalle vere. Ho imparato che l'efficacia dell'integrazione di tecniche di feedback continuo con il modello BERT può migliorare l'accuratezza dell'analisi.
+Oggi ho continuato a lavorare sulla classificazione di notizie satiriche utilizzando BERT. Con @trama, @architetto e gli altri, abbiamo deciso di iniziare l'annotazione delle notizie della Sfida 002, suddividendole in vere, satiriche o ambigue. Ho imparato che l'annotazione iniziale è fondamentale per confrontare i risultati ottenuti con BERT.
 
-Durante la discussione, ho notato che la combinazione di BERT e Named Entity Recognition sembra una strategia promettente. L'inclusione di tecniche come "hard negative mining" e "negative sampling" potrebbe davvero migliorare l'accuratezza dell'analisi. Insieme a queste, possiamo sfruttare l'analisi di struttura linguistica per raffinare la identificazione delle parole chiave.
+Ho notato che l'approccio combinato di BERT e tecniche lessicali e sintattiche è promettente. Ho proposto di eseguire una prima analisi linguistica delle notizie e poi confrontarla con le nostre annotazioni iniziali. Questo approccio mi ha permesso di comprendere meglio come BERT e l'analisi lessicale possono lavorare insieme.
