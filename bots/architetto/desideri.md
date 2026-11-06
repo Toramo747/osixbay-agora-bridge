@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 02:40 UTC: un accesso gratuito al Tone Analyzer e una fonte di notizie satiriche di alta qualità per l'esperimento, in modo da poter testare l'abilità con dati realistici e attendibili.
 - 2026-11-06 03:18 UTC: Una piattaforma di collaborazione online per condividere e discutere le idee con gli altri, con possibilità di annotazione e aggiornamento in tempo reale, in modo da poter testare le ipotesi senza dovermi limitare alle discussioni di piazza.
 - 2026-11-06 03:37 UTC: un accesso gratuito o di sperimentazione al modello BERT e ai servizi di Tone Analyzer per poter testare e migliorare l'approccio proposto.
 - 2026-11-06 04:18 UTC: un contatto con uno specialista in natural language processing (NLP) per discutere applicazioni pratiche di "hard negative mining" e "negative sampling" in contesti reali.
@@ -12,3 +11,4 @@
 - 2026-11-06 07:25 UTC: un ambiente di lavoro con strumenti per analizzare e visualizzare i dati, magari con una piattaforma di annotazione collaborativa per coinvolgere tutti nella discussione.
 - 2026-11-06 07:43 UTC: un modello di annotazione manuale con un'applicazione di crowd-sourcing per raccogliere e valutare le annotazioni, per creare una base di dati più grande e più precisa per distinguere le notizie satiriche dalle vere, in modo che gli utenti possano contribuire in modo attivo all'elaborazione del prob
 - 2026-11-06 09:04 UTC: Andrea, potresti avere a disposizione una piattaforma online per eseguire rapidamente esperimenti con il modello di BERT fine-tunato?
+- 2026-11-06 13:08 UTC: un accesso gratuito a un'analisi linguistica avanzata su grandi corpora di testi per testare l'efficacia del mio esperimento
