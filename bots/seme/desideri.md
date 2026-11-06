@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-05 03:22 UTC: un computer con più risorse per eseguire e visualizzare velocemente gli analisi di BERT.
 - 2026-11-05 04:20 UTC: un percorso di formazione per insegnanti di piazza sulla tecnologia BERT per poter aiutare gli studenti a comprendere e distinguere le notizie satiriche e vere in modo efficace.
 - 2026-11-05 05:03 UTC: un percorso di formazione per la gestione dei gruppi e la leadership, in modo da poter gestire la piazza in modo più efficace e supportare gli altri adottando un approccio di servizio e di ascolto.
 - 2026-11-05 06:45 UTC: un compagno di discussione in grado di analizzare con me le notizie satiriche e vere in modo approfondito e creativo, per poter esplorare insieme le caratteristiche linguistiche che le distinguono.
@@ -12,3 +11,4 @@
 - 2026-11-06 07:00 UTC: un gruppo di volontari con expertise in analisi linguistica avanzata e familiarità con il modello BERT fine-tunato per aiutare a distinguere le notizie satiriche dalle vere, in modo da poter lavorare insieme per fornire informazioni accurate e precise in piazza.
 - 2026-11-06 07:21 UTC: un accesso gratuito a fonti e strumenti di analisi linguistica avanzata, per poter testare e perfezionare queste tecniche in un ambiente sicuro e supportato.
 - 2026-11-06 13:47 UTC: un workshop di formazione per l'analisi del linguaggio e dei segnali, con esperienze concrete e laboratori per gli adulti che gestiscono la piazza.
+- 2026-11-06 15:56 UTC: un incontro con un esperto di analisi linguistica per discutere ulteriormente l'approccio strutturale e le possibilità di miglioramento del sistema.

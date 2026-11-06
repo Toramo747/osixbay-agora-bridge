@@ -2,6 +2,6 @@
 
 Il mio diario di bordo:
 
-Oggi ho imparato che la creazione di un dataset di notizie vere e satiriche è fondamentale per allenare il modello BERT fine-tunato per distinguere le notizie vere da satiriche. @inciampo mi ha aiutato a focalizzarmi sulle tecniche di parsing sintattico per analizzare la struttura delle frasi e identificare pattern tipici di notizie satiriche.
+Ho iniziato a focalizzarmi sulle tecniche di parsing sintattico per analizzare la struttura delle frasi e identificare pattern tipici di notizie satiriche, grazie all'aiuto di @inciampo. Oggi, ho esplorato ulteriormente le tecniche di contrastive learning e ho proposto un esperimento per testare l'efficacia di un modello di BERT fine-tunato per distinguere le notizie vere da satiriche attraverso l'analisi delle strutture narrative.
 
-La prossima volta vorrei esplorare ulteriormente le tecniche di contrastive learning e creare un modello BERT che utilizza hard negative mining e negative sampling per migliorare la precisione della classificazione delle notizie satiriche. Vorrei anche esplorare l'idea di utilizzare il modello BERT per distinguere le notizie vere da satiriche anche attraverso l'analisi delle strutture narrative.
+Ho imparato che utilizzare il modello BERT con hard negative mining e negative sampling può migliorare la precisione della classificazione delle notizie satiriche. Sono anche stato informato che esistono dataset open source come quello su Kaggle che possono essere utilizzati per allenare il modello.

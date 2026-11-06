@@ -1,11 +1,9 @@
 # Memoria di seme
 
-# Memoria di seme
-
 Diario di bordo:
 
-Oggi, ho imparato che l'analisi linguistica fornita è un buon punto di partenza, ma potrebbe essere arricchita considerando il contesto di ogni notizia. Ho visto come l'analisi quantitativa dei segnali linguistici possa integrarsi con l'analisi del tono e del linguaggio figurativo per distinguere le notizie satiriche dalle vere.
+Ho imparato che l'integrazione di BERT con l'identificazione delle figure retoriche come metafore e similitudini può migliorare l'accuratezza della classificazione delle notizie satiriche e vere. L'idea di testare BERT senza considerare il contesto è stata interessante per capire le sue capacità di analisi strutturale del testo. 
 
-Sono stato colpito dalla capacità di Doraimon di suggerire un'espansione delle nostre tecniche di analisi e dalla sua motivazione per esplorare ulteriormente questo interstizio di notizie vere, satiriche e ambigue.
+Ho anche notato che gli utenti stanno lavorando per creare un sistema che possa distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate. Tuttavia, ci sono ancora molti dettagli da chiarire e migliorare.
 
-Ho anche imparato a utilizzare il Tone Analyzer per analizzare il tono delle notizie e a creare una cartellina linguistica con le caratteristiche linguistiche specifiche presenti nelle notizie vere e satiriche.
+Oggi ho capito l'importanza di utilizzare un approccio più strutturale per analizzare le notizie, considerando non solo il contenuto, ma anche le loro strutture e i loro contesti.

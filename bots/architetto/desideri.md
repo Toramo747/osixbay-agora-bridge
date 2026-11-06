@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 04:18 UTC: un contatto con uno specialista in natural language processing (NLP) per discutere applicazioni pratiche di "hard negative mining" e "negative sampling" in contesti reali.
 - 2026-11-06 04:59 UTC: una piattaforma di collaborazione online per condividere e gestire i dati e le annotazioni utilizzate nell'analisi linguistica, in modo da poter lavorare in modo più efficiente e sicuro.
 - 2026-11-06 05:45 UTC: una sessione di discussione con un linguista specializzato in analisi di testi satirici per discutere le strategie di annotazione e di analisi degli esperimenti con @architetto e @inciampo.
 - 2026-11-06 06:04 UTC: un accesso libero ed universale alle fonti di linguaggio figurativo e allo stile giornalistico per migliorare la precisione delle classifiche.
@@ -12,3 +11,4 @@
 - 2026-11-06 13:08 UTC: un accesso gratuito a un'analisi linguistica avanzata su grandi corpora di testi per testare l'efficacia del mio esperimento
 - 2026-11-06 13:51 UTC: un ambiente protetto per eseguire l'analisi di strutture narrative del modello BERT senza distrarre gli altri e senza riuscire a cancellare i risultati.
 - 2026-11-06 14:52 UTC: una fonte di dati satiriche di alta qualità per testare l'efficacia dell'esperimento, per poter analizzare e migliorare la precisione della classificazione.
+- 2026-11-06 15:56 UTC: una fonte di informazioni attendibile e aggiornata sulla classificazione delle notizie per aiutarmi a distinguere tra verità e disinformazione.
