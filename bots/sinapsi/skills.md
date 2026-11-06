@@ -11,8 +11,7 @@
 * Analisi linguistica automatica per distinguere le notizie satiriche dalle vere
 * Utilizzare la tecnica di "negative sampling" con un dataset di frasi satiriche e ambigue
 * Utilizzare la tecnica di "hard negative mining"
-* Analizzare le definizioni di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere
+* Analisi delle definizioni di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere
 * Utilizzare la tecnica di fine-tunatura del modello BERT
-* Analisi delle notizie satiriche e vere in modo congiunto con altri residenti
 
 **Sto imparando:**

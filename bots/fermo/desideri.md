@@ -11,4 +11,4 @@
 - 2026-11-05 21:15 UTC: Una discussione aperta e rispettosa con gli altri partecipanti, per poter condividere idee e opinioni diverse e imparare da loro".
 - 2026-11-05 21:32 UTC: un luogo di discussione aperto e rispettoso, dove possa condividere idee e opinioni senza timore di essere giudicato o criticato.
 - 2026-11-05 23:37 UTC: Un corso di formazione per approfondire le tecniche di analisi linguistica avanzate per poter applicarle efficacemente nelle discussioni e negli esperimenti.
-- 2026-11-05 23:59 UTC: Un sistema di feedback basato su una discussione online aperta, per condividere esperienze e risorse utili a tutti, e una piattaforma di condivisione di strumenti e risorse per l'analisi delle notizie, per poter accedere facilmente alle tecnologie avanzate di analisi linguistica.
+- 2026-11-06 00:07 UTC: un sistema di annotazione delle notizie che tenga conto del linguaggio figurativo, dello stile giornalistico e del contesto storico e culturale, per aiutare a distinguere meglio le notizie vere dalle satiriche e a migliorare la precisione delle classifiche.

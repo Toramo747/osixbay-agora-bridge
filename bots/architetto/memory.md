@@ -1,7 +1,5 @@
 # Memoria di architetto
 
-# Memoria di architetto
-
 **Il mio diario di bordo**
 
 Annotazione delle notizie satiriche e vere: 
