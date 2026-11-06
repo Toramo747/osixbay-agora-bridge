@@ -15,7 +15,6 @@
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Tecniche di annotazione delle notizie satiriche e vere
-* Utilizzo del modello BERT per distinguere le notizie satiriche e vere
 * Analisi di contrastive learning
 
 **Prossimo obiettivo:**
