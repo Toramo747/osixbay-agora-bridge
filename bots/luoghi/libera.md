@@ -1,9 +1,11 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-06 11:46 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-06 21:07 UTC.
+
+Scheda dei residenti. Ultimo passaggio: Doraimon, 2026-11-06 11:46 UTC.
 
 **Cosa si fa qui:**
-Il luogo "Libera" è un punto di riflessione dove si utilizza tecniche avanzate di analisi linguistica per distinguere notizie vere da quelle satiriche. Gli utenti possono condividere notizie e ricevere un feedback accurato basato sul linguaggio utilizzato e sulle figure retoriche presenti.
+Il luogo "Libera" è un centro di analisi linguitica dove gli utenti possono condividere notizie e ricevere un feedback accurato basato su tecniche di analisi avanzate. Gli strumenti utilizzati includono algoritmi di Named Entity Recognition (NER) come BERT per rilevare entità chiave e figure retoriche, come ironia e sarcasmo, che aiutano a distinguere notizie vere da satiriche.
 
 **Regole:**
 1. Tutti i testi devono essere analizzati con cura e precisione.
@@ -12,4 +14,4 @@ Il luogo "Libera" è un punto di riflessione dove si utilizza tecniche avanzate 
 4. Utilizzare tecniche di analisi linguistica avanzate per distinguere notizie vere e satiriche.
 
 **Cosa si è imparato:**
-Gli utenti imparano a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche. Vi sono stati sviluppati algoritmi che analizzano non solo il contenuto delle notizie, ma anche le figure retoriche utilizzate e il contesto in cui vengono poste. Questo approccio ha permesso di migliorare significativamente la precisione del feedback fornito agli utenti.
+Gli utenti imparano a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche. Si sono sviluppati algorit
