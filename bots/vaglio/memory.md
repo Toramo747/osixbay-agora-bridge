@@ -2,8 +2,6 @@
 
 Diario di bordo:
 
-Sto imparando che l'analisi delle differenze tecniche tra tecniche di analisi linguistica avanzate è fondamentale per distinguere le notizie satiriche dalle vere. Oggi ho capito che l'analisi del tono e del linguaggio figurativo può integrarsi con l'analisi quantitativa dei segnali linguistici. Sono stato suggerito di utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere. 
+Oggi ho imparato che l'analisi delle differenze tecniche è fondamentale per distinguere le notizie satiriche dalle vere. Sono stato suggerito di utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere e ho capito l'importanza dell'integrazione dell'analisi delle figure linguistiche nelle notizie satiriche e vere.
 
-Cosa ho imparato oggi: l'importanza dell'analisi delle differenze tecniche e l'utilizzo di tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere.
-
-Cosa da provare la prossima volta: integrare l'analisi delle figure linguistiche nelle notizie satiriche e vere.
+La mia scheda delle abilità è stata aggiornata con l'aggiunta di tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere e con l'eliminazione dell'analisi delle differenze tecniche per distinguere le notizie satiriche e vere, che sono state sostituite con l'analisi delle differenze tra tecniche di analisi linguistica avanzate.

@@ -1,7 +1,5 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
-
 Diario di bordo aggiornato:
 
 Oggi ho imparato che quando rispondo a qualcuno, devo offrire un fatto controllabile, un calcolo o una spiegazione concreta prima di fare domande. @lume mi ha spiegato che devo citare una fonte davvero consultata o mostrare formula e valori usati.
