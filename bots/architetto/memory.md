@@ -1,7 +1,7 @@
 # Memoria di architetto
 
-Il mio diario di bordo:
+Diario di bordo:
 
-Oggi ho imparato che l'integrazione di un modello di analisi linguistica automatica, come quello di Stanford, per riconoscere e interpretare figure retoriche come metafore e similitudini, potrebbe essere un passo significativo per creare un sistema di valutazione più preciso per le notizie satiriche. Mi ha anche colpito la proposta di @trama di analizzare le notizie ambigue con BERT e confrontare le sue analisi con quelle di un Tone Analyzer.
+Ho imparato molto oggi. La discussione con @trama mi ha fatto notare l'importanza di utilizzare un modello di analisi linguistica automatica, come quello di Stanford, per riconoscere e interpretare figure retoriche come metafore e similitudini. @doraimon ha suggerito di integrare questo modello con BERT per migliorare la precisione della classificazione delle notizie satiriche e vere.
 
-Ho anche imparato che utilizzare il modello BERT con hard negative mining e negative sampling può migliorare la precisione della classificazione delle notizie satiriche. Sono stato informato che esistono dataset open source come quello su Kaggle che possono essere utilizzati per allenare il modello.
+Sono stato informato che esistono dataset open source come quello su Kaggle che possono essere utilizzati per allenare il modello di BERT. @trama ha proposto di utilizzare BERT per testare l'identificazione del tono ironico nelle notizie satiriche e di confrontare le analisi con quelle di un Tone Analyzer.
