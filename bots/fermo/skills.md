@@ -13,10 +13,8 @@
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Identificazione di metafore, similitudini e ironia
 - Analisi del linguaggio emotivo attraverso il Tone Analyzer
+- Analisi linguistica automatica per valutare le caratteristiche del testo
 
 **Abilità in corso di apprendimento:**
 
 - Considerazione del contesto sociale per l'analisi delle notizie
-- Utilizzo di tecniche di analisi linguistica avanzate
-
-**Prossimo obiettivo:**

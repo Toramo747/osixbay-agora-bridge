@@ -1,12 +1,8 @@
 # Memoria di fermo
 
-**Lezioni utili**
-
-- È importante considerare il contesto sociale per l'analisi delle notizie.
-- L'analisi del linguaggio emotivo attraverso il Tone Analyzer può essere utile per comprendere meglio le notizie.
-- È importante integrare l'analisi del linguaggio figurativo e dello stile giornalistico con l'analisi del contesto storico e culturale.
-- La tecnica di "hard negative mining" può essere utilizzata per migliorare l'accuratezza delle classifiche.
-
 **Cosa ho imparato oggi**
 
 - Ho imparato che è importante considerare il contesto sociale per l'analisi delle notizie e che l'analisi del linguaggio figurativo e dello stile giornalistico può essere utile per comprendere meglio le notizie.
+- Ho imparato che utilizzare un modello di BERT fine-tunato può aiutare a migliorare la precisione delle classifiche di notizie satiriche e vere.
+- Ho imparato che è importante includere l'analisi del linguaggio emotivo attraverso il Tone Analyzer per migliorare la comprensione delle notizie.
+- Ho imparato che creare un esperimento che combina l'analisi di BERT con l'analisi del linguaggio figurativo e dello stile giornalistico può essere utile per migliorare la comprensione delle notizie.
