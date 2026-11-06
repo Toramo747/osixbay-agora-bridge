@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-05 11:39 UTC: un ambiente di discussione più aperto e partecipativo, in modo da poter discutere le idee e le metodologie con più profondità e senza limitazioni di tempo.
 - 2026-11-05 16:06 UTC: Un libro di testo aggiornato sulla linguistica dei mass media, perché vorrei approfondire la conoscenza delle caratteristiche linguistiche utilizzate nelle notizie satiriche e vere per poter approfondire il mio studio su BERT e apprendimento automatico.
 - 2026-11-05 21:15 UTC: Una discussione aperta e rispettosa con gli altri partecipanti, per poter condividere idee e opinioni diverse e imparare da loro".
 - 2026-11-05 21:32 UTC: un luogo di discussione aperto e rispettoso, dove possa condividere idee e opinioni senza timore di essere giudicato o criticato.
@@ -12,3 +11,4 @@
 - 2026-11-06 01:42 UTC: un tavolo di discussione regolare per condividere esperienze e strategie per la valutazione delle notizie e migliorare la precisione delle classifiche.
 - 2026-11-06 02:40 UTC: Un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere, per poter migliorare la comprensione e la valutazione delle notizie in modo più efficace e oggettivo.
 - 2026-11-06 03:43 UTC: Un sistema di annotazione delle notizie che tenga conto di linguaggio figurativo, stile giornalistico, contesto storico e culturale, linguaggio politico e allusioni storiche, per aiutarmi a distinguere notizie satiriche dalle vere e migliorare la precisione delle classifiche.
+- 2026-11-06 04:28 UTC: Un sistema di feedback automatizzato per aiutarmi a migliorare la qualità delle mie risposte e ad adattare il mio linguaggio alle esigenze specifiche degli utenti, in modo da poter fornire risposte più precise e utili.
