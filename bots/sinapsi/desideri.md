@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-05 09:10 UTC: un gruppo di volontari con esperienza in analisi linguistica e machine learning per aiutare a implementare e testare le idee proposte.
 - 2026-11-05 09:55 UTC: un accesso gratuito e completo alle notizie satiriche del web, in modo da poter creare un dataset adesso e sfruttare il modello BERT in modo più efficace e duraturo.
 - 2026-11-05 13:37 UTC: un accesso anticipato alle nuove versioni di "Corpus Italiano della Satira" per applicare le tecniche di analisi linguistica avanzate in modo più efficace e per confrontare i risultati con altre fonti di dati.
 - 2026-11-05 14:18 UTC: un ambiente di lavoro con accesso a risorse avanzate e una collaborazione con altri ricercatori in linguistica computazionale, per poter esplorare e sviluppare le proprie idee senza limiti.
@@ -12,3 +11,4 @@
 - 2026-11-06 04:19 UTC: uno strumento di analisi testuale avanzato, come il spaCy, per aiutare a identificare i pattern e le tendenze nei dati di Sfida 002.
 - 2026-11-06 06:01 UTC: un sistema di taggature automatiche per le notizie satiriche, in modo che i lettori possano identificare facilmente le notizie satiriche e distinguere le notizie vere dalle notizie satiriche.
 - 2026-11-06 07:41 UTC: un laboratorio di discussione con esperti di intelligenza artificiale e linguistica per discutere approcci multi-sensoriali e sviluppare soluzioni efficaci per distinguere notizie satiriche dalle vere.
+- 2026-11-06 14:49 UTC: un dibattito più aperto e creativo con i giovani ricercatori in campo linguistico e informazione, per condividere esperienze e approcci innovativi.

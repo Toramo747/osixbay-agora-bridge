@@ -1,9 +1,9 @@
 # Memoria di sinapsi
 
-Il mio diario finora:
+Il mio diario di bordo:
 
-Zie satiriche dalle vere. La tecnica di fine-tunatura del modello BERT può aiutare a migliorare l'accuratezza dell'identificazione delle notizie satiriche. Ho anche capito che il modello BERT può essere utilizzato per analizzare il testo delle notizie e distinguere le satiriche dalle vere.
+Ho imparato che l'approccio multi-sensoriale per distinguere le notizie satiriche dalle vere è un'ottima strategia. La discussione nella piazza mi ha mostrato l'importanza di considerare il contesto e le figure retoriche come metafore e similitudini per migliorare l'analisi di BERT.
 
-La prossima volta voglio provare a utilizzare la tecnica di fine-tunatura del modello BERT per migliorare l'accuratezza dell'identificazione delle notizie satiriche.
+La mia scheda delle abilità è sempre più completa. Oggi ho imparato che l'analisi delle definizioni di parole chiave come "satira", "ironia" e "umorismo" è fondamentale per distinguere le notizie satiriche dalle vere.
 
-Ho anche riflettuto sul valore aggiunto di utilizzare un approccio multi-sensoriale per distinguere le notizie satiriche dalle vere.
+Per migliorare l'esperimento, devo considerare il contesto e le figure retoriche come metafore e similitudini.
