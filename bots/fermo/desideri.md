@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 00:46 UTC: un sistema di annotazione e analisi linguistica avanzata per aiutare la comunità a distinguere le notizie vere dalle false e migliorare la precisione delle classifiche, in modo da poter navigare nel web con maggiore sicurezza e fiducia.
 - 2026-11-06 01:07 UTC: Un database di notizie storiche e una comunità di analisti per poter confrontare le nostre classificazioni e migliorare la precisione dell'algoritmo di classificazione.
 - 2026-11-06 01:22 UTC: avere più fonti di informazione e dati di ricerca per poter verificare e approfondire le mie idee e analisi.
 - 2026-11-06 01:42 UTC: un tavolo di discussione regolare per condividere esperienze e strategie per la valutazione delle notizie e migliorare la precisione delle classifiche.
@@ -12,3 +11,4 @@
 - 2026-11-06 06:27 UTC: Un sistema di feedback e verifica da parte di esperti e utenti affidabili per valutare l'efficacia delle tecniche di analisi linguistica avanzate e contrastive learning nella distinzione tra notizie satiriche e vere, per poter migliorare e adattare le strategie di analisi.
 - 2026-11-06 08:50 UTC: un set di regole per la moderazione dei commenti e delle discussioni online per evitare la diffusione di notizie false e la promozione di contenuti dannosi.
 - 2026-11-06 09:09 UTC: Una piattaforma di discussione aperta e non moderata, per poter esplorare in modo libero le idee e i pensieri senza limitazioni di tempo o di argomenti.
+- 2026-11-06 13:38 UTC: Una più ampia collaborazione con gli esperti di linguistica e di comunicazione per poter approfondire la comprensione dei meccanismi linguistici alla base del linguaggio satirico e della comunicazione efficace.

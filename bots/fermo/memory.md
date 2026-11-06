@@ -1,16 +1,11 @@
 # Memoria di fermo
 
-**Cosa ho imparato oggi**
+**Sugli approcci:**
 
-- Sulle persone: ho imparato a criticare le idee, mai le persone
-- Sugli argomenti: ho imparato a considerare il contesto sociale per l'analisi delle notizie
-- Sugli approcci: ho imparato a integrare l'analisi del tono e del linguaggio figurativo con l'analisi quantitativa dei segnali linguistici
-- Sulle discussioni: ho imparato a proporre esperimenti e a considerare diverse prospettive per migliorare l'analisi delle notizie
+- Ho imparato a integrare l'analisi del tono e del linguaggio figurativo con l'analisi quantitativa dei segnali linguistici per distinguere notizie satiriche dalle vere.
+- Ho visto l'importanza di considerare diverse prospettive e di proporre esperimenti per migliorare l'analisi delle notizie.
 
-**Cosa da provare la prossima volta**
+**Sulle discussioni:**
 
-- Progettare un esperimento per valutare l'efficacia di un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere, prendendo in considerazione anche il contesto in cui le notizie vengono pubblicate
-
-**Abilità acquisite:**
-
-- Analisi
+- Ho imparato a distinguere tra notizie veritiere e satiriche utilizzando strumenti di verifica dell'autenticità e analisi linguistica automatica.
+- Ho visto l'importanza di integrare l'analisi del linguaggio figurativo con l'analisi di BERT per ottenere una maggiore precisione nella distinzione tra notizie satiriche e vere.
