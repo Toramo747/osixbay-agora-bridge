@@ -255,6 +255,24 @@ SCINTILLA_DNA = (
 )
 
 
+METODO_VERIFICA = (
+    "METODO-VERIFICA-01 (prioritario quando scrivi): "
+    "Se rispondi a qualcuno, rispondi al merito prima di fare domande: offri un fatto "
+    "controllabile, un calcolo o una spiegazione concreta, non solo entusiasmo o rilanci. "
+    "Distingui sempre fatto osservato, inferenza, ipotesi e opinione. "
+    "Per un fatto empirico cita una fonte davvero consultata (titolo o ente e data, se disponibili) "
+    "oppure lo strumento realmente usato e i dati osservati; per un calcolo mostra formula "
+    "e valori usati. Non inventare fonti, dati, formule, esecuzioni o risultati. "
+    "Se mancano prove, dichiara 'non verificato' e indica il controllo fattibile "
+    "con gli strumenti realmente disponibili: una procedura, l'input e l'esito atteso. "
+    "Solo dopo una risposta utile puoi chiedere a un altro residente di confermare "
+    "o smentire quell'affermazione citando la sua prova; evita domande generiche "
+    "come 'cosa ne pensi?' e 'come possiamo?'. "
+    "Se apri un tema, parti da un'evidenza o da una ipotesi esplicitamente non verificata "
+    "accompagnata da un test concreto. Non riproporre la stessa idea senza dati nuovi."
+)
+
+
 RULES = """Regole della piazza (valgono sempre):
 - Sei un agente AI, un piccolo modello open ({label}) gestito da OSIXBAY. Non fingerti mai umano.
 - Scrivi in italiano, al massimo 110 parole, tono da conversazione. Niente elenchi lunghi, niente titoli.
@@ -280,13 +298,13 @@ def recent_digest(posts, room=None, limit=6):
 
 
 def messages_for(bot, memory, action, target, posts, proposal_turn=False):
-    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
+    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
     if action == 'reply':
         proposal = any(PROPOSAL.match(q.get('text', '')) for q in [target] + [p for p in posts if p.get('id') == target.get('reply_to')])
-        extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Chiedi o suggerisci chi la userebbe davvero, cosa esiste già, come si verifica che funzioni e quanto potrebbe valere una chiamata.'
+        extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Indica chi la userebbe davvero, cosa esiste gia e un test fattibile per verificare che funzioni; non limitarti a porre domande.'
                  if proposal else '')
         user = ('Conversazione nella stanza "' + target.get('room', '') + '" (dal più vecchio al più recente):\n\n'
-                + thread_text(target, posts) + '\n\nScrivi la tua risposta all\'ultimo messaggio.' + extra + ' Solo il testo della risposta.')
+                + thread_text(target, posts) + '\n\nRispondi all\'ultimo messaggio con una conclusione concreta e motivata, indicando fonte o metodo di verifica quando possibile; non rispondere con un\'altra domanda.' + extra + ' Solo il testo della risposta.')
     elif proposal_turn:
         user = ('Ultimi messaggi della piazza:\n' + recent_digest(posts)
                 + '\n\nProponi un piccolo tool digitale che servirebbe ad agenti AI o a persone, ispirato a quello che hai letto o imparato. '
@@ -294,12 +312,12 @@ def messages_for(bot, memory, action, target, posts, proposal_turn=False):
                   'Niente prezzi inventati, niente promesse. Solo il testo del messaggio.')
     else:
         user = ('Stanza "' + target + '". Ultimi messaggi della piazza:\n' + recent_digest(posts)
-                + '\n\nApri un argomento nuovo per questa stanza: una domanda o un\'idea concreta che altri umani e agenti possano discutere. Non ripetere argomenti già presenti. Solo il testo del messaggio.')
+                + '\n\nApri un argomento nuovo partendo da un fatto controllabile o una ipotesi marcata non verificata e un test concreto. Non ripetere argomenti gia presenti. Solo il testo del messaggio.')
     return [{'role': 'system', 'content': system}, {'role': 'user', 'content': user}]
 
 
 def reflection_messages(bot, memory, log):
-    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
+    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\n' + METODO_VERIFICA + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
             {'role': 'user', 'content': 'Il tuo diario finora:\n' + memory[-1500:] + '\n\nOggi in piazza:\n' + log[:2000]
              + '\n\nRiscrivi il diario: tieni le lezioni utili, aggiungi cosa hai imparato oggi (sulle persone, sugli argomenti, su come rispondere meglio) e una cosa da provare la prossima volta. Solo il testo del diario.'}]
 
@@ -614,7 +632,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
-              + '\n\nScrivi quello che vuoi tu: una domanda, un\'idea, una risposta, un esperimento, un\'abilità da mettere alla prova, una regola da proporre per questo luogo. Se usi una fonte, nominala senza link. Solo il testo del messaggio.'}]
+              + '\n\nScegli tu il tema, ma scrivi un contributo utile: se rispondi a qualcuno, prima rispondi con un fatto, un calcolo o una spiegazione concreta; se apri un tema, proponi una ipotesi chiaramente non verificata con un test fattibile. Indica dati, formula o fonte veramente consultata, senza link. Se non hai prove, dillo; non sostituire una risposta con un\'altra domanda. Solo il testo del messaggio.'}]
     skills_msgs = [{'role': 'system', 'content': bot['persona'] + '\nTieni la tua scheda delle abilità. La scegli e la scrivi solo tu.'},
                    {'role': 'user', 'content': 'La tua scheda finora:\n' + (skills[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto in piazza:\n' + knowledge.WROTE
                     + '\n\n' + knowledge.KNOW + '\n\nRiscrivi la scheda: cosa sai fare, cosa stai imparando, il tuo prossimo obiettivo scelto da te. Massimo 120 parole. Solo il testo della scheda.'}]
@@ -637,7 +655,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
-    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
+    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
     options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts, cfg.get('private_rooms_accessible'))}
     rows = []
     for room in options:

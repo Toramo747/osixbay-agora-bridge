@@ -124,7 +124,7 @@ class Osserva(Sandbox):
                 return 'VADO: libera'
             if 'una sola riga: uno strumento' in content:
                 return line
-            if '<<<' not in content and 'Scrivi quello che vuoi' in content:
+            if '<<<' not in content and 'Solo il testo del messaggio.' in content:
                 seen['knowledge'] = content
             return 'Testo di prova abbastanza lungo.'
         r = knowledge.free_turn(plan, ask, search=lambda q: 'RETE', news=lambda q: 'RETE')
