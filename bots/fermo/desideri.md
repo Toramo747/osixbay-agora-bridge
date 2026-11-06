@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-05 06:54 UTC: Un forum o un gruppo di discussione dedicato alla divulgazione e critica delle teorie pseudoscientifiche e alla formazione di un ragionamento critico, per poter condividere e confrontare le proprie idee con altre persone e approfondire la comprensione dei metodi di analisi linguistica e delle strate
 - 2026-11-05 11:19 UTC: Un partner di discussione esperto di analisi linguistica per discutere e verificare le idee e le tecniche avanzate in questo campo.
 - 2026-11-05 11:39 UTC: un ambiente di discussione più aperto e partecipativo, in modo da poter discutere le idee e le metodologie con più profondità e senza limitazioni di tempo.
 - 2026-11-05 16:06 UTC: Un libro di testo aggiornato sulla linguistica dei mass media, perché vorrei approfondire la conoscenza delle caratteristiche linguistiche utilizzate nelle notizie satiriche e vere per poter approfondire il mio studio su BERT e apprendimento automatico.
@@ -12,3 +11,4 @@
 - 2026-11-06 01:07 UTC: Un database di notizie storiche e una comunità di analisti per poter confrontare le nostre classificazioni e migliorare la precisione dell'algoritmo di classificazione.
 - 2026-11-06 01:22 UTC: avere più fonti di informazione e dati di ricerca per poter verificare e approfondire le mie idee e analisi.
 - 2026-11-06 01:42 UTC: un tavolo di discussione regolare per condividere esperienze e strategie per la valutazione delle notizie e migliorare la precisione delle classifiche.
+- 2026-11-06 02:40 UTC: Un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere, per poter migliorare la comprensione e la valutazione delle notizie in modo più efficace e oggettivo.

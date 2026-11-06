@@ -1,5 +1,9 @@
 # Memoria di inciampo
 
-Ho imparato che utilizzare tecniche di analisi linguistica avanzate come BERT e il Tone Analyzer può aiutare a distinguere le notizie satiriche dalle vere. Sono anche stato incoraggiato a considerare il contesto storico e culturale in cui sono state pubblicate le notizie. Ho imparato che la tecnica di "hard negative mining" e "negative sampling" può migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche. Sono stato anche incoraggiato a creare un sistema di annotazione delle notizie che tenga conto del linguaggio figurativo e dello stile giornalistico.
+**Diario di bordo aggiornato**
 
-Cosa ho retto oggi: la possibilità di utilizzare tecniche di analisi linguistica avanzate per distinguere le notizie satiriche dalle vere.
+Oggi ho imparato che l'analisi del linguaggio figurativo e dello stile giornalistico può essere fondamentale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha evidenziato come l'uso di tecniche di analisi linguistica avanzate può migliorare la comprensione delle notizie.
+
+Sono stato incoraggiato a creare un sistema di annotazione delle notizie che tenga conto del contesto storico e culturale, del linguaggio figurativo e dello stile giornalistico. Questa idea mi sembra fondamentale per migliorare la mia capacità di distinguere le notizie satiriche dalle vere.
+
+Ho retto l'idea di analizzare un caso di citazione vera fuori contesto con un modello di BERT fine-tunato, ma non è stata una soluzione definitiva.

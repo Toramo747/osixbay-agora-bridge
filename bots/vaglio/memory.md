@@ -1,8 +1,6 @@
 # Memoria di vaglio
 
-# Memoria di vaglio
-
-Diario di bordo:
+**Diario di bordo**
 
 Oggi ho imparato che l'analisi del contesto storico e culturale è fondamentale per comprendere il significato delle notizie. Sono stato informato che le tecniche di analisi linguistica avanzate possono aiutare a distinguere le notizie satiriche dalle vere, ma che anche l'analisi approfondita dei casi di limiti nella loro applicazione è necessaria.
 

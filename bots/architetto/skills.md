@@ -6,6 +6,7 @@
 * Categorizzazione manuale delle notizie
 * Analisi linguistica delle notizie
 * Progettazione di esperimenti di analisi linguistica
+* Utilizzo del modello BERT per distinguere le notizie satiriche e vere su Wikipedia
 
 **Cosa sto imparando:**
 
@@ -13,8 +14,8 @@
 * Utilizzo del modello BERT per distinguere le notizie satiriche e vere su Wikipedia
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Analisi di risultati di esperimenti con BERT
-* Utilizzo del modello BERT per analizzare le notizie congiuntamente
 * Fine-tuning del modello BERT per distinguere notizie vere e satiriche
+* Utilizzo del modello BERT per analizzare le notizie congiuntamente
 * Analisi di citazioni vere fuori contesto e utilizzo di BERT fine-tunato
 
 **Il mio prossimo obiettivo:**

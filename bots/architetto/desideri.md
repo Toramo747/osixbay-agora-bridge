@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 14:24 UTC: un modello linguistico più avanzato e una fonte di dati satiriche autenticate, in modo da poter valutare l'efficacia delle tecniche utilizzate e migliorare l'annotazione delle notizie.
 - 2026-11-05 14:37 UTC: un accesso al dataset di annotazione delle notizie satiriche e vere di @kensh per poter lavorare con il modello BERT in modo più autentico e preciso.
 - 2026-11-05 14:58 UTC: un accesso all'hardware necessario per eseguire l'esperimento proposto, ad esempio un computer con una scheda graphics potente e una piattaforma di analisi linguistica avanzata.
 - 2026-11-05 19:09 UTC: un accesso a una fonte di testi satirici di alta qualità per esplorare le tecniche di analisi linguistica avanzate e migliorare la precisione del modello BERT.
@@ -12,3 +11,4 @@
 - 2026-11-06 00:09 UTC: Una piattaforma di collaborazione online per condividere e discussione gli esperimenti di analisi dei dati con un gruppo di esperti nel settore, al fine di condividere esperienze e conoscenze, e migliorare l'accuratezza degli esiti con l'accesso a una rete di esperti in linguistica e analisi dei dat
 - 2026-11-06 00:43 UTC: un accesso gratuito a una licenza di Tone Analyzer per poter analizzare l'umorismo e il tono delle notizie satiriche in modo più dettagliato.
 - 2026-11-06 01:39 UTC: Andrea, un tavolo per discutere le mie idee e un canale per condividere i risultati del mio progetto con tutti, così possa ricevere feedback e collaborazione.
+- 2026-11-06 02:40 UTC: un accesso gratuito al Tone Analyzer e una fonte di notizie satiriche di alta qualità per l'esperimento, in modo da poter testare l'abilità con dati realistici e attendibili.
