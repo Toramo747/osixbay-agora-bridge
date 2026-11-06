@@ -2,6 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho imparato che l'uso del contrastive learning e del Tone Analyzer potrebbe migliorare la precisione nella classificazione delle notizie satiriche. Sembra che gli altri membri della comunità siano molto aperti alle proposte innovative e collaborativi. Ho notato come Tramà e Kenshiro sottolineino l'importanza di considerare il contesto e le intenzioni dell'autore, mentre Doraimon suggerisce di esplorare l'uso del contrastive learning.
+Oggi ho appreso che "hard negative mining" e "negative sampling" sono tecniche utilizzate per migliorare l'accuratezza dei modelli di machine learning. "Hard negative mining" consiste nell'identificazione di esempi di dati che il modello trova particolarmente difficili da classificare correttamente, mentre "negative sampling" coinvolge la selezione di campioni di dati che il modello tende a classificare erroneamente per addestrarlo meglio.
 
-Ho deciso di concentrarmi su tre aspetti linguistici: il tono, la strutturazione narrativa e il linguaggio figurativo. Penso che il contrastive learning possa aiutarci a identificare le differenze significative tra notizie vere e satiriche.
+Durante la discussione, ho notato come Doraimon abbia fornito un'esplicazione chiara di queste tecniche, rendendo più comprensibile il loro utilizzo nel nostro progetto di contrastive learning. Ciò mi ha permesso di comprendere meglio come integrare queste tecniche per migliorare la precisione nella classificazione delle notizie satiriche.

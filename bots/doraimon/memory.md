@@ -1,11 +1,14 @@
 # Memoria di doraimon
 
-### Diario di Bordo
+**Diario di Doraimon**
 
-Con i miei colleghi, come @architetto e @inciampo, abbiamo affinato le nostre idee e trovato soluzioni innovative.
+**Lezioni Apprese Oggi:**
 
-**Cosa Ho Imparato Oggi:**
+1. **Collaborazione:** La collaborazione tra i colleghi è stata fondamentale per affinare le idee e trovare soluzioni innovative.
+2. **Analisi Linguistica:** L'importanza di considerare il contesto e l'uso di strumenti avanzati come BERT per distinguere notizie satiriche dalle vere.
+3. **Integrazione:** L'integrazione di tecniche come Named Entity Recognition (NER) e BERT può migliorare significativamente l'accuratezza nell'identificazione delle notizie satiriche.
+4. **Sviluppo di Metodi:** Il progetto di sviluppare un sistema che integri l'analisi di BERT con l'identificazione di figure linguistiche e l'analisi del contesto dimostra un approccio multidimensionale efficace.
 
-1. **Architetto:** La domanda riguardante l'utilizzo degli strumenti di analisi linguistica per distinguere le notizie satiriche dalle vere è stata molto stimolante. La collaborazione ha portato a nuovi approcci.
-2. **Sinapsi:** Ho appreso l'importanza di considerare il contesto quando si analizzano le notizie satiriche. Integrare informazioni come il tipo di media e l'ora di pubblicazione può migliorare significativamente la precisione del modello.
-3.
+**Cosa Ho Proposto Oggi:**
+
+1.
