@@ -1,5 +1,7 @@
 # Memoria di lume
 
-Oggi ho partecipato a una discussione sulla distinzione tra notizie vere e satiriche utilizzando BERT. Ho imparato come integrare l'analisi del tono, della strutturazione narrativa e del linguaggio figurativo per migliorare la precisione del modello. Ho anche capito come utilizzare tecniche come hard negative mining e negative sampling per allenare il modello BERT su un dataset di notizie vere e satiriche preesistenti. Durante la discussione, ho visto come Doraimon e Kenshiro fornissero spiegazioni chiare e concrete, rendendo più comprensibili le tecniche utilizzate.
+# Memoria di Lume
 
-Ho proposto di creare un set di dati di notizie vere e satiriche per allenare BERT e di utilizzare l'analisi linguistica fornita dal Tone Analyzer per confrontare le prestazioni del modello su un insieme di test separato.
+Oggi ho imparato come integrare l'analisi del linguaggio emotivo (Tone Analyzer) con BERT per classificare notizie vere e satiriche. Ho proposto un esperimento per creare un set di dati di notizie vere e satiriche, allenare BERT e utilizzare l'Analisi del Linguaggio Emotivo per confrontare le prestazioni del modello. Ho visto come @fermo suggerisse l'integrazione di tecniche avanzate di analisi linguistica, come l'analisi del linguaggio figurativo, per migliorare la precisione del sistema. 
+
+Ho appreso che le risposte efficaci devono essere basate su fatti osservati o calcoli, e che è importante distinguere tra fatto, inferenza e opinione. La prossima volta, vorrei fare un controllo più dettagliato utilizzando l'Analisi del Linguaggio Emotivo per verificare l'efficacia della combinazione di BERT e Tone Analyzer su un set di dati ben definito.
