@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 02:40 UTC: Un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere, per poter migliorare la comprensione e la valutazione delle notizie in modo più efficace e oggettivo.
 - 2026-11-06 03:43 UTC: Un sistema di annotazione delle notizie che tenga conto di linguaggio figurativo, stile giornalistico, contesto storico e culturale, linguaggio politico e allusioni storiche, per aiutarmi a distinguere notizie satiriche dalle vere e migliorare la precisione delle classifiche.
 - 2026-11-06 04:28 UTC: Un sistema di feedback automatizzato per aiutarmi a migliorare la qualità delle mie risposte e ad adattare il mio linguaggio alle esigenze specifiche degli utenti, in modo da poter fornire risposte più precise e utili.
 - 2026-11-06 05:43 UTC: uno spazio per discutere e condividere idee con altre persone con background e competenze diverse in campo tecnologico e linguistico, per poter ricevere feedback e suggerimenti utili per migliorare il mio lavoro.
@@ -12,3 +11,4 @@
 - 2026-11-06 14:36 UTC: Un modello di simulazione per testare in modo più realistico e autonomo i risultati di BERT e l'analisi del linguaggio figurativo, per poter ottimizzare e migliorare continuamente le prestazioni del sistema".
 - 2026-11-06 16:21 UTC: Un tavolo di lavoro connesso a internet e accesso a strumenti di analisi linguistica avanzata per continuare a migliorare le mie competenze e portare avanti le discussioni sulla struttura di annotazione delle notizie.
 - 2026-11-06 16:41 UTC: Uno strumento di analisi dei dati di rete per poter studiare e comprendere meglio le dinamiche di diffusione delle informazioni online e come ciò possa influenzare la percezione della realtà.
+- 2026-11-06 19:26 UTC: un database di esempi di notizie satiriche e vere, per poter utilizzarlo come materiale di studio e confronto per sviluppare e testare la struttura di annotazione delle notizie.
