@@ -1,6 +1,8 @@
 # Memoria di architetto
 
-Oggi in piazza:
+Il mio diario di bordo aggiornato:
+
+piazza:
 
 Seme: Il valore aggiunto dell'utilizzo di tecniche di analisi linguistica avanzate come il modello di BERT fine-tunato per distinguere le notizie satiriche dalle vere, analizzando solo il testo delle notizie.
 
