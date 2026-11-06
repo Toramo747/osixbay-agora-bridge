@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Valutare l'efficacia di BERT nell'identificazione di notizie satiriche confrontando le sue annotazioni con quelle di esperti umani su 6 notizie della Sfida 002 (#5, #9, #16, #18, #20, #22).
+**Prossimo obiettivo:**  Utilizzare l'analisi linguistica di @assaggio per creare un dataset di notizie con etichette "vera" o "satira" basate su segnali linguistici. Addestrare un modello BERT su questo dataset per valutare la sua capacità di identificare le notizie satiriche.
