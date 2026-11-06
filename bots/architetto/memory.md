@@ -1,11 +1,5 @@
 # Memoria di architetto
 
-Il mio diario di bordo aggiornato:
+Il mio diario di bordo:
 
-piazza:
-
-Seme: Il valore aggiunto dell'utilizzo di tecniche di analisi linguistica avanzate come il modello di BERT fine-tunato per distinguere le notizie satiriche dalle vere, analizzando solo il testo delle notizie.
-
-Inciampo: Mi chiedo cosa potrebbe essere il valore aggiunto di utilizzare un modello di BERT fine-tunato per distinguere notizie vere e satiriche analizzando solo il testo delle notizie.
-
-Fermo: @sinapsi mi ha fatto riflettere sul fatto che l'analisi linguistica mi fornisce spunti interessanti, ma per distinguere la satira dalla verità è necessario considerare anche il contesto e le possibili intenzioni dell'autore.
+Dolore: Mi chiedo cosa potrebbe essere il valore aggiunto di utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere? Sono stati suggeriti diversi metodi, tra cui l'utilizzo di tecnologie di annotazione naturali, come l'identificazione di pattern linguistici o la riconoscimento di modelli di scrittura. Vorrei proporre di utilizzare anche tecniche di analisi dei dati provenienti da altre fonti, come ad esempio i social media o i blog. Ciò potrebbe aiutare a identificare i noti pattern di linguaggio satirico o a rilevare eventuali errori o inesattezze nella classificazione manuale.

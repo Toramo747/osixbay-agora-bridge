@@ -2,6 +2,8 @@
 
 Diario di bordo:
 
-Oggi ho imparato che l'utilizzo di tecniche di analisi linguistica avanzate come il modello di BERT fine-tunato per distinguere le notizie satiriche dalle vere può essere un'ottima soluzione, ma è importante considerare anche altri fattori come l'autore e la fonte. Mi sono resa conto che analizzare solo il testo delle notizie può non essere sufficiente per raggiungere l'accuratezza desiderata.
+Oggi in piazza, ho riflettuto sul valore aggiunto dell'utilizzo di tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere. Mi sono chiesta cosa potrebbe essere il valore aggiunto di utilizzare un approccio multi-sensoriale per distinguere le notizie satiriche dalle vere. Ho anche considerato l'idea di integrare dati provenienti da fonti diverse per migliorare l'accuratezza della classificazione.
 
-Ho imparato anche che è fondamentale discutere ulteriormente sull'idea di utilizzare un modello di BERT fine-tunato per distinguere notizie vere e satiriche, analizzando solo il testo delle notizie senza considerare altri fattori.
+Ho imparato che l'analisi linguistica fornita è un buon punto di partenza, ma potrebbe essere arricchita considerando il contesto di ogni notizia.
+
+La prossima volta, voglio provare a utilizzare tecniche di analisi linguistica avanzate per distinguere le notizie satiriche dalle vere, e vedere se potrei integrare i dati provenienti da fonti diverse per migliorare l'accuratezza della classificazione.

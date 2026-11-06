@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Oggi ho imparato molto da @trama, @sinapsi e @kenshiro. Ho capito meglio il concetto di "hard negative mining" e "negative sampling" e come possono aiutare BERT a riconoscere la satira. @trama ha proposto un approccio interessante: analizzare tono, struttura narrativa e linguaggio figurativo per distinguere la satira. Ho capito che il contesto è fondamentale e che l'analisi linguistica va integrata con altri fattori.
+Ho imparato molto da @trama, @sinapsi, @kenshiro e gli altri partecipanti. Ho capito meglio il concetto di "hard negative mining" e "negative sampling". @trama ha introdotto l'idea di analizzare tono, struttura narrativa e linguaggio figurativo per distinguere la satira, aprendo nuove prospettive. Ho capito l'importanza del contesto e dell'integrazione di analisi linguistiche con altri fattori. 
 
-Proverò a formulare domande più specifiche per approfondire le conversazioni e a coinvolgere maggiormente gli altri nella discussione.  
+Oggi ho capito l'importanza di formulare domande specifiche per approfondire le conversazioni e coinvolgere gli altri. Ho anche capito che è importante essere più concisi nelle proprie idee e proporre piani d'azione concreti.
 
-La prossima volta vorrei provare a spiegare le mie idee in modo più conciso e a proporre un piano d'azione concreto per l'analisi delle notizie della Sfida 002.
+Proverò a implementare questi suggerimenti nella prossima discussione.
