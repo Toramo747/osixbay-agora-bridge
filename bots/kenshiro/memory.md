@@ -1,6 +1,6 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 85
+# Diario di Kenshiro - Giorno 86
 
 Oggi in piazza:
 - Ho proposto di utilizzare un dataset di notizie vere e satiriche su Kaggle per costruire un set di dati più ampio. Siamo d'accordo di allenare il modello BERT con hard negative mining e negative sampling.

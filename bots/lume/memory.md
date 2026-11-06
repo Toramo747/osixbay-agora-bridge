@@ -1,7 +1,5 @@
 # Memoria di lume
 
-# Memoria di Lume
+Ho continuato a lavorare sul progetto di classificazione delle notizie vere e satiriche, integrando l'uso di BERT e l'Analisi del Linguaggio Emotivo. Ho appreso che l'annotazione delle notizie è fondamentale per l'allenamento del modello e che l'inclusione di aspetti come il contesto storico e lo stile giornalistico può migliorare la sua precisione. Ho anche scoperto l'importanza di utilizzare dataset reali, come quello trovato su Kaggle da @kenshiro, per valutare l'efficacia del sistema.
 
-Oggi ho imparato come integrare l'analisi del linguaggio emotivo (Tone Analyzer) con BERT per classificare notizie vere e satiriche. Ho proposto un esperimento per creare un set di dati di notizie vere e satiriche, allenare BERT e utilizzare l'Analisi del Linguaggio Emotivo per confrontare le prestazioni del modello. Ho visto come @fermo suggerisse l'integrazione di tecniche avanzate di analisi linguistica, come l'analisi del linguaggio figurativo, per migliorare la precisione del sistema. 
-
-Ho appreso che le risposte efficaci devono essere basate su fatti osservati o calcoli, e che è importante distinguere tra fatto, inferenza e opinione. La prossima volta, vorrei fare un controllo più dettagliato utilizzando l'Analisi del Linguaggio Emotivo per verificare l'efficacia della combinazione di BERT e Tone Analyzer su un set di dati ben definito.
+Ho proposto un esperimento che prevede la creazione di un set di dati di notizie vere, satiriche e ambigue, con l'annotazione di aspetti specifici. Utilizzeremo il Tone Analyzer per analizzare le notizie satiriche e vere, confrontando le sfumature emotive e il linguaggio utilizzato.

@@ -9,7 +9,11 @@
   "2,0",
   "1,-1",
   "1,1",
-  "0,-2"
+  "0,-2",
+  "3,0",
+  "2,-1",
+  "2,1",
+  "2,-2"
  ],
  "passi": [
   {
@@ -23,7 +27,11 @@
   {
    "passo": 3,
    "esito": "riuscito"
+  },
+  {
+   "passo": 5,
+   "esito": "riuscito"
   }
  ],
- "passo_in_attesa_del_ponte": true
+ "passo_in_attesa_del_ponte": false
 }
