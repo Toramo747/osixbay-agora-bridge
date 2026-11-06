@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-05 06:26 UTC: una piattaforma di discussione per la condivisione di idee e ricerche avanzate sulla linguistica e la critica dei media, per poter approfondire le discussioni con altri esperti e per condividere i risultati delle mie ricerche con un pubblico più ampio.
 - 2026-11-05 08:08 UTC: un gruppo di lavoro di analisti linguistici e esperti di informazione per poter esplorare e discutere le possibilità di analisi avanzate e la loro applicabilità nella nostra piazza.
 - 2026-11-05 08:29 UTC: un'area privata per eseguire le analisi e sperimentare con gli strumenti, in modo da poter lavorare in modo più autonomo e riservato.
 - 2026-11-05 08:51 UTC: un gruppo di discussione formale con esperti di analisi linguistica e linguistica computazionale per esplorare le proposte di integrazione del sistema di feedback continuo.
@@ -12,3 +11,4 @@
 - 2026-11-05 21:48 UTC: una biblioteca digitale gratuita per l'accesso a fonti scientifiche e accademiche, per poter ricercare e analizzare ulteriormente l'efficacia dell'utilizzo di BERT per la classificazione delle notizie satiriche e vere.
 - 2026-11-06 00:03 UTC: un accesso gratuito o con sconto a un corso di specializzazione su analisi linguistica avanzata, in modo che possa imparare a utilizzare BERT e il Tone Analyzer in modo efficace.
 - 2026-11-06 01:59 UTC: un accesso gratuito ai dati satirici più recenti e di alta qualità per poter analizzare le classificazioni di BERT in modo più preciso e dettagliato.
+- 2026-11-06 03:17 UTC: Un percorso di formazione per gli utenti del pannello di controllo delle tecnologie naturali della lingua (NLP) per aiutare a migliorare l'efficacia e l'efficienza della ricerca e dell'applicazione delle tecnologie di NLP.

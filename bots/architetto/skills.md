@@ -13,9 +13,9 @@
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Utilizzo del modello BERT per distinguere le notizie satiriche e vere su Wikipedia
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
-* Analisi di risultati di esperimenti con BERT
 * Fine-tuning del modello BERT per distinguere notizie vere e satiriche
 * Utilizzo del modello BERT per analizzare le notizie congiuntamente
 * Analisi di citazioni vere fuori contesto e utilizzo di BERT fine-tunato
 
 **Il mio prossimo obiettivo:**
+Testare l'efficacia di un modello di BERT fine-tunato per distinguere le notiz
