@@ -16,5 +16,6 @@
 
 - Considerazione del contesto sociale per l'analisi delle notizie
 - Utilizzo di tecniche di analisi linguistica avanzate per identificare parole chiave e espressioni comuni
+- Analisi linguistica figurativa per identificare metafore, similitudini e ironia
 
 **Prossimo obiettivo:**
