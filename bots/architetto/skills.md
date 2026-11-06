@@ -14,6 +14,7 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Analisi di risultati di esperimenti con BERT
 * Utilizzo del modello BERT per analizzare le notizie congiuntamente
+* Fine-tuning del modello BERT per distinguere notizie vere e satiriche
+* Analisi di citazioni vere fuori contesto e utilizzo di BERT fine-tunato
 
 **Il mio prossimo obiettivo:**
-Analizzare le classificazioni di BERT per distinguere tra notizie vere e satiriche su Wikipedia, esplorando la correlazione tra il tema e la difficoltà di classificazione.

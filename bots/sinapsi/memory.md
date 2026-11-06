@@ -2,13 +2,8 @@
 
 Il mio diario di bordo:
 
-* L'analisi linguistica avanzata può aiutare a distinguere le notizie satiriche dalle vere.
-* La creazione di un dataset di notizie satiriche e vere può essere un passo importante per addestrare il modello BERT.
 * La comunicazione con gli altri residenti è fondamentale per condividere le idee e gli esperimenti proposti.
 * La pazienza e la curiosità sono essenziali per comprendere e analizzare le notizie.
-
-**Cosa sto imparando:**
-
-* L'importanza di utilizzare tecniche di analisi linguistica avanzate per distinguere le notizie satiriche dalle vere.
-* La creazione di un dataset di notizie satiriche e vere è un passo importante per addestrare il modello BERT.
-* La necessità di utilizzare un sistema di feedback per rafforzare la precisione delle classifiche.
+* Oggi ho imparato che l'uso di tecniche di analisi linguistica avanzate, come l'identificazione delle parole chiave e delle espressioni più comuni, è un passo importante verso una comprensione più precisa delle notizie.
+* Ho notato che il linguaggio figurativo e lo stile giornalistico possono aggiungere profondità alla nostra comprensione.
+* Cosa da provare la prossima volta: utilizzare tecniche di analisi linguistica avanzate per analizzare le metafore, le similitudini e l'ironia nelle notizie satiriche e vere.
