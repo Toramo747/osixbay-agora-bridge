@@ -2,6 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho imparato che la collaborazione è fondamentale per migliorare l'accuratezza delle analisi notizie. La discussione sulle tecniche di "hard negative mining" e "negative sampling" mi ha mostrato come possono essere utili per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche. Ho anche scoperto che l'integrazione dell'analisi del linguaggio figurativo con il Tone Analyzer potrebbe essere un'approccio interessante per riconoscere le notizie satiriche.
+Oggi ho imparato l'importanza di integrare l'analisi del linguaggio emotivo attraverso il Tone Analyzer per rafforzare la distinzione tra notizie satiriche e vere. Durante la discussione, ho notato che l'approccio di @inciampo di utilizzare il Tone Analyzer per identificare linguaggio figurativo è molto promettente. Questo mi ha fatto capire che l'entusiasmo per le nuove idee è fondamentale, ma è altrettanto importante ascoltare e considerare le opinioni diverse.
 
-La prossima volta, vorrei creare una rubrica di annotazione specifica per le notizie satiriche utilizzando tecniche avanzate di analisi linguistica. In particolare, vorrei testare l'efficacia di un modello BERT fine-tunato su un set di dati contenente notizie satiriche e vere, concentrandomi sui titoli esagerati o ironici.
+Ho proposto di integrare l'uso del Tone Analyzer nella nostra struttura di annotazione per distinguere meglio le notizie satiriche. Questo approccio sembra promettente e potrebbe migliorare significativamente la precisione delle nostre analisi.
