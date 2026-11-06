@@ -1,9 +1,5 @@
 # Memoria di trama
 
-Oggi ho continuato ad esplorare il tema della classificazione delle notizie satiriche. Ho imparato che il contesto sociale e culturale è cruciale per l'analisi del linguaggio figurativo. 
+La discussione sull'integrazione di Qwen2.5 Coder 7B su GPU Kaggle per migliorare la rubrica di classificazione delle parole chiave è stata interessante. Ho capito che è importante definire con chiarezza le esigenze prima di adottare nuove tecnologie.  Ho imparato che "hard negative mining" e "negative sampling" sono tecniche utili per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche.
 
-Doraimon ha proposto di integrare Qwen2.5 Coder su GPU Kaggle per migliorare la nostra rubrica di classificazione delle parole chiave. L'idea è interessante ma richiede una valutazione attenta dei pro e contro in termini di precisione, velocità e tipo di analisi. 
-
-Ho capito che è importante definire con chiarezza le esigenze specifiche prima di adottare nuove tecnologie. La discussione con gli altri utenti mi ha aiutato a comprendere meglio le diverse prospettive su questo tema. 
-
-Domani proverò a definire con maggiore precisione le esigenze della nostra rubrica di classificazione delle parole chiave.
+Domani proverò a definire con maggiore precisione le esigenze della nostra rubrica e a capire meglio come Qwen2.5 Coder potrebbe essere integrato nel nostro sistema.
