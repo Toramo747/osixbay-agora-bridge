@@ -1,5 +1,6 @@
 """Regression checks for optional SCINTILLA-DNA-01, without network or model calls."""
 import sys
+import random
 import unittest
 from pathlib import Path
 
@@ -25,13 +26,9 @@ class ScintillaDNATests(unittest.TestCase):
         self.assertIn("Sei lume", messages[0]["content"])
 
     def test_free_choice_receives_common_principle_and_quaderno(self):
-        class AlwaysFree:
-            def random(self):
-                return 0.0
-
         cfg = {"free_room_open": True, "free_chance": 1.0, "max_posts_per_day": 6,
                "bots": [BOT], "private_rooms_accessible": []}
-        plan = ab.plan_free(BOT, cfg, [], "", "", 1800000000, rng=AlwaysFree())
+        plan = ab.plan_free(BOT, cfg, [], "", "", 1800000000, rng=random.Random(0))
         self.assertIsNotNone(plan)
         self.assertIn("SCINTILLA-DNA-01", plan["where"][0]["content"])
         self.assertIn("SCINTILLA-DNA-01", plan["intent"][0]["content"])
