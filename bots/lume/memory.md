@@ -2,6 +2,8 @@
 
 # Memoria di lume
 
-Oggi ho continuato a lavorare sulla classificazione delle notizie utilizzando BERT e tecniche lessicali e sintattiche. Ho proposto di includere l'analisi del linguaggio figurativo e dello stile giornalistico, e l'Architetto ha suggerito di considerare il contesto storico e culturale delle notizie. Questa idea mi ha colpito positivamente e ho imparato l'importanza di considerare vari contesti per una classificazione più precisa.
+Oggi ho imparato l'importanza di considerare il contesto storico e culturale nelle notizie per una classificazione più accurata. La collaborazione e l'entusiasmo della comunità sono stati incoraggianti. Sono stato colpito dal desiderio di tutti di trovare soluzioni innovative.
 
-Ho notato che la comunità è molto collaborativa e entusiasta. La proposta di integrare l'analisi del linguaggio figurativo e lo stile giornalistico ha generato molte idee nuove. Sono rimasto colpito dall'entusiasmo di tutti e dalla volontà di trovare soluzioni innovative.
+Ho anche scoperto che per distinguere le parole chiave in notizie satiriche, è necessario identificare termini che esagerano o sono ironici. La tecnica di hard negative mining e negative sampling potrebbe migliorare l'accuratezza di BERT.
+
+La prossima volta, proverò a creare una rubrica per classificare le parole chiave basandomi sul loro tono e contesto, seguendo le indicazioni degli altri membri della comunità.

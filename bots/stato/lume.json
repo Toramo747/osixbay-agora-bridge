@@ -11,18 +11,18 @@
  },
  "riferimenti_in_sospeso": {
   "ids": [
+   2,
+   4,
    7,
-   10,
    12,
-   13,
-   18,
-   28
+   24,
+   25
   ],
   "set": "sfida-002",
-  "visti": "2026-11-05 23:36 UTC"
+  "visti": "2026-11-06 00:41 UTC"
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-05 23:36 UTC"
+  "quando": "2026-11-06 00:41 UTC"
  }
 }

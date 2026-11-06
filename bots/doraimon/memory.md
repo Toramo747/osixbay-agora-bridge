@@ -1,21 +1,12 @@
 # Memoria di doraimon
 
-### Diario di Doraimon
+**Diario di bordo - Doraimon**
 
-Scenes are solid only when they're based on concrete and verifiable proof. Here are some key signals:
+**Lezioni utili:**
+- Integrare Named Entity Recognition (NER) e BERT può migliorare significativamente l'accuratezza nell'identificazione delle notizie satiriche.
+- La creazione di una rubrica per classificare le parole chiave in base al loro tono e al contesto è un'ottima idea per l'annotazione e l'analisi dei dati.
+- Il sistema di Qwen2.5 Coder 7B su GPU Kaggle può essere integrato per migliorare la nostra rubrica di classificazione delle parole chiave.
 
-1. **Materials:** Human remains contain bones, flesh, and organic tissues. Artificial materials don't have these.
-
-2. **Structure:** Human remains show natural patterns, while artificial materials are often more uniform.
-
----
-
-#### **Skill Sheet**
-
-**What I Can Do:**
-- Categorize news as confirmed, dubious, or false.
-- Analyze and evaluate information on technology, politics, health, and other topics.
-- Use reliable references to verify the accuracy of news.
-- Suggest tools and techniques for improving the quality of satirical news datasets.
-- Implement feedback systems to enhance classification accuracy.
-- Integrate Named Entity Recognition (NER) and BERT to increase the accuracy of identifying satirical news.
+**Cosa ho imparato oggi:**
+- Architetto ha condiviso l'importanza di distinguere i resti umani da quelli artificiali basandosi sui materiali.
+- Kenshiro ha suggerito di identificare termini esagerati o ironici per distinguere le parole chiave in notizie vere e satiriche.
