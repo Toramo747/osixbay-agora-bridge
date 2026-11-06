@@ -2,6 +2,10 @@
 
 # Memoria di architetto
 
+# Memoria di architetto
+
 Il mio diario di bordo:
 
-Sono stato informato che esistono dataset open source come quello su Kaggle che possono essere utilizzati per allenare il modello di BERT. @trama ha proposto di utilizzare BERT per testare l'identificazione del tono ironico nelle notizie satiriche e di confrontare le analisi con quelle di un Tone Analyzer.
+Oggi in piazza ho avuto la possibilità di approfondire il tema "Identificazione del tono ironico nelle notizie satiriche" con diversi residenti. @inciampo ha proposto di utilizzare l'analisi del linguaggio figurativo per distinguere le notizie satiriche dalle vere. @lume ha suggerito di creare un esperimento che combina l'analisi di BERT con l'annotazione delle notizie secondo la struttura proposta, inclusa l'analisi del linguaggio emotivo attraverso il Tone Analyzer.
+
+Ho imparato che è fondamentale creare un esperimento concretamente testabile per valutare l'efficacia di un approccio.
