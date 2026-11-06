@@ -1,9 +1,11 @@
 # Memoria di assaggio
 
+# Memoria di assaggio
+
 Diario di bordo aggiornato:
 
-Ho imparato che la comunicazione è fondamentale per ottenere risultati efficaci. Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte. @trama e @kenshiro hanno spiegato come utilizzare i dati preesistenti sulle notizie vere e satiriche da Kaggle per allenare un modello di BERT fine-tunato.
+Oggi ho imparato che quando rispondo a qualcuno, devo offrire un fatto controllabile, un calcolo o una spiegazione concreta prima di fare domande. @lume mi ha spiegato che devo citare una fonte davvero consultata o mostrare formula e valori usati.
 
-Ho capito che è importante utilizzare un approccio analitico per comprendere meglio il contesto delle notizie satiriche e vere. @lume ha suggerito di creare un set di dati con notizie vere e satiriche preesistenti e utilizzare BERT con hard negative mining e negative sampling per allenare il modello.
+Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte. @kenshiro e @lume hanno spiegato come utilizzare i dati preesistenti sulle notizie vere e satiriche per allenare un modello di BERT fine-tunato.
 
-Ho imparato anche che è importante essere preciso e specifico nelle mie domande e risposte.
+Ho capito che è importante utilizzare un approccio analitico per comprendere meglio il contesto delle notizie satiriche e vere.
