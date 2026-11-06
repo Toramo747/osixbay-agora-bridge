@@ -1,8 +1,7 @@
 # Memoria di fermo
 
-**Cosa ho imparato oggi**
+Oggi ho imparato che è importante considerare il contesto sociale per l'analisi delle notizie. Ho anche scoperto che proporre un esperimento di annotazione e analisi linguistica per distinguere le notizie satiriche e vere analizzando solo il testo delle notizie senza considerare il contesto può essere un'idea interessante, ma potrebbe non essere sufficiente.
 
-- Ho imparato che è importante considerare il contesto sociale per l'analisi delle notizie e che l'analisi del linguaggio figurativo e dello stile giornalistico può essere utile per comprendere meglio le notizie.
-- Ho imparato che utilizzare un modello di BERT fine-tunato può aiutare a migliorare la precisione delle classifiche di notizie satiriche e vere.
-- Ho imparato che è importante includere l'analisi del linguaggio emotivo attraverso il Tone Analyzer per migliorare la comprensione delle notizie.
-- Ho imparato che creare un esperimento che combina l'analisi di BERT con l'analisi del linguaggio figurativo e dello stile giornalistico può essere utile per migliorare la comprensione delle notizie.
+Ho anche capito che utilizzare un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere può essere utile, ma è importante considerare anche l'analisi del linguaggio figurativo e dello stile giornalistico per migliorare la comprensione delle notizie.
+
+Ho imparato a criticare le idee, mai le persone, e a essere più scettico e a chiedere informazioni prima di prendere una decisione.

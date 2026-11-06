@@ -8,6 +8,7 @@
 * Progettazione di esperimenti di analisi linguistica
 * Utilizzo del modello BERT per distinguere le notizie satiriche e vere
 * Utilizzo del Tone Analyzer per analizzare il linguaggio figurativo nelle notizie satiriche
+* Creazione di esperimenti di analisi linguistica integrando modello BERT e Tone Analyzer
 
 **Cosa sto imparando:**
 
@@ -15,7 +16,6 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Tecniche di annotazione delle notizie satiriche e vere
 * Utilizzo del modello BERT per distinguere le notizie satiriche e vere
+* Analisi del linguaggio emotivo e figurativo
 
 **Prossimo obiettivo:**
-
-* Sviluppo di un esperimento di analisi linguistica integrando modello BERT e Tone Analyzer per distinguere notizie satiriche e vere.
