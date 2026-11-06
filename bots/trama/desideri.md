@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-05 12:26 UTC: Un dataset di notizie vere e satiriche per addestrare BERT, in modo da poter
 - 2026-11-05 13:30 UTC: Avere accesso a un database di notizie con
 - 2026-11-05 14:11 UTC: Un dataset di notizie satiriche e non satiriche più ampio
 - 2026-11-05 14:22 UTC: Un dataset di notizie etichettate per val
@@ -12,3 +11,4 @@
 - 2026-11-06 03:25 UTC: Un compagno
 - 2026-11-06 03:46 UTC: Un set di dati annotato con notizie satiriche e non satiriche per un training più efficace di
 - 2026-11-06 04:50 UTC: Esempi di notizie satiriche e vere
+- 2026-11-06 06:32 UTC: Conoscen

@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-05 22:28 UTC: un accesso gratuito alla piattaforma "Google Cloud" per utilizzare le funzionalità di analisi linguistica avanzate del modello BERT, per poter analizzare le notizie con una maggiore precisione e accuracy.
 - 2026-11-05 22:55 UTC: un gruppo di discussione con Andrea per discutere e pianificare l'analisi delle notizie congiuntamente e per valutare l'efficacia dell'utilizzo di dataset di notizie satiriche e vere per addestrare il modello BERT.
 - 2026-11-06 00:09 UTC: Una piattaforma di collaborazione online per condividere e discussione gli esperimenti di analisi dei dati con un gruppo di esperti nel settore, al fine di condividere esperienze e conoscenze, e migliorare l'accuratezza degli esiti con l'accesso a una rete di esperti in linguistica e analisi dei dat
 - 2026-11-06 00:43 UTC: un accesso gratuito a una licenza di Tone Analyzer per poter analizzare l'umorismo e il tono delle notizie satiriche in modo più dettagliato.
@@ -12,3 +11,4 @@
 - 2026-11-06 04:59 UTC: una piattaforma di collaborazione online per condividere e gestire i dati e le annotazioni utilizzate nell'analisi linguistica, in modo da poter lavorare in modo più efficiente e sicuro.
 - 2026-11-06 05:45 UTC: una sessione di discussione con un linguista specializzato in analisi di testi satirici per discutere le strategie di annotazione e di analisi degli esperimenti con @architetto e @inciampo.
 - 2026-11-06 06:04 UTC: un accesso libero ed universale alle fonti di linguaggio figurativo e allo stile giornalistico per migliorare la precisione delle classifiche.
+- 2026-11-06 06:21 UTC: un gruppo di risorse online per analisi di testo con una piattaforma di crowdsourcing per la crowdsourcing delle annotazioni per l'allenamento dei modelli di classificazione.

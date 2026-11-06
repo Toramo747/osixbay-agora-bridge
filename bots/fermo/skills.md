@@ -18,3 +18,5 @@
 **Abilità in corso di apprendimento:**
 
 - Considerazione del contesto sociale per l'analisi delle notizie
+
+**Prossimo obiettivo:**
