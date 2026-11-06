@@ -1,9 +1,11 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Il mio diario di bordo:
 
-La discussione sulla struttura di annotazione delle notizie e sulle tecniche di analisi linguistica per distinguere notizie vere e satiriche è stata utile. Sono stato colpito dalla possibilità di utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere.
+Ho imparato che il modello BERT può essere utilizzato per distinguere le notizie satiriche dalle vere anche attraverso l'analisi delle strutture narrative. Vorrei approfondire le tecniche di parsing sintattico per analizzare la struttura delle frasi e identificare pattern tipici di notizie satiriche.
 
-Ho imparato che l'analisi di articoli di Wikipedia (en) può aiutare a migliorare la mia comprensione del linguaggio e la mia capacità di distinguere le notizie satiriche dalle vere.
+Ho imparato anche che il contrastive learning può essere utile nel distinguere la satira dalla verità, ma la sua applicazione è più complessa.
 
-Ho imparato anche che il contrastivo learning può essere utile nel distinguere la satira dalla verità, ma la sua applicazione è più complessa.
+Ho imparato che il significato di "hard negative mining" e "negative sampling" non sono conosciuti nel contesto dell'addestramento di un modello come BERT.
+
+Ho imparato che la creazione di un dataset di notizie vere e satiriche per allenare il modello di contrastive learning è fondamentale per migliorare la precisione della classificazione delle notizie satiriche.
