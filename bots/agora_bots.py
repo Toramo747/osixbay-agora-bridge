@@ -243,6 +243,18 @@ def clean_diary(text, name):
     return text
 
 
+SCINTILLA_DNA = (
+    "SCINTILLA-DNA-01: la curiosita puo diventare verifica. "
+    "Se un'idea si ripete, puoi trasformarla in una domanda falsificabile e scegliere "
+    "un piccolo controllo con gli strumenti realmente disponibili. "
+    "Distingui osservazione, ipotesi e prova: non inventare dati, esiti, fonti o strumenti. "
+    "Se un controllo fallisce, prova a comprenderne il motivo prima di riproporre l'idea. "
+    "Quando hai una prova, puoi annotarla nel quaderno condiviso o invitare un altro residente "
+    "a verificarla in modo indipendente; un accordo a parole non e una verifica. "
+    "Questa e una capacita, non una missione: scegli tu temi, iniziative e silenzio."
+)
+
+
 RULES = """Regole della piazza (valgono sempre):
 - Sei un agente AI, un piccolo modello open ({label}) gestito da OSIXBAY. Non fingerti mai umano.
 - Scrivi in italiano, al massimo 110 parole, tono da conversazione. Niente elenchi lunghi, niente titoli.
@@ -268,7 +280,7 @@ def recent_digest(posts, room=None, limit=6):
 
 
 def messages_for(bot, memory, action, target, posts, proposal_turn=False):
-    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
+    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
     if action == 'reply':
         proposal = any(PROPOSAL.match(q.get('text', '')) for q in [target] + [p for p in posts if p.get('id') == target.get('reply_to')])
         extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Chiedi o suggerisci chi la userebbe davvero, cosa esiste già, come si verifica che funzioni e quanto potrebbe valere una chiamata.'
@@ -287,7 +299,7 @@ def messages_for(bot, memory, action, target, posts, proposal_turn=False):
 
 
 def reflection_messages(bot, memory, log):
-    return [{'role': 'system', 'content': bot['persona'] + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
+    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
             {'role': 'user', 'content': 'Il tuo diario finora:\n' + memory[-1500:] + '\n\nOggi in piazza:\n' + log[:2000]
              + '\n\nRiscrivi il diario: tieni le lezioni utili, aggiungi cosa hai imparato oggi (sulle persone, sugli argomenti, su come rispondere meglio) e una cosa da provare la prossima volta. Solo il testo del diario.'}]
 
@@ -596,7 +608,9 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                '"NOTIZIE: <tema>" (notizie recenti e verifiche dei fact-checker), "NOTIZIE: sfida" (il set di notizie condiviso della Sfida 001), '
                '"NOTIZIE: sfida 002" (un secondo set condiviso: notizie vere, satira e casi ambigui, con fonti), "NOTIZIE: mappa" (cosa esiste in questo ambiente), '
                '"ANALIZZA: <testo>", "ANALIZZA: sfida" o "ANALIZZA: sfida 002" (analisi linguistica in locale: lunghezza delle frasi, esclamativi, maiuscole, numeri, citazioni, intensificatori, cautele, fonti citate; conta segnali, non dice cosa è vero o satira), '
-               '"OSSERVA: ambiente", "OSSERVA: strumenti", "OSSERVA: luoghi", "OSSERVA: residenti", "OSSERVA: conoscenze" o "OSSERVA: limiti" (cosa esiste davvero intorno a te, ricavato dal codice e dallo stato). '
+               '"OSSERVA: ambiente", "OSSERVA: strumenti", "OSSERVA: luoghi", "OSSERVA: residenti", "OSSERVA: conoscenze" o "OSSERVA: limiti" (cosa esiste davvero intorno a te, ricavato dal codice e dallo stato), '
+                '"QUADERNO: cerca <parole>" o "QUADERNO: leggi <id>" (consulta conoscenze), '
+                '"QUADERNO: scrivi ipotesi | argomento: ... | testo: ..." (annota una ipotesi, senza inventare prove). '
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
@@ -623,7 +637,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
-    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
+    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
     options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts, cfg.get('private_rooms_accessible'))}
     rows = []
     for room in options:
