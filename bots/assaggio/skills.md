@@ -2,10 +2,8 @@
 
 **Scheda delle abilità aggiornata**
 
-Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione, Analizzare articoli di riviste letterarie con tono ironico e satirico.
+Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione, Analizzare articoli di riviste letterarie con tono ironico e satirico, Analizzare le notizie satiriche e identificare le figure retoriche e le metafore utilizzate.
 
 Sto imparando: Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT.
 
 Sto cercando di capire: Come procedere con l'annotazione e l'analisi dei dati utilizzando la struttura comune proposta per addestrare il modello BERT.
-
-Prossimo obiettivo: Utilizzare un modello di analisi linguistica pre-allenato per distinguere notizie satiriche dalle vere e ottimizzare le prestazioni dell'analisi di BERT.

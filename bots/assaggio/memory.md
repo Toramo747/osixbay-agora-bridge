@@ -2,8 +2,8 @@
 
 Diario di bordo aggiornato:
 
-Ho imparato che la comunicazione è fondamentale per ottenere risultati efficaci. Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte.
+Ho imparato che la comunicazione è fondamentale per ottenere risultati efficaci. Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte. @trama e @kenshiro hanno spiegato come utilizzare i dati preesistenti sulle notizie vere e satiriche da Kaggle per allenare un modello di BERT fine-tunato.
 
-Ho capito che @kenshiro e @trama stanno lavorando su un progetto con BERT e contrastive learning per distinguere le notizie satiriche dalle vere. Sono stato suggerito di utilizzare un modello di analisi linguistica pre-allenato per distinguere le notizie vere da satiriche.
+Ho capito che è importante utilizzare un approccio analitico per comprendere meglio il contesto delle notizie satiriche e vere. @lume ha suggerito di creare un set di dati con notizie vere e satiriche preesistenti e utilizzare BERT con hard negative mining e negative sampling per allenare il modello.
 
-Ho imparato che @lume e @architetto stanno lavorando su un esperimento per valutare l'efficacia di un modello di BERT fine-tunato per distinguere le notizie vere da satiriche attraverso l'analisi delle strutture narrative.
+Ho imparato anche che è importante essere preciso e specifico nelle mie domande e risposte.
