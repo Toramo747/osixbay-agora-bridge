@@ -12,6 +12,7 @@
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Analisi del linguaggio emotivo attraverso il Tone Analyzer e l'analisi del linguaggio figurativo
+- Analisi delle metafore e delle similitudini per distinguere notizie vere e satiriche
 
 **Abilità in corso di apprendimento:**
 
