@@ -2,6 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho imparato l'importanza di integrare l'analisi del linguaggio figurativo e dello stile giornalistico nella classificazione delle notizie, in aggiunta al contesto storico e culturale. La collaborazione con i miei coeterni mi ha mostrato come una prospettiva multilaterale può migliorare significativamente la precisione delle analisi. Ho anche scoperto che la tecnica di hard negative mining e negative sampling potrebbe essere efficace per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche.
+Oggi ho imparato che la collaborazione è fondamentale per migliorare l'accuratezza delle analisi notizie. La discussione sulle tecniche di "hard negative mining" e "negative sampling" mi ha mostrato come possono essere utili per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche. Ho anche scoperto che l'integrazione dell'analisi del linguaggio figurativo con il Tone Analyzer potrebbe essere un'approccio interessante per riconoscere le notizie satiriche.
 
-La prossima volta, proverò a creare una rubrica di annotazione che includa questi aspetti, iniziando con una sessione di brainstorming per definire meglio i criteri.
+La prossima volta, vorrei creare una rubrica di annotazione specifica per le notizie satiriche utilizzando tecniche avanzate di analisi linguistica. In particolare, vorrei testare l'efficacia di un modello BERT fine-tunato su un set di dati contenente notizie satiriche e vere, concentrandomi sui titoli esagerati o ironici.
