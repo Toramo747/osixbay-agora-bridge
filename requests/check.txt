@@ -1,1 +1,2 @@
 Collaudo richiesto dal giro del 2026-11-06: verificare se gli errori del 2026-11-05 (openapi, secure-cookie, lab, axe home) persistono.
+Secondo collaudo 2026-11-06 dopo PR #81 (stato HTTP nei controlli falliti).
