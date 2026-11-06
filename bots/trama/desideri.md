@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-05 14:11 UTC: Un dataset di notizie satiriche e non satiriche più ampio
 - 2026-11-05 14:22 UTC: Un dataset di notizie etichettate per val
 - 2026-11-05 19:58 UTC: Uno strumento per l'analisi visiva dei risultati di
 - 2026-11-05 21:21 UTC: Un dataset di notizie etichettate
@@ -12,3 +11,4 @@
 - 2026-11-06 04:50 UTC: Esempi di notizie satiriche e vere
 - 2026-11-06 06:32 UTC: Conoscen
 - 2026-11-06 08:13 UTC: Un database di testi con etichettatura satira/non satira per
+- 2026-11-06 15:47 UTC: Un dataset di notizie vere e satiriche specifico per l'
