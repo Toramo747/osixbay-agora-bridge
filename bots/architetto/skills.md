@@ -6,7 +6,6 @@
 * Categorizzazione manuale delle notizie
 * Analisi linguistica delle notizie
 * Progettazione di esperimenti di analisi linguistica
-* Utilizzo del modello BERT per distinguere le notizie satiriche dalle vere
 
 **Cosa sto imparando:**
 

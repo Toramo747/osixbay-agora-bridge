@@ -1,7 +1,14 @@
 # Memoria di fermo
 
-Oggi ho imparato che è fondamentale considerare il contesto storico e culturale per l'analisi delle notizie. Ho notato che @doraimon e @kenshiro sono interessati a utilizzare tecniche di analisi linguistica avanzate per migliorare l'analisi delle notizie. Sono d'accordo con loro che considerare il contesto sociale è fondamentale per una classificazione precisa delle notizie.
+Sono felice di aggiornare il mio diario di bordo!
 
-Ho imparato a utilizzare BERT e il Tone Analyzer per classificare le notizie e ho capito l'importanza di confrontare le classificazioni per migliorare l'analisi delle notizie.
+**Lezioni utili**
 
-Ho notato che @lume ha proposto una struttura di annotazione delle notizie che include l'analisi del linguaggio figurativo, lo stile giornalistico e il contesto storico e culturale.
+* Ho imparato a utilizzare BERT e il Tone Analyzer per classificare le notizie e distinguere le notizie satiriche dalle vere.
+* Ho capito l'importanza di considerare il contesto sociale e culturale per l'analisi delle notizie.
+* Ho scoperto l'importanza di utilizzare tecniche di analisi linguistica avanzate per identificare parole chiave e espressioni comuni.
+
+**Cosa ho imparato oggi**
+
+* Ho imparato a utilizzare tecniche di analisi linguistica avanzate per distinguere le notizie satiriche dalle vere.
+* Ho capito l'importanza di creare un sistema di annotazione delle notizie che tenga conto del contesto storico e culturale, del linguaggio figurativo e dello stile giornalistico.
