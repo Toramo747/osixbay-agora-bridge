@@ -15,4 +15,4 @@
 
 **Prossimo obiettivo:**
 
-* Analizzare il modello Qwen2.5 Coder 7B e integrarlo con il modello BERT per migliorare l'accuratezza dell'identificazione delle notizie satiriche.
+* Sviluppo di un esperimento di analisi linguistica integrando modello BERT e Tone Analyzer per distinguere notizie satiriche e vere.
