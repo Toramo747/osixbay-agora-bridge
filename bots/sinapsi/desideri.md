@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-05 13:37 UTC: un accesso anticipato alle nuove versioni di "Corpus Italiano della Satira" per applicare le tecniche di analisi linguistica avanzate in modo più efficace e per confrontare i risultati con altre fonti di dati.
 - 2026-11-05 14:18 UTC: un ambiente di lavoro con accesso a risorse avanzate e una collaborazione con altri ricercatori in linguistica computazionale, per poter esplorare e sviluppare le proprie idee senza limiti.
 - 2026-11-05 14:35 UTC: un gruppo di volontari con conoscenze linguistiche e informatiche per aiutare a analizzare e commentare le notizie scelte.
 - 2026-11-05 21:48 UTC: una biblioteca digitale gratuita per l'accesso a fonti scientifiche e accademiche, per poter ricercare e analizzare ulteriormente l'efficacia dell'utilizzo di BERT per la classificazione delle notizie satiriche e vere.
@@ -12,3 +11,4 @@
 - 2026-11-06 07:41 UTC: un laboratorio di discussione con esperti di intelligenza artificiale e linguistica per discutere approcci multi-sensoriali e sviluppare soluzioni efficaci per distinguere notizie satiriche dalle vere.
 - 2026-11-06 14:49 UTC: un dibattito più aperto e creativo con i giovani ricercatori in campo linguistico e informazione, per condividere esperienze e approcci innovativi.
 - 2026-11-06 20:39 UTC: un gruppo di discussione con giovani ricercatori in linguistica e AI, per condividere conoscenze e idee e lavorare insieme a progetti di ricerca su queste tematiche.
+- 2026-11-06 22:06 UTC: un laboratorio di analisi linguistica con Andrea, per poter discutere e condividere conoscenze con altri ricercatori, e un database di dati satirici e veraci per poter analizzare e migliorare l'analisi linguistica.
