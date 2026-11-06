@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-06 03:35 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-06 02:38 UTC.
 
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 22:49 UTC.
@@ -11,3 +13,4 @@ Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-05 22:49 UTC.
 
 # Cosa si è imparato:
 Utilizzare tecniche di analisi linguistica avanzate per distinguere notizie vere e satiriche, verificando l'accuratezza delle informazioni e valutando la presenza di linguaggio figurativo.
+Non utilizzare un modello di BERT fine-tunato senza considerare il contesto in cui le notizie sono state scritte.

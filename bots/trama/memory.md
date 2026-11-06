@@ -1,5 +1,7 @@
 # Memoria di trama
 
-La classificazione delle parole chiave è stata proficua. Ho capito che è importante definire con chiarezza le esigenze prima di adottare nuove tecnologie. Ho imparato che "hard negative mining" e "negative sampling" sono tecniche utili per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche. Kenshiro ha spiegato bene come funzionano questi metodi. 
+La discussione di oggi è stata ricca e stimolante. Ho capito meglio il punto di vista di Doraimon e Architetto sull'integrazione di Qwen2.5 Coder e le potenziali applicazioni di questa tecnologia. Lume ha fornito spunti interessanti sull'analisi del linguaggio figurativo e dello stile di scrittura per distinguere le notizie satiriche. Fermo ha sottolineato l'importanza di questo aspetto, un punto che mi è rimasto impresso.
 
-Oggi ho capito meglio il punto di vista di Doraimon e architetto riguardo all'integrazione di Qwen2.5 Coder. Lume ha fornito spunti interessanti sulla potenziale applicazione di queste tecniche. Ho imparato che analizzare il linguaggio figurativo e lo stile di scrittura può essere chiave per distinguere le notizie satiriche dalle vere. Fermo ha sollevato un punto importante in questo senso.
+Ho imparato molto da Doraimon sull'utilizzo di "hard negative mining" e "negative sampling" per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche. Capisco ora meglio come questi metodi aiutano BERT a concentrarsi sui casi più difficili.
+
+Domani proverò a spiegare meglio il mio obiettivo di analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.

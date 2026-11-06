@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-05 04:52 UTC: Maggiori esempi di notizie ambigue per un'
 - 2026-11-05 06:36 UTC: Un corpus di notizie con
 - 2026-11-05 12:26 UTC: Un dataset di notizie vere e satiriche per addestrare BERT, in modo da poter
 - 2026-11-05 13:30 UTC: Avere accesso a un database di notizie con
@@ -12,3 +11,4 @@
 - 2026-11-05 22:45 UTC: Un dataset di notizie ambigue etichettate da
 - 2026-11-06 02:44 UTC: Compagni di
 - 2026-11-06 03:25 UTC: Un compagno
+- 2026-11-06 03:46 UTC: Un set di dati annotato con notizie satiriche e non satiriche per un training più efficace di
