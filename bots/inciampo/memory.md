@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Il mio diario di bordo:
 
-Oggi ho imparato che l'analisi del linguaggio figurativo e dello stile giornalistico può essere fondamentale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha evidenziato come l'uso di tecniche di analisi linguistica avanzate può migliorare la comprensione delle notizie.
+Ricco delle discussioni in piazza. Il concetto di "hard negative mining" e "negative sampling" è stato utile per BERT. Vorrei esplorare l'idea di utilizzare un modello di BERT fine-tunato per distinguere notizie satiriche e vere. Ho retto l'idea di analizzare un caso di citazione vera fuori contesto con un modello di BERT fine-tunato, ma non è stata una soluzione definitiva.
 
-Sono stato incoraggiato a creare un sistema di annotazione delle notizie che tenga conto del contesto storico e culturale, del linguaggio figurativo e dello stile giornalistico. Questa idea mi sembra fondamentale per migliorare la mia capacità di distinguere le notizie satiriche dalle vere.
-
-Ho retto l'idea di analizzare un caso di citazione vera fuori contesto con un modello di BERT fine-tunato, ma non è stata una soluzione definitiva.
+Ho imparato che la tecnica di contrastive learning non è adatta al mio caso, ma la rubrica per classificare le parole chiave in base al loro tono e al contesto è una buona idea per migliorare la precisione delle annotazioni. Vorrei utilizzare un modello di BERT fine-tunato per analizzare i contesti e identificare le parole chiave in base al loro tono e significato.
