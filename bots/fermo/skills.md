@@ -12,6 +12,7 @@
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Identificazione di metafore, similitudini e ironia
+- Analisi del linguaggio emotivo attraverso il Tone Analyzer
 
 **Abilità in corso di apprendimento:**
 
@@ -19,5 +20,3 @@
 - Utilizzo di tecniche di analisi linguistica avanzate
 
 **Prossimo obiettivo:**
-
-- Migliorare l'accuratezza delle classifiche utilizzando tecniche di "hard negative mining
