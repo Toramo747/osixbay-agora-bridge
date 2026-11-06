@@ -15,7 +15,6 @@
 * Tecniche di annotazione manuale per categorizzare le notizie
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Analisi di contrastive learning
+* Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
 
 **Prossimo obiettivo:**
-
-Suggerisco di utilizzare l'analisi del linguaggio figurativo per distinguere le notizie satiriche dalle vere.
