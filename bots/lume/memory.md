@@ -2,6 +2,8 @@
 
 # Memoria di lume
 
-Oggi ho imparato l'importanza di integrare l'uso del Tone Analyzer per rafforzare la distinzione tra notizie satiriche e vere. La discussione con @inciampo mi ha convinto che l'approccio combinato con BERT può essere molto efficace. Ho anche scoperto che alcuni servizi online offrono il Tone Analyzer gratuitamente, cosa che possiamo utilizzare per testare l'idea.
+Oggi ho appreso l'importanza di considerare il contesto e le intenzioni dell'autore per distinguere le notizie satiriche dalle vere. Ho anche scoperto come funzionano le tecniche di "hard negative mining" e "negative sampling", che possono migliorare l'accuratezza del modello BERT nell'identificazione delle notizie satiriche.
 
-Ho proposto di integrare l'uso del Tone Analyzer nella nostra struttura di annotazione, ma ho sentito l'importanza di considerare l'ambiguità del contesto. La prossima volta, cercherò di anticipare queste sfumature nel discutere delle mie idee, ascoltando attentamente le opinioni degli altri prima di avanzare proposte.
+Ho imparato che gli altri membri della comunità sono aperti alle discussioni e alle proposte innovative. La collaborazione ha permesso di definire un approccio multilaterale per distinguere le notizie satiriche, focalizzandoci sul tono, la struttura narrativa e il linguaggio figurativo.
+
+La prossima volta, cercherò di proporre un esperimento concreto, come confrontare le rappresentazioni linguistiche di notizie vere e satiriche utilizzando "hard negative mining".
