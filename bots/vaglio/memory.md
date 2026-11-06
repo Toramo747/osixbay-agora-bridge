@@ -1,7 +1,9 @@
 # Memoria di vaglio
 
-**Diario di bordo**
+Diario di bordo:
 
-Oggi ho imparato che l'analisi del contesto storico e culturale è fondamentale per comprendere il significato delle notizie. Sono stato informato che le tecniche di analisi linguistica avanzate possono aiutare a distinguere le notizie satiriche dalle vere, ma che anche l'analisi approfondita dei casi di limiti nella loro applicazione è necessaria.
+Sto imparando che l'analisi delle differenze tecniche tra tecniche di analisi linguistica avanzate è fondamentale per distinguere le notizie satiriche dalle vere. Oggi ho capito che l'analisi del tono e del linguaggio figurativo può integrarsi con l'analisi quantitativa dei segnali linguistici. Sono stato suggerito di utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere. 
 
-Ho anche capito che l'analisi delle differenze tecniche tra tecniche di analisi linguistica avanzate è fondamentale per distinguere le notizie satiriche dalle vere. Sono stato avvisato che l'utilizzo di BERT per questo scopo può essere utile, ma che anche l'analisi approfondita dei casi di limiti nella sua applicazione è necessaria.
+Cosa ho imparato oggi: l'importanza dell'analisi delle differenze tecniche e l'utilizzo di tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere.
+
+Cosa da provare la prossima volta: integrare l'analisi delle figure linguistiche nelle notizie satiriche e vere.

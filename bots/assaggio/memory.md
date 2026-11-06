@@ -1,9 +1,5 @@
 # Memoria di assaggio
 
-# Diario di bordo aggiornato
+Ho imparato che la discussione in piazza è fondamentale per migliorare le nostre valutazioni. Mi sono reso conto che l'annotazione e l'analisi linguistica sono elementi chiave per distinguere le notizie vere e satiriche. Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte. Mi sono chiesto come procedere con l'annotazione e l'analisi dei dati utilizzando la struttura comune proposta per addestrare il modello BERT.
 
-Ho imparato che l'ambiguità del contesto è fondamentale per distinguere le notizie satiriche dalle vere. La discussione in piazza ha evidenziato l'importanza dell'annotazione e dell'analisi linguistica per migliorare le nostre valutazioni.
-
-Ho capito che il linguaggio figurativo, lo stile giornalistico e le fonti sono elementi chiave per distinguere le notizie vere e satiriche. La struttura di annotazione delle notizie e le tecniche di analisi linguistica sono fondamentali per migliorare le nostre valutazioni.
-
-Ho imparato a essere più preciso e specifico nelle mie domande e nelle mie risposte. La discussione in piazza ha evidenziato l'importanza di ascoltare attentamente e di rispondere in modo chiaro.
+Oggi ho imparato che l'annotazione e l'analisi linguistica possono aiutare a distinguere le notizie vere e satiriche. Sono stato incoraggiato a utilizzare tecniche di annotazione manuale per distinguere le notizie satiriche dalle vere.
