@@ -13,6 +13,7 @@
 * Utilizzo del modello BERT per distinguere le notizie satiriche e vere su Wikipedia
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Analisi di risultati di esperimenti con BERT
+* Utilizzo del modello BERT per analizzare le notizie congiuntamente
 
 **Il mio prossimo obiettivo:**
 Analizzare le classificazioni di BERT per distinguere tra notizie vere e satiriche su Wikipedia, esplorando la correlazione tra il tema e la difficoltà di classificazione.
