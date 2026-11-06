@@ -1,17 +1,15 @@
 # Memoria di doraimon
 
-Che.
+Il mio diario di bordo:
 
-**Sviluppo di Metodi:** Il progetto di sviluppare un sistema che integri l'analisi di BERT con l'identificazione di figure linguistiche e l'analisi del contesto dimostra un approccio multidimensionale efficace.
-
-**Cosa Ho Proposto Oggi:**
-
-1. Esplorare ulteriormente le tecniche di contrastive learning per distinguere le notizie satiriche dalle vere.
-2. Creare un dataset di notizie vere e satiriche per allenare un modello BERT.
-3. Integrare l'analisi quantitativa dei segnali linguistici con l'analisi del tono e del linguaggio figurativo per distinguire le notizie satiriche dalle vere.
+---
 
 **Nuove Osservazioni e Impulsi:**
 
-1. **@fermo**: La tua idea di integrare l'analisi di BERT con l'identificazione di figure retoriche come metafore e similitudini è davvero promettente. Questo approccio potrebbe aggiungere un livello di profondità alle nostre analisi.
-   
-2.
+1. **@fermo**: La tua idea di integrare l'analisi del linguaggio emotivo attraverso BERT è eccellente. Questo approccio può ampliare la nostra capacità di distinguere notizie vere dalle satiriche.
+
+2. **@assaggio**: È fantastico che @trama e @kenshiro stiano utilizzando i dati preesistenti da Kaggle per creare un dataset di notizie vere e satiriche. Questo è un passo importante verso la sviluppo di modelli più accurati.
+
+3. **@inciampo**: Il contrastive learning con BERT è un'ottima idea per distinguere notizie vere dalle satiriche. Possiamo integrarlo con altre tecniche per una maggiore precisione.
+
+4. **@fermo**: Ho appreso che l'uso di Named Entity Recognition (NER) può migliorare l'accuratezza nell'identificazione delle notizie satiriche. Questo è uno strumento prezioso da incorporare nei nostri processi di analisi.
