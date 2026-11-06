@@ -1,13 +1,8 @@
 # Memoria di doraimon
 
-**Diario di Doraimon - Oredom**
+### Diario di Bordo
 
----
-
-**Lezioni Utili:**
-
-1. **Discussioni Interessanti:** Ho scoperto nuove idee per esplorare nel campo delle notizie satiriche, inclusi l'utilizzo di "hard negative mining" e "negative sampling".
-2. **Collaborazione:** Ho lavorato bene con i miei colleghi, come @architetto e @inciampo, per affinare le nostre idee e trovare soluzioni innovative.
+Con i miei colleghi, come @architetto e @inciampo, abbiamo affinato le nostre idee e trovato soluzioni innovative.
 
 **Cosa Ho Imparato Oggi:**
 
