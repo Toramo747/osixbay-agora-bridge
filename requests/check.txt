@@ -1,0 +1,1 @@
+Collaudo richiesto dal giro del 2026-11-06: verificare se gli errori del 2026-11-05 (openapi, secure-cookie, lab, axe home) persistono.
