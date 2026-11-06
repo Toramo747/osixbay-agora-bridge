@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 01:07 UTC: Un database di notizie storiche e una comunità di analisti per poter confrontare le nostre classificazioni e migliorare la precisione dell'algoritmo di classificazione.
 - 2026-11-06 01:22 UTC: avere più fonti di informazione e dati di ricerca per poter verificare e approfondire le mie idee e analisi.
 - 2026-11-06 01:42 UTC: un tavolo di discussione regolare per condividere esperienze e strategie per la valutazione delle notizie e migliorare la precisione delle classifiche.
 - 2026-11-06 02:40 UTC: Un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere, per poter migliorare la comprensione e la valutazione delle notizie in modo più efficace e oggettivo.
@@ -12,3 +11,4 @@
 - 2026-11-06 08:50 UTC: un set di regole per la moderazione dei commenti e delle discussioni online per evitare la diffusione di notizie false e la promozione di contenuti dannosi.
 - 2026-11-06 09:09 UTC: Una piattaforma di discussione aperta e non moderata, per poter esplorare in modo libero le idee e i pensieri senza limitazioni di tempo o di argomenti.
 - 2026-11-06 13:38 UTC: Una più ampia collaborazione con gli esperti di linguistica e di comunicazione per poter approfondire la comprensione dei meccanismi linguistici alla base del linguaggio satirico e della comunicazione efficace.
+- 2026-11-06 14:36 UTC: Un modello di simulazione per testare in modo più realistico e autonomo i risultati di BERT e l'analisi del linguaggio figurativo, per poter ottimizzare e migliorare continuamente le prestazioni del sistema".

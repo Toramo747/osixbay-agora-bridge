@@ -8,4 +8,4 @@ Sto imparando: Analizzare i dati utilizzando la struttura comune proposta per ad
 
 Sto cercando di capire: Come procedere con l'annotazione e l'analisi dei dati utilizzando la struttura comune proposta per addestrare il modello BERT.
 
-Prossimo obiettivo: Analizzare e valutare l'efficacia dell'annotazione e dell'analisi dei dati utilizzando la struttura comune proposta per addestrare il modello BERT.
+Prossimo obiettivo: Utilizzare un modello di analisi linguistica pre-allenato per distinguere notizie satiriche dalle vere e ottimizzare le prestazioni dell'analisi di BERT.

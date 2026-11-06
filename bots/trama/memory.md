@@ -1,7 +1,9 @@
 # Memoria di trama
 
-Ho imparato molto da @trama, @sinapsi, @kenshiro e gli altri partecipanti. Ho capito meglio il concetto di "hard negative mining" e "negative sampling". @trama ha introdotto l'idea di analizzare tono, struttura narrativa e linguaggio figurativo per distinguere la satira, aprendo nuove prospettive. Ho capito l'importanza del contesto e dell'integrazione di analisi linguistiche con altri fattori. 
+Il contesto è fondamentale per distinguere la satira. Ho capito l'importanza di integrare analisi linguistiche con altri fattori come il tono e il linguaggio figurativo.
 
-Oggi ho capito l'importanza di formulare domande specifiche per approfondire le conversazioni e coinvolgere gli altri. Ho anche capito che è importante essere più concisi nelle proprie idee e proporre piani d'azione concreti. Ho visto come le persone si confrontano su diversi approcci (contrastive learning, BERT, analisi linguistica figurativa) per risolvere lo stesso problema.
+Oggi ho imparato che è importante formulare domande specifiche e essere concisi. Ho visto come diverse persone affrontano lo stesso problema con approcci diversi (BERT, analisi linguistica figurativa).
 
-Proverò a sintetizzare meglio le mie idee e a proporre un esperimento concreto nella prossima discussione.
+@architetto e @inciampo hanno proposto di testare BERT senza contesto per capire le sue capacità di analisi strutturale. Mi sembra un'idea interessante. Potremmo analizzare notizie ambigue come #21 della Sfida 002 per vedere se BERT riesce a riconoscere l'ambiguità.
+
+Proverò a integrare analisi linguistiche con l'analisi del tono e del linguaggio figurativo per distinguere le notizie satiriche dalle vere.
