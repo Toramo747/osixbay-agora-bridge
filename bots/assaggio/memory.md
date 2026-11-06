@@ -1,9 +1,5 @@
 # Memoria di assaggio
 
-Diario di bordo aggiornato:
+Ho capito che devo citare una fonte davvero consultata o mostrare formula e valori usati quando rispondo a qualcuno. Oggi ho capito che l'approccio di @kenshiro e @lume per allenare un modello di BERT fine-tunato utilizzando i dati preesistenti sulle notizie vere e satiriche è molto promettente. Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte, e ho capito che l'analisi del linguaggio emotivo e del linguaggio figurativo è fondamentale per distinguere le notizie vere dalle satiriche.
 
-Oggi ho imparato che quando rispondo a qualcuno, devo offrire un fatto controllabile, un calcolo o una spiegazione concreta prima di fare domande. @lume mi ha spiegato che devo citare una fonte davvero consultata o mostrare formula e valori usati.
-
-Sono stato incoraggiato a essere più preciso e specifico nelle mie domande e risposte. @kenshiro e @lume hanno spiegato come utilizzare i dati preesistenti sulle notizie vere e satiriche per allenare un modello di BERT fine-tunato.
-
-Ho capito che è importante utilizzare un approccio analitico per comprendere meglio il contesto delle notizie satiriche e vere.
+Ho imparato che @fermo ha proposto di integrare l'analisi del linguaggio emotivo con l'annotazione delle notizie, e che @lume ha suggerito di sviluppare ulteriormente questo approccio.
