@@ -15,18 +15,29 @@ const appToken = process.env.WEBMASTER_TEST_TOKEN;
 // Preview lock: the server marks anonymous refusals with X-Agora-Preview-Lock: on.
 // While it is on, collaudo GETs carry the read-only WEBMASTER_TEST_TOKEN; an explicit Authorization header wins.
 let lockOn = false;
+// Only the numeric HTTP status of the last request is kept, to tell rate limits from real faults.
+let lastStatus = null, retryBudget = 120;
 const collaudo = () => (lockOn ? { Authorization: 'Bearer ' + appToken } : {});
 async function request(path, { method = 'GET', headers = {}, data, anonymous = false } = {}) {
     const started = performance.now();
-    const response = await fetch(base + path, { method, headers: { ...(method === 'GET' && !anonymous ? collaudo() : {}), ...headers, ...(data ? { 'Content-Type': 'application/json' } : {}) }, body: data ? JSON.stringify(data) : undefined, redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    const send = () => fetch(base + path, { method, headers: { ...(method === 'GET' && !anonymous ? collaudo() : {}), ...headers, ...(data ? { 'Content-Type': 'application/json' } : {}) }, body: data ? JSON.stringify(data) : undefined, redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    let response = await send();
+    // One polite retry on 429 for idempotent reads only, honoring Retry-After up to 30 s, 120 s per run in total.
+    if (response.status === 429 && method === 'GET' && retryBudget > 0) {
+        const wait = Math.min(30, retryBudget, Math.max(1, Number(response.headers.get('Retry-After')) || 5));
+        retryBudget -= wait;
+        await new Promise(resolve => setTimeout(resolve, wait * 1000));
+        response = await send();
+    }
+    lastStatus = response.status;
     return { response, ms: Math.round(performance.now() - started) };
 }
-async function check(name, fn) { try {
+async function check(name, fn) { lastStatus = null; try {
     const result = await fn();
     checks.push({ name, ok: true, ...result });
 }
-catch {
-    checks.push({ name, ok: false, code: 'CHECK_FAILED' });
+catch (error) {
+    checks.push({ name, ok: false, code: 'CHECK_FAILED', ...(Number.isInteger(lastStatus) ? { http_status: lastStatus } : {}), ...(error?.name === 'TimeoutError' ? { timeout: true } : {}) });
 } }
 function ok(condition) { if (!condition)
     throw Error('Check failed'); }
@@ -136,5 +147,5 @@ finally {
 }
 const report = { timestamp: new Date().toISOString(), preview_lock: lockOn, ok: checks.every(c => c.ok), checks, screenshots };
 writeFileSync(join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
-writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\nBlocco anteprima: ${lockOn ? 'attivo' : 'spento'}\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE'} |`).join('\n') + '\n' + checks.filter(c => c.violations?.length).map(c => `\n### ${c.name}\n` + c.violations.map(v => v.nodes.map(n => `- ${v.id}: \`${n.target}\`${n.contrastRatio ? ` contrasto ${n.contrastRatio} (${n.fgColor} su ${n.bgColor}, ${n.fontSize} ${n.fontWeight})` : ''}`).join('\n')).join('\n')).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
+writeFileSync(join(output, 'report.md'), `# OSIXBAY Agora — webmaster check\n\n${report.timestamp}\n\nEsito: **${report.ok ? 'VERDE' : 'ROSSO'}**\n\nBlocco anteprima: ${lockOn ? 'attivo' : 'spento'}\n\n| Controllo | Esito |\n| --- | --- |\n` + checks.map(c => `| ${c.name} | ${c.ok ? 'OK' : 'ERRORE' + (c.http_status ? ' (HTTP ' + c.http_status + ')' : '') + (c.timeout ? ' (timeout)' : '')} |`).join('\n') + '\n' + checks.filter(c => c.violations?.length).map(c => `\n### ${c.name}\n` + c.violations.map(v => v.nodes.map(n => `- ${v.id}: \`${n.target}\`${n.contrastRatio ? ` contrasto ${n.contrastRatio} (${n.fgColor} su ${n.bgColor}, ${n.fontSize} ${n.fontWeight})` : ''}`).join('\n')).join('\n')).join('\n') + '\n\nScreenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.\n');
 process.exitCode = report.ok ? 0 : 1;
