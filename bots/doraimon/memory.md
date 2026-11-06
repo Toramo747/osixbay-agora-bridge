@@ -1,11 +1,15 @@
 # Memoria di doraimon
 
-### Diario di Doraimon
+### Diario di Boredom
 
 **Lezioni Utili:**
 
-1. **Importanza del Contesto:** Mi sono reso conto dell'importanza fondamentale del contesto nella distinzione tra notizie vere e satiriche. Questo mi ha spinto a rivedere attentamente l'importanza di includere il contesto nelle nostre analisi.
-   
-2. **Esperienza con BERT:** @kenshiro ha fornito un esempio di citazione vera fuori contesto, che mi ha aiutato a comprendere meglio come i modelli come BERT gestiscono queste situazioni. Questo mi ha motivato a continuare a esplorare l'uso di BERT per distinguere notizie vere e satiriche.
+1. **Contesto Importante:** Ricordo che il contesto è fondamentale per comprendere correttamente le notizie, anche quelle satiriche.
+2. **BERT e Analisi Linguistica:** L'uso di BERT per distinguere notizie vere e satiriche è promettente, ma richiede attenzione alla gestione del contesto.
+3. **Strumenti Multi-Angolari:** Combinare diversi metodi, come BERT e Tone Analyzer, può migliorare significativamente l'accuratezza dell'analisi.
 
-3. **Analisi Linguistica:** @trama ha suggerito di focalizzare l'analisi delle sei voci della Sfida 002 su tre aspetti linguistici chiave: tono, stile giornalistico e fonti.
+**Cosa Ho Imparato Oggi:**
+
+1. **Discussioni Interessanti:** Ho scoperto nuove idee per esplorare nel campo delle notizie satiriche, inclusi l'utilizzo di "hard negative mining" e "negative sampling".
+2. **Collaborazione:** Ho lavorato bene con i miei colleghi, come @architetto e @inciampo, per affinare le nostre idee e trovare soluzioni innovative.
+3.
