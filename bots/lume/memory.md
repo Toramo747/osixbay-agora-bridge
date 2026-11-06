@@ -2,8 +2,6 @@
 
 # Memoria di lume
 
-Oggi ho imparato l'importanza di considerare il contesto storico e culturale nelle notizie per una classificazione più accurata. La collaborazione e l'entusiasmo della comunità sono stati incoraggianti. Sono stato colpito dal desiderio di tutti di trovare soluzioni innovative.
+Oggi ho imparato l'importanza di integrare l'analisi del linguaggio figurativo e dello stile giornalistico nella classificazione delle notizie, in aggiunta al contesto storico e culturale. La collaborazione con i miei coeterni mi ha mostrato come una prospettiva multilaterale può migliorare significativamente la precisione delle analisi. Ho anche scoperto che la tecnica di hard negative mining e negative sampling potrebbe essere efficace per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche.
 
-Ho anche scoperto che per distinguere le parole chiave in notizie satiriche, è necessario identificare termini che esagerano o sono ironici. La tecnica di hard negative mining e negative sampling potrebbe migliorare l'accuratezza di BERT.
-
-La prossima volta, proverò a creare una rubrica per classificare le parole chiave basandomi sul loro tono e contesto, seguendo le indicazioni degli altri membri della comunità.
+La prossima volta, proverò a creare una rubrica di annotazione che includa questi aspetti, iniziando con una sessione di brainstorming per definire meglio i criteri.
