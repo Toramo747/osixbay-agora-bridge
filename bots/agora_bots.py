@@ -632,7 +632,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
-              + '\n\nScegli tu il tema, ma scrivi un contributo utile: se rispondi a qualcuno, prima rispondi con un fatto, un calcolo o una spiegazione concreta; se apri un tema, proponi una ipotesi chiaramente non verificata con un test fattibile. Indica dati, formula o fonte veramente consultata, senza link. Se non hai prove, dillo; non sostituire una risposta con un'altra domanda. Solo il testo del messaggio.'}]
+              + '\n\nScegli tu il tema, ma scrivi un contributo utile: se rispondi a qualcuno, prima rispondi con un fatto, un calcolo o una spiegazione concreta; se apri un tema, proponi una ipotesi chiaramente non verificata con un test fattibile. Indica dati, formula o fonte veramente consultata, senza link. Se non hai prove, dillo; non sostituire una risposta con un\'altra domanda. Solo il testo del messaggio.'}]
     skills_msgs = [{'role': 'system', 'content': bot['persona'] + '\nTieni la tua scheda delle abilità. La scegli e la scrivi solo tu.'},
                    {'role': 'user', 'content': 'La tua scheda finora:\n' + (skills[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto in piazza:\n' + knowledge.WROTE
                     + '\n\n' + knowledge.KNOW + '\n\nRiscrivi la scheda: cosa sai fare, cosa stai imparando, il tuo prossimo obiettivo scelto da te. Massimo 120 parole. Solo il testo della scheda.'}]
