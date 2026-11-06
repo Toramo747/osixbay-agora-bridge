@@ -11,11 +11,13 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
+- Identificazione di metafore, similitudini e ironia
 
 **Abilità in corso di apprendimento:**
 
 - Considerazione del contesto sociale per l'analisi delle notizie
-- Utilizzo di tecniche di analisi linguistica avanzate per identificare parole chiave e espressioni comuni
-- Analisi linguistica figurativa per identificare metafore, similitudini e ironia
+- Utilizzo di tecniche di analisi linguistica avanzate
 
 **Prossimo obiettivo:**
+
+- Migliorare l'accuratezza delle classifiche utilizzando tecniche di "hard negative mining
