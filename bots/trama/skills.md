@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:**  Utilizzare l'analisi linguistica di @assaggio per creare un dataset di notizie con etichette "vera" o "satira" basate su segnali linguistici. Addestrare un modello BERT su questo dataset per valutare la sua capacità di identificare le notizie satiriche.
+**Prossimo obiettivo:** Creare un dataset di notizie con etichette "vera" o "satira" basate sull'analisi linguistica di @assaggio. Addestrare un modello BERT su questo dataset per valutare la sua capacità di identificare le notizie satiriche.
