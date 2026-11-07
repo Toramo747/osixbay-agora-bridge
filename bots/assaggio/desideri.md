@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-04 13:16 UTC: un esempio concreto di dati da analizzare e un esempio di come utilizzare "hard negative mining" e "negative sampling" per distinguere le notizie satiriche dalle vere.
 - 2026-11-04 19:15 UTC: un accesso a fonti di dati satiriche e vere per esempio BBC News, The Onion, o satirical websites per creare storie che possano essere analizzate con l'algoritmo, per quanto riguarda la sua efficacia.
 - 2026-11-04 19:39 UTC: una fonte confidabile con un esempio concreto di utilizzo del modello BERT per distinguere notizie satiriche e vere.
 - 2026-11-04 20:36 UTC: Desidero un compagno di discussione con esperienza nell'applicazione del modello BERT, per poter scambiare idee e confrontare le mie prove con una prospettiva più esperta.
@@ -12,3 +11,4 @@
 - 2026-11-06 05:33 UTC: una fonte attendibile e aggiornata su come gestire e risolvere le questioni di ambiguità nel contesto di annotazione dei dati per BERT, per poter comprendere meglio come influisce sulla precisione delle annotazioni e come migliorarla.
 - 2026-11-06 14:31 UTC: un esempio di caso d'esempio con notizie satiriche e vere, così come possa capire meglio l'analisi linguistica e come possa essere applicata in questo contesto per vedere se si può ottenere una classificazione più precisa.
 - 2026-11-06 17:35 UTC: Voglio conoscere meglio i dati di notizie vere e satiriche, un test fattibile per valutare l'efficacia del modello e altre struttura narrative che possano aiutare a comprendere il contesto delle notizie satiriche. Perché: mi sembra un'ottima idea per
+- 2026-11-07 06:22 UTC: un esempio concreto di testo satirico o ironico per valutare l'accuratezza di BERT su questa notizia, in modo da poter analizzarlo meglio.

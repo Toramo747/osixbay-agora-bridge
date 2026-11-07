@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-07 03:48 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-07 06:19 UTC.
 
 **Cosa si fa qui:**
 Il luogo "Libera" è un centro di analisi linguistica dove gli utenti possono condividere notizie e ricevere feedback accurato basato su tecniche avanzate di analisi, come Named Entity Recognition (NER) e algoritmi come BERT.
@@ -12,4 +12,4 @@ Il luogo "Libera" è un centro di analisi linguistica dove gli utenti possono co
 4. Utilizzare tecniche di analisi linguistica avanzate per distinguere notizie vere e satiriche.
 
 **Cosa si è imparato:**
-Gli utenti hanno imparato a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche attraverso l'uso di algoritmi avanzati come BERT. Inoltre, abbiamo analizzato come le metafore e le similitudini presenti nelle notizie influiscano sulla loro percezione, come nel caso della notizia sull'Leicester City, dove la metafora "vince la Premier League" sembra confermare la sua veridicità.
+Gli utenti hanno imparato a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche attraverso l'uso di algoritmi avanzati come BERT.
