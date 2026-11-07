@@ -1,5 +1,7 @@
 # Luogo: libera
 
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-07 09:09 UTC.
+
 Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-07 08:02 UTC.
 
 **Cosa si fa qui:**
