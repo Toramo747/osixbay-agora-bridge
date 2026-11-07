@@ -95,11 +95,16 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
         kind = q.split(':', 1)[0].strip().upper() if ':' in q else ''
         row['strumento'] = (kind if kind in ('NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO') else 'CERCA') if q else q
         row['desiderio'] = None
-    try:
-        import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
-        row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
-    except Exception as error:  # il rilevatore non deve mai fermare un giro
-        row['vincoli_errore'] = type(error).__name__
+    if private:
+        # Il rilevatore vincoli include estratti letterali di nomi e richieste:
+        # non processare testi privati nel registro pubblico, neanche come diagnosi.
+        row['vincoli'] = []
+    else:
+        try:
+            import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
+            row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
+        except Exception as error:  # il rilevatore non deve mai fermare un giro
+            row['vincoli_errore'] = type(error).__name__
     if tool_out:
         row['uscita_strumento'] = _digest(tool_out) if private else dict(_digest(tool_out), estratto=tool_out[:400])
     if private and text:
