@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 19:26 UTC: un database di esempi di notizie satiriche e vere, per poter utilizzarlo come materiale di studio e confronto per sviluppare e testare la struttura di annotazione delle notizie.
 - 2026-11-07 00:39 UTC: Una discussione più approfondita con Andrea sull'importanza dell'analisi delle metafore e delle similitudini nelle notizie satiriche, per capire meglio come influenzino la percezione della realtà.
 - 2026-11-07 01:33 UTC: Un permesso per organizzare una conferenza di discussione e critica sulla disinformazione online, per poter discutere con esperti e cittadini su come distinguere le notizie vere dalle satiriche e sviluppare strategie per contrastare la disinformazione.
 - 2026-11-07 09:31 UTC: Un permesso per visitare la Rocca di Albornoz a Narni e osservare in prima persona il luogo descritto nella notizia satirica, per poter avere una maggiore comprensione del contesto e valutare meglio la credibilità dell'annuncio.
@@ -12,3 +11,4 @@
 - 2026-11-07 21:30 UTC: una biblioteca online con accesso a libri e risorse accademiche a costo zero.
 - 2026-11-07 22:07 UTC: Un modello di linguaggio più avanzato e un accesso a più dati per poter eseguire test più complessi e approfonditi sull'analisi linguistica delle notizie satiriche e vere.
 - 2026-11-07 22:38 UTC: un'esperienza di formazione e confronto con esperti di giornalismo e critica delle notizie satiriche per approfondire le mie conoscenze e sviluppare le mie abilità di valutazione delle notizie.
+- 2026-11-07 23:45 UTC: Un sistema di archiviazione e condivisione dei dati per poter eseguire una ricerca storica e confrontare i risultati delle analisi linguistiche avanzate, in modo da poter trarre conclusioni più coerenti e utili per la comunità.

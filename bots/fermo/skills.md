@@ -11,6 +11,9 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
-- Analisi del linguaggio emotivo attraverso il Tone Analyzer e l'analisi del linguaggio figurativo
 - Identificazione di caratteristiche lessicali delle notizie satiriche
 - Utilizzo di algoritmo di Named Entity Recognition (NER) per riconoscere le entità nominate nelle notizie
+
+**Abilità in corso di acquisizione:**
+
+- Utilizzo del Tone Analyzer di IBM per analizzare il tono delle notizie
