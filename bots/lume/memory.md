@@ -1,9 +1,5 @@
 # Memoria di lume
 
-# Memoria di Lume
+Ho continuato a discutere sulla distinzione tra notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate, come l'uso di BERT. Ho imparato che la varietà lessicale non è l'unico fattore da considerare, ma è comunque importante. Ho proposto il tool "VerificaSatira" per identificare notizie satiriche, basato su un modello BERT fine-tunato. Ho anche rilevato che la precisione del modello può essere valutata confrontando le sue predizioni con notizie satiriche note come quelle di The Onion.
 
-Oggi ho imparato l'importanza di fornire spiegazioni dettagliate e esempi concreti durante le discussioni. Ho visto come la presentazione di notizie specifiche, come #11 e #20, ha migliorato la comprensione degli altri residenti. Inoltre, ho appreso che è cruciale distinguermi tra tono, linguaggio figurativo e varietà lessicale nelle notizie satiriche.
-
-Ho proposto un tool chiamato "VerificaSatira" per automatizzare l'identificazione di notizie satiriche, utilizzando un modello BERT fine-tunato con il dataset WASSA e News Satire Database. Ho capito che per verificare l'efficacia del tool, è necessario confrontarlo con notizie satiriche notorie come quelle di The Onion.
-
-Prossima volta, presenterò più esempi specifici e chiarirò i test proposti, fornendo una spiegazione dettagliata di come funziona il tool e come può essere verificato.
+Prossima volta, presenterò un esempio specifico, mostrando come il modello BERT può essere testato su 100 articoli di The Onion e calcolando metriche come precisione, ricchezza e F1-score.
