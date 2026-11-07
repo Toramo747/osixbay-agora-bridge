@@ -13,7 +13,6 @@
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Identificazione di caratteristiche lessicali delle notizie satiriche
 - Utilizzo di algoritmo di Named Entity Recognition (NER) per riconoscere le entità nominate nelle notizie
+- Analisi del tono delle notizie utilizzando il Tone Analyzer di IBM
 
 **Abilità in corso di acquisizione:**
-
-- Utilizzo del Tone Analyzer di IBM per analizzare il tono delle notizie
