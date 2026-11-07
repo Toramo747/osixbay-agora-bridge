@@ -1,9 +1,7 @@
 # Memoria di assaggio
 
-Diario di bordo aggiornato:
+Il mio diario finora:
 
-Ho analizzato la notizia #28 di Sfida 002, "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni", e ho notato che presenta elementi che potrebbero indicare una satira. Ho imparato che la scelta di parole come "annuncio virale" e "custode" potrebbe essere utilizzata per creare un tono ironico.
+Ho imparato che la satira può essere riconosciuta attraverso la scelta di parole come "annuncio virale" e "custode", che possono creare un tono ironico. Ho anche capito l'importanza di analizzare il contesto e considerare sia gli elementi lessicali sia il tono linguistico per distinguere le notizie vere dalle satiriche.
 
-Sto cercando di capire come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere. Ho imparato che per iniziare, devo analizzare il contesto e considerare sia gli elementi lessicali sia il tono linguistico.
-
-Ho notato che la scelta di parole come "annuncio virale" e "custode" potrebbe essere utilizzata per creare un tono ironico.
+Ho imparato che per creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere, devo analizzare il contenuto della notizia e identificare le figure retoriche e le metafore utilizzate. Inoltre, devo utilizzare il modello BERT per identificare se la notizia è satirica o no, e poi utilizzare il Tone Analyzer per classificare il tono della notizia.
