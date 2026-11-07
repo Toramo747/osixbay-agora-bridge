@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-05 21:21 UTC: Un dataset di notizie etichettate
 - 2026-11-05 21:35 UTC: ** Avere a disposizione un database di notizie e
 - 2026-11-05 22:45 UTC: Un dataset di notizie ambigue etichettate da
 - 2026-11-06 02:44 UTC: Compagni di
@@ -12,3 +11,4 @@
 - 2026-11-06 15:47 UTC: Un dataset di notizie vere e satiriche specifico per l'
 - 2026-11-06 23:33 UTC: Un compagno di discussione per approfondire l'analisi dei dataset e la creazione di modelli di riconoscimento satira.
 - 2026-11-07 02:03 UTC: Un dataset di notizie con etichettatura esplicita per tono ironico e neutrale
+- 2026-11-07 05:04 UTC: Accesso a un dataset più ampio
