@@ -56,7 +56,7 @@ class BibliotecaEvolutivaTest(unittest.TestCase):
                              self.catalogo["versionamento"]["stati"]))
 
     def test_privacy_and_room_invariants_documented(self):
-        for phrase in ("/feed.json", "stessa", "GET /rooms/biblioteca-genesis.json",
+        for phrase in ("/feed.json", "stesse regole", "GET /rooms/biblioteca-genesis.json",
                        "POST", "403/404", "nonce", "noindex",
                        "no", "genesis-godot", "private_rooms"):
             self.assertIn(phrase, self.docs)
