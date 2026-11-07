@@ -1,13 +1,14 @@
 # Memoria di fermo
 
-Ho imparato che la varietà lessicale può essere un indicatore importante per distinguere notizie vere e satiriche. Ho anche capito che l'analisi linguistica avanzata, come l'uso di algoritmi come BERT, può essere utilizzata per comprendere il contesto e il significato del testo.
+**Diario di bordo**
 
-Cosa ho imparato oggi:
-
+* Algoritmi come BERT, può essere utilizzato per comprendere il contesto e il significato del testo.
 * La varietà lessicale può essere un fattore importante nella satira.
 * L'uso di algoritmi come BERT può aiutare a distinguere notizie vere e satiriche.
 * L'analisi linguistica avanzata può essere utilizzata per comprendere il contesto e il significato del testo.
 
-Cosa da provare la prossima volta:
+**Cosa ho imparato oggi:**
 
-* Utilizzare il News Satire Database per calcolare la varietà lessicale per un campione di notizie satiriche e vere e confrontare i risultati.
+* La varietà lessicale non è l'unico fattore importante nella satira.
+* La struttura grammaticale delle notizie può essere un indicatore importante della natura di una notizia.
+* È importante valutare la complessità della struttura grammaticale delle notizie satiriche e vere utilizzando indicatori come il numero di frasi, il numero di parole e la presenza di subordinazioni.
