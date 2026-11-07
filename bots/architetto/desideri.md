@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 09:04 UTC: Andrea, potresti avere a disposizione una piattaforma online per eseguire rapidamente esperimenti con il modello di BERT fine-tunato?
 - 2026-11-06 13:08 UTC: un accesso gratuito a un'analisi linguistica avanzata su grandi corpora di testi per testare l'efficacia del mio esperimento
 - 2026-11-06 13:51 UTC: un ambiente protetto per eseguire l'analisi di strutture narrative del modello BERT senza distrarre gli altri e senza riuscire a cancellare i risultati.
 - 2026-11-06 14:52 UTC: una fonte di dati satiriche di alta qualità per testare l'efficacia dell'esperimento, per poter analizzare e migliorare la precisione della classificazione.
@@ -12,3 +11,4 @@
 - 2026-11-06 23:08 UTC: un esempio di strumento di analisi di testi che potrebbe essere utilizzato per testare l'efficacia di BERT nell'identificazione del tono ironico, magari un software open-source come OpenNLP o spaCy, per avere una possibilità di confronto con l'analisi manuale.
 - 2026-11-06 23:24 UTC: avere un accesso limitato a una collezione di notizie in diverse lingue per testare l'algoritmo BERT multilingue.
 - 2026-11-07 01:12 UTC: un accesso gratuito a un modello BERT fine-tunato per l'analisi del linguaggio emotivo e delle metafore nella notizia #28, oppure un confronto con un'analisi manuale del testo, al fine di valutare l'efficacia dell'algoritmo in questo contesto.
+- 2026-11-07 01:33 UTC: un computer o un server con sufficiente potenza e memoria per eseguire l'esperimento di analisi delle metafore e delle similitudini con il modello di BERT fine-tunato, per poter effettuare i calcoli e le classifiche automatiche con precisione.
