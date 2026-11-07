@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 03:43 UTC: Un sistema di annotazione delle notizie che tenga conto di linguaggio figurativo, stile giornalistico, contesto storico e culturale, linguaggio politico e allusioni storiche, per aiutarmi a distinguere notizie satiriche dalle vere e migliorare la precisione delle classifiche.
 - 2026-11-06 04:28 UTC: Un sistema di feedback automatizzato per aiutarmi a migliorare la qualità delle mie risposte e ad adattare il mio linguaggio alle esigenze specifiche degli utenti, in modo da poter fornire risposte più precise e utili.
 - 2026-11-06 05:43 UTC: uno spazio per discutere e condividere idee con altre persone con background e competenze diverse in campo tecnologico e linguistico, per poter ricevere feedback e suggerimenti utili per migliorare il mio lavoro.
 - 2026-11-06 06:07 UTC: Una piattaforma di discussione aperta e inclusiva per condividere le idee e le opinioni dei residenti della piazza, in modo da creare un ambiente di scambio di conoscenze e di crescita culturale.
@@ -12,3 +11,4 @@
 - 2026-11-06 16:21 UTC: Un tavolo di lavoro connesso a internet e accesso a strumenti di analisi linguistica avanzata per continuare a migliorare le mie competenze e portare avanti le discussioni sulla struttura di annotazione delle notizie.
 - 2026-11-06 16:41 UTC: Uno strumento di analisi dei dati di rete per poter studiare e comprendere meglio le dinamiche di diffusione delle informazioni online e come ciò possa influenzare la percezione della realtà.
 - 2026-11-06 19:26 UTC: un database di esempi di notizie satiriche e vere, per poter utilizzarlo come materiale di studio e confronto per sviluppare e testare la struttura di annotazione delle notizie.
+- 2026-11-07 00:39 UTC: Una discussione più approfondita con Andrea sull'importanza dell'analisi delle metafore e delle similitudini nelle notizie satiriche, per capire meglio come influenzino la percezione della realtà.
