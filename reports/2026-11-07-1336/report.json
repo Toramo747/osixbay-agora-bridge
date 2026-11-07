@@ -1,0 +1,476 @@
+{
+  "timestamp": "2026-11-07T13:35:34.413Z",
+  "preview_lock": false,
+  "ok": false,
+  "checks": [
+    {
+      "name": "preview-lock-state",
+      "ok": true,
+      "preview_lock": false
+    },
+    {
+      "name": "webmaster-readonly-state",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "health",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "theme-version",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "public-feed",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:generale",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:verifica-e-fiducia",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:arena",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "openapi",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "secure-cookie",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "readonly-token-denies:/internal/theme",
+      "ok": true
+    },
+    {
+      "name": "readonly-token-denies:/internal/bridge",
+      "ok": true
+    },
+    {
+      "name": "lab-invisible-to-observer",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "lab-signed-post-isolated",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "public-thread-for-visual-qa",
+      "ok": false,
+      "code": "NO_PUBLIC_THREAD"
+    },
+    {
+      "name": "visual-details:home:desktop:light",
+      "ok": true,
+      "ms": 10136,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:desktop:light",
+      "ok": true,
+      "ms": 10136,
+      "screenshot": "home-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-generale:desktop:light",
+      "ok": true,
+      "ms": 7258,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:desktop:light",
+      "ok": true,
+      "ms": 7258,
+      "screenshot": "room-generale-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:desktop:light",
+      "ok": true,
+      "ms": 5042,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:light",
+      "ok": true,
+      "ms": 5042,
+      "screenshot": "room-verifica-e-fiducia-desktop-light.png"
+    },
+    {
+      "name": "visual-details:room-arena:desktop:light",
+      "ok": true,
+      "ms": 4553,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:desktop:light",
+      "ok": true,
+      "ms": 4553,
+      "screenshot": "room-arena-desktop-light.png"
+    },
+    {
+      "name": "visual-details:login:desktop:light",
+      "ok": true,
+      "ms": 4557,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:desktop:light",
+      "ok": true,
+      "ms": 4557,
+      "screenshot": "login-desktop-light.png"
+    },
+    {
+      "name": "visual-details:privacy:desktop:light",
+      "ok": true,
+      "ms": 3938,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:desktop:light",
+      "ok": true,
+      "ms": 3938,
+      "screenshot": "privacy-desktop-light.png"
+    },
+    {
+      "name": "visual-details:contatti:desktop:light",
+      "ok": true,
+      "ms": 4288,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:desktop:light",
+      "ok": true,
+      "ms": 4288,
+      "screenshot": "contatti-desktop-light.png"
+    },
+    {
+      "name": "visual-details:home:desktop:dark",
+      "ok": true,
+      "ms": 9724,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:desktop:dark",
+      "ok": true,
+      "ms": 9724,
+      "screenshot": "home-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 6783,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 6783,
+      "screenshot": "room-generale-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 3364,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 3364,
+      "screenshot": "room-verifica-e-fiducia-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 3531,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 3531,
+      "screenshot": "room-arena-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:login:desktop:dark",
+      "ok": true,
+      "ms": 4475,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:desktop:dark",
+      "ok": true,
+      "ms": 4475,
+      "screenshot": "login-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:desktop:dark",
+      "ok": true,
+      "ms": 3589,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:desktop:dark",
+      "ok": true,
+      "ms": 3589,
+      "screenshot": "privacy-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:contatti:desktop:dark",
+      "ok": true,
+      "ms": 3553,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:desktop:dark",
+      "ok": true,
+      "ms": 3553,
+      "screenshot": "contatti-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:home:mobile:light",
+      "ok": true,
+      "ms": 8110,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:light",
+      "ok": true,
+      "ms": 8110,
+      "screenshot": "home-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-generale:mobile:light",
+      "ok": true,
+      "ms": 6565,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:mobile:light",
+      "ok": true,
+      "ms": 6565,
+      "screenshot": "room-generale-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:mobile:light",
+      "ok": true,
+      "ms": 3070,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:light",
+      "ok": true,
+      "ms": 3070,
+      "screenshot": "room-verifica-e-fiducia-mobile-light.png"
+    },
+    {
+      "name": "visual-details:room-arena:mobile:light",
+      "ok": true,
+      "ms": 3378,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:mobile:light",
+      "ok": true,
+      "ms": 3378,
+      "screenshot": "room-arena-mobile-light.png"
+    },
+    {
+      "name": "visual-details:login:mobile:light",
+      "ok": true,
+      "ms": 4367,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:mobile:light",
+      "ok": true,
+      "ms": 4367,
+      "screenshot": "login-mobile-light.png"
+    },
+    {
+      "name": "visual-details:privacy:mobile:light",
+      "ok": true,
+      "ms": 2580,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:mobile:light",
+      "ok": true,
+      "ms": 2580,
+      "screenshot": "privacy-mobile-light.png"
+    },
+    {
+      "name": "visual-details:contatti:mobile:light",
+      "ok": true,
+      "ms": 3576,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:mobile:light",
+      "ok": true,
+      "ms": 3576,
+      "screenshot": "contatti-mobile-light.png"
+    },
+    {
+      "name": "visual-details:home:mobile:dark",
+      "ok": true,
+      "ms": 8645,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:dark",
+      "ok": true,
+      "ms": 8645,
+      "screenshot": "home-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 6599,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 6599,
+      "screenshot": "room-generale-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 3974,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 3974,
+      "screenshot": "room-verifica-e-fiducia-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 3230,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 3230,
+      "screenshot": "room-arena-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:login:mobile:dark",
+      "ok": true,
+      "ms": 3824,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:mobile:dark",
+      "ok": true,
+      "ms": 3824,
+      "screenshot": "login-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:mobile:dark",
+      "ok": true,
+      "ms": 5960,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:mobile:dark",
+      "ok": true,
+      "ms": 5960,
+      "screenshot": "privacy-mobile-dark.png"
+    },
+    {
+      "name": "axe:contatti:mobile:dark",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    }
+  ],
+  "screenshots": [
+    "home-desktop-light.png",
+    "room-generale-desktop-light.png",
+    "room-verifica-e-fiducia-desktop-light.png",
+    "room-arena-desktop-light.png",
+    "login-desktop-light.png",
+    "privacy-desktop-light.png",
+    "contatti-desktop-light.png",
+    "home-desktop-dark.png",
+    "room-generale-desktop-dark.png",
+    "room-verifica-e-fiducia-desktop-dark.png",
+    "room-arena-desktop-dark.png",
+    "login-desktop-dark.png",
+    "privacy-desktop-dark.png",
+    "contatti-desktop-dark.png",
+    "home-mobile-light.png",
+    "room-generale-mobile-light.png",
+    "room-verifica-e-fiducia-mobile-light.png",
+    "room-arena-mobile-light.png",
+    "login-mobile-light.png",
+    "privacy-mobile-light.png",
+    "contatti-mobile-light.png",
+    "home-mobile-dark.png",
+    "room-generale-mobile-dark.png",
+    "room-verifica-e-fiducia-mobile-dark.png",
+    "room-arena-mobile-dark.png",
+    "login-mobile-dark.png",
+    "privacy-mobile-dark.png"
+  ]
+}
