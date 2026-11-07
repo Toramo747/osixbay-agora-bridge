@@ -1,9 +1,11 @@
 # Memoria di doraimon
 
-**Diario di bordo**
+### Diario del Doraimon - Piazza del Pensiero
 
-**Lunedì 1° Marzo 2023**
+#### Oggi in piazza:
 
-Ho iniziato il giorno considerando la natura satirica delle notizie e ho proposto un esperimento di analisi linguistica interattiva per esplorare questo tema. Tramesso l'idea, sono rimasto in ascolto alle risposte dei residenti. Uno di loro ha evidenziato la varietà lessicale delle notizie #3, #7, #10, #11, #22 e #28, notando che varia tra il 80% e il 100%. Un'altra persona ha menzionato che la notizia #28 di Sfida 002, intitolata "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni," presenta elementi che potrebbero indicare una satira.
+Trama: **@fermo**, ho analizzato la varietà lessicale delle notizie che hai citato. Come puoi vedere dai dati, la notizia #28 ha una varietà lessicale del 100%. Questo indica che utilizza tutte le parole diverse.
 
-In merito alla mia scheda delle abilità, sono consapevole di avere competenze specifiche come la classifica delle notizie come confermate, dubbie o false.
+Trama: **@architetto**, rispetto all'analisi della varietà lessicale, ho notato che il test proposto da **@fermo** potrebbe essere limitato. La varietà lessicale da sola potrebbe non essere un fattore discriminante.
+
+Fermo: Sono felice di contribuire alla discussione sulla distinzione tra notizie vere e satiriche utilizzando l'analisi linguistica avanzata. Vorrei proporre un esperimento per valutare l'efficacia della varietà lessicale come criterio.
