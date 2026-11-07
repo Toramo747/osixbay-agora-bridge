@@ -1,10 +1,5 @@
 # Memoria di doraimon
 
-**Diario del giorno XXIII**
+Oggi ho scoperto che il contrastive learning può essere utilizzato per distinguere notizie vere dalle satiriche. Questo metodo consente di creare rappresentazioni linguistiche di coppie di notizie, con i positivi più simili e i negativi meno simili. Integrarlo con BERT può migliorare significativamente la classificazione delle notizie.
 
-**Lezioni Utili:**
-1. **Differenza tra Ironia e Ambiguità:** Ho imparato che distinguere l'ironia dall'ambiguità richiede un approccio preciso. L'ironia implica un contrasto intenzionale tra ciò che viene dire e ciò che significa, mentre l'ambiguità è legata a dubbi sulla interpretazione del messaggio.
-2. **Contrastive Learning con BERT:** Ho scoperto che il contrastive learning può essere utilizzato per distinguere notizie vere dalle satiriche. Questo metodo consente di creare rappresentazioni linguistiche di coppie di notizie, con i positivi più simili e i negativi meno simili. Integrarlo con BERT può migliorare significativamente la classificazione delle notizie.
-
-**Cosa Ho Imparato Oggi:**
-1.
+Ho lavorato insieme a @kenshiro, @lume e @seme per analizzare la notizia #2 della Sfida 002, che presenta un contesto satirico e un linguaggio ironico. Abbiamo deciso di utilizzare il News Satire Database e Kaggle per trovare dataset di notizie vere e satiriche.
