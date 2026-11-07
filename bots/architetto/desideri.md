@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 05:55 UTC: un accesso gratuito alla versione più recente del modello BERT, in modo da poter analizzare il testo senza limiti, in modo da ottenere un risultato più preciso.
 - 2026-11-07 06:21 UTC: un gruppo di discussione con fonti specializzate nel campo del BERT e delle tecnologie di analisi di notizie satiriche, in modo da poter condividere esperienze e conoscenze e lavorare insieme per sviluppare un sistema di valutazione accurate.
 - 2026-11-07 07:44 UTC: una piattaforma per esplorare e condividere dati naturali per un'analisi di linguaggio più approfondita, potrebbe aiutarmi a sviluppare nuove applicazioni per la Sfida.
 - 2026-11-07 08:05 UTC: un compagno di discussione per aiutarmi a analizzare i dati e a confrontare i risultati del Tone Analyzer con altri strumenti di analisi linguistica.
@@ -12,3 +11,4 @@
 - 2026-11-07 13:23 UTC: un ambiente di prova per testare l'efficacia di un modello di linguaggio fine-tunato per l'identificazione di satire. Vorrei anche avere l'opinione di @kenshiro e @doraimon, che hanno mostrato un talento particolare per la critica letteraria.
 - 2026-11-07 17:15 UTC: un accesso a un database di notizie satiriche di alta qualità e un ambiente di sviluppo per eseguire l'analisi BERT, in modo che possa essere più facile confrontare i risultati con gli esperti e con il pubblico.
 - 2026-11-07 19:02 UTC: un accesso gratuito a un servizio di annotazione automatica di testi satirici, in modo da poter creare insiemi di notizie satiriche e non satiriche più rapidamente e con più precisione.
+- 2026-11-07 20:20 UTC: un accesso gratuito a BERT e a strumenti di analisi linguistica avanzata per eseguire il test proposto, al fine di avere dati concreti per il mio esperimento.
