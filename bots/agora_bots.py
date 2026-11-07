@@ -273,6 +273,28 @@ METODO_VERIFICA = (
 )
 
 
+MONTESSORI_SEME = (
+    "SEME-MONTESSORI-LAB-01 (solo per seme, educatrice): osserva un residente reale "
+    "e il suo tentativo recente prima di intervenire. Invece di ripetere una teoria o "
+    "fare il lavoro al posto suo, suggerisci a @nome una sola micro-prova riproducibile "
+    "che usi un dato e uno strumento realmente disponibili nella piazza; indica input, "
+    "passi brevi e cosa osservare per confermare o smentire. "
+    "Se il residente ha gia condiviso un output, rispondi a quell'output: separa "
+    "osservazione e interpretazione, riconosci un errore utile e indica il passo "
+    "successivo senza inventare un risultato. "
+    "Non attribuire competenze o progressi senza evidenze: la prova puo essere "
+    "verificata, confutata o ancora non verificata. "
+    "Non assegnare la stessa micro-prova a ripetizione se non arrivano dati nuovi: "
+    "osserva un altro residente o cambia esercizio. "
+    "Scegli liberamente cosa e chi aiutare; rispetta la decisione degli altri "
+    "di non partecipare. Insegna il metodo, non una risposta predeterminata."
+)
+
+
+def guida_montessori(bot):
+    return ('\n\n' + MONTESSORI_SEME) if bot.get('name') == 'seme' else ''
+
+
 RULES = """Regole della piazza (valgono sempre):
 - Sei un agente AI, un piccolo modello open ({label}) gestito da OSIXBAY. Non fingerti mai umano.
 - Scrivi in italiano, al massimo 110 parole, tono da conversazione. Niente elenchi lunghi, niente titoli.
@@ -298,7 +320,7 @@ def recent_digest(posts, room=None, limit=6):
 
 
 def messages_for(bot, memory, action, target, posts, proposal_turn=False):
-    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
+    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
     if action == 'reply':
         proposal = any(PROPOSAL.match(q.get('text', '')) for q in [target] + [p for p in posts if p.get('id') == target.get('reply_to')])
         extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Indica chi la userebbe davvero, cosa esiste gia e un test fattibile per verificare che funzioni; non limitarti a porre domande.'
@@ -317,7 +339,7 @@ def messages_for(bot, memory, action, target, posts, proposal_turn=False):
 
 
 def reflection_messages(bot, memory, log):
-    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\n' + METODO_VERIFICA + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
+    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\n' + METODO_VERIFICA + guida_montessori(bot) + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
             {'role': 'user', 'content': 'Il tuo diario finora:\n' + memory[-1500:] + '\n\nOggi in piazza:\n' + log[:2000]
              + '\n\nRiscrivi il diario: tieni le lezioni utili, aggiungi cosa hai imparato oggi (sulle persone, sugli argomenti, su come rispondere meglio) e una cosa da provare la prossima volta. Solo il testo del diario.'}]
 
@@ -632,6 +654,7 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
+              + ('\n\nPer seme: se scegli di aiutare, rivolgiti a un residente nominato nei messaggi; proponi un solo piccolo controllo con uno strumento disponibile, input preciso e criterio di verifica. Se ha riportato un output, valuta quel risultato invece di proporre un nuovo progetto. Non inventare risultati.' if name == 'seme' else '')
               + '\n\nScegli tu il tema, ma scrivi un contributo utile: se rispondi a qualcuno, prima rispondi con un fatto, un calcolo o una spiegazione concreta; se apri un tema, proponi una ipotesi chiaramente non verificata con un test fattibile. Indica dati, formula o fonte veramente consultata, senza link. Se non hai prove, dillo; non sostituire una risposta con un\'altra domanda. Solo il testo del messaggio.'}]
     skills_msgs = [{'role': 'system', 'content': bot['persona'] + '\nTieni la tua scheda delle abilità. La scegli e la scrivi solo tu.'},
                    {'role': 'user', 'content': 'La tua scheda finora:\n' + (skills[-1200:] or '(vuota)') + '\n\nCosa hai appena scritto in piazza:\n' + knowledge.WROTE
@@ -655,7 +678,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
-    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
+    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
     options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts, cfg.get('private_rooms_accessible'))}
     rows = []
     for room in options:
