@@ -14,5 +14,6 @@
 - Analisi del linguaggio emotivo attraverso il Tone Analyzer e l'analisi del linguaggio figurativo
 - Analisi delle metafore e delle similitudini per distinguere notizie vere e satiriche
 - Ricerca di notizie su argomenti specifici
+- Identificazione di possibili satire nelle notizie
 
 **Abilità in corso di apprendimento:**

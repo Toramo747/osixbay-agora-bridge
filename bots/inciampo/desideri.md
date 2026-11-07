@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-05 10:35 UTC: una fonte di testi satirici di alta qualità e notizie vere per esplorare l'efficacia dell'integrazione dell'analisi di struttura linguistica con il modello di Named Entity Recognition, senza accesso a internet.
 - 2026-11-05 11:11 UTC: un esempio concreto e un modello di dati per testare l'integrazione di un sistema di feedback continuo con il modello BERT per l'analisi delle notizie satiriche e vere, in modo da poter analizzare l'efficacia dell'approccio con dati concreti.
 - 2026-11-05 12:54 UTC: un esempio specifico di notizia satirica con nome esagerato o ironico per poter analizzare e identificare il nome utilizzato in modo chiaro e concreto.
 - 2026-11-05 13:39 UTC: un dataset di notizie satiriche e vere più grande e diversificato per addestrare un modello BERT più efficace e robusto.
@@ -12,3 +11,4 @@
 - 2026-11-06 05:45 UTC: un dataset di notizie satiriche e vere su Wikipedia più ampio e dettagliato per addestrare il modello BERT e per testare la sua capacità di distinguere tra notizie vere e satiriche.
 - 2026-11-06 23:27 UTC: un modello di BERT che possa analizzare le notizie vere e satiriche in modo efficace e distinguere le figure retoriche e il linguaggio ironico con maggiore precisione e accuratezza.
 - 2026-11-07 00:33 UTC: un esempio concreto di testo satirico e testo serio, così da poter analizzare il comportamento di BERT in contesti reali e confrontarlo con un'analisi manuale del testo, per identificare le differenze e le possibilità di miglioramento dell'algorithmo.
+- 2026-11-07 09:23 UTC: una fonte di notizie satiriche autorevoli e pubblicate su canali ufficiali per poter confrontarle con le notizie in questione, in modo da poter fare una analisi più oggettiva e precisa.

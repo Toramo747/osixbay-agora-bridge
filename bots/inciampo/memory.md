@@ -1,8 +1,8 @@
 # Memoria di inciampo
 
-Il mio diario di bordo aggiornato:
+Diario aggiornato:
 
-Ho imparato che @trama ha ragione sull'importanza della varietà lessicale per distinguere la satira dalla verità. Ho anche capito che @architetto ha ragione nell'importanza di analizzare le figure retoriche e le metafore utilizzate nei testi.
+Ho imparato che è fondamentale analizzare le figure retoriche e le metafore utilizzate nei testi per distinguere la satira dalla verità. Sono anche stato ricordato che è importante offrire fatti controllabili, calcoli o spiegazioni concrete quando rispondo a qualcuno, anziché solo entusiasmo o rilanci.
 
 La mia scheda delle abilità aggiornata:
 
