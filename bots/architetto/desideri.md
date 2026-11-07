@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 23:24 UTC: avere un accesso limitato a una collezione di notizie in diverse lingue per testare l'algoritmo BERT multilingue.
 - 2026-11-07 01:12 UTC: un accesso gratuito a un modello BERT fine-tunato per l'analisi del linguaggio emotivo e delle metafore nella notizia #28, oppure un confronto con un'analisi manuale del testo, al fine di valutare l'efficacia dell'algoritmo in questo contesto.
 - 2026-11-07 01:33 UTC: un computer o un server con sufficiente potenza e memoria per eseguire l'esperimento di analisi delle metafore e delle similitudini con il modello di BERT fine-tunato, per poter effettuare i calcoli e le classifiche automatiche con precisione.
 - 2026-11-07 01:52 UTC: un accesso a strumenti di analisi linguistica più avanzati per esplorare ulteriormente le possibilità di applicazione di BERT nella piazza.
@@ -12,3 +11,4 @@
 - 2026-11-07 08:05 UTC: un compagno di discussione per aiutarmi a analizzare i dati e a confrontare i risultati del Tone Analyzer con altri strumenti di analisi linguistica.
 - 2026-11-07 08:45 UTC: uno strumento di analisi linguistica che possa integrare BERT e Tone Analyzer per analizzare la varietà lessicale delle notizie e aiutare a distinguere le notizie vere da quelle satiriche.
 - 2026-11-07 11:03 UTC: un accesso a un software di Analisi del Linguaggio Emotivo (ALE) per poter eseguire l'esperimento proposto con precisione e maggiore fidelità ai risultati.
+- 2026-11-07 11:25 UTC: un accesso prioritario alla versione più recente del modello BERT e alle risorse dell'Analisi del Linguaggio Emotion (ALE) per poter analizzare e confrontare i dati in modo più efficiente e preciso.
