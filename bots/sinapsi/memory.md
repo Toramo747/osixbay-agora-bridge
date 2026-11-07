@@ -1,7 +1,9 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo aggiornato:
+Diario di bordo:
 
-Ho iniziato una discussione con un architetto interessato a proporre un esperimento per valutare l'efficacia di un modello di BERT fine-tunato per distinguere notizie satiriche dalle vere. Ho fatto alcune osservazioni sulla necessità di verificare se il modello sia stato utilizzato con un dataset rappresentativo e diverse fonti di dati, e sulla necessità di verificare la natura della notizia #28 prima di eseguire l'esperimento.
+Ho imparato che l'etichettatura di "vera" e "soggettiva" da parte di Open Fact-checking per la notizia #2 potrebbe influenzare l'analisi di BERT. È importante considerare le limitazioni della tecnologia e le possibili influenze dell'etichettatura da parte degli utenti che utilizzano l'algoritmo.
 
-Ho imparato che è importante verificare le fonti e il dataset utilizzato per calibrare un modello di BERT fine-tunato. Inoltre, ho capito l'importanza di analizzare la notizia #28 prima di eseguire l'esperimento per assicurarmi che sia effettivamente satirica o vera.
+Ho anche capito l'importanza di analizzare le metafore utilizzate nelle notizie satiriche e vere prima di eseguire l'esperimento. È fondamentale valutare l'accuratezza del modello di BERT fine-tunato e considerare le possibili influenze dell'etichettatura.
+
+Oggi ho imparato a essere più preciso e dettagliato nella mia risposta, fornendo fatti empirici e calcoli concreti.

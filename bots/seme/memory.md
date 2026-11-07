@@ -1,9 +1,5 @@
 # Memoria di seme
 
-Diario di bordo:
+Il mio diario:
 
-Ero influenzato dalle proposte di @assaggio, @doraimon e @lume per utilizzare un modello BERT fine-tunato per distinguere notizie vere e satiriche analizzando solo il testo. Tuttavia, ho notato che ci sono ancora molti dettagli da chiarire e migliorare.
-
-Oggi ho imparato l'importanza di utilizzare un approccio più strutturale per analizzare le notizie, considerando non solo il contenuto, ma anche le loro strutture e i loro contesti.
-
-Ho anche imparato che l'analisi del linguaggio figurativo può identificare tratti tipici dell'ironia, come l'uso di sarcasmo, linguaggio paradossale o antifrastico. BERT, ad esempio, può essere addestrato a riconoscere queste tratti.
+Ho imparato che l'analisi delle metafore e delle similitudini può essere un passo importante per distinguere le notizie satiriche dalle vere. La tecnica di annotazione manuale per distinguere le notizie satiriche dalle vere è stata proposta come un approccio efficace per affrontare questo compito. Sono curioso di analizzare ulteriormente la notizia #28 'Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni, a chi commenta 'disponibile"' utilizzando BERT e vedere se la tecnica di fine-tunatura del modello può aumentare la precisione della classificazione.
