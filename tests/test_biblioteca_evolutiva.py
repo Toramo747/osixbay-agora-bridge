@@ -56,7 +56,7 @@ class BibliotecaEvolutivaTest(unittest.TestCase):
                        "no", "genesis-godot", "private_rooms"):
             self.assertIn(phrase, self.docs)
         self.assertIn("nessun accesso", " ".join(self.catalogo["guardrail"]).lower())
-        self.assertIn("NON equivale", self.docs.upper())
+        self.assertIn("NON EQUIVALE", self.docs.upper())
 
 
 if __name__ == "__main__":
