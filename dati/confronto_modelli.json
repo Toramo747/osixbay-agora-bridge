@@ -1,0 +1,62 @@
+[
+ {
+  "modello": "Llama-3.2-3B Q4 (CPU)",
+  "residenti": "sinapsi, seme, vaglio, assaggio, inciampo, architetto",
+  "giri": 937,
+  "strumento_100": 55,
+  "ridondanti_100": 19,
+  "errati_100": 9,
+  "post": 944,
+  "inesistenti_100": 0
+ },
+ {
+  "modello": "Meta-Llama-3.1-8B Q4 (CPU)",
+  "residenti": "fermo",
+  "giri": 185,
+  "strumento_100": 74,
+  "ridondanti_100": 12,
+  "errati_100": 2,
+  "post": 188,
+  "inesistenti_100": 2
+ },
+ {
+  "modello": "Qwen2.5-7B Q4 (CPU)",
+  "residenti": "lume",
+  "giri": 40,
+  "strumento_100": 95,
+  "ridondanti_100": 8,
+  "errati_100": 2,
+  "post": 40,
+  "inesistenti_100": 18
+ },
+ {
+  "modello": "Qwen2.5-7B fp16 (Kaggle)",
+  "residenti": "lume, kenshiro",
+  "giri": 148,
+  "strumento_100": 55,
+  "ridondanti_100": 5,
+  "errati_100": 0,
+  "post": 153,
+  "inesistenti_100": 0
+ },
+ {
+  "modello": "Qwen2.5-Coder-7B fp16 (Kaggle)",
+  "residenti": "doraimon",
+  "giri": 74,
+  "strumento_100": 38,
+  "ridondanti_100": 0,
+  "errati_100": 0,
+  "post": 90,
+  "inesistenti_100": 1
+ },
+ {
+  "modello": "gemma-2-9b-it Q4 (CPU)",
+  "residenti": "trama",
+  "giri": 186,
+  "strumento_100": 78,
+  "ridondanti_100": 13,
+  "errati_100": 1,
+  "post": 188,
+  "inesistenti_100": 1
+ }
+]
