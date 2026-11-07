@@ -17,5 +17,3 @@
 **Abilità in corso di apprendimento:**
 
 - Analisi delle metafore e delle similitudini per distinguere notizie vere e satiriche
-
-**Prossimo obiettivo:**

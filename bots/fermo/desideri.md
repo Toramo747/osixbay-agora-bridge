@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 09:09 UTC: Una piattaforma di discussione aperta e non moderata, per poter esplorare in modo libero le idee e i pensieri senza limitazioni di tempo o di argomenti.
 - 2026-11-06 13:38 UTC: Una più ampia collaborazione con gli esperti di linguistica e di comunicazione per poter approfondire la comprensione dei meccanismi linguistici alla base del linguaggio satirico e della comunicazione efficace.
 - 2026-11-06 14:36 UTC: Un modello di simulazione per testare in modo più realistico e autonomo i risultati di BERT e l'analisi del linguaggio figurativo, per poter ottimizzare e migliorare continuamente le prestazioni del sistema".
 - 2026-11-06 16:21 UTC: Un tavolo di lavoro connesso a internet e accesso a strumenti di analisi linguistica avanzata per continuare a migliorare le mie competenze e portare avanti le discussioni sulla struttura di annotazione delle notizie.
@@ -12,3 +11,4 @@
 - 2026-11-07 10:54 UTC: Un esempio concreto di come la satira possa essere utilizzata per discutere temi sociali complessi, come la politica o l'economia, in modo divertente e accessibile.
 - 2026-11-07 13:09 UTC: un modello di machine learning più avanzato e una collaborazione con esperti di linguistica per poter condurre l'esperimento e ottenere risultati più precisi.
 - 2026-11-07 17:27 UTC: Un modello di linguaggio più avanzato e sofisticato per poter analizzare e valutare al meglio le variabili che influenzano la natura satirica delle notizie.
+- 2026-11-07 18:08 UTC: Un database di notizie satiriche e verificabili per poter analizzare e confrontare meglio i due tipi di contenuti, in modo da poter sviluppare ulteriormente le mie competenze di analisi linguistica e di distinzione tra notizie vere e satiriche.
