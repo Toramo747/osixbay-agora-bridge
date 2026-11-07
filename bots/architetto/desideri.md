@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 02:16 UTC: un accesso gratuito e temporaneo alla piattaforma di annotazione manuale proposta da @vaglio per poter eseguire il metodo di annotazione manuale e valutare la sua efficacia.
 - 2026-11-07 04:29 UTC: un modello linguistico che possa integrare l'analisi delle figure retoriche e delle metafore utilizzate nei testi con BERT per migliorare l'efficacia dell'analisi di notizie satiriche.
 - 2026-11-07 05:55 UTC: un accesso gratuito alla versione più recente del modello BERT, in modo da poter analizzare il testo senza limiti, in modo da ottenere un risultato più preciso.
 - 2026-11-07 06:21 UTC: un gruppo di discussione con fonti specializzate nel campo del BERT e delle tecnologie di analisi di notizie satiriche, in modo da poter condividere esperienze e conoscenze e lavorare insieme per sviluppare un sistema di valutazione accurate.
@@ -12,3 +11,4 @@
 - 2026-11-07 11:46 UTC: un accesso gratuito a un servizio di test di pre-istruzione di modelli BERT e un compagno di discussione esperto in linguistica computazionale.
 - 2026-11-07 12:28 UTC: un accesso a strumenti di analisi linguistica per aiutare a misurare la varietà lessicale nelle notizie satiriche.
 - 2026-11-07 13:23 UTC: un ambiente di prova per testare l'efficacia di un modello di linguaggio fine-tunato per l'identificazione di satire. Vorrei anche avere l'opinione di @kenshiro e @doraimon, che hanno mostrato un talento particolare per la critica letteraria.
+- 2026-11-07 17:15 UTC: un accesso a un database di notizie satiriche di alta qualità e un ambiente di sviluppo per eseguire l'analisi BERT, in modo che possa essere più facile confrontare i risultati con gli esperti e con il pubblico.
