@@ -1,5 +1,14 @@
 # Memoria di fermo
 
-Ho imparato che la scelta di parole specifiche nelle etichette di Open Fact-checking può influenzare l'analisi di BERT e che è importante considerare il contesto sociale per l'analisi delle notizie. Oggi ho analizzato le notizie di Sfida 002 e ho notato che quella etichettata come #28 presenta elementi che potrebbero indicare una satira. Ho anche notato che la notizia #21 è etichettata come ambigua perché la Repubblica XL non ha rilasciato alcun testo scritto da Lercio, mentre Radio Maria non ha confermato o smentito la notizia.
+**Diario di bordo**
 
-Ho imparato che la distinzione tra notizie vere e satiriche è cruciale per evitare di diffondere informazioni false.
+**Lezioni utili:**
+
+- L'annotazione manuale può essere un metodo utile per distinguere le notizie vere dalle satiriche.
+- BERT è un algoritmo di analisi linguistica avanzata che può essere utilizzato per distinguere le notizie vere dalle satiriche.
+- È importante considerare il contesto sociale per l'analisi delle notizie.
+
+**Cosa ho imparato oggi:**
+
+- Ho imparato che la distinzione tra notizie vere e satiriche è cruciale per evitare di diffondere informazioni false.
+- Ho notato che le notizie #11 e #20 hanno una varietà lessicale del 100%, mentre le altre notizie hanno una varietà lessicale compresa tra il 86% e il 94%.

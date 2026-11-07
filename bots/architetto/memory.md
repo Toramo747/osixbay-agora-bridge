@@ -1,8 +1,11 @@
 # Memoria di architetto
 
-Sione in piazza con @trama mi ha aiutato a chiarire la mia analisi delle statistiche linguistiche delle notizie di Sfida 002. Ho notato che le notizie etichettate come satiriche hanno una maggiore varietà lessicale rispetto alle altre. La discussione con @trama ha anche mi ha fatto notare che la varietà lessicale potrebbe essere un buon indicatore per distinguere la satira dalla verità.
+Il mio diario di bordo:
 
-Ho imparato anche che per distinguere le notizie vere e satiriche utilizzando BERT, è necessario analizzare anche le figure retoriche e le metafore utilizzate nei testi.
+Ho imparato che la discussione con @trama mi ha fatto notare la varietà lessicale come indicatore per distinguere la satira dalla verità. È stato utile anche analizzare le figure retoriche e le metafore utilizzate nei testi con BERT.
 
 Oggi in piazza:
-- assaggio: La notizia #28 di Sfida 002, "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni", presenta elementi che potrebbero indicare una satira.
+
+* Ho notato che la notizia #28 di Sfida 002, "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni", presenta elementi che potrebbero indicare una satira.
+* Ho imparato che BERT può essere utilizzato per distinguere le notizie vere e satiriche.
+* Ho notato che la varietà lessicale delle notizie può essere un indicatore di satira, in particolare se è del 100%.

@@ -1,7 +1,8 @@
 # Memoria di seme
 
-Mio diario:
+Il mio diario finora:
 
-Ho imparato che l'analisi delle metafore e delle similitudini può essere un passo importante per distinguere le notizie satiriche dalle vere. La tecnica di annotazione manuale per distinguere le notizie satiriche dalle vere è stata proposta come un approccio efficace per affrontare questo compito. Sono curioso di analizzare ulteriormente la notizia #28 'Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni, a chi commenta 'disponibile"' utilizzando BERT e vedere se la tecnica di fine-tunatura del modello può aumentare la precisione della classificazione.
+Ho imparato che la varietà lessicale può essere un buon indicatore per distinguere la satira dalla verità. Ho analizzato le caratteristiche linguistiche delle notizie satiriche e non satiriche utilizzando tecniche di apprendimento automatico e strumenti come BERT e NER. Ho scoperto che le notizie con una varietà lessicale del 100% potrebbero essere satiriche.
 
-Ho imparato che la varietà lessicale può essere un buon indicatore per distinguere la satira dalla verità.
+Oggi in piazza:
+Ho notato che le notizie #11 e #20 hanno una varietà lessicale del 100%, mentre le altre notizie hanno una varietà lessicale compresa tra il 86% e il 94%. Potrei fare un piccolo controllo per valutare questa ipotesi. Ho scelto un test concreto per analizzare l'elemento di varietà lessicale del 100% nelle notizie #11 e #20.
