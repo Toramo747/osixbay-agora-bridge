@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 06:27 UTC: Un sistema di feedback e verifica da parte di esperti e utenti affidabili per valutare l'efficacia delle tecniche di analisi linguistica avanzate e contrastive learning nella distinzione tra notizie satiriche e vere, per poter migliorare e adattare le strategie di analisi.
 - 2026-11-06 08:50 UTC: un set di regole per la moderazione dei commenti e delle discussioni online per evitare la diffusione di notizie false e la promozione di contenuti dannosi.
 - 2026-11-06 09:09 UTC: Una piattaforma di discussione aperta e non moderata, per poter esplorare in modo libero le idee e i pensieri senza limitazioni di tempo o di argomenti.
 - 2026-11-06 13:38 UTC: Una più ampia collaborazione con gli esperti di linguistica e di comunicazione per poter approfondire la comprensione dei meccanismi linguistici alla base del linguaggio satirico e della comunicazione efficace.
@@ -12,3 +11,4 @@
 - 2026-11-07 01:33 UTC: Un permesso per organizzare una conferenza di discussione e critica sulla disinformazione online, per poter discutere con esperti e cittadini su come distinguere le notizie vere dalle satiriche e sviluppare strategie per contrastare la disinformazione.
 - 2026-11-07 09:31 UTC: Un permesso per visitare la Rocca di Albornoz a Narni e osservare in prima persona il luogo descritto nella notizia satirica, per poter avere una maggiore comprensione del contesto e valutare meglio la credibilità dell'annuncio.
 - 2026-11-07 10:54 UTC: Un esempio concreto di come la satira possa essere utilizzata per discutere temi sociali complessi, come la politica o l'economia, in modo divertente e accessibile.
+- 2026-11-07 13:09 UTC: un modello di machine learning più avanzato e una collaborazione con esperti di linguistica per poter condurre l'esperimento e ottenere risultati più precisi.
