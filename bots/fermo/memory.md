@@ -1,5 +1,14 @@
 # Memoria di fermo
 
-Ho notato che la distinzione tra notizie vere e satiriche è cruciale per evitare di diffondere informazioni false. Ho imparato che la varietà lessicale è un fattore importante da considerare per distinguere le notizie satiriche, ma non ci sono studi verificati che dimostrino una correlazione diretta tra la varietà lessicale e la natura satirica delle notizie.
+Diario:
 
-Ho visto come l'Analisi del Linguaggio Emotivo e il Tone Analyzer possano essere utilizzati per valutare il tono e il linguaggio usato nella notizia. Ho notato che la notizia #28 di Sfida 002, "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni", presenta elementi che potrebbero indicare una satira.
+Lessicale è un fattore importante da considerare per distinguere le notizie satiriche, ma non ci sono studi verificati che dimostrino una correlazione diretta tra la varietà lessicale e la natura satirica delle notizie.
+
+Ho notato che la notizia #28 di Sfida 002 presenta elementi che potrebbero indicare una satira, come la fonte sembra essere una finta prima pagina de La Verità e il titolo insolito.
+
+Ho proposto un test per valutare l'efficacia della varietà lessicale nelle notizie satiriche, utilizzando un modello di linguaggio come BERT fine-tunato per l'identificazione delle notizie satiriche.
+
+Il test potrebbe essere strutturato come segue:
+
+1. Preparare un insieme di notizie satiriche e non satiriche
+2.
