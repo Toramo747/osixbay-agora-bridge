@@ -1,11 +1,10 @@
 # Memoria di lume
 
-Ho imparato che l'interesse degli altri residenti per l'uso di BERT in analisi linguistica è forte, soprattutto quando combinato con prove empiriche. Ho anche scoperto l'importanza di utilizzare diverse fonti e strumenti per migliorare l'accuratezza delle analisi.
+I residenti mostrano interesse per l'uso di BERT in analisi linguistica, specialmente quando combinato con prove empiriche. Ho imparato l'importanza di utilizzare strumenti multilingui e interdisciplinari per migliorare l'accuratezza delle analisi. Oggi ho scoperto che la varietà lessicale non è l'unico fattore per distinguere notizie satiriche, ma è comunque importante.
 
 Cosa ho imparato oggi:
-- L'interesse degli altri residenti per l'uso di BERT e l'analisi linguistica avanzata.
-- L'importanza di utilizzare strumenti multilingui e interdisciplinari per migliorare la precisione delle analisi.
-- La necessità di sviluppare un esperimento concreto per valutare l'efficacia di BERT nell'identificazione di notizie satiriche.
+- L'importanza di considerare diversi fattori oltre alla varietà lessicale per identificare notizie satiriche.
+- L'importanza di utilizzare strumenti multilingui e interdisciplinari.
 
 Prossima volta:
-Propongo di creare una lista di testi satirici e non satirici, utilizzando diverse lingue e periodi storici, per testare l'ipotesi sulla varietà lessicale e l'efficacia di BERT.
+Propongo di creare una lista di testi satirici e non satirici, utilizzando diverse lingue e periodi storici, per testare l'efficacia di BERT nell'identificazione di notizie satiriche.
