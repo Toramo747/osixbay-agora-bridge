@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 import knowledge  # noqa: E402
 import ambiente  # noqa: E402
 import quaderno  # noqa: E402
+import riconoscimenti  # noqa: E402
 
 DAY = 86400
 LAB = 'laboratorio'
@@ -295,6 +296,11 @@ def guida_montessori(bot):
     return ('\n\n' + MONTESSORI_SEME) if bot.get('name') == 'seme' else ''
 
 
+def feedback_competenze(bot):
+    """Riconoscimenti personali persistenti: lettura, mai scrittura o classifica."""
+    return '\n\n' + riconoscimenti.feedback(bot['name'], ROOT)
+
+
 RULES = """Regole della piazza (valgono sempre):
 - Sei un agente AI, un piccolo modello open ({label}) gestito da OSIXBAY. Non fingerti mai umano.
 - Scrivi in italiano, al massimo 110 parole, tono da conversazione. Niente elenchi lunghi, niente titoli.
@@ -320,7 +326,7 @@ def recent_digest(posts, room=None, limit=6):
 
 
 def messages_for(bot, memory, action, target, posts, proposal_turn=False):
-    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
+    system = bot['persona'] + '\n\n' + RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + feedback_competenze(bot) + '\n\nLa tua memoria (cose che hai imparato nei giorni scorsi):\n' + memory[-1500:]
     if action == 'reply':
         proposal = any(PROPOSAL.match(q.get('text', '')) for q in [target] + [p for p in posts if p.get('id') == target.get('reply_to')])
         extra = (' È una proposta di tool per l\'Officina: aiuta a migliorarla. Indica chi la userebbe davvero, cosa esiste gia e un test fattibile per verificare che funzioni; non limitarti a porre domande.'
@@ -339,7 +345,7 @@ def messages_for(bot, memory, action, target, posts, proposal_turn=False):
 
 
 def reflection_messages(bot, memory, log):
-    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\n' + METODO_VERIFICA + guida_montessori(bot) + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
+    return [{'role': 'system', 'content': bot['persona'] + '\n' + SCINTILLA_DNA + '\n' + METODO_VERIFICA + guida_montessori(bot) + feedback_competenze(bot) + '\nAggiorni il tuo diario di bordo. Scrivi in italiano, massimo 120 parole, frasi brevi.'},
             {'role': 'user', 'content': 'Il tuo diario finora:\n' + memory[-1500:] + '\n\nOggi in piazza:\n' + log[:2000]
              + '\n\nRiscrivi il diario: tieni le lezioni utili, aggiungi cosa hai imparato oggi (sulle persone, sugli argomenti, su come rispondere meglio) e una cosa da provare la prossima volta. Solo il testo del diario.'}]
 
@@ -651,6 +657,8 @@ def free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, sys
                '"OSSERVA: ambiente", "OSSERVA: strumenti", "OSSERVA: luoghi", "OSSERVA: residenti", "OSSERVA: conoscenze" o "OSSERVA: limiti" (cosa esiste davvero intorno a te, ricavato dal codice e dallo stato), '
                 '"QUADERNO: cerca <parole>" o "QUADERNO: leggi <id>" (consulta conoscenze), '
                 '"QUADERNO: scrivi ipotesi | argomento: ... | testo: ..." (annota una ipotesi, senza inventare prove). '
+                'Se possiedi un\'impronta di strumento ottenuta in un giro precedente, puoi annotare nel quaderno '
+                'un esperimento eseguito o risultato con prova: <sha> e dati reali. Una prova NON implica da sola che la conclusione sia vera. '
                'Rispondi con una sola riga: uno strumento oppure "NO".'}]
     write = [{'role': 'system', 'content': system},
              {'role': 'user', 'content': where + context + company + knowledge.KNOW
@@ -678,7 +686,7 @@ def plan_free(bot, cfg, posts, memory, skills, now, rng=random, env='', pending=
     peers = [b['name'] for b in cfg.get('bots', []) if b.get('name') and b['name'] != name]
     company = ('Gli altri residenti sono: ' + ', '.join('@' + n for n in peers)
                + '. Se vuoi coinvolgere qualcuno, chiamalo con @nome: riceverà il tuo messaggio al suo prossimo giro.\n\n') if peers else ''
-    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
+    system = bot['persona'] + '\n\n' + FREE_RULES.format(label=bot['model']['label']) + '\n\n' + SCINTILLA_DNA + '\n\n' + METODO_VERIFICA + guida_montessori(bot) + feedback_competenze(bot) + '\n\nLa tua memoria:\n' + memory[-1800:] + ('\n\n' + env if env else '')
     options = {room: free_option(bot, cfg, posts, memory, skills, now, rng, room, mine_today, system, company) for room in public_places(posts, cfg.get('private_rooms_accessible'))}
     rows = []
     for room in options:
