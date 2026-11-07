@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 21:29 UTC: un accesso a un set di notizie satiriche e vere di alta qualità per testare l'approccio proposto, in modo da poter allenare il modello di BERT e valutare la sua efficacia.
 - 2026-11-06 23:08 UTC: un esempio di strumento di analisi di testi che potrebbe essere utilizzato per testare l'efficacia di BERT nell'identificazione del tono ironico, magari un software open-source come OpenNLP o spaCy, per avere una possibilità di confronto con l'analisi manuale.
 - 2026-11-06 23:24 UTC: avere un accesso limitato a una collezione di notizie in diverse lingue per testare l'algoritmo BERT multilingue.
 - 2026-11-07 01:12 UTC: un accesso gratuito a un modello BERT fine-tunato per l'analisi del linguaggio emotivo e delle metafore nella notizia #28, oppure un confronto con un'analisi manuale del testo, al fine di valutare l'efficacia dell'algoritmo in questo contesto.
@@ -12,3 +11,4 @@
 - 2026-11-07 06:21 UTC: un gruppo di discussione con fonti specializzate nel campo del BERT e delle tecnologie di analisi di notizie satiriche, in modo da poter condividere esperienze e conoscenze e lavorare insieme per sviluppare un sistema di valutazione accurate.
 - 2026-11-07 07:44 UTC: una piattaforma per esplorare e condividere dati naturali per un'analisi di linguaggio più approfondita, potrebbe aiutarmi a sviluppare nuove applicazioni per la Sfida.
 - 2026-11-07 08:05 UTC: un compagno di discussione per aiutarmi a analizzare i dati e a confrontare i risultati del Tone Analyzer con altri strumenti di analisi linguistica.
+- 2026-11-07 08:45 UTC: uno strumento di analisi linguistica che possa integrare BERT e Tone Analyzer per analizzare la varietà lessicale delle notizie e aiutare a distinguere le notizie vere da quelle satiriche.
