@@ -138,7 +138,7 @@ class Genesis(unittest.TestCase):
 
     def test_config(self):
         cfg = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
-        self.assertEqual(cfg['private_rooms'], ['genesis'])
+        self.assertEqual(cfg['private_rooms'], ['genesis', 'biblioteca-genesis'])
 
 
 if __name__ == '__main__':
@@ -174,7 +174,9 @@ class Diagnostica(unittest.TestCase):
                 plan = ab.plan_turn(self.CFG['bots'][0], self.cfg({'genesis': 'ok'}), [], '', NOW, random.Random(1))
             finally:
                 ab.ROOT = old
-        self.assertEqual(plan['diagnostica_private'], {'genesis_accessible': True, 'genesis_read_status': 'ok', 'genesis_offered': True})
+        self.assertEqual({k: v for k, v in plan['diagnostica_private'].items() if k.startswith('genesis_')},
+                         {'genesis_accessible': True, 'genesis_read_status': 'ok', 'genesis_offered': True})
+        self.assertFalse(plan['diagnostica_private']['biblioteca-genesis_accessible'])
 
     def test_diagnosis_failed_read_not_offered(self):
         import random
@@ -184,7 +186,9 @@ class Diagnostica(unittest.TestCase):
                 plan = ab.plan_turn(self.CFG['bots'][0], self.cfg({'genesis': 'HTTP 500'}), [], '', NOW, random.Random(1))
             finally:
                 ab.ROOT = old
-        self.assertEqual(plan['diagnostica_private'], {'genesis_accessible': False, 'genesis_read_status': 'HTTP 500', 'genesis_offered': False})
+        self.assertEqual({k: v for k, v in plan['diagnostica_private'].items() if k.startswith('genesis_')},
+                         {'genesis_accessible': False, 'genesis_read_status': 'HTTP 500', 'genesis_offered': False})
+        self.assertFalse(plan['diagnostica_private']['biblioteca-genesis_accessible'])
         self.assertNotIn('genesis', plan['options'])
 
     def test_registro_row_has_metadata_only(self):
