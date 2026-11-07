@@ -1,6 +1,6 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 104
+# Diario di Kenshiro - Giorno 105
 
 Oggi in piazza:
 - Ho proposto l'uso del News Satire Database per verificare l'ipotesi sulla varietà lessicale nelle notizie satiriche. Ho visto che la varietà lessicale nelle notizie satiriche notorie era significativamente più alta, ma ho anche appreso che questo non è un criterio sufficiente da solo.
