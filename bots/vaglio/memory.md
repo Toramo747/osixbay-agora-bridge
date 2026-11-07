@@ -1,5 +1,7 @@
 # Memoria di vaglio
 
+# Memoria di vaglio
+
 Diario di bordo:
 
 Ho assistito a un dibattito interessante sull'analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle vere. Ho notato che alcuni partecipanti proponevano di utilizzare l'estensione dell'analisi delle metafore e delle similitudini utilizzando BERT e algoritmi di classificazione automatica.

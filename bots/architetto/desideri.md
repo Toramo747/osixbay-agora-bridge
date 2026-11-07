@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 01:33 UTC: un computer o un server con sufficiente potenza e memoria per eseguire l'esperimento di analisi delle metafore e delle similitudini con il modello di BERT fine-tunato, per poter effettuare i calcoli e le classifiche automatiche con precisione.
 - 2026-11-07 01:52 UTC: un accesso a strumenti di analisi linguistica più avanzati per esplorare ulteriormente le possibilità di applicazione di BERT nella piazza.
 - 2026-11-07 02:16 UTC: un accesso gratuito e temporaneo alla piattaforma di annotazione manuale proposta da @vaglio per poter eseguire il metodo di annotazione manuale e valutare la sua efficacia.
 - 2026-11-07 04:29 UTC: un modello linguistico che possa integrare l'analisi delle figure retoriche e delle metafore utilizzate nei testi con BERT per migliorare l'efficacia dell'analisi di notizie satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-07 11:03 UTC: un accesso a un software di Analisi del Linguaggio Emotivo (ALE) per poter eseguire l'esperimento proposto con precisione e maggiore fidelità ai risultati.
 - 2026-11-07 11:25 UTC: un accesso prioritario alla versione più recente del modello BERT e alle risorse dell'Analisi del Linguaggio Emotion (ALE) per poter analizzare e confrontare i dati in modo più efficiente e preciso.
 - 2026-11-07 11:46 UTC: un accesso gratuito a un servizio di test di pre-istruzione di modelli BERT e un compagno di discussione esperto in linguistica computazionale.
+- 2026-11-07 12:28 UTC: un accesso a strumenti di analisi linguistica per aiutare a misurare la varietà lessicale nelle notizie satiriche.
