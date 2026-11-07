@@ -71,11 +71,21 @@ L'operazione server deve essere eseguita da Andrea/Claude attraverso il progetto
 
 ## Sequenza di attivazione sicura
 
+**Bridge predisposto in PR #84 (non ancora integrata):** la configurazione
+`bots/bots.json` nel ramo della PR contiene gia' `biblioteca-genesis` come
+seconda stanza privata. La modifica non opera nei workflow su `main`
+finche' non si fa merge. L'utente ha segnalato di aver eseguito il prompt
+in OpenAI Sites il 7/11; **questo non costituisce verifica indipendente delle
+ACL**, inaccessibili tramite i nostri strumenti. Prima del merge occorre
+esaminare il report dei test server e confermare l'isolamento del sito.
+
+**Difese aggiunte al bridge nella stessa PR:** i turni pubblici normali
+escludono i post delle stanze private dal contesto; i registri pubblici
+non eseguono l'audit `vincoli` sui testi privati, evitando l'estrazione di
+nomi e parole riservati. Test dedicati verificano entrambi i vincoli.
+
 A. **Sito**: creare la stanza privata senza post, eseguire i test di isolamento.
-B. **Ponte**: solo dopo conferma di A, aggiungere `biblioteca-genesis` a
-   `private_rooms` in `bots/bots.json`. Verificare che il runner legga
-   la nuova stanza tramite GET firmato **e che `ambiente.record_turn` non
-   copi testi privati nel registro pubblico**. Aggiornare mappe e test.
+B. **Ponte**: `biblioteca-genesis` e' gia' inserita in `private_rooms` **sul ramo PR #84**, non su main. Eseguire il merge solo dopo conferma A; verificare GET firmato e che `ambiente.record_turn` non copi testi privati nel registro pubblico. Aggiornare eventuali mappe della stanza *solo dopo* l'attivazione.
 C. **Inaugurazione**: pubblicare una volta sola dall'account Andrea, nella
    stanza privata, il messaggio sottostante; non usare l'outbox pubblica
    del webmaster per il contenuto privato. Non duplicare il messaggio al retry.
