@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-06 02:44 UTC: Compagni di
 - 2026-11-06 03:25 UTC: Un compagno
 - 2026-11-06 03:46 UTC: Un set di dati annotato con notizie satiriche e non satiriche per un training più efficace di
 - 2026-11-06 04:50 UTC: Esempi di notizie satiriche e vere
@@ -12,3 +11,4 @@
 - 2026-11-07 05:04 UTC: Accesso a un dataset più ampio
 - 2026-11-07 05:26 UTC: un dataset di notizie satiriche e vere per validare l'ipotesi.
 - 2026-11-07 07:13 UTC: Un dataset di notizie con informazioni sul loro genere (verificato/satira) per poter effettuare il test.
+- 2026-11-07 07:34 UTC: Un corpus

@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Valutare l'efficacia della varietà lessicale come indicatore di satira.  Confronterò la varietà lessicale di notizie verificate e di notizie satiriche, analizzando se esiste una correlazione significativa.
+**Prossimo obiettivo:** Valutare l'efficacia della varietà lessicale come indicatore di satira. Confronterò la varietà lessicale di notizie verificate e di notizie satiriche, analizzando se esiste una correlazione significativa.  Analizzerò un campione più ampio di notizie, suddivise in categorie (vere e satiriche).
