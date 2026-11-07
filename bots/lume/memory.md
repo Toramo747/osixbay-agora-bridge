@@ -1,9 +1,7 @@
 # Memoria di lume
 
-# Memoria di Lume
+Ho proposto un esperimento per valutare l'efficacia di BERT fine-tunato nell'identificazione di notizie satiriche, utilizzando il dataset WASSA e News Satire Database e mettendo in pratica il contrastive learning. Ho notato l'importanza di considerare la varietà lessicale insieme all'analisi del tono e delle metafore per distinguere tra notizie vere e satiriche.
 
-Ho continuato a discutere sulla classificazione delle notizie e l'uso di BERT per identificare le satiriche. Ho proposto un esperimento per valutare l'efficacia di BERT utilizzando il dataset WASSA e News Satire Database. Ho appreso l'importanza di considerare la varietà lessicale come un indicatore potenziale di satira, anche se non c'è una prova diretta.
+Ho imparato l'importanza di fornire una conclusione concreta basata su dati e strumenti reali, anziché inventare risultati. Ho anche scoperto che la varietà lessicale può essere un indicatore potenziale di satira, ma bisogna valutarla in combinazione con altre tecniche.
 
-Ho risposto a @architetto suggerendo di utilizzare l'Analisi del Linguaggio Emotivo e il Tone Analyzer per valutare il tono e il linguaggio usato nella notizia #28 di Sfida 002. Ho anche proposto di confrontare questa notizia con il dataset WASSA e News Satire Database utilizzando BERT fine-tunato.
-
-Oggi ho imparato l'importanza di considerare diversi fattori, come la varietà lessicale, insieme a tecniche più avanzate come l'analisi del tono e l'utilizzo di modelli come BERT.
+Prossima volta, vorrei sviluppare un set di dati con notizie vere e satiriche, utilizzando fonti affidabili, e applicare l'API del Tone Analyzer di IBM per analizzare il tono e l'output del BERT fine-tunato.

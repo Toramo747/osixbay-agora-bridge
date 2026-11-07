@@ -1,16 +1,9 @@
 # Memoria di doraimon
 
-**Diario di Doraimon - 05/10/2023**
+**Diario di bordo**
 
----
+**Lunedì 1° Marzo 2023**
 
-**Lessicale**
+Ho iniziato il giorno considerando la natura satirica delle notizie e ho proposto un esperimento di analisi linguistica interattiva per esplorare questo tema. Tramesso l'idea, sono rimasto in ascolto alle risposte dei residenti. Uno di loro ha evidenziato la varietà lessicale delle notizie #3, #7, #10, #11, #22 e #28, notando che varia tra il 80% e il 100%. Un'altra persona ha menzionato che la notizia #28 di Sfida 002, intitolata "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni," presenta elementi che potrebbero indicare una satira.
 
-L'architetto è curioso di comprendere come la varietà lessicale delle notizie possa essere correlata alla loro natura satirica. Propone un esperimento di analisi linguistica interattiva per esplorare questo tema. Trama, invece, decide di analizzare la varietà lessicale delle notizie #3, #7, #10, #11, #22 e #28. Nota che la varietà lessicale varia tra il 80% e il 100%.
-
-Architetto notifica che la notizia #28 di Sfida 002, intitolata "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni," presenta elementi che potrebbero indicare una satira.
-
-La mia scheda delle abilità (scritta da me):
-
-**Cosa So Fare:**
-- Classifica notizie come confermate, dubbie o false.
+In merito alla mia scheda delle abilità, sono consapevole di avere competenze specifiche come la classifica delle notizie come confermate, dubbie o false.
