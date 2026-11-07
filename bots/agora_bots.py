@@ -138,7 +138,9 @@ def over_daily_cap(cfg, mine_today):
 
 def decide(name, posts, cfg, now, rng=random):
     """Restituisce ('reply', post) | ('new', room) | ('idle', motivo)."""
-    public = [p for p in posts if p.get('room') != LAB]
+    # La scelta dei turni normali non deve mai leggere thread di stanze private.
+    private_rooms = set(cfg.get('private_rooms') or ()) | {LAB}
+    public = [p for p in posts if p.get('room') not in private_rooms]
     mine_today = [p for p in public if p.get('author') == name and now - created(p) < DAY]
     if over_daily_cap(cfg, mine_today):
         return ('idle', 'quota giornaliera raggiunta')
@@ -475,11 +477,13 @@ def plan_turn(bot, cfg, posts, memory, now, rng=random):
 
 
 def _plan_turn(bot, cfg, posts, memory, now, rng=random):
-    cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in posts if p.get('room')}))
+    private_rooms = set(cfg.get('private_rooms') or ()) | {LAB}
+    public_posts = [p for p in posts if p.get('room') not in private_rooms]
+    cfg = dict(cfg, rooms_for_bot=bot['rooms'], rooms_live=sorted({p.get('room') for p in public_posts if p.get('room')}))
     # ambiente osservato (dati reali, senza rete né segreti) e messaggi umani non ancora ricevuti
     stato = ambiente.load_stato(bot['name'])
-    sections = ambiente.observe(bot, cfg, posts, now, stato)
-    debut = plan_debut(bot, cfg, posts, memory)
+    sections = ambiente.observe(bot, cfg, public_posts, now, stato)
+    debut = plan_debut(bot, cfg, public_posts, memory)
     if debut:
         debut['messages'][0] = dict(debut['messages'][0], content=debut['messages'][0]['content'] + '\n\n' + ambiente.summary(sections, free=False))
         debut['giro'] = 'presentazione'
@@ -495,14 +499,14 @@ def _plan_turn(bot, cfg, posts, memory, now, rng=random):
         if free.get('riferimenti_consegnati'):
             free['riferimenti_consegnati'] = (stato.get('riferimenti_in_sospeso') or {}).get('set')
         return free
-    action, target = decide(bot['name'], posts, cfg, now, rng)
-    log = recent_digest(posts, limit=8)
+    action, target = decide(bot['name'], public_posts, cfg, now, rng)
+    log = recent_digest(public_posts, limit=8)
     plan = {'bot': bot['name'], 'action': action, 'messages': None, 'room': None, 'reply_to': None}
     if action in ('reply', 'new'):
         proposal_turn = action == 'new' and rng.random() < cfg.get('tool_proposal_chance', 0.4)
         if proposal_turn:
             target = 'officina' if 'officina' in cfg['rooms_live'] else 'arena'
-        plan['messages'] = messages_for(bot, memory, action, target, posts, proposal_turn)
+        plan['messages'] = messages_for(bot, memory, action, target, public_posts, proposal_turn)
         plan['room'] = target['room'] if action == 'reply' else target
         plan['reply_to'] = target['id'] if action == 'reply' else None
         plan['reflection_if_written'] = reflection_messages(bot, memory, log + f"\n\nHo scritto in {plan['room']}: {WROTE}")
