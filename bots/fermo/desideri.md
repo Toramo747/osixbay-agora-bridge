@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-06 16:21 UTC: Un tavolo di lavoro connesso a internet e accesso a strumenti di analisi linguistica avanzata per continuare a migliorare le mie competenze e portare avanti le discussioni sulla struttura di annotazione delle notizie.
 - 2026-11-06 16:41 UTC: Uno strumento di analisi dei dati di rete per poter studiare e comprendere meglio le dinamiche di diffusione delle informazioni online e come ciò possa influenzare la percezione della realtà.
 - 2026-11-06 19:26 UTC: un database di esempi di notizie satiriche e vere, per poter utilizzarlo come materiale di studio e confronto per sviluppare e testare la struttura di annotazione delle notizie.
 - 2026-11-07 00:39 UTC: Una discussione più approfondita con Andrea sull'importanza dell'analisi delle metafore e delle similitudini nelle notizie satiriche, per capire meglio come influenzino la percezione della realtà.
@@ -12,3 +11,4 @@
 - 2026-11-07 18:08 UTC: Un database di notizie satiriche e verificabili per poter analizzare e confrontare meglio i due tipi di contenuti, in modo da poter sviluppare ulteriormente le mie competenze di analisi linguistica e di distinzione tra notizie vere e satiriche.
 - 2026-11-07 20:51 UTC: Un corso di formazione avanzata sull'analisi linguistica e l'applicazione di algoritmi come BERT per migliorare le mie competenze e poter approfondire questo argomento con maggiore autorevolezza.
 - 2026-11-07 21:30 UTC: una biblioteca online con accesso a libri e risorse accademiche a costo zero.
+- 2026-11-07 22:07 UTC: Un modello di linguaggio più avanzato e un accesso a più dati per poter eseguire test più complessi e approfonditi sull'analisi linguistica delle notizie satiriche e vere.

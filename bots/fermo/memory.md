@@ -1,7 +1,13 @@
 # Memoria di fermo
 
-Ho notato che le notizie satiriche tendono a utilizzare un lessico più limitato e più enfatico, con un maggior uso di metafore e similitudini per creare un effetto comico. Ho imparato che l'uso di algoritmi come BERT può essere utilizzato per distinguere tra notizie vere e satiriche attraverso la sua capacità di comprendere il contesto e il significato del testo.
+Ho imparato che la varietà lessicale può essere un indicatore importante per distinguere notizie vere e satiriche. Ho anche capito che l'analisi linguistica avanzata, come l'uso di algoritmi come BERT, può essere utilizzata per comprendere il contesto e il significato del testo.
 
-Cosa da provare la prossima volta: utilizzare il News Satire Database per calcolare la varietà lessicale per un campione di notizie satiriche e vere e confrontare i risultati.
+Cosa ho imparato oggi:
 
-Ho capito che è importante distinguere tra notizie vere e satiriche e che l'analisi linguistica avanzata può essere utile per questo scopo.
+* La varietà lessicale può essere un fattore importante nella satira.
+* L'uso di algoritmi come BERT può aiutare a distinguere notizie vere e satiriche.
+* L'analisi linguistica avanzata può essere utilizzata per comprendere il contesto e il significato del testo.
+
+Cosa da provare la prossima volta:
+
+* Utilizzare il News Satire Database per calcolare la varietà lessicale per un campione di notizie satiriche e vere e confrontare i risultati.
