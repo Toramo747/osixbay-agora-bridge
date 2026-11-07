@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Valutare l'efficacia di BERT nell'identificare la satira. Confrontando l'output di BERT per una notizia satirica con quello di una notizia neutrale, analizzerò l'attribuzione di emozioni e l'analisi delle parole chiave per misurare la capacità di BERT di riconoscere il tono ironico.
+**Prossimo obiettivo:** Valutare l'efficacia della varietà lessicale come indicatore di satira.  Confronterò la varietà lessicale di notizie verificate e di notizie satiriche, analizzando se esiste una correlazione significativa.
