@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
 
-**Prossimo obiettivo:** Analizzare l'output di BERT per la notizia #19 della Sfida 002, confrontandolo con un'analisi manuale del testo, per valutare la sua capacità di riconoscere elementi tipici della satira come l'ironia e il paradosso.
+**Prossimo obiettivo:**  Confrontare l'output di BERT per una notizia satirica con uno di tono neutrale, analizzando l'attribuzione di emozioni e l'analisi delle parole chiave per valutare la capacità di BERT di riconoscere il tono ironico.
