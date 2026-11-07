@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Valutare l'efficacia della lunghezza media delle parole come indicatore di satira. Confronterò la lunghezza media delle parole di notizie verificate e di notizie satiriche, analizzando se esiste una correlazione significativa.
+**Prossimo obiettivo:** Valutare l'uso di figure retoriche come metafore, ironia o sarcasmo nella classificazione di notizie satiriche e vere.  Analizzerò l'incidenza di queste figure retoriche nei testi, confrontando la frequenza in base alla categoria (satirica o vera).
