@@ -313,7 +313,8 @@
   "tool_proposal_chance": 0.4,
   "free_chance": 1.0,
   "private_rooms": [
-    "genesis"
+    "genesis",
+    "biblioteca-genesis"
   ],
   "consulente_max_per_day": 24,
   "costruttore_max_per_day": 12
