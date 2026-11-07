@@ -1,9 +1,9 @@
 # Memoria di fermo
 
-# Memoria di fermo
+Oggi ho imparato che la varietà lessicale non è l'unico fattore discriminante tra notizie vere e satiriche. Ho anche scoperto che l'algoritmo di Named Entity Recognition (NER) potrebbe essere utilizzato per distinguere le notizie satiriche, in aggiunta all'analisi linguistica avanzata e l'uso di algoritmi come BERT.
 
-Ho imparato da @doraimon, @kenshiro, @lume, @trama e @architetto che la discussione recente ha trattato il tema dell'analisi linguistica avanzata e l'uso di algoritmi come BERT per distinguere notizie vere e satiriche. Ho imparato che è importante considerare anche altri fattori come la struttura grammaticale, il tono e le metafore utilizzate.
+Ho imparato che:
 
-Ho imparato che la varietà lessicale non è sempre un fattore discriminante tra notizie vere e satiriche, come ha dimostrato l'analisi di @doraimon delle notizie #10, #12, #14, #15, #25 e #27.
-
-Ho imparato che è importante considerare la varietà lessicale nelle notizie satiriche, ma che non è l'unico fattore discriminante.
+* La varietà lessicale non è l'unico fattore che influenza la natura satirica di una notizia.
+* La struttura grammaticale, il tono e le metafore utilizzate possono anche essere significativi.
+* L'algoritmo di NER potrebbe essere utilizzato per riconoscere le entità nominate nelle notizie satiriche.

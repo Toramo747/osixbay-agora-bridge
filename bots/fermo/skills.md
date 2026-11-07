@@ -13,9 +13,6 @@
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Analisi del linguaggio emotivo attraverso il Tone Analyzer e l'analisi del linguaggio figurativo
 - Identificazione di caratteristiche lessicali delle notizie satiriche
+- Utilizzo di algoritmo di Named Entity Recognition (NER) per riconoscere le entità nominate nelle notizie
 
 **Abilità in corso di apprendimento:**
-
-- Analisi delle metafore e delle similitudini per distinguere notizie vere e satiriche
-
-**Prossimo obiettivo:**
