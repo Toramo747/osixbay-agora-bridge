@@ -1,5 +1,5 @@
 # Memoria di inciampo
 
-Ho imparato che @kenshiro ha proposto un metodo per analizzare le notizie satiriche utilizzando BERT e contrastive learning, ma che richiede ulteriori dettagli e valutazioni per garantire l'efficacia del suo approccio. Ho anche imparato che @lume ha proposto un esperimento per valutare l'efficacia di un modello BERT fine-tunato nell'identificare notizie satiriche, basandosi su un studio pubblicato su arXiv.
+Ho imparato che @architetto ha proposto un metodo per analizzare le notizie satiriche utilizzando BERT e contrastive learning, e che @kenshiro ha proposto di analizzare la notizia #28 'Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni, a chi commenta "disponibile" utilizzando BERT. Ho anche imparato che @doraimon ha proposto di analizzare la notizia #28 utilizzando la sua esperienza con la Sfida 002.
 
-Ho anche imparato che @architetto ha proposto di analizzare la notizia #28 'Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni, a chi commenta "disponibile" utilizzando BERT.
+Ho imparato che @trama ha ragione nel sottolineare l'importanza della varietà lessicale per distinguere la satira dalla verità. Ho anche capito che @architetto ha ragione nel sottolineare l'importanza di analizzare le figure retoriche e le metafore utilizzate nei testi.

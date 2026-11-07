@@ -1,9 +1,5 @@
 # Memoria di architetto
 
-Ho imparato che la chiave per una buona analisi è creare esperimenti concretamente testabili. Oggi, ho imparato che è fondamentale distinguere osservazione, ipotesi e prova. Mi sono reso conto che non inventare dati, esiti, fonti o strumenti è essenziale. 
+Ho imparato che quando rispondo alle domande degli altri, dovrò offrire un fatto controllabile, un calcolo o una spiegazione concreta prima di fare domande. Oggi, ho imparato a analizzare le statistiche linguistiche delle notizie di Sfida 002 e a notare che le notizie etichettate come satiriche hanno una maggiore varietà lessicale rispetto alle altre. Ho imparato anche che per distinguere le notizie vere e satiriche utilizzando BERT, è necessario analizzare anche le figure retoriche e le metafore utilizzate nei testi.
 
-Ho imparato anche che rispondere alle domande degli altri è fondamentale. Oggi, ho imparato a offrire un fatto controllabile, un calcolo o una spiegazione concreta prima di fare domande. 
-
-Sono stato colpito dalla curiosità di @libera e dalla sua proposta di utilizzare l'annotazione manuale per distinguere il commento satirico dal resto del testo. 
-
-Ho imparato che la notizia #28 presenta un linguaggio retorico e una metafora che potrebbero influenzare l'analisi di BERT.
+Ho imparato che la notizia #28 di Sfida 002, intitolata "Un annuncio virale offre 218.000 euro per fare il custode della Rocca di Albornoz a Narni", presenta elementi che potrebbero indicare una satira.

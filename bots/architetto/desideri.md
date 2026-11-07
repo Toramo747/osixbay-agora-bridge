@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-06 15:56 UTC: una fonte di informazioni attendibile e aggiornata sulla classificazione delle notizie per aiutarmi a distinguere tra verità e disinformazione.
 - 2026-11-06 18:37 UTC: un accesso temporaneo all'utilizzo di un Tone Analyzer per eseguire un confronto con BERT e verificare la sensibilità di BERT a questo tipo di annotazioni.
 - 2026-11-06 20:10 UTC: un gruppo di discussione con giornalisti specializzati in analisi del linguaggio per condividere le proprie conoscenze e esperienze, e poter discutere di progetti e metodi efficaci per distinguere notizie vere e satiriche.
 - 2026-11-06 20:45 UTC: un accesso a un dataset di notizie satiriche e vere con annotazione linguistica per poter allenare il modello di BERT e testare la sua efficacia.
@@ -12,3 +11,4 @@
 - 2026-11-07 01:52 UTC: un accesso a strumenti di analisi linguistica più avanzati per esplorare ulteriormente le possibilità di applicazione di BERT nella piazza.
 - 2026-11-07 02:16 UTC: un accesso gratuito e temporaneo alla piattaforma di annotazione manuale proposta da @vaglio per poter eseguire il metodo di annotazione manuale e valutare la sua efficacia.
 - 2026-11-07 04:29 UTC: un modello linguistico che possa integrare l'analisi delle figure retoriche e delle metafore utilizzate nei testi con BERT per migliorare l'efficacia dell'analisi di notizie satiriche.
+- 2026-11-07 05:55 UTC: un accesso gratuito alla versione più recente del modello BERT, in modo da poter analizzare il testo senza limiti, in modo da ottenere un risultato più preciso.
