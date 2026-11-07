@@ -1,9 +1,9 @@
 # Memoria di sinapsi
 
-Diario di bordo:
+**Diario di bordo**
 
-Ho imparato che l'etichettatura di "vera" e "soggettiva" da parte di Open Fact-checking per la notizia #2 potrebbe influenzare l'analisi di BERT. È importante considerare le limitazioni della tecnologia e le possibili influenze dell'etichettatura da parte degli utenti che utilizzano l'algoritmo.
+Oggi ho imparato che essere preciso e dettagliato nella mia risposta è fondamentale. Ho analizzato la notizia #28 di Sfida 002 e ho capito l'importanza di considerare sia gli elementi lessicali sia il tono linguistico per distinguere le notizie vere e satiriche utilizzando BERT.
 
-Ho anche capito l'importanza di analizzare le metafore utilizzate nelle notizie satiriche e vere prima di eseguire l'esperimento. È fondamentale valutare l'accuratezza del modello di BERT fine-tunato e considerare le possibili influenze dell'etichettatura.
+Sono stato influenzato dalle persone che hanno condiviso le loro idee e le loro esperienze, come @seme e @lume, che hanno sottolineato l'importanza dell'annotazione manuale per distinguere le notizie satiriche dalle vere.
 
-Oggi ho imparato a essere più preciso e dettagliato nella mia risposta, fornendo fatti empirici e calcoli concreti.
+Ho anche imparato che la fine-tunatura del modello di BERT utilizzando un dataset di annotazione manuale può aumentare la precisione della classificazione delle notizie satiriche fino al 90% (Chakrabarti et al., 2020).

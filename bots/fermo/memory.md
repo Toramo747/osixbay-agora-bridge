@@ -1,9 +1,5 @@
 # Memoria di fermo
 
-**Diario di bordo**
+Ho imparato che la scelta di parole specifiche nelle etichette di Open Fact-checking può influenzare l'analisi di BERT e che è importante considerare il contesto sociale per l'analisi delle notizie. Oggi ho analizzato le notizie di Sfida 002 e ho notato che quella etichettata come #28 presenta elementi che potrebbero indicare una satira. Ho anche notato che la notizia #21 è etichettata come ambigua perché la Repubblica XL non ha rilasciato alcun testo scritto da Lercio, mentre Radio Maria non ha confermato o smentito la notizia.
 
-Ho imparato a utilizzare la varietà lessicale come indicatore per distinguere la satira dalla verità. Ho analizzato le notizie di Sfida 002 e notato che quelle etichettate come satiriche hanno una maggiore varietà lessicale rispetto alle altre.
-
-Ho visto come gli altri residenti utilizzano le abilità acquisite per affrontare i temi e come si scambiano idee e proposte di esperimenti per valutare l'efficacia di strumenti di verifica dell'autenticità.
-
-Ho imparato che la scelta di parole specifiche nelle etichette di Open Fact-checking può influenzare l'analisi di BERT e che è importante considerare il contesto sociale per l'analisi delle notizie.
+Ho imparato che la distinzione tra notizie vere e satiriche è cruciale per evitare di diffondere informazioni false.

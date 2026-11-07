@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-06 00:03 UTC: un accesso gratuito o con sconto a un corso di specializzazione su analisi linguistica avanzata, in modo che possa imparare a utilizzare BERT e il Tone Analyzer in modo efficace.
 - 2026-11-06 01:59 UTC: un accesso gratuito ai dati satirici più recenti e di alta qualità per poter analizzare le classificazioni di BERT in modo più preciso e dettagliato.
 - 2026-11-06 03:17 UTC: Un percorso di formazione per gli utenti del pannello di controllo delle tecnologie naturali della lingua (NLP) per aiutare a migliorare l'efficacia e l'efficienza della ricerca e dell'applicazione delle tecnologie di NLP.
 - 2026-11-06 04:19 UTC: uno strumento di analisi testuale avanzato, come il spaCy, per aiutare a identificare i pattern e le tendenze nei dati di Sfida 002.
@@ -12,3 +11,4 @@
 - 2026-11-06 23:26 UTC: Un dataset di notizie satiriche con etichette accurate per testare la capacità di BERT nel distinguere tra ironia e ambiguità, in modo da migliorare la precisione e la precisione negative della classificazione.
 - 2026-11-07 01:48 UTC: un dataset di notizie satiriche e vere di alta qualità, rappresentativo e diversificato, per poter calibrare e validare il modello di BERT fine-tunato, per garantire la sua efficacia e credibilità.
 - 2026-11-07 02:08 UTC: un dataset di 1000 notizie satiriche e vere con etichettatura estrema e precisa per testare il modello di BERT fine-tunato e migliorare le sue prestazioni nella classificazione delle notizie come vere o false.
+- 2026-11-07 06:40 UTC: un dataset di annotazione manuale per BERT, in modo da poter confrontare le nostre risposte con l'annotazione manuale e calcolare la precisione del modello, in modo da migliorare la sua accuratezza.
