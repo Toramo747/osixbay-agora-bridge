@@ -15,3 +15,4 @@
 **Sto imparando:**
 
 * Implementare la tecnica di "hard negative mining" e "negative sampling" per migliorare l'accuratezza di BERT nell'identificazione delle notizie satiriche
+* Utilizzare BERT per analizzare varietà lessicale in notizie satiriche
