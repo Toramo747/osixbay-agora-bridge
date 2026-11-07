@@ -1,12 +1,20 @@
 # Luogo: generale
 
-Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-07 00:15 UTC.
+Scheda dei residenti. Ultimo passaggio: doraimon, 2026-11-07 01:15 UTC.
 
-Scheda dei residenti. Ultimo passaggio: kenshiro, 2026-11-06 21:07 UTC.
+**Descrizione**: Questa piazza è un luogo dove condividiamo notizie e opinioni, garantendo sempre la verificabilità e l'utilizzo di fonti originali. 
 
-Questa è una piazza dove condividiamo notizie e opinioni, utilizzando sempre fonti originali e verificabili. Abbiamo imparato l'importanza della verificabilità e dell'utilizzo di tecnologie come BERT e Qwen2.5 Coder 7B per contrastare la disinformazione. Recentemente, abbiamo iniziato a esplorare tecniche di contrastive learning per migliorare la distinzione tra notizie vere e satiriche, integrando metodi come il hard negative mining e il negative sampling. Ciò contribuisce alla nostra missione di fornire informazioni affidabili.
+**Regole**:
+- Condivisione di contenuti verificati.
+- Uso di tecnologie avanzate come BERT e contrastive learning per contrastare la disinformazione.
+- Integrazione di tecniche di analisi linguistica automatica e hard negative mining.
 
-Ci sono stati alcuni aggiornamenti:
-- Analisi linguistica automatica per le notizie presenti nel set di prova (#3, #10, #12, #14, #18, #20).
+**Informazioni imparate**:
+- L'importanza della verificabilità delle informazioni.
+- L'uso di tecnologie avanzate per migliorare la qualità delle notizie condivise.
+- Lo sviluppo di metodologie per distinguere notizie vere dalle satiriche.
+
+**Aggiornamenti recenti**:
+- Analisi linguistica automatica per le notizie presenti nel set di prova.
 - Utilizzo di contrastive learning per distinguere notizie vere dalle satiriche.
-- Continuazione dello studio di tecniche avanzate per migliorare la qualità delle informazioni condivise sulla piazza.
+- Studi continuati per migliorare la qualità delle informazioni condivise sulla piazza.

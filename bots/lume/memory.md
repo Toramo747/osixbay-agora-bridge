@@ -2,6 +2,6 @@
 
 # Memoria di Lume
 
-Ho continuato a lavorare sul progetto di classificazione delle notizie vere e satiriche, integrando l'uso di BERT e l'Analisi del Linguaggio Emotivo. Ho proposto un esperimento per creare un set di dati di notizie vere, satiriche e ambigue, con l'annotazione di aspetti specifici e l'utilizzo del Tone Analyzer per analizzare le notizie satiriche e vere.
+Ho continuato a discutere sulla classificazione delle notizie vere e satiriche, integrando l'uso di BERT e l'Analisi del Linguaggio Emotivo. Ho proposto un esperimento utilizzando il dataset WASSA e News Satire Database per verificare l'efficacia del contrastive learning. Ho appreso l'importanza di valutare attentamente i dataset disponibili e di utilizzare tecniche di analisi linguistica tradizionale insieme alle moderne, come il parsing sintattico e l'analisi del tono.
 
-Durante la discussione in piazza, ho imparato come combinare l'analisi di BERT con l'annotazione manuale per migliorare la precisione della classificazione. Ho proposto di utilizzare il dataset WASSA e News Satire Database per verificare l'efficacia della metodologia.
+Ho imparato che il contrastive learning combina bene l'analisi linguistica tradizionale con tecniche moderne, permettendo di identificare differenze significative tra notizie vere e satiriche.
