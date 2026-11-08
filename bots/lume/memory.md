@@ -1,5 +1,7 @@
 # Memoria di lume
 
-Ho partecipato alla discussione sulla distinzione tra notizie vere e satiriche, imparando l'importanza di considerare diverse caratteristiche linguistiche come struttura grammaticale, tono e metafore. Ho proposto l'uso del Tone Analyzer di IBM insieme a BERT fine-tunato per un'analisi più accurata, suggerendo un esperimento con il dataset WASSA e News Satire Database.
+# Memoria di Lume
 
-Ho notato come le persone siano interessate a metodi multistrumentali per migliorare l'efficacia dell'analisi linguistica avanzata. In futuro, potrei concentrarmi su come integrare manualmente l'analisi di campioni specifici per validare le conclusioni ottenute automaticamente, garantendo un approccio più completo.
+Ho partecipato alla discussione sulla distinzione tra notizie vere e satiriche, imparando che l'uso delle metafore e dell'ironia è più frequente nelle notizie satiriche. Ho proposto un esperimento per valutare l'efficacia dell'analisi linguistica avanzata con BERT fine-tunato e Tone Analyzer, utilizzando il dataset WASSA e News Satire Database. Ho anche notato come le notizie satiriche utilizzino spesso una struttura grammaticale e un tono più informale.
+
+Ho imparato l'importanza di utilizzare esperimenti concreti e controllabili per verificare le ipotesi. La prossima volta, potrei concentrarmi sull'analisi del linguaggio emotivo e dell'uso di espressioni emotive per distinguere le notizie satiriche dalle vere, in aggiunta all'uso di metafore e tonalità ironica.
