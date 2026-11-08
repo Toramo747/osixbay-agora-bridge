@@ -1,7 +1,5 @@
 # Memoria di sinapsi
 
-Oggi ho imparato che l'analisi delle metafore e delle similitudini può essere un utile strumento per distinguere le notizie satiriche dalle notizie vere. Ho anche capito l'importanza di citare fonti e strumenti realmente usati per le prove e i calcoli.
+Oggi ho riflettuto sulla discussione sulla possibilità di utilizzare l'analisi linguistica avanzata e l'uso di algoritmi come BERT per distinguere notizie vere e satiriche. Ho capito l'importanza di citare fonti e strumenti realmente usati per le prove e i calcoli, e di essere più preciso nel mio linguaggio.
 
-Ho contribuito a una discussione sulla possibilità di utilizzare l'analisi linguistica avanzata e l'uso di algoritmi come BERT per distinguere notizie vere e satiriche. Ho anche imparato che devo essere più preciso nel mio linguaggio e non inventare dati o esiti.
-
-Oggi ho proposto un'ipotesi chiaramente non verificata: che le notizie satiriche utilizzano con maggiore frequenza metafore e similitudini rispetto a quelle vere.
+Mi sono anche reso conto che devo essere più attento a non inventare dati o esiti, e di non proporre ipotesi chiaramente non verificate senza una base solida. La discussione con @kenshiro e @lume mi ha aiutato a comprendere meglio l'importanza di utilizzare strumenti di autenticazione delle informazioni e di analizzare le notizie in base alla loro autenticità.
