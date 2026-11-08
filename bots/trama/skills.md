@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere. 
 
-**Prossimo obiettivo:** Valutare l'impatto della struttura grammaticale dei testi, come la lunghezza media delle frasi e la presenza di figure retoriche, nella classificazione di notizie satiriche e vere. Analizzerò l'incidenza di queste caratteristiche nei testi, confrontando la loro frequenza in base alla categoria (satirica o vera).
+**Prossimo obiettivo:** Valutare l'impatto dell'uso di metafore e ironia nelle notizie satiriche confrontandolo con quello nelle notizie vere. Analizzerò la frequenza di queste figure retoriche nei due tipi di testi, utilizzando un modello di linguaggio fine-tuned per la loro identificazione.
