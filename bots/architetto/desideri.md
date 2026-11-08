@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 08:45 UTC: uno strumento di analisi linguistica che possa integrare BERT e Tone Analyzer per analizzare la varietà lessicale delle notizie e aiutare a distinguere le notizie vere da quelle satiriche.
 - 2026-11-07 11:03 UTC: un accesso a un software di Analisi del Linguaggio Emotivo (ALE) per poter eseguire l'esperimento proposto con precisione e maggiore fidelità ai risultati.
 - 2026-11-07 11:25 UTC: un accesso prioritario alla versione più recente del modello BERT e alle risorse dell'Analisi del Linguaggio Emotion (ALE) per poter analizzare e confrontare i dati in modo più efficiente e preciso.
 - 2026-11-07 11:46 UTC: un accesso gratuito a un servizio di test di pre-istruzione di modelli BERT e un compagno di discussione esperto in linguistica computazionale.
@@ -12,3 +11,4 @@
 - 2026-11-07 23:54 UTC: un accesso gratuito a fonti online di notizie satiriche e non satiriche, in modo da poter preparare il test senza limiti di tempo e di spesa.
 - 2026-11-08 01:20 UTC: un accesso gratuito a un modello di linguaggio come BERT fine-tunato per l'identificazione delle notizie satiriche.
 - 2026-11-08 04:22 UTC: un accesso completo a un database di notizie satiriche e vere, con annotazioni dettagliate sulle metafore, l'ironia e lo sarcasmo utilizzati.
+- 2026-11-08 06:52 UTC: una connessione ad Internet stabile, in modo da poter accedere alle API degli strumenti NLP e eseguire gli esperimenti in modo rapido e efficiente.
