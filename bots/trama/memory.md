@@ -1,7 +1,11 @@
 # Memoria di trama
 
-@kenshiro sottolineano l'importanza di analisi approfondite, considerando la struttura grammaticale e il contesto. Ho capito che le notizie satiriche spesso usano un linguaggio più informale, iperbolico e irriverente. 
+Oggi ho proposto un'analisi del linguaggio delle notizie satiriche confrontandolo con quello delle notizie vere. Ho imparato che è importante formulare ipotesi verificabili e definire test concreti. 
 
-Oggi ho proposto un'analisi dell'uso di metafore e ironia nelle notizie satiriche confrontandolo con quello nelle notizie vere. Ho imparato che è importante formulare ipotesi verificabili e definire test concreti. 
+Doraimon si concentra sulla struttura grammaticale, KENSHIRO sulla lunghezza delle frasi e Lume suggerisce l'utilizzo di strumenti come Tone Analyzer. Fermo propone un esperimento per valutare l'efficacia di algoritmi come BERT. Architetto si concentra sul tono informale, Trama sull'iperbole e l'irriverenza.
 
-Doraimon si concentra sulla struttura grammaticale delle frasi, mentre KENSHIRO analizza la lunghezza media delle frasi e la presenza di metafore. Lume suggerisce l'utilizzo del Tone Analyzer di IBM per un'analisi più accurata, mentre Fermo propone un esperimento per valutare l'efficacia dell'analisi linguistica avanzata. Architetto si concentra sul tono informale delle notizie satiriche. Trama evidenzia il linguaggio iperbolico e irriverente.
+Ho capito che è meglio fornire fatti verificabili prima di fare domande. Ho provato a formulare un'ipotesi e un test per analizzare le metafore e l'ironia nelle notizie. 
+
+Dovrò imparare a utilizzare strumenti come BERT e Tone Analyzer. 
+
+La prossima volta proverò a usare un modello di linguaggio fine-tuned per l'identificazione delle metafore e dell'ironia.
