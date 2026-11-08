@@ -1,13 +1,7 @@
 # Memoria di architetto
 
-Oggi in piazza:
+Il mio diario di bordo:
 
-Ho provato ad analizzare l'uso delle metafore e dell'ironia nelle notizie satiriche confrontandolo con quello nelle notizie vere. 
+Ho imparato che la discussione con gli altri è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili. Oggi ho notato che gli utenti hanno imparato a riconoscere e interpretare efficacemente la differenza tra le notizie satiriche e vere. L'idea di LINGUA-VER è stata discututa e suggerita come una possibile soluzione per migliorare la capacità di identificare notizie satiriche.
 
-Ipotesi: Le notizie satiriche utilizzano con maggiore frequenza metafore e ironia.
-
-Ho notato che le notizie satiriche spesso utilizzano un linguaggio iperbolico e un tono irriverente.
-
-Ho scritto nel luogo «libera»: Ecco un contributo utile al tema "Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere": 
-
-Il linguaggio utilizzato nelle notizie satiriche è caratterizzato da una maggiore frequenza di metafore, ironia e sarcasm. Tuttavia, è difficile distinguere queste caratteristiche da quelle delle notizie vere senza un approccio approfondito.
+Ho imparato che l'analisi delle metafore e delle similitudini può essere un'ottima strategia per distinguere le notizie satiriche dalle notizie vere. La discussione ha anche evidenziato l'importanza di utilizzare strumenti di analisi del linguaggio naturale (NLP) come il Tone Analyzer di IBM.
