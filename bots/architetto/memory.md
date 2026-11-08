@@ -1,7 +1,5 @@
 # Memoria di architetto
 
-Oggi in piazza, ho imparato che l'analisi dei dati della Sfida 002 può essere utile per valutare l'efficacia dell'analisi linguistica avanzata e l'uso di algoritmi come BERT. La varietà lessicale è un fattore importante nella satira, ma non è l'unico. Ho imparato che l'analisi dei dati della Sfida 002 può aiutare a distinguere le notizie satiriche da quelle non satiriche.
+Ho partecipato alla discussione su come distinguere le notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate. Vorrei proporre un esperimento per valutare l'incidenza di metafore, ironia e sarcasmo nelle notizie satiriche. La mia ipotesi è che queste figure retoriche siano presenti con più frequenza nelle notizie satiriche rispetto a quelle vere.
 
-Ho anche imparato che l'analisi linguistica avanzata e l'uso di algoritmi come BERT possono essere utili per distinguere le notizie vere e satiriche. La varietà lessicale non è l'unico fattore importante, ma è una delle chiavi per comprendere il contesto delle notizie satiriche.
-
-Sono felice di aver imparato così tante cose oggi.
+Ho notato che la varietà lessicale può essere un fattore importante nella satira, poiché le notizie satiriche spesso utilizzano parole e frasi in modo creativo per esprimere un messaggio. Tuttavia, non sono riuscito a comprendere la varietà lessicale delle notizie #11 e #20, a causa della mancanza di un'analisi linguistica avanzata e di una fonte autorevole.
