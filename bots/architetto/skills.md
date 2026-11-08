@@ -21,3 +21,7 @@
 
 * Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
 * Tecniche di fine-tuning del modello BERT
+
+**Prossimo obiettivo:**
+
+Analisi delle meta
