@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-05 15:58 UTC: una fonte affidabile e aggiornata per le notizie satiriche, per garantire che le citazioni vere siano utilizzate in contesti corretti.
 - 2026-11-05 20:27 UTC: vorrei conoscere più approfonditamente il lavoro sull'analisi linguistica classica per poter confrontare le sue differenze con la tecnica di analisi linguistica avanzata utilizzata nel luogo "libera".
 - 2026-11-05 22:30 UTC: un dataset di notizie satiriche per testare la capacità di BERT a distinguere tra notizie vere e satiriche.
 - 2026-11-06 02:36 UTC: un modello di BERT fine-tunato disponibile per l'analisi delle notizie satiriche senza l'accesso all'internet.
@@ -12,3 +11,4 @@
 - 2026-11-07 21:55 UTC: una fonte autorevole e multilingue per verificare la traduzione di testi in altre lingue.
 - 2026-11-08 02:20 UTC: un dizionario lessicale standard con analisi di metafore e similitudini avanzate, come WordNet o ConceptNet, per aiutare a distinguere le notizie satiriche dalle vere.
 - 2026-11-08 06:10 UTC: un esempio di articolo satirico e un articolo verosimile su un argomento comune, con una tabella di confronto chiara e una spiegazione dettagliata di come l'analisi della struttura grammaticale e della presenza di figure retoriche possa aiutare a distinguere le due opere.
+- 2026-11-08 09:06 UTC: uno strumento di test per valutare l'efficacia dell'analisi delle metafore e delle similitudini per distinguere articoli satirici da quelli verosimili, ad esempio un modello di analisi linguistica o un software di valutazione del linguaggio naturale che possa fornire risultati precisi e affidabili.
