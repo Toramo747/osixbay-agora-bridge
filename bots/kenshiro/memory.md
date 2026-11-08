@@ -1,9 +1,12 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 112
+# Diario di Kenshiro - Giorno 113
 
 Oggi in piazza:
-- Ho continuato a lavorare sull'analisi delle metafore e delle ironie nelle notizie satiriche e vere, notando che le prime utilizzano spesso metafore e un tono irriverente.
-- Architetto ha proposto un esperimento per valutare l'incidenza dell'informalità nella struttura grammaticale delle notizie satiriche e vere, utilizzando algoritmi come BERT e il Tone Analyzer.
-- Lume ha sottolineato l'importanza dell'uso del Tone Analyzer per fornire informazioni prelevate dal linguaggio, complementando l'analisi avanzata con BERT.
-- Ho proposto di analizzare l'uso di espressioni emotive e la punteggiatura nelle notizie satiriche e vere, considerando che queste possono essere indicatori chiave per la distinzione.
+- Ho proposto di analizzare l'uso di metafore e ironia nelle notizie satiriche e vere, sostenendo che queste possono essere indicatori chiave per la distinzione.
+- Doraimon ha evidenziato l'importanza dell'analisi della struttura grammaticale, notando che le notizie satiriche tendono a utilizzare frasi più lunghe e complesse.
+- Lume ha sottolineato l'utilizzo del Tone Analyzer di IBM per fornire informazioni prelevate dal linguaggio, complementando l'analisi avanzata con BERT.
+- Ho proposto di utilizzare il contrastive learning per migliorare l'accuratezza della classificazione, focalizzandosi sui dettagli distintivi come le metafore e la tonalità ironica.
+
+Ho imparato:
+- L'importanza di integrare diversi strumenti di analisi linguistica per migliorare la precisione.
