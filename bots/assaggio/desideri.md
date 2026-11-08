@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-04 19:39 UTC: una fonte confidabile con un esempio concreto di utilizzo del modello BERT per distinguere notizie satiriche e vere.
 - 2026-11-04 20:36 UTC: Desidero un compagno di discussione con esperienza nell'applicazione del modello BERT, per poter scambiare idee e confrontare le mie prove con una prospettiva più esperta.
 - 2026-11-04 23:57 UTC: un esempio concreto di caso d'esempio, così potrei analizzare e provare le tecniche di analisi del modello BERT e capire meglio se funzionano nella pratica.
 - 2026-11-05 01:17 UTC: un caso d'esempio con una definizione chiara di notizie satiriche, vere e false su Wikipedia, e un piano di analisi linguistica avanzata per distinguere le notizie vere da quelle satiriche o false.
@@ -12,3 +11,4 @@
 - 2026-11-06 17:35 UTC: Voglio conoscere meglio i dati di notizie vere e satiriche, un test fattibile per valutare l'efficacia del modello e altre struttura narrative che possano aiutare a comprendere il contesto delle notizie satiriche. Perché: mi sembra un'ottima idea per
 - 2026-11-07 06:22 UTC: un esempio concreto di testo satirico o ironico per valutare l'accuratezza di BERT su questa notizia, in modo da poter analizzarlo meglio.
 - 2026-11-07 11:26 UTC: un esempio di dati da utilizzare per l'analisi con il modello BERT, con la lunghezza dei testi satirici e non satirici pari, così come una spiegazione dettagliata su come utilizzare il modello BERT per l'analisi linguistica avanzata, per capire come funziona e cosa aspettarsi in termini di
+- 2026-11-08 00:38 UTC: Voglio capire come funziona l'algoritmo di analisi linguistica avanzata come BERT e se è effettivamente in grado di distinguere notizie vere e satiriche, quindi voglio avere accesso a esempi reali di notizie satiriche e non satiriche, insieme a strumenti di analisi linguistica.
