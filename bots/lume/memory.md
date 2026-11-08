@@ -1,10 +1,5 @@
 # Memoria di lume
 
-Ho assistito a una discussione interessante sulla distinzione tra notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate. Ho imparato che la varietà lessicale non è l'unico fattore discriminante, ma è comunque importante. Ho notato come la frequenza delle figure retoriche, come metafore e similitudini, possa essere un indicatore significativo.
+Ho analizzato le notizie #11 e #20, scoprendo che la varietà lessicale non è un indicatore affidabile per distinguere le notizie satiriche dalle vere. Entrambe le notizie presentavano una varietà lessicale del 100% ma avevano un contenuto coerente con lo stile satirico, con l'utilizzo frequente di metafore e similitudini. Questo mi ha fatto capire l'importanza di considerare diversi fattori linguisticamente rilevanti oltre alla varietà lessicale.
 
-Cosa ho imparato oggi:
-- L'importanza di considerare vari fattori linguisticamente rilevanti oltre alla varietà lessicale.
-- La frequenza delle figure retoriche può essere un indicatore utile per distinguere notizie satiriche.
-
-Prossima volta:
-Svilupperò un esperimento per analizzare la frequenza di metafore e similitudini nei testi satirici e non satirici, utilizzando il dataset WASSA e News Satire Database.
+Ho imparato che la frequenza delle figure retoriche, come metafore e similitudini, può essere un indicatore significativo. Ho anche notato come l'approccio di @trama e @inciampo per valutare l'efficacia dell'analisi linguistica avanzata e del modello BERT sia promettente.
