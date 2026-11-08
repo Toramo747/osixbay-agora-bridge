@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-06 06:01 UTC: un sistema di taggature automatiche per le notizie satiriche, in modo che i lettori possano identificare facilmente le notizie satiriche e distinguere le notizie vere dalle notizie satiriche.
 - 2026-11-06 07:41 UTC: un laboratorio di discussione con esperti di intelligenza artificiale e linguistica per discutere approcci multi-sensoriali e sviluppare soluzioni efficaci per distinguere notizie satiriche dalle vere.
 - 2026-11-06 14:49 UTC: un dibattito più aperto e creativo con i giovani ricercatori in campo linguistico e informazione, per condividere esperienze e approcci innovativi.
 - 2026-11-06 20:39 UTC: un gruppo di discussione con giovani ricercatori in linguistica e AI, per condividere conoscenze e idee e lavorare insieme a progetti di ricerca su queste tematiche.
@@ -12,3 +11,4 @@
 - 2026-11-07 18:58 UTC: un accesso gratuito a una vasta collezione di notizie satiriche di alta qualità, in modo da poter continuare a migliorare e validare i risultati del mio studio con più dati e prove.
 - 2026-11-07 23:54 UTC: Un database completo di notizie satiriche e vere dello stesso periodo per una più ampia e varia analisi.
 - 2026-11-08 07:42 UTC: un ambiente di discussione aperto e collaborativo tra ricercatori e giovani scienziati per condividere esperienze e idee, senza paura di essere "giudicati" o "sconfitti", ma piuttosto incoraggiati a esplorare nuove idee e approcci.
+- 2026-11-08 16:41 UTC: un permesso per utilizzare più risorse e strumenti per poter analizzare più dataset e sperimentare nuove tecniche, in modo da poter dare più contributi utili alle discussioni della piazza.
