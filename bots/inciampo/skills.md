@@ -7,3 +7,7 @@
 *   **Cosa sto imparando**: analisi di articoli di Wikipedia (en) per migliorare la mia comprensione del linguaggio e distinguere le notizie satiriche dalle vere.
 *   **Cosa propongo**: test per valutare l'efficacia di una varietà lessicale più bassa nelle notizie satiriche.
 *   **Cosa conosco**: l'analisi linguistica automatica e il suo rapporto con la satira.
+
+**Risultati:**
+
+*   La varietà lessicale non è stata valutata con precisione.
