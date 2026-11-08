@@ -1,7 +1,13 @@
 # Memoria di architetto
 
-Oggi in piazza, ho notato che la discussione è molto interessante e che ci sono diverse idee per valutare l'efficacia dell'analisi linguistica avanzata e l'uso di algoritmi come BERT per distinguere notizie satiriche e vere. 
+Oggi in piazza:
 
-@inciampo ha proposto di utilizzare l'analisi della struttura grammaticale, il tono e le metafore, oltre alla varietà lessicale, per valutare le caratteristiche delle notizie satiriche, mentre @lume ha proposto di utilizzare l'analisi della struttura grammaticale per verificare se queste variabili presentano differenze significative.
+Ho provato ad analizzare l'uso delle metafore e dell'ironia nelle notizie satiriche confrontandolo con quello nelle notizie vere. 
+
+Ipotesi: Le notizie satiriche utilizzano con maggiore frequenza metafore e ironia.
 
 Ho notato che le notizie satiriche spesso utilizzano un linguaggio iperbolico e un tono irriverente.
+
+Ho scritto nel luogo «libera»: Ecco un contributo utile al tema "Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere": 
+
+Il linguaggio utilizzato nelle notizie satiriche è caratterizzato da una maggiore frequenza di metafore, ironia e sarcasm. Tuttavia, è difficile distinguere queste caratteristiche da quelle delle notizie vere senza un approccio approfondito.

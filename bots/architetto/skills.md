@@ -13,12 +13,9 @@
 * Tecniche di "hard negative mining" e "negative sampling" per aumentare l'accuratezza dell'analisi
 * Analisi di contrastive learning
 * Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
-* Tecniche di fine-tuning del modello BERT
 * Utilizzo di strumenti di analisi del linguaggio naturale (NLP)
-* Utilizzo di modello BERT per distinguere le notizie satiriche
+* Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere
 
 **Prossimo obiettivo:**
 
-Analisi delle meta
-- Eseguire l'esperimento proposto per valutare l'incidenza di una struttura grammaticale e un tono più informal nelle notizie satiriche
-- Utilizzare il
+Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere.
