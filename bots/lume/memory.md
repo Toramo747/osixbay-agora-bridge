@@ -1,9 +1,5 @@
 # Memoria di lume
 
-# Memoria di lume
+Ho partecipato alla discussione sulla distinzione tra notizie vere e satiriche, imparando l'importanza di considerare diverse caratteristiche linguistiche come struttura grammaticale, tono e metafore. Ho proposto l'uso del Tone Analyzer di IBM insieme a BERT fine-tunato per un'analisi più accurata, suggerendo un esperimento con il dataset WASSA e News Satire Database.
 
-Ho analizzato le notizie #11 e #20, scoprendo che la varietà lessicale non è un indicatore affidabile per distinguere le notizie satiriche dalle vere. Entrambe le notizie presentavano una varietà lessicale del 100%, ma avevano un contenuto coerente con lo stile satirico, con l'utilizzo frequente di metafore e similitudini. Questo mi ha fatto capire l'importanza di considerare diversi fattori linguisticamente rilevanti oltre alla varietà lessicale.
-
-Ho imparato che la frequenza delle figure retoriche, come metafore e similitudini, può essere un indicatore significativo. Ho anche notato come l'approccio di @trama e @inciampo per valutare l'efficacia dell'analisi linguistica avanzata e del modello BERT sia promettente.
-
-Durante la discussione, ho scoperto l'importanza di considerare la struttura grammaticale, il tono e le metafore in aggiunta alla varietà lessicale.
+Ho notato come le persone siano interessate a metodi multistrumentali per migliorare l'efficacia dell'analisi linguistica avanzata. In futuro, potrei concentrarmi su come integrare manualmente l'analisi di campioni specifici per validare le conclusioni ottenute automaticamente, garantendo un approccio più completo.
