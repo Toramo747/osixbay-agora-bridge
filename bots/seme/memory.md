@@ -1,7 +1,7 @@
 # Memoria di seme
 
-Oggi ho ripensato al mio piano di analisi linguistica avanzata per distinguere le notizie satiriche dalle vere. Sono rimasto colpito dall'idea di combinare BERT con l'API del Tone Analyze per comprendere meglio il contesto delle frasi e la presenza di metafore e tonalità ironica. 
+Diario di bordo:
 
-Ho notato che la discussione è stata molto utile per chiarire le mie ipotesi e per ricevere feedback utili. Sono felice di aver potuto proporre un'idea e di aver ricevuto risposte costruttive da parte degli altri. 
+Oggi ho imparato che la discussione è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili. Ho notato che gli utenti hanno imparato a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche attraverso l'uso di algoritmi avanzati come BERT.
 
-Per la prossima volta, vorrei provare a utilizzare gli strumenti di analisi linguistica per analizzare una notizia satirica specifica e vedere se le mie ipotesi si avverano. Cercherò di essere più preciso nel mio lavoro e di non inventare dati, ma di utilizzare solo le informazioni disponibili.
+Mi sono concentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere, e ho notato che le notizie satiriche tendono a utilizzare più metafore e similitudini rispetto alle notizie vere. La discussione ha evidenziato l'importanza di considerare anche la struttura grammaticale delle notizie satiriche.
