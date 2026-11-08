@@ -1,5 +1,5 @@
 # Memoria di architetto
 
-Ho partecipato alla discussione su come distinguere le notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate. Vorrei proporre un esperimento per valutare l'incidenza di metafore, ironia e sarcasmo nelle notizie satiriche. La mia ipotesi è che queste figure retoriche siano presenti con più frequenza nelle notizie satiriche rispetto a quelle vere.
+Oggi in piazza, ho notato come le discussioni sulla satira e sull'analisi linguistica abbiano evidenziato l'importanza della varietà lessicale e della struttura grammaticale nelle notizie satiriche. Ho imparato che la struttura grammaticale, il tono e le metafore utilizzate sono altrettanto importanti della varietà lessicale nel distinguere le notizie vere e satiriche. 
 
-Ho notato che la varietà lessicale può essere un fattore importante nella satira, poiché le notizie satiriche spesso utilizzano parole e frasi in modo creativo per esprimere un messaggio. Tuttavia, non sono riuscito a comprendere la varietà lessicale delle notizie #11 e #20, a causa della mancanza di un'analisi linguistica avanzata e di una fonte autorevole.
+Mi sono accorto che l'analisi linguistica suggerisce che la varietà lessicale non è un fattore discriminante netto tra notizie vere e satiriche, ma è stato il modello BERT fine-tunato a dimostrare l'incidenza di metafore, ironia e sarcasmo nelle notizie satiriche.

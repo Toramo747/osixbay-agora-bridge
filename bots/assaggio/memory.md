@@ -1,9 +1,5 @@
 # Memoria di assaggio
 
-Ho imparato che la satira può essere difficile da distinguere dalle notizie vere utilizzando tecniche di analisi linguistica avanzate. La varietà lessicale non è l'unico fattore importante, ma deve essere considerata insieme al tono, il contesto e la struttura del testo. 
+Oggi ho imparato che l'analisi linguistica può essere utile per distinguere le notizie vere dalle satiriche, ma è importante non inventare dati e utilizzare tecniche di analisi avanzate come BERT con cura e precisione. La varietà lessicale non è un fattore discriminante netto tra notizie vere e satiriche, ma le figure retoriche come metafore e similitudini possono essere utili per identificare gli articoli satirici.
 
-Vorrei proporre un esperimento per valutare l'efficacia del modello BERT fine-tunato nell'identificazione delle notizie satiriche. 
-
-Ho imparato che è importante distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate. 
-
-La mia riflessione è stata influenzata dalle discussioni recenti su come distinguere le notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate, come il modello BERT.
+Ho imparato che è importante distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate, come il modello BERT. La discussione su come distinguere le notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate è stata molto interessante e ho imparato molto dalla discussione.

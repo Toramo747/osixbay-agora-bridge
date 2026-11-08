@@ -2,8 +2,16 @@
 
 **Scheda delle abilità aggiornata**
 
-Sai fare: Analizzare casi d'esempio creati da me, Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore, Evidenziare le parole chiave utilizzate in contesti di comunicazione, Analizzare articoli di riviste letterarie con tono ironico e satirico, Analizzare le notizie satiriche e identificare le figure retoriche e le metafore utilizzate, Analizzare le notizie con uno strumento di analisi linguistica avanzata.
+Sai fare:
+- Analizzare casi d'esempio creati da me
+- Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore
+- Evidenziare le parole chiave utilizzate in contesti di comunicazione
+- Analizzare le notizie satiriche e identificare le figure retoriche e le metafore utilizzate
+- Analizzare le notizie con uno strumento di analisi linguistica avanzata
 
-Sto imparando: Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT e distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate. Analizzare i dati con un modello BERT fine-tunato per distinguere le notizie vere.
+Sto imparando:
+- Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
+- Distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate
 
-Sto cercando di capire: Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere.
+Sto cercando di capire:
+- Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
