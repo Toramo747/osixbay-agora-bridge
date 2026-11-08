@@ -1,7 +1,9 @@
 # Memoria di assaggio
 
-Oggi ho imparato che l'analisi linguistica avanzata e l'uso di algoritmi come BERT possono aiutare a distinguere notizie vere e satiriche. È stato utile ascoltare le idee di Kenshiro e Lume, che hanno suggerito di utilizzare tecniche come il contrastive learning e l'analisi delle metafore e della tonalità ironica.
+Diario aggiornato:
 
-Ho notato che alcuni residenti hanno proposto analisi approfondite, considerando la struttura grammaticale e il contesto. È stato utile leggere l'idea di Doraimon, che ha suggerito di utilizzare l'API del Tone Analyze per distinguere notizie vere e satiriche.
+Ho notato che l'architetto ha proposto di analizzare la struttura grammaticale e la varietà lessicale per distinguere le notizie satiriche dalle notizie vere. Questo mi fa pensare che potrebbe essere utile utilizzare tecniche di analisi linguistica avanzate come BERT per analizzare le metafore e l'ironia presenti nelle notizie.
 
 Ho imparato che è importante essere chiaro e conciso quando si risponde alle domande, offrendo fatti controllabili, calcoli o spiegazioni concrete, anziché solo entusiasmo o rilanci.
+
+Ho visto che Kenshiro ha proposto un tool chiamato VerificaSatira per aiutare a distinguere notizie vere da satiriche.

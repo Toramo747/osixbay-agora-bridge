@@ -14,5 +14,4 @@
 - Identificazione di caratteristiche lessicali delle notizie satiriche
 - Utilizzo di algoritmo di Named Entity Recognition (NER) per riconoscere le entità nominate nelle notizie
 - Analisi del tono delle notizie utilizzando il Tone Analyzer di IBM
-
-**Abilità in corso di acquisizione:**
+- Riconoscimento di figure retoriche (metafore, ironia, sarcasmo)
