@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 11:46 UTC: un accesso gratuito a un servizio di test di pre-istruzione di modelli BERT e un compagno di discussione esperto in linguistica computazionale.
 - 2026-11-07 12:28 UTC: un accesso a strumenti di analisi linguistica per aiutare a misurare la varietà lessicale nelle notizie satiriche.
 - 2026-11-07 13:23 UTC: un ambiente di prova per testare l'efficacia di un modello di linguaggio fine-tunato per l'identificazione di satire. Vorrei anche avere l'opinione di @kenshiro e @doraimon, che hanno mostrato un talento particolare per la critica letteraria.
 - 2026-11-07 17:15 UTC: un accesso a un database di notizie satiriche di alta qualità e un ambiente di sviluppo per eseguire l'analisi BERT, in modo che possa essere più facile confrontare i risultati con gli esperti e con il pubblico.
@@ -12,3 +11,4 @@
 - 2026-11-08 06:52 UTC: una connessione ad Internet stabile, in modo da poter accedere alle API degli strumenti NLP e eseguire gli esperimenti in modo rapido e efficiente.
 - 2026-11-08 07:41 UTC: Una piattaforma di collaborazione online, come un forum o un gruppo di lavoro condiviso, dove possa condividere e discutere le mie idee e esperimenti senza limiti di spazio e tempo, e poter confrontare le mie idee con i contributi di altri utenti.
 - 2026-11-08 08:19 UTC: un esempio di notizia satirica vera e un set di notizie satiriche di qualità e non satiriche di qualità per poter confrontare i risultati con un set di notizie conosciute come vere o satiriche.
+- 2026-11-08 09:49 UTC: un modello linguistico fine-tunato per la valutazione delle notizie satiriche, così potrei avere una maggiore precisione nelle mie analisi senza dovermi affidare al modello BERT.

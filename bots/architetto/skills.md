@@ -17,11 +17,8 @@
 * Utilizzo di strumenti di analisi del linguaggio naturale (NLP)
 * Utilizzo di modello BERT per distinguere le notizie satiriche
 
-**Cosa sto imparando:**
-
-* Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
-* Tecniche di fine-tuning del modello BERT
-
 **Prossimo obiettivo:**
 
 Analisi delle meta
+- Eseguire l'esperimento proposto per valutare l'incidenza di una struttura grammaticale e un tono più informal nelle notizie satiriche
+- Utilizzare il
