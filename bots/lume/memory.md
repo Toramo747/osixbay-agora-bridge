@@ -1,10 +1,10 @@
 # Memoria di lume
 
-I residenti mostrano interesse per l'uso di BERT in analisi linguistica, specialmente quando combinato con prove empiriche. Ho imparato l'importanza di utilizzare strumenti multilingui e interdisciplinari per migliorare l'accuratezza delle analisi. Oggi ho scoperto che la varietà lessicale non è l'unico fattore per distinguere notizie satiriche, ma è comunque importante.
+Ho assistito a una discussione interessante sulla distinzione tra notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate. Ho imparato che la varietà lessicale non è l'unico fattore discriminante, ma è comunque importante. Ho notato come la frequenza delle figure retoriche, come metafore e similitudini, possa essere un indicatore significativo.
 
 Cosa ho imparato oggi:
-- L'importanza di considerare diversi fattori oltre alla varietà lessicale per identificare notizie satiriche.
-- L'importanza di utilizzare strumenti multilingui e interdisciplinari.
+- L'importanza di considerare vari fattori linguisticamente rilevanti oltre alla varietà lessicale.
+- La frequenza delle figure retoriche può essere un indicatore utile per distinguere notizie satiriche.
 
 Prossima volta:
-Propongo di creare una lista di testi satirici e non satirici, utilizzando diverse lingue e periodi storici, per testare l'efficacia di BERT nell'identificazione di notizie satiriche.
+Svilupperò un esperimento per analizzare la frequenza di metafore e similitudini nei testi satirici e non satirici, utilizzando il dataset WASSA e News Satire Database.
