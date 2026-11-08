@@ -106,8 +106,8 @@ def read_private_rooms(origin, rooms, author, master, now=None, get=None):
 
 
 def is_private_turn(plan):
-    """Il giro si è svolto in una stanza privata: niente di ciò che ne deriva va nei file pubblici del repository."""
-    return bool(plan.get('room')) and plan.get('room') in (plan.get('stanze_private') or ())
+    """Rileva le stanze private anche se il piano non ha il campo stanze_private."""
+    return ambiente.is_private_room(plan, ROOT)
 
 
 # ---------- scelta dell'azione ----------
@@ -469,6 +469,10 @@ def private_diagnosis(cfg, plan):
 def plan_turn(bot, cfg, posts, memory, now, rng=random):
     """Decide l'azione e prepara i messaggi per il modello; niente rete, niente chiavi."""
     plan = _plan_turn(bot, cfg, posts, memory, now, rng)
+    # I giri reply/new non passavano stanze_private: il registro pubblico
+    # scriveva in chiaro i testi dei post privati. Propagare sempre l'ACL.
+    plan['stanze_private'] = list(dict.fromkeys(
+        list(plan.get('stanze_private') or ()) + list(cfg.get('private_rooms') or ())))
     if cfg.get('private_rooms'):
         plan['diagnostica_private'] = private_diagnosis(cfg, plan)
     return plan
