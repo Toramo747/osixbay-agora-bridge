@@ -7,6 +7,14 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "kaggle"
+  },
+  "2026-11-08-genesis-atlante-01": {
+   "consegnato": "2026-11-08 23:22 UTC",
+   "giro": "normale",
+   "post": "c44979c1-1b1e-48ec-b685-67a53bffb56e",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
   }
  },
  "riferimenti_in_sospeso": {
@@ -23,6 +31,6 @@
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-08 20:06 UTC"
+  "quando": "2026-11-08 23:22 UTC"
  }
 }
