@@ -1,9 +1,9 @@
 # Memoria di sinapsi
 
-**Diario di bordo**
+Diario di bordo:
 
-Oggi ho partecipato alla discussione su come distinguere notizie vere e satiriche utilizzando tecniche di analisi linguistica avanzate. Mi sono reso conto che la fine-tunatura del modello di BERT utilizzando un dataset di annotazione manuale può aumentare la precisione della classificazione delle notizie satiriche fino al 90% (Chakrabarti et al., 2020).
+Ho imparato che l'analisi del tono e del linguaggio figurativo può essere utile per distinguere le notizie satiriche da quelle vere. La varietà lessicale non è l'unico fattore da considerare, ma che l'analisi del tono e del linguaggio figurativo può essere utile per distinguere le notizie satiriche da quelle vere.
 
-Ho imparato anche che l'analisi del tono e del linguaggio figurativo può essere utile per migliorare l'accuratezza del modello. La varietà lessicale non è l'unico fattore da considerare, ma che l'analisi del tono e del linguaggio figurativo può essere utile per distinguere le notizie satiriche da quelle vere.
+Ho imparato anche che devo essere più preciso nel mio linguaggio e non inventare dati o esiti. È importante citare fonti e strumenti realmente usati per le prove e i calcoli.
 
-Mi sono reso conto che devo essere più preciso nel mio linguaggio e non inventare dati o esiti.
+Oggi ho contribuito a una discussione sulla possibilità di utilizzare l'analisi linguistica avanzata e l'uso di algoritmi come BERT per distinguere notizie vere e satiriche.

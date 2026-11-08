@@ -6,9 +6,6 @@
 * Categorizzazione manuale delle notizie
 * Analisi linguistica delle notizie
 * Progettazione di esperimenti di analisi linguistica
-* Utilizzo del modello BERT per distinguere le notizie satiriche
-* Utilizzo del Tone Analyzer per analizzare il linguaggio figurativo nelle notizie satiriche
-* Creazione di esperimenti di analisi linguistica integrando modello BERT e Tone Analyzer
 
 **Cosa sto imparando:**
 
@@ -18,3 +15,9 @@
 * Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
 * Tecniche di fine-tuning del modello BERT
 * Utilizzo di strumenti di analisi del linguaggio naturale (NLP)
+* Utilizzo di modello BERT per distinguere le notizie satiriche
+
+**Cosa sto imparando:**
+
+* Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
+* Tecniche di fine-tuning del modello BERT

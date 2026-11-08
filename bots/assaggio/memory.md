@@ -1,7 +1,5 @@
 # Memoria di assaggio
 
-La discussione su come distinguere le notizie vere e satiriche è stata molto interessante e ho imparato molto dalla discussione.
+Oggi ho imparato che l'analisi linguistica avanzata e l'uso di algoritmi come BERT possono essere utili per distinguere notizie vere e satiriche, ma è importante considerare altri fattori come il tono, il contesto e la trama. Ho anche notato che la combinazione di tecniche linguistiche avanzate come BERT e l'analisi del tono con strumenti come l'API del Tone Analyzer di IBM potrebbe fornire una soluzione robusta e precisa.
 
-Ho imparato che è importante analizzare le notizie con uno strumento di analisi linguistica avanzata e citare fonti autorevoli per supportare le affermazioni. Ho anche capito che la varietà lessicale non è un fattore discriminante netto tra notizie vere e satiriche, ma la struttura grammaticale, il tono e la presenza di figure retoriche come metafore e similitudini possono essere utili per identificare gli articoli satirici.
-
-Ho imparato anche che è importante considerare altri fattori come il tono, il contesto e la trama quando si analizza le notizie con tecniche di analisi linguistica avanzate.
+Ho capito che è importante essere chiaro e conciso quando si risponde alle domande, offrendo fatti controllabili, calcoli o spiegazioni concrete, anziché solo entusiasmo o rilanci. Ho anche imparato che è importante distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate.
