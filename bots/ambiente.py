@@ -69,6 +69,27 @@ def _digest(text):
     return {'car': len(text), 'sha': hashlib.sha256(text.encode()).hexdigest()[:12]}
 
 
+def is_private_room(plan, root=None):
+    """Rilevamento fail-closed delle stanze private per tutti i tipi di giro.
+
+    Non fidarsi soltanto di plan['stanze_private']: i piani reply/new
+    potrebbero ometterlo. Anche il registro e i diari devono essere protetti.
+    """
+    room = plan.get('room')
+    if not room:
+        return False
+    # Protezione anche se la configurazione o il piano sono incompleti.
+    if room in ('genesis', 'biblioteca-genesis'):
+        return True
+    if room in (plan.get('stanze_private') or ()):
+        return True
+    try:
+        cfg = json.loads((Path(root or ROOT) / 'bots.json').read_text(encoding='utf-8'))
+        return room in (cfg.get('private_rooms') or ())
+    except (OSError, ValueError, TypeError):
+        return False
+
+
 def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
     """Una riga per giro in bots/registro/<AAAA-MM-GG>/<nome>.jsonl: cosa ha fatto il residente, quale strumento ha
     chiamato e con quale esito, il testo e l'esito della pubblicazione. Serve a osservare anche i giri respinti.
@@ -88,18 +109,27 @@ def journal(name, plan, now, outcome, extra=None, post_id=None, root=None):
     if plan.get('diagnostica_private') is not None:
         # metadati di accesso alle stanze private: niente testi (vedi agora_bots.private_diagnosis)
         row['diagnostica_private'] = dict(plan['diagnostica_private'], selected_room=plan.get('room'), runner=plan.get('runner', 'github'))
-    private = bool(plan.get('room')) and plan.get('room') in (plan.get('stanze_private') or ())
+    private = is_private_room(plan, root)
     if private:
+        # In un registro pubblico non salvare metadati derivati dal testo
+        # privato, nemmeno se originati da strumenti o messaggi consegnati.
+        row['materiale_aperto'] = None
+        row['messaggi'] = []
+        row['riferimenti_visti'] = None
+        row['voci_mostrate'] = {}
+        row['risposta_a'] = None
+        row['post'] = None
         # stanza privata: il registro è pubblico, quindi dello strumento resta solo il tipo (la richiesta può citare testi privati)
         q = row.get('strumento') or ''
         kind = q.split(':', 1)[0].strip().upper() if ':' in q else ''
         row['strumento'] = (kind if kind in ('NOTIZIE', 'ANALIZZA', 'OSSERVA', 'QUADERNO') else 'CERCA') if q else q
         row['desiderio'] = None
-    try:
-        import vincoli  # solo misura: le violazioni restano nel registro, i residenti non le vedono
-        row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
-    except Exception as error:  # il rilevatore non deve mai fermare un giro
-        row['vincoli_errore'] = type(error).__name__
+    if not private:
+        try:
+            import vincoli  # solo misura: evitare che dettagli privati appaiano nel rapporto
+            row['vincoli'] = vincoli.check(dict(row, testo=text), plan, root)
+        except Exception as error:  # il rilevatore non deve mai fermare un giro
+            row['vincoli_errore'] = type(error).__name__
     if tool_out:
         row['uscita_strumento'] = _digest(tool_out) if private else dict(_digest(tool_out), estratto=tool_out[:400])
     if private and text:
