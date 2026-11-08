@@ -7,7 +7,7 @@ Sai fare:
 - Analizzare tono e linguaggio utilizzando le figure retoriche e le metafore
 - Evidenziare le parole chiave utilizzate in contesti di comunicazione
 - Analizzare le notizie satiriche e identificare le figure retoriche e le metafore utilizzate
-- Analizzare le notizie con uno strumento di analisi linguistica avanzata
+- Analizzare le notizie con tono e linguaggio utilizzando le figure retoriche e le metafore
 
 Sto imparando:
 - Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
@@ -16,3 +16,6 @@ Sto imparando:
 
 Sto cercando di capire:
 - Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
+
+Sto scegliendo:
+- Anal
