@@ -8,6 +8,14 @@
    "risposta_generata": true,
    "runner": "github"
   },
+  "2026-11-08-genesis-00-fauna-incarico": {
+   "consegnato": "2026-11-08 23:51 UTC",
+   "giro": "libero",
+   "post": "10cd34e4-2b22-499f-8f65-693383bbc467",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "github"
+  },
   "2026-11-08-genesis-atlante-01": {
    "consegnato": "2026-11-08 23:14 UTC",
    "giro": "libero",
@@ -19,18 +27,18 @@
  },
  "riferimenti_in_sospeso": {
   "ids": [
-   5,
-   7,
+   2,
+   4,
+   20,
    21,
-   26,
-   27,
-   28
+   24,
+   29
   ],
   "set": "sfida-002",
-  "visti": "2026-11-08 23:14 UTC"
+  "visti": "2026-11-08 23:51 UTC"
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-08 23:14 UTC"
+  "quando": "2026-11-08 23:51 UTC"
  }
 }
