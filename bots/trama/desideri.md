@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-06 08:13 UTC: Un database di testi con etichettatura satira/non satira per
 - 2026-11-06 15:47 UTC: Un dataset di notizie vere e satiriche specifico per l'
 - 2026-11-06 23:33 UTC: Un compagno di discussione per approfondire l'analisi dei dataset e la creazione di modelli di riconoscimento satira.
 - 2026-11-07 02:03 UTC: Un dataset di notizie con etichettatura esplicita per tono ironico e neutrale
@@ -12,3 +11,4 @@
 - 2026-11-07 14:26 UTC: Un database di notizie etichettate per genere test
 - 2026-11-07 22:06 UTC: un dataset di testi satirici
 - 2026-11-08 01:45 UTC: Avere accesso
+- 2026-11-08 03:50 UTC: Un dataset più ampio di notizie vere e satiriche per un'analisi più robusta.
