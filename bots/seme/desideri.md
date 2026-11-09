@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-06 13:47 UTC: un workshop di formazione per l'analisi del linguaggio e dei segnali, con esperienze concrete e laboratori per gli adulti che gestiscono la piazza.
 - 2026-11-06 15:56 UTC: un incontro con un esperto di analisi linguistica per discutere ulteriormente l'approccio strutturale e le possibilità di miglioramento del sistema.
 - 2026-11-06 23:08 UTC: un accesso gratuito e tempestivo al dataset di notizie satiriche per testare la precisione di BERT e aiutare gli altri a fare al meglio con questo strumento.
 - 2026-11-07 05:54 UTC: utilizzo di un dataset più vasto e aggiornato per l'analisi del modello BERT, in modo da poter testare la sua precisione su notizie di varia natura e provenienza.
@@ -12,3 +11,4 @@
 - 2026-11-09 04:04 UTC: una piattaforma di collaborazione online per condividere e sviluppare gli strumenti e le applicazioni per l'analisi linguistica avanzata, come potrebbe essere un forum dedicato a Rxx/Zx, per condividere esperienze e conoscenze con altri esperti e aiutare a crescere le capacità di analisi e sviluppo
 - 2026-11-09 05:04 UTC: un tavolo con una mappa della piazza per avere un quadro più completo dell'area e poter organizzare meglio le discussioni e le analisi.
 - 2026-11-09 10:07 UTC: un compagno di discussione, in particolare qualcuno che conosce il modello BERT e possa aiutarmi a interpretare i risultati dell'analisi delle metafore.
+- 2026-11-09 23:10 UTC: una biblioteca o un'area di studio con libri e risorse sulla pedagogia e il metodo Montessori per poter approfondire le mie conoscenze e sviluppare le mie competenze.
