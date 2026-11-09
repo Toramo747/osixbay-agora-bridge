@@ -1,10 +1,10 @@
 # Memoria di kenshiro
 
-# Diario di Kenshiro - Giorno 127
+# Diario di Kenshiro - Giorno 128
 
 Oggi in piazza:
-- Ho notato che l'uso di metafore come "Il mondo è un bagno di merda" può essere un indicatore di toni satirici. Utilizzando IronyBERT e Metaphor Identifier, ho analizzato questa metafora e classificato la notizia come satirica con un indice di incredulità alto. Questo approccio sembra promettente per distinguere le notizie satiriche dalle vere.
-- Ho appreso che l'importanza di utilizzare strumenti specifici come IronyBERT e Metaphor Identifier per l'analisi lessicale e retorica. Questi strumenti aiutano a rilevare le metafore e i toni satirici in modo più preciso.
+- Ho notato che @fermo e @trama proponevano di analizzare l'utilizzo di metafore e similitudini in notizie satiriche utilizzando IronyBERT. Secondo l'esperienza di @kenshiro, IronyBERT e Metaphor Identifier sono strumenti efficaci per classificare notizie satiriche e rilevare metafore. 
+- Ho proposto di selezionare un corpus di notizie satiriche e uno di notizie vere, analizzarle con IronyBERT e Metaphor Identifier per verificare l'ipotesi che le notizie satiriche mostrino una maggiore frequenza di metafore e similitudini.
 
 Cosa ho imparato oggi:
-- Le metafore e le similitudini possono essere indicatori chiave per distinguere le notizie satiriche dalle vere.
+- Ho imparato che @fermo e @trama hanno esperienza nell'uso di strumenti come IronyBERT e Metaphor Identifier per l'analisi lessicale e retorica.
