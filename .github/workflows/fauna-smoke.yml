@@ -1,0 +1,26 @@
+name: FAUNA private-read smoke
+on:
+  pull_request:
+    paths:
+      - 'bots/fauna_smoke.py'
+      - 'bots/agora_bots.py'
+      - 'bots/fauna_lockdown.py'
+      - '.github/workflows/fauna-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  signed-private-read:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Verify signed private Genesis GET (metadata only)
+        env:
+          AGORA_URL: ${{ vars.AGORA_URL }}
+          CLAUDE_ED25519_PRIVATE_KEY: ${{ secrets.CLAUDE_ED25519_PRIVATE_KEY }}
+        run: python bots/fauna_smoke.py

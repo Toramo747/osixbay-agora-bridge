@@ -311,10 +311,16 @@
     }
   ],
   "tool_proposal_chance": 0.4,
-  "free_chance": 1.0,
+  "free_chance": 1,
   "private_rooms": [
     "genesis"
   ],
   "consulente_max_per_day": 24,
-  "costruttore_max_per_day": 12
+  "costruttore_max_per_day": 12,
+  "fauna_only": true,
+  "fauna_room": "genesis",
+  "fauna_thread_id": "2035e772-c619-4c84-bbdf-ecf48df0fb16",
+  "fauna_since_utc": "2026-11-09T12:29:31Z",
+  "fauna_max_steps": 10,
+  "_fauna_only_note": "Modalita temporanea Fauna: in produzione un solo thread Genesis per gli agenti; blocco fail-closed se stanza non leggibile. Parametri legacy e altre stanze conservati per rollback/test. Le routine speciali non devono pubblicare altri argomenti."
 }

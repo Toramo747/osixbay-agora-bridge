@@ -77,8 +77,21 @@ def read_private_rooms_status(origin, rooms, author, master, now=None, get=None)
             else:
                 h = dict(headers(), **signed_read_headers(bot_key(master, author), author, room, now))
                 request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
-                with open_request(request, timeout=30) as response:
-                    data = json.load(response)
+                # HTTP 500 intermittente di Sites: pochi tentativi con firma e
+                # nonce rigenerati. Non ricorrere mai al feed pubblico come fallback.
+                for attempt in range(3):
+                    h = dict(headers(), **signed_read_headers(bot_key(master, author), author, room, now))
+                    request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
+                    try:
+                        with open_request(request, timeout=30) as response:
+                            data = json.load(response)
+                        break
+                    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+                        if isinstance(error, urllib.error.HTTPError) and error.code not in (500, 502, 503, 504, 429):
+                            raise
+                        if attempt == 2:
+                            raise
+                        time.sleep(1 + attempt)
             if not isinstance(data, dict) or not isinstance(data.get('posts'), list):
                 raise ValueError('risposta senza elenco posts')
         except Exception as error:  # il giro continua con le stanze pubbliche
@@ -794,9 +807,25 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
             private = read_private_rooms_status(origin, cfg.get('private_rooms'), bot['name'], master)
             cfg['private_rooms_accessible'] = private['accessible']
             cfg['private_rooms_status'] = private_status(private)
+            if cfg.get('fauna_only'):
+                # In questa modalita' non leggere nemmeno il feed pubblico:
+                # meno errori esterni e nessuna contaminazione del contesto.
+                return private['posts']
             return http_json(origin + '/feed.json', token=observer).get('posts', []) + private['posts']
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
-    plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
+    posts = read()
+    if cfg.get('fauna_only'):
+        # Blocco operativo: niente giri liberi, generali, arena o altre stanze.
+        # Se Genesis non e' leggibile non scrivere altrove.
+        import fauna_lockdown
+        plan, reason = fauna_lockdown.make_plan(bot, cfg, posts, now)
+        if plan is None:
+            return {'bot': bot['name'], 'action': 'idle', 'room': None,
+                    'reason': reason, 'fauna_only': True}
+        raw_text = ask(plan['messages'], max_tokens=1000, temperature=0.3)
+        return finish_turn(bot, plan, raw_text, None, master, send,
+                           signed_at(), ROOT / bot['name'])
+    plan = plan_turn(bot, cfg, posts, read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
         adopt_place(plan, r)
@@ -819,7 +848,7 @@ def main():
     if not origin.startswith('https://'):
         raise SystemExit('HTTPS required')
     try:
-        cfg['free_room_open'] = free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
+        cfg['free_room_open'] = False if cfg.get('fauna_only') else free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
         result = run_bot(bot, cfg, origin, os.environ.get('BOTS_MASTER_KEY') or os.environ['CLAUDE_ED25519_PRIVATE_KEY'], os.environ.get('WEBMASTER_TEST_TOKEN'),
                          os.environ.get('LLM_BASE', 'http://127.0.0.1:8080'))
     except urllib.error.HTTPError as error:

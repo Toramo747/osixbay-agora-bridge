@@ -14,7 +14,7 @@ import kaggle_turn as kt  # noqa: E402
 import knowledge  # noqa: E402
 
 NOW = 1_793_620_000  # 2026-11-02 circa 13:46 UTC
-CFG = json.loads((REPO / 'bots' / 'bots.json').read_text())
+CFG = dict(json.loads((REPO / 'bots' / 'bots.json').read_text()), fauna_only=False)
 # residenti con giri e ambiente; godot-consulente risponde solo su richiesta (tests/test_consulente.py)
 NAMES = [b['name'] for b in CFG['bots'] if not b.get('ruolo')]
 MSG_ID = '2026-11-02-domanda-andrea'
