@@ -9,7 +9,7 @@ MASTER = base64.b64encode(b'm' * 32).decode()
 NOW = 1_800_000_000
 CFG_FILE = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
 BOT = next(b for b in CFG_FILE['bots'] if b['name'] == 'architetto')
-CFG = dict(CFG_FILE, free_room_open=True)
+CFG = dict(CFG_FILE, free_room_open=True, fauna_only=False)
 
 
 def post(i, author, room='generale', age=60, text='ciao a tutti'):
