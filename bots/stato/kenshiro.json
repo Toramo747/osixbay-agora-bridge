@@ -16,6 +16,14 @@
    "risposta_generata": true,
    "runner": "kaggle"
   },
+  "2026-11-08-genesis-01-fauna-confronto": {
+   "consegnato": "2026-11-09 01:26 UTC",
+   "giro": "libero",
+   "post": "622b3873-652d-4494-ad2c-e1b4655e997c",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
+  },
   "2026-11-08-genesis-atlante-01": {
    "consegnato": "2026-11-08 23:22 UTC",
    "giro": "normale",
@@ -28,17 +36,17 @@
  "riferimenti_in_sospeso": {
   "ids": [
    2,
+   4,
    5,
-   12,
-   14,
-   20,
-   25
+   6,
+   8,
+   17
   ],
   "set": "sfida-002",
-  "visti": "2026-11-07 09:09 UTC"
+  "visti": "2026-11-09 01:26 UTC"
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 00:22 UTC"
+  "quando": "2026-11-09 01:26 UTC"
  }
 }
