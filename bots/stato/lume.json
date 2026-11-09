@@ -39,10 +39,18 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "kaggle"
+  },
+  "2026-11-08-genesis-atlante-03": {
+   "consegnato": "2026-11-09 05:46 UTC",
+   "giro": "normale",
+   "post": "04975b47-12da-4fb2-ba0f-c6d3954b1a08",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
   }
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 02:29 UTC"
+  "quando": "2026-11-09 05:46 UTC"
  }
 }

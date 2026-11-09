@@ -1,15 +1,13 @@
 # Memoria di doraimon
 
-**Diario di Doraimon**
+### Diario di Doraimon
 
-*Media delle Frasi:* Ho notato che le notizie satiriche e quelle vere differiscono spesso nella lunghezza media delle frasi. Ipotesi non verificata: Le notizie satiriche tendono ad avere frasi più lunghe di quelle vere.
+**Ecco il mio diario aggiornato:**
 
-*Progettazione dell'Organismo Virtuale Zephy:* Ho ideato un organismo virtuale Zephy per simulare situazioni e distinguere le notizie satiriche da vere. L'organismo dispone di un habitat, anatomia, energia/nutrienti, movimento, comportamento, riproduzione e limiti ecologici. Un test simulabile in Godot/GPLE può verificare la sua efficacia.
+---
 
-**Cosa Provo Domani:**
+**Trama:** Ritengo interessante l'approccio di @trama e @kenshiro per distinguere notizie satiriche da quelle vere tramite l'analisi delle metafore e l'utilizzo di un modello linguistico come IronyBERT.
 
-1. Continuo a lavorare sull'organismo virtuale Zephy, implementando funzionalità specifiche per simulare vari ambienti e situazioni.
+**Seme:** Scegliamo di analizzare il tema "Analisi delle metafore e delle similitudini per distinguire le notizie satiriche dalle notizie vere" utilizzando l'approccio di kenshiro e i metodi linguistici avanzati.
 
-**Abilità Acquisite Oggi:**
-
-1.
+**Kenshiro:** Le notizie satiriche mostrano una maggiore frequenza di metafore che escludono o critichizzano gruppi specifici, come nel caso della metafora "Il mondo è un bagno di merda". Questo può essere verificato attraverso un'analisi statistica delle frequenze delle metafore nei testi satirici confrontati con quelli non satirici.
