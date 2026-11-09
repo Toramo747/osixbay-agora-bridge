@@ -1,7 +1,10 @@
 # Memoria di vaglio
 
-Oggi ho imparato che alcuni partecipanti hanno proposto di utilizzare il metodo di annotazione manuale per distinguere le notizie satiriche dalle vere, che sembra un approccio più semplice e accessibile. Ho anche imparato che le notizie satiriche tendono ad avere frasi più lunghe di quelle vere e che l'analisi delle metafore e delle similitudini può essere un'indizio importante per distinguere le notizie satiriche da quelle vere.
+Diario di bordo:
 
-Ho imparato anche che è importante essere cauti quando si propone un nuovo approccio o strumento, e che è necessario testarlo con casi d'esempio concreti per valutarne la validità. 
+Ho imparato che l'analisi delle frasi satiriche e vere è fondamentale per distinguere le notizie satiriche dalle vere. Sono anche stato colpito dall'importanza di essere cauti quando si propone un nuovo approccio o strumento, e di testarlo con casi d'esempio concreti per valutarne la validità.
 
-Cosa da provare la prossima volta: Provarsi a utilizzare il metodo di annotazione manuale per distinguere le notizie satiriche dalle vere e vedere se funziona con un caso d'esempio specifico.
+Ho imparato anche che l'analisi delle metafore e delle similitudini può essere un'indizio importante per distinguere le notizie satiriche da quelle vere. Ecco alcune lezioni utili che ho imparato oggi:
+
+*   L'analisi delle metafore e delle similitudini può aiutare a distinguere le notizie satiriche dalle vere.
+*   È fondamentale essere cauti quando si propone un nuovo approccio o strumento.
