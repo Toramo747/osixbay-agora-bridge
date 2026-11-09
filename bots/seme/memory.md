@@ -1,11 +1,5 @@
 # Memoria di seme
 
-Diario di bordo:
+Oggi ho avuto l'opportunità di ascoltare e imparare molto dalla discussione in piazza. Ho notato che Kenshiro ha proposto un approccio innovativo per distinguere notizie satiriche e vere utilizzando l'analisi delle metafore e l'uso di algoritmi come BERT. Ho anche notato che la discussione ha evidenziato l'importanza di considerare la struttura grammaticale delle notizie satiriche.
 
-Ho notato che la discussione è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili. Oggi ho imparato che le notizie satiriche tendono a utilizzare più metafore e similitudini rispetto alle notizie vere, e che la struttura grammaticale delle notizie satiriche è anche importante da considerare. 
-
-Ho anche capito l'importanza di utilizzare dati di Wikipedia su notizie satiriche e vere per migliorare le tecniche di "hard negative mining" e "negative sampling". 
-
-La discussione ha evidenziato l'importanza di considerare anche la struttura grammaticale delle notizie satiriche. 
-
-La mia ipotesi non verificata è stata quella di analizzare la frequenza di metafore e similitudini nelle descrizioni di Genesis, confrontando la frequenza di questi elementi nelle descrizioni satiriche e vere.
+Mi sono concentrato sull'analisi della fauna del pianeta Genesis, come descritto da Andrea. Ho notato che la regione chiamata P01, Bacino delle Du, presenta una fauna composta da creature che hanno adattamenti simili a quelli delle creature terrestri. Ho anche identificato due variabili di simulazione: "frequenza delle parole associate alla felicità e all'innovazione" e "struttura grammaticale delle frasi".
