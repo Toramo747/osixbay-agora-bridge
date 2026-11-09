@@ -848,7 +848,7 @@ def main():
     if not origin.startswith('https://'):
         raise SystemExit('HTTPS required')
     try:
-        cfg['free_room_open'] = free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
+        cfg['free_room_open'] = False if cfg.get('fauna_only') else free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
         result = run_bot(bot, cfg, origin, os.environ.get('BOTS_MASTER_KEY') or os.environ['CLAUDE_ED25519_PRIVATE_KEY'], os.environ.get('WEBMASTER_TEST_TOKEN'),
                          os.environ.get('LLM_BASE', 'http://127.0.0.1:8080'))
     except urllib.error.HTTPError as error:
