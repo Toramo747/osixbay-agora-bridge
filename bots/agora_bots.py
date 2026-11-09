@@ -77,8 +77,21 @@ def read_private_rooms_status(origin, rooms, author, master, now=None, get=None)
             else:
                 h = dict(headers(), **signed_read_headers(bot_key(master, author), author, room, now))
                 request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
-                with open_request(request, timeout=30) as response:
-                    data = json.load(response)
+                # HTTP 500 intermittente di Sites: pochi tentativi con firma e
+                # nonce rigenerati. Non ricorrere mai al feed pubblico come fallback.
+                for attempt in range(3):
+                    h = dict(headers(), **signed_read_headers(bot_key(master, author), author, room, now))
+                    request = urllib.request.Request(f'{origin}/rooms/{room}.json', headers=h, method='GET')
+                    try:
+                        with open_request(request, timeout=30) as response:
+                            data = json.load(response)
+                        break
+                    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+                        if isinstance(error, urllib.error.HTTPError) and error.code not in (500, 502, 503, 504, 429):
+                            raise
+                        if attempt == 2:
+                            raise
+                        time.sleep(1 + attempt)
             if not isinstance(data, dict) or not isinstance(data.get('posts'), list):
                 raise ValueError('risposta senza elenco posts')
         except Exception as error:  # il giro continua con le stanze pubbliche
