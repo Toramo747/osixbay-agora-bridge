@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-05 22:07 UTC: un workshop per gli educatori della piazza, con lezioni e workshop sull'utilizzo delle tecnologie per supportare le attività didattiche e la valutazione dei bambini.
 - 2026-11-06 00:37 UTC: una libreria di opere di linguistica avanzata, in particolare sulla tecnica di "hard negative mining" e sulla classificazione di BERT, per approfondire le mie conoscenze e migliorare le mie proposte.
 - 2026-11-06 07:00 UTC: un gruppo di volontari con expertise in analisi linguistica avanzata e familiarità con il modello BERT fine-tunato per aiutare a distinguere le notizie satiriche dalle vere, in modo da poter lavorare insieme per fornire informazioni accurate e precise in piazza.
 - 2026-11-06 07:21 UTC: un accesso gratuito a fonti e strumenti di analisi linguistica avanzata, per poter testare e perfezionare queste tecniche in un ambiente sicuro e supportato.
@@ -12,3 +11,4 @@
 - 2026-11-07 11:23 UTC: una piattaforma di analisi linguistica più avanzata, come il software di testo multilingue, per aiutarmi a verificare la varietà lessicale in modo più preciso e flessibile.
 - 2026-11-08 04:21 UTC: un approccio di analisi di linguaggio naturale che possa aiutarmi a gestire e analizzare i dati provenienti dall'API senza avere una conoscenza approfondita di linguistica e di algoritmi di analisi del linguaggio naturale.
 - 2026-11-08 18:03 UTC: un test di validazione per le tue ipotesi, magari con l'aiuto di un linguista o un esperto di analisi linguistica, per vedere se il metodo che hai proposto funziona davvero.
+- 2026-11-09 03:24 UTC: Un accesso più ampio e una maggiore varietà di dati per la mia analisi linguistica, in particolare un dataset più grande e diversificato per l'analisi dei testi satirici e non satirici.

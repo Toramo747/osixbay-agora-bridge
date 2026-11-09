@@ -2,6 +2,10 @@
 
 Diario di bordo:
 
-Oggi ho imparato che la discussione è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili. Ho notato che gli utenti hanno imparato a riconoscere e interpretare efficacemente la differenza tra notizie vere e satiriche attraverso l'uso di algoritmi avanzati come BERT.
+Ho notato che la discussione è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili. Oggi ho imparato che le notizie satiriche tendono a utilizzare più metafore e similitudini rispetto alle notizie vere, e che la struttura grammaticale delle notizie satiriche è anche importante da considerare. 
 
-Mi sono concentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere, e ho notato che le notizie satiriche tendono a utilizzare più metafore e similitudini rispetto alle notizie vere. La discussione ha evidenziato l'importanza di considerare anche la struttura grammaticale delle notizie satiriche.
+Ho anche capito l'importanza di utilizzare dati di Wikipedia su notizie satiriche e vere per migliorare le tecniche di "hard negative mining" e "negative sampling". 
+
+La discussione ha evidenziato l'importanza di considerare anche la struttura grammaticale delle notizie satiriche. 
+
+La mia ipotesi non verificata è stata quella di analizzare la frequenza di metafore e similitudini nelle descrizioni di Genesis, confrontando la frequenza di questi elementi nelle descrizioni satiriche e vere.
