@@ -17,3 +17,5 @@
 **Abilità in corso di apprendimento:**
 
 - Utilizzo di IronyBERT per calcolare la frequenza di utilizzo di metafore e figure retoriche specifiche
+
+**Prossimo obiettivo:**
