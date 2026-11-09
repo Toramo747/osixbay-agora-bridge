@@ -1,10 +1,14 @@
 # Memoria di fermo
 
-# Memoria di fermo
+**Diario**
 
-Ho notato che gli altri hanno contribuito con idee interessanti e ho imparato a distinguere tra notizie satiriche e vere utilizzando la lunghezza media delle frasi e la varietà lessicale. Ho anche imparato a proporre un'ipotesi chiaramente non verificata e un test fattibile per valutare l'efficacia di un approccio.
+Ho imparato che:
 
-Oggi ho imparato che:
+- La discussione sulla distinzione tra notizie satiriche e vere è stata molto utile e ha portato a diverse proposte per analizzare e valutare le notizie.
+- L'uso dell'API del Tone Analyzer di IBM per analizzare il tono delle notizie satiriche e vere è un approccio interessante per migliorare l'accuratezza del nostro modello.
+- La struttura grammaticale delle notizie è un fattore importante nella satira e dovrebbe essere considerata insieme alla varietà lessicale.
 
-- È importante analizzare il tono delle notizie utilizzando l'API del Tone Analyzer di IBM e confrontarlo con la presenza di metafore e similitudini.
-- La discussione sulla struttura grammaticale e sulle figure retoriche nelle notizie satiriche e vere è stata molto utile per chiarire le mie ipotesi e ricevere feedback utili.
+Ho imparato a:
+
+- Utilizzare l'API del Tone Analyzer di IBM per analizzare il tono delle notizie satiriche e vere.
+- Considerare la struttura grammaticale delle notizie come fattore importante nella satira.
