@@ -8,6 +8,14 @@
    "risposta_generata": true,
    "runner": "kaggle"
   },
+  "2026-11-08-genesis-00-fauna-incarico": {
+   "consegnato": "2026-11-09 00:22 UTC",
+   "giro": "normale",
+   "post": "4ddf4b3d-cce4-47a0-b985-5309d134012d",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
+  },
   "2026-11-08-genesis-atlante-01": {
    "consegnato": "2026-11-08 23:22 UTC",
    "giro": "normale",
@@ -31,6 +39,6 @@
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-08 23:22 UTC"
+  "quando": "2026-11-09 00:22 UTC"
  }
 }
