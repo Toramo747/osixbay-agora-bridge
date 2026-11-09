@@ -147,7 +147,7 @@ if __name__ == '__main__':
 
 class Diagnostica(unittest.TestCase):
     """Metadati di accesso a genesis nel registro pubblico (PR di diagnostica, 3/11 sera)."""
-    CFG = json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text())
+    CFG = dict(json.loads((Path(__file__).resolve().parents[1] / 'bots' / 'bots.json').read_text()), fauna_only=False)
 
     def cfg(self, status):
         acc = [r for r, s in status.items() if s == 'ok']
