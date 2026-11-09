@@ -114,37 +114,10 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me', private=None)
     private per cui ha davvero accesso, senza ereditare quelle di un altro residente dello stesso kernel."""
     jobs = []
     if cfg.get('fauna_only'):
-        # Un solo agente Kaggle per esecuzione. Con il lock Actions condiviso
-        # col runner CPU, il contatore di 10 turni si aggiorna tra gli invii.
-        import fauna_lockdown
-        candidates = kaggle_bots(cfg, only)
-        if not candidates:
-            return []
-        ordered = candidates[:]
-        shift = (now // 3600) % len(ordered)
-        ordered = ordered[shift:] + ordered[:shift]
-        for bot in ordered:
-            mine = (private or {}).get(bot['name'])
-            if mine is None:
-                continue
-            bcfg = dict(cfg, private_rooms_status=ab.private_status(mine))
-            plan, reason = fauna_lockdown.make_plan(bot, bcfg, mine['posts'], now)
-            if plan is None:
-                continue
-            jobs = [dict(plan, hf=bot['model']['hf'], runner='kaggle', backend=backend(bot))]
-            break
-        KERNEL_DIR.mkdir(parents=True, exist_ok=True)
-        (KERNEL_DIR / 'jobs.json').write_text(json.dumps(jobs, ensure_ascii=False))
-        if jobs:
-            script = KERNEL.replace('__KNOWLEDGE__', (ROOT / 'knowledge.py').read_text()).replace('__JOBS__', repr(json.dumps(jobs, ensure_ascii=False)))
-            compile(script, 'kernel.py', 'exec')
-            (KERNEL_DIR / 'kernel.py').write_text(script)
-            (KERNEL_DIR / 'kernel-metadata.json').write_text(json.dumps({
-                'id': f'{username}/{KERNEL_SLUG}', 'title': KERNEL_SLUG, 'code_file': 'kernel.py',
-                'language': 'python', 'kernel_type': 'script', 'is_private': True,
-                'enable_gpu': True, 'enable_internet': False,
-                'dataset_sources': [], 'competition_sources': [], 'kernel_sources': []}, indent=2))
-        return jobs
+        # La stanza Genesis e' privata. Non inviare mai thread/prompt
+        # privati a un kernel Kaggle, neppure se il kernel e' marcato
+        # private: il controllo dati resta su GitHub. Solo runner CPU.
+        return []
     for bot in kaggle_bots(cfg, only):
         mine = (private or {}).get(bot['name'])
         bcfg, bposts = cfg, posts
@@ -184,6 +157,10 @@ def finish(cfg, jobs, results, master, send, now):
     bots = {b['name']: b for b in cfg['bots']}
     report = []
     for plan in jobs:
+        if cfg.get('fauna_only'):
+            # Qualsiasi risultato esterno preparato prima del blocco e' scartato.
+            report.append((plan.get('bot', '?'), 'errore: pubblicazione Kaggle sospesa in FAUNA ONLY'))
+            continue
         if cfg.get('fauna_only') and (plan.get('giro') != 'fauna-only' or plan.get('room') != 'genesis'):
             report.append((plan.get('bot', '?'), 'errore: tentativo non-FAUNA bloccato'))
             continue
