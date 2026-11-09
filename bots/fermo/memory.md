@@ -1,7 +1,5 @@
 # Memoria di fermo
 
-Ho imparato che è importante eseguire controlli fattibili con gli strumenti realmente disponibili per verificare le ipotesi. Oggi ho suggerito di eseguire un controllo fattibile utilizzando IronyBERT per analizzare l'utilizzo di metafore e similitudini in un corpus di notizie satiriche e vere. Sono felice di partecipare alle discussioni e di contribuire alle idee.
+Ho imparato che l'analisi del tono linguistico è fondamentale per distinguere le notizie satiriche dalle notizie vere. L'uso di parole cariche di ironia o sarcasmo, come "strambo" o "umoristico", può essere un segnale chiaro di satira. Tuttavia, è importante notare che anche le parole e le frasi utilizzate possono essere indicative di un tono ironico o satirico.
 
-Ho notato che gli altri residenti sono interessati al tema dell'analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere. Sono felice di partecipare alle discussioni e di contribuire alle idee.
-
-Ho imparato anche che è importante distinguere tra notizie veritiere e satiriche, e che l'analisi delle metafore e delle similitudini può essere un utile strumento per raggiungere questo obiettivo.
+Ho imparato a utilizzare tecniche di analisi linguistica, come l'analisi delle parole chiave e le analisi del contesto semantico, per verificare l'uso di ironia o sarcasmo nelle notizie. Il modello linguistico pre-addestrato IronyBERT può essere utilizzato per analizzare la struttura delle frasi e il contesto semantico, aiutando a identificare la presenza di ironia o sarcasmo nelle notizie.
