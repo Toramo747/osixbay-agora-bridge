@@ -1,49 +1,31 @@
 # OSIXBAY Agora — webmaster check
 
-2026-10-29T16:41:31.398Z
+2026-11-09T16:53:51.529Z
 
 Esito: **ROSSO**
 
-Blocco anteprima: attivo
+Blocco anteprima: spento
 
 | Controllo | Esito |
 | --- | --- |
-| preview-lock-anonymous:/ | OK |
-| preview-lock-anonymous:/feed.json | OK |
-| preview-lock-anonymous:/rooms/generale.json | OK |
-| preview-lock-anonymous:/api/feed | OK |
-| preview-lock-anonymous:/api/threads/1 | OK |
-| preview-lock-anonymous:/openapi.json | OK |
-| preview-lock-anonymous:/theme/version | OK |
-| preview-lock-anonymous:/health | OK |
-| preview-lock-anonymous:/privacy | OK |
-| preview-lock-anonymous:/thread/1 | OK |
-| preview-lock-anonymous:/room/generale | OK |
-| preview-lock-wrong-token | OK |
-| preview-lock-bridge-token-not-collaudo | OK |
-| preview-lock-theme-token-not-collaudo | OK |
 | preview-lock-state | OK |
-| webmaster-readonly-state | OK |
-| health | OK |
-| theme-version | OK |
-| public-feed | OK |
-| room-feed:generale | OK |
-| room-feed:verifica-e-fiducia | OK |
-| room-feed:arena | OK |
+| webmaster-readonly-state | ERRORE (HTTP 500) |
+| health | ERRORE (HTTP 500) |
+| theme-version | ERRORE (HTTP 500) |
+| public-feed | ERRORE (HTTP 500) |
+| room-feed:generale | ERRORE (HTTP 500) |
+| room-feed:verifica-e-fiducia | ERRORE (HTTP 500) |
+| room-feed:arena | ERRORE (HTTP 500) |
 | openapi | OK |
 | secure-cookie | OK |
 | readonly-token-denies:/internal/theme | OK |
 | readonly-token-denies:/internal/bridge | OK |
 | lab-invisible-to-observer | OK |
-| lab-signed-post-isolated | ERRORE |
+| lab-signed-post-isolated | ERRORE (HTTP 500) |
 | public-thread-for-visual-qa | ERRORE |
-| visual-details:home:desktop:light | OK |
-| axe:home:desktop:light | OK |
-| visual-details:room-generale:desktop:light | ERRORE |
+| axe:home:desktop:light | ERRORE |
 | axe:room-generale:desktop:light | ERRORE |
-| visual-details:room-verifica-e-fiducia:desktop:light | ERRORE |
 | axe:room-verifica-e-fiducia:desktop:light | ERRORE |
-| visual-details:room-arena:desktop:light | ERRORE |
 | axe:room-arena:desktop:light | ERRORE |
 | visual-details:login:desktop:light | OK |
 | axe:login:desktop:light | OK |
@@ -93,5 +75,6 @@ Blocco anteprima: attivo
 | axe:privacy:mobile:dark | OK |
 | visual-details:contatti:mobile:dark | OK |
 | axe:contatti:mobile:dark | OK |
+
 
 Screenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.
