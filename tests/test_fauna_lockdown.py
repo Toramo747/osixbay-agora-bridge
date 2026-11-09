@@ -117,5 +117,34 @@ class FaunaOnlyTest(unittest.TestCase):
         self.assertEqual(calls, [])
 
 
+    def test_kaggle_fauna_only_never_exports_private_posts(self):
+        import tempfile
+        from unittest import mock
+        import kaggle_turn
+        with tempfile.TemporaryDirectory() as folder:
+            with mock.patch.object(kaggle_turn, "KERNEL_DIR", Path(folder)):
+                jobs = kaggle_turn.prepare(
+                    dict(self.cfg, bots=[{"name": "lume", "runner": "kaggle",
+                                           "model": {"hf": "unused"}}]),
+                    [], BASE + 100, username="test",
+                    private={"lume": {"posts": [self.root],
+                                      "accessible": ["genesis"], "errors": {}}})
+            self.assertEqual(jobs, [])
+            self.assertFalse(any(Path(folder).iterdir()))
+
+    def test_kaggle_fauna_only_discards_results(self):
+        import kaggle_turn
+        reports = kaggle_turn.finish(
+            self.cfg,
+            [{"bot": "lume", "action": "reply", "room": "genesis", "giro": "fauna-only"}],
+            [{"bot": "lume", "text": "testo privato"}],
+            None,
+            lambda p: self.fail("Kaggle must not publish in FAUNA ONLY"),
+            BASE + 100,
+        )
+        self.assertEqual(len(reports), 1)
+        self.assertIn("sospesa", reports[0][1])
+
+
 if __name__ == "__main__":
     unittest.main()
