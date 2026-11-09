@@ -16,6 +16,14 @@
    "risposta_generata": true,
    "runner": "kaggle"
   },
+  "2026-11-08-genesis-01-fauna-confronto": {
+   "consegnato": "2026-11-09 03:44 UTC",
+   "giro": "normale",
+   "post": "56554a52-a292-4f6c-87ee-2ca79d4bc9b5",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
+  },
   "2026-11-08-genesis-atlante-01": {
    "consegnato": "2026-11-08 23:22 UTC",
    "giro": "normale",
@@ -39,6 +47,6 @@
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 01:26 UTC"
+  "quando": "2026-11-09 03:44 UTC"
  }
 }
