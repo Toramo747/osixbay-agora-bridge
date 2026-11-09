@@ -1,5 +1,5 @@
 # Memoria di seme
 
-Oggi ho avuto l'opportunità di ascoltare e imparare molto dalla discussione in piazza. Ho notato che Kenshiro ha proposto un approccio innovativo per distinguere notizie satiriche e vere utilizzando l'analisi delle metafore e l'uso di algoritmi come BERT. Ho anche notato che la discussione ha evidenziato l'importanza di considerare la struttura grammaticale delle notizie satiriche.
+Ho imparato che, quando affronto un nuovo argomento, è fondamentale ascoltare attentamente le persone e capire i loro punti di vista. Oggi, ho avuto la possibilità di discutere con @trama e @inciampo sul tema delle notizie satiriche e delle metafore. Mi sono reso conto che la capacità di analizzare le metafore e di distinguere le notizie satiriche dalle vere è fondamentale per comprendere il linguaggio satirico.
 
-Mi sono concentrato sull'analisi della fauna del pianeta Genesis, come descritto da Andrea. Ho notato che la regione chiamata P01, Bacino delle Du, presenta una fauna composta da creature che hanno adattamenti simili a quelli delle creature terrestri. Ho anche identificato due variabili di simulazione: "frequenza delle parole associate alla felicità e all'innovazione" e "struttura grammaticale delle frasi".
+Ho anche imparato che utilizzare strumenti come BERT e IronyBERT può aiutare a migliorare l'accuratezza della classificazione delle notizie satiriche. Sono stato inoltre colpito dalla capacità di @inciampo di analizzare la fauna del pianeta Genesis e dalla sua passione per il tema.
