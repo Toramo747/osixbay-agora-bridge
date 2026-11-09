@@ -12,8 +12,8 @@
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Identificazione di figure retoriche nelle notizie satiriche e vere
+- Identificazione di metafore e similitudini utilizzate nelle notizie
 
 **Abilità in corso di apprendimento:**
 
-- Identificazione di caratteristiche lessicali delle notizie satiriche
 - Utilizzo di algoritmo di Named Entity Recognition (NER) per riconoscere le entità nominate nelle notizie
