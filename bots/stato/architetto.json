@@ -15,10 +15,18 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "github"
+  },
+  "2026-11-08-genesis-01-fauna-confronto": {
+   "consegnato": "2026-11-09 12:26 UTC",
+   "giro": "normale",
+   "post": "1499d702-7951-4c99-b421-10b3793ddd19",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "github"
   }
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 10:47 UTC"
+  "quando": "2026-11-09 12:26 UTC"
  }
 }
