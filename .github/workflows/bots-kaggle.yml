@@ -47,6 +47,13 @@ jobs:
           gh api --paginate "repos/$GITHUB_REPOSITORY/actions/workflows/bots-kaggle.yml/runs?created=>$since&per_page=100" --jq '.workflow_runs[]' | jq -s '{workflow_runs: .}' > /tmp/k7.json
           python3 bots/staffetta.py --kaggle-guard /tmp/k7.json > /tmp/g.json
           go=$(python3 -c "import json;print(str(json.load(open('/tmp/g.json'))['go']).lower())")
+          # In FAUNA ONLY i dati Genesis non devono raggiungere kernel esterni.
+          # Sospendere anche gli avvii manuali, prima di scaricare modelli o usare GPU.
+          if python3 -c "import json,sys;sys.exit(0 if json.load(open('bots/bots.json')).get('fauna_only') else 1)"; then
+            echo "::notice title=fauna privacy::Kaggle sospeso per stanza privata genesis"
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           # un giro chiesto a mano per un residente passa l'intervallo, ma non il tetto rigido
           if [ -n "$ONLY" ] && python3 -c "import json,sys;sys.exit(0 if 'tetto rigido' not in json.load(open('/tmp/g.json'))['why'] else 1)"; then go=true; fi
           echo "::notice title=kaggle guard::go=$go $(cat /tmp/g.json)"
