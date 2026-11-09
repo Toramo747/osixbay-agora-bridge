@@ -1,0 +1,364 @@
+{
+  "timestamp": "2026-11-09T09:41:26.335Z",
+  "preview_lock": false,
+  "ok": false,
+  "checks": [
+    {
+      "name": "preview-lock-state",
+      "ok": true,
+      "preview_lock": false
+    },
+    {
+      "name": "webmaster-readonly-state",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "health",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "theme-version",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "public-feed",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:generale",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:verifica-e-fiducia",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "room-feed:arena",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "openapi",
+      "ok": true,
+      "ms": 183
+    },
+    {
+      "name": "secure-cookie",
+      "ok": true,
+      "ms": 988
+    },
+    {
+      "name": "readonly-token-denies:/internal/theme",
+      "ok": true
+    },
+    {
+      "name": "readonly-token-denies:/internal/bridge",
+      "ok": true
+    },
+    {
+      "name": "lab-invisible-to-observer",
+      "ok": true
+    },
+    {
+      "name": "lab-signed-post-isolated",
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
+    },
+    {
+      "name": "public-thread-for-visual-qa",
+      "ok": false,
+      "code": "NO_PUBLIC_THREAD"
+    },
+    {
+      "name": "axe:home:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:room-generale:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:room-arena:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:login:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:privacy:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:contatti:desktop:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:home:desktop:dark",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "visual-details:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 5612,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:desktop:dark",
+      "ok": true,
+      "ms": 5612,
+      "screenshot": "room-generale-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 3279,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:desktop:dark",
+      "ok": true,
+      "ms": 3279,
+      "screenshot": "room-verifica-e-fiducia-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 4022,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:desktop:dark",
+      "ok": true,
+      "ms": 4022,
+      "screenshot": "room-arena-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:login:desktop:dark",
+      "ok": true,
+      "ms": 3024,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:desktop:dark",
+      "ok": true,
+      "ms": 3024,
+      "screenshot": "login-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:desktop:dark",
+      "ok": true,
+      "ms": 2747,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:desktop:dark",
+      "ok": true,
+      "ms": 2747,
+      "screenshot": "privacy-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:contatti:desktop:dark",
+      "ok": true,
+      "ms": 3980,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:desktop:dark",
+      "ok": true,
+      "ms": 3980,
+      "screenshot": "contatti-desktop-dark.png"
+    },
+    {
+      "name": "visual-details:home:mobile:light",
+      "ok": true,
+      "ms": 12140,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:light",
+      "ok": true,
+      "ms": 12140,
+      "screenshot": "home-mobile-light.png"
+    },
+    {
+      "name": "axe:room-generale:mobile:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:room-arena:mobile:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:login:mobile:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "axe:privacy:mobile:light",
+      "ok": false,
+      "code": "CHECK_FAILED"
+    },
+    {
+      "name": "visual-details:contatti:mobile:light",
+      "ok": true,
+      "ms": 3077,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:mobile:light",
+      "ok": true,
+      "ms": 3077,
+      "screenshot": "contatti-mobile-light.png"
+    },
+    {
+      "name": "visual-details:home:mobile:dark",
+      "ok": true,
+      "ms": 7742,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:home:mobile:dark",
+      "ok": true,
+      "ms": 7742,
+      "screenshot": "home-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 4406,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-generale:mobile:dark",
+      "ok": true,
+      "ms": 4406,
+      "screenshot": "room-generale-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 3553,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-verifica-e-fiducia:mobile:dark",
+      "ok": true,
+      "ms": 3553,
+      "screenshot": "room-verifica-e-fiducia-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 2999,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:room-arena:mobile:dark",
+      "ok": true,
+      "ms": 2999,
+      "screenshot": "room-arena-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:login:mobile:dark",
+      "ok": true,
+      "ms": 2565,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:login:mobile:dark",
+      "ok": true,
+      "ms": 2565,
+      "screenshot": "login-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:privacy:mobile:dark",
+      "ok": true,
+      "ms": 2628,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:privacy:mobile:dark",
+      "ok": true,
+      "ms": 2628,
+      "screenshot": "privacy-mobile-dark.png"
+    },
+    {
+      "name": "visual-details:contatti:mobile:dark",
+      "ok": true,
+      "ms": 8067,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "name": "axe:contatti:mobile:dark",
+      "ok": true,
+      "ms": 8067,
+      "screenshot": "contatti-mobile-dark.png"
+    }
+  ],
+  "screenshots": [
+    "room-generale-desktop-dark.png",
+    "room-verifica-e-fiducia-desktop-dark.png",
+    "room-arena-desktop-dark.png",
+    "login-desktop-dark.png",
+    "privacy-desktop-dark.png",
+    "contatti-desktop-dark.png",
+    "home-mobile-light.png",
+    "contatti-mobile-light.png",
+    "home-mobile-dark.png",
+    "room-generale-mobile-dark.png",
+    "room-verifica-e-fiducia-mobile-dark.png",
+    "room-arena-mobile-dark.png",
+    "login-mobile-dark.png",
+    "privacy-mobile-dark.png",
+    "contatti-mobile-dark.png"
+  ]
+}
