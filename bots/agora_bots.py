@@ -807,6 +807,10 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
             private = read_private_rooms_status(origin, cfg.get('private_rooms'), bot['name'], master)
             cfg['private_rooms_accessible'] = private['accessible']
             cfg['private_rooms_status'] = private_status(private)
+            if cfg.get('fauna_only'):
+                # In questa modalita' non leggere nemmeno il feed pubblico:
+                # meno errori esterni e nessuna contaminazione del contesto.
+                return private['posts']
             return http_json(origin + '/feed.json', token=observer).get('posts', []) + private['posts']
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
     posts = read()
