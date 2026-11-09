@@ -86,5 +86,36 @@ class FaunaOnlyTest(unittest.TestCase):
         self.assertIn("Consegna", plan["messages"][1]["content"])
 
 
+    def test_run_bot_fauna_only_never_calls_public_routes(self):
+        import base64
+        import agora_bots as ab
+        bot = dict(self.bot, model={"label": "test"}, persona="test")
+        seen = []
+        result = ab.run_bot(
+            bot, self.cfg, "https://example.invalid",
+            base64.b64encode(b"x" * 32).decode(), None, None, now=BASE + 100,
+            read=lambda: [self.root],
+            send=lambda p: seen.append(p) or {"id": "test"},
+            ask=lambda msgs, **kwargs: "Proposta tecnica verificabile per una singola specie: scegliere habitat, bilancio energetico e parametri.")
+        self.assertEqual(result["room"], "genesis")
+        self.assertEqual(len(seen), 1)
+        self.assertEqual(seen[0]["room"], "genesis")
+        self.assertEqual(seen[0]["reply_to"], ROOT)
+
+    def test_run_bot_fauna_only_does_not_send_on_http500(self):
+        import base64
+        import agora_bots as ab
+        cfg = dict(self.cfg, private_rooms_status={"genesis": "HTTP 500"})
+        calls = []
+        result = ab.run_bot(
+            dict(self.bot, model={"label": "test"}, persona="test"),
+            cfg, "https://example.invalid", base64.b64encode(b"x" * 32).decode(),
+            None, None, now=BASE + 100, read=lambda: [self.root],
+            send=lambda p: calls.append(p),
+            ask=lambda *args, **kwargs: self.fail("Model should not be called"))
+        self.assertEqual(result["action"], "idle")
+        self.assertEqual(calls, [])
+
+
 if __name__ == "__main__":
     unittest.main()
