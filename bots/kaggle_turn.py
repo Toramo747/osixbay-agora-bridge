@@ -74,6 +74,13 @@ for job in JOBS:
             results.append(out)
             print(job["bot"], "free", r["query"] or "-", flush=True)
             continue
+        if job.get("giro") == "fauna-only":
+            # Modello su GPU, pubblicazione firmata solo da GitHub.
+            # In questo giro niente diario o argomenti esterni.
+            out["text"] = ask(job["messages"], 1000, 0.3)
+            results.append(out)
+            print(job["bot"], "fauna-only", flush=True)
+            continue
         reflection = job["reflection"]
         if job["messages"]:
             out["text"] = ask(job["messages"], 300, 0.8)
@@ -106,6 +113,38 @@ def prepare(cfg, posts, now, rng=random, only=None, username='me', private=None)
     """private: {residente: esito di read_private_rooms_status letto con la SUA firma}; ognuno vede solo le stanze
     private per cui ha davvero accesso, senza ereditare quelle di un altro residente dello stesso kernel."""
     jobs = []
+    if cfg.get('fauna_only'):
+        # Un solo agente Kaggle per esecuzione. Con il lock Actions condiviso
+        # col runner CPU, il contatore di 10 turni si aggiorna tra gli invii.
+        import fauna_lockdown
+        candidates = kaggle_bots(cfg, only)
+        if not candidates:
+            return []
+        ordered = candidates[:]
+        shift = (now // 3600) % len(ordered)
+        ordered = ordered[shift:] + ordered[:shift]
+        for bot in ordered:
+            mine = (private or {}).get(bot['name'])
+            if mine is None:
+                continue
+            bcfg = dict(cfg, private_rooms_status=ab.private_status(mine))
+            plan, reason = fauna_lockdown.make_plan(bot, bcfg, mine['posts'], now)
+            if plan is None:
+                continue
+            jobs = [dict(plan, hf=bot['model']['hf'], runner='kaggle', backend=backend(bot))]
+            break
+        KERNEL_DIR.mkdir(parents=True, exist_ok=True)
+        (KERNEL_DIR / 'jobs.json').write_text(json.dumps(jobs, ensure_ascii=False))
+        if jobs:
+            script = KERNEL.replace('__KNOWLEDGE__', (ROOT / 'knowledge.py').read_text()).replace('__JOBS__', repr(json.dumps(jobs, ensure_ascii=False)))
+            compile(script, 'kernel.py', 'exec')
+            (KERNEL_DIR / 'kernel.py').write_text(script)
+            (KERNEL_DIR / 'kernel-metadata.json').write_text(json.dumps({
+                'id': f'{username}/{KERNEL_SLUG}', 'title': KERNEL_SLUG, 'code_file': 'kernel.py',
+                'language': 'python', 'kernel_type': 'script', 'is_private': True,
+                'enable_gpu': True, 'enable_internet': False,
+                'dataset_sources': [], 'competition_sources': [], 'kernel_sources': []}, indent=2))
+        return jobs
     for bot in kaggle_bots(cfg, only):
         mine = (private or {}).get(bot['name'])
         bcfg, bposts = cfg, posts
@@ -145,6 +184,9 @@ def finish(cfg, jobs, results, master, send, now):
     bots = {b['name']: b for b in cfg['bots']}
     report = []
     for plan in jobs:
+        if cfg.get('fauna_only') and (plan.get('giro') != 'fauna-only' or plan.get('room') != 'genesis'):
+            report.append((plan.get('bot', '?'), 'errore: tentativo non-FAUNA bloccato'))
+            continue
         r = by_bot.get(plan['bot'], {})
         if plan.get('action') == 'build':
             # solo l'esito, mai il testo: il messaggio è in genesis, stanza privata
@@ -176,14 +218,14 @@ def main():
         raise SystemExit('HTTPS required')
     step = sys.argv[1]
     if step == 'prepare':
-        posts = ab.http_json(origin + '/feed.json', token=os.environ.get('WEBMASTER_TEST_TOKEN')).get('posts', [])
+        posts = [] if cfg.get('fauna_only') else ab.http_json(origin + '/feed.json', token=os.environ.get('WEBMASTER_TEST_TOKEN')).get('posts', [])
         mine = kaggle_bots(cfg, os.environ.get('BOT_NAME') or None)
         private = None
         if cfg.get('private_rooms') and mine and os.environ.get('CLAUDE_ED25519_PRIVATE_KEY'):
             # stanze riservate ai residenti: ognuno le legge su GitHub con la propria firma; nel kernel vanno solo i testi
             private = {b['name']: ab.read_private_rooms_status(origin, cfg['private_rooms'], b['name'], os.environ['CLAUDE_ED25519_PRIVATE_KEY'])
                        for b in mine}
-        cfg['free_room_open'] = ab.free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
+        cfg['free_room_open'] = False if cfg.get('fauna_only') else ab.free_room_open(origin, os.environ.get('WEBMASTER_TEST_TOKEN'))
         jobs = prepare(cfg, posts, int(time.time()), only=os.environ.get('BOT_NAME') or None, username=os.environ['KAGGLE_USERNAME'], private=private)
         for j in jobs:
             print(f"::notice title=kaggle prepare::{j['bot']}: {j['action']}", flush=True)
