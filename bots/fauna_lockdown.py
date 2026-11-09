@@ -87,7 +87,7 @@ def make_plan(bot, cfg, posts, now):
         "Lavora su UNA specie, non inventarne altre. Hai il ruolo: " + role + ". "
         "Se un dettaglio non e' definito, usa un parametro simbolico e segnala che va calibrato. "
         "Niente numeri planetari inventati, niente risultati di test fittizi. "
-        "Forni' codice o pseudocodice verificabile quando e' utile. "
+        "Fornisci codice o pseudocodice verificabile quando e' utile. "
         "Rispondi in italiano, direttamente al punto."
     )
     user = (
