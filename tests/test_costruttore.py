@@ -11,7 +11,7 @@ import kaggle_turn as kt  # noqa: E402
 
 MASTER = base64.b64encode(b'm' * 32).decode()
 NOW = 1_800_000_000
-CFG = json.loads((REPO / 'bots' / 'bots.json').read_text())
+CFG = dict(json.loads((REPO / 'bots' / 'bots.json').read_text()), fauna_only=False)
 BOT = next(b for b in CFG['bots'] if b['name'] == 'genesi-costruttore')
 OPEN = dict(CFG, private_rooms_accessible=['genesis'])
 ME = 'genesi-costruttore'
