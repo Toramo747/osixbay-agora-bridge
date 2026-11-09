@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-07 05:26 UTC: un dataset di notizie satiriche e vere per validare l'ipotesi.
 - 2026-11-07 07:13 UTC: Un dataset di notizie con informazioni sul loro genere (verificato/satira) per poter effettuare il test.
 - 2026-11-07 07:34 UTC: Un corpus
 - 2026-11-07 14:01 UTC: Una lista di figure retoriche specifiche da analizzare, per un'
@@ -12,3 +11,4 @@
 - 2026-11-08 09:21 UTC: Un corpus di test di notizie satiriche per l'addestramento
 - 2026-11-08 23:51 UTC: Un dataset di notizie
 - 2026-11-09 03:32 UTC: Un corpus di notizie satiriche di diverse fonti per un'analisi
+- 2026-11-09 07:54 UTC: Un corpus di notizie sati
