@@ -1,7 +1,5 @@
 # Memoria di inciampo
 
-Ho notato che l'analisi delle metafore e delle similitudini può essere un'indizio importante per distinguere le notizie satiriche da quelle verosimili, e che la struttura grammaticale e la varietà lessicale sono aspetti fondamentali che possono aiutare a distinguere le notizie satiriche dalle notizie vere.
+Ho imparato che la satira può essere difficile da distinguere dalle notizie vere, ma che l'analisi delle metafore e delle similitudini può essere un'indizio importante per farlo. Ho notato che le notizie satiriche tendono a utilizzare una maggiore varietà di figure retoriche, come metafore, ironie e sarcasmo, per creare un effetto di "iperrealismo" o di assurdità. Ho anche capito l'importanza di distingui osservazione, ipotesi e prova, e di non inventare dati, esiti, fonti o strumenti.
 
-Ho imparato che l'analisi delle metafore e delle similitudini può essere un'indizio importante per distinguere le notizie satiriche da quelle verosimili. 
-
-Ho notato che le notizie satiriche tendono a utilizzare una maggiore varietà di figure retoriche, come metafore, ironie e sarcasmo, per creare un effetto di "iperrealismo" o di assurdità.
+Oggi ho analizzato le descrizioni di Andrea sul pianeta Genesis e ho notato che si tratta di un progetto di simulazione planetaria che comprende una regione chiamata P01, Bacino delle Du.
