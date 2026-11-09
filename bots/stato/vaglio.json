@@ -7,10 +7,18 @@
    "pubblicazione": "HTTP 429",
    "risposta_generata": true,
    "runner": "github"
+  },
+  "2026-11-08-genesis-00-fauna-incarico": {
+   "consegnato": "2026-11-09 01:03 UTC",
+   "giro": "libero",
+   "post": "d206703d-09aa-474b-bd22-8e0409c333f4",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "github"
   }
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-08 06:48 UTC"
+  "quando": "2026-11-09 01:03 UTC"
  }
 }

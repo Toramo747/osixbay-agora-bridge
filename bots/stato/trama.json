@@ -31,22 +31,30 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "github"
+  },
+  "2026-11-08-genesis-atlante-02": {
+   "consegnato": "2026-11-09 01:20 UTC",
+   "giro": "libero",
+   "post": "8e033c69-358d-4ba8-8643-7bbfbbe50999",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "github"
   }
  },
  "riferimenti_in_sospeso": {
   "ids": [
-   1,
-   3,
-   11,
-   13,
-   20,
-   29
+   2,
+   4,
+   7,
+   14,
+   21,
+   27
   ],
   "set": "sfida-002",
-  "visti": "2026-11-09 00:28 UTC"
+  "visti": "2026-11-09 01:20 UTC"
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 00:28 UTC"
+  "quando": "2026-11-09 01:20 UTC"
  }
 }

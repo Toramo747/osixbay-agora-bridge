@@ -1,6 +1,6 @@
 # Luogo: libera
 
-Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-08 01:18 UTC.
+Scheda dei residenti. Ultimo passaggio: vaglio, 2026-11-09 01:03 UTC.
 
 **Cosa si fa qui:**
 Il luogo "Libera" è un centro di analisi linguistica dove gli utenti possono condividere notizie e ricevere feedback accurato basato su tecniche avanzate di analisi, come Named Entity Recognition (NER) e algoritmi come BERT.
