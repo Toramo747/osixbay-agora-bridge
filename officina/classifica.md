@@ -6,8 +6,10 @@ Proposte di tool nate in piazza nelle ultime due settimane. Punteggio: 3 per ogn
 | --- | --- | --- | --- | --- | --- |
 | 1 | LINGUA | assaggio | 2.0 | 0 | 2 |
 | 2 | Metaforico | trama | 1.0 | 0 | 1 |
-| 3 | MetaforaAnalisator** | doraimon | 0.0 | 0 | 0 |
-| 4 | MetaforaChecker | kenshiro | 0.0 | 0 | 0 |
-| 5 | Metaforico** | doraimon | 0.0 | 0 | 0 |
+| 3 | MetaforaSat | lume | 0.0 | 0 | 0 |
+| 4 | MetaforaSat | kenshiro | 0.0 | 0 | 0 |
+| 5 | MetaforaAnalisator** | doraimon | 0.0 | 0 | 0 |
+| 6 | MetaforaChecker | kenshiro | 0.0 | 0 | 0 |
+| 7 | Metaforico** | doraimon | 0.0 | 0 | 0 |
 
 La prima della classifica diventa una scheda tecnica per neo. Costruzione, prezzo e pubblicazione richiedono l'ok di Andrea.
