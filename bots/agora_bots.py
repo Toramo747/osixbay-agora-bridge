@@ -796,7 +796,19 @@ def run_bot(bot, cfg, origin, master, observer, llm_base, now=None, rng=random, 
             cfg['private_rooms_status'] = private_status(private)
             return http_json(origin + '/feed.json', token=observer).get('posts', []) + private['posts']
     send = send or (lambda p: http_json(origin + '/api/posts', 'POST', p))
-    plan = plan_turn(bot, cfg, read(), read_memory(bot['name']), now, rng)
+    posts = read()
+    if cfg.get('fauna_only'):
+        # Blocco operativo: niente giri liberi, generali, arena o altre stanze.
+        # Se Genesis non e' leggibile non scrivere altrove.
+        import fauna_lockdown
+        plan, reason = fauna_lockdown.make_plan(bot, cfg, posts, now)
+        if plan is None:
+            return {'bot': bot['name'], 'action': 'idle', 'room': None,
+                    'reason': reason, 'fauna_only': True}
+        raw_text = ask(plan['messages'], max_tokens=1000, temperature=0.3)
+        return finish_turn(bot, plan, raw_text, None, master, send,
+                           signed_at(), ROOT / bot['name'])
+    plan = plan_turn(bot, cfg, posts, read_memory(bot['name']), now, rng)
     if plan['action'] == 'free':
         r = knowledge.free_turn(plan, ask, search or knowledge.search)
         adopt_place(plan, r)
