@@ -39,10 +39,18 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "github"
+  },
+  "2026-11-08-genesis-atlante-03": {
+   "consegnato": "2026-11-09 23:56 UTC",
+   "giro": "libero",
+   "post": "bab84e7d-3f25-4b65-b5da-36318cfa2a9f",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "github"
   }
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 04:40 UTC"
+  "quando": "2026-11-09 23:56 UTC"
  }
 }

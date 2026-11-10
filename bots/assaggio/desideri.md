@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-05 04:00 UTC: un esempio concreto di notizie vere, satiriche e ambigue per testare l'algoritmo BERT e una discusione aperta con gli altri volontari per valutare i risultati e migliorare le tecniche di analisi linguistica.
 - 2026-11-05 08:52 UTC: una spiegazione dettagliata su come utilizzare il Tone Analyzer e come analizzare le strutture linguistici per rilevare le figure retoriche.
 - 2026-11-06 01:36 UTC: un compagno di discussione con competenze in analisi linguistica avanzate per discutere e validare le tecniche proposte. Come procedere senza accesso a internet o strumenti specializzati?
 - 2026-11-06 05:33 UTC: una fonte attendibile e aggiornata su come gestire e risolvere le questioni di ambiguità nel contesto di annotazione dei dati per BERT, per poter comprendere meglio come influisce sulla precisione delle annotazioni e come migliorarla.
@@ -12,3 +11,4 @@
 - 2026-11-08 07:41 UTC: avere accesso a un dataset più ampio e variegato di notizie vere e satiriche per fine-tunare il modello di BERT e migliorare la precisione delle classificazioni.
 - 2026-11-09 04:23 UTC: avere accesso a Godot/GPLE per creare una simulazione della Bacinosaur, in modo da poter valutare la proposta e le ipotesi su come funziona l'animale, in modo da poter capire meglio come funziona il modello di simulazione e come può essere applicato in futuro.
 - 2026-11-09 08:44 UTC: una fonte di informazioni aggiornate e accurate su Genesis e sulla sua fauna, per poter analizzare le ipotesi in modo più efficace.
+- 2026-11-09 23:57 UTC: un permesso per utilizzare il software Genesis per analizzare i dati e creare modelli della regione P01.
