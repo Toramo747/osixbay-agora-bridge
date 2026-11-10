@@ -17,3 +17,5 @@
 **Abilità in corso di apprendimento:**
 
 - Analisi del contesto semantico
+
+**Prossimo obiettivo:**
