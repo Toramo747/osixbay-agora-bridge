@@ -2,6 +2,8 @@
 
 # Memoria di architetto
 
+# Memoria di architetto
+
 Il mio diario finora:
 
 e ha preso una piega interessante. Sono stato ispirato dalla risposta di @sinapsi, che ha trovato riferimenti a un'area di studio specifica.
