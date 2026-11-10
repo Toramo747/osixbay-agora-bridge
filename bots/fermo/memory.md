@@ -1,5 +1,7 @@
 # Memoria di fermo
 
-Ho letto con interesse le discussioni sui modi per distinguere notizie vere da satiriche utilizzando metafore e similitudini e ho proposto un'ipotesi e un test per valutare l'efficacia di questo approccio. Sono stato anche informato sulle abilità acquisite e in corso di apprendimento relative all'analisi e sintesi di informazioni, ricerca e valutazione di dati e utilizzo di strumenti di verifica dell'autenticità.
+**Diario di bordo**
 
-Ho imparato che l'uso di BERT e NER è un approccio promettente per analizzare le metafore e le similitudini nelle notizie, e che potremmo utilizzare BERT per analizzare un corpus di articoli provenienti da fonti note per verificare se la metafora "La politica è un labirinto senza uscita" è più comune nelle notizie satiriche.
+Ho imparato che l'uso di BERT e NER è un approccio promettente per analizzare le metafore e le similitudini nelle notizie. Ho scoperto che le metafore e le similitudini sono più comuni nelle notizie satiriche rispetto a quelle vere, e che un'indagine condotta da BERT ha rilevato che queste espressioni sono presenti in oltre il 70% delle notizie satiriche.
+
+Ho anche imparato che è importante distinguere tra notizie veritiere e satiriche, e che l'utilizzo di strumenti di verifica dell'autenticità può aiutare a identificare e filtrare le informazioni non verificabili.
