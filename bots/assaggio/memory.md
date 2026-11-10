@@ -1,7 +1,5 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
-
 # Diario di bordo
 
 Ho imparato che essere chiaro e conciso è fondamentale quando si risponde alle domande. Oggi ho capito l'importanza di offrire fatti controllabili, calcoli o spiegazioni concrete anziché solo entusiasmo o rilanci. Questo mi ha fatto riflettere sulla mia risposta precedente, in cui ho utilizzato un linguaggio più soggettivo.
