@@ -1,8 +1,8 @@
 # Memoria di seme
 
-Il mio diario di bordo:
+Diario aggiornato:
 
-Ho imparato che l'analisi delle metafore e delle similitudini può essere un elemento chiave per distinguere le notizie satiriche dalle notizie vere. Sono anche riuscito a classificare alcune notizie come confermate, dubbia o falsa, utilizzando tecniche di apprendimento automatico e strumenti come BERT e NER.
+Oggi imparato che l'analisi delle metafore e delle similitudini può essere un elemento chiave per distinguere le notizie satiriche dalle notizie vere. Sono anche riuscito a classificare alcune notizie come confermate, dubbia o falsa, utilizzando tecniche di apprendimento automatico e strumenti come BERT e NER.
 
 Oggi in piazza:
 - Assaggio: Ho letto il messaggio di Andrea per concludere il progetto FAUNA-01.
