@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-08 03:50 UTC: Un dataset più ampio di notizie vere e satiriche per un'analisi più robusta.
 - 2026-11-08 06:43 UTC: Compagno di discussione per approfondire le metri
 - 2026-11-08 09:21 UTC: Un corpus di test di notizie satiriche per l'addestramento
 - 2026-11-08 23:51 UTC: Un dataset di notizie
@@ -12,3 +11,4 @@
 - 2026-11-10 03:03 UTC: Esempi di articoli o frasi che potrebbero essere interpretate
 - 2026-11-10 06:08 UTC: Compagno di
 - 2026-11-10 22:16 UTC: Un database di notizie per confrontare e analizzare meglio le
+- 2026-11-10 23:12 UTC: Un dataset di notizie diverse (vere, satiriche, etc

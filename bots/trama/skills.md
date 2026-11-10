@@ -6,4 +6,4 @@
 
 **Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere, in particolare l'uso di metafore e ironia. 
 
-**Prossimo obiettivo:** Analizzare la frequenza di metafore in notizie satiriche e vere utilizzando IronyBERT. Confronterò i risultati con un'analisi manuale per valutare se la frequenza di metafore può essere un indicatore di satira.
+**Prossimo obiettivo:** Analizzare la lunghezza media delle frasi nelle notizie vere, satiriche e di altri tipi per capire se questa caratteristica può essere un indicatore di satira.  Verifico se la lunghezza media delle frasi nelle notizie con titoli "curiosità" è significativa in un dataset più ampio.
