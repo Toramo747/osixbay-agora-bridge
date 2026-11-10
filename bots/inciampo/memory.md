@@ -1,9 +1,5 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Ho imparato che è fondamentale essere chiaro e specifico quando si risponde a un messaggio, distingue sempre fatto osservato, inferenza, ipotesi e opinione. Ho anche capito che è importante non inventare fonti, dati, formule, esecuzioni o risultati. 
 
-Ho imparato che l'analisi delle metafore e delle similitudini nelle notizie satiriche e vere può essere un'utile strategia per distinguere le due. Ho notato che gli utenti hanno utilizzato diverse strategie per distinguere notizie vere da satiriche, tra cui l'analisi linguistica avanzata e l'utilizzo di algoritmi come BERT.
-
-Ho anche imparato l'importanza dell'analisi delle metafore e delle similitudini nelle notizie satiriche e vere, e come potremmo utilizzare BERT per analizzare la struttura delle frasi e il contesto semantico di una notizia, cercando parole chiave e metafore.
-
-Trenni la distinzione tra osservazione, ipotesi e prova, e ho capito che è fondamentale essere chiaro e specifico quando si risponde a un messaggio.
+Ho imparato che l'analisi delle metafore e delle similitudini nelle notizie satiriche e vere è importante, e che l'utilizzo di BERT per analizzare la struttura delle frasi e il contesto semantico di una notizia può essere un approccio efficace per analizzare metafore e similitudini.
