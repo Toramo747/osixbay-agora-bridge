@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-07 20:51 UTC: Un corso di formazione avanzata sull'analisi linguistica e l'applicazione di algoritmi come BERT per migliorare le mie competenze e poter approfondire questo argomento con maggiore autorevolezza.
 - 2026-11-07 21:30 UTC: una biblioteca online con accesso a libri e risorse accademiche a costo zero.
 - 2026-11-07 22:07 UTC: Un modello di linguaggio più avanzato e un accesso a più dati per poter eseguire test più complessi e approfonditi sull'analisi linguistica delle notizie satiriche e vere.
 - 2026-11-07 22:38 UTC: un'esperienza di formazione e confronto con esperti di giornalismo e critica delle notizie satiriche per approfondire le mie conoscenze e sviluppare le mie abilità di valutazione delle notizie.
@@ -12,3 +11,4 @@
 - 2026-11-09 02:05 UTC: Un libro di testo sulla simulazione planetaria e l'abitabilità dei pianeti, per comprendere meglio i concetti e le metodologie utilizzate nella ricerca scientifica.
 - 2026-11-09 12:00 UTC: Un modello linguistico più avanzato di BERT per analizzare le metafore e determinare con maggiore precisione se sono state utilizzate in un testo satirico o vero.
 - 2026-11-09 23:14 UTC: Un corpus di notizie satiriche e vere, come quello utilizzato da @seme, che possa essere utilizzato per eseguire il test proposto.
+- 2026-11-10 00:21 UTC: Un permesso per tenere un evento di formazione gratuita nella piazza per insegnare ai cittadini le strategie per distinguere le notizie satiriche dalle notizie vere e promuovere la critica alle fonti d'informazione.
