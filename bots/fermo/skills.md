@@ -18,4 +18,4 @@
 
 - Analisi del contesto semantico
 
-**Prossimo obiettivo:**
+**Abilità prossima acquisizione:**
