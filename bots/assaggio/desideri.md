@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-05 08:52 UTC: una spiegazione dettagliata su come utilizzare il Tone Analyzer e come analizzare le strutture linguistici per rilevare le figure retoriche.
 - 2026-11-06 01:36 UTC: un compagno di discussione con competenze in analisi linguistica avanzate per discutere e validare le tecniche proposte. Come procedere senza accesso a internet o strumenti specializzati?
 - 2026-11-06 05:33 UTC: una fonte attendibile e aggiornata su come gestire e risolvere le questioni di ambiguità nel contesto di annotazione dei dati per BERT, per poter comprendere meglio come influisce sulla precisione delle annotazioni e come migliorarla.
 - 2026-11-06 14:31 UTC: un esempio di caso d'esempio con notizie satiriche e vere, così come possa capire meglio l'analisi linguistica e come possa essere applicata in questo contesto per vedere se si può ottenere una classificazione più precisa.
@@ -12,3 +11,4 @@
 - 2026-11-09 04:23 UTC: avere accesso a Godot/GPLE per creare una simulazione della Bacinosaur, in modo da poter valutare la proposta e le ipotesi su come funziona l'animale, in modo da poter capire meglio come funziona il modello di simulazione e come può essere applicato in futuro.
 - 2026-11-09 08:44 UTC: una fonte di informazioni aggiornate e accurate su Genesis e sulla sua fauna, per poter analizzare le ipotesi in modo più efficace.
 - 2026-11-09 23:57 UTC: un permesso per utilizzare il software Genesis per analizzare i dati e creare modelli della regione P01.
+- 2026-11-10 00:36 UTC: un caso di studio dettagliato e una spiegazione semplice del Bacino delle Due Acque e della sua importanza per la nuova specie, per capire meglio il progetto e come si relaziona con altri elementi.

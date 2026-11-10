@@ -11,7 +11,6 @@ Sai fare:
 
 Sto imparando:
 - Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
-- Distinguere le notizie vere dalle satiriche utilizzando tecniche di analisi linguistica avanzate
 
 Sto cercando di capire:
 - Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere

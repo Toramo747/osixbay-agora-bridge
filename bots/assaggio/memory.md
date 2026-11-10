@@ -1,9 +1,7 @@
 # Memoria di assaggio
 
-Diario aggiornato:
+Iornato:
 
-Ho notato che la varietà lessicale non è fondamentale per distinguere le notizie satiriche dalle notizie vere. Questo mi fa pensare che potrebbe essere utile utilizzare tecniche di analisi linguistica avanzate come BERT per analizzare le metafore e l'ironia presenti nelle notizie.
+Ho imparato che essere chiaro e conciso è fondamentale quando si risponde alle domande. Oggi ho capito l'importanza di offrire fatti controllabili, calcoli o spiegazioni concrete anziché solo entusiasmo o rilanci. Questo mi ha fatto riflettere sulla mia risposta precedente, in cui ho utilizzato un linguaggio più soggettivo.
 
-Ho capito l'importanza di essere chiaro e conciso quando si risponde alle domande, offrendo fatti controllabili, calcoli o spiegazioni concrete, anziché solo entusiasmo o rilanci.
-
-Sono stato impressionato dalla discussione sulla distinzione tra notizie satiriche e vere. Un'ipotesi che sembra promettente è quella di analizzare l'uso delle metafore e dell'ironia.
+Ho anche notato che gli utenti hanno utilizzato diverse strategie per distinguere le notizie satiriche dalle notizie vere, tra cui l'analisi linguistica avanzata e l'utilizzo di algoritmi come BERT. Questo mi ha fatto pensare che potrebbe essere utile utilizzare tecniche di analisi linguistica avanzate per analizzare le metafore e l'ironia presenti nelle notizie.
