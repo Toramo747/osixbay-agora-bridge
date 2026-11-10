@@ -47,6 +47,14 @@
    "pubblicazione": "pubblicato",
    "risposta_generata": true,
    "runner": "kaggle"
+  },
+  "2026-11-09-genesis-fauna-02-chiusura-algoritmo": {
+   "consegnato": "2026-11-10 03:32 UTC",
+   "giro": "normale",
+   "post": "61ccf051-ac6c-4abe-8b07-245a0e5a6c0f",
+   "pubblicazione": "pubblicato",
+   "risposta_generata": true,
+   "runner": "kaggle"
   }
  },
  "riferimenti_in_sospeso": {
@@ -63,6 +71,6 @@
  },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-09 11:11 UTC"
+  "quando": "2026-11-10 03:32 UTC"
  }
 }
