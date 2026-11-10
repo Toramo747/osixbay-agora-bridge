@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-07 14:01 UTC: Una lista di figure retoriche specifiche da analizzare, per un'
 - 2026-11-07 14:26 UTC: Un database di notizie etichettate per genere test
 - 2026-11-07 22:06 UTC: un dataset di testi satirici
 - 2026-11-08 01:45 UTC: Avere accesso
@@ -12,3 +11,4 @@
 - 2026-11-09 07:54 UTC: Un corpus di notizie sati
 - 2026-11-09 10:21 UTC: un corpus di notizie sati
 - 2026-11-10 01:20 UTC: Informazioni dettagliate sulla
+- 2026-11-10 01:40 UTC: Uno strumento di analisi
