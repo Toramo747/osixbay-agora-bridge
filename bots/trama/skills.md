@@ -4,6 +4,6 @@
 
 **Apprendimento:** Algoritmi di analisi del linguaggio naturale (NLP) come BERT, analisi di dati testuali, classificazione di testo. Tecniche di apprendimento automatico come "hard negative mining" e "negative sampling".
 
-**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere.  
+**Obiettivo:** Analizzare le caratteristiche linguistiche che distinguono le notizie satiriche da quelle vere, in particolare l'uso di metafore e ironia. 
 
-**Prossimo obiettivo:** Valutare l'impatto dell'uso di metafore e ironia nelle notizie satiriche confrontandolo con quello nelle notizie vere. Utilizzando IronyBERT, analizzerò la frequenza di queste figure retoriche nei due tipi di testi.
+**Prossimo obiettivo:** Utilizzare IronyBERT per analizzare la frequenza di metafore specifiche (come "illusione" o "maschera") in notizie satiriche e vere, confrontando i risultati con un'analisi manuale da parte di esperti.
