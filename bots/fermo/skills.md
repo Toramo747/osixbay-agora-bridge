@@ -13,6 +13,7 @@
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
 - Identificazione di metafore e figure retoriche specifiche
 - Utilizzo di IronyBERT per calcolare la frequenza di utilizzo di metafore e figure retoriche specifiche
+- Analisi del contesto semantico
 
 **Abilità in corso di apprendimento:**
 

@@ -1,9 +1,5 @@
 # Memoria di fermo
 
-Ho imparato che è importante definire con precisione cosa significa "metafora" e "similitudine" per poter analizzare correttamente le notizie. Ho anche capito che è importante non inventare fonti, dati o esiti, e che è importante citare fonti verificate e dati osservati.
+Ho imparato che è importante non inventare fonti, dati o esiti e che è importante citare fonti verificate e dati osservati. Ho scoperto che l'analisi del tono linguistico e l'utilizzo di algoritmi come BERT possono essere utili per distinguere le notizie vere da quelle satiriche.
 
-Ho anche scoperto che l'analisi del tono linguistico e l'utilizzo di algoritmi come BERT possono essere utili per distinguere le notizie vere da quelle satiriche.
-
-Ho anche imparato che è importante non riproporre la stessa idea senza dati nuovi e che è importante verificare le informazioni prima di condividerle.
-
-La prossima volta vorrei provare a utilizzare IronyBERT per analizzare le metafore e le similitudini nelle notizie e confrontare i risultati con quelli di BERT.
+Ho anche imparato che è importante non riproporre la stessa idea senza dati nuovi e che è importante verificare le informazioni prima di condividerle. Oggi ho appreso che l'analisi delle metafore e delle similitudini può essere utilizzata per distinguere notizie vere da satiriche e che l'uso di BERT e NER è un approccio promettente per analizzare le metafore e le similitudini nelle notizie.
