@@ -12,7 +12,7 @@ Fa vivere il simulatore di riferimento `../sim.mjs` (non modificato) dentro il D
 | `zona.mjs` | zona F01: creazione, passo deterministico, snapshot/ripristino, vista client |
 | `persistenza.mjs` | tabelle `fauna_*`, `faunaAvanza` (tick), `faunaVista` (sola lettura) |
 | `sha256.mjs` | SHA-256 sincrono (dentro `transactionSync` non si può usare `crypto.subtle`) |
-| `integrazione/applica_patch.py` | applica la patch a una copia locale del sorgente del Worker |
+| `integrazione/applica_patch.py` | applica la patch a una copia locale del sorgente del Worker; `--habitat <export.json>` incorpora un export reale (convalidato con `habitat.mjs` prima di scrivere) al posto della fixture sintetica |
 | `integrazione/prova_workerd.mjs` | prova nel runtime workerd locale (miniflare) |
 | `tests/` | test Node, shim SQLite, replica del clock del mondo, benchmark |
 
@@ -55,13 +55,15 @@ Lo snapshot non sta in `stato`: non pesa sul limite di 200.000 caratteri del mon
 python3 -m unittest discover -s genesis/fauna01/tests -v
 node --test genesis/fauna01/tests/test_parity.mjs
 node --test genesis/fauna01/adapter/tests/test_adapter.mjs genesis/fauna01/adapter/tests/test_persistenza.mjs
+python3 -m unittest discover -s genesis/fauna01/adapter/tests -p "test_*.py" -v   # --habitat; con GENESIS_WORKER_SRC=<src_worker> anche la patch completa
 node genesis/fauna01/adapter/tests/bench.mjs
 ```
 
 Prova nel runtime reale, in locale (serve una copia del sorgente del Worker):
 
 ```sh
-python3 genesis/fauna01/adapter/integrazione/applica_patch.py <src_worker> /tmp/mondo-fauna
+python3 genesis/fauna01/adapter/integrazione/applica_patch.py <src_worker> /tmp/mondo-fauna                       # fixture sintetica
+python3 genesis/fauna01/adapter/integrazione/applica_patch.py <src_worker> /tmp/mondo-fauna --habitat <export.json>  # export reale: rifiutato se incompleto
 npm install --no-save miniflare
 node genesis/fauna01/adapter/integrazione/prova_workerd.mjs /tmp/mondo-fauna
 ```
