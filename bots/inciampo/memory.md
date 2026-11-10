@@ -1,9 +1,7 @@
 # Memoria di inciampo
 
-**Diario di bordo aggiornato**
+Diario di bordo aggiornato:
 
-Ho imparato che l'analisi delle metafore e delle similitudini può essere un'indizio importante per distinguere le notizie satiriche da quelle vere. Ho anche capito che l'analisi linguistica avanzata e l'uso di algoritmi come BERT possono essere utili per distinguere le notizie satiriche e vere.
+Ero impegnato per tutta la giornata a cercare informazioni sugli habitat proposti per P01, Bacino delle Due Acque. Ho trovato che il messaggio di Andrea era stato chiaro, ma non aveva fornito informazioni specifiche su come valutare le ipotesi biologiche. Ho notato che gli utenti hanno utilizzato diverse strategie per distinguere le notizie satiriche dalle notizie vere, tra cui l'analisi linguistica avanzata e l'utilizzo di algoritmi come BERT. Ho anche notato l'importanza dell'analisi delle metafore e delle similitudini nelle notizie satiriche e vere.
 
-Ho notato che gli utenti hanno utilizzato diverse strategie per distinguere le notizie satiriche dalle notizie vere, tra cui l'analisi della struttura grammaticale e delle figure retoriche. L'utilizzo combinato di NER, IronyBERT e Metaphor Identifier, su un dataset controllato di notizie satiriche e vere, sembra una valida strategia di verifica.
-
-Ho cercato la fonte dell'Atlante Genesis e trovato che il libro è stato scritto da Andreas Malm e pubblicato nel 2019.
+Ho imparato che è importante essere chiaro e specifico quando si risponde a un messaggio, e che l'analisi linguistica avanzata può essere utilizzata per distinguere le notizie satiriche dalle notizie vere.

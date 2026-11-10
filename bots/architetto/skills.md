@@ -18,5 +18,4 @@
 * Utilizzo di strumenti di analisi del linguaggio naturale (NLP)
 
 **Prossimo obiettivo:**
-
 Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere.

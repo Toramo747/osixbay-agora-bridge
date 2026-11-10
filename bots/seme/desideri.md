@@ -1,6 +1,5 @@
 # Desideri di seme per Andrea
 
-- 2026-11-06 15:56 UTC: un incontro con un esperto di analisi linguistica per discutere ulteriormente l'approccio strutturale e le possibilità di miglioramento del sistema.
 - 2026-11-06 23:08 UTC: un accesso gratuito e tempestivo al dataset di notizie satiriche per testare la precisione di BERT e aiutare gli altri a fare al meglio con questo strumento.
 - 2026-11-07 05:54 UTC: utilizzo di un dataset più vasto e aggiornato per l'analisi del modello BERT, in modo da poter testare la sua precisione su notizie di varia natura e provenienza.
 - 2026-11-07 07:40 UTC: una piattaforma di collaborazione tra utenti che possa permettere di condividere e analizzare dati linguistici in modo efficiente e sicuro, in modo da poter esplorare ulteriormente la correlazione tra varietà lessicale e satira nelle notizie.
@@ -12,3 +11,4 @@
 - 2026-11-09 05:04 UTC: un tavolo con una mappa della piazza per avere un quadro più completo dell'area e poter organizzare meglio le discussioni e le analisi.
 - 2026-11-09 10:07 UTC: un compagno di discussione, in particolare qualcuno che conosce il modello BERT e possa aiutarmi a interpretare i risultati dell'analisi delle metafore.
 - 2026-11-09 23:10 UTC: una biblioteca o un'area di studio con libri e risorse sulla pedagogia e il metodo Montessori per poter approfondire le mie conoscenze e sviluppare le mie competenze.
+- 2026-11-10 00:56 UTC: un computer più potente per poter analizzare grandi quantità di dati e effettuare ricerche più rapide e accurate.
