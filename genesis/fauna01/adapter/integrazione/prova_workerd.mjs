@@ -1,10 +1,13 @@
 /**
  * Prova LOCALE nel runtime workerd (miniflare): Worker reale + patch fauna, Durable Object SQLite su disco locale.
- * Nessuna chiamata a Cloudflare, nessun deploy, chiave di firma usa e getta. Habitat: fixture sintetica dichiarata.
+ * Nessuna chiamata a Cloudflare, nessun deploy, chiave di firma usa e getta.
+ * Habitat: quello INCORPORATO dalla patch (fauna/habitat_dati.mjs), fixture sintetica o export reale (--habitat).
+ * Il replay atteso, l'interruttore FAUNA_FIXTURE_SINTETICA e l'ultima prova dipendono da quale dei due e'.
  *
  * Preparazione (fuori dal repository):
- *   python3 genesis/fauna01/adapter/integrazione/applica_patch.py <src_worker> /tmp/mondo-fauna
- *   npm install --no-save miniflare        (in una cartella di lavoro; nessun account richiesto)
+ *   python3 genesis/fauna01/adapter/integrazione/applica_patch.py <src_worker> /tmp/mondo-fauna [--habitat <export.json>]
+ *   npm install --no-save miniflare        (in una cartella di lavoro; nessun account richiesto; serve una versione che
+ *                                           riesegua gli alarm salvati dopo un riavvio, es. 4.20260730.0)
  * Uso:  node genesis/fauna01/adapter/integrazione/prova_workerd.mjs /tmp/mondo-fauna
  */
 import { Miniflare } from 'miniflare';
@@ -12,14 +15,20 @@ import { readFileSync, rmSync, mkdtempSync } from 'node:fs';
 import { generateKeyPairSync, sign, createHash, randomBytes } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import assert from 'node:assert/strict';
 const A = new URL('../', import.meta.url).href;
 const { importaHabitat } = await import(A + 'habitat.mjs');
 const { creaZona, passoZona, vistaClient } = await import(A + 'zona.mjs');
-const habitat = importaHabitat(JSON.parse(readFileSync(new URL('../fixtures/habitat_sintetico_v1.json', import.meta.url), 'utf8')), { consentiSintetico: true });
 
 if (!process.argv[2]) { console.error('uso: node prova_workerd.mjs <cartella prodotta da applica_patch.py>'); process.exit(2); }
 const SRC = path.resolve(process.argv[2]) + path.sep;
+// lo stesso oggetto che il Worker importa: nessuna copia della fixture, nessuna ipotesi su quale habitat sia
+const incorporato = (await import(pathToFileURL(SRC + 'fauna/habitat_dati.mjs').href)).default;
+const SINTETICO = incorporato.synthetic === true;
+const habitat = importaHabitat(incorporato, { consentiSintetico: SINTETICO });
+console.log(`habitat incorporato: ${SINTETICO ? 'fixture SINTETICA' : 'export REALE'} zona=${habitat.zone_id} sha256=${habitat.sha256.slice(0, 12)}… ${habitat.width}x${habitat.height} celle idonee=${habitat.suitable_cells}`);
+const N_PROVE = 6;
 const files = ['index.js', 'auth.js', 'corpo.js', 'mondo.js', 'schema.js', 'tempo.js', 'regole.js', 'sim.mjs',
   'fauna/sha256.mjs', 'fauna/habitat.mjs', 'fauna/zona.mjs', 'fauna/persistenza.mjs', 'fauna/habitat_dati.mjs'];
 const { publicKey, privateKey } = generateKeyPairSync('ed25519');      // chiave di prova usa e getta, solo locale
@@ -30,7 +39,7 @@ const crea = (persist, extra = {}) => new Miniflare({
   modulesRoot: SRC, compatibilityDate: '2026-07-01',
   durableObjects: { MONDO: { className: 'Mondo', useSQLite: true } }, durableObjectsPersist: persist,
   bindings: { TICK_MS: String(TICK_MS), TICK_PER_GIORNO: '6', MAX_TICK_PER_ALLARME: '20', CHIAVI_PUBBLICHE: JSON.stringify({ 'prova-locale': pub }),
-    FAUNA_ATTIVA: '1', FAUNA_FIXTURE_SINTETICA: '1', FAUNA_SEED: '13', ...extra },
+    FAUNA_ATTIVA: '1', FAUNA_FIXTURE_SINTETICA: SINTETICO ? '1' : '0', FAUNA_SEED: '13', ...extra },
 });
 async function chiama(mf, metodo, percorso, corpo = '', firma = true) {
   const headers = {};
@@ -108,11 +117,20 @@ ok('interruttore FAUNA_ATTIVA=0: il mondo continua, la fauna si ferma; riaccesa 
 await mf.dispose();
 
 const dir2 = mkdtempSync(path.join(tmpdir(), 'mondo-'));
-mf = crea(dir2, { FAUNA_FIXTURE_SINTETICA: '0' });   // come in un'integrazione reale: la fixture sintetica viene rifiutata
+mf = crea(dir2, { FAUNA_FIXTURE_SINTETICA: '0' });   // come in un'integrazione reale: interruttore delle prove spento
 await chiama(mf, 'GET', '/v1/stato'); await pausa(1200);
-assert.equal((await chiama(mf, 'GET', '/v1/fauna')).status, 404);
-assert.ok((await chiama(mf, 'GET', '/v1/stato')).corpo.tempo.tick >= 3);
-ok('senza FAUNA_FIXTURE_SINTETICA=1 l\'habitat sintetico e\' rifiutato: fauna spenta, mondo regolare');
+if (SINTETICO) {
+  assert.equal((await chiama(mf, 'GET', '/v1/fauna')).status, 404);
+  assert.ok((await chiama(mf, 'GET', '/v1/stato')).corpo.tempo.tick >= 3);
+  ok('senza FAUNA_FIXTURE_SINTETICA=1 l\'habitat sintetico e\' rifiutato: fauna spenta, mondo regolare');
+} else {
+  const f = await chiama(mf, 'GET', '/v1/fauna');
+  assert.equal(f.status, 200);
+  assert.deepStrictEqual(f.corpo.entita, atteso(f.corpo.passo));
+  assert.ok(f.corpo.entita.length > 0 && f.corpo.entita.every(e => habitat.cells[e.cella[1]][e.cella[0]].suitable));
+  ok('export reale accettato SENZA FAUNA_FIXTURE_SINTETICA: fauna attiva solo in celle playable AND suitable',
+    `entita=${f.corpo.entita.length} passo=${f.corpo.passo}`);
+}
 await mf.dispose();
 rmSync(dir, { recursive: true, force: true }); rmSync(dir2, { recursive: true, force: true });
-console.log(`\nworkerd locale: ${esiti.length}/6 PASS`);
+console.log(`\nworkerd locale (${SINTETICO ? 'fixture sintetica' : 'habitat reale'}): ${esiti.length}/${N_PROVE} PASS`);
