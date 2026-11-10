@@ -43,3 +43,13 @@ python3 -m unittest discover -s genesis/fauna01/tests -v
 - **Sviluppatore:** migliorare e verificare il simulatore, mantenendo una PR draft. Implementare un adapter separato per World Engine autoritativo e client Godot 4.6.x soltanto dopo aver letto i contratti reali, con dati canonici approvati.
 - **Sicurezza:** niente segreti, dipendenze a pagamento, azioni Cloudflare, deploy, merge automatici o modifica di configurazioni Agora.
 - **Limiti dichiarati:** dinamiche ecologiche semplificate; assenza di predazione, agenti cognitivi, animazioni, geometria 2.5D e misure prestazionali; seed riproducibile in Python ma non ancora verificato come identico in Godot/JS.
+
+
+## 10 novembre 2026 — Verifica ampliata della PR #88
+- Ripetuti i 13 test Python sui file esatti della PR originale (blob SHA verificati): **13/13 PASS**.
+- Aggiunti `sim.mjs` e `tests/test_parity.mjs`, con parità numerica dei modelli Python/JavaScript ai tick 0, 1, 2, 20, 80, 200 per quattro scenari: **7/7 PASS**.
+- Controllato con Git blob SHA che il codice JavaScript pubblicato corrisponde al codice effettivamente testato.
+- Stress test Python: **10.000 tick, 500 cap, griglia 64×64**; risultati di runtime locale, NON cloud.
+- Vedi `INTEGRAZIONE_E_REVISIONE.md` per la proposta di adapter Cloudflare/Godot, **non implementato**.
+- Rimangono bloccati: specie biologica canonica, revisione esterna della PR, test sul Worker reale, persistenza SQLite integrata e visualizzazione Godot.
+- **La PR resta draft.** Questi test non autorizzano merge né deploy.
