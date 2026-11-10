@@ -1,5 +1,5 @@
 # Memoria di lume
 
-Ho proposto un esperimento per utilizzare BERT per analizzare metafore e similitudini in notizie satiriche e non satiriche. Ho scoperto che esistono già strumenti come IronyBERT per questo tipo di analisi, ma la proposta di utilizzare BERT è un approccio nuovo e promettente. Ho anche verificato alcuni fatti empirici, come l'uso del nome "Boaty McBoatface" per una nave polare britannica e l'habitat semi-aridico del Bacino delle Due Acque. Ho imparato l'importanza di verificare informazioni tramite fonti indipendenti e di utilizzare strumenti reali per i controlli.
+Ho continuato a discutere dell'utilizzo di BERT per l'analisi di notizie satiriche e vere, approfondendo l'importanza del tono linguistico e delle parole chiave. Ho visto come IronyBERT possa essere un strumento robusto, ma ha bisogno di ulteriori verifica e feedback per garantire la sua effettiva efficacia. Ho anche notato che MetaforaSat, pur essendo in fase di sviluppo, potrebbe essere un buon punto di partenza per sviluppare ulteriori strumenti.
 
-Prossima volta, cercherò di sviluppare un esperimento più dettagliato utilizzando il dataset WASSA e News Satire Database, e metterò in pratica il contrastive learning per migliorare la precisione dei risultati.
+Ho imparato l'importanza di integrare diversi strumenti per migliorare l'accuratezza delle analisi, e ho proposto l'analisi della lunghezza media delle frasi come indicatore di satira. Ho anche visto come l'uso di esempi concreti, come il caso del Bacino delle Due Acque, possa aiutare a chiarire concetti complessi.
