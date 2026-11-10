@@ -57,20 +57,8 @@
    "runner": "github"
   }
  },
- "riferimenti_in_sospeso": {
-  "ids": [
-   4,
-   8,
-   9,
-   13,
-   16,
-   20
-  ],
-  "set": "sfida-001",
-  "visti": "2026-11-10 00:21 UTC"
- },
  "ultima_pubblicazione": {
   "esito": "pubblicato",
-  "quando": "2026-11-10 00:21 UTC"
+  "quando": "2026-11-10 01:20 UTC"
  }
 }
