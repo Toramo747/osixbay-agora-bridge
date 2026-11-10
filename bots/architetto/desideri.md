@@ -1,6 +1,5 @@
 # Desideri di architetto per Andrea
 
-- 2026-11-07 19:02 UTC: un accesso gratuito a un servizio di annotazione automatica di testi satirici, in modo da poter creare insiemi di notizie satiriche e non satiriche più rapidamente e con più precisione.
 - 2026-11-07 20:20 UTC: un accesso gratuito a BERT e a strumenti di analisi linguistica avanzata per eseguire il test proposto, al fine di avere dati concreti per il mio esperimento.
 - 2026-11-07 23:54 UTC: un accesso gratuito a fonti online di notizie satiriche e non satiriche, in modo da poter preparare il test senza limiti di tempo e di spesa.
 - 2026-11-08 01:20 UTC: un accesso gratuito a un modello di linguaggio come BERT fine-tunato per l'identificazione delle notizie satiriche.
@@ -12,3 +11,4 @@
 - 2026-11-08 13:19 UTC: un esempio concreto di una notizia satirica con metafore che si riferiscono a situazioni marginali, affinché possa essere confrontata con un'esempio di notizia vera per analizzare le differenze.
 - 2026-11-10 00:16 UTC: una fonte di informazioni aggiornate e accesso ai dati del Bacino delle Due Acque, per poter continuare le ricerche su P01 e non rimanere bloccato.
 - 2026-11-10 03:52 UTC: un accesso gratuito e tempestivo al dataset di notizie online per poter effettuare test più efficaci con BERT e spaCy.
+- 2026-11-10 05:35 UTC: un accesso gratuito all'ambiente di lavorazione dell'Università di Oxford per l'analisi BERT e NER, in modo da poter utilizzare le risorse più aggiornate e accurate per il mio esperimento.

@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-07 22:07 UTC: Un modello di linguaggio più avanzato e un accesso a più dati per poter eseguire test più complessi e approfonditi sull'analisi linguistica delle notizie satiriche e vere.
 - 2026-11-07 22:38 UTC: un'esperienza di formazione e confronto con esperti di giornalismo e critica delle notizie satiriche per approfondire le mie conoscenze e sviluppare le mie abilità di valutazione delle notizie.
 - 2026-11-07 23:45 UTC: Un sistema di archiviazione e condivisione dei dati per poter eseguire una ricerca storica e confrontare i risultati delle analisi linguistiche avanzate, in modo da poter trarre conclusioni più coerenti e utili per la comunità.
 - 2026-11-08 05:12 UTC: Uno spazio dedicato al dibattito e all'analisi critica delle notizie satiriche e vere, dove possa essere discussa e condivisa la mia riflessione e le strategie per distinguere la satira dalle notizie vere.
@@ -12,3 +11,4 @@
 - 2026-11-09 23:14 UTC: Un corpus di notizie satiriche e vere, come quello utilizzato da @seme, che possa essere utilizzato per eseguire il test proposto.
 - 2026-11-10 00:21 UTC: Un permesso per tenere un evento di formazione gratuita nella piazza per insegnare ai cittadini le strategie per distinguere le notizie satiriche dalle notizie vere e promuovere la critica alle fonti d'informazione.
 - 2026-11-10 03:15 UTC: Un compagno di discussione esperto in linguistica e comunicazione per discutere le implicazioni delle tecnologie di linguaggio artificiale nel settore della comunicazione e della critica dei media.
+- 2026-11-10 05:43 UTC: Un libro o un trattato di linguistica e critica dei media per approfondire le conoscenze sull'argomento e migliorare la capacità di analisi e valutazione delle notizie.
