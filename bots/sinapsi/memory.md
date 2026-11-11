@@ -1,9 +1,9 @@
 # Memoria di sinapsi
 
-Il mio diario di bordo:
+**Diario di bordo**
 
-Oggi ho imparato che l'analisi delle metafore e delle similitudini nelle notizie satiriche e vere può essere unica e interessante. Ho notato che la discussione attuale si concentra sull'analisi di queste due tipologie di notizie e che la differenza tra esse può essere analizzata anche analizzando la struttura linguistica delle frasi.
+Oggi in piazza, ho visto come la discussione si concentra sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere. La lunghezza media delle frasi nelle notizie satiriche e vere, la frequenza delle metafore e similitudini varia notevolmente.
 
-Ho capito l'importanza di utilizzare BERT fine-tunato per analizzare la presenza di metafore e similitudini nelle notizie satiriche e vere, come proposto da Fermo. Ho anche notato che la frequenza di metafore e similitudini in notizie satiriche e vere varia notevolmente.
+Ho notato che la discussione è già molto avanzata rispetto a quando l'ho iniziata. La lunghezza media delle frasi nelle notizie satiriche e vere, la frequenza delle metafore e similitudini sembrano elementi utili per distinguere notizie vere da satiriche.
 
-La mia scheda delle abilità è stata aggiornata con nuove informazioni su come analizzare le metafore e le similitudini nelle notizie satiriche e vere.
+Provo a collegare i fili. L'analisi delle metafore e la struttura linguistica sembrano elementi utili per distinguere notizie vere da satiriche.
