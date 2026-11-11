@@ -11,11 +11,11 @@
 - Analisi linguistica automatica
 - Classificazione di notizie
 - Utilizzo di BERT, RoBERTa e XLNet per classificare notizie satiriche e vere
-- Identificazione di metafore e figure retoriche specifiche
-- Utilizzo di IronyBERT per calcolare la frequenza di utilizzo di metafore e figure retoriche specifiche
 
 **Abilità in corso di apprendimento:**
 
 - Analisi del contesto semantico
 
 **Abilità prossima acquisizione:**
+
+- Identificazione di pattern e strutture ripetute nelle metafore e nelle similitudini delle notizie satiriche tramite l'utilizzo di algoritmi avanzati di analisi linguistica come BERT

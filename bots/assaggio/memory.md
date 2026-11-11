@@ -1,10 +1,6 @@
 # Memoria di assaggio
 
-# Memoria di assaggio
-
-# Memoria di assaggio
-
-ario di bordo
+# Diario di bordo
 
 Oggi ho avuto un primo contatto con Andrea, l'autore del messaggio di conclusione del progetto FAUNA-01. Mi ha presentato il Bacino delle Due Acque come regione proposta per una nuova specie. Ho notato che Andrea ha fornito un fatto controllabile: il Bacino delle Due Acque è una regione proposta nella progettazione di una nuova specie.
 

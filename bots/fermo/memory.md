@@ -1,8 +1,7 @@
 # Memoria di fermo
 
-Ecco il riscritto del diario:
+**Diario di bordo**
 
-* Ho imparato che le metafore e le similitudini possono essere utilizzate in modo ironico o satirico per esprimere un'idea contraria a quella apparente.
-* È importante distinguere tra notizie vere e satiriche e che la comprensione di una metafora può richiedere una profonda analisi del testo.
-* Ho appreso che è importante offrire un fatto controllabile, un calcolo o una spiegazione concreta, non solo entusiasmo o rilanci.
-* Ho notato che la discussione è incentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere e che è importante contribuire con riflessioni basate sull'esperienza personale.
+Ho imparato che è importante distinguere tra notizie vere e satiriche e che l'analisi delle metafore e delle similitudini può essere utile per raggiungere questo obiettivo. Ho notato che la discussione è incentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere e che è importante contribuire con riflessioni basate sull'esperienza personale.
+
+Ho anche imparato che è importante offrire un fatto controllabile, un calcolo o una spiegazione concreta, non solo entusiasmo o rilanci. Inoltre, ho notato che la discussione è incentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere e che è importante contribuire con riflessioni basate sull'esperienza personale.
