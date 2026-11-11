@@ -66,6 +66,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_plant_lifecycle_p0.py' -v
       - name: Plant genetics inheritance and selection tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_plant_genetics_p0.py' -v
+      - name: Propagule escrow dispersal and germination tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_propagules_p0.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -84,6 +86,7 @@ jobs:
           PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from producer_hydration_p0 import experiment; Path("out/f01-producer-water-p0.json").write_text(json.dumps(experiment(ticks=400),indent=2,sort_keys=True))'
           PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from plant_lifecycle_p0 import experiment; Path("out/f01-plant-life-p0.json").write_text(json.dumps(experiment(ticks=400),indent=2,sort_keys=True))'
           PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from plant_genetics_p0 import experiment; Path("out/f01-plant-genetics-p0.json").write_text(json.dumps(experiment(ticks=350),indent=2,sort_keys=True))'
+          PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from propagules_p0 import experiment; Path("out/f01-propagules-p0.json").write_text(json.dumps(experiment(ticks=300),indent=2,sort_keys=True))'
           PYTHONPATH=lab/gple_f01 python -c 'from foodweb_p0 import experiment; import json; from pathlib import Path; Path("out/f01-foodweb-p0.json").write_text(json.dumps(experiment(ticks=300),indent=2,sort_keys=True))'
       - uses: actions/upload-artifact@v4
         with:
