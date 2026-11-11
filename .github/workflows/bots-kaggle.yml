@@ -5,8 +5,6 @@ name: agora-bots-kaggle
 # si torna a un giro ogni 3 ore, sopra 28 h ci si ferma (quota gratuita di Kaggle: 30 h a settimana).
 # Il cron ogni 3 ore resta come riserva se la staffetta si ferma; la guardia evita giri doppi.
 on:
-  schedule:
-    - cron: '47 */3 * * *'
   workflow_dispatch:
     inputs:
       bot:
@@ -20,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   turn:
-    if: vars.BOTS_ENABLED == 'true' && vars.AGORA_LIVE_ENABLED == 'true'
+    if: false # PAUSA GPLE-FAUNA P0 2026-11-11; ripristinare solo con autorizzazione
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     env:
