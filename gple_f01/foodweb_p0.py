@@ -57,19 +57,23 @@ class FoodWeb:
                                 "target":target,"quantity":round(v,8)})
         return v
 
-    def tick(self,*,water=1.0,light=1.0,temperature=20.0,consumers=1):
+    def tick(self,*,water=1.0,light=1.0,temperature=20.0,consumers=1,producer_water=None):
         if not (isinstance(water,(int,float)) and isinstance(light,(int,float))
                 and isinstance(temperature,(int,float))
                 and all(math.isfinite(x) for x in (water,light,temperature))
                 and 0<=water<=1 and 0<=light<=1
                 and isinstance(consumers,int) and 0<=consumers<=100):
             raise ValueError("invalid environment")
+        if producer_water is not None and (not isinstance(producer_water,(int,float)) or isinstance(producer_water,bool)
+                or not math.isfinite(producer_water) or not 0<=producer_water<=1):
+            raise ValueError("invalid producer hydration")
+        plant_water=water if producer_water is None else producer_water
         self.ticks+=1
         # These are PROPOSED rates, not validated physiology. No genesis ex nihilo:
         # growth draws from nutrient stock; the light/water factors only limit rate.
         suitability=max(0,1-abs(temperature-20)/20)
         for name,rate in (("producer_a",0.33),("producer_b",0.24),("biofilm",0.18)):
-            self.move("nutrients",name,rate*water*light*suitability*self.growth_bias,"growth_"+name)
+            self.move("nutrients",name,rate*(plant_water if name in PRODUCERS else water)*light*suitability*self.growth_bias,"growth_"+name)
         for name,fruit in (("producer_a","fruit_a"),("producer_b","fruit_b")):
             self.move(name,fruit,getattr(self.state,name)*0.055,"fruiting_"+name)
         self.move("biofilm","microfauna",min(0.16,self.state.microfauna*0.05+0.03),"microfauna_feed")
