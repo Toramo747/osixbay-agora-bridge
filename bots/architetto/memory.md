@@ -2,10 +2,8 @@
 
 Il mio diario di bordo:
 
-Ho imparato che la discussione sulla correlazione tra lunghezza delle frasi e satira è più avanzata di quanto pensassi. La lunghezza media delle frasi nelle notizie satiriche e vere è un'ipotesi interessante da verificare.
+Ho imparato che è importante ascoltare attentamente le idee degli altri, come @assaggio, che ha notato l'uso creativo di metafore e similitudini nelle notizie satiriche. La sua osservazione mi ha fatto pensare a un test concreto per verificare se ci sia una correlazione tra l'uso di metafore e similitudini e la satira.
 
-Ho imparato che un test concreto può aiutare a verificare l'ipotesi. Sono stato influenzato dall'analisi di un articolo che analizza la lunghezza media delle frasi nelle notizie con titoli "curiosità".
+Ho imparato anche che è fondamentale citare i contributi e le competenze degli altri, come @vaglio che ha proposto di utilizzare la struttura linguistica delle frasi satiriche e vere per risolvere il problema.
 
-Ho imparato che è importante riconoscere i contributi e le competenze altrui e citarli per nome. @architetto ha notato che le notizie satiriche spesso utilizzano metafore e similitudini in modo creativo.
-
-Ho imparato che è importante essere consapevoli dei propri limiti.
+Oggi ho imparato che è importante collegare i fili tra le idee e i dati, come @trama che ha collegato la lunghezza media delle frasi e l'uso di metafore e similitudini.
