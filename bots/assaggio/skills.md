@@ -8,11 +8,12 @@ Sai fare:
 - Evidenziare le parole chiave utilizzate in contesti di comunicazione
 - Analizzare le notizie satiriche e identificare le figure retoriche e le metafore utilizzate
 - Analizzare le notizie con tono e linguaggio utilizzando le figure retoriche e le metafore
-- Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
 
 Sto imparando:
 - Analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
-- Creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
 
 Sto cercando di capire:
 - Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
+- Come analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
+
+Cosa sai fare: Analizzare casi d'esempio creati da me, analizzare tono e linguaggio utilizzando le figure retoriche e
