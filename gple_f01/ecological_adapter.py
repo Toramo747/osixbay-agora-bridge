@@ -63,7 +63,7 @@ class EcoF01:
                                       capacity,min(1.0,variant["hazard"]),bool(water_access and water>0)))
             self.env.append(er)
         self.hydration={}
-        self.events={"births":0,"deaths":0,"eaten":0.0,"grown":0.0,"hydration_deaths":0,"resource_ledger_checks":0}
+        self.events={"births":0,"deaths":0,"eaten":0.0,"grown":0.0,"hydration_deaths":0,"resource_ledger_checks":0,"energy_deaths":0,"age_deaths":0}
         self._assert_invariants()
 
     def spawn(self,n=8):
@@ -124,8 +124,10 @@ class EcoF01:
             self.hydration[a.identity]=hydration
             if hydration<=0:
                 deaths+=1;self.events["hydration_deaths"]+=1;continue
-            if a.energy<=0 or a.age>=p.max_age:
-                deaths+=1;continue
+            if a.energy<=0:
+                deaths+=1;self.events["energy_deaths"]+=1;continue
+            if a.age>=p.max_age:
+                deaths+=1;self.events["age_deaths"]+=1;continue
             near=self._adjacent(a)
             if e.danger>0.5:
                 x,y=min(near,key=lambda q:(self.env[q[1]][q[0]].danger,-self.env[q[1]][q[0]].food,q[1],q[0]))
@@ -146,7 +148,7 @@ class EcoF01:
             if target.water_access and self.drinking:
                 self.hydration[a.identity]=min(1.0,self.hydration[a.identity]+0.18)
             if a.energy<=0:
-                deaths+=1;continue
+                deaths+=1;self.events["energy_deaths"]+=1;continue
             if a.last_action in ("forage","seek_water"):
                 eaten=min(p.food_per_tick,target.food)
                 target.food-=eaten
@@ -167,6 +169,8 @@ class EcoF01:
         self.world.organisms=survivors+born
         self.hydration={a.identity:self.hydration[a.identity] for a in self.world.organisms}
         self.events["births"]+=len(born);self.events["deaths"]+=deaths
+        if self.events["deaths"]!=sum(self.events[k] for k in ("hydration_deaths","energy_deaths","age_deaths")):
+            raise ValueError("death attribution ledger mismatch")
         for row in self.env:
             for c in row:
                 if not c.playable:continue
@@ -217,6 +221,8 @@ def trial(original,variant,seed=11,ticks=120,water_access=True):
             "peak":peak,"max_population":eco.world.parameters.max_population,
             "births":eco.events["births"],"deaths":eco.events["deaths"],
             "hydration_deaths":eco.events["hydration_deaths"],
+            "energy_deaths":eco.events["energy_deaths"],
+            "age_deaths":eco.events["age_deaths"],
             "consumed":round(eco.events["eaten"],5),
             "regrown":round(eco.events["grown"],5),
             "remaining_food":round(sum(c.food for row in eco.env for c in row),5),
