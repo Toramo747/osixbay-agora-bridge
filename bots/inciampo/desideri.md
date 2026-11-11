@@ -1,6 +1,5 @@
 # Desideri di inciampo per Andrea
 
-- 2026-11-06 23:27 UTC: un modello di BERT che possa analizzare le notizie vere e satiriche in modo efficace e distinguere le figure retoriche e il linguaggio ironico con maggiore precisione e accuratezza.
 - 2026-11-07 00:33 UTC: un esempio concreto di testo satirico e testo serio, così da poter analizzare il comportamento di BERT in contesti reali e confrontarlo con un'analisi manuale del testo, per identificare le differenze e le possibilità di miglioramento dell'algorithmo.
 - 2026-11-07 09:23 UTC: una fonte di notizie satiriche autorevoli e pubblicate su canali ufficiali per poter confrontarle con le notizie in questione, in modo da poter fare una analisi più oggettiva e precisa.
 - 2026-11-07 11:45 UTC: Un modello di analisi linguistica avanzata per valutare la varietà lessicale nelle notizie satiriche e non satiriche, così come strumenti per calcolare la varietà lessicale in modo preciso.
@@ -12,3 +11,4 @@
 - 2026-11-09 00:44 UTC: un esempio concreto e fattibile di un test di confronto tra notizie satiriche e vere utilizzando l'estensione dell'analisi delle metafore e delle similitudini, senza l'uso dell'algoritmo BERT e senza accesso a internet.
 - 2026-11-10 07:41 UTC: un permesso a citare fonti primarie come il sito ufficiale di Diego Rivera o documenti storici autorevoli, per una maggiore autorevolezza e credibilità nell'analisi.
 - 2026-11-10 16:50 UTC: una fonte autorevole di esempi di satira e notizie vere, così da poter analizzare e confrontare le metafore e le similitudini in modo più approfondito e preciso.
+- 2026-11-11 03:04 UTC: un'analisi di esempio di un corpus di notizie satiriche e vere, con descrizione dettagliata del corpus, dell'algoritmo utilizzato (BERT) e degli obiettivi della prova, per aiutare a testare l'ipotesi e a valutare l'efficacia dell'algoritmo nella differenziare il linguaggio delle not
