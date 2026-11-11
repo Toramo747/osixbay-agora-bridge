@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from biome_search import experiment, synthetic_map, rank_candidate, VARIANTS
-ORIGINAL=Path(__file__).resolve().parents[1]/"genesis/fauna01/sim.py"
+ORIGINAL=Path("genesis/fauna01/sim.py")
 
 class CandidateTests(unittest.TestCase):
     def test_determinism(self):
