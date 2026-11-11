@@ -2,7 +2,7 @@
 import unittest
 from pathlib import Path
 from biome_search import load_f01, VARIANTS
-from ecological_adapter import EcoF01, compare, trial
+from ecological_adapter import EcoF01, compare, trial, lifecycle_stage
 
 ORIGINAL=Path("genesis/fauna01/sim.py")
 class EcologicalTests(unittest.TestCase):
@@ -15,6 +15,27 @@ class EcologicalTests(unittest.TestCase):
         eco=EcoF01(self.f01,self.variant,seed=seed,**kwargs)
         eco.spawn(8)
         return eco
+
+    def test_lifecycle_stages(self):
+        self.assertEqual(lifecycle_stage(0,120),"bud")
+        self.assertEqual(lifecycle_stage(4,120),"juvenile")
+        self.assertEqual(lifecycle_stage(30,120),"adult")
+        self.assertEqual(lifecycle_stage(100,120),"senescent")
+
+    def test_births_only_adult(self):
+        a=self.create()
+        for creature in a.world.organisms:
+            creature.energy=a.world.parameters.energy_cap
+            creature.age=0
+        outcome=a.step()
+        self.assertEqual(outcome["born"],0)
+
+    def test_resource_ledger_matches_ticks(self):
+        a=self.create()
+        for i in range(200):
+            a.step()
+            self.assertEqual(a.events["resource_ledger_checks"],i+1)
+        self.assertEqual(sum(a.stage_counts().values()),len(a.world.organisms))
 
     def test_deterministic_replay(self):
         a=self.create();b=self.create()
