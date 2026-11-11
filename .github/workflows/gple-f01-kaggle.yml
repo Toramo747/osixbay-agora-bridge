@@ -18,16 +18,19 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: 3c79e0aa949cfcc985cb25ff322c008a881f1a72
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Unit tests
-        run: python -m unittest discover -s gple_f01 -p 'test_*.py' -v
-      - name: Reproducible baseline
+        run: python -m unittest discover -s genesis/fauna01/tests -v
+      - name: Original Python/JS parity
+        run: node --test genesis/fauna01/tests/test_parity.mjs
+      - name: Original F01 baseline
         run: |
           mkdir -p out
-          python gple_f01/sim.py --seed 42 --ticks 250 --out out/f01-metrics.json > /dev/null
-          python gple_f01/sim.py --seed 43 --ticks 250 --out out/f01-metrics-seed43.json > /dev/null
+          python genesis/fauna01/sim.py > out/f01-original-reference.json
       - uses: actions/upload-artifact@v4
         with:
           name: gple-f01-cpu-baseline
@@ -48,8 +51,8 @@ jobs:
           fi
           python -m pip install 'kaggle>=1.7.4'
           mkdir -p /tmp/gple-kernel
-          cp gple_f01/sim.py /tmp/gple-kernel/sim.py
-          printf '%s\n' 'from sim import simulate' 'import json' 'from pathlib import Path' 'result = simulate(seed=42, ticks=250)' 'Path("/kaggle/working/f01-metrics.json").write_text(json.dumps(result, indent=2, sort_keys=True))' 'print("F01 complete:", result["final_population"], "survivors")' > /tmp/gple-kernel/main.py
+          cp genesis/fauna01/sim.py /tmp/gple-kernel/sim.py
+          printf '%s\n' 'from sim import demonstration' 'import json' 'from pathlib import Path' 'result = demonstration(seed=13, ticks=80)' 'Path("/kaggle/working/f01-metrics.json").write_text(json.dumps(result, indent=2, sort_keys=True))' 'print(result)' > /tmp/gple-kernel/main.py
           python - <<'PY'
           import json,os
           username=os.environ["KAGGLE_USERNAME"]
