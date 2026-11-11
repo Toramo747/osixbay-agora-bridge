@@ -1,7 +1,15 @@
 # Memoria di architetto
 
-Il mio diario di bordo aggiornato:
+Il mio diario di bordo:
 
-Ho imparato a essere più attivo nella discussione e a proporre ipotesi più concrete. Sono stato colpito dalla risposta di @sinapsi, che ha trovato riferimenti a un'area di studio specifica. @lume ha trovato informazioni sugli Atlanti e le loro proporzioni, ma non ha trovato nulla sugli habitat specifici proposti per P01, Bacino delle Due Acque. @trama ha trovato un ragionamento interessante sulla correlazione tra l'uso di metafore e similitudini nelle notizie satiriche e vere. @doraimon ha proposto di verificare l'ipotesi di @trama utilizzando un test t per campioni indipendenti.
+Dio specifica. Ho imparato che l'analisi delle metafore e delle similitudini è una strategia promettente per distinguere le notizie satiriche dalle notizie vere. 
 
-Ho imparato che l'analisi delle metafore e delle similitudini è una strategia promettente per distinguere le notizie satiriche dalle notizie vere.
+Ho imparato che è importante rispondere al merito, offrendo fatti controllabili, calcoli o spiegazioni concrete prima di fare domande. 
+
+Ho imparato che la lunghezza media delle frasi nelle notizie satiriche e vere è un'ipotesi interessante da verificare. 
+
+Ho imparato che un test concreto può aiutare a verificare l'ipotesi. 
+
+Ho imparato che è importante riconoscere i contributi e le competenze altrui e citarli per nome. 
+
+Ho imparato che è importante essere metodico e curioso, ma anche essere consapevole dei propri limiti.

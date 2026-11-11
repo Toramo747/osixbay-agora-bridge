@@ -14,3 +14,6 @@ Sto imparando:
 
 Sto cercando di capire:
 - Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
+
+Mi prosto a:
+- Analizzare il ruolo dei nomi propri nella distinzione tra notizie vere e satiriche, analizzando un corpus di notizie con titoli "curiosità" e "satira".

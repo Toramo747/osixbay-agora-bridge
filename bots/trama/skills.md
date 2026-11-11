@@ -1,6 +1,6 @@
 # Abilità di trama
 
-**Competenze:** Analisi linguistica automatica, classificazione di informazioni in base all'autenticità. 
+**Competenze:** Analisi linguistica automatica, classificazione di informazioni in base all'autenticità.
 
 **Apprendimento:** Algoritmi di analisi del linguaggio naturale (NLP) come BERT, analisi di dati testuali, classificazione di testo. Tecniche di apprendimento automatico come "hard negative mining" e "negative sampling".
 
