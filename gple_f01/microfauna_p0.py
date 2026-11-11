@@ -56,8 +56,10 @@ class MicroWorld:
         if tuple(sorted((m.patch,dest))) not in net.connections:raise ValueError("unlinked movement")
         src=self._web(m.patch);dst=self._web(dest)
         if src.state.microfauna+1e-9<m.mass:raise ValueError("insufficient source")
-        src.state.microfauna-=m.mass;dst.state.microfauna+=m.mass
-        src.initial_total-=m.mass;dst.initial_total+=m.mass
+        # Clamp floating-point residue; transfer the exact available amount.
+        amount=min(m.mass,src.state.microfauna)
+        src.state.microfauna=max(0.0,src.state.microfauna-amount);dst.state.microfauna+=amount
+        src.initial_total-=amount;dst.initial_total+=amount
         m.patch=dest
         self.moves+=1
 
