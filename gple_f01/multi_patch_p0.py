@@ -69,6 +69,10 @@ class PatchNetwork:
             value=min(getattr(self.nodes[a].state,field),amount)
             setattr(self.nodes[a].state,field,getattr(self.nodes[a].state,field)-value)
             setattr(self.nodes[b].state,field,getattr(self.nodes[b].state,field)+value)
+            # Each FoodWeb audits local conservation; cross-patch exchange updates
+            # its accounting baseline, without changing global biomass.
+            self.nodes[a].initial_total-=value
+            self.nodes[b].initial_total+=value
         if value>0:self.flux_events+=1
 
     def tick(self,*,override_consumers=None):
