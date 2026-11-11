@@ -48,7 +48,8 @@ jobs:
           fi
           python -m pip install 'kaggle>=1.7.4'
           mkdir -p /tmp/gple-kernel
-          cp gple_f01/sim.py /tmp/gple-kernel/main.py
+          cp gple_f01/sim.py /tmp/gple-kernel/sim.py
+          printf '%s\n' 'from sim import simulate' 'import json' 'from pathlib import Path' 'result = simulate(seed=42, ticks=250)' 'Path("/kaggle/working/f01-metrics.json").write_text(json.dumps(result, indent=2, sort_keys=True))' 'print("F01 complete:", result["final_population"], "survivors")' > /tmp/gple-kernel/main.py
           python - <<'PY'
           import json,os
           username=os.environ["KAGGLE_USERNAME"]
