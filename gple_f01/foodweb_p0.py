@@ -28,6 +28,7 @@ class FoodWeb:
     def __init__(self,seed=1,state=None):
         if not isinstance(seed,int):raise ValueError("bad seed")
         self.rng=random.Random(seed)
+        self.growth_bias=0.85+0.3*self.rng.random() # seed-specific, bounded synthetic productivity
         self.state=state if state is not None else State()
         self.ticks=0
         self.events=[]
@@ -68,7 +69,7 @@ class FoodWeb:
         # growth draws from nutrient stock; the light/water factors only limit rate.
         suitability=max(0,1-abs(temperature-20)/20)
         for name,rate in (("producer_a",0.33),("producer_b",0.24),("biofilm",0.18)):
-            self.move("nutrients",name,rate*water*light*suitability,"growth_"+name)
+            self.move("nutrients",name,rate*water*light*suitability*self.growth_bias,"growth_"+name)
         for name,fruit in (("producer_a","fruit_a"),("producer_b","fruit_b")):
             self.move(name,fruit,getattr(self.state,name)*0.055,"fruiting_"+name)
         self.move("biofilm","microfauna",min(0.16,self.state.microfauna*0.05+0.03),"microfauna_feed")
@@ -98,7 +99,7 @@ class FoodWeb:
     def snapshot(self):
         return json.dumps({"schema":"osixbay.gple.f01.foodweb.p0.v1","ticks":self.ticks,
                            "state":asdict(self.state),"initial_total":self.initial_total,
-                           "rng_state":repr(self.rng.getstate()),"events":self.events},
+                           "growth_bias":self.growth_bias,"events":self.events},
                           sort_keys=True,separators=(",",":"))
 
     @classmethod
@@ -109,7 +110,10 @@ class FoodWeb:
         obj.ticks=data["ticks"]
         obj.initial_total=data["initial_total"]
         obj.events=data["events"]
-        # RNG never used currently; do NOT eval any serialized state.
+        bias=data.get("growth_bias")
+        if not isinstance(bias,(float,int)) or not math.isfinite(bias) or not 0.85<=bias<=1.15:
+            raise ValueError("invalid growth bias")
+        obj.growth_bias=bias
         if not math.isclose(obj.total(),obj.initial_total,abs_tol=1e-8):
             raise ValueError("invalid material ledger")
         return obj
