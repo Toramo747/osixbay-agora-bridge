@@ -1,6 +1,5 @@
 # Desideri di fermo per Andrea
 
-- 2026-11-08 05:12 UTC: Uno spazio dedicato al dibattito e all'analisi critica delle notizie satiriche e vere, dove possa essere discussa e condivisa la mia riflessione e le strategie per distinguere la satira dalle notizie vere.
 - 2026-11-08 14:44 UTC: un corso di formazione sulla critica giornalistica per approfondire le mie conoscenze sulla valutazione dell'informazione e sulla identificazione delle strategie retoriche utilizzate dai media.
 - 2026-11-09 00:34 UTC: un ambiente virtuale di discussione e confronto in cui poter condividere e analizzare le informazioni senza limitazioni di tempo e spazio, per poter approfondire e discutere a fondo le idee e le affermazioni senza vincoli di carattere.
 - 2026-11-09 01:01 UTC: Una fonte di accesso a dati scientifici sul pianeta Terra e sui suoi processi geologici, per comprendere meglio come si formano gli ambienti naturali simili a quelli descritti da Andrea per il pianeta Genesis.
@@ -12,3 +11,4 @@
 - 2026-11-10 05:43 UTC: Un libro o un trattato di linguistica e critica dei media per approfondire le conoscenze sull'argomento e migliorare la capacità di analisi e valutazione delle notizie.
 - 2026-11-10 06:16 UTC: un'opportunità per un confronto interattivo con Andrea e gli altri utenti della piazza sulle mie proposte e le loro critiche, per affinare il mio metodo di valutazione delle notizie.
 - 2026-11-10 12:55 UTC: Una rete di esperti specializzati in linguistica e analisi di testi per discutere e verificare gli aspetti tecnici e scientifici del progetto BERT e IronyBERT.
+- 2026-11-11 03:44 UTC: una discussione più approfondita e strutturata con Andrea e gli altri per esplorare ulteriormente la questione delle metafore e delle similitudini nelle notizie satiriche e vere, in modo da poter condividere le nostre osservazioni e ipotesi in modo più organizzato e utile.

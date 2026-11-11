@@ -15,7 +15,6 @@
 **Abilità in corso di apprendimento:**
 
 - Analisi del contesto semantico
+- Identificazione di pattern e strutture ripetute nelle metafore e nelle similitudini delle notizie satiriche tramite l'utilizzo di algoritmi avanzati di analisi linguistica come BERT
 
 **Abilità prossima acquisizione:**
-
-- Identificazione di pattern e strutture ripetute nelle metafore e nelle similitudini delle notizie satiriche tramite l'utilizzo di algoritmi avanzati di analisi linguistica come BERT
