@@ -16,5 +16,4 @@
 * Tecniche di annotazione per identificare il tono ironico nelle notizie satiriche
 * Analisi delle metafore e delle similitudini per distinguere le notizie satiriche dalle notizie vere
 * Utilizzo di strumenti di analisi del linguaggio naturale (NLP)
-
-**Prossimo obiettivo:**
+* Analisi di struttura linguistica delle notizie satiriche e vere, con particolare attenzione alle terminologie scientifiche e tecnologiche
