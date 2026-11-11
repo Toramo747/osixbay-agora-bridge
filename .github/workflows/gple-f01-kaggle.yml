@@ -48,6 +48,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_ecological_adapter.py' -v
       - name: Long-horizon ecology tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_long_horizon.py' -v
+      - name: Extinction counterfactual tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_counterfactuals.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -59,6 +61,7 @@ jobs:
           python lab/gple_f01/specialist_review.py --input out/f01-generated-biomes.json --out out/f01-specialist-review.json
           python lab/gple_f01/compare_ecology.py --original genesis/fauna01/sim.py --ticks 120 --out out/f01-ecological-comparison.json
           python lab/gple_f01/long_horizon.py --original genesis/fauna01/sim.py --ticks 1500 --out out/f01-endurance.json
+          python lab/gple_f01/counterfactuals.py --original genesis/fauna01/sim.py --ticks 400 --out out/f01-counterfactuals.json
       - uses: actions/upload-artifact@v4
         with:
           name: gple-f01-cpu-baseline
@@ -86,6 +89,7 @@ jobs:
           cp lab/gple_f01/ecological_adapter.py /tmp/gple-kernel/ecological_adapter.py
           cp lab/gple_f01/compare_ecology.py /tmp/gple-kernel/compare_ecology.py
           cp lab/gple_f01/long_horizon.py /tmp/gple-kernel/long_horizon.py
+          cp lab/gple_f01/counterfactuals.py /tmp/gple-kernel/counterfactuals.py
           cat > /tmp/gple-kernel/main.py <<'PY'
           from sim import demonstration
           from biome_search import experiment
@@ -93,6 +97,7 @@ jobs:
           from specialist_review import review
           from ecological_adapter import compare
           from long_horizon import endurance
+          from counterfactuals import experiment as counterfactual_experiment
           from biome_search import VARIANTS
           from pathlib import Path
           import json
@@ -107,6 +112,8 @@ jobs:
           base.joinpath("f01-ecological-comparison.json").write_text(json.dumps(ecological,indent=2,sort_keys=True))
           long_result=endurance(base/"sim.py",ticks=1500)
           base.joinpath("f01-endurance.json").write_text(json.dumps(long_result,indent=2,sort_keys=True))
+          diagnoses=counterfactual_experiment(base/"sim.py",ticks=400)
+          base.joinpath("f01-counterfactuals.json").write_text(json.dumps(diagnoses,indent=2,sort_keys=True))
           print("Synthetic F01 candidate count",len(result["proposals"]))
           print("Top screening hypothesis",result["proposals"][0]["candidate"]["id"])
           PY
