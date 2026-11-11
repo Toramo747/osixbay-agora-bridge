@@ -54,6 +54,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_world25d.py' -v
       - name: Ecological food web tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_foodweb_p0.py' -v
+      - name: Offline 2.5D asset/event contract tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_asset_contract_p0.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -66,6 +68,7 @@ jobs:
           python lab/gple_f01/compare_ecology.py --original genesis/fauna01/sim.py --ticks 120 --out out/f01-ecological-comparison.json
           python lab/gple_f01/long_horizon.py --original genesis/fauna01/sim.py --ticks 1500 --out out/f01-endurance.json
           python lab/gple_f01/counterfactuals.py --original genesis/fauna01/sim.py --ticks 400 --out out/f01-counterfactuals.json
+          python lab/gple_f01/asset_contract_p0.py > out/f01-asset-manifest-p0.json
           PYTHONPATH=lab/gple_f01 python -c 'from foodweb_p0 import experiment; import json; from pathlib import Path; Path("out/f01-foodweb-p0.json").write_text(json.dumps(experiment(ticks=300),indent=2,sort_keys=True))'
       - uses: actions/upload-artifact@v4
         with:
