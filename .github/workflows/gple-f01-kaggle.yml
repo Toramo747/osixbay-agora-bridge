@@ -36,6 +36,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_biome_search.py' -v
       - name: Evolutionary biome hypothesis tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_evolve_biomes.py' -v
+      - name: Specialist review tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_specialist_review.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -44,6 +46,7 @@ jobs:
           python genesis/fauna01/sim.py > out/f01-original-reference.json
           python lab/gple_f01/biome_search.py --original genesis/fauna01/sim.py --ticks 150 --out out/f01-biome-proposals.json
           python lab/gple_f01/evolve_biomes.py --original genesis/fauna01/sim.py --generations 3 --out out/f01-generated-biomes.json
+          python lab/gple_f01/specialist_review.py --input out/f01-generated-biomes.json --out out/f01-specialist-review.json
       - uses: actions/upload-artifact@v4
         with:
           name: gple-f01-cpu-baseline
@@ -67,10 +70,12 @@ jobs:
           cp genesis/fauna01/sim.py /tmp/gple-kernel/sim.py
           cp lab/gple_f01/biome_search.py /tmp/gple-kernel/biome_search.py
           cp lab/gple_f01/evolve_biomes.py /tmp/gple-kernel/evolve_biomes.py
+          cp lab/gple_f01/specialist_review.py /tmp/gple-kernel/specialist_review.py
           cat > /tmp/gple-kernel/main.py <<'PY'
           from sim import demonstration
           from biome_search import experiment
           from evolve_biomes import evolve
+          from specialist_review import review
           from pathlib import Path
           import json
           base=Path("/kaggle/working")
@@ -79,6 +84,7 @@ jobs:
           base.joinpath("f01-biome-proposals.json").write_text(json.dumps(result,indent=2,sort_keys=True))
           generated=evolve(base/"sim.py",seed=2026,generations=3)
           base.joinpath("f01-generated-biomes.json").write_text(json.dumps(generated,indent=2,sort_keys=True))
+          base.joinpath("f01-specialist-review.json").write_text(json.dumps(review(generated),indent=2,sort_keys=True))
           print("Synthetic F01 candidate count",len(result["proposals"]))
           print("Top screening hypothesis",result["proposals"][0]["candidate"]["id"])
           PY
