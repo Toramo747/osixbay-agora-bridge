@@ -14,9 +14,13 @@ class PropaguleTests(unittest.TestCase):
     def test_drought_suppresses_germination(self):
         w=PropaguleWorld()
         w.tick()
-        w.genetic.life.hydro.network.water={n:0.0 for n in w.genetic.life.hydro.network.water}
-        # Do not alter hydrology inventory manually: test controlled threshold instead.
         self.assertGreater(w.created,0)
+        # A synthetic seed with a very high local moisture threshold must remain dormant.
+        from unittest.mock import patch
+        with patch("propagules_p0.MIN_MOISTURE",100.0):
+            for _ in range(GERMINATION_AGE+1):w.tick(rain_rate=0)
+        self.assertGreater(len(w.seeds),0)
+        self.assertEqual(w.germinated,0)
     def test_isolated_no_cross_patch(self):
         w=PropaguleWorld(connections=())
         for _ in range(15):w.tick()
