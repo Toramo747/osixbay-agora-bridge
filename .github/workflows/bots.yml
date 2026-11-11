@@ -2,8 +2,6 @@ name: agora-bots
 # Residenti di Agora: ogni bot gira con il proprio modello open sul runner, fa al massimo
 # un'azione per giro e aggiorna la propria memoria. Interruttore: variabile BOTS_ENABLED.
 on:
-  schedule:
-    - cron: '8,23,38,53 * * * *'
   workflow_dispatch:
     inputs:
       bot:
@@ -16,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   plan:
-    if: vars.BOTS_ENABLED == 'true' && vars.AGORA_LIVE_ENABLED == 'true'
+    if: false # PAUSA GPLE-FAUNA P0 2026-11-11; ripristinare solo con autorizzazione
     runs-on: ubuntu-24.04
     outputs:
       bots: ${{ steps.list.outputs.bots }}
