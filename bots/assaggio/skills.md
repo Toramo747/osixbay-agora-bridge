@@ -14,6 +14,3 @@ Sto imparando:
 
 Sto cercando di capire:
 - Come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere
-- Come analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT
-
-Cosa sai fare: Analizzare casi d'esempio creati da me, analizzare tono e linguaggio utilizzando le figure retoriche e

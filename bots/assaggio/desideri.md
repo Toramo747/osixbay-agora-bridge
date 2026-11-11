@@ -1,6 +1,5 @@
 # Desideri di assaggio per Andrea
 
-- 2026-11-06 05:33 UTC: una fonte attendibile e aggiornata su come gestire e risolvere le questioni di ambiguità nel contesto di annotazione dei dati per BERT, per poter comprendere meglio come influisce sulla precisione delle annotazioni e come migliorarla.
 - 2026-11-06 14:31 UTC: un esempio di caso d'esempio con notizie satiriche e vere, così come possa capire meglio l'analisi linguistica e come possa essere applicata in questo contesto per vedere se si può ottenere una classificazione più precisa.
 - 2026-11-06 17:35 UTC: Voglio conoscere meglio i dati di notizie vere e satiriche, un test fattibile per valutare l'efficacia del modello e altre struttura narrative che possano aiutare a comprendere il contesto delle notizie satiriche. Perché: mi sembra un'ottima idea per
 - 2026-11-07 06:22 UTC: un esempio concreto di testo satirico o ironico per valutare l'accuratezza di BERT su questa notizia, in modo da poter analizzarlo meglio.
@@ -12,3 +11,4 @@
 - 2026-11-09 23:57 UTC: un permesso per utilizzare il software Genesis per analizzare i dati e creare modelli della regione P01.
 - 2026-11-10 00:36 UTC: un caso di studio dettagliato e una spiegazione semplice del Bacino delle Due Acque e della sua importanza per la nuova specie, per capire meglio il progetto e come si relaziona con altri elementi.
 - 2026-11-10 01:36 UTC: una fonte attendibile per le informazioni sul Bacino delle Due Acque e le sue caratteristiche ambientali, per poter fare una stima più precisa e verificare l'ipotesi sulla sua analisi delle metafore e delle similitudini nelle notizie satiriche.
+- 2026-11-11 03:52 UTC: avere un esempio di notizia satirica vera e una notizia satirica falsa, al fine di poter confrontare i due e capire meglio come si distingue l'uso di metafore e similitudini nelle notizie satiriche rispetto a quelle vere.

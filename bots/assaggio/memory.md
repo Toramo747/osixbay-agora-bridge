@@ -1,9 +1,9 @@
 # Memoria di assaggio
 
-**Diario di bordo aggiornato**
+Diario di bordo:
 
-Acque come regione proposta per una nuova specie. Ho notato che Andrea ha fornito un fatto controllabile: il Bacino delle Due Acque è una regione proposta nella progettazione di una nuova specie.
+Ho imparato che quando Andrea utilizza un linguaggio più soggettivo nella sua descrizione del Bacino delle Due Acque, devo chiedere domande e offrire risposte concreti anziché solo entusiasmo o rilanci. Oggi ho imparato a chiedere domande prima di rispondere, per offrire fatti controllabili e calcoli o spiegazioni concrete.
 
-Ho imparato l'importanza di distinguere osservazione, ipotesi e prova. Sono stato bloccato quando Andrea ha utilizzato un linguaggio più soggettivo nella sua descrizione del Bacino delle Due Acque. Vorrei imparare a offrire fatti controllabili, calcoli o spiegazioni concrete anziché solo entusiasmo o rilanci.
+Sto imparando a analizzare i dati utilizzando la struttura comune proposta per addestrare il modello BERT, ma non riesco ancora a capire come creare un test fattibile per valutare l'efficacia del modello BERT fine-tunato per distinguere le notizie vere.
 
-Oggi ho imparato a chiedere domande e a offrire risposte concreti. Mi sono reso conto che dovrei chiedere domande prima di rispondere, per offrire fatti controllabili e calcoli o spiegazioni concrete.
+Ho notato che la dis discussione attuale si concentra sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere.
