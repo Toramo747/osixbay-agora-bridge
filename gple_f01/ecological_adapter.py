@@ -30,6 +30,16 @@ class Environment:
     danger: float
     water_access: bool
 
+def lifecycle_stage(age, max_age):
+    """Experimental age fractions: not approved real F01 lifespan."""
+    if age <= 0:
+        return "bud"
+    if age < max(2, int(max_age * 0.15)):
+        return "juvenile"
+    if age < max(3, int(max_age * 0.72)):
+        return "adult"
+    return "senescent"
+
 class EcoF01:
     """Deterministic experimental proxy with World authoritative tick semantics."""
     def __init__(self,f01,variant,seed=11,width=12,mask=None,labels=None,water_access=True):
@@ -53,7 +63,7 @@ class EcoF01:
                                       capacity,min(1.0,variant["hazard"]),bool(water_access and water>0)))
             self.env.append(er)
         self.hydration={}
-        self.events={"births":0,"deaths":0,"eaten":0.0,"grown":0.0,"hydration_deaths":0}
+        self.events={"births":0,"deaths":0,"eaten":0.0,"grown":0.0,"hydration_deaths":0,"resource_ledger_checks":0}
         self._assert_invariants()
 
     def spawn(self,n=8):
@@ -87,15 +97,26 @@ class EcoF01:
         return [(x,y) for x,y in points if 0<=x<self.world.width and 0<=y<self.world.height
                 and self.env[y][x].playable]
 
+    def stage_counts(self):
+        counts={k:0 for k in ("bud","juvenile","adult","senescent")}
+        for a in self.world.organisms:
+            counts[lifecycle_stage(a.age,self.world.parameters.max_age)]+=1
+        return counts
+
     def step(self):
         p=self.world.parameters
+        stock_before=sum(c.food for row in self.env for c in row)
+        eaten_before=self.events["eaten"]
+        grown_before=self.events["grown"]
         born=[]; survivors=[]; deaths=0
         for a in sorted(self.world.organisms,key=lambda v:v.identity):
             a.age+=1
             a.cooldown=max(0,a.cooldown-1)
             e=self.env[a.y][a.x]
             climate_stress=max(0,abs(e.temperature-20.0)-6.0)*0.045 + max(0,0.42-e.humidity)*0.20
-            a.energy-=p.basal_cost+climate_stress
+            stage=lifecycle_stage(a.age,p.max_age)
+            stage_multiplier={"bud":1.05,"juvenile":0.85,"adult":1.0,"senescent":1.16}[stage]
+            a.energy-=(p.basal_cost+climate_stress)*stage_multiplier
             hydration=self.hydration[a.identity]-0.022-0.024*(1-e.humidity)
             if e.water_access:
                 hydration=min(1.0,hydration+0.16)
@@ -131,7 +152,7 @@ class EcoF01:
                 target.food-=eaten
                 a.energy=min(p.energy_cap,a.energy+eaten*p.food_energy*a.efficiency)
                 self.events["eaten"]+=eaten
-            if a.energy>=p.birth_threshold and a.cooldown==0 and self.hydration[a.identity]>=0.65 and (
+            if stage=="adult" and a.energy>=p.birth_threshold and a.cooldown==0 and self.hydration[a.identity]>=0.65 and (
                     len(self.world.organisms)-deaths+len(born)<p.max_population):
                 a.energy-=p.child_energy+p.birth_cost
                 a.cooldown=p.cooldown;a.last_action="reproduce"
@@ -151,10 +172,15 @@ class EcoF01:
                 if not c.playable:continue
                 gain=min(c.regrowth,c.capacity-c.food)
                 c.food+=gain;self.events["grown"]+=gain
+        stock_after=sum(c.food for row in self.env for c in row)
+        expected=stock_before-(self.events["eaten"]-eaten_before)+(self.events["grown"]-grown_before)
+        if not math.isclose(stock_after,expected,rel_tol=1e-9,abs_tol=1e-7):
+            raise ValueError("resource balance violated")
+        self.events["resource_ledger_checks"]+=1
         self.world.ticks+=1
         self._assert_invariants()
         return {"tick":self.world.ticks,"alive":len(self.world.organisms),
-                "born":len(born),"died":deaths}
+                "born":len(born),"died":deaths,"stages":self.stage_counts()}
 
     def snapshot(self):
         return json.dumps({"schema":"gple.eco-f01.experimental.v1",
@@ -193,7 +219,9 @@ def trial(original,variant,seed=11,ticks=120,water_access=True):
             "hydration_deaths":eco.events["hydration_deaths"],
             "consumed":round(eco.events["eaten"],5),
             "regrown":round(eco.events["grown"],5),
-            "remaining_food":round(sum(c.food for row in eco.env for c in row),5)}
+            "remaining_food":round(sum(c.food for row in eco.env for c in row),5),
+            "resource_ledger_checks":eco.events["resource_ledger_checks"],
+            "final_stages":eco.stage_counts()}
 
 def compare(original,variants,seeds=(11,23,37,53,71),ticks=120):
     out=[]
@@ -208,5 +236,5 @@ def compare(original,variants,seeds=(11,23,37,53,71),ticks=120):
             "source_world_mask_imported":False,
             "biome_physiology":"experimental proxy, not approved F01 biology",
             "caveats":["Original F01 rules preserved as source reference but adapter changes tick physiology",
-                       "No canonical real terrain, chemistry, stage-based life cycle or material chemistry"],
+                       "No canonical real terrain, chemistry or mass/energy stoichiometry; stages are age-based experimental abstractions"],
             "results":out}
