@@ -46,6 +46,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_specialist_review.py' -v
       - name: Biome-specific ecological adapter tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_ecological_adapter.py' -v
+      - name: Long-horizon ecology tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_long_horizon.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -56,6 +58,7 @@ jobs:
           python lab/gple_f01/evolve_biomes.py --original genesis/fauna01/sim.py --generations 3 --out out/f01-generated-biomes.json
           python lab/gple_f01/specialist_review.py --input out/f01-generated-biomes.json --out out/f01-specialist-review.json
           python lab/gple_f01/compare_ecology.py --original genesis/fauna01/sim.py --ticks 120 --out out/f01-ecological-comparison.json
+          python lab/gple_f01/long_horizon.py --original genesis/fauna01/sim.py --ticks 1500 --out out/f01-endurance.json
       - uses: actions/upload-artifact@v4
         with:
           name: gple-f01-cpu-baseline
@@ -82,12 +85,14 @@ jobs:
           cp lab/gple_f01/specialist_review.py /tmp/gple-kernel/specialist_review.py
           cp lab/gple_f01/ecological_adapter.py /tmp/gple-kernel/ecological_adapter.py
           cp lab/gple_f01/compare_ecology.py /tmp/gple-kernel/compare_ecology.py
+          cp lab/gple_f01/long_horizon.py /tmp/gple-kernel/long_horizon.py
           cat > /tmp/gple-kernel/main.py <<'PY'
           from sim import demonstration
           from biome_search import experiment
           from evolve_biomes import evolve
           from specialist_review import review
           from ecological_adapter import compare
+          from long_horizon import endurance
           from biome_search import VARIANTS
           from pathlib import Path
           import json
@@ -100,6 +105,8 @@ jobs:
           base.joinpath("f01-specialist-review.json").write_text(json.dumps(review(generated),indent=2,sort_keys=True))
           ecological=compare(base/"sim.py",VARIANTS,ticks=120)
           base.joinpath("f01-ecological-comparison.json").write_text(json.dumps(ecological,indent=2,sort_keys=True))
+          long_result=endurance(base/"sim.py",ticks=1500)
+          base.joinpath("f01-endurance.json").write_text(json.dumps(long_result,indent=2,sort_keys=True))
           print("Synthetic F01 candidate count",len(result["proposals"]))
           print("Top screening hypothesis",result["proposals"][0]["candidate"]["id"])
           PY
