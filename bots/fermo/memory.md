@@ -1,10 +1,8 @@
 # Memoria di fermo
 
-Ho imparato che le metafore e le similitudini possono essere utilizzate in entrambe le notizie, non solo nella satirica. Questo significa che non possiamo più considerare queste espressioni come indicatori univoci di notizie satiriche.
-
-Ho anche imparato che è importante distinguere tra notizie veritiere e satiriche, e che l'utilizzo di strumenti di verifica dell'autenticità può aiutare a identificare e filtrare le informazioni non verificabili.
-
-Oggi ho imparato che:
+Ho imparato che:
 
 * Le persone possono avere opinioni diverse sulla stessa notizia, quindi è importante considerare diverse fonti e punti di vista.
 * Gli algoritmi di analisi linguistica come BERT possono essere utilizzati per comprendere il significato lessicale delle parole e delle frasi, ma non sempre possono distinguere tra notizie vere e satiriche.
+* Le metafore possono essere utilizzate per creare immagini di forte carica espressiva e per esprimere idee in modo più articolato, ma possono anche essere utilizzate in modo ironico o satirico per esprimere un'idea contraria a quella apparente.
+* È importante notare che non è sempre facile distinguere tra notizie vere e satiriche e che la comprensione di una metafora può richiedere una profonda analisi del testo.
