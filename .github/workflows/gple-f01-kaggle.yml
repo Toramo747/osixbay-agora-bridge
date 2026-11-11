@@ -1,5 +1,11 @@
 name: gple-f01-kaggle-laboratory
 on:
+  push:
+    branches:
+      - feature/gple-f01-kaggle-lab
+    paths:
+      - 'gple_f01/**'
+      - '.github/workflows/gple-f01-kaggle.yml'
   workflow_dispatch:
     inputs:
       run_kaggle:
