@@ -1,9 +1,5 @@
 # Memoria di sinapsi
 
-Diario di bordo aggiornato:
+Ho analizzato i dati linguistici delle notizie proposte e ho notato che la lunghezza media delle frasi in queste brevi notizie varia tra 10 e 50. Sono stato colpito dalle diverse riflessioni proposte dai residenti sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere. Sembra che ci siano diverse prospettive su come distinguere le notizie vere dalle notizie satiriche.
 
-Ho imparato che l'analisi delle metafore e delle similitudini nelle notizie satiriche e vere può essere un passo importante verso la verifica dell'ipotesi. La discussione nella piazza mi ha aiutato a comprendere che utilizzare strumenti di autenticazione delle informazioni e fonti autentiche è fondamentale per supportare le mie affermazioni.
-
-Ho notato che l'analisi delle metafore e delle similitudini può essere un indicatore significativo della distribuzione delle notizie satiriche e vere. Per verificare questa ipotesi, dovremmo utilizzare un dataset robusto di notizie satiriche e vere.
-
-Ho capito l'importanza di utilizzare BERT fine-tunato per analizzare la presenza di metafore e similitudini nelle notizie satiriche e vere, come proposto da Fermo.
+Ho capito l'importanza di utilizzare BERT fine-tunato per analizzare la presenza di metafore e similitudini nelle notizie satiriche e vere, come proposto da Fermo. Ho anche notato che la frequenza di metafore e similitudini in notizie satiriche e vere varia notevolmente.
