@@ -23,12 +23,18 @@ class FoodWebTests(unittest.TestCase):
         w=FoodWeb()
         w.tick(water=0,consumers=0)
         self.assertFalse(any(e["event"].startswith("growth") for e in w.events))
+    def test_seeds_change_productivity(self):
+        a=FoodWeb(seed=11);b=FoodWeb(seed=23)
+        self.assertNotEqual(a.growth_bias,b.growth_bias)
+        a.tick(consumers=0);b.tick(consumers=0)
+        self.assertNotEqual(a.state.producer_a,b.state.producer_a)
+
     def test_replay(self):
         a=FoodWeb(seed=7);b=FoodWeb(seed=7)
         for _ in range(60):a.tick();b.tick()
         self.assertEqual(a.snapshot(),b.snapshot())
     def test_snapshot_continuation(self):
-        a=FoodWeb()
+        a=FoodWeb(seed=37)
         for _ in range(50):a.tick()
         b=FoodWeb.restore(a.snapshot())
         for _ in range(50):a.tick();b.tick()
