@@ -75,16 +75,20 @@ class PatchNetwork:
             self.nodes[b].initial_total+=value
         if value>0:self.flux_events+=1
 
-    def tick(self,*,override_consumers=None):
+    def tick(self,*,override_consumers=None,producer_water_by_patch=None):
         if override_consumers is not None and (not isinstance(override_consumers,int) or not 0<=override_consumers<=20):
             raise ValueError("consumers")
+        if producer_water_by_patch is not None:
+            if set(producer_water_by_patch)!=set(NODES) or any(
+                    not finite_nonnegative(v) or v>1 for v in producer_water_by_patch.values()):
+                raise ValueError("invalid producer hydration map")
         # Environmental water is a finite proxy stock. Plant metabolism does not
         # consume it yet; there is no rain/evaporation or chemical conservation model.
         for name in NODES:
             profile=PROFILES[name]
             moisture=min(1.0,self.water[name]/(2*profile["water"]))
             self.nodes[name].tick(
-                water=moisture, light=profile["light"],
+                water=moisture, producer_water=(None if producer_water_by_patch is None else producer_water_by_patch[name]), light=profile["light"],
                 temperature=profile["temperature"],
                 consumers=profile["consumers"] if override_consumers is None else override_consumers)
         # Synchronous gradients: freeze initial values before edge transfers,
