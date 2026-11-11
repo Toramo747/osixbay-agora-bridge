@@ -1,0 +1,62 @@
+name: gple-f01-kaggle-laboratory
+on:
+  workflow_dispatch:
+    inputs:
+      run_kaggle:
+        description: 'Submit private Kaggle notebook (true); false = GitHub CPU baseline only'
+        type: boolean
+        required: true
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: gple-f01-kaggle-laboratory
+  cancel-in-progress: false
+jobs:
+  baseline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s gple_f01 -p 'test_*.py' -v
+      - name: Reproducible baseline
+        run: |
+          mkdir -p out
+          python gple_f01/sim.py --seed 42 --ticks 250 --out out/f01-metrics.json > /dev/null
+          python gple_f01/sim.py --seed 43 --ticks 250 --out out/f01-metrics-seed43.json > /dev/null
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gple-f01-cpu-baseline
+          path: out/
+          retention-days: 30
+      - name: Submit to Kaggle only if explicitly requested
+        if: inputs.run_kaggle == true
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          set -eu
+          test -n "$KAGGLE_USERNAME"
+          if [ -z "$KAGGLE_API_TOKEN" ]; then
+            test -n "$KAGGLE_KEY"
+            export KAGGLE_API_TOKEN="$KAGGLE_KEY"
+          fi
+          python -m pip install 'kaggle>=1.7.4'
+          mkdir -p /tmp/gple-kernel
+          cp gple_f01/sim.py /tmp/gple-kernel/main.py
+          python - <<'PY'
+          import json,os
+          username=os.environ["KAGGLE_USERNAME"]
+          data={"id":username+"/osixbay-gple-f01-lab","title":"OSIXBAY Genesis F01 private laboratory",
+                "code_file":"main.py","language":"python","kernel_type":"script",
+                "is_private":True,"enable_gpu":False,"enable_internet":False,
+                "dataset_sources":[],"competition_sources":[],"kernel_sources":[]}
+          with open("/tmp/gple-kernel/kernel-metadata.json","w") as f: json.dump(data,f)
+          PY
+          kaggle kernels push -p /tmp/gple-kernel
+          echo "Submission requested; inspect Kaggle kernel execution status and output separately."
