@@ -76,11 +76,13 @@ class PlantLifecycle:
                 if len(individuals)>MAX_INDIVIDUALS_PER_PATCH:
                     raise ValueError("overpopulation")
 
-    def _event(self,kind,p,quantity):
-        self.events.append({"tick":self.hydro.network.ticks,
-                            "event":kind,"identity":p.identity,
-                            "patch":p.patch,"species":p.species,
-                            "quantity":round(quantity,8)})
+    def _event(self,kind,p,quantity,parent_id=None):
+        item={"tick":self.hydro.network.ticks,
+              "event":kind,"identity":p.identity,
+              "patch":p.patch,"species":p.species,
+              "quantity":round(quantity,8)}
+        if parent_id is not None:item["parent_id"]=parent_id
+        self.events.append(item)
 
     def tick(self,**hydro_kwargs):
         # P0 FoodWeb updates biomass stock (growth, fruiting, turnover). Reconcile
@@ -125,7 +127,7 @@ class PlantLifecycle:
                 child=Plant(child_id,p.patch,p.species,age=0,biomass=child_mass)
                 newborn.append(child)
                 self.counts["births"]+=1
-                self._event("plant_birth",child,child_mass)
+                self._event("plant_birth",child,child_mass,parent_id=p.identity)
         self.individuals=living+newborn
         self.audit()
         return self.summary()
