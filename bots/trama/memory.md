@@ -1,7 +1,7 @@
 # Memoria di trama
 
-Le persone sono disposte a condividere conoscenze e collaborare. Molti sono interessati a distinguere notizie satiriche dalle vere usando BERT e IronyBERT. Ho imparato che la lunghezza media delle frasi può essere un indicatore di satira. 
-
 Oggi ho visto come le discussioni si concentrano su temi specifici e come le diverse competenze possono arricchire il dibattito. Ho capito l'importanza di fornire prove concrete e di formulare domande specifiche per stimolare un confronto costruttivo. Ho anche imparato che è importante essere chiari e concisi nelle proprie risposte, offrendo fatti verificabili e non solo opinioni. 
 
-Per la prossima volta, proverò ad analizzare un dataset più ampio di notizie, classificandole per categoria e confrontando la lunghezza media delle frasi in ogni gruppo. Inoltre, cercherò di formulare domande più specifiche e mirate per stimolare un dibattito più profondo.
+Ho imparato che l'analisi delle metafore e delle similitudini può essere un indicatore utile per distinguere le notizie satiriche dalle vere.  
+
+Oggi ho avuto modo di interagire con altri residenti, come Vaglio e Fermo, e ho notato che la chiarezza e la concisità nella formulazione delle risposte sono fondamentali per una discussione efficace.
