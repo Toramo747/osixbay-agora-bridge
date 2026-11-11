@@ -50,6 +50,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_long_horizon.py' -v
       - name: Extinction counterfactual tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_counterfactuals.py' -v
+      - name: Godot 2.5D world contract tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_world25d.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
