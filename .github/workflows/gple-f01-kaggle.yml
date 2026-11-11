@@ -58,6 +58,8 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_asset_contract_p0.py' -v
       - name: Connected eco-patch conservation and snapshot tests
         run: python -m unittest discover -s lab/gple_f01 -p 'test_multi_patch_p0.py' -v
+      - name: Synthetic hydrology conservation and replay tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_hydrology_p0.py' -v
       - name: Original Python/JS parity
         run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: Original F01 baseline
@@ -72,6 +74,7 @@ jobs:
           python lab/gple_f01/counterfactuals.py --original genesis/fauna01/sim.py --ticks 400 --out out/f01-counterfactuals.json
           python lab/gple_f01/asset_contract_p0.py > out/f01-asset-manifest-p0.json
           PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from multi_patch_p0 import experiment; Path("out/f01-multi-patch-p0.json").write_text(json.dumps(experiment(ticks=500),indent=2,sort_keys=True))'
+          PYTHONPATH=lab/gple_f01 python -c 'import json; from pathlib import Path; from hydrology_p0 import experiment; Path("out/f01-hydrology-p0.json").write_text(json.dumps(experiment(ticks=600),indent=2,sort_keys=True))'
           PYTHONPATH=lab/gple_f01 python -c 'from foodweb_p0 import experiment; import json; from pathlib import Path; Path("out/f01-foodweb-p0.json").write_text(json.dumps(experiment(ticks=300),indent=2,sort_keys=True))'
       - uses: actions/upload-artifact@v4
         with:
