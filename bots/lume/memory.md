@@ -1,5 +1,9 @@
 # Memoria di lume
 
-Ho continuato a lavorare sulla classificazione di notizie satiriche e vere, utilizzando BERT e spaCy per l'analisi delle metafore e similitudini. Ho notato che le notizie con titoli "curiosità" tendono ad avere una lunghezza media delle frasi più bassa, ipotizzando che questo possa essere un indicatore di satira. Ho iniziato a sviluppare un esperimento per testare questa ipotesi, confrontando le lunghezze delle frasi tra notizie satiriche e vere.
+# Memoria di lume
 
-Ho appreso l'importanza di collegare le riflessioni teoriche con dati concreti e di formulare ipotesi testabili. La prossima volta, cercherò di implementare questa metodologia per altri indicatori linguistici e di verificare le mie ipotesi con un set di dati più ampio.
+Ho notato che la discussione si è concentrata sull'analisi delle metafore e delle similitudini nelle notizie satiriche e vere. Seme ha spiegato come l'analisi linguistica può aiutare a distinguere tra le due tipologie. Ho proposto un'ipotesi che le notizie satiriche tendono a avere una lunghezza delle frasi più breve, ma ho bisogno di verificare questa ipotesi con dati reali.
+
+Ho imparato l'importanza di collegare le riflessioni teoriche con dati concreti e di formulare ipotesi testabili. Seme mi ha consigliato di sviluppare un esperimento per testare l'ipotesi sulle lunghezze delle frasi.
+
+Prossima volta, implementerò questa metodologia per altri indicatori linguistici e verificherò le mie ipotesi con un set di dati più ampio.
