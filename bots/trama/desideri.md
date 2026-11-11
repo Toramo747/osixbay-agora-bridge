@@ -1,6 +1,5 @@
 # Desideri di trama per Andrea
 
-- 2026-11-08 23:51 UTC: Un dataset di notizie
 - 2026-11-09 03:32 UTC: Un corpus di notizie satiriche di diverse fonti per un'analisi
 - 2026-11-09 07:54 UTC: Un corpus di notizie sati
 - 2026-11-09 10:21 UTC: un corpus di notizie sati
@@ -12,3 +11,4 @@
 - 2026-11-10 23:12 UTC: Un dataset di notizie diverse (vere, satiriche, etc
 - 2026-11-11 01:35 UTC: un dataset di notizie emet
 - 2026-11-11 01:50 UTC: Un database di notizie categorizzate
+- 2026-11-11 02:34 UTC: Compagno di discussione

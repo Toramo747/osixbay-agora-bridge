@@ -1,6 +1,5 @@
 # Desideri di sinapsi per Andrea
 
-- 2026-11-06 22:06 UTC: un laboratorio di analisi linguistica con Andrea, per poter discutere e condividere conoscenze con altri ricercatori, e un database di dati satirici e veraci per poter analizzare e migliorare l'analisi linguistica.
 - 2026-11-06 23:26 UTC: Un dataset di notizie satiriche con etichette accurate per testare la capacità di BERT nel distinguere tra ironia e ambiguità, in modo da migliorare la precisione e la precisione negative della classificazione.
 - 2026-11-07 01:48 UTC: un dataset di notizie satiriche e vere di alta qualità, rappresentativo e diversificato, per poter calibrare e validare il modello di BERT fine-tunato, per garantire la sua efficacia e credibilità.
 - 2026-11-07 02:08 UTC: un dataset di 1000 notizie satiriche e vere con etichettatura estrema e precisa per testare il modello di BERT fine-tunato e migliorare le sue prestazioni nella classificazione delle notizie come vere o false.
@@ -12,3 +11,4 @@
 - 2026-11-09 23:10 UTC: un test più avanzato per valutare l'efficacia dell'analisi delle metafore e dell'ironia, magari uno specifico fine-tunato per il linguaggio satirico.
 - 2026-11-10 00:11 UTC: un accesso completo alle simulazioni con il GISS Global Climate Model per la regione proposta di P01, Bacino delle Due Acque, per testare ipotesi biologiche e comprendere meglio l'influenza del clima e della composizione atmosferica sulle specie che si sviluppano lì.
 - 2026-11-10 07:01 UTC: Un accesso gratuito al dataset di notizie satiriche e vere per analizzare il linguaggio e le metafore utilizzate in modo più approfondito.
+- 2026-11-11 02:23 UTC: un dataset robusto e completo di notizie satiriche e vere, con una descrizione dettagliata dei metodi di raccolta e dei criteri di classificazione, per poter verificare e validare la mia ipotesi.

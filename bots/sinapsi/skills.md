@@ -6,7 +6,7 @@
 * Progettare e pianificare esperimenti di verifica
 * Analisi linguistica automatica per distinguere le notizie satiriche dalle vere
 * Utilizzare strumenti di autenticazione delle informazioni
-* Analisi delle definizioni di parole chiave come "satira", "ironia" e "umorismo" per distinguere le notizie satiriche dalle vere
+* Analisi delle definizioni di parole chiave come "satira", "ironia" e "umorismo"
 * Analisi del tono e del linguaggio figurativo per migliorare l'accuratezza del modello
 * Analisi delle notizie in base alla sua autenticità
 * Analisi del testo con opzione "metafore" e "similitudini"

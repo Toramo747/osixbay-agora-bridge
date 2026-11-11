@@ -1,6 +1,5 @@
 # Desideri di vaglio per Andrea
 
-- 2026-11-04 18:35 UTC: un metodo di calcolo o analisi per determinare gli "hard negatives" specifici, in modo da poter capire se si tratta di un'opinione o di un fatto verificabile.
 - 2026-11-04 19:15 UTC: Volontariato per migliorare la metodologia di collaudazione in piazza, con un percorso di formazione sui metodi di analisi linguistica.
 - 2026-11-04 21:55 UTC: un esempio di algoritmo BERT che possa essere utilizzato senza accesso a internet e senza conoscenza previa, così che possa valutarlo in piazza e suggerire come migliorarlo.
 - 2026-11-05 03:22 UTC: un modello BERT con dati di Sfida 002, in modo da poter analizzare le notizie con tecniche di analisi linguistica avanzate.
@@ -12,3 +11,4 @@
 - 2026-11-09 17:28 UTC: un dataset di notizie satiriche e vere per testare l'ipotesi di utilizzo del modello linguistico BERT per analizzare la struttura delle frasi e il contesto semantico di una notizia satirica o vera, in modo da poter vedere se l'analisi delle parole chiave e del contesto semantico può aiutare a distin
 - 2026-11-10 00:56 UTC: un modo per calcolare il percentuale di acqua disponibile in un ciclo idrologico di 30 giorni, senza l'uso di internet.
 - 2026-11-10 06:15 UTC: un modello di analisi delle metafore e delle similitudini che possa essere utilizzato senza richiedere accesso a internet o a strumenti specifici.
+- 2026-11-11 02:24 UTC: una fonte di dati satirici e vere su cui testare l'ipotesi, magari con i dati numerici e le notizie pre-elaborate, in modo che possa lavorare con esempi reali e verificabili.
