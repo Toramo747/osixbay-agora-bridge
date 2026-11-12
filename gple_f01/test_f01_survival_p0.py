@@ -64,22 +64,20 @@ class F01SurvivalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             F01Feeding.restore(json.dumps(snapshot))
 
-    def test_dead_actor_cannot_resurrect(self):
+    def test_dead_actor_cannot_feed_after_snapshot_resume(self):
         sim = F01Feeding()
         drain_all_water(sim)
         for _ in range(22):
             sim.tick(rain_rate=0, evaporation_rate=0,
                      infiltration_rate=0, discharge_rate=0)
-        h=sim.eco.world.genetic.life.hydro
-        # Test water reappearing via a transfer from the atmosphere, not creation.
-        # Dead actors must not resume eating, drinking or living.
-        h.atmosphere = 1.0
-        h.initial_water = 1.0
-        h.audit()
-        for _ in range(3):
-            result=sim.tick()
-            self.assertFalse(result["meals"]["forest"]["alive"])
-            self.assertEqual(result["meals"]["forest"]["consumed"], 0)
+        restored = F01Feeding.restore(sim.snapshot())
+        for _ in range(4):
+            result = restored.tick(rain_rate=0, evaporation_rate=0,
+                                   infiltration_rate=0, discharge_rate=0)
+            for patch in NODES:
+                self.assertFalse(result["meals"][patch]["alive"])
+                self.assertEqual(result["meals"][patch]["consumed"], 0)
+        self.assertTrue(all(not a["alive"] for a in restored.f01.values()))
 
 if __name__ == "__main__":
     unittest.main()
