@@ -6,6 +6,12 @@ on:
     paths:
       - 'gple_f01/**'
       - '.github/workflows/genesis-dm088-survival.yml'
+  pull_request:
+    branches:
+      - feature/gple-f01-kaggle-lab
+    paths:
+      - 'gple_f01/**'
+      - '.github/workflows/genesis-dm088-survival.yml'
   workflow_dispatch:
 permissions:
   contents: read
