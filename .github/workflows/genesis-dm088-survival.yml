@@ -34,5 +34,7 @@ jobs:
           python-version: '3.12'
       - name: Original F01 baseline
         run: python -m unittest discover -s genesis/fauna01/tests -v
+      - name: Original Python/JS parity
+        run: node --test genesis/fauna01/tests/test_parity.mjs
       - name: ECO-P0 regression and DM-088 survival
         run: python -m unittest discover -s lab/gple_f01 -p 'test_*.py' -v
