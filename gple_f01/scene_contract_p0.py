@@ -25,7 +25,11 @@ def export_scene(sim):
             "patch":m.patch,"age":m.age,"biomass":round(m.mass,8)}
            for m in sim.eco.micro]
     f01=[{"id":a["identity"],"type":"f01","species":"f01",
-          "patch":p,"energy":round(a["energy"],8),"starvation_ticks":a["starvation_ticks"]}
+          "patch":p,"energy":round(a["energy"],8),
+          "hydration":round(a["hydration"],8),
+          "alive":a["alive"],"death_reason":a["death_reason"],
+          "starvation_ticks":a["starvation_ticks"],
+          "thirst_ticks":a["thirst_ticks"]}
          for p,a in sim.f01.items()]
     entities=sorted(plants+propagules+micro+f01,key=lambda e:e["id"])
     payload={"schema":SCHEMA,"tick":world.genetic.life.hydro.network.ticks,
