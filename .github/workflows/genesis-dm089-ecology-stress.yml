@@ -1,0 +1,48 @@
+name: genesis-dm089-ecology-stress
+on:
+  push:
+    branches:
+      - feature/genesis-dm089-ecology-stress-20261112
+    paths:
+      - 'gple_f01/**'
+      - '.github/workflows/genesis-dm089-ecology-stress.yml'
+  pull_request:
+    branches:
+      - feature/genesis-dm088-f01-hydration-20261112
+    paths:
+      - 'gple_f01/**'
+      - '.github/workflows/genesis-dm089-ecology-stress.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deterministic-ecology:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Original F01 pinned
+        uses: actions/checkout@v4
+        with:
+          ref: 3c79e0aa949cfcc985cb25ff322c008a881f1a72
+      - name: Isolated ecology stress candidate
+        uses: actions/checkout@v4
+        with:
+          path: lab
+          ref: feature/genesis-dm089-ecology-stress-20261112
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Original F01 Python tests
+        run: python -m unittest discover -s genesis/fauna01/tests -v
+      - name: Original F01 JS parity
+        run: node --test genesis/fauna01/tests/test_parity.mjs
+      - name: Complete ECO-P0 Python tests
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_*.py' -v
+      - name: Synthetic endurance matrix (3 seeds, 4 cases, 90 ticks)
+        run: python lab/gple_f01/stress_ecosystem_dm089.py --ticks 90 --out dm089-stress-report.json
+      - name: Archive synthetic stress report (no deployment)
+        uses: actions/upload-artifact@v4
+        with:
+          name: dm089-ecology-stress-synthetic
+          path: dm089-stress-report.json
+          retention-days: 7
