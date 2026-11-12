@@ -57,13 +57,11 @@ class F01SurvivalTests(unittest.TestCase):
             sim.tick(); restored.tick()
         self.assertEqual(sim.snapshot(), restored.snapshot())
 
-    def test_reject_fabricated_tissue_water(self):
+    def test_reject_fabricated_hydration(self):
         sim = F01Feeding(); sim.tick()
         snapshot = json.loads(sim.snapshot())
-        hydro = json.loads(snapshot["eco"]["world"]["genetic"]["life"]["hydro"])
-        hydro["f01_tissue_water"]["forest"] += 100
-        snapshot["eco"]["world"]["genetic"]["life"]["hydro"] = json.dumps(hydro)
-        with self.assertRaises((ValueError, AssertionError, KeyError, TypeError)):
+        snapshot["f01"]["forest"]["hydration"] = 2.0
+        with self.assertRaises(ValueError):
             F01Feeding.restore(json.dumps(snapshot))
 
     def test_dead_actor_cannot_resurrect(self):
