@@ -6,6 +6,12 @@ on:
     paths:
       - 'genesis_interop_v1/**'
       - '.github/workflows/genesis-dm091-interop.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'genesis_interop_v1/**'
+      - '.github/workflows/genesis-dm091-interop.yml'
   workflow_dispatch:
 permissions:
   contents: read
