@@ -40,7 +40,7 @@ class Hydrology:
 
     def tick(self,*,rain_rate=0.14,evaporation_rate=0.035,
              infiltration_rate=0.025,discharge_rate=0.018,
-             override_consumers=None,producer_water_by_patch=None):
+             override_consumers=None,producer_water_by_patch=None,override_consumers_by_patch=None):
         rates=(rain_rate,evaporation_rate,infiltration_rate,discharge_rate)
         if any(not isinstance(v,(int,float)) or isinstance(v,bool)
                or not math.isfinite(v) or not 0<=v<=1 for v in rates):
@@ -74,7 +74,8 @@ class Hydrology:
         self._retarget_network_water_ledger()
         # 5) in-patch biology and conservative surface water lateral exchange.
         self.network.tick(override_consumers=override_consumers,
-                          producer_water_by_patch=producer_water_by_patch)
+                          producer_water_by_patch=producer_water_by_patch,
+                          override_consumers_by_patch=override_consumers_by_patch)
         self.events["ledger_ticks"]+=1
         self.audit()
         return self.summary()
