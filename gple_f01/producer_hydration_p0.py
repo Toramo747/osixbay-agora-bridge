@@ -15,6 +15,7 @@ PLANTS=("producer_a","producer_b")
 class ProducerHydrology(Hydrology):
     def __init__(self,seed=11,connections=None,dry_start=False):
         self.producer_water={name:{p:0.0 for p in PLANTS} for name in NODES}
+        self.f01_tissue_water={name:0.0 for name in NODES}
         self.uptake_total=0.0
         self.transpiration_total=0.0
         if connections is None:
@@ -28,20 +29,24 @@ class ProducerHydrology(Hydrology):
         self.audit()
 
     def total_water(self):
-        return super().total_water()+sum(v for water in self.producer_water.values() for v in water.values())
+        return (super().total_water()+sum(v for water in self.producer_water.values() for v in water.values())
+                +sum(self.f01_tissue_water.values()))
 
     def audit(self):
         if set(self.producer_water)!=set(NODES) or any(
                 set(stocks)!=set(PLANTS) or any(not finite_nonnegative(v) for v in stocks.values())
                 for stocks in self.producer_water.values()):
             raise ValueError("invalid producer hydration stocks")
+        if (set(self.f01_tissue_water)!=set(NODES) or
+                any(not finite_nonnegative(v) for v in self.f01_tissue_water.values())):
+            raise ValueError("invalid F01 tissue water")
         if not finite_nonnegative(self.uptake_total) or not finite_nonnegative(self.transpiration_total):
             raise ValueError("invalid hydration ledger")
         super().audit()
 
     def tick(self,*,rain_rate=0.14,evaporation_rate=0.035,
              infiltration_rate=0.025,discharge_rate=0.018,
-             override_consumers=None):
+             override_consumers=None,override_consumers_by_patch=None):
         rates=(rain_rate,evaporation_rate,infiltration_rate,discharge_rate)
         if any(not isinstance(v,(int,float)) or isinstance(v,bool)
                or not math.isfinite(v) or not 0<=v<=1 for v in rates):
@@ -70,7 +75,8 @@ class ProducerHydrology(Hydrology):
         super().tick(rain_rate=rain_rate,evaporation_rate=evaporation_rate,
                      infiltration_rate=infiltration_rate,discharge_rate=discharge_rate,
                      override_consumers=override_consumers,
-                     producer_water_by_patch=hydration)
+                     producer_water_by_patch=hydration,
+                     override_consumers_by_patch=override_consumers_by_patch)
         # Return tissue water to atmosphere: actual flow, not deletion.
         for name in NODES:
             for p in PLANTS:
@@ -96,6 +102,7 @@ class ProducerHydrology(Hydrology):
             "groundwater":self.groundwater,"atmosphere":self.atmosphere,
             "initial_water":self.initial_water,"events":self.events,
             "producer_water":self.producer_water,
+            "f01_tissue_water":self.f01_tissue_water,
             "uptake_total":self.uptake_total,
             "transpiration_total":self.transpiration_total,
         },sort_keys=True,separators=(",",":"))
@@ -111,6 +118,7 @@ class ProducerHydrology(Hydrology):
         obj.initial_water=d["initial_water"]
         obj.events=d["events"]
         obj.producer_water=d["producer_water"]
+        obj.f01_tissue_water=d.get("f01_tissue_water",{p:0.0 for p in NODES})
         obj.uptake_total=d["uptake_total"]
         obj.transpiration_total=d["transpiration_total"]
         if (not isinstance(obj.events.get("ledger_ticks"),int)

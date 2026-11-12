@@ -75,13 +75,18 @@ class PatchNetwork:
             self.nodes[b].initial_total+=value
         if value>0:self.flux_events+=1
 
-    def tick(self,*,override_consumers=None,producer_water_by_patch=None):
+    def tick(self,*,override_consumers=None,producer_water_by_patch=None,override_consumers_by_patch=None):
         if override_consumers is not None and (not isinstance(override_consumers,int) or not 0<=override_consumers<=20):
             raise ValueError("consumers")
         if producer_water_by_patch is not None:
             if set(producer_water_by_patch)!=set(NODES) or any(
                     not finite_nonnegative(v) or v>1 for v in producer_water_by_patch.values()):
                 raise ValueError("invalid producer hydration map")
+        if override_consumers_by_patch is not None:
+            if (not isinstance(override_consumers_by_patch,dict) or set(override_consumers_by_patch)!=set(NODES)
+                    or any(x is not None and (not isinstance(x,int) or isinstance(x,bool) or not 0<=x<=20)
+                           for x in override_consumers_by_patch.values())):
+                raise ValueError("invalid per-patch consumers")
         # Environmental water is a finite proxy stock. Plant metabolism does not
         # consume it yet; there is no rain/evaporation or chemical conservation model.
         for name in NODES:
@@ -90,7 +95,9 @@ class PatchNetwork:
             self.nodes[name].tick(
                 water=moisture, producer_water=(None if producer_water_by_patch is None else producer_water_by_patch[name]), light=profile["light"],
                 temperature=profile["temperature"],
-                consumers=profile["consumers"] if override_consumers is None else override_consumers)
+                consumers=((profile["consumers"] if override_consumers is None else override_consumers)
+                           if override_consumers_by_patch is None or override_consumers_by_patch[name] is None
+                           else override_consumers_by_patch[name]))
         # Synchronous gradients: freeze initial values before edge transfers,
         # aggregate signed deltas and then apply conservatively.
         for field,rate in (("water",0.035),("nutrients",0.012),("microfauna",0.009)):
