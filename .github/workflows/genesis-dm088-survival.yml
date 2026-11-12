@@ -1,0 +1,32 @@
+name: genesis-dm088-survival
+on:
+  push:
+    branches:
+      - feature/genesis-dm088-f01-hydration-20261112
+    paths:
+      - 'gple_f01/**'
+      - '.github/workflows/genesis-dm088-survival.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-validation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Original F01 source, pinned
+        uses: actions/checkout@v4
+        with:
+          ref: 3c79e0aa949cfcc985cb25ff322c008a881f1a72
+      - name: DM-088 candidate, isolated checkout
+        uses: actions/checkout@v4
+        with:
+          path: lab
+          ref: feature/genesis-dm088-f01-hydration-20261112
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Original F01 baseline
+        run: python -m unittest discover -s genesis/fauna01/tests -v
+      - name: ECO-P0 regression and DM-088 survival
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_*.py' -v
