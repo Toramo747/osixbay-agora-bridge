@@ -3,6 +3,7 @@ import json
 import unittest
 from f01_feeding_bridge_p0 import F01Feeding
 from multi_patch_p0 import NODES
+from scene_contract_p0 import export_scene, validate_scene
 
 def drain_all_water(sim):
     hydro = sim.eco.world.genetic.life.hydro
@@ -63,6 +64,21 @@ class F01SurvivalTests(unittest.TestCase):
         snapshot["f01"]["forest"]["hydration"] = 2.0
         with self.assertRaises(ValueError):
             F01Feeding.restore(json.dumps(snapshot))
+
+    def test_dead_actor_export_is_explicit(self):
+        sim = F01Feeding()
+        drain_all_water(sim)
+        for _ in range(22):
+            sim.tick(rain_rate=0, evaporation_rate=0,
+                     infiltration_rate=0, discharge_rate=0)
+        scene = export_scene(sim)
+        actors = [e for e in scene["entities"] if e["type"] == "f01"]
+        self.assertEqual(len(actors), 3)
+        self.assertTrue(all(e["alive"] is False and e["death_reason"] == "thirst"
+                            and e["hydration"] == 0.0 for e in actors))
+        actors[0]["alive"] = True
+        with self.assertRaises(ValueError):
+            validate_scene(scene)
 
     def test_dead_actor_cannot_feed_after_snapshot_resume(self):
         sim = F01Feeding()
