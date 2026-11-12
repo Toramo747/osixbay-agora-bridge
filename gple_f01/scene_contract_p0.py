@@ -54,6 +54,18 @@ def validate_scene(payload):
         if e.get("patch") not in NODES or e.get("type") not in ("plant","propagule","microfauna","f01"):
             raise ValueError("entity")
         if "position" in e:raise ValueError("unverified coordinates")
+        if e["type"]=="f01":
+            if (not isinstance(e.get("alive"),bool)
+                    or e.get("death_reason") not in (None,"thirst","starvation")
+                    or (not e["alive"]) != (e["death_reason"] is not None)
+                    or not isinstance(e.get("hydration"),(int,float))
+                    or isinstance(e["hydration"],bool)
+                    or not math.isfinite(e["hydration"])
+                    or not 0<=e["hydration"]<=1):
+                raise ValueError("invalid F01 survival presentation")
+            for k in ("starvation_ticks","thirst_ticks"):
+                if not isinstance(e.get(k),int) or isinstance(e[k],bool) or e[k]<0:
+                    raise ValueError("invalid F01 survival counter")
         for field in ("biomass","energy"):
             if field in e and (not isinstance(e[field],(int,float)) or not math.isfinite(e[field]) or e[field]<0):
                 raise ValueError("invalid "+field)
