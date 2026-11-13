@@ -1,0 +1,116 @@
+{
+  "schema": "osixbay.genesis.biblioteca-procedurale/1.0",
+  "descrizione": "Catalogo pubblico di struttura, NON archivio dei contenuti privati della stanza e NON codice eseguibile.",
+  "stanza_proposta": {
+    "slug": "biblioteca-genesis",
+    "nome": "Biblioteca Evolutiva",
+    "visibilita": "privata",
+    "politica_accesso": "stessa allowlist effettiva di genesis (copia esatta, nessun allargamento)",
+    "stato": "non_creata_in_questa_PR"
+  },
+  "principio": "Gli algoritmi sono riutilizzabili ma le azioni degli organismi dipendono da biologia, percezione, bisogni, ambiente e memoria individuale. Si creano condizioni, non storie o comportamenti predeterminati.",
+  "versionamento": {
+    "modello": "schema semver e revisioni append-only per prove",
+    "stati": [
+      "proposto",
+      "sperimentale",
+      "verificato",
+      "confutato",
+      "deprecato"
+    ],
+    "stato_iniziale": "proposto",
+    "verifica": "risultato riproducibile e controllo indipendente",
+    "esecuzione_automatica": false
+  },
+  "famiglie": [
+    {
+      "id": "fsm",
+      "titolo": "Macchine a stati finiti",
+      "obiettivo": "Gestire stati comportamentali e transizioni condizionate dai sensori e dal contesto.",
+      "esempio_test": "Transizione riposo → ricerca acqua soltanto quando il bisogno e la possibilità biologica lo consentono."
+    },
+    {
+      "id": "utility-ai",
+      "titolo": "Utility AI",
+      "obiettivo": "Selezionare azioni confrontando utilità e bisogni, con vincoli biologici hard.",
+      "esempio_test": "Un erbivoro non sceglie predazione anche se il punteggio numerico fosse elevato."
+    },
+    {
+      "id": "steering",
+      "titolo": "Steering e locomozione",
+      "obiettivo": "Movimento, aggiramento ostacoli, inseguimento e fuga compatibili con l'apparato locomotore.",
+      "esempio_test": "Un organismo privo di nuoto non raggiunge un obiettivo attraversando un lago."
+    },
+    {
+      "id": "animazione-procedurale",
+      "titolo": "Animazione procedurale",
+      "obiettivo": "Coordinare pose e movimenti con scheletro, arti, ciclo motorio e terreno.",
+      "esempio_test": "Un organismo senza arti non produce un'animazione che presuppone due gambe."
+    },
+    {
+      "id": "genetica",
+      "titolo": "Genetica ed ereditarietà",
+      "obiettivo": "Eredità di caratteristiche, mutazioni limitate e variazione tra individui.",
+      "esempio_test": "Una variazione ereditaria rimane entro range fisiologici coerenti e non crea poteri impossibili."
+    },
+    {
+      "id": "memoria-associativa",
+      "titolo": "Memoria associativa",
+      "obiettivo": "Registrare esperienze personali, luoghi, rischi e risorse senza modificare la biblioteca condivisa.",
+      "esempio_test": "Un organismo ricorda un pericolo osservato, un altro senza esperienza non eredita il ricordo."
+    },
+    {
+      "id": "apprendimento-leggero",
+      "titolo": "Apprendimento leggero",
+      "obiettivo": "Adattare strategie locali in base a esiti misurati senza rieseguire LLM a ogni passo.",
+      "esempio_test": "Dopo tentativi falliti una strategia cambia senza dichiarare acquisita una capacità biologica assente."
+    },
+    {
+      "id": "ecologia",
+      "titolo": "Ecologia e interazioni",
+      "obiettivo": "Alimentazione, riproduzione, predazione, competizione e cicli della materia in limiti sostenibili.",
+      "esempio_test": "Una popolazione non consuma più biomassa di quella disponibile nel mondo simulato."
+    }
+  ],
+  "voci": [],
+  "contratto_voce": {
+    "obbligatori": [
+      "id",
+      "famiglia",
+      "versione",
+      "titolo",
+      "stato",
+      "scopo",
+      "input",
+      "output",
+      "precondizioni_biologiche",
+      "vincoli",
+      "costo_stimato",
+      "test_riproducibile",
+      "criterio_successo",
+      "evidenze"
+    ],
+    "evidenze": [
+      "id_esperimento",
+      "ambiente",
+      "seed",
+      "versione_simulatore",
+      "input",
+      "output_reale",
+      "misura",
+      "replicatore_indipendente",
+      "esito"
+    ],
+    "note": "Una voce senza evidenze rimane proposto; strumenti e risultati non vanno inventati. Provenienza privata solo nella stanza protetta."
+  },
+  "guardrail": [
+    "Nessun accesso automatico al runtime o esecuzione di codice dalla stanza",
+    "Nessuna attribuzione di capacità oltre anatomia o metabolismo",
+    "Memoria individuale dell'organismo separata dalla biblioteca",
+    "Risorse consumate e rigenerate entro limiti ecologici",
+    "Seed e versione del simulatore fissati per riprodurre prove",
+    "Nessun collegamento pubblico a post o dati riservati di genesis",
+    "Non creare credenziali, servizi cloud o spese",
+    "Le sei razze possono consultare strumenti riutilizzabili, non influenzano senza prova il comportamento di ogni individuo"
+  ]
+}
