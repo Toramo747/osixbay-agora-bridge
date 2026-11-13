@@ -44,10 +44,14 @@ jobs:
         with:
           python-version: '3.12'
       - name: Original F01 Python and JS tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/sources/pr88
         run: |
           python -m unittest discover -s sources/pr88/genesis/fauna01/tests -v
           node --test sources/pr88/genesis/fauna01/tests/test_parity.mjs
       - name: Original World adapter offline tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/sources/pr89
         run: |
           node --test sources/pr89/genesis/fauna01/adapter/tests/test_adapter.mjs sources/pr89/genesis/fauna01/adapter/tests/test_persistenza.mjs
           python -m unittest discover -s sources/pr89/genesis/fauna01/adapter/tests -p 'test_*.py' -v
