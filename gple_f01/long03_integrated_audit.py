@@ -120,3 +120,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+# CI push trigger: offline ECO-LONG-03 audit only; no deployment.
