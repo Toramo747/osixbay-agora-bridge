@@ -1,0 +1,138 @@
+name: genesis-eco-long06-generational-audit
+on:
+  push:
+    branches:
+      - feature/genesis-eco-long06-generations-20261113
+    paths:
+      - 'gple_f01/long06_generation_chain_audit.py'
+      - 'gple_f01/f01_feeding_bridge_p0.py'
+      - 'gple_f01/test_eco_long04_starvation.py'
+      - 'gple_f01/test_eco_long05_detritus_seedbank.py'
+      - 'gple_f01/test_eco_long06_generations.py'
+      - 'gple_f01/propagules_p0.py'
+      - '.github/workflows/genesis-eco-long06-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  offline-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Check out GPLE source (PR93)
+        uses: actions/checkout@v4
+        with:
+          ref: 7c575645580008796aa91c727dc91006ca18d0aa
+          path: eco_source
+      - name: Checkout audit harness without changing source
+        uses: actions/checkout@v4
+        with:
+          ref: feature/genesis-eco-long06-generations-20261113
+          path: lab
+      - name: Original F01 reference (PR88)
+        uses: actions/checkout@v4
+        with:
+          ref: 3c79e0aa949cfcc985cb25ff322c008a881f1a72
+          path: sources/pr88
+      - name: Original World adapter (PR89)
+        uses: actions/checkout@v4
+        with:
+          ref: de77b2873e2782c4155df62d9773661f4e24c504
+          path: sources/pr89
+      - name: Interop contract (PR92)
+        uses: actions/checkout@v4
+        with:
+          ref: e19eff82f1aa0688d6ae8516a620b8875404818f
+          path: sources/pr92
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Original F01 Python and JS tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/sources/pr88
+        run: |
+          python -m unittest discover -s sources/pr88/genesis/fauna01/tests -v
+          node --test sources/pr88/genesis/fauna01/tests/test_parity.mjs
+      - name: Original World adapter offline tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/sources/pr89
+        run: |
+          node --test sources/pr89/genesis/fauna01/adapter/tests/test_adapter.mjs sources/pr89/genesis/fauna01/adapter/tests/test_persistenza.mjs
+          python -m unittest discover -s sources/pr89/genesis/fauna01/adapter/tests -p 'test_*.py' -v
+      - name: Link original PR88 module into expected offline test location
+        run: |
+          test ! -e genesis
+          test -f sources/pr88/genesis/fauna01/sim.py
+          ln -s sources/pr88/genesis genesis
+          test -f genesis/fauna01/sim.py
+      - name: PR93 original GPLE regression suite
+        run: python -m unittest discover -s eco_source/gple_f01 -p 'test_*.py' -v
+      - name: Candidate ECO-LONG-06 full GPLE regression including generation tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/lab/gple_f01
+        run: python -m unittest discover -s lab/gple_f01 -p 'test_*.py' -v
+      - name: PR92 original contract tests
+        run: python -m unittest discover -s sources/pr92/genesis_interop_v1 -p 'test_*.py' -v
+      - name: ECO-LONG-06 100 symbolic years x 3 seeds x 7 generational scenarios
+        env:
+          PYTHONPATH: ${{ github.workspace }}/lab/gple_f01
+        run: python lab/gple_f01/long06_generation_chain_audit.py
+      - name: Archive synthetic audit only
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: genesis-eco-long06-generations-100years
+          path: long06_results/
+          retention-days: 7
+
+      - name: Persist failure-step diagnostics on isolated branch
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const owner = context.repo.owner, repo = context.repo.repo;
+            const branch = 'feature/genesis-eco-long06-generations-20261113';
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              owner, repo, workflow_id: 'genesis-eco-long06-audit.yml',
+              branch, per_page: 10
+            });
+            const output = [];
+            for (const run of runs.slice(0, 6)) {
+              const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {
+                owner, repo, run_id: run.id, per_page: 100
+              });
+              output.push({
+                run_id: run.id, run_number: run.run_number, head_sha: run.head_sha,
+                status: run.status, conclusion: run.conclusion,
+                jobs: jobs.map(j => ({
+                  job_id: j.id, name: j.name,
+                  status: j.status, conclusion: j.conclusion,
+                  failed_steps: (j.steps || []).filter(s => s.conclusion === 'failure')
+                    .map(s => ({name: s.name, number: s.number})),
+                  steps: (j.steps || []).map(s => ({
+                    name: s.name, conclusion: s.conclusion, status: s.status
+                  }))
+                }))
+              });
+            }
+            const report = {
+              schema: 'osixbay.eco-long06.ci-diagnostics.v1',
+              source: 'GitHub Actions API on CI runner',
+              captured_on_commit: context.sha, runs: output
+            };
+            const dest = 'reports/eco_long06_ci_diagnostics.json';
+            const encoded = Buffer.from(JSON.stringify(report, null, 2) + '\n').toString('base64');
+            let sha;
+            try {
+              const current = await github.rest.repos.getContent({owner, repo, path: dest, ref: branch});
+              sha = current.data.sha;
+            } catch (err) {
+              if (err.status !== 404) throw err;
+            }
+            await github.rest.repos.createOrUpdateFileContents({
+              owner, repo, path: dest, branch, sha,
+              message: 'ci(eco-long06): record isolated failure steps (no deployment)',
+              content: encoded
+            });
