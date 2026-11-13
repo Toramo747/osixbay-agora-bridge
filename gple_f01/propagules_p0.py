@@ -16,6 +16,8 @@ SEED_LIFETIME=65
 GERMINATION_AGE=3
 MIN_MOISTURE=0.45
 MAX_SEEDS=300
+# Counterfactual dispersion parameter; default retains original P0 behavior.
+DISPERSAL_PROBABILITY=0.45
 
 @dataclass
 class Propagule:
@@ -80,7 +82,7 @@ class PropaguleWorld:
     def _destination(self,origin):
         links=self.genetic.life.hydro.network.connections
         neighbors=sorted(b if a==origin else a for a,b in links if origin in (a,b))
-        if neighbors and self.genetic.rng.random()<0.45:
+        if neighbors and self.genetic.rng.random()<DISPERSAL_PROBABILITY:
             return neighbors[self.genetic.rng.randrange(len(neighbors))]
         return origin
 
