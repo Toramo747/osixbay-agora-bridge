@@ -1,0 +1,67 @@
+name: genesis-eco-long03-original-source-audit
+on:
+  push:
+    branches:
+      - feature/genesis-eco-long03-originals-audit-20261113
+    paths:
+      - 'gple_f01/long03_integrated_audit.py'
+      - '.github/workflows/genesis-eco-long03-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Check out GPLE source (PR93)
+        uses: actions/checkout@v4
+        with:
+          ref: 7c575645580008796aa91c727dc91006ca18d0aa
+          path: eco_source
+      - name: Checkout audit harness without changing source
+        uses: actions/checkout@v4
+        with:
+          ref: feature/genesis-eco-long03-originals-audit-20261113
+          path: lab
+      - name: Original F01 reference (PR88)
+        uses: actions/checkout@v4
+        with:
+          ref: 3c79e0aa949cfcc985cb25ff322c008a881f1a72
+          path: sources/pr88
+      - name: Original World adapter (PR89)
+        uses: actions/checkout@v4
+        with:
+          ref: de77b2873e2782c4155df62d9773661f4e24c504
+          path: sources/pr89
+      - name: Interop contract (PR92)
+        uses: actions/checkout@v4
+        with:
+          ref: e19eff82f1aa0688d6ae8516a620b8875404818f
+          path: sources/pr92
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Original F01 Python and JS tests
+        run: |
+          python -m unittest discover -s sources/pr88/genesis/fauna01/tests -v
+          node --test sources/pr88/genesis/fauna01/tests/test_parity.mjs
+      - name: Original World adapter offline tests
+        run: |
+          node --test sources/pr89/genesis/fauna01/adapter/tests/test_adapter.mjs sources/pr89/genesis/fauna01/adapter/tests/test_persistenza.mjs
+          python -m unittest discover -s sources/pr89/genesis/fauna01/adapter/tests -p 'test_*.py' -v
+      - name: PR93 original GPLE regression suite
+        run: python -m unittest discover -s eco_source/gple_f01 -p 'test_*.py' -v
+      - name: PR92 original contract tests
+        run: python -m unittest discover -s sources/pr92/genesis_interop_v1 -p 'test_*.py' -v
+      - name: Execute 100 notional years with original PR93 modules and contract PR92
+        env:
+          PYTHONPATH: ${{ github.workspace }}/eco_source/gple_f01
+        run: python lab/gple_f01/long03_integrated_audit.py
+      - name: Archive synthetic audit only
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: genesis-eco-long03-100-years-source-audit
+          path: long03_results/
+          retention-days: 7
