@@ -87,6 +87,12 @@ class FoodWeb:
             if not available:break
             selected=max(available,key=lambda k:(getattr(self.state,k),-options.index(k)))
             self.move(selected,"f01_reserve",0.14,"f01_consumption")
+        # Detached fruits cannot remain permanently edible after producers
+        # and consumers disappear. Spoilage is a conservative transfer from
+        # edible fruit to detritus; there is no ex-nihilo material creation.
+        for fruit in ("fruit_a", "fruit_b"):
+            self.move(fruit, "detritus", getattr(self.state,fruit)*0.025,
+                      "fruit_spoilage_" + fruit)
         # Return fraction of reserve to detritus, distinct from organism energy.
         self.move("f01_reserve","detritus",self.state.f01_reserve*0.035,"f01_waste_proxy")
         self.move("detritus","nutrients",min(0.24,self.state.detritus*0.025),"decomposition")
