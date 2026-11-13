@@ -83,6 +83,10 @@ def run():
                                  "f01_starved": m["f01_deaths"]["starvation"],
                                  "f01_thirst": m["f01_deaths"]["thirst"],
                                  "f01_total_meals": m["f01_cumulative_meals"],
+                                 "edible_fruit": sum(
+                                     sim.eco.world.genetic.life.hydro.network.nodes[p].state.fruit_a +
+                                     sim.eco.world.genetic.life.hydro.network.nodes[p].state.fruit_b
+                                     for p in ("forest","shore","rock")),
                                  "detritus": sum(getattr(sim.eco.world.genetic.life.hydro.network.nodes[p].state, "detritus") for p in ("forest","shore","rock")),
                                  "available_nutrients": sum(getattr(sim.eco.world.genetic.life.hydro.network.nodes[p].state, "nutrients") for p in ("forest","shore","rock")),
                                  "f01_alive": m["f01_alive"], "plants_alive": m["plants_alive"],
