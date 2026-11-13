@@ -55,6 +55,12 @@ jobs:
         run: |
           node --test sources/pr89/genesis/fauna01/adapter/tests/test_adapter.mjs sources/pr89/genesis/fauna01/adapter/tests/test_persistenza.mjs
           python -m unittest discover -s sources/pr89/genesis/fauna01/adapter/tests -p 'test_*.py' -v
+      - name: Link original PR88 module into expected offline test location
+        run: |
+          test ! -e genesis
+          test -f sources/pr88/genesis/fauna01/sim.py
+          ln -s sources/pr88/genesis genesis
+          test -f genesis/fauna01/sim.py
       - name: PR93 original GPLE regression suite
         run: python -m unittest discover -s eco_source/gple_f01 -p 'test_*.py' -v
       - name: PR92 original contract tests
