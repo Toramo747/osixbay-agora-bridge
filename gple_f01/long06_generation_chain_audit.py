@@ -72,6 +72,8 @@ def run_case(seed, scenario):
         water=sim.eco.world.genetic.life.hydro.total_water()
         rows=[]
         last_generation_tick=None
+        last_births=0
+        last_germinated=0
         first_empty_tick=None
         maximum_plants=initial["plants"]
         check_ticks={}
@@ -83,8 +85,10 @@ def run_case(seed, scenario):
                 raise AssertionError("spontaneous resurrection after global extinction")
             if now["plants"]==0 and now["dormant"]==0 and first_empty_tick is None:
                 first_empty_tick=tick
-            if now["births"] or now["seeds_germinated"]:
+            if now["births"]>last_births or now["seeds_germinated"]>last_germinated:
                 last_generation_tick=tick
+            last_births=now["births"]
+            last_germinated=now["seeds_germinated"]
             maximum_plants=max(maximum_plants,now["plants"])
             if not math.isclose(mb,sim.eco.world.total_biomass(),rel_tol=1e-10,abs_tol=1e-6):
                 raise AssertionError("material ledger")
