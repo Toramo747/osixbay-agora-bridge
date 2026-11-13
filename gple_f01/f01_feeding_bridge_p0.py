@@ -103,6 +103,12 @@ class F01Feeding:
             if actor["thirst_ticks"] >= MAX_THIRST_TICKS:
                 actor["alive"] = False
                 actor["death_reason"] = "thirst"
+            elif actor["energy"] <= 0.0:
+                # A tiny meal must not prevent death once metabolic energy
+                # is exhausted. The previous AND guard allowed immortal
+                # F01 proxies at exactly zero energy under a steady trickle.
+                actor["alive"] = False
+                actor["death_reason"] = "starvation"
             elif actor["starvation_ticks"] >= MAX_STARVATION_TICKS and actor["energy"] <= 0.08:
                 actor["alive"] = False
                 actor["death_reason"] = "starvation"
