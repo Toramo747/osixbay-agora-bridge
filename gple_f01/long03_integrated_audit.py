@@ -9,7 +9,7 @@ import pathlib
 import sys
 from f01_feeding_bridge_p0 import F01Feeding
 from stress_ecosystem_dm089 import SCENARIOS, _rates, _metrics, _waterless_initial_condition
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+ROOT = pathlib.Path(__file__).resolve().parents[2]  # worktree root; lab/ and sources/ are siblings
 INTEROP = ROOT / "sources" / "pr92" / "genesis_interop_v1" / "contract.py"
 ORIGINAL = ROOT / "sources" / "pr88" / "genesis" / "fauna01" / "sim.py"
 SEEDS = (11, 23, 37)
