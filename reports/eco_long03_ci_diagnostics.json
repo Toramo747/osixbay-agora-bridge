@@ -1,20 +1,143 @@
 {
   "schema": "osixbay.eco-long03.ci-diagnostics.v1",
   "source": "GitHub Actions API on CI runner",
-  "captured_on_commit": "a6a4df9bd71eaa71859c5a40fe69188534cd459d",
+  "captured_on_commit": "d82e1d1b43b70c037909c66b45d619905c940e2b",
   "runs": [
     {
-      "run_id": 43454010665,
-      "run_number": 5,
-      "head_sha": "a6a4df9bd71eaa71859c5a40fe69188534cd459d",
+      "run_id": 43457233058,
+      "run_number": 6,
+      "head_sha": "d82e1d1b43b70c037909c66b45d619905c940e2b",
       "status": "in_progress",
       "conclusion": null,
       "jobs": [
         {
-          "job_id": 131983269943,
+          "job_id": 131994459710,
           "name": "offline-audit",
           "status": "in_progress",
           "conclusion": null,
+          "failed_steps": [],
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Check out GPLE source (PR93)",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Checkout audit harness without changing source",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Original F01 reference (PR88)",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Original World adapter (PR89)",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Interop contract (PR92)",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Original F01 Python and JS tests",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Original World adapter offline tests",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Link original PR88 module into expected offline test location",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "PR93 original GPLE regression suite",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "PR92 original contract tests",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Execute 100 notional years with original PR93 modules and contract PR92",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Archive synthetic audit only",
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Persist failure-step diagnostics on isolated branch",
+              "conclusion": null,
+              "status": "in_progress"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "conclusion": null,
+              "status": "pending"
+            },
+            {
+              "name": "Post Interop contract (PR92)",
+              "conclusion": null,
+              "status": "pending"
+            },
+            {
+              "name": "Post Original World adapter (PR89)",
+              "conclusion": null,
+              "status": "pending"
+            },
+            {
+              "name": "Post Original F01 reference (PR88)",
+              "conclusion": null,
+              "status": "pending"
+            },
+            {
+              "name": "Post Checkout audit harness without changing source",
+              "conclusion": null,
+              "status": "pending"
+            },
+            {
+              "name": "Post Check out GPLE source (PR93)",
+              "conclusion": null,
+              "status": "pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": 43454010665,
+      "run_number": 5,
+      "head_sha": "a6a4df9bd71eaa71859c5a40fe69188534cd459d",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": [
+        {
+          "job_id": 131983269943,
+          "name": "offline-audit",
+          "status": "completed",
+          "conclusion": "failure",
           "failed_steps": [
             {
               "name": "PR93 original GPLE regression suite",
@@ -89,38 +212,43 @@
             },
             {
               "name": "Persist failure-step diagnostics on isolated branch",
-              "conclusion": null,
-              "status": "in_progress"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Run actions/setup-python@v5",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "skipped",
+              "status": "completed"
             },
             {
               "name": "Post Interop contract (PR92)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Original World adapter (PR89)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Original F01 reference (PR88)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Checkout audit harness without changing source",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Check out GPLE source (PR93)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "status": "completed"
             }
           ]
         }
