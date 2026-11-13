@@ -65,7 +65,7 @@ def seedbank_from_live_parents(sim):
         parent.biomass -= mass
         world._transfer(parent.patch, parent.species, mass, False)
         seed = Propagule(
-            identity="seedbank-" + parent.identity,
+            identity="pseedbank-" + parent.identity,
             species=parent.species, patch=parent.patch,
             biomass=mass, age=0, parent_id=parent.identity,
             genes=dict(world.genetic.genes[parent.identity])
