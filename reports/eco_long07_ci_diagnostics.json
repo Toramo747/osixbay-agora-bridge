@@ -1,7 +1,7 @@
 {
   "schema": "osixbay.eco-long07.ci-diagnostics.v1",
   "source": "GitHub Actions API on CI runner",
-  "captured_on_commit": "45d8c46098013f8d39bb13a600b43d9e860ff56b",
+  "captured_on_commit": "0eccef0237c8de5213bc82fde76e745e9faf24d9",
   "runs": [
     {
       "run_id": 43545485280,
@@ -69,33 +69,33 @@
             },
             {
               "name": "PR93 original GPLE regression suite",
-              "conclusion": null,
-              "status": "in_progress"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Candidate ECO-LONG-07 full regression including lineage invariants",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "PR92 original contract tests",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "ECO-LONG-07 100 symbolic years x 3 seeds x 8 renewal scenarios",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Archive synthetic audit only",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Persist failure-step diagnostics on isolated branch",
               "conclusion": null,
-              "status": "pending"
+              "status": "in_progress"
             },
             {
               "name": "Post Run actions/setup-python@v5",
@@ -135,14 +135,14 @@
       "run_id": 43545420309,
       "run_number": 1,
       "head_sha": "45d8c46098013f8d39bb13a600b43d9e860ff56b",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "jobs": [
         {
           "job_id": 132295497884,
           "name": "offline-audit",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "success",
           "failed_steps": [],
           "steps": [
             {
@@ -222,38 +222,43 @@
             },
             {
               "name": "Persist failure-step diagnostics on isolated branch",
-              "conclusion": null,
-              "status": "in_progress"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Run actions/setup-python@v5",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Interop contract (PR92)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Original World adapter (PR89)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Original F01 reference (PR88)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Checkout audit harness without changing source",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
             },
             {
               "name": "Post Check out GPLE source (PR93)",
-              "conclusion": null,
-              "status": "pending"
+              "conclusion": "success",
+              "status": "completed"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success",
+              "status": "completed"
             }
           ]
         }
