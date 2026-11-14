@@ -53,7 +53,7 @@ def evaluate(seed:int, fraction:float, ticks:int=1200):
         extinct=None
         max_generation=1
         for tick in range(1,ticks+1):
-            before={p.identity:p for p in life.individuals}
+            before={p.identity:(p.age,p.patch,p.species) for p in life.individuals}
             before_seeds={s.identity for s in sim.eco.world.seeds}
             pre={}
             for patch,species in GROUPS:
@@ -85,7 +85,7 @@ def evaluate(seed:int, fraction:float, ticks:int=1200):
                 elif event["event"]=="plant_death":
                     who=event["identity"]
                     if who not in before:raise AssertionError("untracked death")
-                    if before[who].age+1<L.ADULT_AGE:young_deaths[k]+=1
+                    if before[who][0]+1<L.ADULT_AGE:young_deaths[k]+=1
                     else:adult_deaths[k]+=1
                     events.append(dict(seed=seed,fraction=fraction,tick=tick,
                         patch=k[0],species=k[1],event="death",
