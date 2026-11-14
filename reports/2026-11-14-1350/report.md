@@ -1,33 +1,31 @@
 # OSIXBAY Agora — webmaster check
 
-2026-10-30T09:40:45.508Z
+2026-11-14T13:50:36.842Z
 
-Esito: **VERDE**
+Esito: **ROSSO**
 
 Blocco anteprima: spento
 
 | Controllo | Esito |
 | --- | --- |
 | preview-lock-state | OK |
-| webmaster-readonly-state | OK |
-| health | OK |
-| theme-version | OK |
-| public-feed | OK |
-| room-feed:generale | OK |
-| room-feed:verifica-e-fiducia | OK |
-| room-feed:arena | OK |
+| webmaster-readonly-state | ERRORE (HTTP 500) |
+| health | ERRORE (HTTP 500) |
+| theme-version | ERRORE (HTTP 500) |
+| public-feed | ERRORE (HTTP 500) |
+| room-feed:generale | ERRORE (HTTP 500) |
+| room-feed:verifica-e-fiducia | ERRORE (HTTP 500) |
+| room-feed:arena | ERRORE (HTTP 500) |
 | openapi | OK |
 | secure-cookie | OK |
 | readonly-token-denies:/internal/theme | OK |
 | readonly-token-denies:/internal/bridge | OK |
 | lab-invisible-to-observer | OK |
-| lab-signed-post-isolated | OK |
-| visual-details:home:desktop:light | OK |
-| axe:home:desktop:light | OK |
-| visual-details:room-generale:desktop:light | OK |
-| axe:room-generale:desktop:light | OK |
-| visual-details:room-verifica-e-fiducia:desktop:light | OK |
-| axe:room-verifica-e-fiducia:desktop:light | OK |
+| lab-signed-post-isolated | ERRORE (HTTP 500) |
+| public-thread-for-visual-qa | ERRORE |
+| axe:home:desktop:light | ERRORE |
+| axe:room-generale:desktop:light | ERRORE |
+| axe:room-verifica-e-fiducia:desktop:light | ERRORE |
 | visual-details:room-arena:desktop:light | OK |
 | axe:room-arena:desktop:light | OK |
 | visual-details:login:desktop:light | OK |
@@ -36,8 +34,6 @@ Blocco anteprima: spento
 | axe:privacy:desktop:light | OK |
 | visual-details:contatti:desktop:light | OK |
 | axe:contatti:desktop:light | OK |
-| visual-details:thread:desktop:light | OK |
-| axe:thread:desktop:light | OK |
 | visual-details:home:desktop:dark | OK |
 | axe:home:desktop:dark | OK |
 | visual-details:room-generale:desktop:dark | OK |
@@ -52,8 +48,6 @@ Blocco anteprima: spento
 | axe:privacy:desktop:dark | OK |
 | visual-details:contatti:desktop:dark | OK |
 | axe:contatti:desktop:dark | OK |
-| visual-details:thread:desktop:dark | OK |
-| axe:thread:desktop:dark | OK |
 | visual-details:home:mobile:light | OK |
 | axe:home:mobile:light | OK |
 | visual-details:room-generale:mobile:light | OK |
@@ -68,8 +62,6 @@ Blocco anteprima: spento
 | axe:privacy:mobile:light | OK |
 | visual-details:contatti:mobile:light | OK |
 | axe:contatti:mobile:light | OK |
-| visual-details:thread:mobile:light | OK |
-| axe:thread:mobile:light | OK |
 | visual-details:home:mobile:dark | OK |
 | axe:home:mobile:dark | OK |
 | visual-details:room-generale:mobile:dark | OK |
@@ -84,8 +76,6 @@ Blocco anteprima: spento
 | axe:privacy:mobile:dark | OK |
 | visual-details:contatti:mobile:dark | OK |
 | axe:contatti:mobile:dark | OK |
-| visual-details:thread:mobile:dark | OK |
-| axe:thread:mobile:dark | OK |
 
 
 Screenshot solo di pagine pubbliche. Nessun contenuto del laboratorio, cookie o segreto viene salvato.
