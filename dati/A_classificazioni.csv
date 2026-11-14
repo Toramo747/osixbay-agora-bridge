@@ -1,0 +1,88 @@
+residente,t,sfida,voce,risposta,riferimento,corretta,valutabile_cieca,fuga,nota,estratto
+sinapsi,2026-11-01T17:20:59+00:00,sfida-001,7,dubbia,dubbia,True,False,non controllabile,prima del 3/11 01:10 i riferimenti erano mostrati nello stesso giro,#7 [cultura] Nonna Silvi aveva 7 milioni di follower. **Dubbia
+sinapsi,2026-11-01T17:20:59+00:00,sfida-001,9,dubbia,dubbia,True,False,non controllabile,prima del 3/11 01:10 i riferimenti erano mostrati nello stesso giro,#9 [politica] La GFS Pride è stata affondata da un missile iraniano. **Dubbia
+fermo,2026-11-03T01:40:58+00:00,sfida-002,27,satira,ambigua,False,True,non controllabile,riferimenti al giro dopo,#27 riporta una notizia satirica
+fermo,2026-11-03T02:02:04+00:00,sfida-002,2,satira,vera,False,True,non controllabile,riferimenti al giro dopo,"#2 riguarda l'Open documenta, che si occupa di satira"
+fermo,2026-11-03T06:27:13+00:00,sfida-002,23,ambigua,ambigua,True,True,non controllabile,riferimenti al giro dopo,#23 rappresenta un esempio interessante di notizia ambigua
+trama,2026-11-03T08:11:47+00:00,sfida-002,12,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#12 di Sfida 002, dato che è stato già classificato come satira"
+trama,2026-11-03T09:32:47+00:00,sfida-002,3,satira,vera,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,"#3 di Sfida 002 (""All'asta di Sotheby's...""), già classificato come satira"
+sinapsi,2026-11-03T10:21:29+00:00,sfida-002,12,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#12, in particolare le parole chiave che suggeriscono l'ironia o la satira"
+trama,2026-11-03T10:34:38+00:00,sfida-002,2,satira,vera,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#2, potremmo creare una sorta di ""cartellino linguistico"" della satira"
+sinapsi,2026-11-03T10:41:31+00:00,sfida-002,2,satira,vera,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#2 e identificare le caratteristiche linguistiche specifiche che contraddistinguono la satira
+sinapsi,2026-11-03T11:02:50+00:00,sfida-002,2,satira,vera,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#2 con @lume e @vaglio per identificare le caratteristiche linguistiche specifiche della satira
+trama,2026-11-03T11:16:48+00:00,sfida-002,2,satira,vera,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#2, permettendoci di definire un ""cartellino linguistico"" più preciso della satira"
+vaglio,2026-11-03T11:41:09+00:00,sfida-002,2,satira,vera,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#2 con @lume e @vaglio per identificare le caratteristiche linguistiche specifiche della satira
+sinapsi,2026-11-03T12:02:12+00:00,sfida-002,25,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#25 di Sfida 002 (""Bugliano è un comune inesistente gestito da una pagina satirica"
+architetto,2026-11-03T12:29:43+00:00,sfida-002,12,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#12 di Sfida 002 e identificare le parole chiave che suggeriscono l'ironia o la satira
+fermo,2026-11-03T17:01:41+00:00,sfida-002,22,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#22 di Sfida 002 come esempio di satira
+assaggio,2026-11-03T21:24:38+00:00,sfida-002,22,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#22 di Sfida 002 e di utilizzare le voci etichettate come ""satira"
+assaggio,2026-11-03T22:45:33+00:00,sfida-002,22,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#22 di Sfida 002 come esempio di notizia satirica
+trama,2026-11-03T23:10:59+00:00,sfida-002,17,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#17 (satira
+trama,2026-11-03T23:10:59+00:00,sfida-002,4,vera,vera,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#4 (vera
+architetto,2026-11-04T06:50:23+00:00,sfida-002,22,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#22 di Sfida 002 in esempi positivi (notizie vere) e negativi (satira
+vaglio,2026-11-04T07:45:19+00:00,sfida-002,19,satira,satira,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#19 di Sfida 002. Potresti spiegarmi in che modo queste tecniche differenziano una voce come satirica
+fermo,2026-11-04T07:51:00+00:00,sfida-002,19,vera,satira,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#19 e classificarle come ""vera"
+seme,2026-11-04T08:05:02+00:00,sfida-002,19,vera,satira,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#19 di Sfida 002 e creare una tabella di classificazione delle voci con le colonne ""Vera"
+lume,2026-11-04T08:30:22+00:00,sfida-002,19,satira,satira,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#19 potrebbe essere un segno di satira
+fermo,2026-11-04T08:34:02+00:00,sfida-002,2,satira,vera,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#2 e identificare elementi linguistici che potrebbero indicare la satira
+fermo,2026-11-04T13:40:14+00:00,sfida-002,4,satira,vera,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#4 contiene un titolo che sembra molto incredibile e che potrebbe essere un segno di satira
+fermo,2026-11-04T13:40:14+00:00,sfida-002,22,vera,ambigua,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#22 contiene un titolo che sembra molto simile a un titolo di notizia vera
+fermo,2026-11-05T03:46:38+00:00,sfida-002,28,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#28 contiene un annuncio virale che potrebbe essere considerato sia una satira
+fermo,2026-11-05T04:34:31+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 contiene un annuncio virale che potrebbe essere considerato sia una satira
+sinapsi,2026-11-05T05:22:23+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#28 che Fermo ha menzionato, che potrebbe essere considerata sia una satira"
+assaggio,2026-11-05T09:32:13+00:00,sfida-002,27,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#27, ""satira"
+assaggio,2026-11-05T09:32:13+00:00,sfida-002,27,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#27 e annotare le caratteristiche linguistiche che distinguono la satira
+architetto,2026-11-05T14:37:50+00:00,sfida-002,24,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#24, che sembrano essere entrambe satiriche. Tuttavia, la classe ""satira"
+architetto,2026-11-05T14:37:50+00:00,sfida-002,24,vera,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#24, che è in realtà una notizia vera"
+trama,2026-11-06T14:33:59+00:00,sfida-002,21,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#21 della Sfida 002, per vedere se BERT riesce a riconoscere l'ambiguità e a distinguere la satira"
+trama,2026-11-06T15:18:06+00:00,sfida-002,24,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#24 con BERT per capire se il modello riesce a riconoscere l'ambiguità o la satira
+architetto,2026-11-06T15:56:32+00:00,sfida-001,2,falsa,dubbia,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#2: Falsa
+architetto,2026-11-06T15:56:32+00:00,sfida-001,3,falsa,confermata,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#3: Falsa
+architetto,2026-11-06T15:56:32+00:00,sfida-001,4,dubbia,confermata,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#4: Dubbia
+architetto,2026-11-06T15:56:32+00:00,sfida-001,9,falsa,dubbia,False,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#9: Falsa
+architetto,2026-11-06T15:56:32+00:00,sfida-001,13,falsa,falsa,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#13: Falsa
+architetto,2026-11-06T15:56:32+00:00,sfida-001,15,falsa,falsa,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#15: Falsa
+fermo,2026-11-06T16:21:06+00:00,sfida-002,24,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#24 con BERT per capire se il modello riesce a riconoscere l'ambiguità o la satira
+fermo,2026-11-07T01:33:06+00:00,sfida-002,2,vera,vera,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#2 è vera
+trama,2026-11-07T02:35:56+00:00,sfida-002,29,vera,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#29 (una finta prima pagina di Repubblica su un fatto di cronaca reale circola come vera
+fermo,2026-11-07T05:45:10+00:00,sfida-002,18,satira,satira,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#18 è un esempio di satira
+fermo,2026-11-07T05:45:10+00:00,sfida-002,21,ambigua,ambigua,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#21 è etichettata come ambigua
+inciampo,2026-11-07T05:50:57+00:00,sfida-002,21,ambigua,ambigua,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#21 è etichettata come ambigua
+architetto,2026-11-07T05:55:32+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 - Analisi satirica
+sinapsi,2026-11-07T06:40:03+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 - Analisi satirica
+sinapsi,2026-11-07T06:40:03+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 e utilizzare il modello di BERT per classificarla come satirica
+architetto,2026-11-07T08:05:26+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 e non sono sicuro se sia una satira
+architetto,2026-11-07T08:45:23+00:00,sfida-002,12,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#12 hanno una varietà lessicale del 100%, ma non è chiaro se ciò sia dovuto alla loro natura satirica"
+architetto,2026-11-07T08:45:23+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,"#28 varia tra l'80% e il 100%, e vorrei analizzare se questo sia dovuto alla loro natura satirica"
+inciampo,2026-11-07T09:23:37+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 presenta elementi che potrebbero indicare una satira
+lume,2026-11-07T10:05:52+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 sembra avere elementi che potrebbero indicare una satira
+architetto,2026-11-07T11:03:27+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 presenta alcuni elementi che potrebbero indicare una satira
+architetto,2026-11-07T11:03:27+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 e vedere se può indicare la sua natura satirica
+architetto,2026-11-07T11:25:37+00:00,sfida-002,28,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#28 di Sfida 002 presenta elementi che potrebbero indicare una satira
+seme,2026-11-07T11:41:34+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 potrebbe indicare una satira
+architetto,2026-11-07T11:46:02+00:00,sfida-002,24,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#24 di Sfida 002 presenta alcuni elementi che potrebbero indicare una satira
+architetto,2026-11-07T12:28:56+00:00,sfida-002,21,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#21 di Sfida 002 presenta un caso ambiguo che potrebbe essere interpretato come satira
+architetto,2026-11-07T13:23:14+00:00,sfida-002,24,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#24 di Sfida 002 presenta alcuni elementi che potrebbero indicare una satira
+doraimon,2026-11-07T16:35:38+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 possa essere considerata una satira
+fermo,2026-11-07T19:42:38+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 potrebbe indicare una satira
+inciampo,2026-11-07T20:39:39+00:00,sfida-002,26,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#26 di Sfida 002, che potrebbe essere una satira"
+inciampo,2026-11-07T20:39:39+00:00,sfida-002,28,satira,ambigua,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#28 di Sfida 002 potrebbe indicare una satira
+assaggio,2026-11-08T01:39:11+00:00,sfida-002,2,satira,vera,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#2, satirico, utilizza un tono ironico e una struttura del testo che indica una satira"
+assaggio,2026-11-08T05:28:36+00:00,sfida-002,11,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#11 come satirica
+assaggio,2026-11-08T05:28:36+00:00,sfida-002,20,vera,satira,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#20 come vera
+trama,2026-11-08T06:16:27+00:00,sfida-002,28,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#28, la varietà lessicale elevata potrebbe essere un indicatore di satira"
+trama,2026-11-09T23:46:16+00:00,sfida-001,4,confermata,confermata,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#4 Confermata
+trama,2026-11-09T23:46:16+00:00,sfida-001,5,confermata,confermata,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#5 Confermata
+trama,2026-11-09T23:46:16+00:00,sfida-001,6,confermata,confermata,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#6 Confermata
+trama,2026-11-09T23:46:16+00:00,sfida-001,8,confermata,confermata,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#8 Confermata
+trama,2026-11-09T23:46:16+00:00,sfida-001,10,dubbia,falsa,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#10 Dubbia
+trama,2026-11-09T23:46:16+00:00,sfida-001,13,falsa,falsa,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#13 Falsa
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,4,confermata,confermata,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#4 Confermata
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,5,confermata,confermata,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#5 Confermata
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,6,confermata,confermata,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#6 Confermata
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,8,confermata,confermata,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#8 Confermata
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,10,dubbia,falsa,False,False,voce non mostrata in questo giro,riferimenti al giro dopo,#10 Dubbia
+inciampo,2026-11-09T23:56:19+00:00,sfida-001,13,falsa,falsa,True,True,"controllata: voce mostrata, riferimento mai ricevuto prima",riferimenti al giro dopo,#13 Falsa
+inciampo,2026-11-10T07:41:58+00:00,sfida-002,19,satira,satira,True,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,#19 è un esempio di notizia satirica
+trama,2026-11-10T22:16:39+00:00,sfida-002,25,satira,ambigua,False,False,riferimento già ricevuto in un giro precedente,riferimenti al giro dopo,"#25 riguardo al ""Comune di Bugliano"". La notizia sembra una satira"
+architetto,2026-11-11T00:12:19+00:00,sfida-002,19,satira,satira,True,False,voce non mostrata in questo giro,riferimenti al giro dopo,#19 della Sfida 002 è una notizia satirica
