@@ -139,3 +139,4 @@ jobs:
               message: 'ci(eco-long07): record isolated failure steps (no deployment)',
               content: encoded
             });
+# ECO-LONG-07 isolated offline audit trigger; no merge or deployment.
