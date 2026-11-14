@@ -85,7 +85,7 @@ jobs:
         run: python -m unittest discover -s lab/gple_f01 -p 'test_*.py' -v
       - name: PR92 original contract tests
         run: python -m unittest discover -s sources/pr92/genesis_interop_v1 -p 'test_*.py' -v
-      - name: ECO-LONG-13 offline CPU batch: 3 seeds x 6 fractions x 1200 ticks
+      - name: 'ECO-LONG-13 offline CPU batch: 3 seeds x 6 fractions x 1200 ticks'
         env:
           PYTHONPATH: ${{ github.workspace }}/lab/gple_f01
         run: python lab/gple_f01/eco_long13_kaggle_batch.py
