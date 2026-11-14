@@ -171,7 +171,7 @@ def audit_case(seed,scenario,ticks=TICKS):
                 germinated_to_matured=len(ids & germinated & matured),
                 matured_to_reproduced=len(ids & matured & actual_parents)))
         final=dict(seed=seed,scenario=name,ticks=ticks,
-            first_no_plants_or_seeds=(None if not saw_extinction else next((r["year"] for r in annual if r["live"]==0),None)),
+            global_extinction_occurred=saw_extinction,
             surviving_plants=len(life.individuals),dormant_seeds=len(sim.eco.world.seeds),
             last_birth_tick=last_birth_tick,last_germination_tick=last_actual_germination_tick,
             original_founders=len(original_founders),paid_initial_propagules=len(initial_paid),
