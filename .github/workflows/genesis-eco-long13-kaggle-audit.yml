@@ -17,6 +17,7 @@ on:
       - 'gple_f01/test_eco_long12_turnover.py'
       - 'gple_f01/test_eco_long13_kaggle.py'
       - 'kaggle/eco_long13_cpu.ipynb'
+      - 'kaggle/README_ECO_LONG13.md'
       - 'gple_f01/foodweb_p0.py'
       - 'gple_f01/plant_lifecycle_p0.py'
       - 'gple_f01/propagules_p0.py'
