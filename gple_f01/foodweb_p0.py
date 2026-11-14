@@ -12,6 +12,10 @@ import random
 FIELDS=("nutrients","producer_a","producer_b","fruit_a","fruit_b","biofilm",
         "microfauna","detritus","f01_reserve")
 PRODUCERS=("producer_a","producer_b")
+# Counterfactual ECO-LONG-07 coefficients: defaults match ECO-LONG-06 precisely.
+PRODUCER_GROWTH_MULTIPLIER=1.0
+FRUITING_FRACTION=0.055
+PRODUCER_TURNOVER_FRACTION=0.012
 @dataclass
 class State:
     nutrients:float=60.0
@@ -73,13 +77,13 @@ class FoodWeb:
         # growth draws from nutrient stock; the light/water factors only limit rate.
         suitability=max(0,1-abs(temperature-20)/20)
         for name,rate in (("producer_a",0.33),("producer_b",0.24),("biofilm",0.18)):
-            self.move("nutrients",name,rate*(plant_water if name in PRODUCERS else water)*light*suitability*self.growth_bias,"growth_"+name)
+            self.move("nutrients",name,rate*(PRODUCER_GROWTH_MULTIPLIER if name in PRODUCERS else 1.0)*(plant_water if name in PRODUCERS else water)*light*suitability*self.growth_bias,"growth_"+name)
         for name,fruit in (("producer_a","fruit_a"),("producer_b","fruit_b")):
-            self.move(name,fruit,getattr(self.state,name)*0.055,"fruiting_"+name)
+            self.move(name,fruit,getattr(self.state,name)*FRUITING_FRACTION,"fruiting_"+name)
         self.move("biofilm","microfauna",min(0.16,self.state.microfauna*0.05+0.03),"microfauna_feed")
         self.move("microfauna","detritus",self.state.microfauna*0.018,"microfauna_turnover")
-        self.move("producer_a","detritus",self.state.producer_a*0.012,"producer_a_turnover")
-        self.move("producer_b","detritus",self.state.producer_b*0.012,"producer_b_turnover")
+        self.move("producer_a","detritus",self.state.producer_a*PRODUCER_TURNOVER_FRACTION,"producer_a_turnover")
+        self.move("producer_b","detritus",self.state.producer_b*PRODUCER_TURNOVER_FRACTION,"producer_b_turnover")
         for i in range(consumers):
             # No material is consumed if stock is zero; food enters proxy F01 reserves.
             options=("fruit_a","fruit_b","biofilm","microfauna")
