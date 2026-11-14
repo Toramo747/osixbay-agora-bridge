@@ -141,3 +141,4 @@ jobs:
               content: encoded
             });
 # ECO-LONG-07 isolated offline audit trigger; no merge or deployment.
+# Offline ECO-LONG-08 diagnostic push trigger; no deployment.
