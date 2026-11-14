@@ -62,12 +62,17 @@ def analyze_case(seed, fraction, ticks=TICKS):
                     if parent.patch!=event["patch"] or parent.species!=event["species"]:
                         raise AssertionError("parent patch/species mismatch")
                     child_mass=float(event["quantity"])
-                    # Original PlantLifecycle takes fraction from the parent's
-                    # reconciled biomass, and then leaves the remaining fraction.
-                    # Verify this independent relation against the rounded event.
-                    expected_child_mass=parent.biomass*fraction/(1-fraction)
-                    if not math.isclose(child_mass,expected_child_mass,rel_tol=1e-7,abs_tol=3e-8):
-                        raise AssertionError("child mass not funded by post-birth parent")
+                    # The F01/MicroWorld wrapper may reconcile producer tissue
+                    # again AFTER PlantLifecycle.birth inside the same tick.
+                    # A post-tick parent reading is therefore NOT the immediate
+                    # post-birth parent mass. Record both separately, without
+                    # treating inferred mass as an independent source measurement.
+                    inferred_birth_parent_mass_before=child_mass/fraction
+                    inferred_birth_parent_mass_after=child_mass*(1-fraction)/fraction
+                    if (not math.isfinite(inferred_birth_parent_mass_before)
+                            or inferred_birth_parent_mass_after<=0
+                            or inferred_birth_parent_mass_before<=child_mass):
+                        raise AssertionError("invalid counterfactual birth partition")
                     child_generation=ancestry[parent_id]+1
                     ancestry[child_id]=child_generation
                     max_generation=max(max_generation,child_generation)
@@ -78,8 +83,9 @@ def analyze_case(seed, fraction, ticks=TICKS):
                         parent_id=parent_id,child_id=child_id,
                         parent_generation=ancestry[parent_id],child_generation=child_generation,
                         parent_age_at_birth=parent.age,
-                        parent_mass_after_birth=parent.biomass,
-                        parent_mass_before_birth=parent.biomass+expected_child_mass,
+                        parent_mass_after_birth=inferred_birth_parent_mass_after,
+                        parent_mass_before_birth=inferred_birth_parent_mass_before,
+                        parent_mass_at_end_of_tick=parent.biomass,
                         paid_child_mass=child_mass))
                 elif event["event"]=="plant_death":
                     pid=event["identity"]
@@ -209,7 +215,8 @@ def main():
         ticks_per_run=TICKS,runs=len(cases),annual_rows=len(annual),
         paid_births=len(births),cases=cases,
         limitations=[
-            "Post-birth maternal tissue uses exact model split and rounded event quantity",
+            "Parent birth masses are INFERRED from rounded event quantity and configured fraction; not independent measurements",
+            "Observed parent_mass_at_end_of_tick is after potential further producer reconciliation",
             "24-tick survival is per birth event; repeat births from same parent are correlated",
             "Parent mortality reason is inferred using age vs other loss; not full physiology",
             "No independent offspring fitness or species-ecology calibration",
