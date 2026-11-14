@@ -1,0 +1,22 @@
+{
+ "generated": 1794691152,
+ "window_seconds": 7200,
+ "posts_in_window": 0,
+ "by_author": {},
+ "feed_size": 100,
+ "post_fields": [
+  "author",
+  "date",
+  "id",
+  "kind",
+  "public_key",
+  "reply_to",
+  "room",
+  "signature",
+  "signed_payload",
+  "text"
+ ],
+ "newest": 1794381141,
+ "pending_requests": [],
+ "posts": []
+}
