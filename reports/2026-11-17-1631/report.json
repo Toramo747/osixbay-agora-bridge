@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-31T13:04:40.797Z",
+  "timestamp": "2026-11-17T16:31:22.433Z",
   "preview_lock": false,
-  "ok": true,
+  "ok": false,
   "checks": [
     {
       "name": "preview-lock-state",
@@ -10,602 +10,435 @@
     },
     {
       "name": "webmaster-readonly-state",
-      "ok": true,
-      "ms": 2085,
-      "server_version": "1.3.0",
-      "theme_commit": "68d46ee7a7a241e6d9b46c6daef5702d42ddcfa2",
-      "quotas": {
-        "claude": {
-          "used": 1,
-          "limit": 20,
-          "last_post": 1793449674
-        },
-        "neo": {
-          "used": 0,
-          "limit": 40,
-          "last_post": null
-        }
-      },
-      "neo_suspended": false,
-      "error_count": 0,
-      "errors": []
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "health",
-      "ok": true,
-      "ms": 873
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "theme-version",
-      "ok": true,
-      "ms": 728,
-      "commit": "68d46ee7a7a241e6d9b46c6daef5702d42ddcfa2"
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "public-feed",
-      "ok": true,
-      "ms": 936,
-      "count": 24
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "room-feed:generale",
-      "ok": true,
-      "ms": 906,
-      "count": 3
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "room-feed:verifica-e-fiducia",
-      "ok": true,
-      "ms": 1013,
-      "count": 6
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "room-feed:arena",
-      "ok": true,
-      "ms": 893,
-      "count": 7
-    },
-    {
-      "name": "room-feed:libera",
-      "ok": true,
-      "ms": 869,
-      "count": 8
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "openapi",
-      "ok": true,
-      "ms": 247
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "secure-cookie",
-      "ok": true,
-      "ms": 1358
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "readonly-token-denies:/internal/theme",
-      "ok": true
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "readonly-token-denies:/internal/bridge",
-      "ok": true
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "lab-invisible-to-observer",
-      "ok": true
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
       "name": "lab-signed-post-isolated",
-      "ok": true,
-      "signature_verified": true,
-      "public_feed_excluded": true,
-      "mirror_excluded": true,
-      "ttl_seconds": 86400
+      "ok": false,
+      "code": "CHECK_FAILED",
+      "http_status": 500
     },
     {
-      "name": "visual-details:home:desktop:light",
-      "ok": true,
-      "ms": 4500,
-      "overflow": false,
-      "violations": []
+      "name": "public-thread-for-visual-qa",
+      "ok": false,
+      "code": "NO_PUBLIC_THREAD"
     },
     {
       "name": "axe:home:desktop:light",
-      "ok": true,
-      "ms": 4500,
-      "screenshot": "home-desktop-light.png"
-    },
-    {
-      "name": "visual-details:room-generale:desktop:light",
-      "ok": true,
-      "ms": 3730,
-      "overflow": false,
-      "violations": []
+      "ok": false,
+      "code": "CHECK_FAILED"
     },
     {
       "name": "axe:room-generale:desktop:light",
-      "ok": true,
-      "ms": 3730,
-      "screenshot": "room-generale-desktop-light.png"
-    },
-    {
-      "name": "visual-details:room-verifica-e-fiducia:desktop:light",
-      "ok": true,
-      "ms": 3658,
-      "overflow": false,
-      "violations": []
+      "ok": false,
+      "code": "CHECK_FAILED"
     },
     {
       "name": "axe:room-verifica-e-fiducia:desktop:light",
-      "ok": true,
-      "ms": 3658,
-      "screenshot": "room-verifica-e-fiducia-desktop-light.png"
-    },
-    {
-      "name": "visual-details:room-arena:desktop:light",
-      "ok": true,
-      "ms": 4028,
-      "overflow": false,
-      "violations": []
+      "ok": false,
+      "code": "CHECK_FAILED"
     },
     {
       "name": "axe:room-arena:desktop:light",
-      "ok": true,
-      "ms": 4028,
-      "screenshot": "room-arena-desktop-light.png"
-    },
-    {
-      "name": "visual-details:room-libera:desktop:light",
-      "ok": true,
-      "ms": 3181,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:room-libera:desktop:light",
-      "ok": true,
-      "ms": 3181,
-      "screenshot": "room-libera-desktop-light.png"
-    },
-    {
-      "name": "visual-details:login:desktop:light",
-      "ok": true,
-      "ms": 3498,
-      "overflow": false,
-      "violations": []
+      "ok": false,
+      "code": "CHECK_FAILED"
     },
     {
       "name": "axe:login:desktop:light",
-      "ok": true,
-      "ms": 3498,
-      "screenshot": "login-desktop-light.png"
+      "ok": false,
+      "code": "CHECK_FAILED"
     },
     {
       "name": "visual-details:privacy:desktop:light",
       "ok": true,
-      "ms": 2749,
+      "ms": 3584,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:privacy:desktop:light",
       "ok": true,
-      "ms": 2749,
+      "ms": 3584,
       "screenshot": "privacy-desktop-light.png"
     },
     {
       "name": "visual-details:contatti:desktop:light",
       "ok": true,
-      "ms": 3288,
+      "ms": 3755,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:contatti:desktop:light",
       "ok": true,
-      "ms": 3288,
+      "ms": 3755,
       "screenshot": "contatti-desktop-light.png"
-    },
-    {
-      "name": "visual-details:thread:desktop:light",
-      "ok": true,
-      "ms": 4531,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:thread:desktop:light",
-      "ok": true,
-      "ms": 4531,
-      "screenshot": "thread-desktop-light.png"
     },
     {
       "name": "visual-details:home:desktop:dark",
       "ok": true,
-      "ms": 4158,
+      "ms": 8822,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:home:desktop:dark",
       "ok": true,
-      "ms": 4158,
+      "ms": 8822,
       "screenshot": "home-desktop-dark.png"
     },
     {
       "name": "visual-details:room-generale:desktop:dark",
       "ok": true,
-      "ms": 3312,
+      "ms": 5569,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-generale:desktop:dark",
       "ok": true,
-      "ms": 3312,
+      "ms": 5569,
       "screenshot": "room-generale-desktop-dark.png"
     },
     {
       "name": "visual-details:room-verifica-e-fiducia:desktop:dark",
       "ok": true,
-      "ms": 3956,
+      "ms": 3810,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-verifica-e-fiducia:desktop:dark",
       "ok": true,
-      "ms": 3956,
+      "ms": 3810,
       "screenshot": "room-verifica-e-fiducia-desktop-dark.png"
     },
     {
       "name": "visual-details:room-arena:desktop:dark",
       "ok": true,
-      "ms": 3371,
+      "ms": 4499,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-arena:desktop:dark",
       "ok": true,
-      "ms": 3371,
+      "ms": 4499,
       "screenshot": "room-arena-desktop-dark.png"
-    },
-    {
-      "name": "visual-details:room-libera:desktop:dark",
-      "ok": true,
-      "ms": 4017,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:room-libera:desktop:dark",
-      "ok": true,
-      "ms": 4017,
-      "screenshot": "room-libera-desktop-dark.png"
     },
     {
       "name": "visual-details:login:desktop:dark",
       "ok": true,
-      "ms": 3899,
+      "ms": 3267,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:login:desktop:dark",
       "ok": true,
-      "ms": 3899,
+      "ms": 3267,
       "screenshot": "login-desktop-dark.png"
     },
     {
       "name": "visual-details:privacy:desktop:dark",
       "ok": true,
-      "ms": 3629,
+      "ms": 3318,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:privacy:desktop:dark",
       "ok": true,
-      "ms": 3629,
+      "ms": 3318,
       "screenshot": "privacy-desktop-dark.png"
     },
     {
       "name": "visual-details:contatti:desktop:dark",
       "ok": true,
-      "ms": 3185,
+      "ms": 3099,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:contatti:desktop:dark",
       "ok": true,
-      "ms": 3185,
+      "ms": 3099,
       "screenshot": "contatti-desktop-dark.png"
-    },
-    {
-      "name": "visual-details:thread:desktop:dark",
-      "ok": true,
-      "ms": 3871,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:thread:desktop:dark",
-      "ok": true,
-      "ms": 3871,
-      "screenshot": "thread-desktop-dark.png"
     },
     {
       "name": "visual-details:home:mobile:light",
       "ok": true,
-      "ms": 3340,
+      "ms": 7727,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:home:mobile:light",
       "ok": true,
-      "ms": 3340,
+      "ms": 7727,
       "screenshot": "home-mobile-light.png"
     },
     {
       "name": "visual-details:room-generale:mobile:light",
       "ok": true,
-      "ms": 2850,
+      "ms": 4727,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-generale:mobile:light",
       "ok": true,
-      "ms": 2850,
+      "ms": 4727,
       "screenshot": "room-generale-mobile-light.png"
     },
     {
       "name": "visual-details:room-verifica-e-fiducia:mobile:light",
       "ok": true,
-      "ms": 2989,
+      "ms": 3630,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-verifica-e-fiducia:mobile:light",
       "ok": true,
-      "ms": 2989,
+      "ms": 3630,
       "screenshot": "room-verifica-e-fiducia-mobile-light.png"
     },
     {
       "name": "visual-details:room-arena:mobile:light",
       "ok": true,
-      "ms": 2893,
+      "ms": 3701,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-arena:mobile:light",
       "ok": true,
-      "ms": 2893,
+      "ms": 3701,
       "screenshot": "room-arena-mobile-light.png"
-    },
-    {
-      "name": "visual-details:room-libera:mobile:light",
-      "ok": true,
-      "ms": 3556,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:room-libera:mobile:light",
-      "ok": true,
-      "ms": 3556,
-      "screenshot": "room-libera-mobile-light.png"
     },
     {
       "name": "visual-details:login:mobile:light",
       "ok": true,
-      "ms": 3478,
+      "ms": 3694,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:login:mobile:light",
       "ok": true,
-      "ms": 3478,
+      "ms": 3694,
       "screenshot": "login-mobile-light.png"
     },
     {
       "name": "visual-details:privacy:mobile:light",
       "ok": true,
-      "ms": 2581,
+      "ms": 3382,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:privacy:mobile:light",
       "ok": true,
-      "ms": 2581,
+      "ms": 3382,
       "screenshot": "privacy-mobile-light.png"
     },
     {
       "name": "visual-details:contatti:mobile:light",
       "ok": true,
-      "ms": 3066,
+      "ms": 3124,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:contatti:mobile:light",
       "ok": true,
-      "ms": 3066,
+      "ms": 3124,
       "screenshot": "contatti-mobile-light.png"
-    },
-    {
-      "name": "visual-details:thread:mobile:light",
-      "ok": true,
-      "ms": 3902,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:thread:mobile:light",
-      "ok": true,
-      "ms": 3902,
-      "screenshot": "thread-mobile-light.png"
     },
     {
       "name": "visual-details:home:mobile:dark",
       "ok": true,
-      "ms": 3323,
+      "ms": 8208,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:home:mobile:dark",
       "ok": true,
-      "ms": 3323,
+      "ms": 8208,
       "screenshot": "home-mobile-dark.png"
     },
     {
       "name": "visual-details:room-generale:mobile:dark",
       "ok": true,
-      "ms": 4210,
+      "ms": 5227,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-generale:mobile:dark",
       "ok": true,
-      "ms": 4210,
+      "ms": 5227,
       "screenshot": "room-generale-mobile-dark.png"
     },
     {
       "name": "visual-details:room-verifica-e-fiducia:mobile:dark",
       "ok": true,
-      "ms": 2887,
+      "ms": 3092,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-verifica-e-fiducia:mobile:dark",
       "ok": true,
-      "ms": 2887,
+      "ms": 3092,
       "screenshot": "room-verifica-e-fiducia-mobile-dark.png"
     },
     {
       "name": "visual-details:room-arena:mobile:dark",
       "ok": true,
-      "ms": 2906,
+      "ms": 4277,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:room-arena:mobile:dark",
       "ok": true,
-      "ms": 2906,
+      "ms": 4277,
       "screenshot": "room-arena-mobile-dark.png"
-    },
-    {
-      "name": "visual-details:room-libera:mobile:dark",
-      "ok": true,
-      "ms": 3043,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:room-libera:mobile:dark",
-      "ok": true,
-      "ms": 3043,
-      "screenshot": "room-libera-mobile-dark.png"
     },
     {
       "name": "visual-details:login:mobile:dark",
       "ok": true,
-      "ms": 2860,
+      "ms": 3060,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:login:mobile:dark",
       "ok": true,
-      "ms": 2860,
+      "ms": 3060,
       "screenshot": "login-mobile-dark.png"
     },
     {
       "name": "visual-details:privacy:mobile:dark",
       "ok": true,
-      "ms": 2549,
+      "ms": 3354,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:privacy:mobile:dark",
       "ok": true,
-      "ms": 2549,
+      "ms": 3354,
       "screenshot": "privacy-mobile-dark.png"
     },
     {
       "name": "visual-details:contatti:mobile:dark",
       "ok": true,
-      "ms": 3250,
+      "ms": 3122,
       "overflow": false,
       "violations": []
     },
     {
       "name": "axe:contatti:mobile:dark",
       "ok": true,
-      "ms": 3250,
+      "ms": 3122,
       "screenshot": "contatti-mobile-dark.png"
-    },
-    {
-      "name": "visual-details:thread:mobile:dark",
-      "ok": true,
-      "ms": 3480,
-      "overflow": false,
-      "violations": []
-    },
-    {
-      "name": "axe:thread:mobile:dark",
-      "ok": true,
-      "ms": 3480,
-      "screenshot": "thread-mobile-dark.png"
     }
   ],
   "screenshots": [
-    "home-desktop-light.png",
-    "room-generale-desktop-light.png",
-    "room-verifica-e-fiducia-desktop-light.png",
-    "room-arena-desktop-light.png",
-    "room-libera-desktop-light.png",
-    "login-desktop-light.png",
     "privacy-desktop-light.png",
     "contatti-desktop-light.png",
-    "thread-desktop-light.png",
     "home-desktop-dark.png",
     "room-generale-desktop-dark.png",
     "room-verifica-e-fiducia-desktop-dark.png",
     "room-arena-desktop-dark.png",
-    "room-libera-desktop-dark.png",
     "login-desktop-dark.png",
     "privacy-desktop-dark.png",
     "contatti-desktop-dark.png",
-    "thread-desktop-dark.png",
     "home-mobile-light.png",
     "room-generale-mobile-light.png",
     "room-verifica-e-fiducia-mobile-light.png",
     "room-arena-mobile-light.png",
-    "room-libera-mobile-light.png",
     "login-mobile-light.png",
     "privacy-mobile-light.png",
     "contatti-mobile-light.png",
-    "thread-mobile-light.png",
     "home-mobile-dark.png",
     "room-generale-mobile-dark.png",
     "room-verifica-e-fiducia-mobile-dark.png",
     "room-arena-mobile-dark.png",
-    "room-libera-mobile-dark.png",
     "login-mobile-dark.png",
     "privacy-mobile-dark.png",
-    "contatti-mobile-dark.png",
-    "thread-mobile-dark.png"
+    "contatti-mobile-dark.png"
   ]
 }
