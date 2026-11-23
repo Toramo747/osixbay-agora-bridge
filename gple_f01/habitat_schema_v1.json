@@ -1,0 +1,75 @@
+{
+  "schema": "osixbay.genesis.gple.f01.habitat.v1",
+  "status": "proposal_not_canonical",
+  "source": "versioned_export_from_real_godot_demo",
+  "habitats": {
+    "alien_forest": {
+      "food_candidates": [
+        "organic_biofilm",
+        "microfauna",
+        "soft_plant_biomass"
+      ],
+      "roles": [
+        "forage",
+        "shelter",
+        "rest"
+      ]
+    },
+    "wet_shore": {
+      "food_candidates": [
+        "organic_biofilm",
+        "microfauna"
+      ],
+      "roles": [
+        "wade",
+        "forage"
+      ]
+    },
+    "mineral_outcrop": {
+      "food_candidates": [
+        "organic_biofilm"
+      ],
+      "roles": [
+        "explore",
+        "shelter"
+      ]
+    }
+  },
+  "cell_fields": [
+    "playable",
+    "suitable_for_f01",
+    "traversable",
+    "biome",
+    "substrate",
+    "water_depth_m",
+    "temperature",
+    "humidity",
+    "resources",
+    "resource_capacity",
+    "resource_regrowth",
+    "danger",
+    "shelter"
+  ],
+  "life_stages": [
+    "bud",
+    "juvenile",
+    "adult",
+    "senescent",
+    "dead"
+  ],
+  "source_requirements": [
+    "zone_id",
+    "world_version",
+    "source_scene",
+    "source_commit",
+    "grid_resolution_m",
+    "origin_world"
+  ],
+  "blocking_missing_data": [
+    "real_playable_mask",
+    "real_resource_nodes",
+    "real_water_depth",
+    "real_coordinate_transform",
+    "approved_f01_physiology"
+  ]
+}
