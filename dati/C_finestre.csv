@@ -1,0 +1,157 @@
+residente,finestra,giri_osservabili,ridondanti,comandi_errati,post_con_testo,post_con_strumenti_inesistenti,ridondanti_100,comandi_errati_100,inesistenti_100_post
+lume,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,0,19,10,0.0,0.0,52.6
+lume,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+lume,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),13,1,0,13,4,7.7,0.0,30.8
+lume,W3 3/11 01:35–24:00 (registro+cieca),40,2,1,40,3,5.0,2.5,7.5
+lume,W4 4/11 (giorno intero),13,2,0,14,0,15.4,0.0,0.0
+lume,W5 5/11 (giorno intero),20,2,0,20,0,10.0,0.0,0.0
+lume,W6 6/11 (giorno intero),19,2,0,19,0,10.5,0.0,0.0
+lume,W7 7/11 (giorno intero),15,1,0,15,2,6.7,0.0,13.3
+lume,W8 8/11 (giorno intero),9,0,0,9,0,0.0,0.0,0.0
+lume,W9 9/11 (giorno intero),8,0,0,8,1,0.0,0.0,12.5
+lume,W10 10/11 (giorno intero),5,0,0,5,0,0.0,0.0,0.0
+lume,W11 11/11 (giorno intero),1,0,0,1,0,,,
+fermo,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,0,19,16,0.0,0.0,84.2
+fermo,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+fermo,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),12,3,0,12,0,25.0,0.0,0.0
+fermo,W3 3/11 01:35–24:00 (registro+cieca),66,10,1,67,2,15.2,1.5,3.0
+fermo,W4 4/11 (giorno intero),39,4,1,39,0,10.3,2.6,0.0
+fermo,W5 5/11 (giorno intero),31,4,0,33,0,12.9,0.0,0.0
+fermo,W6 6/11 (giorno intero),29,2,1,29,0,6.9,3.4,0.0
+fermo,W7 7/11 (giorno intero),25,2,0,25,1,8.0,0.0,4.0
+fermo,W8 8/11 (giorno intero),15,0,0,16,0,0.0,0.0,0.0
+fermo,W9 9/11 (giorno intero),15,0,0,15,0,0.0,0.0,0.0
+fermo,W10 10/11 (giorno intero),14,0,0,15,1,0.0,0.0,6.7
+fermo,W11 11/11 (giorno intero),6,0,0,6,0,0.0,0.0,0.0
+trama,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),20,4,0,20,16,20.0,0.0,80.0
+trama,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+trama,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),13,1,0,13,0,7.7,0.0,0.0
+trama,W3 3/11 01:35–24:00 (registro+cieca),66,4,0,67,1,6.1,0.0,1.5
+trama,W4 4/11 (giorno intero),39,6,1,39,0,15.4,2.6,0.0
+trama,W5 5/11 (giorno intero),33,6,0,34,0,18.2,0.0,0.0
+trama,W6 6/11 (giorno intero),25,5,0,25,0,20.0,0.0,0.0
+trama,W7 7/11 (giorno intero),17,4,0,17,0,23.5,0.0,0.0
+trama,W8 8/11 (giorno intero),21,1,0,21,0,4.8,0.0,0.0
+trama,W9 9/11 (giorno intero),14,0,0,14,0,0.0,0.0,0.0
+trama,W10 10/11 (giorno intero),16,1,0,17,0,6.2,0.0,0.0
+trama,W11 11/11 (giorno intero),10,0,0,10,0,0.0,0.0,0.0
+sinapsi,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,1,19,7,0.0,5.3,36.8
+sinapsi,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+sinapsi,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),12,3,0,12,0,25.0,0.0,0.0
+sinapsi,W3 3/11 01:35–24:00 (registro+cieca),64,22,8,65,0,34.4,12.5,0.0
+sinapsi,W4 4/11 (giorno intero),29,6,1,29,0,20.7,3.4,0.0
+sinapsi,W5 5/11 (giorno intero),18,3,2,18,0,16.7,11.1,0.0
+sinapsi,W6 6/11 (giorno intero),12,2,1,12,0,16.7,8.3,0.0
+sinapsi,W7 7/11 (giorno intero),6,3,1,6,0,50.0,16.7,0.0
+sinapsi,W8 8/11 (giorno intero),3,0,0,3,0,,,
+sinapsi,W9 9/11 (giorno intero),1,0,0,1,0,,,
+sinapsi,W10 10/11 (giorno intero),6,1,0,6,0,16.7,0.0,0.0
+sinapsi,W11 11/11 (giorno intero),3,1,0,3,1,,,
+seme,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,0,19,9,0.0,0.0,47.4
+seme,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+seme,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),12,2,1,12,0,16.7,8.3,0.0
+seme,W3 3/11 01:35–24:00 (registro+cieca),66,9,8,67,0,13.6,12.1,0.0
+seme,W4 4/11 (giorno intero),31,3,1,31,0,9.7,3.2,0.0
+seme,W5 5/11 (giorno intero),19,2,3,19,0,10.5,15.8,0.0
+seme,W6 6/11 (giorno intero),11,1,1,11,0,9.1,9.1,0.0
+seme,W7 7/11 (giorno intero),6,0,0,6,0,0.0,0.0,0.0
+seme,W8 8/11 (giorno intero),3,0,0,3,0,,,
+seme,W9 9/11 (giorno intero),6,1,0,6,0,16.7,0.0,0.0
+seme,W10 10/11 (giorno intero),4,0,0,4,0,,,
+seme,W11 11/11 (giorno intero),0,0,0,0,0,,,
+kenshiro,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),0,0,0,2,0,,,
+kenshiro,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,3,0,,,
+kenshiro,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),0,0,0,1,0,,,
+kenshiro,W3 3/11 01:35–24:00 (registro+cieca),16,0,0,16,0,0.0,0.0,0.0
+kenshiro,W4 4/11 (giorno intero),13,0,0,14,0,0.0,0.0,0.0
+kenshiro,W5 5/11 (giorno intero),20,0,0,20,0,0.0,0.0,0.0
+kenshiro,W6 6/11 (giorno intero),18,0,0,18,0,0.0,0.0,0.0
+kenshiro,W7 7/11 (giorno intero),15,0,0,15,0,0.0,0.0,0.0
+kenshiro,W8 8/11 (giorno intero),10,0,0,10,1,0.0,0.0,10.0
+kenshiro,W9 9/11 (giorno intero),11,0,0,11,2,0.0,0.0,18.2
+kenshiro,W10 10/11 (giorno intero),5,0,0,5,0,0.0,0.0,0.0
+kenshiro,W11 11/11 (giorno intero),2,0,0,2,0,,,
+doraimon,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),0,0,0,2,1,,,
+doraimon,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,3,0,,,
+doraimon,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),0,0,0,1,0,,,
+doraimon,W3 3/11 01:35–24:00 (registro+cieca),16,0,0,16,0,0.0,0.0,0.0
+doraimon,W4 4/11 (giorno intero),13,0,0,14,0,0.0,0.0,0.0
+doraimon,W5 5/11 (giorno intero),19,0,0,19,0,0.0,0.0,0.0
+doraimon,W6 6/11 (giorno intero),19,0,0,19,1,0.0,0.0,5.3
+doraimon,W7 7/11 (giorno intero),13,0,0,13,0,0.0,0.0,0.0
+doraimon,W8 8/11 (giorno intero),9,0,0,9,1,0.0,0.0,11.1
+doraimon,W9 9/11 (giorno intero),7,0,0,7,1,0.0,0.0,14.3
+doraimon,W10 10/11 (giorno intero),5,0,0,5,0,0.0,0.0,0.0
+doraimon,W11 11/11 (giorno intero),2,0,0,2,0,,,
+godot-consulente,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),0,0,0,0,0,,,
+godot-consulente,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+godot-consulente,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),0,0,0,0,0,,,
+godot-consulente,W3 3/11 01:35–24:00 (registro+cieca),0,0,0,0,0,,,
+godot-consulente,W4 4/11 (giorno intero),0,0,0,1,0,,,
+godot-consulente,W5 5/11 (giorno intero),0,0,0,10,0,,,0.0
+godot-consulente,W6 6/11 (giorno intero),0,0,0,1,0,,,
+godot-consulente,W7 7/11 (giorno intero),0,0,0,1,0,,,
+godot-consulente,W8 8/11 (giorno intero),0,0,0,0,0,,,
+godot-consulente,W9 9/11 (giorno intero),0,0,0,0,0,,,
+godot-consulente,W10 10/11 (giorno intero),0,0,0,1,0,,,
+godot-consulente,W11 11/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),0,0,0,0,0,,,
+genesi-costruttore,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+genesi-costruttore,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),0,0,0,0,0,,,
+genesi-costruttore,W3 3/11 01:35–24:00 (registro+cieca),0,0,0,0,0,,,
+genesi-costruttore,W4 4/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W5 5/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W6 6/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W7 7/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W8 8/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W9 9/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W10 10/11 (giorno intero),0,0,0,0,0,,,
+genesi-costruttore,W11 11/11 (giorno intero),0,0,0,0,0,,,
+vaglio,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,1,0,19,7,5.3,0.0,36.8
+vaglio,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+vaglio,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),12,3,4,12,0,25.0,33.3,0.0
+vaglio,W3 3/11 01:35–24:00 (registro+cieca),65,8,4,66,0,12.3,6.2,0.0
+vaglio,W4 4/11 (giorno intero),26,4,0,26,0,15.4,0.0,0.0
+vaglio,W5 5/11 (giorno intero),13,1,0,13,0,7.7,0.0,0.0
+vaglio,W6 6/11 (giorno intero),7,1,0,7,0,14.3,0.0,0.0
+vaglio,W7 7/11 (giorno intero),5,0,1,5,0,0.0,20.0,0.0
+vaglio,W8 8/11 (giorno intero),2,0,0,2,1,,,
+vaglio,W9 9/11 (giorno intero),4,1,1,4,0,,,
+vaglio,W10 10/11 (giorno intero),6,0,0,6,0,0.0,0.0,0.0
+vaglio,W11 11/11 (giorno intero),3,1,0,3,0,,,
+assaggio,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,0,19,10,0.0,0.0,52.6
+assaggio,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+assaggio,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),13,1,2,13,0,7.7,15.4,0.0
+assaggio,W3 3/11 01:35–24:00 (registro+cieca),66,2,5,67,0,3.0,7.6,0.0
+assaggio,W4 4/11 (giorno intero),37,1,2,37,0,2.7,5.4,0.0
+assaggio,W5 5/11 (giorno intero),24,2,2,25,0,8.3,8.3,0.0
+assaggio,W6 6/11 (giorno intero),14,1,0,14,1,7.1,0.0,7.1
+assaggio,W7 7/11 (giorno intero),6,1,2,6,0,16.7,33.3,0.0
+assaggio,W8 8/11 (giorno intero),9,2,0,9,0,22.2,0.0,0.0
+assaggio,W9 9/11 (giorno intero),5,0,0,5,0,0.0,0.0,0.0
+assaggio,W10 10/11 (giorno intero),9,0,0,9,1,0.0,0.0,11.1
+assaggio,W11 11/11 (giorno intero),5,1,1,5,0,20.0,20.0,0.0
+inciampo,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),19,0,0,19,6,0.0,0.0,31.6
+inciampo,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),0,0,0,0,0,,,
+inciampo,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),13,7,2,13,0,53.8,15.4,0.0
+inciampo,W3 3/11 01:35–24:00 (registro+cieca),66,15,5,67,0,22.7,7.6,0.0
+inciampo,W4 4/11 (giorno intero),37,9,1,37,0,24.3,2.7,0.0
+inciampo,W5 5/11 (giorno intero),29,13,3,29,0,44.8,10.3,0.0
+inciampo,W6 6/11 (giorno intero),17,1,0,17,0,5.9,0.0,0.0
+inciampo,W7 7/11 (giorno intero),11,2,0,11,0,18.2,0.0,0.0
+inciampo,W8 8/11 (giorno intero),6,2,0,6,0,33.3,0.0,0.0
+inciampo,W9 9/11 (giorno intero),5,1,1,5,0,20.0,20.0,0.0
+inciampo,W10 10/11 (giorno intero),6,1,0,6,0,16.7,0.0,0.0
+inciampo,W11 11/11 (giorno intero),2,1,0,2,0,,,
+architetto,W0 2/11 00:00–06:22 (prima di ANALIZZA e Sfida 002),3,0,0,3,1,,,
+architetto,W1 2/11 07:43–17:43 (prima di OSSERVA; quasi tutto 429),13,3,0,13,2,23.1,0.0,15.4
+architetto,W2 2/11 21:25–3/11 01:35 (dopo OSSERVA),13,4,1,13,1,30.8,7.7,7.7
+architetto,W3 3/11 01:35–24:00 (registro+cieca),66,25,5,67,1,37.9,7.6,1.5
+architetto,W4 4/11 (giorno intero),48,13,3,48,0,27.1,6.2,0.0
+architetto,W5 5/11 (giorno intero),39,8,8,39,0,20.5,20.5,0.0
+architetto,W6 6/11 (giorno intero),28,3,2,28,0,10.7,7.1,0.0
+architetto,W7 7/11 (giorno intero),21,3,4,21,0,14.3,19.0,0.0
+architetto,W8 8/11 (giorno intero),9,3,0,9,0,33.3,0.0,0.0
+architetto,W9 9/11 (giorno intero),5,0,0,5,0,0.0,0.0,0.0
+architetto,W10 10/11 (giorno intero),6,0,0,6,0,0.0,0.0,0.0
+architetto,W11 11/11 (giorno intero),5,2,0,5,0,40.0,0.0,0.0
